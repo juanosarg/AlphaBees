@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<!--============================ Trees ============================-->
+
+  <ThingDef ParentName="PlantBase">
+    <defName>RB_Plant_TreeOakHive</defName>
+    <label>oak tree with hive</label>
+    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures. A huge beehive seems to be attached to this tree's branches.</description>
+	<thingClass>RimBees.Building_TreeOakHive</thingClass>
+    <selectable>True</selectable>
+
+    <graphicData>
+      <texPath>Things/Plant/RB_TreeOakHive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+	    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+		</ingestible>
+    <plant>
+	  <growDays>0.0001</growDays>
+	  <lifespanFraction>0</lifespanFraction>
+      <harvestAfterGrowth>-1</harvestAfterGrowth>
+	  <harvestTag>Standard</harvestTag>
+	  <dieIfLeafless>true</dieIfLeafless>
+      <harvestWork>1000</harvestWork>
+      <harvestedThingDef>RawRice</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+	  <visualSizeRange>
+        <min>2.0</min>
+        <max>2.0</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+
+  
+
+</Defs>

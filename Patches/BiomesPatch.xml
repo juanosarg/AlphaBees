@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+		<value>
+			<RB_Plant_TreeOakHive>0.01</RB_Plant_TreeOakHive>
+		</value>
+	</Operation>
+
+
+
+	
+
+</Patch>
