@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>RB_WildHive</defName>
+    <label>wild beehive</label>
+    <description>This beehive needs to be carefully manipulated to extract the bees without harming them. A beekeeping workbench is needed for this delicate provess.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/RB_WildHive</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	  <Mass>2</Mass>
+	  <MarketValue>1</MarketValue>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	<thingCategories>
+      <li>RB_Bees</li>
+    </thingCategories>
+	<stackLimit>1</stackLimit>
+	<comps>
+			
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>45</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+	</comps>
+</ThingDef>
+  
+  
+  
+</Defs>
