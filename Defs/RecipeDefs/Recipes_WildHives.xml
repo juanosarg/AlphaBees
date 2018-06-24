@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_ExtracTemperateHive</defName>
+		<label>extract from temperate hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild temperate beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Temperate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Temperate</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_WildHive_Temperate>1</RB_WildHive_Temperate>
+		</products>
+		<skillRequirements>
+			<Animals>3</Animals>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+</Defs>

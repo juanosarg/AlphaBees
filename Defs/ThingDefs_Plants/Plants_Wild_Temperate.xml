@@ -34,7 +34,7 @@
 	  <harvestTag>Standard</harvestTag>
 	  <dieIfLeafless>true</dieIfLeafless>
       <harvestWork>1000</harvestWork>
-      <harvestedThingDef>RawRice</harvestedThingDef>
+      <harvestedThingDef>RB_WildHive_Temperate</harvestedThingDef>
       <harvestYield>1</harvestYield>
       <wildClusterWeight>35</wildClusterWeight>
 	  <visualSizeRange>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	<ThingDef ParentName="BenchBase">
+		<defName>RB_Beekeeping_Workbench</defName>
+		<label>beekeeping workbench</label>
+		<description>A simple wooden workbench with specialized tools to manipulate wild beehives.</description>
+		<graphicData>
+			<texPath>Things/Building/RB_Beekeeping_Workbench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<WoodLog>150</WoodLog>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+	</ThingDef>
+
+	
+
+
+</Defs>
