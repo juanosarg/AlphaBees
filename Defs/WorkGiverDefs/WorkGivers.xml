@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+	<WorkGiverDef>
+		<defName>RB_DoBillsBeekeepingWorkbench</defName>
+		<label>works at beekeeping workbench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</fixedBillGiverDefs>
+		<verb>extracting bees and combs</verb>
+		<gerund>extracting bees and combs at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	
+	
+	
+
+
+
+</Defs>

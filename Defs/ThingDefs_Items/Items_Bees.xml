@@ -2,31 +2,93 @@
 <Defs>
 
  <ThingDef ParentName="ResourceBase">
-    <defName>RB_WildHive_Temperate</defName>
-    <label>wild beehive, temperate</label>
-    <description>This beehive needs to be carefully manipulated to extract the bees without harming them. A beekeeping workbench is needed for this delicate process.</description>
+    <defName>RB_Bee_Temperate_Drone</defName>
+    <label>temperate drone</label>
+    <description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/RB_WildHive</texPath>
+	  <texPath>Things/Item/Bees/RB_Bee_Temperate_Drone</texPath>
     </graphicData>
     <statBases>
-      <MaxHitPoints>60</MaxHitPoints>
+      <MaxHitPoints>10</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-	  <Mass>2</Mass>
-	  <MarketValue>1</MarketValue>
+	  <Mass>.01</Mass>
+	  <MarketValue>.1</MarketValue>
     </statBases>
     <tickerType>Normal</tickerType>
 	<tradeability>Sellable</tradeability>
 	<thingCategories>
       <li>RB_Bees</li>
     </thingCategories>
-	<stackLimit>1</stackLimit>
+	<stackLimit>75</stackLimit>
 	<comps>
 			
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>0</minSafeTemperature>
-				<maxSafeTemperature>45</maxSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+	</comps>
+</ThingDef>
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>RB_Bee_Temperate_Queen</defName>
+    <label>temperate queen</label>
+    <description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Bees/RB_Bee_Temperate_Queen</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	  <Mass>.01</Mass>
+	  <MarketValue>.1</MarketValue>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	<thingCategories>
+      <li>RB_Bees</li>
+    </thingCategories>
+	<stackLimit>75</stackLimit>
+	<comps>
+			
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+	</comps>
+</ThingDef>
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>RB_Bee_Arctic_Drone</defName>
+    <label>arctic drone</label>
+    <description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Bees/RB_Bee_Arctic_Drone</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	  <Mass>.01</Mass>
+	  <MarketValue>.1</MarketValue>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	<thingCategories>
+      <li>RB_Bees</li>
+    </thingCategories>
+	<stackLimit>75</stackLimit>
+	<comps>
+			
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
 	</comps>

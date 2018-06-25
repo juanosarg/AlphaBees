@@ -5,6 +5,9 @@
 
   <RB_ExtractBees>Extract Bees</RB_ExtractBees>
   <RB_ExtractBeesDesc>Extract Honey Bees and Combs from wild nest</RB_ExtractBeesDesc>
+  <RB_InsertBees>Insert drone</RB_InsertBees>
+  <RB_InsertBeesDesc>Insert a drone in this beehouse</RB_InsertBeesDesc>
+
 
 
 

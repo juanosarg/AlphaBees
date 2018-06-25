@@ -10,6 +10,12 @@
     <reportString>extracting bees and combs.</reportString>
   </JobDef>
   
+    <JobDef>
+    <defName>RB_InsertingBees</defName>
+    <driverClass>RimBees.JobDriver_InsertBees</driverClass>
+    <reportString>inserting bees.</reportString>
+  </JobDef>
+  
 
 
 </Defs>

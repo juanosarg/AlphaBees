@@ -11,7 +11,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench</li>	
+			<li>RB_Beekeeping_Workbench_Building</li>	
 		</recipeUsers>	
 		<ingredients>
 			<li>
@@ -22,22 +22,27 @@
 				</filter>
 				<count>1</count>
 			</li>
-			
+
 		</ingredients>
 		<fixedIngredientFilter>
 
 			<thingDefs>
 				<li>RB_WildHive_Temperate</li>
-				
+
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_WildHive_Temperate>1</RB_WildHive_Temperate>
+			<RB_Bee_Temperate_Drone>1</RB_Bee_Temperate_Drone>
+			<RB_Bee_Temperate_Queen>1</RB_Bee_Temperate_Queen>
+			<RB_Temperate_Honeycomb>2</RB_Temperate_Honeycomb>
+
 		</products>
 		<skillRequirements>
 			<Animals>3</Animals>
 		</skillRequirements>
 	</RecipeDef>
-
 	
+	
+
+
 </Defs>

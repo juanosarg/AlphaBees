@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="ResourceBase">
+    <defName>RB_Temperate_Honeycomb</defName>
+    <label>temperate honeycomb</label>
+    <description>This is a honeycomb produced by temperate bees. Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Temperate_Honeycomb</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+	  <Mass>.01</Mass>
+	  <MarketValue>.1</MarketValue>
+    </statBases>
+    <tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	<thingCategories>
+      <li>RB_Bees</li>
+    </thingCategories>
+	<stackLimit>75</stackLimit>
+	
+</ThingDef>
+
+ 
+  
+  
+  
+</Defs>
