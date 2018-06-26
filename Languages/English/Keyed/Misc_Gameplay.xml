@@ -4,9 +4,25 @@
   <!-- Misc -->
 
   <RB_ExtractBees>Extract Bees</RB_ExtractBees>
-  <RB_ExtractBeesDesc>Extract Honey Bees and Combs from wild nest</RB_ExtractBeesDesc>
+  <RB_ExtractBeesDesc>Extract Honey Bees from beehouse</RB_ExtractBeesDesc>
   <RB_InsertBees>Insert drone</RB_InsertBees>
   <RB_InsertBeesDesc>Insert a drone in this beehouse</RB_InsertBeesDesc>
+  <RB_NoBees>You don't have any drones!</RB_NoBees>
+  
+  <RB_ExtractQueens>Extract Queen Bees</RB_ExtractQueens>
+  <RB_ExtractQueensDesc>Extract Queen Bees from beehouse</RB_ExtractQueensDesc>
+  <RB_InsertQueens>Insert queen</RB_InsertQueens>
+  <RB_InsertQueensDesc>Insert a queen bee in this beehouse</RB_InsertQueensDesc>
+  <RB_NoQueens>You don't have any queens!</RB_NoQueens>
+
+  
+  <!-- Bee Tags -->
+  
+  <RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>
+  <RB_Arctic_Drone_Tag>Arctic Drone</RB_Arctic_Drone_Tag>
+
+  <RB_Temperate_Queen_Tag>Temperate Queen</RB_Temperate_Queen_Tag>
+  <RB_Arctic_Queen_Tag>Arctic Queen</RB_Arctic_Queen_Tag>
 
 
 

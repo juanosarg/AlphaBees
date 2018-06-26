@@ -14,7 +14,21 @@ namespace RimBees
             {
                 defaultDesc = "RB_InsertBeesDesc".Translate(),
                 defaultLabel = "RB_InsertBees".Translate(),
-                icon = ContentFinder<Texture2D>.Get("Things/Item/Bees/RB_Bee_Temperate_Drone", true),
+                icon = ContentFinder<Texture2D>.Get("UI/RB_AddDrones_ToBeehouse", true),
+                hotKey = KeyBindingDefOf.Misc1,
+                map = map,
+                beehouse = beehouse
+                //settable = settable
+            };
+        }
+
+        public static Command_SetQueenList SetQueenListCommand(Building beehouse, Map map)
+        {
+            return new Command_SetQueenList()
+            {
+                defaultDesc = "RB_InsertQueensDesc".Translate(),
+                defaultLabel = "RB_InsertQueens".Translate(),
+                icon = ContentFinder<Texture2D>.Get("UI/RB_AddQueens_ToBeehouse", true),
                 hotKey = KeyBindingDefOf.Misc1,
                 map = map,
                 beehouse = beehouse

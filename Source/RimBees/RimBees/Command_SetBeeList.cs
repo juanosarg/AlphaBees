@@ -1,10 +1,8 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Verse;
 using Verse.AI;
-using RimWorld.Planet;
+
 
 namespace Verse
 {
@@ -20,7 +18,7 @@ namespace Verse
 
         public Command_SetBeeList()
         {
-        
+
         }
 
         public override void ProcessInput(Event ev)
@@ -28,23 +26,37 @@ namespace Verse
             base.ProcessInput(ev);
             List<FloatMenuOption> list = new List<FloatMenuOption>();
 
-            list.Add(new FloatMenuOption("Caraculo", delegate
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Temperate_Drone", true)).Count > 0)
             {
-                drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Temperate_Drone", true)).RandomElement();
-                //drone.def = DefDatabase<ThingDef>.GetNamed("RB_Bee_Temperate_Drone", true);
-                this.TryInsertDrone();
-            }, MenuOptionPriority.Default, null, null, 29f, null, null));
+                list.Add(new FloatMenuOption("RB_Temperate_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Temperate_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
 
-            list.Add(new FloatMenuOption("Caraculo2", delegate
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Drone", true)).Count > 0)
             {
+                list.Add(new FloatMenuOption("RB_Arctic_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
 
-            }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            if (list.Count > 0) {
 
-         
+            } else {
+                list.Add(new FloatMenuOption("RB_NoBees".Translate(), delegate
+                {
+                   
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
             Find.WindowStack.Add(new FloatMenu(list));
         }
 
-        private void TryInsertDrone(){
+        private void TryInsertDrone()
+        {
 
             Pawn pawn = null;
             foreach (Pawn current in map.mapPawns.FreeColonistsSpawned)
@@ -59,12 +71,12 @@ namespace Verse
                     if (flag2)
                     {
                         pawn = current;
-                            break;
-                        
+                        break;
+
                     }
                 }
             }
-            Log.Message(pawn.ToString(), false);
+            //Log.Message(pawn.ToString(), false);
 
             bool flag4 = (pawn != null);
 
@@ -73,19 +85,23 @@ namespace Verse
                 if (pawn.CanReach(beehouse, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn))
                 {
 
-                   // pawn.jobs.StopAll(false);
+                    // pawn.jobs.StopAll(false);
 
-                    Job job = new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingBees", true), beehouse,drone);
-                    pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                    Job job = new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingBees", true), beehouse, drone);
+                    job.count = 1;
+                    if (TryToReserveThings(pawn, job))
+                    {
+                        pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+
+                    }
+                    else
+                    {
+                        pawn.ClearAllReservations();
+                        //Messages.Message("Can't reserve things", MessageTypeDefOf.RejectInput);
+                    }
 
 
                 }
-
-
-
-
-
-
             }
             else
             {
@@ -93,11 +109,14 @@ namespace Verse
             }
         }
 
-     
-
-
+        public bool TryToReserveThings(Pawn pawn, Job job)
+        {
+            return pawn.Reserve(job.targetA, job, 1, -1, null) && pawn.Reserve(job.targetB, job, 1, -1, null);
+        }
 
 
     }
+
+
 }
 

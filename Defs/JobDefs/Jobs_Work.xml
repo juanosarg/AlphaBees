@@ -16,6 +16,12 @@
     <reportString>inserting bees.</reportString>
   </JobDef>
   
+      <JobDef>
+    <defName>RB_InsertingQueenBees</defName>
+    <driverClass>RimBees.JobDriver_InsertQueenBees</driverClass>
+    <reportString>inserting queen bees.</reportString>
+  </JobDef>
+  
 
 
 </Defs>
