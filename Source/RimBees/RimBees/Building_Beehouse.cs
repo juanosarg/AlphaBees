@@ -13,7 +13,10 @@ namespace RimBees
     class Building_Beehouse : Building, IThingHolder
     {
         //public Thing droneThing;
-       // public Thing queenThing;
+        // public Thing queenThing;
+
+        public int tickCounter = 0;
+        public bool BeehouseIsFull = false;
 
 
         protected ThingOwner innerContainerDrones = null;
@@ -31,6 +34,35 @@ namespace RimBees
             this.innerContainerQueens = new ThingOwner<Thing>(this, false, LookMode.Deep);
 
         }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Deep.Look<ThingOwner>(ref this.innerContainerDrones, "innerContainerDrones", new object[]
+            {
+                this
+            });
+            Scribe_Deep.Look<ThingOwner>(ref this.innerContainerQueens, "innerContainerQueens", new object[]
+            {
+                this
+            });
+           
+            Scribe_Values.Look<bool>(ref this.contentsKnown, "contentsKnown", false, false);
+            Scribe_Values.Look<bool>(ref this.contentsKnownQueens, "contentsKnownQueens", false, false);
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
+
+        }
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            if (base.Faction != null && base.Faction.IsPlayer)
+            {
+                this.contentsKnown = true;
+            }
+        }
+
 
         [DebuggerHidden]
         public override IEnumerable<Gizmo> GetGizmos()
@@ -83,21 +115,29 @@ namespace RimBees
             string text = base.GetInspectString();
             string str = "";
             string str2 = "";
+            string str3 = "";
             if (!innerContainerDrones.NullOrEmpty())
             {
                 str = innerContainerDrones.RandomElement().def.label;
             }
-            else { str = "Nothing"; }
+            else { str = "RB_BeehouseNonePresent".Translate(); }
 
             if (!innerContainerQueens.NullOrEmpty())
             {
                 str2 = innerContainerQueens.RandomElement().def.label;
             }
-            else { str2 = "Nothing"; }
+            else { str2 = "RB_BeehouseNonePresent".Translate(); }
+
+            if (!innerContainerQueens.NullOrEmpty()&& !innerContainerQueens.NullOrEmpty())
+            {
+                str3 = tickCounter.ToString();
+            }
+            else { str3 = "RB_BeehouseCombNoProgress".Translate(); }
 
 
-            return text + "CasketContains".Translate() + ": " + str.CapitalizeFirst()
-                + "      "+ "CasketContains".Translate() + ": " + str2.CapitalizeFirst();
+            return text + "RB_BeehouseContainsDrone".Translate() + ": " + str.CapitalizeFirst()
+                + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + str2.CapitalizeFirst() + "\n" +
+                "RB_BeehouseCombProgress".Translate() + ": "+ str3;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -107,6 +147,7 @@ namespace RimBees
                 bool flag;
                 if (thing.holdingOwner != null)
                 {
+                Log.Message(this.innerContainerDrones.ToString(), false);
                     thing.holdingOwner.TryTransferToContainer(thing, this.innerContainerDrones, thing.stackCount, true);
                     flag = true;
                 }
@@ -188,11 +229,22 @@ namespace RimBees
             base.TickRare();
             if(!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
+                if (!BeehouseIsFull) { 
+                    //Log.Message("me siento completo", false);
+                    tickCounter++;
+                    if (tickCounter > 10)
+                    {
+                        SignalBeehouseFull();
+                    }
+                }
 
-                //Log.Message("me siento completo", false);
+        }
 
-            }
+        }
 
+        public void SignalBeehouseFull()
+        {
+            BeehouseIsFull = true;
         }
 
     }

@@ -14,6 +14,14 @@
   <RB_InsertQueens>Insert queen</RB_InsertQueens>
   <RB_InsertQueensDesc>Insert a queen bee in this beehouse</RB_InsertQueensDesc>
   <RB_NoQueens>You don't have any queens!</RB_NoQueens>
+  
+  <RB_BeehouseContainsDrone>Drone</RB_BeehouseContainsDrone>
+  <RB_BeehouseContainsQueen>Queen</RB_BeehouseContainsQueen>
+  <RB_BeehouseNonePresent>None present</RB_BeehouseNonePresent>
+  <RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress>
+  <RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
+
+
 
   
   <!-- Bee Tags -->

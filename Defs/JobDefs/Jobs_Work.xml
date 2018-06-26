@@ -22,6 +22,12 @@
     <reportString>inserting queen bees.</reportString>
   </JobDef>
   
+        <JobDef>
+    <defName>RB_TakeThingsOutOfBeehouseJob</defName>
+    <driverClass>RimBees.JobDriver_TakeThingsOutOfBeehouse</driverClass>
+    <reportString>getting things out of a beehouse.</reportString>
+  </JobDef>
+  
 
 
 </Defs>

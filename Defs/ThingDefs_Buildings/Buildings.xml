@@ -69,15 +69,7 @@
 		<label>wooden beehouse</label>
 		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
-<comps>
-<li Class="CompProperties_Shearable">
-	  
-        <woolDef>WoolMuffalo</woolDef>
-        <shearIntervalDays>1</shearIntervalDays>
-        <woolAmount>4</woolAmount>
-      </li>
 
-</comps>
 		<graphicData>
 			<texPath>Things/Building/RB_Beehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -20,6 +20,19 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 	
+<WorkGiverDef>
+    <defName>RB_TakeThingsOutOfBeehouse</defName>
+    <label>taking things out of beehouse</label>
+    <giverClass>RimBees.WorkGiver_TakeThingsOutOfBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>take things out of beehouse</verb>
+    <gerund>taking things out of beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+	
 	
 	
 	

@@ -49,6 +49,8 @@
     <Compile Include="BeeListSetupUtility.cs" />
     <Compile Include="Building_Beehouse.cs" />
     <Compile Include="Building_TreeOakHive.cs" />
+    <Compile Include="JobDriver_TakeThingsOutOfBeehouse.cs" />
+    <Compile Include="WorkGiver_TakeThingsOutOfBeehouse.cs" />
     <Compile Include="Command_SetQueenList.cs" />
     <Compile Include="Command_SetBeeList.cs" />
     <Compile Include="JobDriver_ExtractBees.cs" />
