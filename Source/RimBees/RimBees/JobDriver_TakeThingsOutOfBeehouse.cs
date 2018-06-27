@@ -27,12 +27,19 @@ namespace RimBees
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
-            Thing newComb = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("RB_Temperate_Honeycomb", true));
-
-            GenSpawn.Spawn(newComb, buildingbeehouse.Position - GenAdj.CardinalDirections[0], buildingbeehouse.Map);
-            buildingbeehouse.BeehouseIsFull = false;
-            buildingbeehouse.tickCounter = 0;
+            yield return Toils_General.Wait(240).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch).WithProgressBarToilDelay(TargetIndex.A, false, -0.5f);
+            yield return new Toil
+            {
+                initAction = delegate
+                {
+                    Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
+                    Thing newComb = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerQueens.RandomElement().TryGetComp<CompBees>().GetComb, true));
+                    GenSpawn.Spawn(newComb, buildingbeehouse.Position - GenAdj.CardinalDirections[0], buildingbeehouse.Map);
+                    buildingbeehouse.BeehouseIsFull = false;
+                    buildingbeehouse.tickCounter = 0;
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
+            };
                 /* yield return Toils_General.Wait(200).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch).FailOn(() => !this.$this.Barrel.Fermented).WithProgressBarToilDelay(TargetIndex.A, false, -0.5f);
             yield return new Toil
             {
@@ -62,6 +69,6 @@ namespace RimBees
             Toil carryToCell = Toils_Haul.CarryHauledThingToCell(TargetIndex.C);
             yield return carryToCell;
             yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.C, carryToCell, true);*/
-        }
+            }
     }
 }

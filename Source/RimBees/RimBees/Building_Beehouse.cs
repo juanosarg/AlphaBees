@@ -19,8 +19,8 @@ namespace RimBees
         public bool BeehouseIsFull = false;
 
 
-        protected ThingOwner innerContainerDrones = null;
-        protected ThingOwner innerContainerQueens = null;
+        public ThingOwner innerContainerDrones = null;
+        public ThingOwner innerContainerQueens = null;
 
 
         protected bool contentsKnown = false;
@@ -128,9 +128,10 @@ namespace RimBees
             }
             else { str2 = "RB_BeehouseNonePresent".Translate(); }
 
-            if (!innerContainerQueens.NullOrEmpty()&& !innerContainerQueens.NullOrEmpty())
+            if (!innerContainerQueens.NullOrEmpty()|| !innerContainerQueens.NullOrEmpty())
             {
-                str3 = tickCounter.ToString();
+                //str3 = (((float)tickCounter/240)*100).ToString();
+                str3 = ((float)tickCounter / 240).ToStringPercent();
             }
             else { str3 = "RB_BeehouseCombNoProgress".Translate(); }
 
@@ -147,7 +148,6 @@ namespace RimBees
                 bool flag;
                 if (thing.holdingOwner != null)
                 {
-                Log.Message(this.innerContainerDrones.ToString(), false);
                     thing.holdingOwner.TryTransferToContainer(thing, this.innerContainerDrones, thing.stackCount, true);
                     flag = true;
                 }
@@ -213,6 +213,7 @@ namespace RimBees
 
         public virtual void EjectContents()
         {
+            //Log.Message(innerContainerDrones.RandomElement().TryGetComp<CompBees>().GetSpecies, false);
             this.innerContainerDrones.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnown = true;
         }
@@ -232,7 +233,7 @@ namespace RimBees
                 if (!BeehouseIsFull) { 
                     //Log.Message("me siento completo", false);
                     tickCounter++;
-                    if (tickCounter > 10)
+                    if (tickCounter > 239)
                     {
                         SignalBeehouseFull();
                     }
