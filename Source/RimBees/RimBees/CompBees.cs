@@ -30,6 +30,14 @@ namespace RimBees
             }
         }
 
+        public float GetCombtimedays
+        {
+            get
+            {
+                return this.Props.combtimedays;
+            }
+        }
+
 
     }
 }

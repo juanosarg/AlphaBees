@@ -18,6 +18,8 @@ namespace RimBees
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
 
+        public int ticksToDays = 240;
+
 
         public ThingOwner innerContainerDrones = null;
         public ThingOwner innerContainerQueens = null;
@@ -116,29 +118,41 @@ namespace RimBees
             string str = "";
             string str2 = "";
             string str3 = "";
+            string str4 = "";
             if (!innerContainerDrones.NullOrEmpty())
             {
-                str = innerContainerDrones.RandomElement().def.label;
+                //str = innerContainerDrones.RandomElement().def.label;
+                str = innerContainerDrones.FirstOrFallback().def.label;
+
             }
             else { str = "RB_BeehouseNonePresent".Translate(); }
 
             if (!innerContainerQueens.NullOrEmpty())
             {
-                str2 = innerContainerQueens.RandomElement().def.label;
+                str2 = innerContainerQueens.FirstOrFallback().def.label;
             }
             else { str2 = "RB_BeehouseNonePresent".Translate(); }
 
-            if (!innerContainerQueens.NullOrEmpty()|| !innerContainerQueens.NullOrEmpty())
+            if (!innerContainerDrones.NullOrEmpty()&& !innerContainerQueens.NullOrEmpty())
             {
                 //str3 = (((float)tickCounter/240)*100).ToString();
-                str3 = ((float)tickCounter / 240).ToStringPercent();
+                str3 = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
+                str4 = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
             }
-            else { str3 = "RB_BeehouseCombNoProgress".Translate(); }
+            else {
+                str3 = "RB_BeehouseCombNoProgress".Translate();
+                str4 = "";
 
+            }
+
+
+
+
+            
 
             return text + "RB_BeehouseContainsDrone".Translate() + ": " + str.CapitalizeFirst()
                 + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + str2.CapitalizeFirst() + "\n" +
-                "RB_BeehouseCombProgress".Translate() + ": "+ str3;
+                "RB_BeehouseCombProgress".Translate() + ": "+ str3 +str4;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -213,7 +227,6 @@ namespace RimBees
 
         public virtual void EjectContents()
         {
-            //Log.Message(innerContainerDrones.RandomElement().TryGetComp<CompBees>().GetSpecies, false);
             this.innerContainerDrones.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnown = true;
         }
@@ -231,9 +244,11 @@ namespace RimBees
             if(!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
                 if (!BeehouseIsFull) { 
-                    //Log.Message("me siento completo", false);
+                   // Log.Message(CalculateTheTicksAverage().ToString(), false);
+                   // Log.Message(tickCounter.ToString(), false);
+
                     tickCounter++;
-                    if (tickCounter > 239)
+                    if (tickCounter > ((ticksToDays * CalculateTheTicksAverage())-1))
                     {
                         SignalBeehouseFull();
                     }
@@ -246,6 +261,20 @@ namespace RimBees
         public void SignalBeehouseFull()
         {
             BeehouseIsFull = true;
+        }
+
+        public float CalculateTheTicksAverage()
+        {
+            if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
+            {
+                float bee1ticks = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
+                float bee2ticks = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
+                float beeticksaverage = (bee1ticks + bee2ticks) / 2;
+                return beeticksaverage;
+
+            }
+            else return 0;
+               
         }
 
     }

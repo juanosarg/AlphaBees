@@ -10,7 +10,8 @@ namespace RimBees
     {
         private const TargetIndex BarrelInd = TargetIndex.A;
 
-      
+
+        private Random rand = new Random();
 
         private const int Duration = 200;
 
@@ -19,6 +20,25 @@ namespace RimBees
         public override bool TryMakePreToilReservations()
         {
             return this.pawn.Reserve(this.job.GetTarget(TargetIndex.A).Thing, this.job, 1, -1, null);
+        }
+
+        public ThingDef DecideRandomComb()
+        {
+            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
+            ThingDef resultingComb;
+           
+            int randomNumber = rand.Next(1, 3);
+
+            if (randomNumber == 1)
+            {
+                resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
+            }
+            else {
+                resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
+
+            }
+
+            return resultingComb; 
         }
 
         [DebuggerHidden]
@@ -33,7 +53,7 @@ namespace RimBees
                 initAction = delegate
                 {
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
-                    Thing newComb = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerQueens.RandomElement().TryGetComp<CompBees>().GetComb, true));
+                    Thing newComb = ThingMaker.MakeThing(DecideRandomComb());
                     GenSpawn.Spawn(newComb, buildingbeehouse.Position - GenAdj.CardinalDirections[0], buildingbeehouse.Map);
                     buildingbeehouse.BeehouseIsFull = false;
                     buildingbeehouse.tickCounter = 0;

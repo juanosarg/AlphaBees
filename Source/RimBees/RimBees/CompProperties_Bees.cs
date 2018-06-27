@@ -7,6 +7,7 @@ namespace RimBees
 
         public string species = "temperate";
         public string comb = "RB_Temperate_Honeycomb";
+        public float combtimedays = 1;
 
 
 
