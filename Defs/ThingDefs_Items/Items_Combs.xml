@@ -28,14 +28,35 @@
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Mild_Honeycomb</defName>
+    <label>mild honeycomb</label>
+    <description>This is a honeycomb produced by mild bees. Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Mild_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
     <defName>RB_Arctic_Honeycomb</defName>
     <label>arctic honeycomb</label>
-    <description>This is a honeycomb produced by temperate bees. Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Arctic_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Icy_Honeycomb</defName>
+    <label>arctic honeycomb</label>
+    <description>This is a honeycomb produced by icy bees. Icy bees have been genetically modified to operate at frigid temperatures. Their icy honeycombs can be used to extract honey and frost. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Icy_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
 
  
   
