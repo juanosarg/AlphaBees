@@ -318,4 +318,101 @@
 		</comps>
 	</ThingDef> 
 
+	<!--=============== Desert ====================-->
+
+	<ThingDef ParentName="RB_BeeBase">
+		<defName>RB_Bee_Desert_Drone</defName>
+		<label>desert drone</label>
+		<description>Desert bees grow in extremely dry and hot biomes. They need almost no water to survive, but they produce very little honey as a result.
+	\n\nBee Traits:\n\nProduction time: 40 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 25ºC\nMaximum temperature: 100ºC</description>    
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Bees/RB_Bee_Desert_Drone</texPath>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>desert</species>
+				<comb>RB_Desert_Honeycomb</comb>
+				<combtimedays>1.66</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>25</tempMin>
+				<tempMax>100</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeeBase">
+		<defName>RB_Bee_Desert_Queen</defName>
+		<label>desert queen</label>
+		<description>Desert bees grow in extremely dry and hot biomes. They need almost no water to survive, but they produce very little honey as a result.
+	\n\nBee Traits:\n\nProduction time: 40 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 25ºC\nMaximum temperature: 100ºC</description>        
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Bees/RB_Bee_Desert_Queen</texPath>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>desert</species>
+				<comb>RB_Desert_Honeycomb</comb>
+				<combtimedays>1.66</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>25</tempMin>
+				<tempMax>100</tempMax>
+			</li>   
+		</comps>
+	</ThingDef> 
+	
+		<!--=============== Arid ====================-->
+
+	<ThingDef ParentName="RB_BeeBase">
+		<defName>RB_Bee_Arid_Drone</defName>
+		<label>arid drone</label>
+		<description>Arid bees are a weird result of bioengineering run amok. Their tiny bodies seem to be fused with a silicon lattice, making them resistant to extreme temperatures.
+	\n\nBee Traits:\n\nProduction time: 28 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 20ºC\nMaximum temperature: 150ºC</description>    
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Bees/RB_Bee_Arid_Drone</texPath>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>arid</species>
+				<comb>RB_Arid_Honeycomb</comb>
+				<combtimedays>1.16</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>20</tempMin>
+				<tempMax>150</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeeBase">
+		<defName>RB_Bee_Arid_Queen</defName>
+		<label>arid queen</label>
+		<description>Arid bees are a weird result of bioengineering run amok. Their tiny bodies seem to be fused with a silicon lattice, making them resistant to extreme temperatures.
+	\n\nBee Traits:\n\nProduction time: 28 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 20ºC\nMaximum temperature: 150ºC</description>       
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Bees/RB_Bee_Arid_Queen</texPath>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>arid</species>
+				<comb>RB_Arid_Honeycomb</comb>
+				<combtimedays>1.16</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>20</tempMin>
+				<tempMax>150</tempMax>
+			</li>   
+		</comps>
+	</ThingDef> 
+	
+	
 </Defs>

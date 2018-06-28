@@ -18,6 +18,8 @@ namespace RimBees
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
 
+        public float growOptimalGlow = 0.3f;
+
         public int ticksToDays = 240;
 
 
@@ -115,44 +117,53 @@ namespace RimBees
         public override string GetInspectString()
         {
             string text = base.GetInspectString();
-            string str = "";
-            string str2 = "";
-            string str3 = "";
-            string str4 = "";
+            string strContentDrones = "";
+            string strContentQueens = "";
+            string strPercentProgress = "";
+            string strDaysProgress = "";
+            string strStoppedBecauseNight = " ";
+            string strStoppedBecauseRain = " ";
+
             if (!innerContainerDrones.NullOrEmpty())
             {
                 //str = innerContainerDrones.RandomElement().def.label;
-                str = innerContainerDrones.FirstOrFallback().def.label;
+                strContentDrones = innerContainerDrones.FirstOrFallback().def.label;
 
             }
-            else { str = "RB_BeehouseNonePresent".Translate(); }
+            else { strContentDrones = "RB_BeehouseNonePresent".Translate(); }
 
             if (!innerContainerQueens.NullOrEmpty())
             {
-                str2 = innerContainerQueens.FirstOrFallback().def.label;
+                strContentQueens = innerContainerQueens.FirstOrFallback().def.label;
             }
-            else { str2 = "RB_BeehouseNonePresent".Translate(); }
+            else { strContentQueens = "RB_BeehouseNonePresent".Translate(); }
 
             if (!innerContainerDrones.NullOrEmpty()&& !innerContainerQueens.NullOrEmpty())
             {
                 //str3 = (((float)tickCounter/240)*100).ToString();
-                str3 = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
-                str4 = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
+                strPercentProgress = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
+                strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
+                if (!CheckLightLevels())
+                {
+                    strStoppedBecauseNight = "RB_BeehouseCombNoProgressNight".Translate();
+                }
+                if (!CheckRainLevels())
+                {
+                    strStoppedBecauseRain = "RB_BeehouseCombNoProgressRain".Translate();
+                }
+
             }
             else {
-                str3 = "RB_BeehouseCombNoProgress".Translate();
-                str4 = "";
+                strPercentProgress = "RB_BeehouseCombNoProgress".Translate();
+                strDaysProgress = "";
 
             }
+      
 
-
-
-
-            
-
-            return text + "RB_BeehouseContainsDrone".Translate() + ": " + str.CapitalizeFirst()
-                + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + str2.CapitalizeFirst() + "\n" +
-                "RB_BeehouseCombProgress".Translate() + ": "+ str3 +str4;
+            return text + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
+                + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
+                "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + "\n" + strStoppedBecauseNight
+                + "\n" + strStoppedBecauseRain;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -243,20 +254,84 @@ namespace RimBees
             base.TickRare();
             if(!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
-                if (!BeehouseIsFull) { 
-                   // Log.Message(CalculateTheTicksAverage().ToString(), false);
-                   // Log.Message(tickCounter.ToString(), false);
+                if (!BeehouseIsFull) {
 
-                    tickCounter++;
-                    if (tickCounter > ((ticksToDays * CalculateTheTicksAverage())-1))
-                    {
-                        SignalBeehouseFull();
+
+                    if (CheckLightLevels()) {
+                        if (CheckRainLevels()) {
+                            if (CheckTemperatureLevels()) {
+                                if (CheckPlantsNearby())
+                                {
+                                    tickCounter++;
+                                    if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
+                                    {
+                                        SignalBeehouseFull();
+                                    }
+                                }
+                            }
+
+                        }
+
                     }
+
                 }
 
         }
 
         }
+
+        public bool CheckLightLevels()
+        {
+            bool bee1nocturnal = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
+            bool bee2nocturnal = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
+            if (bee1nocturnal && bee2nocturnal)
+            {
+                return true;
+            } else
+            {
+                float num = this.Map.glowGrid.GameGlowAt(this.Position, false);
+                if (num >= growOptimalGlow)
+                {
+                    return true;
+
+                }
+                else return false;
+
+            }
+
+        }
+
+        public bool CheckRainLevels()
+        {
+            bool bee1pluviophile = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
+            bool bee2pluviophile = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
+            if (bee1pluviophile && bee2pluviophile)
+            {
+                return true;
+            }
+            else
+            {
+                bool isWeatherRain = (this.Map.weatherManager.curWeather.defName != "Clear")&& (this.Map.weatherManager.curWeather.defName != "Fog")&& (this.Map.weatherManager.curWeather.defName != "DryThunderstorm");
+                if (isWeatherRain)
+                {
+                    return false;
+
+                }
+                else return true;
+
+            }
+        }
+
+        public bool CheckTemperatureLevels()
+        {
+            return true;
+        }
+
+        public bool CheckPlantsNearby()
+        {
+            return true;
+        }
+
 
         public void SignalBeehouseFull()
         {

@@ -20,6 +20,10 @@
   <RB_BeehouseNonePresent>None present</RB_BeehouseNonePresent>
   <RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress>
   <RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
+  <RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
+  <RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
+
+
 
 
 
