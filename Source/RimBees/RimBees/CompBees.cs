@@ -38,6 +38,46 @@ namespace RimBees
             }
         }
 
+        public bool GetNocturnal
+        {
+            get
+            {
+                return this.Props.nocturnal;
+            }
+        }
+
+        public bool GetPluviophile
+        {
+            get
+            {
+                return this.Props.pluviophile;
+            }
+        }
+
+        public string GetWeirdPlant
+        {
+            get
+            {
+                return this.Props.weirdplantneeded;
+            }
+        }
+
+        public int GetTempMin
+        {
+            get
+            {
+                return this.Props.tempMin;
+            }
+        }
+
+        public int GetTempMax
+        {
+            get
+            {
+                return this.Props.tempMax;
+            }
+        }
+
 
     }
 }

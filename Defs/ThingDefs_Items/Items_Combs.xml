@@ -57,7 +57,45 @@
     </graphicData>	
 </ThingDef>
 
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Jungle_Honeycomb</defName>
+    <label>jungle honeycomb</label>
+    <description>This is a honeycomb produced by jungle bees. This comb has a pungent smell, saturated with lots of organic compounds extracted from the exotic flora of the tropical rainforests. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Jungle_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
 
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Swamp_Honeycomb</defName>
+    <label>swamp honeycomb</label>
+    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Desert_Honeycomb</defName>
+    <label>desert honeycomb</label>
+    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Arid_Honeycomb</defName>
+    <label>arid honeycomb</label>
+    <description>This is a honeycomb produced by arid bees. Since arid bees have adapted to extremely dry climates, this comb seems to be almost devoid of humidity, with low honey amounts. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Arid_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
  
   
   
