@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <ThingDef ParentName="ResourceBase">
-    <defName>RB_WildHive_Temperate</defName>
-    <label>wild beehive, temperate</label>
+ <ThingDef ParentName="ResourceBase" Name="RB_WildHiveBase" Abstract="True">
+   
     <description>This beehive needs to be carefully manipulated to extract the bees without harming them. A beekeeping workbench is needed for this delicate process.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/RB_WildHive</texPath>
+	 
     </graphicData>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
@@ -31,7 +30,65 @@
 			</li>
 	</comps>
 </ThingDef>
+
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Temperate</defName>
+    <label>wild beehive, temperate</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Temperate</texPath>
+    </graphicData>
+</ThingDef>
+
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Mild</defName>
+    <label>wild beehive, mild</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Mild</texPath>
+    </graphicData>
+</ThingDef>
   
+  <ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Arctic</defName>
+    <label>wild beehive, arctic</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Arctic</texPath>
+    </graphicData>
+</ThingDef>
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Icy</defName>
+    <label>wild beehive, icy</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Icy</texPath>
+    </graphicData>
+</ThingDef>
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Jungle</defName>
+    <label>wild beehive, jungle</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Jungle</texPath>
+    </graphicData>
+</ThingDef>
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Swamp</defName>
+    <label>wild beehive, swamp</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Swamp</texPath>
+    </graphicData>
+</ThingDef>
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Desert</defName>
+    <label>wild beehive, desert</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Desert</texPath>
+    </graphicData>
+</ThingDef>
+<ThingDef ParentName="RB_WildHiveBase">
+    <defName>RB_WildHive_Arid</defName>
+    <label>wild beehive, arid</label>
+    <graphicData>
+	  <texPath>Things/Item/Hives/RB_WildHive_Arid</texPath>
+    </graphicData>
+</ThingDef>
   
   
 </Defs>

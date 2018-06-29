@@ -4,11 +4,7 @@
 
   <!--============= Extracting Bees ===============-->
 
-  <JobDef>
-    <defName>GU_ExtractBeesJob</defName>
-    <driverClass>RimBees.JobDriver_ExtractBees</driverClass>
-    <reportString>extracting bees and combs.</reportString>
-  </JobDef>
+
   
     <JobDef>
     <defName>RB_InsertingBees</defName>

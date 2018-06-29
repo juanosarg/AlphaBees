@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<!--============================ Trees ============================-->
+
+  <ThingDef ParentName="PlantBase"  Abstract="True" Name="RB_TreeHiveBase">
+   	<thingClass>RimBees.Building_TreeHive</thingClass>
+    <selectable>True</selectable>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+	    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+		</ingestible>
+    <plant>
+	  <growDays>0.0001</growDays>
+	        <fertilityMin>0</fertilityMin>
+
+	  <lifespanFraction>0</lifespanFraction>
+      <harvestAfterGrowth>-1</harvestAfterGrowth>
+	  <harvestTag>Standard</harvestTag>
+	  <dieIfLeafless>false</dieIfLeafless>
+      <harvestWork>1000</harvestWork>
+      <harvestYield>1</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+	  <visualSizeRange>
+        <min>2.0</min>
+        <max>2.0</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Temperate</defName>
+    <label>oak tree with hive</label>
+    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures. A huge temperate beehive seems to be attached to this tree's branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Temperate</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Temperate</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>Plant_TreeOak</species>
+		</li>   
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Mild</defName>
+    <label>poplar tree with hive</label>
+    <description>A softwood tree that grows very fast. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees. A mild beehive seems to be attached to this tree's branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Mild</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Mild</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>Plant_TreePoplar</species>
+		</li>   
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Arctic</defName>
+    <label>burned tree with hive</label>
+    <description>A burned tree stump. It's ugly and yields no usable wood. An arctic beehive seems to be attached to this tree's branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Arctic</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Arctic</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>BurnedTree</species>
+		</li>   
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Icy</defName>
+    <label>ice crystal with hive</label>
+    <description>This is a huge ice crystal formation. An icy beehive seems to be attached to it.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Icy</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Icy</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>None</species>
+		</li>   
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Jungle</defName>
+    <label>cecropia tree with hive</label>
+    <description>One of the most common rainforest trees. Cecropia grows very fast, but yields little usable wood. A jungle beehive seems to be attached to this tree's branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Jungle</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Jungle</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>Plant_TreeCecropia</species>
+		</li>   
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Swamp</defName>
+    <label>willow tree with hive</label>
+    <description>One of the fastest growing shade trees, willows provide a beautiful, leafy canopy. It doesn't yield much usable wood. A swamp beehive seems to be attached to this tree's branches.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Swamp</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Swamp</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>Plant_TreeWillow</species>
+		</li>   
+	</comps>
+  </ThingDef>  
+  
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Desert</defName>
+    <label>saguaro cactus with hive</label>
+    <description>A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood. A desert beehive seems to be attached to this cactus.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Desert</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Desert</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>Plant_SaguaroCactus</species>
+		</li>   
+	</comps>
+  </ThingDef>  
+  
+    
+  <ThingDef ParentName="RB_TreeHiveBase">
+    <defName>RB_Plant_Hive_Arid</defName>
+    <label>rock formation with hive</label>
+    <description>A large rock formation, loose enough to be useless for construction purposes. An arid beehive seems to be attached to it.</description>
+    <graphicData>
+      <texPath>Things/Plant/RB_Plant_Hive_Arid</texPath>
+    </graphicData>
+    <plant>
+      <harvestedThingDef>RB_WildHive_Arid</harvestedThingDef> 
+    </plant>
+	<comps>			
+		<li Class="RimBees.CompProperties_TreeHive">
+			<species>None</species>
+		</li>   
+	</comps>
+  </ThingDef>  
+
+</Defs>
