@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>RB_Beeswax</defName>
+    <label>beeswax</label>
+    <description>Beeswax is a natural wax produced by honey bees. Beeswax has many and varied uses. Primarily, it is used by the bees in making their honeycombs, and it can be used in the production of food, cosmetics, and pharmaceuticals, as well as candles.</description>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_Beeswax</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.6</Flammability>
+	  <DeteriorationRate>2.0</DeteriorationRate>
+	</statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  
+</Defs>

@@ -24,12 +24,8 @@
   <RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
   <RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
 
+  <GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
 
-
-
-
-
-  
   <!-- Bee Tags -->
   
   <RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>

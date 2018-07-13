@@ -77,7 +77,7 @@
   <ThingDef ParentName="RB_TreeHiveBase">
     <defName>RB_Plant_Hive_Arctic</defName>
     <label>burned tree with hive</label>
-    <description>A burned tree stump. It's ugly and yields no usable wood. An arctic beehive seems to be attached to this tree's branches.</description>
+    <description>A burned tree stump with some dead branches. It's ugly and yields no usable wood. An arctic beehive seems to be attached to this tree's branches.</description>
     <graphicData>
       <texPath>Things/Plant/RB_Plant_Hive_Arctic</texPath>
     </graphicData>
@@ -93,8 +93,8 @@
   
   <ThingDef ParentName="RB_TreeHiveBase">
     <defName>RB_Plant_Hive_Icy</defName>
-    <label>ice crystal with hive</label>
-    <description>This is a huge ice crystal formation. An icy beehive seems to be attached to it.</description>
+    <label>dead tree with hive</label>
+    <description>This is a dead tree, killed by extremely cold temperatures. An icy beehive seems to be attached to it.</description>
     <graphicData>
       <texPath>Things/Plant/RB_Plant_Hive_Icy</texPath>
     </graphicData>
@@ -103,7 +103,7 @@
     </plant>
 	<comps>			
 		<li Class="RimBees.CompProperties_TreeHive">
-			<species>None</species>
+			<species>BurnedTree</species>
 		</li>   
 	</comps>
   </ThingDef>
@@ -162,8 +162,8 @@
     
   <ThingDef ParentName="RB_TreeHiveBase">
     <defName>RB_Plant_Hive_Arid</defName>
-    <label>rock formation with hive</label>
-    <description>A large rock formation, loose enough to be useless for construction purposes. An arid beehive seems to be attached to it.</description>
+    <label>saguaro cactus with hive</label>
+    <description>A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood. An arid beehive seems to be attached to it.</description>
     <graphicData>
       <texPath>Things/Plant/RB_Plant_Hive_Arid</texPath>
     </graphicData>
@@ -172,7 +172,7 @@
     </plant>
 	<comps>			
 		<li Class="RimBees.CompProperties_TreeHive">
-			<species>None</species>
+			<species>Plant_SaguaroCactus</species>
 		</li>   
 	</comps>
   </ThingDef>  

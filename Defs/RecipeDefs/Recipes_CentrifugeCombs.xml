@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_CentrifugeTemperateComb</defName>
+		<label>extract honey and wax from temperate comb</label>
+		<description>Centrifuges a temperate comb to extract honey and wax</description>
+		<jobString>Extracting honey and wax</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Temperate_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Temperate_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<RB_Beeswax>1</RB_Beeswax>
+			
+		</products>
+		<skillRequirements>
+			<Animals>3</Animals>
+		</skillRequirements>
+	</RecipeDef>
+	
+	
+	
+</Defs>
