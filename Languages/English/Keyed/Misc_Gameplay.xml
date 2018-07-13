@@ -22,6 +22,8 @@
   <RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
   <RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
   <RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
+  <RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
+
 
 
 

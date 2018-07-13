@@ -123,6 +123,8 @@ namespace RimBees
             string strDaysProgress = "";
             string strStoppedBecauseNight = " ";
             string strStoppedBecauseRain = " ";
+            string strStoppedBecauseTemperature = " ";
+
 
             if (!innerContainerDrones.NullOrEmpty())
             {
@@ -151,6 +153,10 @@ namespace RimBees
                 {
                     strStoppedBecauseRain = "RB_BeehouseCombNoProgressRain".Translate();
                 }
+                if (!CheckTemperatureLevels())
+                {
+                    strStoppedBecauseTemperature = "RB_BeehouseCombNoProgressTemperature".Translate();
+                }
 
             }
             else {
@@ -163,7 +169,7 @@ namespace RimBees
             return text + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
                 + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
                 "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + "\n" + strStoppedBecauseNight
-                + "\n" + strStoppedBecauseRain;
+                + "\n" + strStoppedBecauseRain + "\n" + strStoppedBecauseTemperature;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -324,12 +330,35 @@ namespace RimBees
 
         public bool CheckTemperatureLevels()
         {
-            return true;
+            int bee1tempMin = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
+            int bee2tempMin = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
+
+            int bee1tempMax = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetTempMax;
+            int bee2tempMax = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetTempMax;
+
+            float currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
+
+            if ((currentTempInMap > Mathf.Max(bee1tempMin, bee2tempMin)) && (currentTempInMap < Mathf.Min(bee1tempMax, bee2tempMax)))
+            {
+                return true;
+
+            }
+            else return false;
+
         }
 
         public bool CheckPlantsNearby()
         {
-            return true;
+
+            string bee1plantNeeded = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
+            string bee2plantNeeded = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
+
+            if ((bee1plantNeeded!="no") || (bee2plantNeeded != "no"))
+            {
+
+                return false;
+
+            }else return true;
         }
 
 
