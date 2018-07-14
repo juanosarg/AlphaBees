@@ -40,6 +40,8 @@
 		<skillRequirements>
 			<Animals>3</Animals>
 		</skillRequirements>
+		    <workSkill>Animals</workSkill>
+
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -80,9 +82,11 @@
 		<skillRequirements>
 			<Animals>3</Animals>
 		</skillRequirements>
+		    <workSkill>Animals</workSkill>
+
 	</RecipeDef>
 	
-	<RecipeDef>
+<!--	<RecipeDef>
 		<defName>RB_ExtracArcticHive</defName>
 		<label>extract from arctic hive</label>
 		<description>Gently extract bees, queen bees and combs from a wild arctic beehive</description>
@@ -320,6 +324,6 @@
 		<skillRequirements>
 			<Animals>3</Animals>
 		</skillRequirements>
-	</RecipeDef>	
+	</RecipeDef>	-->
 	
 </Defs>

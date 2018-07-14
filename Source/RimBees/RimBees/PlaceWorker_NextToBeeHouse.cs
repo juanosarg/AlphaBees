@@ -11,24 +11,24 @@ namespace RimBees
         {
             for (int i = 0; i < 4; i++)
             {
-                IntVec3 c = loc;
-                if (i == 0)
-                {
+                //IntVec3 c = loc;
+                IntVec3 c = loc + GenAdj.CardinalDirections[i];
+                 if (i == 0)
+                 {
+                     c = loc;
+                 }
+                 else if (i == 1)
+                 {
                     c = loc;
-                }
-                else if (i == 1)
-                {
-                    c = loc + GenAdj.CardinalDirections[1] + GenAdj.CardinalDirections[1];
 
-                }
-                else if (i == 2)
-                {
-                    c = loc;
-                }
-                else if (i == 3)
-                {
-                    c = loc + GenAdj.CardinalDirections[3];
-
+                 }
+                 else if (i == 2)
+                 {
+                     c = loc;
+                 }
+                 else if (i == 3)
+                 {
+                    c = loc + GenAdj.CardinalDirections[3]; ;
                 }
                 if (c.InBounds(map))
                 {

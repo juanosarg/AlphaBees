@@ -150,7 +150,7 @@
 		<costList>
 			<WoodLog>50</WoodLog>
 		</costList>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
 
@@ -164,6 +164,8 @@
 		
 		<building>
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
 		</building>
 		<tickerType>Rare</tickerType>
 

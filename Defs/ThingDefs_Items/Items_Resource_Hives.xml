@@ -47,7 +47,7 @@
     </graphicData>
 </ThingDef>
   
-  <ThingDef ParentName="RB_WildHiveBase">
+ <!-- <ThingDef ParentName="RB_WildHiveBase">
     <defName>RB_WildHive_Arctic</defName>
     <label>wild beehive, arctic</label>
     <graphicData>
@@ -88,7 +88,7 @@
     <graphicData>
 	  <texPath>Things/Item/Hives/RB_WildHive_Arid</texPath>
     </graphicData>
-</ThingDef>
+</ThingDef>-->
   
   
 </Defs>
