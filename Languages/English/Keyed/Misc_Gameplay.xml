@@ -25,6 +25,8 @@
   <RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
 
   <GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
+  <GU_NoAdjacentBeehouse>Warning: this brood chamber has no adjacent beehouse</GU_NoAdjacentBeehouse>
+
 
   <!-- Bee Tags -->
   

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BeeListSetupUtility.cs" />
     <Compile Include="Building_Beehouse.cs" />
+    <Compile Include="Building_BroodChamber.cs" />
     <Compile Include="Building_TreeHive.cs" />
     <Compile Include="CompTreeHive.cs" />
     <Compile Include="CompBees.cs" />

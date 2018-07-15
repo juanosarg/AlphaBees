@@ -182,7 +182,8 @@
 		<defName>RB_BroodChamber</defName>
 		<label>brood chamber</label>
 		<description>The brood chamber is the nursery area of the beehouse, where new bees develop and mature. This is also where hybrid bees will appear.</description>
-		
+				<thingClass>RimBees.Building_BroodChamber</thingClass>
+
 		<graphicData>
 			<texPath>Things/Building/RB_Beehouse_BroodChamber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

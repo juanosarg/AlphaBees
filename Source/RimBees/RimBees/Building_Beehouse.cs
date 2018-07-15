@@ -17,6 +17,7 @@ namespace RimBees
 
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
+        public bool BeehouseIsRunning = false;
 
         public float growOptimalGlow = 0.3f;
 
@@ -55,6 +56,8 @@ namespace RimBees
             Scribe_Values.Look<bool>(ref this.contentsKnownQueens, "contentsKnownQueens", false, false);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
+
 
         }
 
@@ -268,21 +271,42 @@ namespace RimBees
                             if (CheckTemperatureLevels()) {
                                 if (CheckPlantsNearby())
                                 {
+                                    BeehouseIsRunning = true;
                                     tickCounter++;
                                     if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
                                     {
                                         SignalBeehouseFull();
                                     }
                                 }
+                                else
+                                {
+                                    BeehouseIsRunning = false;
+                                }
+                            }
+                            else
+                            {
+                                BeehouseIsRunning = false;
                             }
 
                         }
+                        else
+                        {
+                            BeehouseIsRunning = false;
+                        }
 
+                    }
+                    else
+                    {
+                        BeehouseIsRunning = false;
                     }
 
                 }
 
-        }
+            }
+            else
+            {
+                BeehouseIsRunning = false;
+            }
 
         }
 
@@ -379,6 +403,14 @@ namespace RimBees
             }
             else return 0;
                
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+
+            EjectContents();
+            EjectContentsQueens();
+            base.Destroy(mode);
         }
 
     }

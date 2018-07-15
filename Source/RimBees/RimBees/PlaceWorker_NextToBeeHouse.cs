@@ -28,7 +28,7 @@ namespace RimBees
                  }
                  else if (i == 3)
                  {
-                    c = loc + GenAdj.CardinalDirections[3]; ;
+                    c = loc + GenAdj.CardinalDirections[3]; 
                 }
                 if (c.InBounds(map))
                 {
