@@ -55,6 +55,7 @@
     <Compile Include="CompProperties_TreeHive.cs" />
     <Compile Include="CompProperties_Bees.cs" />
     <Compile Include="JobDriver_TakeThingsOutOfBeehouse.cs" />
+    <Compile Include="PlaceWorker_NextToBeeHouseLeft.cs" />
     <Compile Include="PlaceWorker_NextToBeeHouse.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfBeehouse.cs" />
     <Compile Include="Command_SetQueenList.cs" />

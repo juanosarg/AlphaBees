@@ -26,6 +26,10 @@
 
   <GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
   <GU_NoAdjacentBeehouse>Warning: this brood chamber has no adjacent beehouse</GU_NoAdjacentBeehouse>
+  <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
+  <GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
+
+
 
 
   <!-- Bee Tags -->
