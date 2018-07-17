@@ -15,6 +15,7 @@ namespace RimBees
         public int tickCounter = 0;
         public int ticksToDays = 240;
         public int daysTotal = 3;
+        public string hybridizedBee = "";
         public bool hybridizationChamberFull = false;
         private System.Random rand = new System.Random();
 
@@ -34,9 +35,11 @@ namespace RimBees
               
             Scribe_Values.Look<bool>(ref this.hybridizationChamberFull, "hybridizationChamberFull", false, false);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
+            Scribe_Values.Look<string>(ref this.hybridizedBee, "hybridizedBee", "", false);
+
         }
 
-       
+
         public Building_Beehouse GetAdjacentBeehouse()
         {
             Building_Beehouse result;
@@ -75,7 +78,8 @@ namespace RimBees
                 tickCounter++;
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))
                 {
-                    if (HybridizationChecker() != "")
+                    hybridizedBee = HybridizationChecker();
+                    if (hybridizedBee != "")
                     {
                         SignalHybridizationChamberFull();
                         RandomizeDays();
@@ -99,8 +103,49 @@ namespace RimBees
 
         public string HybridizationChecker()
         {
+            string beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+            string beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+
+            if (beeDrone == "Temperate")
+            {
+                
+                if (beeQueen == "Mild")
+                {
+                    return "Hybrid";
+                }
+                if (beeQueen == "Hybrid")
+                {
+                    return "Amalgam";
+                }
+            }
+
+            if (beeDrone == "Mild") {
+                if (beeQueen == "Temperate")
+                {
+                    return "Hybrid";
+                }
+
+                if (beeQueen == "Hybrid")
+                {
+                    return "Amalgam";
+                }
+            }
+
+            if (beeDrone == "Hybrid")
+            {
+                if (beeQueen == "Temperate")
+                {
+                    return "Amalgam";
+                }
+                if (beeQueen == "Mild")
+                {
+                    return "Amalgam";
+                }
+             
+            }
+
 
             return "";
-        }
+         }
     }
 }
