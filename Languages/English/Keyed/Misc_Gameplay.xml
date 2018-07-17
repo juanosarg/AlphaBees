@@ -28,6 +28,15 @@
   <GU_NoAdjacentBeehouse>Warning: this brood chamber has no adjacent beehouse</GU_NoAdjacentBeehouse>
   <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
   <GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
+  <GU_BroodChamberProgress>Progress:</GU_BroodChamberProgress>
+  
+  <GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
+  <GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
+  <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
+  <GU_AdjacentBeehouseRunningHybridization>The hybridization chamber is attached to a beehouse, and will occasionally produce mutant queens if possible</GU_AdjacentBeehouseRunningHybridization>
+  <GU_HybridMutationsRunning>Mutations are random, happening between 1 to 4 days (currently running)</GU_HybridMutationsRunning>
+  <GU_HybridMutationsStopped>Mutations are random, happening between 1 to 4 days (currently stopped)</GU_HybridMutationsStopped>
+
 
 
 

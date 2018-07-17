@@ -1,7 +1,7 @@
 ﻿
 
 using Verse;
-
+using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -319,8 +319,9 @@ namespace RimBees
                 return true;
             } else
             {
-                float num = this.Map.glowGrid.GameGlowAt(this.Position, false);
-                if (num >= growOptimalGlow)
+                int currentHour = GenLocalDate.HourInteger(this.Map);
+                //float num = this.Map.glowGrid.GameGlowAt(this.Position, false);
+                if (currentHour>=5&& currentHour<=22)
                 {
                     return true;
 

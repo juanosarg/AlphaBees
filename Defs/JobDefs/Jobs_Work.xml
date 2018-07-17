@@ -18,10 +18,16 @@
     <reportString>inserting queen bees.</reportString>
   </JobDef>
   
-        <JobDef>
+  <JobDef>
     <defName>RB_TakeThingsOutOfBeehouseJob</defName>
     <driverClass>RimBees.JobDriver_TakeThingsOutOfBeehouse</driverClass>
     <reportString>getting things out of a beehouse.</reportString>
+  </JobDef>
+  
+   <JobDef>
+    <defName>RB_TakeThingsOutOfBroodChamberJob</defName>
+    <driverClass>RimBees.JobDriver_TakeThingsOutOfBroodChamber</driverClass>
+    <reportString>getting bees out of a brood chamber.</reportString>
   </JobDef>
   
 

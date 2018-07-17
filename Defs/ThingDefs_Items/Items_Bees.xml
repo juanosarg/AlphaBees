@@ -39,7 +39,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>temperate</species>
+				<species>Temperate</species>
 				<comb>RB_Temperate_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -63,7 +63,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>temperate</species>
+				<species>Temperate</species>
 				<comb>RB_Temperate_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -89,7 +89,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>mild</species>
+				<species>Mild</species>
 				<comb>RB_Mild_Honeycomb</comb>
 				<combtimedays>.75</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -114,7 +114,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>mild</species>
+				<species>Mild</species>
 				<comb>RB_Mild_Honeycomb</comb>
 				<combtimedays>.75</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -139,7 +139,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arctic</species>
+				<species>Arctic</species>
 				<comb>RB_Arctic_Honeycomb</comb>
 				<combtimedays>1.25</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -162,7 +162,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arctic</species>
+				<species>Arctic</species>
 				<comb>RB_Arctic_Honeycomb</comb>
 				<combtimedays>1.25</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -187,8 +187,8 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arctic</species>
-				<comb>RB_Arctic_Honeycomb</comb>
+				<species>Icy</species>
+				<comb>RB_Icy_Honeycomb</comb>
 				<combtimedays>1.45</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
@@ -210,8 +210,8 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arctic</species>
-				<comb>RB_Arctic_Honeycomb</comb>
+				<species>Icy</species>
+				<comb>RB_Icy_Honeycomb</comb>
 				<combtimedays>1.45</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
@@ -235,7 +235,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>jungle</species>
+				<species>Jungle</species>
 				<comb>RB_Jungle_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -258,7 +258,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>jungle</species>
+				<species>Jungle</species>
 				<comb>RB_Jungle_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -283,7 +283,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>swamp</species>
+				<species>Swamp</species>
 				<comb>RB_Swamp_Honeycomb</comb>
 				<combtimedays>1.25</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -306,7 +306,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>swamp</species>
+				<species>Swamp</species>
 				<comb>RB_Swamp_Honeycomb</comb>
 				<combtimedays>1.25</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -331,7 +331,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>desert</species>
+				<species>Desert</species>
 				<comb>RB_Desert_Honeycomb</comb>
 				<combtimedays>1.66</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -354,7 +354,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>desert</species>
+				<species>Desert</species>
 				<comb>RB_Desert_Honeycomb</comb>
 				<combtimedays>1.66</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -379,7 +379,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arid</species>
+				<species>Arid</species>
 				<comb>RB_Arid_Honeycomb</comb>
 				<combtimedays>1.16</combtimedays>
 				<nocturnal>false</nocturnal>
@@ -402,7 +402,7 @@
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>arid</species>
+				<species>Arid</species>
 				<comb>RB_Arid_Honeycomb</comb>
 				<combtimedays>1.16</combtimedays>
 				<nocturnal>false</nocturnal>

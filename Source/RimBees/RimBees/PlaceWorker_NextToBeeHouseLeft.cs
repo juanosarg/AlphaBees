@@ -48,7 +48,7 @@ namespace RimBees
                     }
                 }
             }
-            return "GU_PlaceNextToBeeHouse".Translate();
+            return "GU_PlaceNextToBeeHouseLeft".Translate();
         }
     }
 }
