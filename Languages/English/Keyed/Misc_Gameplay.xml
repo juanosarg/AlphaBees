@@ -33,9 +33,12 @@
   <GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
   <GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
   <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
-  <GU_AdjacentBeehouseRunningHybridization>The hybridization chamber is attached to a beehouse, and will occasionally produce mutant queens if possible</GU_AdjacentBeehouseRunningHybridization>
-  <GU_HybridMutationsRunning>Mutations are random, happening between 1 to 4 days (currently running)</GU_HybridMutationsRunning>
-  <GU_HybridMutationsStopped>Mutations are random, happening between 1 to 4 days (currently stopped)</GU_HybridMutationsStopped>
+  <GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible</GU_AdjacentBeehouseRunningHybridization>
+  <GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
+  <GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
+  <RB_NoHybrid>A new mutant bee has been created in a hybridization chamber!</RB_NoHybrid>
+  <RB_Hybrid>This combination of bees produces no mutations. You should consider changing them!</RB_Hybrid>
+
 
 
 
@@ -44,10 +47,16 @@
   <!-- Bee Tags -->
   
   <RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>
-  <RB_Arctic_Drone_Tag>Arctic Drone</RB_Arctic_Drone_Tag>
+  <RB_Mild_Drone_Tag>Mild Drone</RB_Mild_Drone_Tag>
+  <RB_Hybrid_Drone_Tag>Hybrid Drone</RB_Hybrid_Drone_Tag>
+  <RB_Amalgam_Drone_Tag>Amalgam Drone</RB_Amalgam_Drone_Tag>
 
   <RB_Temperate_Queen_Tag>Temperate Queen</RB_Temperate_Queen_Tag>
-  <RB_Arctic_Queen_Tag>Arctic Queen</RB_Arctic_Queen_Tag>
+  <RB_Mild_Queen_Tag>Mild Queen</RB_Mild_Queen_Tag>
+  <RB_Hybrid_Queen_Tag>Hybrid Queen</RB_Hybrid_Queen_Tag>
+  <RB_Amalgam_Queen_Tag>Amalgam Queen</RB_Amalgam_Queen_Tag>
+
+
 
 
 

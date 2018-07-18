@@ -35,11 +35,29 @@ namespace Verse
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }
 
-            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Queen", true)).Count > 0)
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Mild_Queen", true)).Count > 0)
             {
-                list.Add(new FloatMenuOption("RB_Arctic_Queen_Tag".Translate(), delegate
+                list.Add(new FloatMenuOption("RB_Mild_Queen_Tag".Translate(), delegate
                 {
-                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Queen", true)).RandomElement();
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Mild_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Hybrid_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Hybrid_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Hybrid_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Amalgam_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Amalgam_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Amalgam_Queen", true)).RandomElement();
                     this.TryInsertQueen();
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }

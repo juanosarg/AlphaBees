@@ -1,28 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="ResourceBase">
+
+  
+  
+  
+     <ThingDef ParentName="ResourceBase">
     <defName>RB_Beeswax</defName>
     <label>beeswax</label>
-    <description>Beeswax is a natural wax produced by honey bees. Beeswax has many and varied uses. Primarily, it is used by the bees in making their honeycombs, and it can be used in the production of food, cosmetics, and pharmaceuticals, as well as candles.</description>
+     <description>Beeswax is a natural wax produced by honey bees. Beeswax has many and varied uses. Primarily, it is used by the bees in making their honeycombs, and it can be used in the production of food, cosmetics, and pharmaceuticals, as well as candles.</description>
     <graphicData>
       <texPath>Things/Item/Product/RB_Beeswax</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      
     </graphicData>
+	<tradeability>Sellable</tradeability>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
-      <MaxHitPoints>60</MaxHitPoints>
       <MarketValue>0.5</MarketValue>
       <Mass>0.1</Mass>
-      <Flammability>0.6</Flammability>
+      <Flammability>1</Flammability>
+	        <MaxHitPoints>100</MaxHitPoints>
+
 	  <DeteriorationRate>2.0</DeteriorationRate>
-	</statBases>
+    </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
+    <stackLimit>75</stackLimit>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <color>(226,183,114)</color>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.65</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+		<WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+
+      </statFactors>
+      
+    </stuffProps>
   </ThingDef>
   
-  
+  <ThingDef ParentName="ResourceBase">
+    <defName>RB_WhiteBeeswax</defName>
+    <label>white beeswax</label>
+     <description>White beeswax is stronger than regular beeswax, and less flamable.</description>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_WhiteBeeswax</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeability>Sellable</tradeability>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.6</Flammability>
+	        <MaxHitPoints>120</MaxHitPoints>
+
+	  <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <color>(240,240,240)</color>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.6</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+		<WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.1</DoorOpenSpeed>
+
+      </statFactors>
+      
+    </stuffProps>
+  </ThingDef>
 </Defs>

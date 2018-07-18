@@ -35,11 +35,29 @@ namespace Verse
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }
 
-            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Drone", true)).Count > 0)
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Mild_Drone", true)).Count > 0)
             {
-                list.Add(new FloatMenuOption("RB_Arctic_Drone_Tag".Translate(), delegate
+                list.Add(new FloatMenuOption("RB_Mild_Drone_Tag".Translate(), delegate
                 {
-                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Arctic_Drone", true)).RandomElement();
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Mild_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Hybrid_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Hybrid_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Hybrid_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Amalgam_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Amalgam_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Amalgam_Drone", true)).RandomElement();
                     this.TryInsertDrone();
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }

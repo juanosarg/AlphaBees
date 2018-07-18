@@ -27,107 +27,154 @@
 
 	<!--=============== Temperate ====================-->
 
-	<ThingDef ParentName="RB_BeeBase">
+	<ThingDef ParentName="RB_BeeBase" Name="RB_TemperateBeeBase" Abstract="True" >
+		<description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.
+	\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Temperate</species>
+				<comb>RB_Temperate_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>40</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_TemperateBeeBase">
 		<defName>RB_Bee_Temperate_Drone</defName>
 		<label>temperate drone</label>
-		<description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.
-
-	\n\nBee Traits:\n\nProduction time: 1 day\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Bees/RB_Bee_Temperate_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Temperate</species>
-				<comb>RB_Temperate_Honeycomb</comb>
-				<combtimedays>1</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>0</tempMin>
-				<tempMax>50</tempMax>
-			</li>   
-		</comps>
+		</graphicData> 		
 	</ThingDef>
-
-	<ThingDef ParentName="RB_BeeBase">
+	<ThingDef ParentName="RB_TemperateBeeBase">
 		<defName>RB_Bee_Temperate_Queen</defName>
 		<label>temperate queen</label>
-		<description>Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee.
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Temperate_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+		<!--=============== Mild ====================-->
 
-	\n\nBee Traits:\n\nProduction time: 1 day\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>    
+	<ThingDef ParentName="RB_BeeBase" Name="RB_MildBeeBase" Abstract="True" >
+		<description>Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey.
+	\n\nBee Traits:\n\nProduction time: 23 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Temperate_Queen</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Temperate</species>
-				<comb>RB_Temperate_Honeycomb</comb>
+				<species>Mild</species>
+				<comb>RB_Mild_Honeycomb</comb>
+				<combtimedays>0.95</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>40</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_MildBeeBase">
+		<defName>RB_Bee_Mild_Drone</defName>
+		<label>mild drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mild_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_MildBeeBase">
+		<defName>RB_Bee_Mild_Queen</defName>
+		<label>mild queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mild_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+		<!--=============== Hybrid ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_HybridBeeBase" Abstract="True" >
+			<description>Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony.
+	\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>  
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Hybrid</species>
+				<comb>RB_Hybrid_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
-				<tempMax>50</tempMax>
+				<tempMax>40</tempMax>
 			</li>   
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="RB_HybridBeeBase">
+		<defName>RB_Bee_Hybrid_Drone</defName>
+		<label>hybrid drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Hybrid_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_HybridBeeBase">
+		<defName>RB_Bee_Hybrid_Queen</defName>
+		<label>hybrid queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Hybrid_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+		<!--=============== Amalgam ====================-->
 
-	<!--=============== Mild ====================-->
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Mild_Drone</defName>
-		<label>mild drone</label>
-		<description>Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey.
-	\n\nBee Traits:\n\nProduction time: 18 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description> 
-
+	<ThingDef ParentName="RB_BeeBase" Name="RB_AmalgamBeeBase" Abstract="True" >
+					<description>Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees.
+	\n\nBee Traits:\n\nProduction time: 18 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Mild_Drone</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Mild</species>
-				<comb>RB_Mild_Honeycomb</comb>
-				<combtimedays>.75</combtimedays>
+				<species>Amalgam</species>
+				<comb>RB_Amalgam_Honeycomb</comb>
+				<combtimedays>0.75</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
-				<tempMax>50</tempMax>
+				<tempMax>40</tempMax>
 			</li>   
 		</comps>
 	</ThingDef>
-
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Mild_Queen</defName>
-		<label>mild queen</label>
-		<description>Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey.
-	\n\nBee Traits:\n\nProduction time: 18 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>    
-
+	
+	<ThingDef ParentName="RB_AmalgamBeeBase">
+		<defName>RB_Bee_Amalgam_Drone</defName>
+		<label>amalgam drone</label>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Mild_Queen</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Mild</species>
-				<comb>RB_Mild_Honeycomb</comb>
-				<combtimedays>.75</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>0</tempMin>
-				<tempMax>50</tempMax>
-			</li>   
-		</comps>
+			<texPath>Things/Item/Bees/RB_Bee_Amalgam_Drone</texPath>
+		</graphicData> 		
 	</ThingDef>
-
+	<ThingDef ParentName="RB_AmalgamBeeBase">
+		<defName>RB_Bee_Amalgam_Queen</defName>
+		<label>amalgam queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Amalgam_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>			
+	
+	
 	<!--=============== Arctic ====================-->
-
+<!--
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Arctic_Drone</defName>
 		<label>arctic drone</label>
@@ -173,8 +220,6 @@
 			</li>   
 		</comps>
 	</ThingDef> 
-
-	<!--=============== Icy ====================-->
 
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Icy_Drone</defName>
@@ -222,7 +267,6 @@
 		</comps>
 	</ThingDef> 
 
-	<!--=============== Jungle ====================-->
 
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Jungle_Drone</defName>
@@ -270,7 +314,6 @@
 		</comps>
 	</ThingDef> 
 	
-	<!--=============== Swamp ====================-->
 
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Swamp_Drone</defName>
@@ -318,7 +361,6 @@
 		</comps>
 	</ThingDef> 
 
-	<!--=============== Desert ====================-->
 
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Desert_Drone</defName>
@@ -365,8 +407,7 @@
 			</li>   
 		</comps>
 	</ThingDef> 
-	
-		<!--=============== Arid ====================-->
+			
 
 	<ThingDef ParentName="RB_BeeBase">
 		<defName>RB_Bee_Arid_Drone</defName>
@@ -414,5 +455,5 @@
 		</comps>
 	</ThingDef> 
 	
-	
+	-->
 </Defs>

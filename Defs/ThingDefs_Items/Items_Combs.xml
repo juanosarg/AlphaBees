@@ -38,6 +38,26 @@
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Hybrid_Honeycomb</defName>
+    <label>hybrid honeycomb</label>
+    <description>This is a honeycomb produced by hybrid bees. Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Hybrid_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Amalgam_Honeycomb</defName>
+    <label>amalgam honeycomb</label>
+    <description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
     <defName>RB_Arctic_Honeycomb</defName>
     <label>arctic honeycomb</label>
     <description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>

@@ -61,6 +61,19 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
+  </WorkGiverDef> 
+    
+  <WorkGiverDef>
+    <defName>RB_TakeThingsOutOfHybridizationChamber</defName>
+    <label>taking bees out of hybridization chamber</label>
+    <giverClass>RimBees.WorkGiver_TakeThingsOutOfHybridizationChamber</giverClass>
+    <workType>Hauling</workType>
+    <verb>take bees out of hybridization chamber</verb>
+    <gerund>taking bees out of hybridization chamber</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
   </WorkGiverDef>
 	
 	

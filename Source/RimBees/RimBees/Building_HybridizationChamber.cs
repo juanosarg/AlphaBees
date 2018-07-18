@@ -32,7 +32,8 @@ namespace RimBees
 
         public override void ExposeData()
         {
-              
+            base.ExposeData();
+
             Scribe_Values.Look<bool>(ref this.hybridizationChamberFull, "hybridizationChamberFull", false, false);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
             Scribe_Values.Look<string>(ref this.hybridizedBee, "hybridizedBee", "", false);
@@ -81,6 +82,7 @@ namespace RimBees
                     hybridizedBee = HybridizationChecker();
                     if (hybridizedBee != "")
                     {
+                        Messages.Message("RB_Hybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
                         SignalHybridizationChamberFull();
                         RandomizeDays();
 

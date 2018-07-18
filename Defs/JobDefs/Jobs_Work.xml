@@ -30,6 +30,10 @@
     <reportString>getting bees out of a brood chamber.</reportString>
   </JobDef>
   
-
+   <JobDef>
+    <defName>RB_TakeThingsOutOfHybridizationChamberJob</defName>
+    <driverClass>RimBees.JobDriver_TakeThingsOutOfHybridizationChamber</driverClass>
+    <reportString>getting bees out of a hybridization chamber.</reportString>
+  </JobDef>
 
 </Defs>
