@@ -60,6 +60,7 @@
     <Compile Include="JobDriver_TakeThingsOutOfBeehouse.cs" />
     <Compile Include="PlaceWorker_NextToBeeHouseLeft.cs" />
     <Compile Include="PlaceWorker_NextToBeeHouse.cs" />
+    <Compile Include="WorkGiver_TakeThingsOutOfAdvancedBeehouse.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfHybridizationChamber.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfBroodChamber.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfBeehouse.cs" />

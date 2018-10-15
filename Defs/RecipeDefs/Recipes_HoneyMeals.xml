@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+    <defName>RB_CookHoneyMealSimple</defName>
+    <label>cook simple honey meal</label>
+    <description>Cook a straightforward honey meal from one ingredient.</description>
+    <jobString>Cooking simple honey meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+		<workAmount>900</workAmount>
+
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+	</recipeUsers>	
+    <ingredients>
+	   
+      <li>
+        <filter>
+          <thingDefs>
+			 <li>RB_BaseHoney</li>
+			 <li>RB_BlueHoney</li>
+
+		  </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+			
+			<thingDefs>
+			<li>RB_BaseHoney</li>
+			<li>RB_BlueHoney</li>
+			</thingDefs>
+			 <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<RB_SimpleHoney>1</RB_SimpleHoney>
+		</products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  	<RecipeDef>
+    <defName>RB_CookHoneyMealFine</defName>
+    <label>cook fine honey meal</label>
+		<description>Cook a somewhat complex meal from a combination of honey and plant ingredients.</description>
+    <jobString>Cooking fine honey meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+		<workAmount>900</workAmount>
+
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+	</recipeUsers>	
+    <ingredients>
+	   
+      <li>
+        <filter>
+          <thingDefs>
+			 <li>RB_BaseHoney</li>
+			 <li>RB_BlueHoney</li>
+
+		  </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+	  <li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+    </ingredients>
+	<fixedIngredientFilter>
+			
+			<thingDefs>
+			<li>RB_BaseHoney</li>
+			<li>RB_BlueHoney</li>
+			</thingDefs>
+			<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+			 <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<RB_FineHoney>1</RB_FineHoney>
+		</products>
+    <workSkill>Cooking</workSkill>
+	<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+  </RecipeDef>
+  
+   	<RecipeDef>
+    <defName>RB_CookHoneyMealLavish</defName>
+    <label>cook lavish honey meal</label>
+		<description>Cook a very complex meal from a combination of honey and plant ingredients. Much of the ingredients are wasted.</description>
+    <jobString>Cooking lavish honey meal.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+		<workAmount>900</workAmount>
+
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+	</recipeUsers>	
+    <ingredients>
+	   
+      <li>
+        <filter>
+          <thingDefs>
+			 <li>RB_BaseHoney</li>
+			 <li>RB_BlueHoney</li>
+
+		  </thingDefs>
+        </filter>
+        <count>0.75</count>
+      </li>
+	  <li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+    </ingredients>
+	<fixedIngredientFilter>
+			
+			<thingDefs>
+			<li>RB_BaseHoney</li>
+			<li>RB_BlueHoney</li>
+			</thingDefs>
+			<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+			 <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<RB_LavishHoney>1</RB_LavishHoney>
+		</products>
+    <workSkill>Cooking</workSkill>
+	<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+  </RecipeDef>
+	
+</Defs>

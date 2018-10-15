@@ -4,7 +4,7 @@
  
 
 	<WorkGiverDef>
-		<defName>RB_DoBillsBeekeepingWorkbench</defName>
+		<defName>RB_DoBillsHoneyCentrifuge</defName>
 		<label>works at honey centrifuge</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
@@ -21,7 +21,8 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
-		<defName>RB_DoBillsHoneyCentrifuge</defName>
+		<defName>RB_DoBillsBeekeepingWorkbench</defName>
+		
 		<label>works at beekeeping workbench</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
@@ -29,8 +30,8 @@
 		<fixedBillGiverDefs>
 			<li>RB_Beekeeping_Workbench_Building</li>
 		</fixedBillGiverDefs>
-		<verb>extracting bees and combs</verb>
-		<gerund>extracting bees and combs at</gerund>
+		<verb>working</verb>
+		<gerund>working at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
@@ -44,6 +45,19 @@
     <workType>Hauling</workType>
     <verb>take things out of beehouse</verb>
     <gerund>taking things out of beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>RB_TakeThingsOutOfAdvancedBeehouse</defName>
+    <label>taking things out of advanced beehouse</label>
+    <giverClass>RimBees.WorkGiver_TakeThingsOutOfAdvancedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>take things out of advanced beehouse</verb>
+    <gerund>taking things out of advanced beehouse</gerund>
     <priorityInType>20</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>

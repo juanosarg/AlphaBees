@@ -7,7 +7,7 @@
     <description>Honey is a sweet, viscous food substance produced by bees. Bees produce honey from the sugary secretions of plants. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>AnimalProductRaw</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Item/Product/RB_HoneyJar</texPath>
@@ -20,21 +20,94 @@
       <Flammability>0.6</Flammability>
       <WorkToMake>700</WorkToMake>
 	  <DeteriorationRate>2</DeteriorationRate>
-      <Nutrition>0.5</Nutrition>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
-      <foodType>VegetableOrFruit</foodType>
-      <preferability>MealSimple</preferability>
+      <foodType>AnimalProduct</foodType>
+      <preferability>RawTasty</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
 	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 	</ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>70</daysToRotStart>
+        <daysToRotStart>60</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-      <li Class="CompProperties_Ingredients" />
+	  <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
+     <ThingDef ParentName="OrganicProductBase">
+    <defName>RB_BlueHoney</defName>
+    <label>blue honey</label>
+    <description>This honey has been extracted from Amalgam honeycombs, and has a distinct blueish tone that makes it less appetizing. However, it is in fact more nutritious than normal honey. Honey can be consumed raw or cooked with other ingredients.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_ThickBlueHoneyJar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.018</Mass>
+      <Flammability>0.6</Flammability>
+      <WorkToMake>700</WorkToMake>
+	  <DeteriorationRate>2</DeteriorationRate>
+      <Nutrition>0.06</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+	</ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>75</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	  <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="OrganicProductBase">
+    <defName>RB_AdaptiveHoney</defName>
+    <label>blue honey</label>
+    <description>This honey has been extracted from Adaptive honeycombs, and has a reddish brown colour and a pungent smell. This honey won't rot at all, so it can be stored indefinitely. Honey can be consumed raw or cooked with other ingredients.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_AdaptiveHoneyJar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.018</Mass>
+      <Flammability>0.6</Flammability>
+      <WorkToMake>700</WorkToMake>
+	  <DeteriorationRate>2</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+	</ingestible>
+    <comps>
+     
+	  <li Class="CompProperties_Ingredients" />
       <li Class="CompProperties_FoodPoisonable" />
     </comps>
   </ThingDef>

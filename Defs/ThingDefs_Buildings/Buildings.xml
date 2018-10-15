@@ -7,7 +7,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Beekeeping_Workbench_Building</defName>
 		<label>beekeeping workbench</label>
-		<description>A simple wooden workbench with specialized tools to manipulate wild beehives.</description>
+		<description>A simple wooden workbench with specialized tools to manipulate wild beehives and create several special recipes using honey.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Beekeeping_Workbench</texPath>
@@ -160,6 +160,58 @@
 			<WorkToBuild>800</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+		</statBases>
+		
+		<building>
+			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>RB_AdvancedBeehouse</defName>
+		<label>advanced beehouse</label>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 10%.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_AdvancedBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<Steel>50</Steel>
+			<RB_ComponentBioInterface>4</RB_ComponentBioInterface>
+			
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
 		</statBases>
 		
 		<building>

@@ -37,7 +37,7 @@ namespace RimBees
                 
                 IntVec3 c = this.Position+ GenAdj.CardinalDirections[3];
                 Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if (edifice != null && edifice.def == DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true))
+                if (edifice != null && ((edifice.def == DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true))||(edifice.def == DefDatabase<ThingDef>.GetNamed("RB_AdvancedBeehouse", true))))
                 {
                     result = edifice;
                     return result;

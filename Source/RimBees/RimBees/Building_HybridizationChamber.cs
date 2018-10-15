@@ -13,11 +13,13 @@ namespace RimBees
     {
 
         public int tickCounter = 0;
-        public int ticksToDays = 1;//240;
+        public int ticksToDays = 240;//240;
         public int daysTotal = 3;
         public string hybridizedBee = "";
         public bool hybridizationChamberFull = false;
         private System.Random rand = new System.Random();
+        private System.Random beeRandomizer = new System.Random();
+
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -48,7 +50,7 @@ namespace RimBees
                 
                 IntVec3 c = this.Position+ GenAdj.CardinalDirections[1];
                 Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if (edifice != null && edifice.def == DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true))
+                if (edifice != null && ((edifice.def == DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true)) || (edifice.def == DefDatabase<ThingDef>.GetNamed("RB_AdvancedBeehouse", true))))
                 {
                     result = edifice;
                     return result;
@@ -83,7 +85,12 @@ namespace RimBees
                     //Log.Message(hybridizedBee);
                     if (hybridizedBee != "")
                     {
-                        Messages.Message("RB_Hybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
+                        if(hybridizedBee=="Neutro" || hybridizedBee == "Nutritious" || hybridizedBee == "Technological"|| hybridizedBee == "Adaptive" || hybridizedBee == "Alloy") {
+                            Messages.Message("RB_FiveHybrids".Translate(), this, MessageTypeDefOf.NegativeEvent);
+                        }
+                        else {
+                            Messages.Message("RB_Hybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
+                        }
                         SignalHybridizationChamberFull();
                         RandomizeDays();
 
@@ -149,7 +156,90 @@ namespace RimBees
                 {
                     return "Amalgam";
                 }
-             
+                if (beeQueen == "Amalgam")
+                {
+                    switch (beeRandomizer.Next(1, 6))
+                    {
+                        case 1:
+                            return "Neutro";
+                        case 2:
+                            return "Nutritious";
+                        case 3:
+                            return "Technological";
+                        case 4:
+                            return "Adaptive";
+                        case 5:
+                            return "Alloy";                   
+                        default:
+                            break;
+                    }
+                }
+
+            }
+
+            if (beeDrone == "Amalgam")
+            {
+               
+                if (beeQueen == "Hybrid")
+                {
+                    switch (beeRandomizer.Next(1, 6))
+                    {
+                        case 1:
+                            return "Neutro";
+                        case 2:
+                            return "Nutritious";
+                        case 3:
+                            return "Technological";
+                        case 4:
+                            return "Adaptive";
+                        case 5:
+                            return "Alloy";
+                        default:
+                            break;
+                    }
+                }
+
+                if (beeQueen == "Adaptive")
+                {
+                    switch (beeRandomizer.Next(1, 5))
+                    {
+                        case 1:
+                            return "Arctic";
+                        case 2:
+                            return "Desert";
+                        case 3:
+                            return "Swamp";
+                        case 4:
+                            return "Nocturnal";
+                      
+                        default:
+                            break;
+                    }
+                }
+
+                if (beeDrone == "Adaptive")
+                {
+                    if (beeQueen == "Amalgam")
+                    {
+                        switch (beeRandomizer.Next(1, 5))
+                        {
+                            case 1:
+                                return "Arctic";
+                            case 2:
+                                return "Desert";
+                            case 3:
+                                return "Swamp";
+                            case 4:
+                                return "Nocturnal";
+
+                            default:
+                                break;
+                        }
+                    }
+
+                   
+                }
+
             }
 
 

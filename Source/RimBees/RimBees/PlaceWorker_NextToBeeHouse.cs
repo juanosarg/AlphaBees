@@ -40,7 +40,7 @@ namespace RimBees
 
                         if (thingDef != null && thingDef.building != null)
                         {
-                            if (thingDef.building.wantsHopperAdjacent && ((thingDef.defName == "RB_Beehouse")))
+                            if (thingDef.building.wantsHopperAdjacent && ((thingDef.defName == "RB_Beehouse")|| (thingDef.defName == "RB_AdvancedBeehouse")))
                             {
                                 return true;
                             }

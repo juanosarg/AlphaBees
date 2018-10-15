@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>RB_NondescriptMeat</defName>
+    <label>nondescript meat</label>
+    <description>This is meat that can't be adequately traced to any animal species, almost as if it were artificial meat grown in a petri dish...It is perfectly edible, though.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Big</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+		<MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  			<Beauty>-4</Beauty>
+
+      <DeteriorationRate>6</DeteriorationRate>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+     			<tasteThought>AteRawFood</tasteThought>
+
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+	 <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>RB_ComponentBioInterface</defName>
+    <label>bio interface components</label>
+    <description>Advanced machine-biological interface, used to automate and control biological entities. Used in the construction of advanced beehouses.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_ComponentBioInterface</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>35</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+</Defs>

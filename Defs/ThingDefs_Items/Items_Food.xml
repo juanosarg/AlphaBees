@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <ThingDef ParentName="MealRottable">
+    <defName>RB_SimpleHoney</defName>
+    <label>simple honey meal</label>
+    <description>A simple meal made by spreading some fresh honey on top of a toasted bread slice, accompanied with a glass of cold mineral water.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_SimpleHoney</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <WorkToMake>300</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+	  <joy>0.01</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>MealSimple</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealRottable">
+    <defName>RB_FineHoney</defName>
+    <label>fine honey meal</label>
+    <description>A complex dish consisting of a sponge cake filled with a honey sauce, acoompanied with a lemon smoothie sweetened with honey.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_FineHoney</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>22</MarketValue>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+	  <joy>0.02</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>MealFine</preferability>
+	  <tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MealRottable">
+    <defName>RB_LavishHoney</defName>
+    <label>lavish honey meal</label>
+    <description>A masterpiece of the culinary arts, this dish includes a honey filled double-crust pastry cake, acoompanied with a vanilla ice cream sweetened with honey.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_LavishHoney</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>45</MarketValue>
+      <WorkToMake>800</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+	  <joy>0.03</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>MealLavish</preferability>
+	  <tasteThought>AteLavishMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+
+
+</Defs>

@@ -1,60 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <!-- Misc -->
+	<!-- Misc -->
 
-  <RB_ExtractBees>Extract Bees</RB_ExtractBees>
-  <RB_ExtractBeesDesc>Extract Honey Bees from beehouse</RB_ExtractBeesDesc>
-  <RB_InsertBees>Insert drone</RB_InsertBees>
-  <RB_InsertBeesDesc>Insert a drone in this beehouse</RB_InsertBeesDesc>
-  <RB_NoBees>You don't have any drones!</RB_NoBees>
-  
-  <RB_ExtractQueens>Extract Queen Bees</RB_ExtractQueens>
-  <RB_ExtractQueensDesc>Extract Queen Bees from beehouse</RB_ExtractQueensDesc>
-  <RB_InsertQueens>Insert queen</RB_InsertQueens>
-  <RB_InsertQueensDesc>Insert a queen bee in this beehouse</RB_InsertQueensDesc>
-  <RB_NoQueens>You don't have any queens!</RB_NoQueens>
-  
-  <RB_BeehouseContainsDrone>Drone</RB_BeehouseContainsDrone>
-  <RB_BeehouseContainsQueen>Queen</RB_BeehouseContainsQueen>
-  <RB_BeehouseNonePresent>None present</RB_BeehouseNonePresent>
-  <RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress>
-  <RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
-  <RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
-  <RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
-  <RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
+	<RB_ExtractBees>Extract Bees</RB_ExtractBees>
+	<RB_ExtractBeesDesc>Extract Honey Bees from beehouse</RB_ExtractBeesDesc>
+	<RB_InsertBees>Insert drone</RB_InsertBees>
+	<RB_InsertBeesDesc>Insert a drone in this beehouse</RB_InsertBeesDesc>
+	<RB_NoBees>You don't have any drones!</RB_NoBees>
 
-  <GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
-  <GU_NoAdjacentBeehouse>Warning: this brood chamber has no adjacent beehouse</GU_NoAdjacentBeehouse>
-  <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
-  <GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
-  <GU_BroodChamberProgress>Progress:</GU_BroodChamberProgress>
-  
-  <GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
-  <GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
-  <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
-  <GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
-  <GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
-  <GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
-  <RB_Hybrid>A new mutant bee has been created in a hybridization chamber!</RB_Hybrid>
-  <RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
+	<RB_ExtractQueens>Extract Queen Bees</RB_ExtractQueens>
+	<RB_ExtractQueensDesc>Extract Queen Bees from beehouse</RB_ExtractQueensDesc>
+	<RB_InsertQueens>Insert queen</RB_InsertQueens>
+	<RB_InsertQueensDesc>Insert a queen bee in this beehouse</RB_InsertQueensDesc>
+	<RB_NoQueens>You don't have any queens!</RB_NoQueens>
+
+	<RB_BeehouseContainsDrone>Drone</RB_BeehouseContainsDrone>
+	<RB_BeehouseContainsQueen>Queen</RB_BeehouseContainsQueen>
+	<RB_BeehouseNonePresent>None present</RB_BeehouseNonePresent>
+	<RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress>
+	<RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
+	<RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
+	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
+	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
+	<RB_BeehouseCombNoProgressPlants>Stopped due to absence of plant or resource in 6 tiles radius</RB_BeehouseCombNoProgressPlants>
 
 
+	<GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
+	<GU_NoAdjacentBeehouse>Warning: this brood chamber has no adjacent beehouse</GU_NoAdjacentBeehouse>
+	<GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
+	<GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
+	<GU_BroodChamberProgress>Progress:</GU_BroodChamberProgress>
+
+	<GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
+	<GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
+	<GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
+	<GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
+	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
+	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
+	<RB_Hybrid>A new mutant bee has been created in a hybridization chamber!</RB_Hybrid>
+	<RB_FiveHybrids>A new mutant bee has been created in a hybridization chamber! This combination produces other 4 possible mutations.</RB_FiveHybrids>
+	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 
 
 
 
-  <!-- Bee Tags -->
-  
-  <RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>
-  <RB_Mild_Drone_Tag>Mild Drone</RB_Mild_Drone_Tag>
-  <RB_Hybrid_Drone_Tag>Hybrid Drone</RB_Hybrid_Drone_Tag>
-  <RB_Amalgam_Drone_Tag>Amalgam Drone</RB_Amalgam_Drone_Tag>
 
-  <RB_Temperate_Queen_Tag>Temperate Queen</RB_Temperate_Queen_Tag>
-  <RB_Mild_Queen_Tag>Mild Queen</RB_Mild_Queen_Tag>
-  <RB_Hybrid_Queen_Tag>Hybrid Queen</RB_Hybrid_Queen_Tag>
-  <RB_Amalgam_Queen_Tag>Amalgam Queen</RB_Amalgam_Queen_Tag>
+
+	<!-- Bee Tags -->
+
+	<RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>
+	<RB_Mild_Drone_Tag>Mild Drone</RB_Mild_Drone_Tag>
+	<RB_Hybrid_Drone_Tag>Hybrid Drone</RB_Hybrid_Drone_Tag>
+	<RB_Amalgam_Drone_Tag>Amalgam Drone</RB_Amalgam_Drone_Tag>
+	
+	<RB_Alloy_Drone_Tag>Alloy Drone</RB_Alloy_Drone_Tag>
+	<RB_Adaptive_Drone_Tag>Adaptive Drone</RB_Adaptive_Drone_Tag>
+	<RB_Neutro_Drone_Tag>Neutro Drone</RB_Neutro_Drone_Tag>
+	<RB_Nutritious_Drone_Tag>Nutritious Drone</RB_Nutritious_Drone_Tag>
+	<RB_Technological_Drone_Tag>Technological Drone</RB_Technological_Drone_Tag>
+
+	<RB_Arctic_Drone_Tag>Arctic Drone</RB_Arctic_Drone_Tag>
+	<RB_Desert_Drone_Tag>Desert Drone</RB_Desert_Drone_Tag>
+	<RB_Swamp_Drone_Tag>Swamp Drone</RB_Swamp_Drone_Tag>
+	<RB_Nocturnal_Drone_Tag>Nocturnal Drone</RB_Nocturnal_Drone_Tag>
+
+
+
+
+	<RB_Temperate_Queen_Tag>Temperate Queen</RB_Temperate_Queen_Tag>
+	<RB_Mild_Queen_Tag>Mild Queen</RB_Mild_Queen_Tag>
+	<RB_Hybrid_Queen_Tag>Hybrid Queen</RB_Hybrid_Queen_Tag>
+	<RB_Amalgam_Queen_Tag>Amalgam Queen</RB_Amalgam_Queen_Tag>
+	
+	<RB_Alloy_Queen_Tag>Alloy Queen</RB_Alloy_Queen_Tag>
+	<RB_Adaptive_Queen_Tag>Adaptive Queen</RB_Adaptive_Queen_Tag>
+	<RB_Neutro_Queen_Tag>Neutro Queen</RB_Neutro_Queen_Tag>
+	<RB_Nutritious_Queen_Tag>Nutritious Queen</RB_Nutritious_Queen_Tag>
+	<RB_Technological_Queen_Tag>Technological Queen</RB_Technological_Queen_Tag>
+
+	<RB_Arctic_Queen_Tag>Arctic Queen</RB_Arctic_Queen_Tag>
+	<RB_Desert_Queen_Tag>Desert Queen</RB_Desert_Queen_Tag>
+	<RB_Swamp_Queen_Tag>Swamp Queen</RB_Swamp_Queen_Tag>
+	<RB_Nocturnal_Queen_Tag>Nocturnal Queen</RB_Nocturnal_Queen_Tag>
+
+
 
 
 

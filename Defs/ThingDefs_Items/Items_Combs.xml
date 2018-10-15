@@ -40,7 +40,7 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Hybrid_Honeycomb</defName>
     <label>hybrid honeycomb</label>
-    <description>This is a honeycomb produced by hybrid bees. Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by hybrid bees. Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony. Honeycombs can be procesed in a Honey Extractor to get honey and white beeswax.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Hybrid_Honeycomb</texPath>
@@ -50,10 +50,60 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Amalgam_Honeycomb</defName>
     <label>amalgam honeycomb</label>
-    <description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get blue honey and white beeswax.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Alloy_Honeycomb</defName>
+    <label>alloy honeycomb</label>
+    <description>This is a honeycomb produced by alloy bees. Alloy bees are capable of producing honeycombs with metallic compounds in them. Their honey production is minimal, though. The basic Alloy Bee produces steel plated honeycombs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and steel.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Alloy_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Adaptive_Honeycomb</defName>
+    <label>adaptive honeycomb</label>
+    <description>This is a honeycomb produced by adaptive bees. Adaptive bees are not much affected by the conditions of the biome they are working in. as such, they can stand low and high temperatures a bit better, and they work very fast. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Adaptive_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Neutro_Honeycomb</defName>
+    <label>neutro honeycomb</label>
+    <description>This is a honeycomb produced by neutro bees. Neutro bees capture residual chemical compounds from nearby locations and store them in their honeycombs, producing Neutroamine. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and neutroamine.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Neutro_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Nutritious_Honeycomb</defName>
+    <label>nutritious honeycomb</label>
+    <description>This is a honeycomb produced by nutritious bees. Nutritious bees produce fleshy honeycombs that drip blood. This is just disgusting... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and meat.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Nutritious_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Technological_Honeycomb</defName>
+    <label>technological honeycomb</label>
+    <description>This is a honeycomb produced by technological bees. Technological bees are part bee, part machine. They can be further crossbred into bees that provide chemfuel, components, and other technological marvels. But more importantly, they produce Bio Interface Components, which are used to build advanced beehouses. Honeycombs can be procesed in a Honey Extractor to get beeswax and Bio Interface Components.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Technological_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
 
@@ -68,6 +118,36 @@
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Desert_Honeycomb</defName>
+    <label>desert honeycomb</label>
+    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Swamp_Honeycomb</defName>
+    <label>swamp honeycomb</label>
+    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Nocturnal_Honeycomb</defName>
+    <label>nocturnal honeycomb</label>
+    <description>This is a honeycomb produced by nocturnal bees. It is pitch black, and radiates cold. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Nocturnal_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+<!--
+ <ThingDef ParentName="RB_CombBase">
     <defName>RB_Icy_Honeycomb</defName>
     <label>arctic honeycomb</label>
     <description>This is a honeycomb produced by icy bees. Icy bees have been genetically modified to operate at frigid temperatures. Their icy honeycombs can be used to extract honey and frost. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
@@ -77,15 +157,6 @@
     </graphicData>	
 </ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Jungle_Honeycomb</defName>
-    <label>jungle honeycomb</label>
-    <description>This is a honeycomb produced by jungle bees. This comb has a pungent smell, saturated with lots of organic compounds extracted from the exotic flora of the tropical rainforests. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Jungle_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Swamp_Honeycomb</defName>
@@ -115,7 +186,7 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Arid_Honeycomb</texPath>
     </graphicData>	
-</ThingDef>
+</ThingDef>-->
  
   
   

@@ -127,6 +127,8 @@ namespace RimBees
             string strStoppedBecauseNight = " ";
             string strStoppedBecauseRain = " ";
             string strStoppedBecauseTemperature = " ";
+            string strStoppedBecauseNoPLants = " ";
+
 
 
             if (!innerContainerDrones.NullOrEmpty())
@@ -150,15 +152,19 @@ namespace RimBees
                 strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
                 if (!CheckLightLevels())
                 {
-                    strStoppedBecauseNight = "RB_BeehouseCombNoProgressNight".Translate();
+                    strStoppedBecauseNight = "\n"+"RB_BeehouseCombNoProgressNight".Translate();
                 }
                 if (!CheckRainLevels())
                 {
-                    strStoppedBecauseRain = "RB_BeehouseCombNoProgressRain".Translate();
+                    strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
                 }
                 if (!CheckTemperatureLevels())
                 {
-                    strStoppedBecauseTemperature = "RB_BeehouseCombNoProgressTemperature".Translate();
+                    strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate();
+                }
+                if (!CheckPlantsNearby())
+                {
+                    strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants".Translate();
                 }
 
             }
@@ -171,8 +177,8 @@ namespace RimBees
 
             return text + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
                 + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
-                "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + "\n" + strStoppedBecauseNight
-                + "\n" + strStoppedBecauseRain + "\n" + strStoppedBecauseTemperature;
+                "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + strStoppedBecauseNight
+                 + strStoppedBecauseRain  + strStoppedBecauseTemperature  + strStoppedBecauseNoPLants;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -314,7 +320,7 @@ namespace RimBees
         {
             bool bee1nocturnal = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
             bool bee2nocturnal = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
-            if (bee1nocturnal && bee2nocturnal)
+            if (bee1nocturnal || bee2nocturnal)
             {
                 return true;
             } else
@@ -336,7 +342,7 @@ namespace RimBees
         {
             bool bee1pluviophile = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
             bool bee2pluviophile = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
-            if (bee1pluviophile && bee2pluviophile)
+            if (bee1pluviophile || bee2pluviophile)
             {
                 return true;
             }
@@ -363,7 +369,7 @@ namespace RimBees
 
             float currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
 
-            if ((currentTempInMap > Mathf.Max(bee1tempMin, bee2tempMin)) && (currentTempInMap < Mathf.Min(bee1tempMax, bee2tempMax)))
+            if (   (currentTempInMap > (bee1tempMin+ bee2tempMin)/2)    &&   (currentTempInMap < (bee1tempMax+bee2tempMax)/2)   )
             {
                 return true;
 
@@ -378,12 +384,35 @@ namespace RimBees
             string bee1plantNeeded = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
             string bee2plantNeeded = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
 
-            if ((bee1plantNeeded!="no") || (bee2plantNeeded != "no"))
+            if ((bee1plantNeeded=="no") && (bee2plantNeeded == "no"))
             {
 
+                return true;
+
+            }else 
+            {
+
+                CellRect rect = GenAdj.OccupiedRect(this.Position, this.Rotation, IntVec2.One);
+                rect = rect.ExpandedBy(6);
+
+                foreach (IntVec3 current in rect.Cells)
+                {
+                    List<Thing> plantList = current.GetThingList(this.Map);
+                    for (int i = 0; i < plantList.Count; i++)
+                    {
+                        if ((plantList[i].def.defName == bee1plantNeeded)||(plantList[i].def.defName == bee2plantNeeded))
+                        {
+                           
+                            return true;
+                        }
+                    }
+
+                }
                 return false;
 
-            }else return true;
+
+            }
+
         }
 
 
