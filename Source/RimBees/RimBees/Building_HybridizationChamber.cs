@@ -13,7 +13,7 @@ namespace RimBees
     {
 
         public int tickCounter = 0;
-        public int ticksToDays = 240;
+        public int ticksToDays = 1;//240;
         public int daysTotal = 3;
         public string hybridizedBee = "";
         public bool hybridizationChamberFull = false;
@@ -80,6 +80,7 @@ namespace RimBees
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))
                 {
                     hybridizedBee = HybridizationChecker();
+                    //Log.Message(hybridizedBee);
                     if (hybridizedBee != "")
                     {
                         Messages.Message("RB_Hybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
@@ -105,8 +106,13 @@ namespace RimBees
 
         public string HybridizationChecker()
         {
-            string beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
-            string beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+            string beeDrone = "";
+            string beeQueen = "";
+            if ((this.GetAdjacentBeehouse().innerContainerDrones.TotalStackCount>0)&& (this.GetAdjacentBeehouse().innerContainerQueens.TotalStackCount > 0)){
+                beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+                beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+            }
+            
 
             if (beeDrone == "Temperate")
             {

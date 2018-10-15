@@ -33,11 +33,11 @@
   <GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
   <GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
   <GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
-  <GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible</GU_AdjacentBeehouseRunningHybridization>
+  <GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
   <GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
   <GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
-  <RB_NoHybrid>A new mutant bee has been created in a hybridization chamber!</RB_NoHybrid>
-  <RB_Hybrid>This combination of bees produces no mutations. You should consider changing them!</RB_Hybrid>
+  <RB_Hybrid>A new mutant bee has been created in a hybridization chamber!</RB_Hybrid>
+  <RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 
 
 
