@@ -112,5 +112,47 @@
     </comps>
   </ThingDef>
   
+      <ThingDef ParentName="OrganicProductBase">
+    <defName>RB_BlackHoney</defName>
+    <label>black honey</label>
+    <description>This honey has been extracted from Nocturnal honeycombs, and is really dark and thick. It has certain health benefits, Improving blood filtration and pumping. Honey can be consumed raw or cooked with other ingredients.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_BlackHoneyJar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.018</Mass>
+      <Flammability>0.6</Flammability>
+      <WorkToMake>700</WorkToMake>
+	  <DeteriorationRate>2</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+	 
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+	</ingestible>
+    <comps>
+	  <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RB_BlackHoneyHediff</hediffDef>
+          <severity>0.25</severity>
+      </li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>75</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	  <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
   
 </Defs>

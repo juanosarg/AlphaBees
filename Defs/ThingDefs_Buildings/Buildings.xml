@@ -161,7 +161,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		
+
 		<building>
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
@@ -177,12 +177,12 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="BenchBase">
 		<defName>RB_AdvancedBeehouse</defName>
 		<label>advanced beehouse</label>
-		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 10%.</description>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 10%.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -200,7 +200,7 @@
 		<costList>
 			<Steel>50</Steel>
 			<RB_ComponentBioInterface>4</RB_ComponentBioInterface>
-			
+
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -213,7 +213,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 		</statBases>
-		
+
 		<building>
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
@@ -228,13 +228,24 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>120</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
 		<defName>RB_BroodChamber</defName>
 		<label>brood chamber</label>
 		<description>The brood chamber is the nursery area of the beehouse, where new bees develop and mature. The brood chamber will occasionally produce drones and queens of one of the bee species present in the adjacent beehouse.</description>
-				<thingClass>RimBees.Building_BroodChamber</thingClass>
+		<thingClass>RimBees.Building_BroodChamber</thingClass>
 
 		<graphicData>
 			<texPath>Things/Building/RB_Beehouse_BroodChamber</texPath>
@@ -263,7 +274,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		
+
 		<building>
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
 		</building>
@@ -276,7 +287,7 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		
+
 		<placeWorkers>
 			<li>RimBees.PlaceWorker_NextToBeeHouse</li>
 		</placeWorkers>
@@ -286,7 +297,7 @@
 		<defName>RB_HybridizationChamber</defName>
 		<label>hybridization chamber</label>
 		<description>The hybridization chamber induces artificial mutations between different species of bees, producing new hybrids with exciting new characteristics. The hybridization chamber will occasionally produce queens of a new species (to get drones of that new species you will need a brood chamber).</description>
-				<thingClass>RimBees.Building_HybridizationChamber</thingClass>
+		<thingClass>RimBees.Building_HybridizationChamber</thingClass>
 
 		<graphicData>
 			<texPath>Things/Building/RB_Beehouse_HybridizationChamber</texPath>
@@ -316,7 +327,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		
+
 		<building>
 			<workSpeedPenaltyOutdoors>false</workSpeedPenaltyOutdoors>
 		</building>
@@ -329,11 +340,11 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		
+
 		<placeWorkers>
 			<li>RimBees.PlaceWorker_NextToBeeHouseLeft</li>
 		</placeWorkers>
 	</ThingDef>	
 
-	
+
 </Defs>

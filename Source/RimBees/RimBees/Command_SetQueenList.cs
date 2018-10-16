@@ -135,6 +135,38 @@ namespace Verse
                     this.TryInsertQueen();
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Argent_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Argent_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Argent_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Aurum_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Aurum_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Aurum_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Precious_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Precious_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Precious_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Radioactive_Queen", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Radioactive_Queen_Tag".Translate(), delegate
+                {
+                    queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Radioactive_Queen", true)).RandomElement();
+                    this.TryInsertQueen();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
 
             if (list.Count > 0) {
 

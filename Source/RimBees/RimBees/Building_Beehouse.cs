@@ -271,7 +271,7 @@ namespace RimBees
             {
                 if (!BeehouseIsFull) {
 
-
+                   
                     if (CheckLightLevels()) {
                         if (CheckRainLevels()) {
                             if (CheckTemperatureLevels()) {
@@ -425,9 +425,14 @@ namespace RimBees
         {
             if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
+                float extraRate = 1;
+                if (this.def.defName == "RB_AdvancedBeehouse")
+                {
+                    extraRate = (float)0.9;
+                }
                 float bee1ticks = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
                 float bee2ticks = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
-                float beeticksaverage = (bee1ticks + bee2ticks) / 2;
+                float beeticksaverage = extraRate*((bee1ticks + bee2ticks) / 2);
                 return beeticksaverage;
 
             }

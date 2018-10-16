@@ -70,7 +70,7 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Adaptive_Honeycomb</defName>
     <label>adaptive honeycomb</label>
-    <description>This is a honeycomb produced by adaptive bees. Adaptive bees are not much affected by the conditions of the biome they are working in. as such, they can stand low and high temperatures a bit better, and they work very fast. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by adaptive bees. Adaptive bees are not much affected by the conditions of the biome they are working in. as such, they can stand low and high temperatures a bit better, and they work very fast. Honeycombs can be procesed in a Honey Extractor to get adaptive honey that doesn't rot and beeswax.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Adaptive_Honeycomb</texPath>
@@ -110,7 +110,7 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Arctic_Honeycomb</defName>
     <label>arctic honeycomb</label>
-    <description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ice pops.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Arctic_Honeycomb</texPath>
@@ -120,7 +120,7 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Desert_Honeycomb</defName>
     <label>desert honeycomb</label>
-    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and agave.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
@@ -130,7 +130,7 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Swamp_Honeycomb</defName>
     <label>swamp honeycomb</label>
-    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and mushrooms.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
@@ -140,53 +140,94 @@
  <ThingDef ParentName="RB_CombBase">
     <defName>RB_Nocturnal_Honeycomb</defName>
     <label>nocturnal honeycomb</label>
-    <description>This is a honeycomb produced by nocturnal bees. It is pitch black, and radiates cold. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <description>This is a honeycomb produced by nocturnal bees. It is pitch black, and radiates cold. Honeycombs can be procesed in a Honey Extractor to get black honey and black beeswax.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
 	  <texPath>Things/Item/Combs/RB_Nocturnal_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
-<!--
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Icy_Honeycomb</defName>
-    <label>arctic honeycomb</label>
-    <description>This is a honeycomb produced by icy bees. Icy bees have been genetically modified to operate at frigid temperatures. Their icy honeycombs can be used to extract honey and frost. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Icy_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
 
 
  <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Swamp_Honeycomb</defName>
-    <label>swamp honeycomb</label>
-    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <defName>RB_Argent_Honeycomb</defName>
+    <label>argent honeycomb</label>
+    <description>This is a honeycomb produced by argent bees. It's surface is very sparkly, you could almost use it as a mirror! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and silver.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
+	  <texPath>Things/Item/Combs/RB_Argent_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Desert_Honeycomb</defName>
-    <label>desert honeycomb</label>
-    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <defName>RB_Aurum_Honeycomb</defName>
+    <label>aurum honeycomb</label>
+    <description>This is a honeycomb produced by aurum bees. It's golden surface could probably fetch a decent price in any market, but it is much better to extract the gold from it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and gold.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
+	  <texPath>Things/Item/Combs/RB_Aurum_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Arid_Honeycomb</defName>
-    <label>arid honeycomb</label>
-    <description>This is a honeycomb produced by arid bees. Since arid bees have adapted to extremely dry climates, this comb seems to be almost devoid of humidity, with low honey amounts. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+    <defName>RB_Precious_Honeycomb</defName>
+    <label>precious honeycomb</label>
+    <description>This is a honeycomb produced by precious bees. Sparkly! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and jade.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Arid_Honeycomb</texPath>
+	  <texPath>Things/Item/Combs/RB_Precious_Honeycomb</texPath>
     </graphicData>	
-</ThingDef>-->
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Radiaoctive_Honeycomb</defName>
+    <label>radioactive honeycomb</label>
+    <description>This is a honeycomb produced by radioactive bees. All things considered, your colonists are lucky that programming a radioactivity system is well beyond the scope of this mod. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and uranium.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Radiaoctive_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Tipsy_Honeycomb</defName>
+    <label>tipsy honeycomb</label>
+    <description>This is a honeycomb produced by tipsy bees. It is saturated with wort, which can then be fermented into beer. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and wort.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Tipsy_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Luxurious_Honeycomb</defName>
+    <label>luxurious honeycomb</label>
+    <description>This is a honeycomb produced by luxurious bees, which are able to concentrate pollen in an amazing way, turning it into ambrosia, a very mild drug that is widely used on the Rim. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ambrosia.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Luxurious_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Psychic_Honeycomb</defName>
+    <label>psychic honeycomb</label>
+    <description>This is a honeycomb produced by Psychic bees, who know everything and see everything. Not because they are wise ancient seers, but because their tiny bodies are saturated with psychite compounds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and psychoid leaves.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Psychic_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Stoner_Honeycomb</defName>
+    <label>stoner honeycomb</label>
+    <description>This is a honeycomb produced by Stoner bees, and smells like certain hotels in Amsterdam. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and smokeleaf leaves.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Stoner_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
  
   
   

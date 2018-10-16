@@ -133,6 +133,38 @@ namespace Verse
                     this.TryInsertDrone();
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));
             }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Argent_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Argent_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Argent_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Aurum_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Aurum_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Aurum_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Precious_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Precious_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Precious_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
+            if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Radioactive_Drone", true)).Count > 0)
+            {
+                list.Add(new FloatMenuOption("RB_Radioactive_Drone_Tag".Translate(), delegate
+                {
+                    drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed("RB_Bee_Radioactive_Drone", true)).RandomElement();
+                    this.TryInsertDrone();
+                }, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
 
             if (list.Count > 0) {
 

@@ -38,8 +38,10 @@
 	<GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
 	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
 	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
-	<RB_Hybrid>A new mutant bee has been created in a hybridization chamber!</RB_Hybrid>
+	<RB_Hybrid>A new mutant bee has been created in a hybridization chamber! This combination produces no other mutations.</RB_Hybrid>
 	<RB_FiveHybrids>A new mutant bee has been created in a hybridization chamber! This combination produces other 4 possible mutations.</RB_FiveHybrids>
+	<RB_FourHybrids>A new mutant bee has been created in a hybridization chamber! This combination produces other 3 possible mutations.</RB_FourHybrids>
+	<RB_ThreeHybrids>A new mutant bee has been created in a hybridization chamber! This combination produces other 2 possible mutations.</RB_ThreeHybrids>
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 
 
@@ -53,7 +55,7 @@
 	<RB_Mild_Drone_Tag>Mild Drone</RB_Mild_Drone_Tag>
 	<RB_Hybrid_Drone_Tag>Hybrid Drone</RB_Hybrid_Drone_Tag>
 	<RB_Amalgam_Drone_Tag>Amalgam Drone</RB_Amalgam_Drone_Tag>
-	
+
 	<RB_Alloy_Drone_Tag>Alloy Drone</RB_Alloy_Drone_Tag>
 	<RB_Adaptive_Drone_Tag>Adaptive Drone</RB_Adaptive_Drone_Tag>
 	<RB_Neutro_Drone_Tag>Neutro Drone</RB_Neutro_Drone_Tag>
@@ -65,6 +67,11 @@
 	<RB_Swamp_Drone_Tag>Swamp Drone</RB_Swamp_Drone_Tag>
 	<RB_Nocturnal_Drone_Tag>Nocturnal Drone</RB_Nocturnal_Drone_Tag>
 
+	<RB_Argent_Drone_Tag>Argent Drone</RB_Argent_Drone_Tag>
+	<RB_Aurum_Drone_Tag>Aurum Drone</RB_Aurum_Drone_Tag>
+	<RB_Precious_Drone_Tag>Precious Drone</RB_Precious_Drone_Tag>
+	<RB_Radioactive_Drone_Tag>Radioactive Drone</RB_Radioactive_Drone_Tag>
+
 
 
 
@@ -72,7 +79,7 @@
 	<RB_Mild_Queen_Tag>Mild Queen</RB_Mild_Queen_Tag>
 	<RB_Hybrid_Queen_Tag>Hybrid Queen</RB_Hybrid_Queen_Tag>
 	<RB_Amalgam_Queen_Tag>Amalgam Queen</RB_Amalgam_Queen_Tag>
-	
+
 	<RB_Alloy_Queen_Tag>Alloy Queen</RB_Alloy_Queen_Tag>
 	<RB_Adaptive_Queen_Tag>Adaptive Queen</RB_Adaptive_Queen_Tag>
 	<RB_Neutro_Queen_Tag>Neutro Queen</RB_Neutro_Queen_Tag>
@@ -83,6 +90,11 @@
 	<RB_Desert_Queen_Tag>Desert Queen</RB_Desert_Queen_Tag>
 	<RB_Swamp_Queen_Tag>Swamp Queen</RB_Swamp_Queen_Tag>
 	<RB_Nocturnal_Queen_Tag>Nocturnal Queen</RB_Nocturnal_Queen_Tag>
+
+	<RB_Argent_Queen_Tag>Argent Queen</RB_Argent_Queen_Tag>
+	<RB_Aurum_Queen_Tag>Aurum Queen</RB_Aurum_Queen_Tag>
+	<RB_Precious_Queen_Tag>Precious Queen</RB_Precious_Queen_Tag>
+	<RB_Radioactive_Queen_Tag>Radioactive Queen</RB_Radioactive_Queen_Tag>
 
 
 
