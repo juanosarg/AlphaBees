@@ -179,12 +179,12 @@
 </ThingDef>
 
  <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Radiaoctive_Honeycomb</defName>
+    <defName>RB_Radioactive_Honeycomb</defName>
     <label>radioactive honeycomb</label>
     <description>This is a honeycomb produced by radioactive bees. All things considered, your colonists are lucky that programming a radioactivity system is well beyond the scope of this mod. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and uranium.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Radiaoctive_Honeycomb</texPath>
+	  <texPath>Things/Item/Combs/RB_Radioactive_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
 
