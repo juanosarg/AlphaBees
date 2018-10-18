@@ -965,7 +965,7 @@
 		</skillRequirements>
 	</RecipeDef>
 	
-		<RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeEgglayingComb</defName>
 		<label>extract from egglaying comb</label>
 		<description>Centrifuges a egglaying comb to extract honey, wax and eggs</description>
@@ -999,6 +999,127 @@
 			<RB_BaseHoney>25</RB_BaseHoney>
 			<RB_BeeEggs>5</RB_BeeEggs>
 			
+		</products>
+		<skillRequirements>
+			<Animals>3</Animals>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeElectronicComb</defName>
+		<label>extract from electronic comb</label>
+		<description>Centrifuges an electronic comb to extract honey, wax and industrial components</description>
+		<jobString>Extracting honey, wax and industrial components</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Electronic_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Electronic_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Beeswax>1</RB_Beeswax>
+			<RB_BaseHoney>50</RB_BaseHoney>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			
+		</products>
+		<skillRequirements>
+			<Animals>3</Animals>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeOilyComb</defName>
+		<label>extract from oily comb</label>
+		<description>Centrifuges an oily comb to extract honey, wax and chemfuel</description>
+		<jobString>Extracting honey, wax and chemfuel</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Oily_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Oily_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Beeswax>1</RB_Beeswax>
+			<RB_BaseHoney>40</RB_BaseHoney>
+			<Chemfuel>12</Chemfuel>
+			
+		</products>
+		<skillRequirements>
+			<Animals>3</Animals>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugePlasticComb</defName>
+		<label>extract from plastic comb</label>
+		<description>Centrifuges a plastic comb to extract honey, wax and plasteel</description>
+		<jobString>Extracting honey, wax and plasteel</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Plastic_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Plastic_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>20</RB_BaseHoney>
+			<RB_Beeswax>1</RB_Beeswax>
+			<Plasteel>5</Plasteel>
+
+
 		</products>
 		<skillRequirements>
 			<Animals>3</Animals>
