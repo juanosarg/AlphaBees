@@ -9,6 +9,8 @@
     <label>Ate Black Honey</label>
     <initialSeverity>1</initialSeverity>
     <hediffClass>HediffWithComps</hediffClass>
+	    <isBad>false</isBad>
+
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>

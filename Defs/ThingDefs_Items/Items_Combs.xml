@@ -228,6 +228,75 @@
     </graphicData>	
 </ThingDef>
 
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Agricultural_Honeycomb</defName>
+    <label>agricultural honeycomb</label>
+    <description>This is a honeycomb produced by Agricultural bees, which are hard workers, extracting grain from their environment and stuffing their honeycombs full of strange undiferentiated seeds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and vegetables.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Agricultural_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Bittersweet_Honeycomb</defName>
+    <label>bittersweet honeycomb</label>
+    <description>This is a honeycomb produced by Bittersweet bees, who LOVE chocolate and try to fill their combs with it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chocolate.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Bittersweet_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Lactic_Honeycomb</defName>
+    <label>lactic honeycomb</label>
+    <description>This is a honeycomb produced by Lactic bees. It is filled with a strange liquid that can be considered milk, if you ignore its origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and milk.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Lactic_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Egglaying_Honeycomb</defName>
+    <label>egglaying honeycomb</label>
+    <description>This is a honeycomb produced by Egglaying bees. It is filled with a lot of really small spheres that can be considered regular eggs, if you ignore their origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and eggs.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Egglaying_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Electronic_Honeycomb</defName>
+    <label>electronic honeycomb</label>
+    <description>This is a honeycomb produced by Electronic bees. It doesn't even seem to be organic! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and industrial components.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Electronic_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Oily_Honeycomb</defName>
+    <label>oily honeycomb</label>
+    <description>This is a honeycomb produced by Oily bees. It is completely drenched in a chemical solution, and it can be easily extracted and turned into Chemfuel. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chemfuel.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Oily_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Plastic_Honeycomb</defName>
+    <label>plastic honeycomb</label>
+    <description>This is a honeycomb produced by Plastic bees. It seems to be reinforced with a natural plasteel lattice. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and plasteel.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Plastic_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
  
   
   

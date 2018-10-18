@@ -134,17 +134,21 @@
       <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
-	 
+	       <foodType>AnimalProduct</foodType>
+
       <preferability>RawTasty</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
 	  <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>RB_BlackHoneyHediff</hediffDef>
+          <severity>1</severity>
+      </li>
+      </outcomeDoers>
 	</ingestible>
     <comps>
-	  <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>RB_BlackHoneyHediff</hediffDef>
-          <severity>0.25</severity>
-      </li>
+	  
       <li Class="CompProperties_Rottable">
         <daysToRotStart>75</daysToRotStart>
         <rotDestroys>true</rotDestroys>

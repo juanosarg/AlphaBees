@@ -790,288 +790,266 @@
 			<texPath>Things/Item/Bees/RB_Bee_Stoner_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>	
+	
+	<!--========== Tier 3: Nutrition Branch - From Nutritious Bees ==========-->	
 
-	<!--=============== Arctic ====================-->
-	<!--
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Arctic_Drone</defName>
-		<label>arctic drone</label>
-		<description>Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts.
-	\n\nBee Traits:\n\nProduction time: 30 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -50ºC\nMaximum temperature: 15ºC</description>    
+	<!--=============== Agricultural ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_AgriculturalBeeBase" Abstract="True" >
+		<description>Agricultural bees are hard workers, extracting grain from their environment and stuffing their honeycombs full of strange undiferentiated seeds. These bees will need a grow zone with at least one corn plant growing nearby to do their job.\n\nBee Traits:\n\nProduction time: 16 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants or resource needed: Corn plant\nMinimum Temperature: 5ºC\nMaximum temperature: 25ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Arctic_Drone</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Arctic</species>
-				<comb>RB_Arctic_Honeycomb</comb>
-				<combtimedays>1.25</combtimedays>
+				<species>Agricultural</species>
+				<comb>RB_Agricultural_Honeycomb</comb>
+				<combtimedays>0.66</combtimedays>
 				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>-50</tempMin>
-				<tempMax>15</tempMax>
+				<pluviophile>true</pluviophile>
+				<weirdplantneeded>Plant_Corn</weirdplantneeded>
+				<tempMin>5</tempMin>
+				<tempMax>25</tempMax>
 			</li>   
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Arctic_Queen</defName>
-		<label>arctic queen</label>
-		<description>Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts.
-	\n\nBee Traits:\n\nProduction time: 30 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -50ºC\nMaximum temperature: 15ºC</description>    
+	<ThingDef ParentName="RB_AgriculturalBeeBase">
+		<defName>RB_Bee_Agricultural_Drone</defName>
+		<label>agricultural drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Agricultural_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_AgriculturalBeeBase">
+		<defName>RB_Bee_Agricultural_Queen</defName>
+		<label>agricultural queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Agricultural_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+		<!--=============== Bittersweet ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_BittersweetBeeBase" Abstract="True" >
+		<description>Bittersweet bees like chocolate. I mean, who doesn't? Monsters, that's who. But Bittersweet bees *really* love it, and they like to stuff their combs with it.\n\nBee Traits:\n\nProduction time: 32 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Arctic_Queen</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Arctic</species>
-				<comb>RB_Arctic_Honeycomb</comb>
-				<combtimedays>1.25</combtimedays>
+				<species>Bittersweet</species>
+				<comb>RB_Bittersweet_Honeycomb</comb>
+				<combtimedays>1.33</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>-50</tempMin>
-				<tempMax>15</tempMax>
-			</li>   
-		</comps>
-	</ThingDef> 
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Icy_Drone</defName>
-		<label>icy drone</label>
-		<description>Icy bees have been genetically modified to operate at frigid temperatures. Their icy honeycombs can be used to extract honey and frost
-	\n\nBee Traits:\n\nProduction time: 35 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -100ºC\nMaximum temperature: 10ºC</description>    
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Icy_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Icy</species>
-				<comb>RB_Icy_Honeycomb</comb>
-				<combtimedays>1.45</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>-100</tempMin>
-				<tempMax>10</tempMax>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
 			</li>   
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Icy_Queen</defName>
-		<label>icy queen</label>
-		<description>Icy bees have been genetically modified to operate at frigid temperatures. Their icy honeycombs can be used to extract honey and frost
-	\n\nBee Traits:\n\nProduction time: 35 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -100ºC\nMaximum temperature: 10ºC</description> 
+	<ThingDef ParentName="RB_BittersweetBeeBase">
+		<defName>RB_Bee_Bittersweet_Drone</defName>
+		<label>bittersweet drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Bittersweet_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_BittersweetBeeBase">
+		<defName>RB_Bee_Bittersweet_Queen</defName>
+		<label>bittersweet queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Bittersweet_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+			<!--=============== Lactic ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_LacticBeeBase" Abstract="True" >
+		<description>Lactic bees are part mammal, part insect. As such, they use milk instead of royal honey to feed their larvae, which is simultaneously cute and disgusting.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Icy_Queen</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Icy</species>
-				<comb>RB_Icy_Honeycomb</comb>
-				<combtimedays>1.45</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>-100</tempMin>
-				<tempMax>10</tempMax>
-			</li>   
-		</comps>
-	</ThingDef> 
-
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Jungle_Drone</defName>
-		<label>jungle drone</label>
-		<description>Jungle bees have evolved in high humidity environments and planets. They collect strange organic compounds extracted from the exotic flora of the tropical rainforests they live in, giving their honey and wax a pungent chemical smell.
-	\n\nBee Traits:\n\nProduction time: 1 day\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: No\nMinimum Temperature: 10ºC\nMaximum temperature: 55ºC</description>    
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Jungle_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Jungle</species>
-				<comb>RB_Jungle_Honeycomb</comb>
+				<species>Lactic</species>
+				<comb>RB_Lactic_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
-				<pluviophile>true</pluviophile>
+				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>10</tempMin>
-				<tempMax>55</tempMax>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
 			</li>   
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Jungle_Queen</defName>
-		<label>jungle queen</label>
-		<description>Jungle bees have evolved in high humidity environments and planets. They collect strange organic compounds extracted from the exotic flora of the tropical rainforests they live in, giving their honey and wax a pungent chemical smell.
-	\n\nBee Traits:\n\nProduction time: 1 day\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: No\nMinimum Temperature: 10ºC\nMaximum temperature: 55ºC</description>    
+	<ThingDef ParentName="RB_LacticBeeBase">
+		<defName>RB_Bee_Lactic_Drone</defName>
+		<label>lactic drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Lactic_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_LacticBeeBase">
+		<defName>RB_Bee_Lactic_Queen</defName>
+		<label>lactic queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Lactic_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+				<!--=============== Egglaying ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_EgglayingBeeBase" Abstract="True" >
+		<description>Egglaying bees are part chicken, part insect. As such, instead of growing their larvae in the receptacles inside honeycombs, they lay tiny chicken eggs, and larvae hatch from them.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Jungle_Queen</texPath>
 		</graphicData>   
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
-				<species>Jungle</species>
-				<comb>RB_Jungle_Honeycomb</comb>
+				<species>Egglaying</species>
+				<comb>RB_Egglaying_Honeycomb</comb>
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
-				<pluviophile>true</pluviophile>
+				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>10</tempMin>
-				<tempMax>55</tempMax>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
 			</li>   
 		</comps>
-	</ThingDef> 
+	</ThingDef>
+
+	<ThingDef ParentName="RB_EgglayingBeeBase">
+		<defName>RB_Bee_Egglaying_Drone</defName>
+		<label>egglaying drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Egglaying_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_EgglayingBeeBase">
+		<defName>RB_Bee_Egglaying_Queen</defName>
+		<label>egglaying queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Egglaying_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+	<!--========== Tier 3: Tech Branch - From Technological Bees ==========-->	
+
+	<!--=============== Electronic ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ElectronicBeeBase" Abstract="True" >
+		<description>Electronic bees are part machine, fitted with bio-mechanical gears to effortlessly glide through the air. They are adept at extracting small amounts of copper from their surroundings and creating industrial components inside their honeycombs.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: -10ºC\nMaximum temperature: 45ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Electronic</species>
+				<comb>RB_Electronic_Honeycomb</comb>
+				<combtimedays>3</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-10</tempMin>
+				<tempMax>45</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ElectronicBeeBase">
+		<defName>RB_Bee_Electronic_Drone</defName>
+		<label>electronic drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Electronic_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_ElectronicBeeBase">
+		<defName>RB_Bee_Electronic_Queen</defName>
+		<label>electronic queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Electronic_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+		<!--=============== Oily ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_OilyBeeBase" Abstract="True" >
+		<description>Oily bees are coated in a thich layer of fuel, which they produce constantly. Their combs are also saturated with fuel, which can be easily canned and used as Chemfuel. They'll need a stockpile with a little bit of Chemfuel nearby to start refining its compounds, though.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: Chemfuel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Oily</species>
+				<comb>RB_Oily_Honeycomb</comb>
+				<combtimedays>2</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Chemfuel</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_OilyBeeBase">
+		<defName>RB_Bee_Oily_Drone</defName>
+		<label>oily drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Oily_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_OilyBeeBase">
+		<defName>RB_Bee_Oily_Queen</defName>
+		<label>oily queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Oily_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+			<!--=============== Plastic ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_PlasticBeeBase" Abstract="True" >
+		<description>Plastic bees can extract minute plasteel molecules from nearby and weave them into bio-metallic lattices inside their combs, thus replicating more plasteel. They'll need a stockpile with a little bit of Plasteel nearby to start weaving, though.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: Plasteel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Plastic</species>
+				<comb>RB_Plastic_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Plasteel</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_PlasticBeeBase">
+		<defName>RB_Bee_Plastic_Drone</defName>
+		<label>plastic drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Plastic_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_PlasticBeeBase">
+		<defName>RB_Bee_Plastic_Queen</defName>
+		<label>plastic queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Plastic_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
 	
 
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Swamp_Drone</defName>
-		<label>swamp drone</label>
-		<description>Swamp bees have adapted to extremely high humidity environments. Their wax is strengthened by a gelatinous hydrophobic substance that usually covers the whole hive, seemingly to protect its contents from humidity.
-	\n\nBee Traits:\n\nProduction time: 30 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: No\nMinimum Temperature: 5ºC\nMaximum temperature: 60ºC</description>    
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Swamp_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Swamp</species>
-				<comb>RB_Swamp_Honeycomb</comb>
-				<combtimedays>1.25</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>true</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>5</tempMin>
-				<tempMax>60</tempMax>
-			</li>   
-		</comps>
-	</ThingDef>
 
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Swamp_Queen</defName>
-		<label>swamp queen</label>
-		<description>Swamp bees have adapted to extremely high humidity environments. Their wax is strengthened by a gelatinous hydrophobic substance that usually covers the whole hive, seemingly to protect its contents from humidity.
-	\n\nBee Traits:\n\nProduction time: 30 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: No\nMinimum Temperature: 5ºC\nMaximum temperature: 60ºC</description>       
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Swamp_Queen</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Swamp</species>
-				<comb>RB_Swamp_Honeycomb</comb>
-				<combtimedays>1.25</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>true</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>5</tempMin>
-				<tempMax>60</tempMax>
-			</li>   
-		</comps>
-	</ThingDef> 
-
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Desert_Drone</defName>
-		<label>desert drone</label>
-		<description>Desert bees grow in extremely dry and hot biomes. They need almost no water to survive, but they produce very little honey as a result.
-	\n\nBee Traits:\n\nProduction time: 40 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 25ºC\nMaximum temperature: 100ºC</description>    
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Desert_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Desert</species>
-				<comb>RB_Desert_Honeycomb</comb>
-				<combtimedays>1.66</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>25</tempMin>
-				<tempMax>100</tempMax>
-			</li>   
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Desert_Queen</defName>
-		<label>desert queen</label>
-		<description>Desert bees grow in extremely dry and hot biomes. They need almost no water to survive, but they produce very little honey as a result.
-	\n\nBee Traits:\n\nProduction time: 40 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 25ºC\nMaximum temperature: 100ºC</description>        
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Desert_Queen</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Desert</species>
-				<comb>RB_Desert_Honeycomb</comb>
-				<combtimedays>1.66</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>25</tempMin>
-				<tempMax>100</tempMax>
-			</li>   
-		</comps>
-	</ThingDef> 
-			
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Arid_Drone</defName>
-		<label>arid drone</label>
-		<description>Arid bees are a weird result of bioengineering run amok. Their tiny bodies seem to be fused with a silicon lattice, making them resistant to extreme temperatures.
-	\n\nBee Traits:\n\nProduction time: 28 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 20ºC\nMaximum temperature: 150ºC</description>    
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Arid_Drone</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Arid</species>
-				<comb>RB_Arid_Honeycomb</comb>
-				<combtimedays>1.16</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>20</tempMin>
-				<tempMax>150</tempMax>
-			</li>   
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="RB_BeeBase">
-		<defName>RB_Bee_Arid_Queen</defName>
-		<label>arid queen</label>
-		<description>Arid bees are a weird result of bioengineering run amok. Their tiny bodies seem to be fused with a silicon lattice, making them resistant to extreme temperatures.
-	\n\nBee Traits:\n\nProduction time: 28 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 20ºC\nMaximum temperature: 150ºC</description>       
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Bees/RB_Bee_Arid_Queen</texPath>
-		</graphicData>   
-		<comps>			
-			<li Class="RimBees.CompProperties_Bees">
-				<species>Arid</species>
-				<comb>RB_Arid_Honeycomb</comb>
-				<combtimedays>1.16</combtimedays>
-				<nocturnal>false</nocturnal>
-				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>20</tempMin>
-				<tempMax>150</tempMax>
-			</li>   
-		</comps>
-	</ThingDef> 
 	
-	-->
+	
 </Defs>

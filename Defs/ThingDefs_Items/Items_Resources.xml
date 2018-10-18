@@ -40,6 +40,72 @@
     </thingCategories>
   </ThingDef>
   
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RB_NonDescriptVegetables</defName>
+    <label>nondescript vegetables</label>
+    <description>Ah, yes, this is corn... or... wheat... err... Rye? It is some sort of grain that can be used for cooking, but it's best not to wonder about its origins.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_NonDescriptVegetables</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="OrganicProductBase">
+    <defName>RB_BeeMilk</defName>
+    <label>bee milk</label>
+    <description>Milk extracted from lactic bees. Yeah, best not to think about it.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_BeeMilk</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>3.1</MarketValue>
+      <Mass>0.045</Mass>
+	  <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggUnfertBase">
+    <defName>RB_BeeEggs</defName>
+    <label>bee eggs</label>
+    <description>These are chicken eggs produced by an Egglaying bee. Yeah, best not to think too much about it...</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+	      <drawSize>0.6</drawSize>
+
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+  
     <ThingDef ParentName="ResourceBase">
     <defName>RB_ComponentBioInterface</defName>
     <label>bio interface components</label>
