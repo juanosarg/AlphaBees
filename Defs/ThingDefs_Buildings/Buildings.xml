@@ -129,7 +129,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Beehouse</defName>
 		<label>wooden beehouse</label>
 		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.</description>
@@ -179,7 +179,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_AdvancedBeehouse</defName>
 		<label>advanced beehouse</label>
 		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 10%.</description>
@@ -241,7 +241,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_BroodChamber</defName>
 		<label>brood chamber</label>
 		<description>The brood chamber is the nursery area of the beehouse, where new bees develop and mature. The brood chamber will occasionally produce drones and queens of one of the bee species present in the adjacent beehouse.</description>
@@ -293,7 +293,7 @@
 		</placeWorkers>
 	</ThingDef>	
 
-	<ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_HybridizationChamber</defName>
 		<label>hybridization chamber</label>
 		<description>The hybridization chamber induces artificial mutations between different species of bees, producing new hybrids with exciting new characteristics. The hybridization chamber will occasionally produce queens of a new species (to get drones of that new species you will need a brood chamber).</description>
