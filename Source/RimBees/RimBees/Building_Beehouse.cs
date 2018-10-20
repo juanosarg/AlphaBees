@@ -27,6 +27,15 @@ namespace RimBees
         public ThingOwner innerContainerDrones = null;
         public ThingOwner innerContainerQueens = null;
 
+        public string whichPlantNeeds = "";
+
+        public bool flagLight = false;
+        public bool flagTemperature = false;
+        public bool flagRain = false;
+        public bool flagPlants = false;
+
+
+
 
         protected bool contentsKnown = false;
         protected bool contentsKnownQueens = false;
@@ -57,6 +66,13 @@ namespace RimBees
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
+            Scribe_Values.Look<string>(ref this.whichPlantNeeds, "whichPlantNeeds", "", false);
+            Scribe_Values.Look<bool>(ref this.flagLight, "flagLight", false, false);
+            Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
+            Scribe_Values.Look<bool>(ref this.flagRain, "flagRain", false, false);
+            Scribe_Values.Look<bool>(ref this.flagPlants, "flagPlants", false, false);
+
+
 
 
         }
@@ -129,7 +145,12 @@ namespace RimBees
             string strStoppedBecauseTemperature = " ";
             string strStoppedBecauseNoPLants = " ";
 
+            string strToAddSpaceIfElectricityUsed = "";
 
+            if (this.def.defName == "RB_AdvancedBeehouse")
+            {
+                strToAddSpaceIfElectricityUsed = "\n";
+            }
 
             if (!innerContainerDrones.NullOrEmpty())
             {
@@ -150,21 +171,21 @@ namespace RimBees
                 //str3 = (((float)tickCounter/240)*100).ToString();
                 strPercentProgress = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
                 strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
-                if (!CheckLightLevels())
+                if (!flagLight)
                 {
                     strStoppedBecauseNight = "\n"+"RB_BeehouseCombNoProgressNight".Translate();
                 }
-                if (!CheckRainLevels())
+                if (!flagRain)
                 {
                     strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
                 }
-                if (!CheckTemperatureLevels())
+                if (!flagTemperature)
                 {
                     strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate();
                 }
-                if (!CheckPlantsNearby())
+                if (!flagPlants)
                 {
-                    strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants".Translate();
+                    strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants1".Translate() + whichPlantNeeds + "RB_BeehouseCombNoProgressPlants2".Translate();
                 }
 
             }
@@ -175,7 +196,7 @@ namespace RimBees
             }
       
 
-            return text + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
+            return text + strToAddSpaceIfElectricityUsed + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
                 + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
                 "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + strStoppedBecauseNight
                  + strStoppedBecauseRain  + strStoppedBecauseTemperature  + strStoppedBecauseNoPLants;
@@ -322,6 +343,7 @@ namespace RimBees
             bool bee2nocturnal = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
             if (bee1nocturnal || bee2nocturnal)
             {
+                flagLight = true;
                 return true;
             } else
             {
@@ -329,10 +351,14 @@ namespace RimBees
                 //float num = this.Map.glowGrid.GameGlowAt(this.Position, false);
                 if (currentHour>=5&& currentHour<=22)
                 {
+                    flagLight = true;
                     return true;
 
                 }
-                else return false;
+                else {
+                    flagLight = false;
+                    return false;
+                }
 
             }
 
@@ -344,6 +370,7 @@ namespace RimBees
             bool bee2pluviophile = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
             if (bee1pluviophile || bee2pluviophile)
             {
+                flagRain = true;
                 return true;
             }
             else
@@ -351,10 +378,15 @@ namespace RimBees
                 bool isWeatherRain = (this.Map.weatherManager.curWeather.defName != "Clear")&& (this.Map.weatherManager.curWeather.defName != "Fog")&& (this.Map.weatherManager.curWeather.defName != "DryThunderstorm");
                 if (isWeatherRain)
                 {
+                    flagRain = false;
                     return false;
 
                 }
-                else return true;
+                else
+                {
+                    flagRain = true;
+                    return true;
+                }
 
             }
         }
@@ -369,12 +401,16 @@ namespace RimBees
 
             float currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
 
-            if (   (currentTempInMap > (bee1tempMin+ bee2tempMin)/2)    &&   (currentTempInMap < (bee1tempMax+bee2tempMax)/2)   )
+            if ((currentTempInMap > (bee1tempMin + bee2tempMin) / 2) && (currentTempInMap < (bee1tempMax + bee2tempMax) / 2))
             {
+                flagTemperature = true;
                 return true;
 
             }
-            else return false;
+            else {
+                flagTemperature = false;
+                return false;
+            }
 
         }
 
@@ -386,11 +422,19 @@ namespace RimBees
 
             if ((bee1plantNeeded=="no") && (bee2plantNeeded == "no"))
             {
-
+                flagPlants = true;
                 return true;
 
             }else 
             {
+                if (bee1plantNeeded == "no") {
+                    whichPlantNeeds = ThingDef.Named(bee2plantNeeded).label;
+
+                } else if (bee2plantNeeded == "no")
+                {
+                    whichPlantNeeds = ThingDef.Named(bee1plantNeeded).label;
+
+                }
 
                 CellRect rect = GenAdj.OccupiedRect(this.Position, this.Rotation, IntVec2.One);
                 rect = rect.ExpandedBy(6);
@@ -402,12 +446,13 @@ namespace RimBees
                     {
                         if ((plantList[i].def.defName == bee1plantNeeded)||(plantList[i].def.defName == bee2plantNeeded))
                         {
-                           
+                            flagPlants = true;
                             return true;
                         }
                     }
 
                 }
+                flagPlants = false;
                 return false;
 
 

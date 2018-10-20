@@ -23,7 +23,8 @@
 	<RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
 	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
 	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
-	<RB_BeehouseCombNoProgressPlants>Stopped due to absence of plant or resource in 6 tiles radius</RB_BeehouseCombNoProgressPlants>
+	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> 
+	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2>
 
 
 	<GU_PlaceNextToBeeHouse>The brood chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouse>
