@@ -297,6 +297,86 @@
 	  <texPath>Things/Item/Combs/RB_Plastic_Honeycomb</texPath>
     </graphicData>	
 </ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_High_Honeycomb</defName>
+    <label>high honeycomb</label>
+    <description>This is a honeycomb produced by High bees. High bees are junkies, permanently high on yayo. This makes them pretty terrible workers, but they produce a significant, constant amount of drugs, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and yayo.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_High_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Lucifer_Honeycomb</defName>
+    <label>lucifer honeycomb</label>
+    <description>This is a honeycomb produced by Lucifer bees. An entire breed of bees addicted to luciferium. Lucifer bees are the slowest working bees possible, what with the constant dying and suffering but they produce a significant, constant amount of luciferium, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and luciferium.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Lucifer_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Culinary_Honeycomb</defName>
+    <label>culinary honeycomb</label>
+    <description>This is a honeycomb produced by Culinary bees. Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a very simple meal. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and nutrient paste.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Culinary_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Chef_Honeycomb</defName>
+    <label>chef honeycomb</label>
+    <description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Medicinal_Honeycomb</defName>
+    <label>medicinal honeycomb</label>
+    <description>This is a honeycomb produced by Medicinal bees. Medicinal bees secrete a saline solution that can be used as a low grade medicinal salve. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and herbal medicine.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Medicinal_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Surgeon_Honeycomb</defName>
+    <label>surgeon honeycomb</label>
+    <description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ultratech medicine.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Synthetic_Honeycomb</defName>
+    <label>synthetic honeycomb</label>
+    <description>This is a honeycomb produced by Synthetic bees. Synthetic bees catch minute fibres from the air surrounding them and weave them with a natural silk to create synthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and synthread.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Synthetic_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
+
+ <ThingDef ParentName="RB_CombBase">
+    <defName>RB_Hyper_Honeycomb</defName>
+    <label>hyper honeycomb</label>
+    <description>This is a honeycomb produced by Hyper bees. SHyper bees catch minute fibres from the air surrounding them and weave them with a natural silk to create hyperthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and hyperweave.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Item/Combs/RB_Hyper_Honeycomb</texPath>
+    </graphicData>	
+</ThingDef>
  
   
   

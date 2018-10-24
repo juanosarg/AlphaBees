@@ -35,5 +35,20 @@
     <driverClass>RimBees.JobDriver_TakeThingsOutOfHybridizationChamber</driverClass>
     <reportString>getting bees out of a hybridization chamber.</reportString>
   </JobDef>
+  
+    <JobDef>
+    <defName>RB_FillMeadFermentingBarrelJob</defName>
+    <driverClass>RimBees.JobDriver_FillMeadFermentingBarrel</driverClass>
+    <reportString>filling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
+    <defName>RB_TakeMeadOutOfFermentingBarrelJob</defName>
+    <driverClass>RimBees.JobDriver_TakeMeadOutOfFermentingBarrel</driverClass>
+    <reportString>taking beer out of TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 
 </Defs>

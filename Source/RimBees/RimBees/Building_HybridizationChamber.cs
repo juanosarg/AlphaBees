@@ -341,6 +341,10 @@ namespace RimBees
                             break;
                     }
                 }
+                if (beeQueen == "Plastic")
+                {
+                    return "Synthetic";
+                }
 
 
             }
@@ -387,7 +391,10 @@ namespace RimBees
                             break;
                     }
                 }
-
+                if (beeQueen == "Technological")
+                {
+                    return "Culinary";
+                }
 
             }
 
@@ -409,8 +416,96 @@ namespace RimBees
                             break;
                     }
                 }
+                if (beeQueen == "Nutritious")
+                {
+                    return "Culinary";
+                }
+                if (beeQueen == "Medicinal")
+                {
+                    return "Surgeon";
+                }
+                if (beeQueen == "Synthetic")
+                {
+                    return "Hyper";
+                }
 
 
+            }
+
+            if (beeDrone == "Stoner")
+            {
+                if (beeQueen == "Psychic")
+                {
+                    return "High";
+                }
+            }
+            if (beeDrone == "Psychic")
+            {
+                if (beeQueen == "Stoner")
+                {
+                    return "High";
+                }
+            }
+
+            if (beeDrone == "High")
+            {
+                if (beeQueen == "Luxurious")
+                {
+                    return "Lucifer";
+                }
+            }
+            if (beeDrone == "Luxurious")
+            {
+                if (beeQueen == "High")
+                {
+                    return "Lucifer";
+                }
+            }
+            if (beeDrone == "Culinary")
+            {
+                if (beeQueen == "Agricultural")
+                {
+                    return "Chef";
+                }
+            }
+            if (beeDrone == "Agricultural")
+            {
+                if (beeQueen == "Culinary")
+                {
+                    return "Chef";
+                }
+                if (beeQueen == "Swamp")
+                {
+                    return "Medicinal";
+                }
+            }
+            if (beeDrone == "Swamp")
+            {
+                if (beeQueen == "Agricultural")
+                {
+                    return "Medicinal";
+                }
+            }
+            if (beeDrone == "Medicinal")
+            {
+                if (beeQueen == "Technological")
+                {
+                    return "Surgeon";
+                }
+            }
+            if (beeDrone == "Plastic")
+            {
+                if (beeQueen == "Alloy")
+                {
+                    return "Synthetic";
+                }
+            }
+            if (beeDrone == "Synthetic")
+            {
+                if (beeQueen == "Technological")
+                {
+                    return "Hyper";
+                }
             }
 
 

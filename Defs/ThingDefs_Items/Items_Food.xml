@@ -103,6 +103,74 @@
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
   </ThingDef>
+  
+    <ThingDef ParentName="MealRottable">
+    <defName>RB_HoneyPreservedMeat</defName>
+    <label>honey preserved meat</label>
+    <description>Roasted meat that has been preserved with honey.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_PreservedMeat</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Nutrition>0.05</Nutrition>
+   	  <Mass>0.025</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+	  <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatMeat</ingestEffect>
+      <preferability>MealAwful</preferability>
+      <ingestSound>RawMeat_Eat</ingestSound>
+  </ingestible>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="MealRottable">
+    <defName>RB_HoneyPreservedVegetables</defName>
+    <label>honey preserved vegetables</label>
+    <description>Roasted vegetables that have been preserved with honey.</description>
+    <graphicData>
+      <texPath>Things/Item/RB_PreservedVeggies</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+
+    </graphicData>
+    <thingCategories>
+      <li>PlantFoodRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Nutrition>0.05</Nutrition>
+   	  <Mass>0.025</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+	  <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <preferability>MealAwful</preferability>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+  </ingestible>
+
+  </ThingDef>
 
 
 

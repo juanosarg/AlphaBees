@@ -7,7 +7,7 @@
     <description>Honey is a sweet, viscous food substance produced by bees. Bees produce honey from the sugary secretions of plants. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>AnimalProductRaw</li>
+      <li>RB_Honeys</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Item/Product/RB_HoneyJar</texPath>
@@ -45,7 +45,7 @@
     <description>This honey has been extracted from Amalgam honeycombs, and has a distinct blueish tone that makes it less appetizing. However, it is in fact more nutritious than normal honey. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>AnimalProductRaw</li>
+      <li>RB_Honeys</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Item/Product/RB_ThickBlueHoneyJar</texPath>
@@ -83,7 +83,7 @@
     <description>This honey has been extracted from Adaptive honeycombs, and has a reddish brown colour and a pungent smell. This honey won't rot at all, so it can be stored indefinitely. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>AnimalProductRaw</li>
+      <li>RB_Honeys</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Item/Product/RB_AdaptiveHoneyJar</texPath>
@@ -118,7 +118,7 @@
     <description>This honey has been extracted from Nocturnal honeycombs, and is really dark and thick. It has certain health benefits, Improving blood filtration and pumping. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>AnimalProductRaw</li>
+      <li>RB_Honeys</li>
     </thingCategories>
     <graphicData>
       <texPath>Things/Item/Product/RB_BlackHoneyJar</texPath>

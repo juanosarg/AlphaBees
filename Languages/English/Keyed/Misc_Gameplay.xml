@@ -35,7 +35,7 @@
 
 	<GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
 	<GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
-	
+
 	<GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
 	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
 	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
@@ -46,8 +46,11 @@
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 
 
+	<!-- Mead -->
 
-
+	<RB_NoMeadMust>No mead must</RB_NoMeadMust>
+	<RB_ContainsMeadMust>Contains {0} / {1} mead must.</RB_ContainsMeadMust>
+	<RB_ContainsMead>Contains {0} / {1} mead.</RB_ContainsMead>
 
 
 	<!-- Bee Tags -->
@@ -72,20 +75,29 @@
 	<RB_Aurum_Drone_Tag>Aurum Drone</RB_Aurum_Drone_Tag>
 	<RB_Precious_Drone_Tag>Precious Drone</RB_Precious_Drone_Tag>
 	<RB_Radioactive_Drone_Tag>Radioactive Drone</RB_Radioactive_Drone_Tag>
-	
+
 	<RB_Tipsy_Drone_Tag>Tipsy Drone</RB_Tipsy_Drone_Tag>
 	<RB_Luxurious_Drone_Tag>Luxurious Drone</RB_Luxurious_Drone_Tag>
 	<RB_Psychic_Drone_Tag>Psychic Drone</RB_Psychic_Drone_Tag>
 	<RB_Stoner_Drone_Tag>Stoner Drone</RB_Stoner_Drone_Tag>
-		
+
 	<RB_Agricultural_Drone_Tag>Agricultural Drone</RB_Agricultural_Drone_Tag>
 	<RB_Bittersweet_Drone_Tag>Bittersweet Drone</RB_Bittersweet_Drone_Tag>
 	<RB_Lactic_Drone_Tag>Lactic Drone</RB_Lactic_Drone_Tag>
 	<RB_Egglaying_Drone_Tag>Egglaying Drone</RB_Egglaying_Drone_Tag>
-	
+
 	<RB_Electronic_Drone_Tag>Electronic Drone</RB_Electronic_Drone_Tag>
 	<RB_Oily_Drone_Tag>Oily Drone</RB_Oily_Drone_Tag>
 	<RB_Plastic_Drone_Tag>Plastic Drone</RB_Plastic_Drone_Tag>
+
+	<RB_High_Drone_Tag>High Drone</RB_High_Drone_Tag>
+	<RB_Lucifer_Drone_Tag>Lucifer Drone</RB_Lucifer_Drone_Tag>
+	<RB_Medicinal_Drone_Tag>Medicinal Drone</RB_Medicinal_Drone_Tag>
+	<RB_Surgeon_Drone_Tag>Surgeon Drone</RB_Surgeon_Drone_Tag>
+	<RB_Culinary_Drone_Tag>Culinary Drone</RB_Culinary_Drone_Tag>
+	<RB_Chef_Drone_Tag>Chef Drone</RB_Chef_Drone_Tag>
+	<RB_Synthetic_Drone_Tag>Synthetic Drone</RB_Synthetic_Drone_Tag>
+	<RB_Hyper_Drone_Tag>Hyper Drone</RB_Hyper_Drone_Tag>
 
 
 
@@ -125,6 +137,13 @@
 	<RB_Oily_Queen_Tag>Oily Queen</RB_Oily_Queen_Tag>
 	<RB_Plastic_Queen_Tag>Plastic Queen</RB_Plastic_Queen_Tag>
 
-
+	<RB_High_Queen_Tag>High Queen</RB_High_Queen_Tag>
+	<RB_Lucifer_Queen_Tag>Lucifer Queen</RB_Lucifer_Queen_Tag>
+	<RB_Medicinal_Queen_Tag>Medicinal Queen</RB_Medicinal_Queen_Tag>
+	<RB_Surgeon_Queen_Tag>Surgeon Queen</RB_Surgeon_Queen_Tag>
+	<RB_Culinary_Queen_Tag>Culinary Queen</RB_Culinary_Queen_Tag>
+	<RB_Chef_Queen_Tag>Chef Queen</RB_Chef_Queen_Tag>
+	<RB_Synthetic_Queen_Tag>Synthetic Queen</RB_Synthetic_Queen_Tag>
+	<RB_Hyper_Queen_Tag>Hyper Queen</RB_Hyper_Queen_Tag>
 
 </LanguageData>

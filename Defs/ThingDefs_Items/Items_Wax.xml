@@ -33,6 +33,8 @@
     <stuffProps>
       <categories>
         <li>Metallic</li>
+		<li>RB_Waxy</li>
+
       </categories>
       <color>(226,183,114)</color>
       <commonality>0</commonality>
@@ -49,6 +51,111 @@
         <Flammability>1</Flammability>
         <WorkToMake>0.7</WorkToMake>
 		<WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+
+      </statFactors>
+      
+    </stuffProps>
+  </ThingDef>
+  
+       <ThingDef ParentName="ResourceBase">
+    <defName>RB_Brittlewax</defName>
+    <label>brittle beeswax</label>
+     <description>Brittle beeswax is much less resistant than regular beeswax, but it is very, very light, and things can be built with it in a very short amount of time.</description>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_Brittlewax</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeability>Sellable</tradeability>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>1</Flammability>
+	  <MaxHitPoints>60</MaxHitPoints>
+	  <DeteriorationRate>3.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+		<li>RB_Waxy</li>
+
+      </categories>
+      <color>(112,215,222)</color>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.25</MaxHitPoints>
+        <Beauty>1.5</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.25</WorkToMake>
+		<WorkToBuild>0.25</WorkToBuild>
+        <DoorOpenSpeed>0.5</DoorOpenSpeed>
+
+      </statFactors>
+      
+    </stuffProps>
+  </ThingDef>
+  
+       <ThingDef ParentName="ResourceBase">
+    <defName>RB_RedBeeswax</defName>
+    <label>red beeswax</label>
+     <description>Red Beeswax is slightly stronger than regular wax, but its main advantage is that it isn't flammable. It can be used to make cnadles when treated, though.</description>
+    <graphicData>
+      <texPath>Things/Item/Product/RB_RedBeesWax</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tradeability>Sellable</tradeability>
+    <resourceReadoutPriority>First</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+	        <MaxHitPoints>100</MaxHitPoints>
+
+	  <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+		<li>RB_Waxy</li>
+
+      </categories>
+      <color>(226,120,114)</color>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>1</WorkToMake>
+		<WorkToBuild>1</WorkToBuild>
         <DoorOpenSpeed>1.2</DoorOpenSpeed>
 
       </statFactors>
@@ -84,6 +191,8 @@
     <stuffProps>
       <categories>
         <li>Metallic</li>
+				<li>RB_Waxy</li>
+
       </categories>
       <color>(240,240,240)</color>
       <commonality>0</commonality>
@@ -135,6 +244,8 @@
     <stuffProps>
       <categories>
         <li>Metallic</li>
+				<li>RB_Waxy</li>
+
       </categories>
       <color>(39,40,58)</color>
       <commonality>0</commonality>

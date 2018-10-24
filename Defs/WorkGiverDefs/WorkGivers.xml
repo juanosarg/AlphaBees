@@ -90,7 +90,31 @@
     </requiredCapacities>
   </WorkGiverDef>
 	
-	
+	<WorkGiverDef>
+    <defName>RB_TakeBeerOutOfFermentingBarrel</defName>
+    <label>take mead out of fermenting barrels</label>
+    <giverClass>RimBees.WorkGiver_TakeMeadOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take mead</verb>
+    <gerund>taking mead from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>RB_FillMeadFermentingBarrel</defName>
+    <label>fill fermenting barrels</label>
+    <giverClass>RimBees.WorkGiver_FillMeadFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>19</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
 	
 	
 

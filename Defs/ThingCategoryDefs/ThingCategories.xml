@@ -10,6 +10,14 @@
       
     </ThingCategoryDef>
 	
+	      <ThingCategoryDef>
+        <defName>RB_Honeys</defName>
+        <label>bee honeys</label>
+        <parent>AnimalProductRaw</parent>
+        <iconPath>UI/RB_HoneyJarIcon</iconPath>
+      </ThingCategoryDef>
+
+	
 
 
 </Defs>
