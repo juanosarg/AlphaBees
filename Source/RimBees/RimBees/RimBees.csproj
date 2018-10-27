@@ -52,6 +52,8 @@
     <Compile Include="Building_BroodChamber.cs" />
     <Compile Include="Building_MeadFermentingBarrel.cs" />
     <Compile Include="Building_TreeHive.cs" />
+    <Compile Include="CompProperties_TempRuinableAndDestroy.cs" />
+    <Compile Include="CompTempRuinableAndDestroy.cs" />
     <Compile Include="CompTreeHive.cs" />
     <Compile Include="CompBees.cs" />
     <Compile Include="CompProperties_TreeHive.cs" />

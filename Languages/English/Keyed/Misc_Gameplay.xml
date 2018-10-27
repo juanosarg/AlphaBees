@@ -3,6 +3,8 @@
 
 	<!-- Misc -->
 
+	<RB_DestroyedByTemp> has been destroyed by temperature</RB_DestroyedByTemp>
+	
 	<RB_ExtractBees>Extract Bees</RB_ExtractBees>
 	<RB_ExtractBeesDesc>Extract Honey Bees from beehouse</RB_ExtractBeesDesc>
 	<RB_InsertBees>Insert drone</RB_InsertBees>
@@ -22,7 +24,7 @@
 	<RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
 	<RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
 	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
-	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature</RB_BeehouseCombNoProgressTemperature>
+	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature>
 	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> 
 	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2>
 

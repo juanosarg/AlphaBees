@@ -104,7 +104,7 @@
     </ingestible>
   </ThingDef>
   
-    <ThingDef ParentName="MealRottable">
+    <ThingDef ParentName="MealBase">
     <defName>RB_HoneyPreservedMeat</defName>
     <label>honey preserved meat</label>
     <description>Roasted meat that has been preserved with honey.</description>
@@ -138,7 +138,7 @@
 
   </ThingDef>
   
-  <ThingDef ParentName="MealRottable">
+  <ThingDef ParentName="MealBase">
     <defName>RB_HoneyPreservedVegetables</defName>
     <label>honey preserved vegetables</label>
     <description>Roasted vegetables that have been preserved with honey.</description>

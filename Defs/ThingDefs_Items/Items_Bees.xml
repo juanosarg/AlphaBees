@@ -17,8 +17,8 @@
 		<stackLimit>75</stackLimit>	
 		<comps>
 
-			<li Class="CompProperties_TemperatureRuinable">
-				<minSafeTemperature>0</minSafeTemperature>
+			<li Class="RimBees.CompProperties_TempRuinableAndDestroy">
+				<minSafeTemperature>-5</minSafeTemperature>
 				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>

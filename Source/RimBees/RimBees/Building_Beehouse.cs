@@ -34,6 +34,12 @@ namespace RimBees
         public bool flagRain = false;
         public bool flagPlants = false;
 
+        public bool flagInitializeConditions = false;
+
+        public int avgTempMin = 0;
+        public int avgTempMax = 0;
+
+
 
 
 
@@ -71,6 +77,12 @@ namespace RimBees
             Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
             Scribe_Values.Look<bool>(ref this.flagRain, "flagRain", false, false);
             Scribe_Values.Look<bool>(ref this.flagPlants, "flagPlants", false, false);
+            Scribe_Values.Look<bool>(ref this.flagInitializeConditions, "flagInitializeConditions", false, false);
+            Scribe_Values.Look<int>(ref this.avgTempMin, "avgTempMin", 0, false);
+            Scribe_Values.Look<int>(ref this.avgTempMax, "avgTempMax", 0, false);
+
+
+
 
 
 
@@ -171,22 +183,25 @@ namespace RimBees
                 //str3 = (((float)tickCounter/240)*100).ToString();
                 strPercentProgress = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
                 strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
-                if (!flagLight)
-                {
-                    strStoppedBecauseNight = "\n"+"RB_BeehouseCombNoProgressNight".Translate();
+                if (flagInitializeConditions) {
+                    if (!flagLight)
+                    {
+                        strStoppedBecauseNight = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
+                    }
+                    if (!flagRain)
+                    {
+                        strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
+                    }
+                    if (!flagTemperature)
+                    {
+                        strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate()+avgTempMin+"-"+avgTempMax+"ºC)";
+                    }
+                    if (!flagPlants)
+                    {
+                        strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants1".Translate() + whichPlantNeeds + "RB_BeehouseCombNoProgressPlants2".Translate();
+                    }
                 }
-                if (!flagRain)
-                {
-                    strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
-                }
-                if (!flagTemperature)
-                {
-                    strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate();
-                }
-                if (!flagPlants)
-                {
-                    strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants1".Translate() + whichPlantNeeds + "RB_BeehouseCombNoProgressPlants2".Translate();
-                }
+                
 
             }
             else {
@@ -276,12 +291,15 @@ namespace RimBees
         {
             this.innerContainerDrones.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnown = true;
+            flagInitializeConditions = false;
         }
 
         public virtual void EjectContentsQueens()
         {
             this.innerContainerQueens.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnownQueens = true;
+            flagInitializeConditions = false;
+
         }
 
 
@@ -292,7 +310,7 @@ namespace RimBees
             {
                 if (!BeehouseIsFull) {
 
-                   
+                    flagInitializeConditions = true;
                     if (CheckLightLevels()) {
                         if (CheckRainLevels()) {
                             if (CheckTemperatureLevels()) {
@@ -399,9 +417,12 @@ namespace RimBees
             int bee1tempMax = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetTempMax;
             int bee2tempMax = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetTempMax;
 
+            avgTempMin = (bee1tempMin + bee2tempMin) / 2;
+            avgTempMax = (bee1tempMax + bee2tempMax) / 2;
+
             float currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
 
-            if ((currentTempInMap > (bee1tempMin + bee2tempMin) / 2) && (currentTempInMap < (bee1tempMax + bee2tempMax) / 2))
+            if ((currentTempInMap > avgTempMin) && (currentTempInMap < avgTempMax))
             {
                 flagTemperature = true;
                 return true;
