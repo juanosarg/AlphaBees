@@ -62,7 +62,7 @@ namespace RimBees
                 if (this.ruinedPercent >= 1f)
                 {
                     this.ruinedPercent = 1f;
-                    Messages.Message(this.parent.def.label.CapitalizeFirst() + "RB_DestroyedByTemp".Translate(), this.parent, MessageTypeDefOf.NegativeEvent);
+                    Messages.Message(this.parent.def.label.CapitalizeFirst() + "RB_DestroyedByTemp".Translate(), new TargetInfo(this.parent.Position, this.parent.Map, false), MessageTypeDefOf.NegativeEvent);
                     this.parent.Destroy();
                     this.parent.BroadcastCompSignal("RuinedByTemperature");
                 }

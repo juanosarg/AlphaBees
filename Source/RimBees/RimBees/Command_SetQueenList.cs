@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse.AI;
+using Verse;
 
 
-namespace Verse
+namespace RimBees
 {
     [StaticConstructorOnStartup]
     public class Command_SetQueenList : Command
@@ -333,7 +334,7 @@ namespace Verse
 
         private void TryInsertQueen()
         {
-
+            
             Pawn pawn = null;
             foreach (Pawn current in map.mapPawns.FreeColonistsSpawned)
             {
@@ -368,7 +369,8 @@ namespace Verse
                     if (TryToReserveThings(pawn, job))
                     {
                         pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
-
+                        Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
+                        buildingbeehouse.BeehouseIsExpectingQueens = true;
                     }
                     else
                     {

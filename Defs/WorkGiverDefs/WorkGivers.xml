@@ -1,7 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
+<!-- <WorkGiverDef>
+    <defName>RB_InsertDroneInBeehouse</defName>
+    <label>inserting drone in beehouse</label>
+    <giverClass>RimBees.WorkGiver_InserDroneInBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert drone in beehouse</verb>
+    <gerund>inserting drone in beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+   <WorkGiverDef>
+    <defName>RB_InsertDroneInAdvancedBeehouse</defName>
+    <label>inserting drone in advanced beehouse</label>
+    <giverClass>RimBees.WorkGiver_InserDroneInAdvancedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert drone in advanced beehouse</verb>
+    <gerund>inserting drone in advanced beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+     <WorkGiverDef>
+    <defName>RB_InsertDroneInClimatizedBeehouse</defName>
+    <label>inserting drone in climatized beehouse</label>
+    <giverClass>RimBees.WorkGiver_InserDroneInClimatizedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert drone in climatized beehouse</verb>
+    <gerund>inserting drone in climatized beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>-->
 
 	<WorkGiverDef>
 		<defName>RB_DoBillsHoneyCentrifuge</defName>
@@ -58,6 +95,19 @@
     <workType>Hauling</workType>
     <verb>take things out of advanced beehouse</verb>
     <gerund>taking things out of advanced beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>RB_TakeThingsOutOfClimatizedBeehouse</defName>
+    <label>taking things out of climatized beehouse</label>
+    <giverClass>RimBees.WorkGiver_TakeThingsOutOfClimatizedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>take things out of climatized beehouse</verb>
+    <gerund>taking things out of climatized beehouse</gerund>
     <priorityInType>20</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>

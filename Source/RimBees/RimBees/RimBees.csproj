@@ -67,6 +67,7 @@
     <Compile Include="PlaceWorker_NextToBeeHouse.cs" />
     <Compile Include="WorkGiver_FillMeadFermentingBarrel.cs" />
     <Compile Include="WorkGiver_TakeMeadOutOfFermentingBarrel.cs" />
+    <Compile Include="WorkGiver_TakeThingsOutOfClimatizedBeehouse.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfAdvancedBeehouse.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfHybridizationChamber.cs" />
     <Compile Include="WorkGiver_TakeThingsOutOfBroodChamber.cs" />

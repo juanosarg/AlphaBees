@@ -18,10 +18,14 @@ namespace RimBees
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
         public bool BeehouseIsRunning = false;
+        public bool BeehouseIsExpectingDrone = false;
+        public bool BeehouseIsExpectingQueens = false;
+
 
         public float growOptimalGlow = 0.3f;
 
         public int ticksToDays = 240;
+        public int ticksToResetJobs = 20;
 
 
         public ThingOwner innerContainerDrones = null;
@@ -72,6 +76,8 @@ namespace RimBees
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingDrone, "BeehouseIsExpectingDrone", false, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingQueens, "BeehouseIsExpectingQueens", false, false);
             Scribe_Values.Look<string>(ref this.whichPlantNeeds, "whichPlantNeeds", "", false);
             Scribe_Values.Look<bool>(ref this.flagLight, "flagLight", false, false);
             Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
@@ -107,8 +113,19 @@ namespace RimBees
             {
                 yield return g;
             }
+            if (this.BeehouseIsExpectingDrone) {
+                Command_Action RB_Gizmo_Drones_Waiting = new Command_Action();
+                RB_Gizmo_Drones_Waiting.action = delegate
+                {
+                   
 
-            if (innerContainerDrones.NullOrEmpty())
+                };
+                RB_Gizmo_Drones_Waiting.defaultLabel = "RB_InsertBees".Translate();
+                RB_Gizmo_Drones_Waiting.defaultDesc = "RB_InsertBeesDesc".Translate();
+                RB_Gizmo_Drones_Waiting.icon = ContentFinder<Texture2D>.Get("UI/RB_Drones_Waiting", true);
+                yield return RB_Gizmo_Drones_Waiting;
+            }
+            else if (innerContainerDrones.NullOrEmpty())
             {
                 yield return BeeListSetupUtility.SetBeeListCommand(this, map);
             } else
@@ -125,6 +142,19 @@ namespace RimBees
                 yield return RB_Gizmo_Empty_Drones;
             }
 
+            if (this.BeehouseIsExpectingQueens)
+            {
+                Command_Action RB_Gizmo_Queens_Waiting = new Command_Action();
+                RB_Gizmo_Queens_Waiting.action = delegate
+                {
+
+
+                };
+                RB_Gizmo_Queens_Waiting.defaultLabel = "RB_InsertQueens".Translate();
+                RB_Gizmo_Queens_Waiting.defaultDesc = "RB_InsertQueensDesc".Translate();
+                RB_Gizmo_Queens_Waiting.icon = ContentFinder<Texture2D>.Get("UI/RB_Queens_Waiting", true);
+                yield return RB_Gizmo_Queens_Waiting;
+            } else
             if (innerContainerQueens.NullOrEmpty())
             {
                 yield return BeeListSetupUtility.SetQueenListCommand(this, map);
@@ -243,7 +273,7 @@ namespace RimBees
                 {
                     result = false;
                 }
-            
+            this.TickRare();
             return result;
         }
 
@@ -273,7 +303,7 @@ namespace RimBees
             {
                 result = false;
             }
-
+            this.TickRare();
             return result;
         }
 
@@ -292,6 +322,7 @@ namespace RimBees
             this.innerContainerDrones.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnown = true;
             flagInitializeConditions = false;
+            this.TickRare();
         }
 
         public virtual void EjectContentsQueens()
@@ -299,12 +330,22 @@ namespace RimBees
             this.innerContainerQueens.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnownQueens = true;
             flagInitializeConditions = false;
-
+            this.TickRare();
         }
 
 
         public override void TickRare()
         {
+            if(BeehouseIsExpectingDrone || BeehouseIsExpectingQueens)
+            {
+                ticksToResetJobs--;
+                if (ticksToResetJobs <= 0)
+                {
+                    ticksToResetJobs = 20;
+                    this.BeehouseIsExpectingDrone = false;
+                    this.BeehouseIsExpectingQueens = false;
+                }
+            }
             base.TickRare();
             if(!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
@@ -411,6 +452,11 @@ namespace RimBees
 
         public bool CheckTemperatureLevels()
         {
+            if (this.def.defName == "RB_ClimatizedBeehouse")
+            {
+                flagTemperature = true;
+                return true;
+            }
             int bee1tempMin = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
             int bee2tempMin = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
 
@@ -495,6 +541,10 @@ namespace RimBees
                 if (this.def.defName == "RB_AdvancedBeehouse")
                 {
                     extraRate = (float)0.9;
+                }
+                if (this.def.defName == "RB_ClimatizedBeehouse")
+                {
+                    extraRate = (float)2.5;
                 }
                 float bee1ticks = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
                 float bee2ticks = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;

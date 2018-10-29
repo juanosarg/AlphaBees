@@ -36,7 +36,8 @@ namespace RimBees
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
                     //buildingbeehouse.queenThing = this.job.targetB.Thing;
                     buildingbeehouse.TryAcceptAnyQueen(this.job.targetB.Thing,true);
-                    
+                    buildingbeehouse.BeehouseIsExpectingQueens = false;
+
                     //this.job.targetB.Thing.Destroy(); 
 
                 },
