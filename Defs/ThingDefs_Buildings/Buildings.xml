@@ -27,6 +27,7 @@
 		<costList>
 			<WoodLog>150</WoodLog>
 		</costList>
+		<rotatable>false</rotatable>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -61,6 +62,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+		    <researchPrerequisites>
+      <li>RB_BasicBeekeeping</li>
+    </researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -86,6 +90,7 @@
 		<costList>
 			<Steel>150</Steel>
 		</costList>
+		<rotatable>false</rotatable>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -126,6 +131,11 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
+			    <researchPrerequisites>
+      <li>RB_BasicBeekeeping</li>
+	        <li>Electricity</li>
+
+    </researchPrerequisites>
 	</ThingDef>
 
 
@@ -176,6 +186,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+				    <researchPrerequisites>
+      <li>RB_BasicBeekeeping</li>
+    </researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -226,6 +239,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+      <li>RB_ClimatizedBeehouses</li>
+    </researchPrerequisites>
 	</ThingDef>
 
 
@@ -287,8 +303,10 @@
 			<li Class="CompProperties_Flickable"/>
 		</comps>
 		<researchPrerequisites>
-			<li>Electricity</li>
+			<li>RB_AdvancedBeehouses</li>
+			     
 		</researchPrerequisites>
+
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -341,6 +359,9 @@
 		<placeWorkers>
 			<li>RimBees.PlaceWorker_NextToBeeHouse</li>
 		</placeWorkers>
+		<researchPrerequisites>
+      <li>RB_BeeBreeding</li>
+    </researchPrerequisites>
 	</ThingDef>	
 
 	<ThingDef ParentName="BuildingBase">
@@ -394,6 +415,9 @@
 		<placeWorkers>
 			<li>RimBees.PlaceWorker_NextToBeeHouseLeft</li>
 		</placeWorkers>
+		<researchPrerequisites>
+      <li>RB_BeeHybridizing</li>
+    </researchPrerequisites>
 	</ThingDef>	
 	
 	  <ThingDef ParentName="BuildingBase">
@@ -444,6 +468,8 @@
     <constructEffect>ConstructWood</constructEffect>
     <researchPrerequisites>
       <li>Brewing</li>
+	        <li>RB_MeadBrewing</li>
+
     </researchPrerequisites>
   </ThingDef>
 

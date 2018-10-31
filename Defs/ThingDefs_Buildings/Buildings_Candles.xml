@@ -65,7 +65,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>0.5</heatPerSecond>
-        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+        <heatPushMaxTemperature>10</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
         <fireSize>0.3</fireSize>
@@ -77,6 +77,9 @@
       <li>PlaceWorker_Heater</li>
     </placeWorkers>
 		<designationCategory>RB_Bees</designationCategory>
+		<researchPrerequisites>
+      <li>RB_BeeswaxLighting</li>
+    </researchPrerequisites>
    
   </ThingDef>
 
