@@ -113,6 +113,25 @@
     <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>RB_AdvancedCentrifugation</defName>
+    <label>advanced honey centrifugation</label>
+    <tab>RB_Bees</tab>
+    <techLevel>Industrial</techLevel>
+    <description>The Advanced Honey Centrifuge semi-automates the process of centrifugating combs to get resources, allowing your colonists to extract them in bulk.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+        <li>RB_AdvancedBeehouses</li>
+		
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
 
    <!--<ResearchProjectDef>
     <defName>GR_AnimalEnrichment</defName>

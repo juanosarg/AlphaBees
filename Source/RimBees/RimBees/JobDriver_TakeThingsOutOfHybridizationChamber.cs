@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
 using Verse.AI;
+using RimWorld;
 
 namespace RimBees
 {
@@ -42,12 +43,32 @@ namespace RimBees
                     Building_HybridizationChamber buildingHybridizationChamber = (Building_HybridizationChamber)this.job.GetTarget(TargetIndex.A).Thing;
                     Thing newBee = ThingMaker.MakeThing(GetHybridBee());
                     GenSpawn.Spawn(newBee, buildingHybridizationChamber.Position - GenAdj.CardinalDirections[0], buildingHybridizationChamber.Map);
-                    buildingHybridizationChamber.hybridizationChamberFull = false;
-                    buildingHybridizationChamber.tickCounter = 0;
+                    StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(newBee);
+                    IntVec3 c;
+                    if (StoreUtility.TryFindBestBetterStoreCellFor(newBee, this.pawn, this.Map, currentPriority, this.pawn.Faction, out c, true))
+                    {
+                        this.job.SetTarget(TargetIndex.C, c);
+                        this.job.SetTarget(TargetIndex.B, newBee);
+                        this.job.count = newBee.stackCount;
+                        buildingHybridizationChamber.hybridizationChamberFull = false;
+                        buildingHybridizationChamber.tickCounter = 0;
+                    }
+                    else
+                    {
+                        this.EndJobWith(JobCondition.Incompletable);
+                    }
+                   
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant
             };
-               
-            }
+            yield return Toils_Reserve.Reserve(TargetIndex.B, 1, -1, null);
+            yield return Toils_Reserve.Reserve(TargetIndex.C, 1, -1, null);
+            yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch);
+            yield return Toils_Haul.StartCarryThing(TargetIndex.B, false, false, false);
+            Toil carryToCell = Toils_Haul.CarryHauledThingToCell(TargetIndex.C);
+            yield return carryToCell;
+            yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.C, carryToCell, true);
+
+        }
     }
 }

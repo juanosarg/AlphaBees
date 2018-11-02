@@ -137,6 +137,79 @@
 
     </researchPrerequisites>
 	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Advanced_Honey_Centrifuge</defName>
+		<label>advanced honey centrifuge</label>
+		<description>The Advanced Honey Centrifuge semi-automates the process of centrifugating combs to get resources, allowing your colonists to extract them in bulk.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Advanced_Honey_Centrifuge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.5,3.5)</drawSize>
+			<shadowData>
+				<volume>(4.8, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>350</Steel>
+			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>
+
+		</costList>
+		<rotatable>false</rotatable>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>5500</WorkToBuild>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(5,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>450</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+			    <researchPrerequisites>
+      <li>RB_AdvancedCentrifugation</li>
+	        <li>Electricity</li>
+
+    </researchPrerequisites>
+	</ThingDef>
 
 
 	<ThingDef ParentName="BuildingBase">
