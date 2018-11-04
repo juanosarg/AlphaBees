@@ -3,14 +3,30 @@
 
  
     <ThingCategoryDef>
-      <defName>RB_Bees</defName>
-      <label>bees</label>
+      <defName>RB_Beekeeping</defName>
+      <label>beekeeping</label>
       <parent>Manufactured</parent>
 	  <iconPath>Things/Item/Bees/RB_Bee_Temperate_Drone</iconPath>
       
     </ThingCategoryDef>
 	
-	      <ThingCategoryDef>
+	<ThingCategoryDef>
+      <defName>RB_BeesAndQueens</defName>
+      <label>drones and queens</label>
+      <parent>RB_Beekeeping</parent>
+	  <iconPath>Things/Item/Bees/RB_Bee_Temperate_Queen</iconPath>
+      
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>RB_Combs</defName>
+      <label>honey combs</label>
+      <parent>RB_Beekeeping</parent>
+	  <iconPath>Things/Item/Combs/RB_Temperate_Honeycomb</iconPath>
+      
+    </ThingCategoryDef>
+	
+	  <ThingCategoryDef>
         <defName>RB_Honeys</defName>
         <label>bee honeys</label>
         <parent>AnimalProductRaw</parent>

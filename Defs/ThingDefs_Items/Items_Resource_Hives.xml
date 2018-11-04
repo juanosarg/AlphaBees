@@ -18,7 +18,7 @@
     <tickerType>Normal</tickerType>
 	<tradeability>Sellable</tradeability>
 	<thingCategories>
-      <li>RB_Bees</li>
+      <li>RB_Beekeeping</li>
     </thingCategories>
 	<stackLimit>1</stackLimit>
 	<comps>

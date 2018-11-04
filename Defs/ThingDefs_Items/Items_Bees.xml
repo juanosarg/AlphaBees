@@ -12,7 +12,7 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
-			<li>RB_Bees</li>
+			<li>RB_BeesAndQueens</li>
 		</thingCategories>
 		<stackLimit>75</stackLimit>	
 		<comps>
