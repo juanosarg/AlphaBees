@@ -370,7 +370,7 @@ namespace RimBees
                     {
                         pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
                         Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
-                        buildingbeehouse.BeehouseIsExpectingQueens = true;
+                        buildingbeehouse.BeehouseIsExpectingBees = true;
                     }
                     else
                     {

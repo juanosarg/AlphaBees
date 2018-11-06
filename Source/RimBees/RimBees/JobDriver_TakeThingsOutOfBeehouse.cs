@@ -71,6 +71,10 @@ namespace RimBees
                     else
                     {
                         this.EndJobWith(JobCondition.Incompletable);
+                        buildingbeehouse.BeehouseIsFull = false;
+                        buildingbeehouse.tickCounter = 0;
+
+
                     }
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant

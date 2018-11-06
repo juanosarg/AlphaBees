@@ -56,8 +56,11 @@ namespace RimBees
                     else
                     {
                         this.EndJobWith(JobCondition.Incompletable);
+                        buildingHybridizationChamber.hybridizationChamberFull = false;
+                        buildingHybridizationChamber.tickCounter = 0;
+
                     }
-                   
+
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant
             };

@@ -18,8 +18,7 @@ namespace RimBees
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
         public bool BeehouseIsRunning = false;
-        public bool BeehouseIsExpectingDrone = false;
-        public bool BeehouseIsExpectingQueens = false;
+        public bool BeehouseIsExpectingBees = false;
 
 
         public float growOptimalGlow = 0.3f;
@@ -76,8 +75,7 @@ namespace RimBees
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingDrone, "BeehouseIsExpectingDrone", false, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingQueens, "BeehouseIsExpectingQueens", false, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingBees, "BeehouseIsExpectingBees", false, false);
             Scribe_Values.Look<string>(ref this.whichPlantNeeds, "whichPlantNeeds", "", false);
             Scribe_Values.Look<bool>(ref this.flagLight, "flagLight", false, false);
             Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
@@ -113,7 +111,7 @@ namespace RimBees
             {
                 yield return g;
             }
-            if (this.BeehouseIsExpectingDrone) {
+            if (this.BeehouseIsExpectingBees) {
                 Command_Action RB_Gizmo_Drones_Waiting = new Command_Action();
                 RB_Gizmo_Drones_Waiting.action = delegate
                 {
@@ -142,7 +140,7 @@ namespace RimBees
                 yield return RB_Gizmo_Empty_Drones;
             }
 
-            if (this.BeehouseIsExpectingQueens)
+            if (this.BeehouseIsExpectingBees)
             {
                 Command_Action RB_Gizmo_Queens_Waiting = new Command_Action();
                 RB_Gizmo_Queens_Waiting.action = delegate
@@ -217,15 +215,17 @@ namespace RimBees
                     if (!flagLight)
                     {
                         strStoppedBecauseNight = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
-                    }
+                    } else
                     if (!flagRain)
                     {
                         strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
                     }
+                    else
                     if (!flagTemperature)
                     {
                         strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate()+avgTempMin+"-"+avgTempMax+"ºC)";
                     }
+                    else
                     if (!flagPlants)
                     {
                         strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants1".Translate() + whichPlantNeeds + "RB_BeehouseCombNoProgressPlants2".Translate();
@@ -336,14 +336,14 @@ namespace RimBees
 
         public override void TickRare()
         {
-            if(BeehouseIsExpectingDrone || BeehouseIsExpectingQueens)
+            if(BeehouseIsExpectingBees)
             {
                 ticksToResetJobs--;
                 if (ticksToResetJobs <= 0)
                 {
                     ticksToResetJobs = 20;
-                    this.BeehouseIsExpectingDrone = false;
-                    this.BeehouseIsExpectingQueens = false;
+                    this.BeehouseIsExpectingBees = false;
+                    
                 }
             }
             base.TickRare();
@@ -351,7 +351,6 @@ namespace RimBees
             {
                 if (!BeehouseIsFull) {
 
-                    flagInitializeConditions = true;
                     if (CheckLightLevels()) {
                         if (CheckRainLevels()) {
                             if (CheckTemperatureLevels()) {
@@ -387,6 +386,8 @@ namespace RimBees
                     }
 
                 }
+                flagInitializeConditions = true;
+
 
             }
             else

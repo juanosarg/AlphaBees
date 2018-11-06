@@ -19,7 +19,7 @@ namespace RimBees
 
             Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
 
-            buildingbeehouse.BeehouseIsExpectingDrone = false;
+            buildingbeehouse.BeehouseIsExpectingBees = false;
 
             this.EndJobWith(JobCondition.ErroredPather);
 
@@ -45,7 +45,7 @@ namespace RimBees
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
                    // buildingbeehouse.droneThing = this.job.targetB.Thing;
                     buildingbeehouse.TryAcceptThing(this.job.targetB.Thing,true);
-                    buildingbeehouse.BeehouseIsExpectingDrone = false;
+                    buildingbeehouse.BeehouseIsExpectingBees = false;
                     //this.job.targetB.Thing.Destroy(); 
 
                 },

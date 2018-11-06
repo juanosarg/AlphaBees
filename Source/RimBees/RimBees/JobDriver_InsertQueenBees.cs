@@ -14,7 +14,16 @@ namespace RimBees
             return this.pawn.Reserve(this.job.targetA, this.job, 1, -1, null) && this.pawn.Reserve(this.job.targetB, this.job, 1, -1, null);
         }
 
-       
+        public override void Notify_PatherFailed()
+        {
+
+            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
+
+            buildingbeehouse.BeehouseIsExpectingBees = false;
+
+            this.EndJobWith(JobCondition.ErroredPather);
+
+        }
 
         [DebuggerHidden]
         protected override IEnumerable<Toil> MakeNewToils()
@@ -36,7 +45,7 @@ namespace RimBees
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
                     //buildingbeehouse.queenThing = this.job.targetB.Thing;
                     buildingbeehouse.TryAcceptAnyQueen(this.job.targetB.Thing,true);
-                    buildingbeehouse.BeehouseIsExpectingQueens = false;
+                    buildingbeehouse.BeehouseIsExpectingBees = false;
 
                     //this.job.targetB.Thing.Destroy(); 
 
