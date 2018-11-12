@@ -11,7 +11,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Beekeeping_Workbench</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
 			<shadowData>
 				<volume>(2.9, 0.3, 0.5)</volume>
@@ -27,7 +27,6 @@
 		<costList>
 			<WoodLog>150</WoodLog>
 		</costList>
-		<rotatable>false</rotatable>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
