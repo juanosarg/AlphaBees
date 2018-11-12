@@ -21,14 +21,15 @@
       <li>RB_Beekeeping</li>
     </thingCategories>
 	<stackLimit>1</stackLimit>
-	<comps>
-			
-			<li Class="CompProperties_TemperatureRuinable">
-				<minSafeTemperature>0</minSafeTemperature>
-				<maxSafeTemperature>45</maxSafeTemperature>
+			<comps>
+
+			<li Class="RimBees.CompProperties_TempRuinableAndDestroy">
+				<minSafeTemperature>-5</minSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
-	</comps>
+		</comps>
+	
 </ThingDef>
 
 <ThingDef ParentName="RB_WildHiveBase">

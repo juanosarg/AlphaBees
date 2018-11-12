@@ -79,7 +79,7 @@
   
     <ThingDef ParentName="OrganicProductBase">
     <defName>RB_AdaptiveHoney</defName>
-    <label>blue honey</label>
+    <label>adaptive honey</label>
     <description>This honey has been extracted from Adaptive honeycombs, and has a reddish brown colour and a pungent smell. This honey won't rot at all, so it can be stored indefinitely. Honey can be consumed raw or cooked with other ingredients.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>

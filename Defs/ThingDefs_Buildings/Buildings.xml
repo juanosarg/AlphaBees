@@ -69,11 +69,11 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Honey_Centrifuge</defName>
 		<label>honey centrifuge</label>
-		<description>This sleek metal workstation is used to centrifuge honeycombs to extract honey and wax.</description>
+		<description>This sleek metal workstation is used to centrifuge honeycombs to extract honey and wax. Can work without electricity at 30% of normal speed (useful for tribal people).</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Honey_Centrifuge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
 			<shadowData>
 				<volume>(2.9, 0.3, 0.5)</volume>
@@ -89,7 +89,6 @@
 		<costList>
 			<Steel>150</Steel>
 		</costList>
-		<rotatable>false</rotatable>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -112,6 +111,8 @@
 		</inspectorTabs>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			      <unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
+
 		</building>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -132,7 +133,6 @@
 		</placeWorkers>
 			    <researchPrerequisites>
       <li>RB_BasicBeekeeping</li>
-	        <li>Electricity</li>
 
     </researchPrerequisites>
 	</ThingDef>
@@ -144,7 +144,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/RB_Advanced_Honey_Centrifuge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5.5,3.5)</drawSize>
 			<shadowData>
 				<volume>(4.8, 0.3, 0.5)</volume>
@@ -162,7 +162,6 @@
 			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>
 
 		</costList>
-		<rotatable>false</rotatable>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -369,7 +368,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>120</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
