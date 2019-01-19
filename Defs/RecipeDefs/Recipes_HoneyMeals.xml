@@ -28,7 +28,15 @@
 				<count>0.5</count>
 			</li>
 		</ingredients>
-		
+		<fixedIngredientFilter>
+
+			<categories>
+				<li>RB_Honeys</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
 		<products>
 			<RB_SimpleHoney>1</RB_SimpleHoney>
 		</products>
@@ -62,7 +70,15 @@
 				<count>2.1</count>
 			</li>
 		</ingredients>
-		
+		<fixedIngredientFilter>
+
+			<categories>
+				<li>RB_Honeys</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
 		<products>
 			<RB_SimpleHoney>4</RB_SimpleHoney>
 		</products>
