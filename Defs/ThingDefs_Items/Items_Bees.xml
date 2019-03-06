@@ -14,6 +14,8 @@
 		<thingCategories>
 			<li>RB_BeesAndQueens</li>
 		</thingCategories>
+			<tradeability>Sellable</tradeability>
+
 		<stackLimit>75</stackLimit>	
 		<comps>
 

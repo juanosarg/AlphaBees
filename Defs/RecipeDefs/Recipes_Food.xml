@@ -49,6 +49,7 @@
 			</specialFiltersToDisallow>
 			<disallowedThingDefs>
 				<li>RB_HoneyPreservedMeat</li>
+				
 			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<products>
