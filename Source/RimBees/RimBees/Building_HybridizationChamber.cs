@@ -20,6 +20,33 @@ namespace RimBees
         private System.Random rand = new System.Random();
         private System.Random beeRandomizer = new System.Random();
 
+        private Graphic HybridizationChamberIsFullGraphic = null;
+
+        /// <summary>
+        /// Returns the graphic of the object.
+        /// The renderer will draw the needed object graphic from here.
+        /// </summary>
+        public override Graphic Graphic
+        {
+            get
+            {
+                if (!hybridizationChamberFull)
+                    return base.Graphic;
+
+                if (HybridizationChamberIsFullGraphic == null)
+                {
+                    string graphicRealPath = def.graphicData.texPath + "_NeedRecharge";
+                    HybridizationChamberIsFullGraphic = GraphicDatabase.Get(def.graphicData.graphicClass,
+                        graphicRealPath,
+                        def.graphic.Shader,
+                        def.graphicData.drawSize,
+                        def.graphic.Color,
+                        def.graphic.ColorTwo);
+                }
+
+                return HybridizationChamberIsFullGraphic;
+            }
+        }
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {

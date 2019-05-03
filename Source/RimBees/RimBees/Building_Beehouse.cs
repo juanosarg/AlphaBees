@@ -51,6 +51,34 @@ namespace RimBees
 
         public Map map;
 
+        private Graphic BeehouseIsFullGraphic = null;
+
+        /// <summary>
+        /// Returns the graphic of the object.
+        /// The renderer will draw the needed object graphic from here.
+        /// </summary>
+        public override Graphic Graphic
+        {
+            get
+            {
+                if (!BeehouseIsFull)
+                    return base.Graphic;
+
+                if (BeehouseIsFullGraphic == null)
+                {
+                    string graphicRealPath = def.graphicData.texPath + "_NeedRecharge";
+                    BeehouseIsFullGraphic = GraphicDatabase.Get(def.graphicData.graphicClass,
+                        graphicRealPath,
+                        def.graphic.Shader,
+                        def.graphicData.drawSize,
+                        def.graphic.Color,
+                        def.graphic.ColorTwo);
+                }
+
+                return BeehouseIsFullGraphic;
+            }
+        }
+
         public Building_Beehouse()
         {
             this.innerContainerDrones = new ThingOwner<Thing>(this, false, LookMode.Deep);
