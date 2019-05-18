@@ -51,8 +51,6 @@ namespace RimBees
 
         public Map map;
 
-        private Graphic BeehouseIsFullGraphic = null;
-
         /// <summary>
         /// Returns the graphic of the object.
         /// The renderer will draw the needed object graphic from here.
@@ -61,21 +59,32 @@ namespace RimBees
         {
             get
             {
-                if (!BeehouseIsFull)
+                var customSuffix = "";
+
+                if (BeehouseIsFull)
+                    customSuffix = "_NeedRecharge";
+                else if (innerContainerDrones.NullOrEmpty() || innerContainerQueens.NullOrEmpty())
+                    customSuffix = "_NoBees";
+                else if (flagInitializeConditions && !flagLight)
+                    customSuffix = "_NoLight";
+                else if (flagInitializeConditions && !flagRain)
+                    customSuffix = "_Rain";
+                else if (flagInitializeConditions && !flagTemperature)
+                    customSuffix = "_WrongTemperature";
+                else if (flagInitializeConditions && !flagPlants)
+                    customSuffix = "_NoPlants";
+                else if (!BeehouseIsRunning)
+                    customSuffix = "_Stopped";
+
+                if (string.IsNullOrEmpty(customSuffix))
                     return base.Graphic;
 
-                if (BeehouseIsFullGraphic == null)
-                {
-                    string graphicRealPath = def.graphicData.texPath + "_NeedRecharge";
-                    BeehouseIsFullGraphic = GraphicDatabase.Get(def.graphicData.graphicClass,
-                        graphicRealPath,
-                        def.graphic.Shader,
-                        def.graphicData.drawSize,
-                        def.graphic.Color,
-                        def.graphic.ColorTwo);
-                }
-
-                return BeehouseIsFullGraphic;
+                return GraphicDatabase.Get(def.graphicData.graphicClass,
+                                           def.graphicData.texPath + customSuffix,
+                                           def.graphic.Shader,
+                                           def.graphicData.drawSize,
+                                           def.graphic.Color,
+                                           def.graphic.ColorTwo);
             }
         }
 

@@ -18,8 +18,6 @@ namespace RimBees
         public int daysTotal = 3;
         public bool broodChamberFull = false;
 
-        private Graphic BroodChamberIsFullGraphic = null;
-
         /// <summary>
         /// Returns the graphic of the object.
         /// The renderer will draw the needed object graphic from here.
@@ -28,21 +26,23 @@ namespace RimBees
         {
             get
             {
-                if (!broodChamberFull)
+                var customSuffix = "";
+
+                if (broodChamberFull)
+                    customSuffix = "_NeedRecharge";
+                else if (GetAdjacentBeehouse() == null
+                     || !GetAdjacentBeehouse().BeehouseIsRunning)
+                    customSuffix = "_Stopped";
+
+                if (string.IsNullOrEmpty(customSuffix))
                     return base.Graphic;
 
-                if (BroodChamberIsFullGraphic == null)
-                {
-                    string graphicRealPath = def.graphicData.texPath + "_NeedRecharge";
-                    BroodChamberIsFullGraphic = GraphicDatabase.Get(def.graphicData.graphicClass,
-                        graphicRealPath,
-                        def.graphic.Shader,
-                        def.graphicData.drawSize,
-                        def.graphic.Color,
-                        def.graphic.ColorTwo);
-                }
-
-                return BroodChamberIsFullGraphic;
+                return GraphicDatabase.Get(def.graphicData.graphicClass,
+                    def.graphicData.texPath + customSuffix,
+                    def.graphic.Shader,
+                    def.graphicData.drawSize,
+                    def.graphic.Color,
+                    def.graphic.ColorTwo);
             }
         }
 

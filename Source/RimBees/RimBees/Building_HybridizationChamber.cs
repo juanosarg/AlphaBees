@@ -20,8 +20,6 @@ namespace RimBees
         private System.Random rand = new System.Random();
         private System.Random beeRandomizer = new System.Random();
 
-        private Graphic HybridizationChamberIsFullGraphic = null;
-
         /// <summary>
         /// Returns the graphic of the object.
         /// The renderer will draw the needed object graphic from here.
@@ -30,21 +28,25 @@ namespace RimBees
         {
             get
             {
-                if (!hybridizationChamberFull)
+                var customSuffix = "";
+
+                if (hybridizationChamberFull)
+                    customSuffix = "_NeedRecharge";
+                else if (string.IsNullOrEmpty(HybridizationChecker()))
+                    customSuffix = "_WrongBees";
+                else if (GetAdjacentBeehouse() == null
+                     || !GetAdjacentBeehouse().BeehouseIsRunning)
+                    customSuffix = "_Stopped";
+
+                if (string.IsNullOrEmpty(customSuffix))
                     return base.Graphic;
 
-                if (HybridizationChamberIsFullGraphic == null)
-                {
-                    string graphicRealPath = def.graphicData.texPath + "_NeedRecharge";
-                    HybridizationChamberIsFullGraphic = GraphicDatabase.Get(def.graphicData.graphicClass,
-                        graphicRealPath,
-                        def.graphic.Shader,
-                        def.graphicData.drawSize,
-                        def.graphic.Color,
-                        def.graphic.ColorTwo);
-                }
-
-                return HybridizationChamberIsFullGraphic;
+                return GraphicDatabase.Get(def.graphicData.graphicClass,
+                    def.graphicData.texPath + customSuffix,
+                    def.graphic.Shader,
+                    def.graphicData.drawSize,
+                    def.graphic.Color,
+                    def.graphic.ColorTwo);
             }
         }
 
@@ -152,6 +154,10 @@ namespace RimBees
         {
             string beeDrone = "";
             string beeQueen = "";
+
+            if (GetAdjacentBeehouse() == null)
+                return string.Empty;
+
             if ((this.GetAdjacentBeehouse().innerContainerDrones.TotalStackCount>0)&& (this.GetAdjacentBeehouse().innerContainerQueens.TotalStackCount > 0)){
                 beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
                 beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
