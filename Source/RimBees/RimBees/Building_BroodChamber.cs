@@ -94,6 +94,10 @@ namespace RimBees
         public override void TickRare()
         {
             base.TickRare();
+
+            if (GetAdjacentBeehouse() == null)
+                return;
+
             if (GetAdjacentBeehouse().BeehouseIsRunning && !broodChamberFull)
             {
                 tickCounter++;
@@ -102,7 +106,6 @@ namespace RimBees
                     SignalBroodChamberFull();
                 }
             }
-
         }
 
         public void SignalBroodChamberFull()
