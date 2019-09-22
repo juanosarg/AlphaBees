@@ -1,7 +1,7 @@
 <ModMetaData>
 	<name>RimBees</name>
 	<author>Sarg</author>
-	<targetVersion>1.0.2057</targetVersion>
+	<supportedVersions><li>1.0</li></supportedVersions>
 	<description>Breed bees to generate all kinds of resources!
 
 &lt;size=24&gt;Features&lt;/size&gt;

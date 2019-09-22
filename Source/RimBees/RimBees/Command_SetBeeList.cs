@@ -333,64 +333,66 @@ namespace RimBees
 
         private void TryInsertDrone()
         {
-            
+            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
+            buildingbeehouse.BeehouseIsExpectingBees = true;
+            buildingbeehouse.theDroneIAmGoingToInsert = drone.def.defName;
 
-            Pawn pawn = null;
-            foreach (Pawn current in map.mapPawns.FreeColonistsSpawned)
-            {
+            /* Pawn pawn = null;
+             foreach (Pawn current in map.mapPawns.FreeColonistsSpawned)
+             {
 
-                bool flag = !current.Dead;
+                 bool flag = !current.Dead;
 
-                if (flag)
-                {
-                    bool flag2 = current.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) && current.health.capacities.CapableOf(PawnCapacityDefOf.Moving);
+                 if (flag)
+                 {
+                     bool flag2 = current.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) && current.health.capacities.CapableOf(PawnCapacityDefOf.Moving);
 
-                    if (flag2)
-                    {
-                        pawn = current;
-                        break;
+                     if (flag2)
+                     {
+                         pawn = current;
+                         break;
 
-                    }
-                }
-            }
-            //Log.Message(pawn.ToString(), false);
+                     }
+                 }
+             }
+             //Log.Message(pawn.ToString(), false);
 
-            bool flag4 = (pawn != null);
+             bool flag4 = (pawn != null);
 
-            if (flag4)
-            {
-                if (pawn.CanReach(beehouse, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn))
-                {
+             if (flag4)
+             {
+                 if (pawn.CanReach(beehouse, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn))
+                 {
 
-                    // pawn.jobs.StopAll(false);
+                     // pawn.jobs.StopAll(false);
 
-                    Job job = new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingBees", true), beehouse, drone);
-                    job.count = 1;
-                    if (TryToReserveThings(pawn, job))
-                    {
-                        pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
-                        Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
-                        buildingbeehouse.BeehouseIsExpectingBees = true;
-                    }
-                    else
-                    {
-                        pawn.ClearAllReservations();
-                        //Messages.Message("Can't reserve things", MessageTypeDefOf.RejectInput);
-                    }
+                     Job job = new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingBees", true), beehouse, drone);
+                     job.count = 1;
+                     if (TryToReserveThings(pawn, job))
+                     {
+                         pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                         Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
+                         buildingbeehouse.BeehouseIsExpectingBees = true;
+                     }
+                     else
+                     {
+                         pawn.ClearAllReservations();
+                         //Messages.Message("Can't reserve things", MessageTypeDefOf.RejectInput);
+                     }
 
 
-                }
-            }
-            else
-            {
-                Messages.Message("No colonists available to take care of the bees", MessageTypeDefOf.RejectInput);
-            }
+                 }
+             }
+             else
+             {
+                 Messages.Message("No colonists available to take care of the bees", MessageTypeDefOf.RejectInput);
+             }*/
         }
 
-        public bool TryToReserveThings(Pawn pawn, Job job)
+       /* public bool TryToReserveThings(Pawn pawn, Job job)
         {
             return pawn.Reserve(job.targetA, job, 1, -1, null) && pawn.Reserve(job.targetB, job, 1, -1, null);
-        }
+        }*/
 
 
     }

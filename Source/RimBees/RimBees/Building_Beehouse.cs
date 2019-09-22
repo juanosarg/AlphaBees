@@ -12,13 +12,13 @@ namespace RimBees
 {
     class Building_Beehouse : Building, IThingHolder
     {
-        //public Thing droneThing;
-        // public Thing queenThing;
-
+       
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
         public bool BeehouseIsRunning = false;
         public bool BeehouseIsExpectingBees = false;
+        public bool BeehouseIsExpectingQueens = false;
+
 
 
         public float growOptimalGlow = 0.3f;
@@ -42,8 +42,8 @@ namespace RimBees
         public int avgTempMin = 0;
         public int avgTempMax = 0;
 
-
-
+        public string theDroneIAmGoingToInsert = "";
+        public string theQueenIAmGoingToInsert = "";
 
 
         protected bool contentsKnown = false;
@@ -76,6 +76,7 @@ namespace RimBees
             Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
             Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingBees, "BeehouseIsExpectingBees", false, false);
+            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingQueens, "BeehouseIsExpectingQueens", false, false);
             Scribe_Values.Look<string>(ref this.whichPlantNeeds, "whichPlantNeeds", "", false);
             Scribe_Values.Look<bool>(ref this.flagLight, "flagLight", false, false);
             Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
@@ -84,6 +85,10 @@ namespace RimBees
             Scribe_Values.Look<bool>(ref this.flagInitializeConditions, "flagInitializeConditions", false, false);
             Scribe_Values.Look<int>(ref this.avgTempMin, "avgTempMin", 0, false);
             Scribe_Values.Look<int>(ref this.avgTempMax, "avgTempMax", 0, false);
+            Scribe_Values.Look<string>(ref this.theDroneIAmGoingToInsert, "theDroneIAmGoingToInsert", "", false);
+            Scribe_Values.Look<string>(ref this.theQueenIAmGoingToInsert, "theQueenIAmGoingToInsert", "", false);
+
+
 
 
 
@@ -140,7 +145,7 @@ namespace RimBees
                 yield return RB_Gizmo_Empty_Drones;
             }
 
-            if (this.BeehouseIsExpectingBees)
+            if (this.BeehouseIsExpectingQueens)
             {
                 Command_Action RB_Gizmo_Queens_Waiting = new Command_Action();
                 RB_Gizmo_Queens_Waiting.action = delegate
@@ -341,8 +346,9 @@ namespace RimBees
                 ticksToResetJobs--;
                 if (ticksToResetJobs <= 0)
                 {
-                    ticksToResetJobs = 20;
+                    ticksToResetJobs = 50;
                     this.BeehouseIsExpectingBees = false;
+                    this.BeehouseIsExpectingQueens = false;
                     
                 }
             }

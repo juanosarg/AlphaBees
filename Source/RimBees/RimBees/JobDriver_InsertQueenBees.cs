@@ -19,7 +19,7 @@ namespace RimBees
 
             Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
 
-            buildingbeehouse.BeehouseIsExpectingBees = false;
+            buildingbeehouse.BeehouseIsExpectingQueens = false;
 
             this.EndJobWith(JobCondition.ErroredPather);
 
@@ -30,7 +30,12 @@ namespace RimBees
         {
             //Log.Message("I am inside the job now, with "+pawn.ToString(), false);
 
-             
+            this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
+            this.FailOnBurningImmobile(TargetIndex.A);
+            yield return Toils_General.DoAtomic(delegate
+            {
+                this.job.count = 1;
+            });
             Toil reserveBees = Toils_Reserve.Reserve(TargetIndex.B, 1, -1, null);
 
             yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.B).FailOnSomeonePhysicallyInteracting(TargetIndex.B);
@@ -45,7 +50,7 @@ namespace RimBees
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
                     //buildingbeehouse.queenThing = this.job.targetB.Thing;
                     buildingbeehouse.TryAcceptAnyQueen(this.job.targetB.Thing,true);
-                    buildingbeehouse.BeehouseIsExpectingBees = false;
+                    buildingbeehouse.BeehouseIsExpectingQueens = false;
 
                     //this.job.targetB.Thing.Destroy(); 
 

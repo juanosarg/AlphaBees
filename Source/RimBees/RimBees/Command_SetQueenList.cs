@@ -334,8 +334,11 @@ namespace RimBees
 
         private void TryInsertQueen()
         {
-            
-            Pawn pawn = null;
+            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
+            buildingbeehouse.BeehouseIsExpectingQueens = true;
+            buildingbeehouse.theQueenIAmGoingToInsert = queen.def.defName;
+
+            /*Pawn pawn = null;
             foreach (Pawn current in map.mapPawns.FreeColonistsSpawned)
             {
 
@@ -384,13 +387,13 @@ namespace RimBees
             else
             {
                 Messages.Message("No colonists available to take care of the bees", MessageTypeDefOf.RejectInput);
-            }
+            }*/
         }
 
-        public bool TryToReserveThings(Pawn pawn, Job job)
+       /* public bool TryToReserveThings(Pawn pawn, Job job)
         {
             return pawn.Reserve(job.targetA, job, 1, -1, null) && pawn.Reserve(job.targetB, job, 1, -1, null);
-        }
+        }*/
 
 
     }

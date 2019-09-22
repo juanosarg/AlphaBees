@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- <WorkGiverDef>
+ <WorkGiverDef>
     <defName>RB_InsertDroneInBeehouse</defName>
     <label>inserting drone in beehouse</label>
-    <giverClass>RimBees.WorkGiver_InserDroneInBeehouse</giverClass>
+    <giverClass>RimBees.WorkGiver_InsertDroneInBeehouse</giverClass>
     <workType>Hauling</workType>
     <verb>insert drone in beehouse</verb>
     <gerund>inserting drone in beehouse</gerund>
@@ -15,9 +15,22 @@
   </WorkGiverDef>
   
    <WorkGiverDef>
+    <defName>RB_InsertQueenInBeehouse</defName>
+    <label>inserting queen in beehouse</label>
+    <giverClass>RimBees.WorkGiver_InsertQueenInBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert queen in beehouse</verb>
+    <gerund>inserting queen in beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+<!--   <WorkGiverDef>
     <defName>RB_InsertDroneInAdvancedBeehouse</defName>
     <label>inserting drone in advanced beehouse</label>
-    <giverClass>RimBees.WorkGiver_InserDroneInAdvancedBeehouse</giverClass>
+    <giverClass>RimBees.WorkGiver_InsertDroneInAdvancedBeehouse</giverClass>
     <workType>Hauling</workType>
     <verb>insert drone in advanced beehouse</verb>
     <gerund>inserting drone in advanced beehouse</gerund>
@@ -30,7 +43,7 @@
      <WorkGiverDef>
     <defName>RB_InsertDroneInClimatizedBeehouse</defName>
     <label>inserting drone in climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_InserDroneInClimatizedBeehouse</giverClass>
+    <giverClass>RimBees.WorkGiver_InsertDroneInClimatizedBeehouse</giverClass>
     <workType>Hauling</workType>
     <verb>insert drone in climatized beehouse</verb>
     <gerund>inserting drone in climatized beehouse</gerund>
