@@ -127,7 +127,7 @@
        <ThingDef ParentName="ResourceBase">
     <defName>RB_RedBeeswax</defName>
     <label>red beeswax</label>
-     <description>Red Beeswax is slightly stronger than regular wax, but its main advantage is that it isn't flammable. It can be used to make cnadles when treated, though.</description>
+     <description>Red Beeswax is slightly stronger than regular wax, but its main advantage is that it isn't flammable. It can be used to make candles when treated, though.</description>
     <graphicData>
       <texPath>Things/Item/Product/RB_RedBeesWax</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -187,7 +187,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>RB_WhiteBeeswax</defName>
     <label>white beeswax</label>
-     <description>White beeswax is stronger than regular beeswax, and less flamable.</description>
+     <description>White beeswax is stronger than regular beeswax, and less flammable.</description>
     <graphicData>
       <texPath>Things/Item/Product/RB_WhiteBeeswax</texPath>
       <graphicClass>Graphic_Single</graphicClass>
