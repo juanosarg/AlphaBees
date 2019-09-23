@@ -1086,7 +1086,154 @@
 			<texPath>Things/Item/Bees/RB_Bee_Plastic_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>	
+
+<!--========== Tier 4: Textile Branch - From Technological and Adaptive Bees ==========-->		
 	
+	<!--=============== Weaving ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WeavingBeeBase" Abstract="True" >
+		<description>Weaving bees are all about knitting, crocheting and felting. It's all they care to do in their spare time.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Weaving</species>
+				<comb>RB_Weaving_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_WeavingBeeBase">
+		<defName>RB_Bee_Weaving_Drone</defName>
+		<label>weaving drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Weaving_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_WeavingBeeBase">
+		<defName>RB_Bee_Weaving_Queen</defName>
+		<label>weaving queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Weaving_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+	<!--=============== Tanner ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_TannerBeeBase" Abstract="True" >
+		<description>Tanner bees are capable of creating a pseudo-artificial leather without needing to kill any animals. Vegans will be super pleased! Well, except for the whole enslaving entire colonies of bees, that is...\n\nBee Traits:\n\nProduction time: 30 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: -10ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Tanner</species>
+				<comb>RB_Tanner_Honeycomb</comb>
+				<combtimedays>1.25</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-10</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_TannerBeeBase">
+		<defName>RB_Bee_Tanner_Drone</defName>
+		<label>tanner drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Tanner_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_TannerBeeBase">
+		<defName>RB_Bee_Tanner_Queen</defName>
+		<label>tanner queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Tanner_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+	<!--=============== Wooly ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WoolyBeeBase" Abstract="True" >
+		<description>Wooly bees are miniature insects covered in a dense fur. Which is not the source of any nightmares at all, no sir!\n\nBee Traits:\n\nProduction time: 40 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: -20ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Wooly</species>
+				<comb>RB_Wooly_Honeycomb</comb>
+				<combtimedays>1.66</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-20</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_WoolyBeeBase">
+		<defName>RB_Bee_Wooly_Drone</defName>
+		<label>wooly drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Wooly_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_WoolyBeeBase">
+		<defName>RB_Bee_Wooly_Queen</defName>
+		<label>wooly queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Wooly_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
+<!--========== Tier 4: Animals Branch - From Nutritious and Adaptive Bees ==========-->		
+	
+	<!--=============== Pet ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_PetBeeBase" Abstract="True" >
+		<description>Pet bees really care about all other animals, and they'd like you to have a LOT of pets running around the colony.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 35ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Pet</species>
+				<comb>RB_Pet_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_PetBeeBase">
+		<defName>RB_Bee_Pet_Drone</defName>
+		<label>pet drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Pet_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_PetBeeBase">
+		<defName>RB_Bee_Pet_Queen</defName>
+		<label>pet queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Pet_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
 	
 <!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->	
 
@@ -1310,7 +1457,7 @@
 		</graphicData> 		
 	</ThingDef>	
 	
-	<!--========== Tier 4 and 5: Cloths Branch - From Plastic and Alloy Bees ==========-->	
+	<!--========== Tier 4 and 5: Advanced Cloths Branch - From Plastic and Alloy Bees ==========-->	
 
 	<!--=============== Synthetic ====================-->
 	

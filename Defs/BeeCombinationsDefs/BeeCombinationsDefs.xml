@@ -106,6 +106,26 @@
 
 	<!-- Tier 3 Combinations -->	
 	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_5</defName>
+		<bee1>Nutritious</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Pet</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_6</defName>
+		<bee1>Technological</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Weaving</li>	
+			<li>Tanner</li>	
+			<li>Wooly</li>				
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_1</defName>
 		<bee1>Nutritious</bee1>
 		<bee2>Technological</bee2>

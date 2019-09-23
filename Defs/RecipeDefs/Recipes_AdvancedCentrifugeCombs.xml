@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
+
 
 	<RecipeDef>
 		<defName>RB_CentrifugeTemperateCombBulk</defName>
@@ -360,7 +360,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeArcticCombBulk</defName>
 		<label>bulk extract from arctic comb</label>
@@ -484,7 +484,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeSwampCombBulk</defName>
 		<label>bulk extract from swamp comb</label>
@@ -526,7 +526,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeNocturnalCombBulk</defName>
 		<label>bulk extract from nocturnal comb</label>
@@ -559,13 +559,13 @@
 		<products>
 			<RB_BlackBeeswax>100</RB_BlackBeeswax>
 			<RB_BlackHoney>50</RB_BlackHoney>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeArgentCombBulk</defName>
 		<label>bulk extract from argent comb</label>
@@ -599,13 +599,13 @@
 			<RB_Steelwax>100</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Silver>250</Silver>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeAurumCombBulk</defName>
 		<label>bulk extract from aurum comb</label>
@@ -639,13 +639,13 @@
 			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Gold>100</Gold>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePreciousCombBulk</defName>
 		<label>bulk extract from precious comb</label>
@@ -679,13 +679,13 @@
 			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Jade>100</Jade>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeRadioactiveCombBulk</defName>
 		<label>bulk extract from radioactive comb</label>
@@ -719,13 +719,13 @@
 			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Uranium>100</Uranium>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeTipsyCombBulk</defName>
 		<label>bulk extract from tipsy comb</label>
@@ -759,13 +759,13 @@
 			<RB_Brittlewax>50</RB_Brittlewax>
 			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<Wort>50</Wort>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLuxuriousCombBulk</defName>
 		<label>bulk extract from luxurious comb</label>
@@ -799,13 +799,13 @@
 			<RB_Brittlewax>50</RB_Brittlewax>
 			<RB_PsychotropicHoney>100</RB_PsychotropicHoney>
 			<Ambrosia>50</Ambrosia>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePsychicCombBulk</defName>
 		<label>bulk extract from psychic comb</label>
@@ -839,13 +839,13 @@
 			<RB_Brittlewax>50</RB_Brittlewax>
 			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<PsychoidLeaves>250</PsychoidLeaves>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeStonerCombBulk</defName>
 		<label>bulk extract from stoner comb</label>
@@ -879,13 +879,13 @@
 			<RB_Brittlewax>50</RB_Brittlewax>
 			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<SmokeleafLeaves>250</SmokeleafLeaves>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeAgriculturalCombBulk</defName>
 		<label>bulk extract from agricultural comb</label>
@@ -919,13 +919,13 @@
 			<RB_Beeswax>50</RB_Beeswax>
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_NonDescriptVegetables>350</RB_NonDescriptVegetables>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeBittersweetCombBulk</defName>
 		<label>bulk extract from bittersweet comb</label>
@@ -959,13 +959,13 @@
 			<RB_Beeswax>50</RB_Beeswax>
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<Chocolate>100</Chocolate>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLacticCombBulk</defName>
 		<label>bulk extract from lactic comb</label>
@@ -999,13 +999,13 @@
 			<RB_Beeswax>50</RB_Beeswax>
 			<RB_TastyHoney>20</RB_TastyHoney>
 			<RB_BeeMilk>100</RB_BeeMilk>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeEgglayingCombBulk</defName>
 		<label>bulk extract from egglaying comb</label>
@@ -1039,13 +1039,13 @@
 			<RB_Beeswax>50</RB_Beeswax>
 			<RB_TastyHoney>20</RB_TastyHoney>
 			<RB_BeeEggs>50</RB_BeeEggs>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeElectronicCombBulk</defName>
 		<label>bulk extract from electronic comb</label>
@@ -1079,13 +1079,13 @@
 			<RB_HeavyWax>50</RB_HeavyWax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<ComponentIndustrial>10</ComponentIndustrial>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeOilyCombBulk</defName>
 		<label>bulk extract from oily comb</label>
@@ -1119,13 +1119,13 @@
 			<RB_HeavyWax>100</RB_HeavyWax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Chemfuel>120</Chemfuel>
-			
+
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePlasticCombBulk</defName>
 		<label>bulk extract from plastic comb</label>
@@ -1166,11 +1166,171 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+	<RecipeDef>
+		<defName>RB_CentrifugePetCombBulk</defName>
+		<label>bulk extract from pet comb</label>
+		<description>Centrifuges a pet comb to bulk extract honey, wax and kibble</description>
+		<jobString>Extracting honey, wax and kibble</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Pet_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Pet_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_TastyHoney>100</RB_TastyHoney>
+			<RB_Beeswax>50</RB_Beeswax>
+			<Kibble>250</Kibble>
+
+
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 		<RecipeDef>
+		<defName>RB_CentrifugeWeavingCombBulk</defName>
+		<label>bulk extract from weaving comb</label>
+		<description>Centrifuges a weaving comb to bulk extract honey, wax and cloth</description>
+		<jobString>Extracting honey, wax and cloth</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Weaving_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Weaving_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>100</RB_BaseHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
+			<Cloth>250</Cloth>
+
+
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+		<RecipeDef>
+		<defName>RB_CentrifugeTannerCombBulk</defName>
+		<label>bulk extract from tanner comb</label>
+		<description>Centrifuges a tanner comb to bulk extract honey, wax and leather</description>
+		<jobString>Extracting honey, wax and leather</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Tanner_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Tanner_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>100</RB_BaseHoney>
+			<RB_HeavyWax>50</RB_HeavyWax>
+			<Leather_Plain>250</Leather_Plain>
+
+
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+		<RecipeDef>
+		<defName>RB_CentrifugeWoolyCombBulk</defName>
+		<label>bulk extract from wooly comb</label>
+		<description>Centrifuges a wooly comb to bulk extract honey, wax and wool</description>
+		<jobString>Extracting honey, wax and wool</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Wooly_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Wooly_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_TastyHoney>100</RB_TastyHoney>
+			<RB_Beeswax>50</RB_Beeswax>
+			<WoolMuffalo>100</WoolMuffalo>
+
+
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>RB_CentrifugeHighCombBulk</defName>
 		<label>bulk extract from high comb</label>
-		<description>Centrifuges a plastic comb to bulk extract honey, wax and yayo</description>
+		<description>Centrifuges a high comb to bulk extract honey, wax and yayo</description>
 		<jobString>Extracting honey, wax and yayo</jobString> 
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1207,7 +1367,7 @@
 			<Crafting>10</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLuciferCombBulk</defName>
 		<label>bulk extract from lucifer comb</label>
@@ -1248,7 +1408,7 @@
 			<Crafting>15</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeCulinaryCombBulk</defName>
 		<label>bulk extract from culinary comb</label>
@@ -1289,7 +1449,7 @@
 			<Crafting>10</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-		<RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeChefCombBulk</defName>
 		<label>bulk extract from chef comb</label>
 		<description>Centrifuges a chef comb to bulk extract honey, wax and fine meals</description>

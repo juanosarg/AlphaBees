@@ -12,6 +12,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_Beekeeping_Workbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,3.5)</drawSize>
 			<shadowData>
 				<volume>(2.9, 0.3, 0.5)</volume>
@@ -24,9 +25,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<costList>
-			<WoodLog>150</WoodLog>
-		</costList>
+
+		<stuffCategories>    
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -61,9 +64,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-		    <researchPrerequisites>
-      <li>RB_BasicBeekeeping</li>
-    </researchPrerequisites>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -75,6 +78,8 @@
 			<texPath>Things/Building/RB_Honey_Centrifuge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
 			<shadowData>
 				<volume>(2.9, 0.3, 0.5)</volume>
 				<offset>(0, 0, 0)</offset>
@@ -86,9 +91,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<costList>
-			<Steel>150</Steel>
-		</costList>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -111,7 +118,7 @@
 		</inspectorTabs>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			      <unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
+			<unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
 
 		</building>
 		<comps>
@@ -131,12 +138,12 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-			    <researchPrerequisites>
-      <li>RB_BasicBeekeeping</li>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
 
-    </researchPrerequisites>
+		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Advanced_Honey_Centrifuge</defName>
 		<label>advanced honey centrifuge</label>
@@ -146,6 +153,8 @@
 			<texPath>Things/Building/RB_Advanced_Honey_Centrifuge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
 			<shadowData>
 				<volume>(4.8, 0.3, 0.5)</volume>
 				<offset>(0, 0, 0)</offset>
@@ -158,10 +167,14 @@
 			</damageData>
 		</graphicData>
 		<costList>
-			<Steel>350</Steel>
-			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>
 
+			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>
 		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+
+		</stuffCategories>
+		<costStuffCount>350</costStuffCount>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -202,11 +215,11 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-			    <researchPrerequisites>
-      <li>RB_AdvancedCentrifugation</li>
-	        <li>Electricity</li>
+		<researchPrerequisites>
+			<li>RB_AdvancedCentrifugation</li>
+			<li>Electricity</li>
 
-    </researchPrerequisites>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -220,6 +233,8 @@
 			<texPath>Things/Building/RB_Beehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -227,10 +242,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<constructEffect>ConstructWood</constructEffect>
-		<costList>
-			<WoodLog>50</WoodLog>
-		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -257,11 +272,11 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-				    <researchPrerequisites>
-      <li>RB_BasicBeekeeping</li>
-    </researchPrerequisites>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_ClimatizedBeehouse</defName>
 		<label>simple climatized beehouse</label>
@@ -272,6 +287,8 @@
 			<texPath>Things/Building/RB_ClimatizedBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
+						<shaderType>CutoutComplex</shaderType>
+
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -279,9 +296,13 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<constructEffect>ConstructWood</constructEffect>
+		
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<costList>
-			<WoodLog>50</WoodLog>
+			
 			<Steel>50</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
@@ -311,8 +332,8 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-      <li>RB_ClimatizedBeehouses</li>
-    </researchPrerequisites>
+			<li>RB_ClimatizedBeehouses</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -375,11 +396,11 @@
 		</comps>
 		<researchPrerequisites>
 			<li>RB_AdvancedBeehouses</li>
-			     
+
 		</researchPrerequisites>
 
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_AdvancedClimatizedBeehouse</defName>
 		<label>advanced climatized beehouse</label>
@@ -440,7 +461,7 @@
 		</comps>
 		<researchPrerequisites>
 			<li>RB_AdvancedClimatization</li>
-			     
+
 		</researchPrerequisites>
 
 	</ThingDef>
@@ -455,6 +476,7 @@
 			<texPath>Things/Building/RB_Beehouse_BroodChamber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -462,9 +484,13 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<constructEffect>ConstructWood</constructEffect>
+		
+		<stuffCategories>     
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<costList>
-			<WoodLog>50</WoodLog>
+			
 			<RB_Beeswax>5</RB_Beeswax>
 		</costList>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -496,8 +522,8 @@
 			<li>RimBees.PlaceWorker_NextToBeeHouse</li>
 		</placeWorkers>
 		<researchPrerequisites>
-      <li>RB_BeeBreeding</li>
-    </researchPrerequisites>
+			<li>RB_BeeBreeding</li>
+		</researchPrerequisites>
 	</ThingDef>	
 
 	<ThingDef ParentName="BuildingBase">
@@ -510,6 +536,8 @@
 			<texPath>Things/Building/RB_Beehouse_HybridizationChamber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
+						<shaderType>CutoutComplex</shaderType>
+
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -517,9 +545,13 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<constructEffect>ConstructWood</constructEffect>
+		
+		<stuffCategories>     
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<costList>
-			<WoodLog>50</WoodLog>
+			
 			<Steel>25</Steel>
 			<RB_Beeswax>5</RB_Beeswax>
 		</costList>
@@ -552,62 +584,62 @@
 			<li>RimBees.PlaceWorker_NextToBeeHouseLeft</li>
 		</placeWorkers>
 		<researchPrerequisites>
-      <li>RB_BeeHybridizing</li>
-    </researchPrerequisites>
+			<li>RB_BeeHybridizing</li>
+		</researchPrerequisites>
 	</ThingDef>	
-	
-	  <ThingDef ParentName="BuildingBase">
-    <defName>RB_MeadFermentingBarrel</defName>
-    <label>mead fermenting barrel</label>
-    <description>A barrel for fermenting mead must into mead.</description>
-    <thingClass>RimBees.Building_MeadFermentingBarrel</thingClass>
-    <graphicData>
-      <texPath>Things/Building/RB_FermentationBarrelMead</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.75, 0.35, 0.33)</volume>
-      </shadowData>
-	  			<drawSize>(3,3)</drawSize>
 
-    </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.45</fillPercent>
-    <pathCost>60</pathCost>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <statBases>
-      <WorkToBuild>600</WorkToBuild>
-      <Mass>10</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <costList>
-      <Steel>10</Steel>
-      <WoodLog>30</WoodLog>
-    </costList>
-    <comps>
-      <li Class="CompProperties_TemperatureRuinable">
-        <minSafeTemperature>-1</minSafeTemperature>
-        <maxSafeTemperature>32</maxSafeTemperature>
-        <progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
-      </li>
-    </comps>
-    <tickerType>Rare</tickerType>
-    <rotatable>true</rotatable>
-    <designationCategory>RB_Bees</designationCategory>
-    <constructEffect>ConstructWood</constructEffect>
-    <researchPrerequisites>
-      <li>Brewing</li>
-	        <li>RB_MeadBrewing</li>
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_MeadFermentingBarrel</defName>
+		<label>mead fermenting barrel</label>
+		<description>A barrel for fermenting mead must into mead.</description>
+		<thingClass>RimBees.Building_MeadFermentingBarrel</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_FermentationBarrelMead</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+			<drawSize>(3,3)</drawSize>
 
-    </researchPrerequisites>
-  </ThingDef>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-1</minSafeTemperature>
+				<maxSafeTemperature>32</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>RB_Bees</designationCategory>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>Brewing</li>
+			<li>RB_MeadBrewing</li>
+
+		</researchPrerequisites>
+	</ThingDef>
 
 
 </Defs>

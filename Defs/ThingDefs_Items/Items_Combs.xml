@@ -445,6 +445,66 @@
 			<Plasteel>5</Plasteel>
 		</butcherProducts>
 	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Pet_Honeycomb</defName>
+		<label>pet honeycomb</label>
+		<description>This is a honeycomb produced by Pet bees. Pet bees really care about all other animals, and they'd like you to have a LOT of pets running around the colony. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and kibble.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Pet_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<Kibble>25</Kibble>
+		</butcherProducts>
+	</ThingDef>
+	
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Weaving_Honeycomb</defName>
+		<label>weaving honeycomb</label>
+		<description>This is a honeycomb produced by Weaving bees. Weaving bees are all about knitting, crocheting and felting. It's all they care to do in their spare time. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and cloth.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Weaving_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<Cloth>25</Cloth>
+		</butcherProducts>
+	</ThingDef>
+	
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Tanner_Honeycomb</defName>
+		<label>tanner honeycomb</label>
+		<description>This is a honeycomb produced by Tanner bees. Tanner bees are capable of creating a pseudo-artificial leather without needing to kill any animals. Vegans will be super pleased! Well, except for the whole enslaving entire colonies of bees, that is... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and leather.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Tanner_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_HeavyWax>5</RB_HeavyWax>
+			<Leather_Plain>25</Leather_Plain>
+		</butcherProducts>
+	</ThingDef>
+	
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Wooly_Honeycomb</defName>
+		<label>wooly honeycomb</label>
+		<description>This is a honeycomb produced by Wooly bees. Wooly bees are miniature insects covered in a dense fur. Which is not the source of any nightmares at all, no sir! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and wool.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Wooly_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<WoolMuffalo>10</WoolMuffalo>
+		</butcherProducts>
+	</ThingDef>
 
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_High_Honeycomb</defName>

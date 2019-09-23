@@ -16,7 +16,7 @@
 		<defName>RB_CentrifugeAnyComb</defName>
 		<label>extract from any comb</label>
 		<description>Centrifuges any available comb to extract honey, wax and other products.</description>
-		
+
 		<ingredients>
 			<li>
 				<filter>
@@ -370,7 +370,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeArcticComb</defName>
 		<label>extract from arctic comb</label>
@@ -479,7 +479,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeSwampComb</defName>
 		<label>extract from swamp comb</label>
@@ -516,7 +516,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeNocturnalComb</defName>
 		<label>extract from nocturnal comb</label>
@@ -553,7 +553,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeArgentComb</defName>
 		<label>extract from argent comb</label>
@@ -590,7 +590,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeAurumComb</defName>
 		<label>extract from aurum comb</label>
@@ -627,7 +627,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePreciousComb</defName>
 		<label>extract from precious comb</label>
@@ -664,7 +664,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeRadioactiveComb</defName>
 		<label>extract from radioactive comb</label>
@@ -701,7 +701,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeTipsyComb</defName>
 		<label>extract from tipsy comb</label>
@@ -738,7 +738,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLuxuriousComb</defName>
 		<label>extract from luxurious comb</label>
@@ -775,7 +775,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePsychicComb</defName>
 		<label>extract from psychic comb</label>
@@ -812,7 +812,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeStonerComb</defName>
 		<label>extract from stoner comb</label>
@@ -849,7 +849,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeAgriculturalComb</defName>
 		<label>extract from agricultural comb</label>
@@ -886,7 +886,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeBittersweetComb</defName>
 		<label>extract from bittersweet comb</label>
@@ -923,7 +923,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLacticComb</defName>
 		<label>extract from lactic comb</label>
@@ -960,7 +960,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeEgglayingComb</defName>
 		<label>extract from egglaying comb</label>
@@ -997,7 +997,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeElectronicComb</defName>
 		<label>extract from electronic comb</label>
@@ -1034,7 +1034,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeOilyComb</defName>
 		<label>extract from oily comb</label>
@@ -1071,7 +1071,7 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugePlasticComb</defName>
 		<label>extract from plastic comb</label>
@@ -1108,11 +1108,154 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+	<RecipeDef>
+		<defName>RB_CentrifugePetComb</defName>
+		<label>extract from pet comb</label>
+		<description>Centrifuges a pet comb to extract honey, wax and kibble</description>
+		<jobString>Extracting honey, wax and kibble</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Pet_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Pet_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 		<RecipeDef>
+		<defName>RB_CentrifugeWeavingComb</defName>
+		<label>extract from weaving comb</label>
+		<description>Centrifuges a weaving comb to extract honey, wax and cloth</description>
+		<jobString>Extracting honey, wax and cloth</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Weaving_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Weaving_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+		<RecipeDef>
+		<defName>RB_CentrifugeTannerComb</defName>
+		<label>extract from tanner comb</label>
+		<description>Centrifuges a tanner comb to extract honey, wax and leather</description>
+		<jobString>Extracting honey, wax and leather</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Tanner_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Tanner_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+		<RecipeDef>
+		<defName>RB_CentrifugeWoolyComb</defName>
+		<label>extract from wooly comb</label>
+		<description>Centrifuges a wooly comb to extract honey, wax and wool</description>
+		<jobString>Extracting honey, wax and wool</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Wooly_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Wooly_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeHighComb</defName>
 		<label>extract from high comb</label>
-		<description>Centrifuges a plastic comb to extract honey, wax and yayo</description>
+		<description>Centrifuges a high comb to extract honey, wax and yayo</description>
 		<jobString>Extracting honey, wax and yayo</jobString> 
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1145,7 +1288,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeLuciferComb</defName>
 		<label>extract from lucifer comb</label>
@@ -1182,7 +1325,7 @@
 			<Crafting>12</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef>
 		<defName>RB_CentrifugeCulinaryComb</defName>
 		<label>extract from culinary comb</label>
@@ -1219,7 +1362,7 @@
 			<Crafting>5</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
-		<RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeChefComb</defName>
 		<label>extract from chef comb</label>
 		<description>Centrifuges a chef comb to extract honey, wax and fine meals</description>

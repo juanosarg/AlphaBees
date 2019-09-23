@@ -72,6 +72,7 @@
 	<RB_Technological_Drone_Tag>Technological Drone</RB_Technological_Drone_Tag>
 
 	<RB_Arctic_Drone_Tag>Arctic Drone</RB_Arctic_Drone_Tag>
+	<RB_Woodland_Drone_Tag>Woodland Drone</RB_Woodland_Drone_Tag>
 	<RB_Desert_Drone_Tag>Desert Drone</RB_Desert_Drone_Tag>
 	<RB_Swamp_Drone_Tag>Swamp Drone</RB_Swamp_Drone_Tag>
 	<RB_Nocturnal_Drone_Tag>Nocturnal Drone</RB_Nocturnal_Drone_Tag>
@@ -94,6 +95,12 @@
 	<RB_Electronic_Drone_Tag>Electronic Drone</RB_Electronic_Drone_Tag>
 	<RB_Oily_Drone_Tag>Oily Drone</RB_Oily_Drone_Tag>
 	<RB_Plastic_Drone_Tag>Plastic Drone</RB_Plastic_Drone_Tag>
+
+	<RB_Pet_Drone_Tag>Pet Drone</RB_Pet_Drone_Tag>
+	
+	<RB_Weaving_Drone_Tag>Weaving Drone</RB_Weaving_Drone_Tag>
+	<RB_Tanner_Drone_Tag>Tanner Drone</RB_Tanner_Drone_Tag>
+	<RB_Wooly_Drone_Tag>Wooly Drone</RB_Wooly_Drone_Tag>
 
 	<RB_High_Drone_Tag>High Drone</RB_High_Drone_Tag>
 	<RB_Lucifer_Drone_Tag>Lucifer Drone</RB_Lucifer_Drone_Tag>
@@ -119,6 +126,7 @@
 	<RB_Technological_Queen_Tag>Technological Queen</RB_Technological_Queen_Tag>
 
 	<RB_Arctic_Queen_Tag>Arctic Queen</RB_Arctic_Queen_Tag>
+	<RB_Woodland_Queen_Tag>Woodland Queen</RB_Woodland_Queen_Tag>
 	<RB_Desert_Queen_Tag>Desert Queen</RB_Desert_Queen_Tag>
 	<RB_Swamp_Queen_Tag>Swamp Queen</RB_Swamp_Queen_Tag>
 	<RB_Nocturnal_Queen_Tag>Nocturnal Queen</RB_Nocturnal_Queen_Tag>
@@ -141,6 +149,12 @@
 	<RB_Electronic_Queen_Tag>Electronic Queen</RB_Electronic_Queen_Tag>
 	<RB_Oily_Queen_Tag>Oily Queen</RB_Oily_Queen_Tag>
 	<RB_Plastic_Queen_Tag>Plastic Queen</RB_Plastic_Queen_Tag>
+
+	<RB_Pet_Queen_Tag>Pet Queen</RB_Pet_Queen_Tag>
+	
+	<RB_Weaving_Queen_Tag>Weaving Queen</RB_Weaving_Queen_Tag>
+	<RB_Tanner_Queen_Tag>Tanner Queen</RB_Tanner_Queen_Tag>
+	<RB_Wooly_Queen_Tag>Wooly Queen</RB_Wooly_Queen_Tag>
 
 	<RB_High_Queen_Tag>High Queen</RB_High_Queen_Tag>
 	<RB_Lucifer_Queen_Tag>Lucifer Queen</RB_Lucifer_Queen_Tag>

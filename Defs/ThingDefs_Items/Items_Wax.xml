@@ -12,9 +12,9 @@
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
 		<statBases>
-			<MarketValue>0.5</MarketValue>
+			<MarketValue>5</MarketValue>
 			<Mass>0.1</Mass>
 			<Flammability>1</Flammability>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -73,7 +73,7 @@
 			<texPath>Things/Item/Product/RB_Brittlewax</texPath>			
 		</graphicData>
 		<statBases>
-			<MarketValue>0.4</MarketValue>
+			<MarketValue>5</MarketValue>
 			<Mass>0.01</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
 			<DeteriorationRate>3.0</DeteriorationRate>			
