@@ -1,384 +1,572 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <ThingDef ParentName="ResourceBase"  Abstract="True" Name="RB_CombBase">   
-    <statBases>
-      <MaxHitPoints>10</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-	  <Mass>.01</Mass>
-	  <MarketValue>.1</MarketValue>
-    </statBases>
-    <tickerType>Normal</tickerType>
-	<tradeability>Sellable</tradeability>
-	<thingCategories>
-      <li>RB_Combs</li>
-    </thingCategories>
-	<stackLimit>75</stackLimit>	
-</ThingDef>
+	<ThingDef ParentName="ResourceBase"  Abstract="True" Name="RB_CombBase">   
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>.01</Mass>
+			<MarketValue>.1</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>RB_Combs</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>	
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Temperate_Honeycomb</defName>
-    <label>temperate honeycomb</label>
-    <description>This is a honeycomb produced by temperate bees. Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Temperate_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Temperate_Honeycomb</defName>
+		<label>temperate honeycomb</label>
+		<description>This is a honeycomb produced by temperate bees. Temperate bees are the most common type of bee, descended from Earth's Apis Mellifera, the European Honey Bee. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Temperate_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Mild_Honeycomb</defName>
-    <label>mild honeycomb</label>
-    <description>This is a honeycomb produced by mild bees. Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Mild_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mild_Honeycomb</defName>
+		<label>mild honeycomb</label>
+		<description>This is a honeycomb produced by mild bees. Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey. Honeycombs can be procesed in a Honey Extractor to get honey and beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mild_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Hybrid_Honeycomb</defName>
-    <label>hybrid honeycomb</label>
-    <description>This is a honeycomb produced by hybrid bees. Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony. Honeycombs can be procesed in a Honey Extractor to get honey and white beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Hybrid_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Hybrid_Honeycomb</defName>
+		<label>hybrid honeycomb</label>
+		<description>This is a honeycomb produced by hybrid bees. Hybrid bees have mixed traits of temperate and mild bees, and are the first step in the creation of specialized bees for the colony. Honeycombs can be procesed in a Honey Extractor to get honey and white beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Hybrid_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_WhiteHoney>14</RB_WhiteHoney>
+			<RB_WhiteBeeswax>5</RB_WhiteBeeswax>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Amalgam_Honeycomb</defName>
-    <label>amalgam honeycomb</label>
-    <description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get blue honey and white beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Amalgam_Honeycomb</defName>
+		<label>amalgam honeycomb</label>
+		<description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get blue honey and white beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlueHoney>7</RB_BlueHoney>
+			<RB_BlueBeeswax>5</RB_BlueBeeswax>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Alloy_Honeycomb</defName>
-    <label>alloy honeycomb</label>
-    <description>This is a honeycomb produced by alloy bees. Alloy bees are capable of producing honeycombs with metallic compounds in them. Their honey production is minimal, though. The basic Alloy Bee produces steel plated honeycombs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and steel.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Alloy_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Alloy_Honeycomb</defName>
+		<label>alloy honeycomb</label>
+		<description>This is a honeycomb produced by alloy bees. Alloy bees are capable of producing honeycombs with metallic compounds in them. Their honey production is minimal, though. The basic Alloy Bee produces steel plated honeycombs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and steel.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Alloy_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<RB_Steelwax>10</RB_Steelwax>
+			<Steel>5</Steel>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Adaptive_Honeycomb</defName>
-    <label>adaptive honeycomb</label>
-    <description>This is a honeycomb produced by adaptive bees. Adaptive bees are not much affected by the conditions of the biome they are working in. as such, they can stand low and high temperatures a bit better, and they work very fast. Honeycombs can be procesed in a Honey Extractor to get adaptive honey that doesn't rot and beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Adaptive_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Adaptive_Honeycomb</defName>
+		<label>adaptive honeycomb</label>
+		<description>This is a honeycomb produced by adaptive bees. Adaptive bees are not much affected by the conditions of the biome they are working in. as such, they can stand low and high temperatures a bit better, and they work very fast. Honeycombs can be procesed in a Honey Extractor to get adaptive honey that doesn't rot and beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Adaptive_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_AdaptiveHoney>7</RB_AdaptiveHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Neutro_Honeycomb</defName>
-    <label>neutro honeycomb</label>
-    <description>This is a honeycomb produced by neutro bees. Neutro bees capture residual chemical compounds from nearby locations and store them in their honeycombs, producing Neutroamine. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and neutroamine.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Neutro_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Neutro_Honeycomb</defName>
+		<label>neutro honeycomb</label>
+		<description>This is a honeycomb produced by neutro bees. Neutro bees capture residual chemical compounds from nearby locations and store them in their honeycombs, producing Neutroamine. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and neutroamine.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Neutro_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<Neutroamine>5</Neutroamine>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Nutritious_Honeycomb</defName>
-    <label>nutritious honeycomb</label>
-    <description>This is a honeycomb produced by nutritious bees. Nutritious bees produce fleshy honeycombs that drip blood. This is just disgusting... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and meat.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Nutritious_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Nutritious_Honeycomb</defName>
+		<label>nutritious honeycomb</label>
+		<description>This is a honeycomb produced by nutritious bees. Nutritious bees produce fleshy honeycombs that drip blood. This is just disgusting... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and meat.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Nutritious_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>7</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_NondescriptMeat>25</RB_NondescriptMeat>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Technological_Honeycomb</defName>
-    <label>technological honeycomb</label>
-    <description>This is a honeycomb produced by technological bees. Technological bees are part bee, part machine. They can be further crossbred into bees that provide chemfuel, components, and other technological marvels. But more importantly, they produce Bio Interface Components, which are used to build advanced beehouses. Honeycombs can be procesed in a Honey Extractor to get beeswax and Bio Interface Components.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Technological_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Technological_Honeycomb</defName>
+		<label>technological honeycomb</label>
+		<description>This is a honeycomb produced by technological bees. Technological bees are part bee, part machine. They can be further crossbred into bees that provide chemfuel, components, and other technological marvels. But more importantly, they produce Bio Interface Components, which are used to build advanced beehouses. Honeycombs can be procesed in a Honey Extractor to get beeswax and Bio Interface Components.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Technological_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>20</RB_HeavyWax>
+			<RB_ComponentBioInterface>2</RB_ComponentBioInterface>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Arctic_Honeycomb</defName>
-    <label>arctic honeycomb</label>
-    <description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ice pops.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Arctic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Arctic_Honeycomb</defName>
+		<label>arctic honeycomb</label>
+		<description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ice pops.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Arctic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>10</RB_Beeswax>
+			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+			<RB_HoneyedIcePop>15</RB_HoneyedIcePop>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Woodland_Honeycomb</defName>
+		<label>woodland honeycomb</label>
+		<description>This is a honeycomb produced by woodland bees. Woodland bees feel happily at home surrounded by lots of trees. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and wood logs.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Woodland_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>10</RB_Beeswax>
+			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+			<WoodLog>10</WoodLog>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Desert_Honeycomb</defName>
-    <label>desert honeycomb</label>
-    <description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and agave.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Desert_Honeycomb</defName>
+		<label>desert honeycomb</label>
+		<description>This is a honeycomb produced by desert bees. Its wax has a parched texture, partly built with the surrounding sand. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and agave.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_RedBeeswax>10</RB_RedBeeswax>
+			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+			<RawAgave>25</RawAgave>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Swamp_Honeycomb</defName>
-    <label>swamp honeycomb</label>
-    <description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and mushrooms.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Swamp_Honeycomb</defName>
+		<label>swamp honeycomb</label>
+		<description>This is a honeycomb produced by swamp bees. A gelatinous substance covers the whole comb, seemingly to protect its contents from the high humidity of the environment. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and mushrooms.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+			<RawFungus>25</RawFungus>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Nocturnal_Honeycomb</defName>
-    <label>nocturnal honeycomb</label>
-    <description>This is a honeycomb produced by nocturnal bees. It is pitch black, and radiates cold. Honeycombs can be procesed in a Honey Extractor to get black honey and black beeswax.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Nocturnal_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Nocturnal_Honeycomb</defName>
+		<label>nocturnal honeycomb</label>
+		<description>This is a honeycomb produced by nocturnal bees. It is pitch black, and radiates cold. Honeycombs can be procesed in a Honey Extractor to get black honey and black beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Nocturnal_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackBeeswax>10</RB_BlackBeeswax>
+			<RB_BlackHoney>5</RB_BlackHoney>
+		</butcherProducts>
+	</ThingDef>
 
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Argent_Honeycomb</defName>
-    <label>argent honeycomb</label>
-    <description>This is a honeycomb produced by argent bees. It's surface is very sparkly, you could almost use it as a mirror! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and silver.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Argent_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Argent_Honeycomb</defName>
+		<label>argent honeycomb</label>
+		<description>This is a honeycomb produced by argent bees. It's surface is very sparkly, you could almost use it as a mirror! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and silver.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Argent_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Steelwax>10</RB_Steelwax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<Silver>25</Silver>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Aurum_Honeycomb</defName>
-    <label>aurum honeycomb</label>
-    <description>This is a honeycomb produced by aurum bees. It's golden surface could probably fetch a decent price in any market, but it is much better to extract the gold from it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and gold.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Aurum_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Aurum_Honeycomb</defName>
+		<label>aurum honeycomb</label>
+		<description>This is a honeycomb produced by aurum bees. It's golden surface could probably fetch a decent price in any market, but it is much better to extract the gold from it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and gold.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Aurum_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Steelwax>5</RB_Steelwax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<Gold>10</Gold>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Precious_Honeycomb</defName>
-    <label>precious honeycomb</label>
-    <description>This is a honeycomb produced by precious bees. Sparkly! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and jade.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Precious_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Precious_Honeycomb</defName>
+		<label>precious honeycomb</label>
+		<description>This is a honeycomb produced by precious bees. Sparkly! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and jade.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Precious_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Steelwax>5</RB_Steelwax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<Jade>10</Jade>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Radioactive_Honeycomb</defName>
-    <label>radioactive honeycomb</label>
-    <description>This is a honeycomb produced by radioactive bees. All things considered, your colonists are lucky that programming a radioactivity system is well beyond the scope of this mod. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and uranium.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Radioactive_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Radioactive_Honeycomb</defName>
+		<label>radioactive honeycomb</label>
+		<description>This is a honeycomb produced by radioactive bees. All things considered, your colonists are lucky that programming a radioactivity system is well beyond the scope of this mod. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and uranium.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Radioactive_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Steelwax>5</RB_Steelwax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<Uranium>10</Uranium>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Tipsy_Honeycomb</defName>
-    <label>tipsy honeycomb</label>
-    <description>This is a honeycomb produced by tipsy bees. It is saturated with wort, which can then be fermented into beer. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and wort.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Tipsy_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Tipsy_Honeycomb</defName>
+		<label>tipsy honeycomb</label>
+		<description>This is a honeycomb produced by tipsy bees. It is saturated with wort, which can then be fermented into beer. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and wort.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Tipsy_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<Wort>5</Wort>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Luxurious_Honeycomb</defName>
-    <label>luxurious honeycomb</label>
-    <description>This is a honeycomb produced by luxurious bees, which are able to concentrate pollen in an amazing way, turning it into ambrosia, a very mild drug that is widely used on the Rim. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ambrosia.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Luxurious_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Luxurious_Honeycomb</defName>
+		<label>luxurious honeycomb</label>
+		<description>This is a honeycomb produced by luxurious bees, which are able to concentrate pollen in an amazing way, turning it into ambrosia, a very mild drug that is widely used on the Rim. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ambrosia.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Luxurious_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<RB_PsychotropicHoney>10</RB_PsychotropicHoney>
+			<Ambrosia>5</Ambrosia>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Psychic_Honeycomb</defName>
-    <label>psychic honeycomb</label>
-    <description>This is a honeycomb produced by Psychic bees, who know everything and see everything. Not because they are wise ancient seers, but because their tiny bodies are saturated with psychite compounds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and psychoid leaves.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Psychic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Psychic_Honeycomb</defName>
+		<label>psychic honeycomb</label>
+		<description>This is a honeycomb produced by Psychic bees, who know everything and see everything. Not because they are wise ancient seers, but because their tiny bodies are saturated with psychite compounds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and psychoid leaves.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Psychic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<PsychoidLeaves>25</PsychoidLeaves>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Stoner_Honeycomb</defName>
-    <label>stoner honeycomb</label>
-    <description>This is a honeycomb produced by Stoner bees, and smells like certain hotels in Amsterdam. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and smokeleaf leaves.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Stoner_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Stoner_Honeycomb</defName>
+		<label>stoner honeycomb</label>
+		<description>This is a honeycomb produced by Stoner bees, and smells like certain hotels in Amsterdam. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and smokeleaf leaves.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Stoner_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Brittlewax>5</RB_Brittlewax>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<SmokeleafLeaves>25</SmokeleafLeaves>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Agricultural_Honeycomb</defName>
-    <label>agricultural honeycomb</label>
-    <description>This is a honeycomb produced by Agricultural bees, which are hard workers, extracting grain from their environment and stuffing their honeycombs full of strange undiferentiated seeds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and vegetables.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Agricultural_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Agricultural_Honeycomb</defName>
+		<label>agricultural honeycomb</label>
+		<description>This is a honeycomb produced by Agricultural bees, which are hard workers, extracting grain from their environment and stuffing their honeycombs full of strange undiferentiated seeds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and vegetables.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Agricultural_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_TastyHoney>1</RB_TastyHoney>
+			<RB_NonDescriptVegetables>35</RB_NonDescriptVegetables>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Bittersweet_Honeycomb</defName>
-    <label>bittersweet honeycomb</label>
-    <description>This is a honeycomb produced by Bittersweet bees, who LOVE chocolate and try to fill their combs with it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chocolate.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Bittersweet_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Bittersweet_Honeycomb</defName>
+		<label>bittersweet honeycomb</label>
+		<description>This is a honeycomb produced by Bittersweet bees, who LOVE chocolate and try to fill their combs with it. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chocolate.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Bittersweet_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_TastyHoney>1</RB_TastyHoney>
+			<Chocolate>10</Chocolate>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Lactic_Honeycomb</defName>
-    <label>lactic honeycomb</label>
-    <description>This is a honeycomb produced by Lactic bees. It is filled with a strange liquid that can be considered milk, if you ignore its origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and milk.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Lactic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Lactic_Honeycomb</defName>
+		<label>lactic honeycomb</label>
+		<description>This is a honeycomb produced by Lactic bees. It is filled with a strange liquid that can be considered milk, if you ignore its origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and milk.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Lactic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_TastyHoney>2</RB_TastyHoney>
+			<RB_BeeMilk>10</RB_BeeMilk>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Egglaying_Honeycomb</defName>
-    <label>egglaying honeycomb</label>
-    <description>This is a honeycomb produced by Egglaying bees. It is filled with a lot of really small spheres that can be considered regular eggs, if you ignore their origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and eggs.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Egglaying_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Egglaying_Honeycomb</defName>
+		<label>egglaying honeycomb</label>
+		<description>This is a honeycomb produced by Egglaying bees. It is filled with a lot of really small spheres that can be considered regular eggs, if you ignore their origins... Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and eggs.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Egglaying_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_TastyHoney>2</RB_TastyHoney>
+			<RB_BeeEggs>5</RB_BeeEggs>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Electronic_Honeycomb</defName>
-    <label>electronic honeycomb</label>
-    <description>This is a honeycomb produced by Electronic bees. It doesn't even seem to be organic! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and industrial components.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Electronic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Electronic_Honeycomb</defName>
+		<label>electronic honeycomb</label>
+		<description>This is a honeycomb produced by Electronic bees. It doesn't even seem to be organic! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and industrial components.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Electronic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>5</RB_HeavyWax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Oily_Honeycomb</defName>
-    <label>oily honeycomb</label>
-    <description>This is a honeycomb produced by Oily bees. It is completely drenched in a chemical solution, and it can be easily extracted and turned into Chemfuel. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chemfuel.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Oily_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Oily_Honeycomb</defName>
+		<label>oily honeycomb</label>
+		<description>This is a honeycomb produced by Oily bees. It is completely drenched in a chemical solution, and it can be easily extracted and turned into Chemfuel. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and chemfuel.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Oily_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>10</RB_HeavyWax>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<Chemfuel>12</Chemfuel>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Plastic_Honeycomb</defName>
-    <label>plastic honeycomb</label>
-    <description>This is a honeycomb produced by Plastic bees. It seems to be reinforced with a natural plasteel lattice. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and plasteel.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Plastic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Plastic_Honeycomb</defName>
+		<label>plastic honeycomb</label>
+		<description>This is a honeycomb produced by Plastic bees. It seems to be reinforced with a natural plasteel lattice. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and plasteel.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Plastic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_HeavyWax>15</RB_HeavyWax>
+			<Plasteel>5</Plasteel>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_High_Honeycomb</defName>
-    <label>high honeycomb</label>
-    <description>This is a honeycomb produced by High bees. High bees are junkies, permanently high on yayo. This makes them pretty terrible workers, but they produce a significant, constant amount of drugs, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and yayo.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_High_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_High_Honeycomb</defName>
+		<label>high honeycomb</label>
+		<description>This is a honeycomb produced by High bees. High bees are junkies, permanently high on yayo. This makes them pretty terrible workers, but they produce a significant, constant amount of drugs, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and yayo.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_High_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_PsychotropicHoney>10</RB_PsychotropicHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<Yayo>5</Yayo>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Lucifer_Honeycomb</defName>
-    <label>lucifer honeycomb</label>
-    <description>This is a honeycomb produced by Lucifer bees. An entire breed of bees addicted to luciferium. Lucifer bees are the slowest working bees possible, what with the constant dying and suffering but they produce a significant, constant amount of luciferium, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and luciferium.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Lucifer_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Lucifer_Honeycomb</defName>
+		<label>lucifer honeycomb</label>
+		<description>This is a honeycomb produced by Lucifer bees. An entire breed of bees addicted to luciferium. Lucifer bees are the slowest working bees possible, what with the constant dying and suffering but they produce a significant, constant amount of luciferium, which accumulates on their combs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and luciferium.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Lucifer_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<RB_RedBeeswax>5</RB_RedBeeswax>
+			<Luciferium>1</Luciferium>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Culinary_Honeycomb</defName>
-    <label>culinary honeycomb</label>
-    <description>This is a honeycomb produced by Culinary bees. Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a very simple meal. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and nutrient paste.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Culinary_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Culinary_Honeycomb</defName>
+		<label>culinary honeycomb</label>
+		<description>This is a honeycomb produced by Culinary bees. Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a very simple meal. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and nutrient paste.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Culinary_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>30</RB_BaseHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<MealNutrientPaste>1</MealNutrientPaste>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Chef_Honeycomb</defName>
-    <label>chef honeycomb</label>
-    <description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Chef_Honeycomb</defName>
+		<label>chef honeycomb</label>
+		<description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>35</RB_BaseHoney>
+			<RB_Beeswax>15</RB_Beeswax>
+			<MealFine>1</MealFine>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Medicinal_Honeycomb</defName>
-    <label>medicinal honeycomb</label>
-    <description>This is a honeycomb produced by Medicinal bees. Medicinal bees secrete a saline solution that can be used as a low grade medicinal salve. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and herbal medicine.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Medicinal_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Medicinal_Honeycomb</defName>
+		<label>medicinal honeycomb</label>
+		<description>This is a honeycomb produced by Medicinal bees. Medicinal bees secrete a saline solution that can be used as a low grade medicinal salve. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and herbal medicine.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Medicinal_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>10</RB_Beeswax>
+			<MedicineHerbal>1</MedicineHerbal>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Surgeon_Honeycomb</defName>
-    <label>surgeon honeycomb</label>
-    <description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ultratech medicine.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Surgeon_Honeycomb</defName>
+		<label>surgeon honeycomb</label>
+		<description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ultratech medicine.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>15</RB_Beeswax>
+			<MedicineUltratech>1</MedicineUltratech>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Synthetic_Honeycomb</defName>
-    <label>synthetic honeycomb</label>
-    <description>This is a honeycomb produced by Synthetic bees. Synthetic bees catch minute fibres from the air surrounding them and weave them with a natural silk to create synthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and synthread.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Synthetic_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Synthetic_Honeycomb</defName>
+		<label>synthetic honeycomb</label>
+		<description>This is a honeycomb produced by Synthetic bees. Synthetic bees catch minute fibres from the air surrounding them and weave them with a natural silk to create synthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and synthread.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Synthetic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>1</RB_BaseHoney>
+			<RB_Beeswax>25</RB_Beeswax>
+			<Synthread>5</Synthread>
+		</butcherProducts>
+	</ThingDef>
 
- <ThingDef ParentName="RB_CombBase">
-    <defName>RB_Hyper_Honeycomb</defName>
-    <label>hyper honeycomb</label>
-    <description>This is a honeycomb produced by Hyper bees. SHyper bees catch minute fibres from the air surrounding them and weave them with a natural silk to create hyperthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and hyperweave.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/Combs/RB_Hyper_Honeycomb</texPath>
-    </graphicData>	
-</ThingDef>
- 
-  
-  
-  
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Hyper_Honeycomb</defName>
+		<label>hyper honeycomb</label>
+		<description>This is a honeycomb produced by Hyper bees. SHyper bees catch minute fibres from the air surrounding them and weave them with a natural silk to create hyperthread, which they spun in their combs, ready to be harvested. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and hyperweave.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Hyper_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>1</RB_BaseHoney>
+			<RB_Beeswax>30</RB_Beeswax>
+			<Hyperweave>5</Hyperweave>
+		</butcherProducts>
+	</ThingDef>
+
+
+
+
 </Defs>

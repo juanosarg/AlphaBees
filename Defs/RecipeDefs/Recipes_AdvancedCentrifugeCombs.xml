@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	
 
 	<RecipeDef>
 		<defName>RB_CentrifugeTemperateCombBulk</defName>
@@ -110,7 +111,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BaseHoney>70</RB_BaseHoney>
+			<RB_WhiteHoney>140</RB_WhiteHoney>
 			<RB_WhiteBeeswax>50</RB_WhiteBeeswax>
 
 		</products>
@@ -150,7 +151,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_BlueHoney>70</RB_BlueHoney>
-			<RB_WhiteBeeswax>50</RB_WhiteBeeswax>
+			<RB_BlueBeeswax>50</RB_BlueBeeswax>
 
 		</products>
 		<skillRequirements>
@@ -189,7 +190,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_BaseHoney>50</RB_BaseHoney>
-			<RB_Beeswax>100</RB_Beeswax>
+			<RB_Steelwax>100</RB_Steelwax>
 			<Steel>50</Steel>
 
 
@@ -268,8 +269,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BaseHoney>50</RB_BaseHoney>
-			<RB_Beeswax>50</RB_Beeswax>
+			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
 			<Neutroamine>50</Neutroamine>
 
 
@@ -309,7 +310,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BaseHoney>150</RB_BaseHoney>
+			<RB_TastyHoney>70</RB_TastyHoney>
 			<RB_Beeswax>50</RB_Beeswax>
 			<RB_NondescriptMeat>250</RB_NondescriptMeat>
 
@@ -350,7 +351,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>200</RB_Beeswax>
+			<RB_HeavyWax>200</RB_HeavyWax>
 			<RB_ComponentBioInterface>20</RB_ComponentBioInterface>
 
 
@@ -391,7 +392,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>100</RB_Beeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
 			<RB_HoneyedIcePop>150</RB_HoneyedIcePop>
 
 
@@ -401,7 +402,47 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugeWoodlandCombBulk</defName>
+		<label>bulk extract from woodland comb</label>
+		<description>Centrifuges a woodland comb to bulk extract honey, wax and wood logs</description>
+		<jobString>Extracting honey, wax and wood logs</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Woodland_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Woodland_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Beeswax>100</RB_Beeswax>
+			<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
+			<WoodLog>100</WoodLog>
+
+
+
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 	<RecipeDef>
 		<defName>RB_CentrifugeDesertCombBulk</defName>
 		<label>bulk extract from desert comb</label>
@@ -433,7 +474,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_RedBeeswax>100</RB_RedBeeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
 			<RawAgave>250</RawAgave>
 
 
@@ -475,7 +516,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
 			<RawFungus>250</RawFungus>
 
 
@@ -555,7 +596,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Brittlewax>100</RB_Brittlewax>
+			<RB_Steelwax>100</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Silver>250</Silver>
 			
@@ -595,7 +636,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Gold>100</Gold>
 			
@@ -635,7 +676,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Jade>100</Jade>
 			
@@ -675,7 +716,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_Steelwax>50</RB_Steelwax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Uranium>100</Uranium>
 			
@@ -715,8 +756,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<Wort>50</Wort>
 			
 		</products>
@@ -755,8 +796,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>100</RB_BaseHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_PsychotropicHoney>100</RB_PsychotropicHoney>
 			<Ambrosia>50</Ambrosia>
 			
 		</products>
@@ -795,8 +836,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<PsychoidLeaves>250</PsychoidLeaves>
 			
 		</products>
@@ -835,8 +876,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_Brittlewax>50</RB_Brittlewax>
+			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
 			<SmokeleafLeaves>250</SmokeleafLeaves>
 			
 		</products>
@@ -876,7 +917,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_NonDescriptVegetables>350</RB_NonDescriptVegetables>
 			
 		</products>
@@ -916,7 +957,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_TastyHoney>10</RB_TastyHoney>
 			<Chocolate>100</Chocolate>
 			
 		</products>
@@ -956,7 +997,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>20</RB_BaseHoney>
+			<RB_TastyHoney>20</RB_TastyHoney>
 			<RB_BeeMilk>100</RB_BeeMilk>
 			
 		</products>
@@ -996,7 +1037,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_Beeswax>50</RB_Beeswax>
-			<RB_BaseHoney>20</RB_BaseHoney>
+			<RB_TastyHoney>20</RB_TastyHoney>
 			<RB_BeeEggs>50</RB_BeeEggs>
 			
 		</products>
@@ -1035,7 +1076,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>50</RB_Beeswax>
+			<RB_HeavyWax>50</RB_HeavyWax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<ComponentIndustrial>10</ComponentIndustrial>
 			
@@ -1075,7 +1116,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_Beeswax>100</RB_Beeswax>
+			<RB_HeavyWax>100</RB_HeavyWax>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<Chemfuel>120</Chemfuel>
 			
@@ -1116,7 +1157,7 @@
 		</fixedIngredientFilter>
 		<products>
 			<RB_BaseHoney>100</RB_BaseHoney>
-			<RB_Beeswax>150</RB_Beeswax>
+			<RB_HeavyWax>150</RB_HeavyWax>
 			<Plasteel>50</Plasteel>
 
 
@@ -1156,7 +1197,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BaseHoney>100</RB_BaseHoney>
+			<RB_PsychotropicHoney>100</RB_PsychotropicHoney>
 			<RB_Beeswax>50</RB_Beeswax>
 			<Yayo>50</Yayo>
 
@@ -1197,8 +1238,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BaseHoney>50</RB_BaseHoney>
-			<RB_Beeswax>50</RB_Beeswax>
+			<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+			<RB_RedBeeswax>50</RB_RedBeeswax>
 			<Luciferium>10</Luciferium>
 
 

@@ -8,7 +8,6 @@
 		<beeQueenDef>RB_Bee_Temperate_Queen</beeQueenDef>
 		<beeQueenTag>RB_Temperate_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_MildBeeList</defName>
 		<beeDroneDef>RB_Bee_Mild_Drone</beeDroneDef>
@@ -16,7 +15,6 @@
 		<beeQueenDef>RB_Bee_Mild_Queen</beeQueenDef>
 		<beeQueenTag>RB_Mild_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_HybridBeeList</defName>
 		<beeDroneDef>RB_Bee_Hybrid_Drone</beeDroneDef>
@@ -24,7 +22,6 @@
 		<beeQueenDef>RB_Bee_Hybrid_Queen</beeQueenDef>
 		<beeQueenTag>RB_Hybrid_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_AmalgamBeeList</defName>
 		<beeDroneDef>RB_Bee_Amalgam_Drone</beeDroneDef>
@@ -32,7 +29,6 @@
 		<beeQueenDef>RB_Bee_Amalgam_Queen</beeQueenDef>
 		<beeQueenTag>RB_Amalgam_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>      
 		<defName>RB_AlloyBeeList</defName>
 		<beeDroneDef>RB_Bee_Alloy_Drone</beeDroneDef>
@@ -40,7 +36,6 @@
 		<beeQueenDef>RB_Bee_Alloy_Queen</beeQueenDef>
 		<beeQueenTag>RB_Alloy_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_AdaptiveBeeList</defName>
 		<beeDroneDef>RB_Bee_Adaptive_Drone</beeDroneDef>
@@ -48,7 +43,6 @@
 		<beeQueenDef>RB_Bee_Adaptive_Queen</beeQueenDef>
 		<beeQueenTag>RB_Adaptive_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_NeutroBeeList</defName>
 		<beeDroneDef>RB_Bee_Neutro_Drone</beeDroneDef>
@@ -56,8 +50,6 @@
 		<beeQueenDef>RB_Bee_Neutro_Queen</beeQueenDef>
 		<beeQueenTag>RB_Neutro_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
-
 	<RimBees.BeeListDef>
 		<defName>RB_NutritiousBeeList</defName>
 		<beeDroneDef>RB_Bee_Nutritious_Drone</beeDroneDef>
@@ -65,8 +57,6 @@
 		<beeQueenDef>RB_Bee_Nutritious_Queen</beeQueenDef>
 		<beeQueenTag>RB_Nutritious_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
-
 	<RimBees.BeeListDef>
 		<defName>RB_TechnologicalBeeList</defName>
 		<beeDroneDef>RB_Bee_Technological_Drone</beeDroneDef>
@@ -74,7 +64,6 @@
 		<beeQueenDef>RB_Bee_Technological_Queen</beeQueenDef>
 		<beeQueenTag>RB_Technological_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_ArcticBeeList</defName>
 		<beeDroneDef>RB_Bee_Arctic_Drone</beeDroneDef>
@@ -82,7 +71,6 @@
 		<beeQueenDef>RB_Bee_Arctic_Queen</beeQueenDef>
 		<beeQueenTag>RB_Arctic_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_DesertBeeList</defName>
 		<beeDroneDef>RB_Bee_Desert_Drone</beeDroneDef>
@@ -90,7 +78,6 @@
 		<beeQueenDef>RB_Bee_Desert_Queen</beeQueenDef>
 		<beeQueenTag>RB_Desert_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_SwampBeeList</defName>
 		<beeDroneDef>RB_Bee_Swamp_Drone</beeDroneDef>
@@ -98,7 +85,6 @@
 		<beeQueenDef>RB_Bee_Swamp_Queen</beeQueenDef>
 		<beeQueenTag>RB_Swamp_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
 	<RimBees.BeeListDef>
 		<defName>RB_NocturnalBeeList</defName>
 		<beeDroneDef>RB_Bee_Nocturnal_Drone</beeDroneDef>

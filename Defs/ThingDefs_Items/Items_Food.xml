@@ -16,6 +16,9 @@
       <WorkToMake>300</WorkToMake>
       <Nutrition>0.9</Nutrition>
     </statBases>
+	<thingCategories>
+      <li>RB_HoneyFoodProducts</li>
+    </thingCategories>
     <ingestible>
 	  <joy>0.01</joy>
       <joyKind>Gluttonous</joyKind>
@@ -38,6 +41,9 @@
       <WorkToMake>450</WorkToMake>
       <Nutrition>0.9</Nutrition>
     </statBases>
+	<thingCategories>
+      <li>RB_HoneyFoodProducts</li>
+    </thingCategories>
     <ingestible>
 	  <joy>0.02</joy>
       <joyKind>Gluttonous</joyKind>
@@ -61,6 +67,9 @@
       <WorkToMake>800</WorkToMake>
       <Nutrition>1</Nutrition>
     </statBases>
+	<thingCategories>
+      <li>RB_HoneyFoodProducts</li>
+    </thingCategories>
     <ingestible>
 	  <joy>0.03</joy>
       <joyKind>Gluttonous</joyKind>
@@ -92,10 +101,10 @@
       <Nutrition>0.07</Nutrition>
     </statBases>
     <thingCategories>
-      <li>Foods</li>
+      <li>RB_HoneyFoodProducts</li>
     </thingCategories>
     <ingestible>
-      <preferability>DesperateOnly</preferability>
+      <preferability>MealFine</preferability>
       <foodType>Processed</foodType>
       <joy>0.04</joy>
       <joyKind>Gluttonous</joyKind>
@@ -114,7 +123,7 @@
 
     </graphicData>
     <thingCategories>
-      <li>MeatRaw</li>
+      <li>RB_HoneyFoodProducts</li>
     </thingCategories>
     <statBases>
       <MarketValue>5</MarketValue>
@@ -148,7 +157,7 @@
 
     </graphicData>
     <thingCategories>
-      <li>PlantFoodRaw</li>
+      <li>RB_HoneyFoodProducts</li>
     </thingCategories>
     <statBases>
       <MarketValue>5</MarketValue>

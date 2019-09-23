@@ -14,7 +14,7 @@
 		<thingCategories>
 			<li>RB_BeesAndQueens</li>
 		</thingCategories>
-			<tradeability>Sellable</tradeability>
+		<tradeability>Sellable</tradeability>
 
 		<stackLimit>75</stackLimit>	
 		<comps>
@@ -36,6 +36,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Temperate</species>
@@ -71,7 +72,8 @@
 		<description>Mild bees are bees adapted to average temperatures and mild climates, and they produce little honey. They are probably the remnants of ancient genetic manipulation of common bees, but their special traits have been diluted by time. Perhaps if they were crossbred with common bees...\n\nBee Traits:\n\nProduction time: 23 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>  
+		<tradeability>Buyable,Sellable</tradeability>		
 		<comps>			
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Mild</species>
@@ -391,7 +393,43 @@
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Arctic_Queen</texPath>
 		</graphicData> 		
-	</ThingDef>			
+	</ThingDef>	
+
+	<!--=============== Woodland ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WoodlandBeeBase" Abstract="True" >
+		<description>Woodland bees feel happily at home surrounded by lots of trees.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Woodland</species>
+				<comb>RB_Woodland_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>true</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_WoodlandBeeBase">
+		<defName>RB_Bee_Woodland_Drone</defName>
+		<label>woodland drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Woodland_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_WoodlandBeeBase">
+		<defName>RB_Bee_Woodland_Queen</defName>
+		<label>woodland queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Woodland_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>		
 	
 		<!--=============== Desert ====================-->
 

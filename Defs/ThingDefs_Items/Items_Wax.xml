@@ -2,306 +2,234 @@
 <Defs>
 
 
-  
-  
-  
-     <ThingDef ParentName="ResourceBase">
-    <defName>RB_Beeswax</defName>
-    <label>beeswax</label>
-     <description>Beeswax is a natural wax produced by honey bees. Beeswax has many and varied uses. Primarily, it is used by the bees in making their honeycombs, and it can be used in the production of food, cosmetics, and pharmaceuticals, as well as candles.</description>
-    <graphicData>
-      <texPath>Things/Item/Product/RB_Beeswax</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>Sellable</tradeability>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-    <statBases>
-      <MarketValue>0.5</MarketValue>
-      <Mass>0.1</Mass>
-      <Flammability>1</Flammability>
-	        <MaxHitPoints>100</MaxHitPoints>
+	<ThingDef Name="RB_BeesWaxBase" ParentName="ResourceBase" Abstract="True">
 
-	  <DeteriorationRate>2.0</DeteriorationRate>
-	  <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stackLimit>75</stackLimit>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-		<li>RB_Waxy</li>
-
-      </categories>
-      <color>(226,183,114)</color>
-      <commonality>0</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.65</MaxHitPoints>
-        <Beauty>1</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-		<WorkToBuild>0.7</WorkToBuild>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-
-      </statFactors>
-      
-    </stuffProps>
-  </ThingDef>
-  
-       <ThingDef ParentName="ResourceBase">
-    <defName>RB_Brittlewax</defName>
-    <label>brittle beeswax</label>
-     <description>Brittle beeswax is much less resistant than regular beeswax, but it is very, very light, and things can be built with it in a very short amount of time.</description>
-    <graphicData>
-      <texPath>Things/Item/Product/RB_Brittlewax</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>Sellable</tradeability>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-    <statBases>
-      <MarketValue>0.4</MarketValue>
-      <Mass>0.01</Mass>
-      <Flammability>1</Flammability>
-	  <MaxHitPoints>60</MaxHitPoints>
-	  <DeteriorationRate>3.0</DeteriorationRate>
-	  <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stackLimit>75</stackLimit>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-		<li>RB_Waxy</li>
-
-      </categories>
-      <color>(112,215,222)</color>
-      <commonality>0</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.25</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.25</WorkToMake>
-		<WorkToBuild>0.25</WorkToBuild>
-        <DoorOpenSpeed>0.5</DoorOpenSpeed>
-
-      </statFactors>
-      
-    </stuffProps>
-  </ThingDef>
-  
-       <ThingDef ParentName="ResourceBase">
-    <defName>RB_RedBeeswax</defName>
-    <label>red beeswax</label>
-     <description>Red Beeswax is slightly stronger than regular wax, but its main advantage is that it isn't flammable. It can be used to make candles when treated, though.</description>
-    <graphicData>
-      <texPath>Things/Item/Product/RB_RedBeesWax</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>Sellable</tradeability>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-    <statBases>
-      <MarketValue>0.5</MarketValue>
-      <Mass>0.1</Mass>
-      <Flammability>0</Flammability>
-	        <MaxHitPoints>100</MaxHitPoints>
-
-	  <DeteriorationRate>2.0</DeteriorationRate>
-	   <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stackLimit>75</stackLimit>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-		<li>RB_Waxy</li>
-
-      </categories>
-      <color>(226,120,114)</color>
-      <commonality>0</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>1</MaxHitPoints>
-        <Beauty>1</Beauty>
-        <Flammability>0</Flammability>
-        <WorkToMake>1</WorkToMake>
-		<WorkToBuild>1</WorkToBuild>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-
-      </statFactors>
-      
-    </stuffProps>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceBase">
-    <defName>RB_WhiteBeeswax</defName>
-    <label>white beeswax</label>
-     <description>White beeswax is stronger than regular beeswax, and less flammable.</description>
-    <graphicData>
-      <texPath>Things/Item/Product/RB_WhiteBeeswax</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>Sellable</tradeability>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-    <statBases>
-      <MarketValue>0.5</MarketValue>
-      <Mass>0.1</Mass>
-      <Flammability>0.6</Flammability>
-	        <MaxHitPoints>120</MaxHitPoints>
-
-	  <DeteriorationRate>2.0</DeteriorationRate>
-	  <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stackLimit>75</stackLimit>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_Beeswax</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>RB_BeeswaxCategory</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
 				<li>RB_Waxy</li>
+			</categories>
+			<color>(226,183,114)</color>
+			<commonality>0</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+			</statFactors>
 
-      </categories>
-      <color>(240,240,240)</color>
-      <commonality>0</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.9</MaxHitPoints>
-        <Beauty>1</Beauty>
-        <Flammability>0.6</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-		<WorkToBuild>0.7</WorkToBuild>
-        <DoorOpenSpeed>1.1</DoorOpenSpeed>
+		</stuffProps>
+	</ThingDef>
 
-      </statFactors>
-      
-    </stuffProps>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceBase">
-    <defName>RB_BlackBeeswax</defName>
-    <label>black beeswax</label>
-     <description>Black beeswax is quite fragile, but it is pretty to look at, so it can be used to make sculptures, candles, and other decorations.</description>
-    <graphicData>
-      <texPath>Things/Item/Product/RB_BlackBeeswax</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>Sellable</tradeability>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-    <statBases>
-      <MarketValue>0.5</MarketValue>
-      <Mass>0.1</Mass>
-      <Flammability>1</Flammability>
-	        <MaxHitPoints>80</MaxHitPoints>
 
-	  <DeteriorationRate>3.0</DeteriorationRate>
-	   <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stackLimit>75</stackLimit>
-    <stuffProps>
-      <categories>
-        <li>Metallic</li>
-				<li>RB_Waxy</li>
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_Beeswax</defName>
+		<label>beeswax</label>
+		<description>Beeswax is a natural wax produced by honey bees. Beeswax has many and varied uses. Primarily, it is used by the bees in making their honeycombs, and it can be used in the production of food, cosmetics, and pharmaceuticals, as well as candles.</description>
 
-      </categories>
-      <color>(39,40,58)</color>
-      <commonality>0</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>5</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.5</MaxHitPoints>
-        <Beauty>2</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-		<WorkToBuild>1</WorkToBuild>
-        <DoorOpenSpeed>2</DoorOpenSpeed>
+	</ThingDef>
 
-      </statFactors>
-      
-    </stuffProps>
-  </ThingDef>
-  
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_Brittlewax</defName>
+		<label>brittle beeswax</label>
+		<description>Brittle beeswax is extracted from combs of the Neutro family (Neutro, Tipsy, Luxurious, Psychic and Stoned) and is much less resistant than regular beeswax, but it is very, very light, and things can be built with it in a very short amount of time.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_Brittlewax</texPath>			
+		</graphicData>
+		<statBases>
+			<MarketValue>0.4</MarketValue>
+			<Mass>0.01</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<DeteriorationRate>3.0</DeteriorationRate>			
+		</statBases>
+		<stuffProps>
+			<color>(112,215,222)</color>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.25</MaxHitPoints>
+				<Beauty>1.5</Beauty>
+				<WorkToMake>0.25</WorkToMake>
+				<WorkToBuild>0.25</WorkToBuild>
+				<DoorOpenSpeed>0.5</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_RedBeeswax</defName>
+		<label>red beeswax</label>
+		<description>Red Beeswax is slightly stronger than regular wax, but its main advantage is that it isn't flammable. It can be used to make candles when treated, though.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_RedBeesWax</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffProps>			
+			<color>(226,120,114)</color>			
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToMake>1</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>				
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_HeavyWax</defName>
+		<label>heavywax</label>
+		<description>Heavywax is extracted from combs of the Technological family (Technological, Electronic, Oily and Plastic). As its name suggests, it is very dense and heavy. It is probably the best available material to build blunt weapons.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_HeavyWax</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>0.5</Mass>
+			<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+			<BluntDamageMultiplier>1.6</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>			
+			<color>(151,93,0)</color>			
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Beauty>0.5</Beauty>
+				<WorkToMake>1.8</WorkToMake>
+				<WorkToBuild>1.8</WorkToBuild>
+				<DoorOpenSpeed>0.7</DoorOpenSpeed>			
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_WhiteBeeswax</defName>
+		<label>white beeswax</label>
+		<description>White beeswax is stronger than regular beeswax, and less flammable.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_WhiteBeeswax</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>0.6</Flammability>
+			<MaxHitPoints>120</MaxHitPoints>
+		</statBases>		
+		<stuffProps>			
+			<color>(240,240,240)</color>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Flammability>0.6</Flammability>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_BlueBeeswax</defName>
+		<label>blue beeswax</label>
+		<description>Blue beeswax is way stronger than regular beeswax, but it is extremely flammable. Perhaps useful to build fire traprooms.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_BlueBeeswax</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>2</Flammability>
+			<MaxHitPoints>140</MaxHitPoints>
+		</statBases>		
+		<stuffProps>			
+			<color>(49,51,192)</color>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Flammability>2</Flammability>
+				<DoorOpenSpeed>1</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_Steelwax</defName>
+		<label>steelwax</label>
+		<description>Steelwax is extracted from combs of the Alloy family (Alloy, Argent, Aurum, Precious and Radioactive). It is a natural beeswax strengthened by a metallic lattice, almost as strong as steel, and can be used as a substitute for certain applications.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_Steelwax</texPath>
+		</graphicData>
+		<statBases>
+			<Flammability>0.45</Flammability>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>		
+		<stuffProps>			
+			<color>(170,170,170)</color>
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Flammability>0.4</Flammability>
+				
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_BlackBeeswax</defName>
+		<label>black beeswax</label>
+		<description>Black beeswax is quite fragile, but it is pretty to look at, so it can be used to make sculptures, candles, and other decorations.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_BlackBeeswax</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<DeteriorationRate>3.0</DeteriorationRate>			
+		</statBases>
+		<stuffProps>			
+			<color>(39,40,58)</color>			
+			<statOffsets>
+				<Beauty>5</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.5</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<WorkToBuild>1</WorkToBuild>
+				<DoorOpenSpeed>2</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
 </Defs>

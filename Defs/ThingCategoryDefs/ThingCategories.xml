@@ -32,6 +32,20 @@
         <parent>AnimalProductRaw</parent>
         <iconPath>UI/RB_HoneyJarIcon</iconPath>
       </ThingCategoryDef>
+	  
+	  <ThingCategoryDef>
+        <defName>RB_HoneyFoodProducts</defName>
+        <label>honey food products</label>
+        <parent>Foods</parent>
+        <iconPath>Things/Item/RB_LavishHoney/RB_LavishHoney_c</iconPath>
+      </ThingCategoryDef>
+	  
+	  <ThingCategoryDef>
+        <defName>RB_BeeswaxCategory</defName>
+        <label>beeswax</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Things/Item/Product/RB_Beeswax</iconPath>
+      </ThingCategoryDef>
 
 	
 

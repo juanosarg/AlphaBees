@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======= Basic quality thoughts ========= -->
+
+
+
+  <ThoughtDef>
+    <defName>RB_AtePsychotropicHoney</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate psychotropic honey</label>
+        <description>That honey had something in it... it feels wonderful.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   
+
+ 
+
+</Defs>

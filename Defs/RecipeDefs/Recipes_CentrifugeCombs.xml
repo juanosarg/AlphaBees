@@ -2,6 +2,42 @@
 <Defs>
 
 
+	<RecipeDef Name="RB_CentrifugeAnyCombBase" Abstract="True">
+		<jobString>Extracting from any available combs.</jobString>
+		<workAmount>500</workAmount>    
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>		
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="RB_CentrifugeAnyCombBase">
+		<defName>RB_CentrifugeAnyComb</defName>
+		<label>extract from any comb</label>
+		<description>Centrifuges any available comb to extract honey, wax and other products.</description>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Combs</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RB_Combs</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+
+
 	<RecipeDef>
 		<defName>RB_CentrifugeTemperateComb</defName>
 		<label>extract from temperate comb</label>
@@ -31,11 +67,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -70,11 +104,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -109,11 +141,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>7</RB_BaseHoney>
-			<RB_WhiteBeeswax>5</RB_WhiteBeeswax>
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -148,11 +178,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BlueHoney>7</RB_BlueHoney>
-			<RB_WhiteBeeswax>5</RB_WhiteBeeswax>
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -187,13 +215,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_Beeswax>10</RB_Beeswax>
-			<Steel>5</Steel>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -228,11 +252,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_AdaptiveHoney>7</RB_AdaptiveHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -267,13 +289,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-			<Neutroamine>5</Neutroamine>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -308,13 +326,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>15</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_NondescriptMeat>25</RB_NondescriptMeat>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -349,12 +363,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>20</RB_Beeswax>
-			<RB_ComponentBioInterface>2</RB_ComponentBioInterface>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -389,19 +400,49 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>10</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_HoneyedIcePop>15</RB_HoneyedIcePop>
-
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugeWoodlandComb</defName>
+		<label>extract from woodland comb</label>
+		<description>Centrifuges a woodland comb to extract honey, wax and wood logs</description>
+		<jobString>Extracting honey, wax and wood logs</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Woodland_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Woodland_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 	<RecipeDef>
 		<defName>RB_CentrifugeDesertComb</defName>
 		<label>extract from desert comb</label>
@@ -431,14 +472,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_RedBeeswax>10</RB_RedBeeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RawAgave>25</RawAgave>
-
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -473,14 +509,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RawFungus>25</RawFungus>
-
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -515,11 +546,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BlackBeeswax>10</RB_BlackBeeswax>
-			<RB_BlackHoney>5</RB_BlackHoney>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -554,12 +583,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Brittlewax>10</RB_Brittlewax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Silver>25</Silver>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -594,12 +620,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Brittlewax>5</RB_Brittlewax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Gold>10</Gold>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -634,12 +657,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Brittlewax>5</RB_Brittlewax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Jade>10</Jade>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -674,12 +694,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Brittlewax>5</RB_Brittlewax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Uranium>10</Uranium>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -714,12 +731,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Wort>5</Wort>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -754,12 +768,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>10</RB_BaseHoney>
-			<Ambrosia>5</Ambrosia>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -794,12 +805,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<PsychoidLeaves>25</PsychoidLeaves>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -834,12 +842,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<SmokeleafLeaves>25</SmokeleafLeaves>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -874,12 +879,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>1</RB_BaseHoney>
-			<RB_NonDescriptVegetables>35</RB_NonDescriptVegetables>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -914,12 +916,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>1</RB_BaseHoney>
-			<Chocolate>10</Chocolate>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -954,12 +953,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>2</RB_BaseHoney>
-			<RB_BeeMilk>10</RB_BeeMilk>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -994,12 +990,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>2</RB_BaseHoney>
-			<RB_BeeEggs>5</RB_BeeEggs>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -1034,12 +1027,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>5</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -1074,12 +1064,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_Beeswax>10</RB_Beeswax>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<Chemfuel>12</Chemfuel>
-			
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -1114,13 +1101,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>10</RB_BaseHoney>
-			<RB_Beeswax>15</RB_Beeswax>
-			<Plasteel>5</Plasteel>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -1155,13 +1138,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>10</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-			<Yayo>5</Yayo>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -1196,13 +1175,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>5</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-			<Luciferium>1</Luciferium>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 		</skillRequirements>
@@ -1237,13 +1212,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>30</RB_BaseHoney>
-			<RB_Beeswax>5</RB_Beeswax>
-			<MealNutrientPaste>1</MealNutrientPaste>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -1277,13 +1248,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>35</RB_BaseHoney>
-			<RB_Beeswax>15</RB_Beeswax>
-			<MealFine>1</MealFine>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -1317,13 +1284,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>10</RB_BaseHoney>
-			<RB_Beeswax>10</RB_Beeswax>
-			<MedicineHerbal>1</MedicineHerbal>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -1357,13 +1320,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>10</RB_BaseHoney>
-			<RB_Beeswax>15</RB_Beeswax>
-			<MedicineUltratech>1</MedicineUltratech>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>15</Crafting>
 		</skillRequirements>
@@ -1397,13 +1356,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>1</RB_BaseHoney>
-			<RB_Beeswax>25</RB_Beeswax>
-			<Synthread>5</Synthread>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -1437,13 +1392,9 @@
 
 			</thingDefs>
 		</fixedIngredientFilter>
-		<products>
-			<RB_BaseHoney>1</RB_BaseHoney>
-			<RB_Beeswax>30</RB_Beeswax>
-			<Hyperweave>5</Hyperweave>
-
-
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 		<skillRequirements>
 			<Crafting>14</Crafting>
 		</skillRequirements>

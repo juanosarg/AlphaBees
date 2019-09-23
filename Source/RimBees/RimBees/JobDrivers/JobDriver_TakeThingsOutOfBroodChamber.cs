@@ -31,15 +31,15 @@ namespace RimBees
             Thing beeQueen = buildingbeehouse.innerContainerQueens.FirstOrFallback();
             ThingDef resultingBee;
            
-            int randomNumber = rand.Next(1, 5);
+            int randomNumber = rand.Next(1, 14);
 
-            if (randomNumber == 1)
+            if (randomNumber >= 1 && randomNumber <= 5)
             {
                 resultingBee = DefDatabase<ThingDef>.GetNamed(beeDrone.def.defName, true);
-            } else if (randomNumber == 2)
+            } else if (randomNumber == 6)
             {
                 resultingBee = DefDatabase<ThingDef>.GetNamed(getQueenFromDrone(beeDrone), true);
-            } else if (randomNumber == 3)
+            } else if (randomNumber == 7)
             {
                 resultingBee = DefDatabase<ThingDef>.GetNamed(beeQueen.def.defName, true);
             }

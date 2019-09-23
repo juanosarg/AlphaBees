@@ -100,7 +100,7 @@
     <label>advanced beehouses</label>
     <tab>RB_Bees</tab>
     <techLevel>Industrial</techLevel>
-    <description>Advanced beehouses consume a small amount of electricity, but provide a 10% boost to bee production speed. Useful!</description>
+    <description>Advanced beehouses consume a small amount of electricity, but provide a 25% boost to bee production speed. Useful!</description>
     <baseCost>1500</baseCost>
     <prerequisites>
         <li>RB_BasicBeekeeping</li>
@@ -115,11 +115,30 @@
   </ResearchProjectDef>
   
     <ResearchProjectDef>
+    <defName>RB_AdvancedClimatization</defName>
+    <label>advanced climatization</label>
+    <tab>RB_Bees</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Advanced climatized beehouses allow you to breed bees without caring for outside temperatures, and without carrying the penalty of regular climatized beehouses.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+        <li>RB_AdvancedBeehouses</li>
+		
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
     <defName>RB_AdvancedCentrifugation</defName>
     <label>advanced honey centrifugation</label>
     <tab>RB_Bees</tab>
     <techLevel>Industrial</techLevel>
-    <description>The Advanced Honey Centrifuge semi-automates the process of centrifugating combs to get resources, allowing your colonists to extract them in bulk.</description>
+    <description>The Advanced Honey Centrifuge semi-automates the process of centrifugating combs to get resources, allowing your colonists to extract them in bulk. This machine though doesn't do "extract from any available comb" tasks.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
         <li>RB_AdvancedBeehouses</li>
@@ -133,49 +152,5 @@
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
-   <!--<ResearchProjectDef>
-    <defName>GR_AnimalEnrichment</defName>
-    <label>animal enrichment</label>
-    <tab>GR_GeneticReseach</tab>
-    <techLevel>Industrial</techLevel>
-    <description>Research ways to improve existing animals and create better adapted versions of them, known as Alphas. Unlocks the Alpha Serum Extraction Table, used to extract Alpha Serum from normal animals, as well as the Animal Enrichment Center, used to fill incubators with these serums.</description>
-    <baseCost>1500</baseCost>
-    <prerequisites>
-      <li>Electricity</li>
-    </prerequisites>
-    
-		<researchViewX>3</researchViewX>
-		<researchViewY>1</researchViewY>
-  </ResearchProjectDef>
   
-  <ResearchProjectDef>
-    <defName>GR_AgeDrugs</defName>
-    <label>age drugs</label>
-    <tab>GR_GeneticReseach</tab>
-    <techLevel>Industrial</techLevel>
-    <description>Research ways to accelerate the growth of your animals. Age Pills can be fed to animals to increase their age significantly.</description>
-    <baseCost>500</baseCost>
-    <prerequisites>
-      <li>DrugProduction</li>
-    </prerequisites>
-    
-		<researchViewX>3</researchViewX>
-		<researchViewY>2</researchViewY>
-  </ResearchProjectDef>
-  
-  <ResearchProjectDef>
-    <defName>GR_AnimalControl</defName>
-    <label>animal control</label>
-    <tab>GR_GeneticReseach</tab>
-    <techLevel>Industrial</techLevel>
-    <description>Mind control technology that allows you to directly interact with your creatures, unlocking player-controllable special abilities for each hybrid family.</description>
-    <baseCost>1000</baseCost>
-    <prerequisites>
-      <li>GR_AnimalEnrichment</li>
-    </prerequisites>
-    
-		<researchViewX>3</researchViewX>
-		<researchViewY>3</researchViewY>
-  </ResearchProjectDef>
--->
 </Defs>

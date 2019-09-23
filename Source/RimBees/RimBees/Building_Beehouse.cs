@@ -195,7 +195,7 @@ namespace RimBees
 
             string strToAddSpaceIfElectricityUsed = "";
 
-            if (this.def.defName == "RB_AdvancedBeehouse")
+            if ((this.def.defName == "RB_AdvancedBeehouse")|| this.def.defName == "RB_AdvancedClimatizedBeehouse")
             {
                 strToAddSpaceIfElectricityUsed = "\n";
             }
@@ -335,6 +335,7 @@ namespace RimBees
             this.innerContainerDrones.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnown = true;
             flagInitializeConditions = false;
+            tickCounter = 0;
             this.TickRare();
         }
 
@@ -343,6 +344,7 @@ namespace RimBees
             this.innerContainerQueens.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null);
             this.contentsKnownQueens = true;
             flagInitializeConditions = false;
+            tickCounter = 0;
             this.TickRare();
         }
 
@@ -422,7 +424,7 @@ namespace RimBees
         public bool CheckPower()
         {
 
-            if (this.def.defName != "RB_AdvancedBeehouse")
+            if ((this.def.defName != "RB_AdvancedBeehouse")|| this.def.defName != "RB_AdvancedClimatizedBeehouse")
             {
                 flagPower = true;
                 return true;
@@ -505,7 +507,7 @@ namespace RimBees
 
         public bool CheckTemperatureLevels()
         {
-            if (this.def.defName == "RB_ClimatizedBeehouse")
+            if ((this.def.defName == "RB_ClimatizedBeehouse")|| (this.def.defName == "RB_AdvancedClimatizedBeehouse"))
             {
                 flagTemperature = true;
                 return true;
@@ -593,7 +595,7 @@ namespace RimBees
                 float extraRate = 1;
                 if (this.def.defName == "RB_AdvancedBeehouse")
                 {
-                    extraRate = (float)0.9;
+                    extraRate = (float)0.75;
                 }
                 if (this.def.defName == "RB_ClimatizedBeehouse")
                 {
