@@ -36,6 +36,7 @@ namespace RimBees
         public bool flagTemperature = false;
         public bool flagRain = false;
         public bool flagPlants = false;
+        public bool flagPower = false;
 
         public bool flagInitializeConditions = false;
 
@@ -82,6 +83,7 @@ namespace RimBees
             Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
             Scribe_Values.Look<bool>(ref this.flagRain, "flagRain", false, false);
             Scribe_Values.Look<bool>(ref this.flagPlants, "flagPlants", false, false);
+            Scribe_Values.Look<bool>(ref this.flagPower, "flagPower", false, false);
             Scribe_Values.Look<bool>(ref this.flagInitializeConditions, "flagInitializeConditions", false, false);
             Scribe_Values.Look<int>(ref this.avgTempMin, "avgTempMin", 0, false);
             Scribe_Values.Look<int>(ref this.avgTempMax, "avgTempMax", 0, false);
@@ -189,6 +191,7 @@ namespace RimBees
             string strStoppedBecauseRain = " ";
             string strStoppedBecauseTemperature = " ";
             string strStoppedBecauseNoPLants = " ";
+            string strStoppedBecauseNoPower = " ";
 
             string strToAddSpaceIfElectricityUsed = "";
 
@@ -217,6 +220,11 @@ namespace RimBees
                 strPercentProgress = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
                 strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
                 if (flagInitializeConditions) {
+                    if (!flagPower)
+                    {
+                        strStoppedBecauseNoPower = "\n" + "RB_BeehouseNoPower".Translate();
+                    }
+                    else
                     if (!flagLight)
                     {
                         strStoppedBecauseNight = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
@@ -357,22 +365,29 @@ namespace RimBees
             {
                 if (!BeehouseIsFull) {
 
-                    if (CheckLightLevels()) {
-                        if (CheckRainLevels()) {
-                            if (CheckTemperatureLevels()) {
-                                if (CheckPlantsNearby())
-                                {
-                                    BeehouseIsRunning = true;
-                                    tickCounter++;
-                                    if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
+                    if (CheckPower()) {
+                        if (CheckLightLevels()) {
+                            if (CheckRainLevels()) {
+                                if (CheckTemperatureLevels()) {
+                                    if (CheckPlantsNearby())
                                     {
-                                        SignalBeehouseFull();
+                                        BeehouseIsRunning = true;
+                                        tickCounter++;
+                                        if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
+                                        {
+                                            SignalBeehouseFull();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        BeehouseIsRunning = false;
                                     }
                                 }
                                 else
                                 {
                                     BeehouseIsRunning = false;
                                 }
+
                             }
                             else
                             {
@@ -391,6 +406,7 @@ namespace RimBees
                         BeehouseIsRunning = false;
                     }
 
+
                 }
                 flagInitializeConditions = true;
 
@@ -402,6 +418,36 @@ namespace RimBees
             }
 
         }
+
+        public bool CheckPower()
+        {
+
+            if (this.def.defName != "RB_AdvancedBeehouse")
+            {
+                flagPower = true;
+                return true;
+            }
+            else
+            {
+                CompPowerTrader power = this.GetComp<CompPowerTrader>();
+                if (!power.PowerOn) {
+
+                    flagPower = false;
+                    return false;
+                } else
+                {
+                    flagPower = true;
+                    return true;
+                }
+
+                
+             }
+                
+                
+            
+
+        }
+
 
         public bool CheckLightLevels()
         {

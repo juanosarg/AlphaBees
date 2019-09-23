@@ -3,5 +3,6 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\ob
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\Assemblies\RimBees.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CoreCompileInputs.cache

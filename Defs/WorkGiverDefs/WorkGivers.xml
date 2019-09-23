@@ -27,7 +27,7 @@
     </requiredCapacities>
   </WorkGiverDef>
   
-<!--   <WorkGiverDef>
+ <WorkGiverDef>
     <defName>RB_InsertDroneInAdvancedBeehouse</defName>
     <label>inserting drone in advanced beehouse</label>
     <giverClass>RimBees.WorkGiver_InsertDroneInAdvancedBeehouse</giverClass>
@@ -40,7 +40,20 @@
     </requiredCapacities>
   </WorkGiverDef>
   
-     <WorkGiverDef>
+   <WorkGiverDef>
+    <defName>RB_InsertQueenInAdvancedBeehouse</defName>
+    <label>inserting queen in advanced beehouse</label>
+    <giverClass>RimBees.WorkGiver_InsertQueenInAdvancedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert queen in advanced beehouse</verb>
+    <gerund>inserting queen in advanced beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+ <WorkGiverDef>
     <defName>RB_InsertDroneInClimatizedBeehouse</defName>
     <label>inserting drone in climatized beehouse</label>
     <giverClass>RimBees.WorkGiver_InsertDroneInClimatizedBeehouse</giverClass>
@@ -51,7 +64,20 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-  </WorkGiverDef>-->
+  </WorkGiverDef>
+  
+   <WorkGiverDef>
+    <defName>RB_InsertQueenInClimatizedBeehouse</defName>
+    <label>inserting queen in climatized beehouse</label>
+    <giverClass>RimBees.WorkGiver_InsertQueenInClimatizedBeehouse</giverClass>
+    <workType>Hauling</workType>
+    <verb>insert queen in climatized beehouse</verb>
+    <gerund>inserting queen in climatized beehouse</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>RB_DoBillsHoneyCentrifuge</defName>

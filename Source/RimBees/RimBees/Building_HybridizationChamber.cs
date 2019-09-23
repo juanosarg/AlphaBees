@@ -129,384 +129,392 @@ namespace RimBees
                 beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
                 beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
             }
-            
-
-            if (beeDrone == "Temperate")
+            foreach (BeeCombinationDef element in DefDatabase<BeeCombinationDef>.AllDefs)
             {
-                
-                if (beeQueen == "Mild")
+               if((beeDrone==element.bee1&&beeQueen==element.bee2)|| (beeDrone == element.bee2 && beeQueen == element.bee1))
                 {
-                    return "Hybrid";
-                }
-                if (beeQueen == "Hybrid")
-                {
-                    return "Amalgam";
-                }
-            }
-
-            if (beeDrone == "Mild") {
-                if (beeQueen == "Temperate")
-                {
-                    return "Hybrid";
-                }
-
-                if (beeQueen == "Hybrid")
-                {
-                    return "Amalgam";
-                }
-            }
-
-            if (beeDrone == "Hybrid")
-            {
-                if (beeQueen == "Temperate")
-                {
-                    return "Amalgam";
-                }
-                if (beeQueen == "Mild")
-                {
-                    return "Amalgam";
-                }
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 6))
-                    {
-                        case 1:
-                            return "Neutro";
-                        case 2:
-                            return "Nutritious";
-                        case 3:
-                            return "Technological";
-                        case 4:
-                            return "Adaptive";
-                        case 5:
-                            return "Alloy";                   
-                        default:
-                            break;
-                    }
+                    
+                        return element.result.RandomElement();
                 }
 
             }
+            /*
+                        if (beeDrone == "Temperate")
+                        {
 
-            if (beeDrone == "Amalgam")
-            {
-               
-                if (beeQueen == "Hybrid")
-                {
-                    switch (beeRandomizer.Next(1, 6))
-                    {
-                        case 1:
-                            return "Neutro";
-                        case 2:
-                            return "Nutritious";
-                        case 3:
-                            return "Technological";
-                        case 4:
-                            return "Adaptive";
-                        case 5:
-                            return "Alloy";
-                        default:
-                            break;
-                    }
-                }
+                            if (beeQueen == "Mild")
+                            {
+                                return "Hybrid";
+                            }
+                            if (beeQueen == "Hybrid")
+                            {
+                                return "Amalgam";
+                            }
+                        }
 
-                if (beeQueen == "Adaptive")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Arctic";
-                        case 2:
-                            return "Desert";
-                        case 3:
-                            return "Swamp";
-                        case 4:
-                            return "Nocturnal";
-                      
-                        default:
-                            break;
-                    }
-                }
+                        if (beeDrone == "Mild") {
+                            if (beeQueen == "Temperate")
+                            {
+                                return "Hybrid";
+                            }
 
-                if (beeQueen == "Alloy")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Argent";
-                        case 2:
-                            return "Aurum";
-                        case 3:
-                            return "Precious";
-                        case 4:
-                            return "Radioactive";
+                            if (beeQueen == "Hybrid")
+                            {
+                                return "Amalgam";
+                            }
+                        }
 
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Neutro")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Tipsy";
-                        case 2:
-                            return "Luxurious";
-                        case 3:
-                            return "Psychic";
-                        case 4:
-                            return "Stoner";
+                        if (beeDrone == "Hybrid")
+                        {
+                            if (beeQueen == "Temperate")
+                            {
+                                return "Amalgam";
+                            }
+                            if (beeQueen == "Mild")
+                            {
+                                return "Amalgam";
+                            }
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 6))
+                                {
+                                    case 1:
+                                        return "Neutro";
+                                    case 2:
+                                        return "Nutritious";
+                                    case 3:
+                                        return "Technological";
+                                    case 4:
+                                        return "Adaptive";
+                                    case 5:
+                                        return "Alloy";                   
+                                    default:
+                                        break;
+                                }
+                            }
 
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Nutritious")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Agricultural";
-                        case 2:
-                            return "Bittersweet";
-                        case 3:
-                            return "Lactic";
-                        case 4:
-                            return "Egglaying";
+                        }
 
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Technological")
-                {
-                    switch (beeRandomizer.Next(1, 4))
-                    {
-                        case 1:
-                            return "Electronic";
-                        case 2:
-                            return "Oily";
-                        case 3:
-                            return "Plastic";
+                        if (beeDrone == "Amalgam")
+                        {
 
+                            if (beeQueen == "Hybrid")
+                            {
+                                switch (beeRandomizer.Next(1, 6))
+                                {
+                                    case 1:
+                                        return "Neutro";
+                                    case 2:
+                                        return "Nutritious";
+                                    case 3:
+                                        return "Technological";
+                                    case 4:
+                                        return "Adaptive";
+                                    case 5:
+                                        return "Alloy";
+                                    default:
+                                        break;
+                                }
+                            }
 
-                        default:
-                            break;
-                    }
-                }
+                            if (beeQueen == "Adaptive")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Arctic";
+                                    case 2:
+                                        return "Desert";
+                                    case 3:
+                                        return "Swamp";
+                                    case 4:
+                                        return "Nocturnal";
 
+                                    default:
+                                        break;
+                                }
+                            }
 
+                            if (beeQueen == "Alloy")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Argent";
+                                    case 2:
+                                        return "Aurum";
+                                    case 3:
+                                        return "Precious";
+                                    case 4:
+                                        return "Radioactive";
 
-            }
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Neutro")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Tipsy";
+                                    case 2:
+                                        return "Luxurious";
+                                    case 3:
+                                        return "Psychic";
+                                    case 4:
+                                        return "Stoner";
 
-            if (beeDrone == "Adaptive")
-            {
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Arctic";
-                        case 2:
-                            return "Desert";
-                        case 3:
-                            return "Swamp";
-                        case 4:
-                            return "Nocturnal";
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Nutritious")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Agricultural";
+                                    case 2:
+                                        return "Bittersweet";
+                                    case 3:
+                                        return "Lactic";
+                                    case 4:
+                                        return "Egglaying";
 
-                        default:
-                            break;
-                    }
-                }
-
-
-            }
-
-            if (beeDrone == "Alloy")
-            {
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Argent";
-                        case 2:
-                            return "Aurum";
-                        case 3:
-                            return "Precious";
-                        case 4:
-                            return "Radioactive";
-
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Plastic")
-                {
-                    return "Synthetic";
-                }
-
-
-            }
-
-            if (beeDrone == "Neutro")
-            {
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Tipsy";
-                        case 2:
-                            return "Luxurious";
-                        case 3:
-                            return "Psychic";
-                        case 4:
-                            return "Stoner";
-
-                        default:
-                            break;
-                    }
-                }
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Technological")
+                            {
+                                switch (beeRandomizer.Next(1, 4))
+                                {
+                                    case 1:
+                                        return "Electronic";
+                                    case 2:
+                                        return "Oily";
+                                    case 3:
+                                        return "Plastic";
 
 
-            }
-
-            if (beeDrone == "Nutritious")
-            {
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 5))
-                    {
-                        case 1:
-                            return "Agricultural";
-                        case 2:
-                            return "Bittersweet";
-                        case 3:
-                            return "Lactic";
-                        case 4:
-                            return "Egglaying";
-
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Technological")
-                {
-                    return "Culinary";
-                }
-
-            }
-
-            if (beeDrone == "Technological")
-            {
-                if (beeQueen == "Amalgam")
-                {
-                    switch (beeRandomizer.Next(1, 4))
-                    {
-                        case 1:
-                            return "Electronic";
-                        case 2:
-                            return "Oily";
-                        case 3:
-                            return "Plastic";
-                       
-
-                        default:
-                            break;
-                    }
-                }
-                if (beeQueen == "Nutritious")
-                {
-                    return "Culinary";
-                }
-                if (beeQueen == "Medicinal")
-                {
-                    return "Surgeon";
-                }
-                if (beeQueen == "Synthetic")
-                {
-                    return "Hyper";
-                }
+                                    default:
+                                        break;
+                                }
+                            }
 
 
-            }
 
-            if (beeDrone == "Stoner")
-            {
-                if (beeQueen == "Psychic")
-                {
-                    return "High";
-                }
-            }
-            if (beeDrone == "Psychic")
-            {
-                if (beeQueen == "Stoner")
-                {
-                    return "High";
-                }
-            }
+                        }
 
-            if (beeDrone == "High")
-            {
-                if (beeQueen == "Luxurious")
-                {
-                    return "Lucifer";
-                }
-            }
-            if (beeDrone == "Luxurious")
-            {
-                if (beeQueen == "High")
-                {
-                    return "Lucifer";
-                }
-            }
-            if (beeDrone == "Culinary")
-            {
-                if (beeQueen == "Agricultural")
-                {
-                    return "Chef";
-                }
-            }
-            if (beeDrone == "Agricultural")
-            {
-                if (beeQueen == "Culinary")
-                {
-                    return "Chef";
-                }
-                if (beeQueen == "Swamp")
-                {
-                    return "Medicinal";
-                }
-            }
-            if (beeDrone == "Swamp")
-            {
-                if (beeQueen == "Agricultural")
-                {
-                    return "Medicinal";
-                }
-            }
-            if (beeDrone == "Medicinal")
-            {
-                if (beeQueen == "Technological")
-                {
-                    return "Surgeon";
-                }
-            }
-            if (beeDrone == "Plastic")
-            {
-                if (beeQueen == "Alloy")
-                {
-                    return "Synthetic";
-                }
-            }
-            if (beeDrone == "Synthetic")
-            {
-                if (beeQueen == "Technological")
-                {
-                    return "Hyper";
-                }
-            }
+                        if (beeDrone == "Adaptive")
+                        {
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Arctic";
+                                    case 2:
+                                        return "Desert";
+                                    case 3:
+                                        return "Swamp";
+                                    case 4:
+                                        return "Nocturnal";
+
+                                    default:
+                                        break;
+                                }
+                            }
+
+
+                        }
+
+                        if (beeDrone == "Alloy")
+                        {
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Argent";
+                                    case 2:
+                                        return "Aurum";
+                                    case 3:
+                                        return "Precious";
+                                    case 4:
+                                        return "Radioactive";
+
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Plastic")
+                            {
+                                return "Synthetic";
+                            }
+
+
+                        }
+
+                        if (beeDrone == "Neutro")
+                        {
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Tipsy";
+                                    case 2:
+                                        return "Luxurious";
+                                    case 3:
+                                        return "Psychic";
+                                    case 4:
+                                        return "Stoner";
+
+                                    default:
+                                        break;
+                                }
+                            }
+
+
+                        }
+
+                        if (beeDrone == "Nutritious")
+                        {
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 5))
+                                {
+                                    case 1:
+                                        return "Agricultural";
+                                    case 2:
+                                        return "Bittersweet";
+                                    case 3:
+                                        return "Lactic";
+                                    case 4:
+                                        return "Egglaying";
+
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Technological")
+                            {
+                                return "Culinary";
+                            }
+
+                        }
+
+                        if (beeDrone == "Technological")
+                        {
+                            if (beeQueen == "Amalgam")
+                            {
+                                switch (beeRandomizer.Next(1, 4))
+                                {
+                                    case 1:
+                                        return "Electronic";
+                                    case 2:
+                                        return "Oily";
+                                    case 3:
+                                        return "Plastic";
+
+
+                                    default:
+                                        break;
+                                }
+                            }
+                            if (beeQueen == "Nutritious")
+                            {
+                                return "Culinary";
+                            }
+                            if (beeQueen == "Medicinal")
+                            {
+                                return "Surgeon";
+                            }
+                            if (beeQueen == "Synthetic")
+                            {
+                                return "Hyper";
+                            }
+
+
+                        }
+
+                        if (beeDrone == "Stoner")
+                        {
+                            if (beeQueen == "Psychic")
+                            {
+                                return "High";
+                            }
+                        }
+                        if (beeDrone == "Psychic")
+                        {
+                            if (beeQueen == "Stoner")
+                            {
+                                return "High";
+                            }
+                        }
+
+                        if (beeDrone == "High")
+                        {
+                            if (beeQueen == "Luxurious")
+                            {
+                                return "Lucifer";
+                            }
+                        }
+                        if (beeDrone == "Luxurious")
+                        {
+                            if (beeQueen == "High")
+                            {
+                                return "Lucifer";
+                            }
+                        }
+                        if (beeDrone == "Culinary")
+                        {
+                            if (beeQueen == "Agricultural")
+                            {
+                                return "Chef";
+                            }
+                        }
+                        if (beeDrone == "Agricultural")
+                        {
+                            if (beeQueen == "Culinary")
+                            {
+                                return "Chef";
+                            }
+                            if (beeQueen == "Swamp")
+                            {
+                                return "Medicinal";
+                            }
+                        }
+                        if (beeDrone == "Swamp")
+                        {
+                            if (beeQueen == "Agricultural")
+                            {
+                                return "Medicinal";
+                            }
+                        }
+                        if (beeDrone == "Medicinal")
+                        {
+                            if (beeQueen == "Technological")
+                            {
+                                return "Surgeon";
+                            }
+                        }
+                        if (beeDrone == "Plastic")
+                        {
+                            if (beeQueen == "Alloy")
+                            {
+                                return "Synthetic";
+                            }
+                        }
+                        if (beeDrone == "Synthetic")
+                        {
+                            if (beeQueen == "Technological")
+                            {
+                                return "Hyper";
+                            }
+                        }*/
 
 
             return "";

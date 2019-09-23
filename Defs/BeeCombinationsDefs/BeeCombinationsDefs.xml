@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier0_1</defName>
+		<bee1>Temperate</bee1>
+		<bee2>Mild</bee2>
+		<result>
+			<li>Hybrid</li>
+		</result>		
+		
+	</RimBees.BeeCombinationDef>
+
+	
+
+
+</Defs>

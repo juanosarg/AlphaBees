@@ -38,9 +38,9 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
-		    <workSkill>Animals</workSkill>
+		    <workSkill>Crafting</workSkill>
 
 	</RecipeDef>
 	
@@ -80,9 +80,9 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
-		    <workSkill>Animals</workSkill>
+		    <workSkill>Crafting</workSkill>
 
 	</RecipeDef>
 	
@@ -122,7 +122,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
 	
@@ -162,7 +162,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
 	
@@ -202,7 +202,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>	
 
@@ -242,7 +242,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
 	
@@ -282,7 +282,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -322,7 +322,7 @@
 
 		</products>
 		<skillRequirements>
-			<Animals>3</Animals>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>	-->
 	

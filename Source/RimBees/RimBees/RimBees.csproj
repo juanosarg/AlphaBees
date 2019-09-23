@@ -46,12 +46,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeeCombinationDef.cs" />
+    <Compile Include="BeeListDef.cs" />
     <Compile Include="BeeListSetupUtility.cs" />
     <Compile Include="Building_Beehouse.cs" />
     <Compile Include="Building_HybridizationChamber.cs" />
     <Compile Include="Building_BroodChamber.cs" />
     <Compile Include="Building_MeadFermentingBarrel.cs" />
     <Compile Include="Building_TreeHive.cs" />
+    <Compile Include="WorkGivers\WorkGiver_InsertDroneInClimatizedBeehouse.cs" />
+    <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedBeehouse.cs" />
+    <Compile Include="WorkGivers\WorkGiver_InsertQueenInClimatizedBeehouse.cs" />
+    <Compile Include="WorkGivers\WorkGiver_InsertQueenInAdvancedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertQueenInBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInBeehouse.cs" />
     <Compile Include="CompProperties_TempRuinableAndDestroy.cs" />

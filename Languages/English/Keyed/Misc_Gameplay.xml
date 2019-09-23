@@ -27,6 +27,7 @@
 	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature>
 	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> 
 	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2>
+	<RB_BeehouseNoPower>Stopped due to no power</RB_BeehouseNoPower>
 
 	<RB_NoDronesFound>No drones of that type found in the map</RB_NoDronesFound>
 	<RB_NoQueensFound>No queens of that type found in the map</RB_NoQueensFound>
