@@ -54,6 +54,14 @@
     <Compile Include="Building_BroodChamber.cs" />
     <Compile Include="Building_MeadFermentingBarrel.cs" />
     <Compile Include="Building_TreeHive.cs" />
+    <Compile Include="CompBeeResearch.cs" />
+    <Compile Include="CompBeeResearchImages.cs" />
+    <Compile Include="CompProperties_BeeResearchImages.cs" />
+    <Compile Include="CompProperties_RandomResearch.cs" />
+    <Compile Include="CompRandomResearch.cs" />
+    <Compile Include="CompUseEffect_ShowBeeResearch.cs" />
+    <Compile Include="Dialog_BeeResearch.cs" />
+    <Compile Include="GraphicsCache.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedBeehouse.cs" />

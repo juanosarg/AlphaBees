@@ -50,6 +50,9 @@
 	<RB_Hybrid>A new mutant bee has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>
 	<RB_HybridNumberAlert>A new mutant bee has been created in a hybridization chamber! This combination produces other {0} possible mutations.</RB_HybridNumberAlert>
 
+	<RB_DestroyResearch>Destroy Research</RB_DestroyResearch>
+	<RB_DestroyResearchLabel>Destroy Research. Warning, this will destroy this research. Use this if you have already looked at the combination and don't need to have it around anymore.</RB_DestroyResearchLabel>
+
 
 	<!-- Mead -->
 

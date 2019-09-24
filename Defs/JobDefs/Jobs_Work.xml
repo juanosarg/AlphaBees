@@ -4,7 +4,12 @@
 
   <!--============= Extracting Bees ===============-->
 
-
+  <JobDef>
+    <defName>RB_UseBeeResearch</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>reading bee research.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
   
     <JobDef>
     <defName>RB_InsertingBees</defName>

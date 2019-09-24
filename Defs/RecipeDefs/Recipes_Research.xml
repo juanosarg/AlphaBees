@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_CreateTier4Research</defName>
+		<label>create tier 4 bee research</label>
+		<description>Research bee combinations to create tier 4 bees. This research is random and you may get duplicate results.</description>
+		<jobString>Researching bees</jobString>
+		
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_BeeResearchTable</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Temperate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Temperate</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_RandomTier4Research>1</RB_RandomTier4Research>
+			
+		</products>
+		<skillRequirements>
+			<Intellectual>3</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+
+	</RecipeDef>
+	
+
+	
+</Defs>

@@ -70,6 +70,60 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
+		<defName>RB_BeeResearchTable</defName>
+		<label>bee research table</label>
+		<description>Use your bee resources to investigate exciting new combinations of bees. Bee research is mostly random, and you may get insights that you were already aware of.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_BeeResearchTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,3.5)</drawSize>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>    
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+
+		<designationHotKey>Misc2</designationHotKey>
+
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Honey_Centrifuge</defName>
 		<label>honey centrifuge</label>
 		<description>This sleek metal workstation is used to centrifuge honeycombs to extract honey and wax. Can work without electricity at 30% of normal speed (useful for tribal people).</description>
@@ -225,7 +279,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Beehouse</defName>
-		<label>wooden beehouse</label>
+		<label>beehouse</label>
 		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
@@ -249,7 +303,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-
+		<uiIconScale>0.5</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -287,7 +341,7 @@
 			<texPath>Things/Building/RB_ClimatizedBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
-						<shaderType>CutoutComplex</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -296,15 +350,16 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		
+
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-			
+
 			<Steel>50</Steel>
 		</costList>
+		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -363,7 +418,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-
+		<uiIconScale>0.5</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -428,7 +483,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-
+		<uiIconScale>0.5</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -484,19 +539,19 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		
+
 		<stuffCategories>     
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-			
+
 			<RB_Beeswax>5</RB_Beeswax>
 		</costList>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
-
+		<uiIconScale>0.75</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -536,7 +591,7 @@
 			<texPath>Things/Building/RB_Beehouse_HybridizationChamber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
-						<shaderType>CutoutComplex</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -545,13 +600,14 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		
+		<uiIconScale>0.75</uiIconScale>
+
 		<stuffCategories>     
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
-			
+
 			<Steel>25</Steel>
 			<RB_Beeswax>5</RB_Beeswax>
 		</costList>
@@ -613,6 +669,8 @@
 		<thingCategories>
 			<li>BuildingsProduction</li>
 		</thingCategories>
+				<uiIconScale>0.5</uiIconScale>
+
 		<statBases>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>10</Mass>
