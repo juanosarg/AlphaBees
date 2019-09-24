@@ -5,7 +5,7 @@ namespace RimBees
 {
     public class CompProperties_RandomResearch : CompProperties
     {
-        public string categoryString;
+        public string labelString;
 
         public CompProperties_RandomResearch()
         {

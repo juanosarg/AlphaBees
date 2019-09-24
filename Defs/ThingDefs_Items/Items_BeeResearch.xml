@@ -38,9 +38,7 @@
 
 	<ThingDef Name="RB_ResearchPapersBaseTier4" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier4)</label>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>		
+			
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -66,7 +64,7 @@
 		<stackLimit>1</stackLimit>
 		<comps>
 			<li Class="RimBees.CompProperties_RandomResearch">
-				<categoryString>RB_BeeResearchTier4</categoryString>
+				<labelString>bee research papers (tier4)</labelString>
 			</li>
 		</comps>
 	</ThingDef>
@@ -79,6 +77,9 @@
 				<textForTheImage>Nutritious + Technological = Culinary</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
@@ -89,6 +90,9 @@
 				<textForTheImage>Nutritious + Adaptable = Pet</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
@@ -99,6 +103,9 @@
 				<textForTheImage>Adaptable + Technological = Textile Branch</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
@@ -109,6 +116,9 @@
 				<textForTheImage>Stoner + Psychic = High</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
@@ -119,6 +129,9 @@
 				<textForTheImage>Agricultural + Swamp = Medicinal</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
@@ -129,6 +142,9 @@
 				<textForTheImage>Plastic + Alloy = Synthetic</textForTheImage>
 			</li>
 		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
 	</ThingDef>	
 
 

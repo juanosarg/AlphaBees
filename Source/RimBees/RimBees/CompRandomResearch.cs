@@ -40,12 +40,14 @@ namespace RimBees
 
         public void Hatch()
         {
-            foreach (ThingDef element in DefDatabase<ThingDef>.AllDefs.Where(element => element.category.ToString() == Props.categoryString))
+            foreach (ThingDef element in DefDatabase<ThingDef>.AllDefs.Where(element => element.label == Props.labelString))
             {
+                //Log.Message(element.defName);
                 researchResults.Add(element);
 
             }
             ThingDef randomFromResearchList = researchResults.RandomElement();
+            Log.Message(randomFromResearchList.defName);
             GenSpawn.Spawn(ThingDef.Named(randomFromResearchList.defName), this.parent.Position, this.parent.Map);
             this.parent.Destroy(DestroyMode.Vanish);
 
