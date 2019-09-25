@@ -89,7 +89,8 @@
 			<li>Agricultural</li>
 			<li>Bittersweet</li>
 			<li>Egglaying</li>
-			<li>Lactic</li>			
+			<li>Lactic</li>		
+			<li>Insectoid</li>
 		</result>				
 	</RimBees.BeeCombinationDef>	
 	
@@ -105,25 +106,7 @@
 	</RimBees.BeeCombinationDef>	
 
 	<!-- Tier 3 Combinations -->	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier3_5</defName>
-		<bee1>Nutritious</bee1>
-		<bee2>Adaptive</bee2>
-		<result>
-			<li>Pet</li>					
-		</result>				
-	</RimBees.BeeCombinationDef>
-	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier3_6</defName>
-		<bee1>Technological</bee1>
-		<bee2>Adaptive</bee2>
-		<result>
-			<li>Weaving</li>	
-			<li>Tanner</li>	
-			<li>Wooly</li>				
-		</result>				
-	</RimBees.BeeCombinationDef>
+
 	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_1</defName>
@@ -158,6 +141,35 @@
 		<bee2>Alloy</bee2>
 		<result>
 			<li>Synthetic</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_5</defName>
+		<bee1>Nutritious</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Pet</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_6</defName>
+		<bee1>Technological</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Weaving</li>	
+			<li>Tanner</li>	
+			<li>Wooly</li>				
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_7</defName>
+		<bee1>Agricultural</bee1>
+		<bee2>Woodland</bee2>
+		<result>
+			<li>Straw</li>							
 		</result>				
 	</RimBees.BeeCombinationDef>	
 	
@@ -195,6 +207,15 @@
 		<bee2>Synthetic</bee2>
 		<result>
 			<li>Hyper</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_5</defName>
+		<bee1>Oily</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Nitro</li>					
 		</result>				
 	</RimBees.BeeCombinationDef>
 	

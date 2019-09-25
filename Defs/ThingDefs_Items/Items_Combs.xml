@@ -402,6 +402,21 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Insectoid_Honeycomb</defName>
+		<label>insectoid honeycomb</label>
+		<description>This is a honeycomb produced by Insectoid bees. Insectoid bees are part insect... Wait... But all bees are... Nevermind, these bees produce insect jelly just like the insectoids that insist on being a nuisance to your colony. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and insect jelly.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Insectoid_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>5</RB_HeavyWax>
+			<RB_TastyHoney>3</RB_TastyHoney>
+			<InsectJelly>10</InsectJelly>
+		</butcherProducts>
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Electronic_Honeycomb</defName>
 		<label>electronic honeycomb</label>
 		<description>This is a honeycomb produced by Electronic bees. It doesn't even seem to be organic! Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and industrial components.</description>
@@ -458,6 +473,21 @@
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<Kibble>25</Kibble>
+		</butcherProducts>
+	</ThingDef>
+	
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Straw_Honeycomb</defName>
+		<label>straw honeycomb</label>
+		<description>This is a honeycomb produced by straw bees. Straw bees slowly collect loose dry grass lying around and weave it into their honeycombs. These strands can then be extracted from the comb and turned into useable Hay. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and hay.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Straw_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_Brittlewax>7</RB_Brittlewax>
+			<Hay>25</Hay>
 		</butcherProducts>
 	</ThingDef>
 	
@@ -562,7 +592,7 @@
 		<butcherProducts>
 			<RB_BaseHoney>35</RB_BaseHoney>
 			<RB_Beeswax>15</RB_Beeswax>
-			<MealFine>1</MealFine>
+			<RB_FineHoney>1</RB_FineHoney>
 		</butcherProducts>
 	</ThingDef>
 
@@ -623,6 +653,21 @@
 			<RB_BaseHoney>1</RB_BaseHoney>
 			<RB_Beeswax>30</RB_Beeswax>
 			<Hyperweave>5</Hyperweave>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Nitro_Honeycomb</defName>
+		<label>nitro honeycomb</label>
+		<description>This is a honeycomb produced by Nitro bees. These bees synthesize a very unstable compound that can be extracted to create explosive mortar shells. They work very slow, though, and they'll need a stockpile with a little bit of Chemfuel nearby to start refining its compounds. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and explosive mortar shells.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Nitro_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>10</RB_HeavyWax>
+			<RB_WhiteHoney>7</RB_WhiteHoney>
+			<Shell_HighExplosive>1</Shell_HighExplosive>
 		</butcherProducts>
 	</ThingDef>
 

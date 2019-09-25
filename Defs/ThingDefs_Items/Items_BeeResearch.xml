@@ -36,6 +36,9 @@
 		</comps>
 	</ThingDef>
 
+	
+	<!-- Tier 4 research -->
+
 	<ThingDef Name="RB_ResearchPapersBaseTier4" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier4)</label>
 			
@@ -144,6 +147,120 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
+		<defName>RB_ResearchPapersAgriWood</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchAgriWood</imageNameInGraphicsCache>
+				<textForTheImage>Agricultural + Woodland = Straw</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<!-- Tier 5 research -->
+	<ThingDef Name="RB_ResearchPapersBaseTier5" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (tier5)</label>
+			
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomTier5Research</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (tier5)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+	
+
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersAgriCul</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchAgriCul</imageNameInGraphicsCache>
+				<textForTheImage>Agricultural + Culinary = Chef</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersLuxHigh</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchLuxHigh</imageNameInGraphicsCache>
+				<textForTheImage>Luxurious + High = Lucifer</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersMedTech</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchMedTech</imageNameInGraphicsCache>
+				<textForTheImage>Medicinal + Technological = Surgeon</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersSynthTech</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchSynthTech</imageNameInGraphicsCache>
+				<textForTheImage>Synthetic + Technological = Hyper</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersSynthOily</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchSynthOily</imageNameInGraphicsCache>
+				<textForTheImage>Synthetic + Oily = Nitro</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
 		</thingCategories>	
 	</ThingDef>	
 

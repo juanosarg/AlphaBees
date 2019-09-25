@@ -42,6 +42,14 @@
       
     </ThingCategoryDef>
 	
+	<ThingCategoryDef>
+      <defName>RB_BeeResearchTier5</defName>
+      <label>bee research, tier 5</label>
+      <parent>RB_BeeResearch</parent>
+	  <iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+      
+    </ThingCategoryDef>
+	
 	  <ThingCategoryDef>
         <defName>RB_Honeys</defName>
         <label>bee honeys</label>

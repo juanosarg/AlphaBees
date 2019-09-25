@@ -71,7 +71,7 @@
 		<beeQueenDef>RB_Bee_Arctic_Queen</beeQueenDef>
 		<beeQueenTag>RB_Arctic_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-		<RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_WoodlandBeeList</defName>
 		<beeDroneDef>RB_Bee_Woodland_Drone</beeDroneDef>
 		<beeDroneTag>RB_Woodland_Drone_Tag</beeDroneTag>
@@ -184,6 +184,13 @@
 		<beeQueenTag>RB_Egglaying_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
 	<RimBees.BeeListDef>
+		<defName>RB_InsectoidBeeList</defName>
+		<beeDroneDef>RB_Bee_Insectoid_Drone</beeDroneDef>
+		<beeDroneTag>RB_Insectoid_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Insectoid_Queen</beeQueenDef>
+		<beeQueenTag>RB_Insectoid_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_ElectronicBeeList</defName>
 		<beeDroneDef>RB_Bee_Electronic_Drone</beeDroneDef>
 		<beeDroneTag>RB_Electronic_Drone_Tag</beeDroneTag>
@@ -211,21 +218,28 @@
 		<beeQueenDef>RB_Bee_Pet_Queen</beeQueenDef>
 		<beeQueenTag>RB_Pet_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-		<RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_StrawBeeList</defName>
+		<beeDroneDef>RB_Bee_Straw_Drone</beeDroneDef>
+		<beeDroneTag>RB_Straw_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Straw_Queen</beeQueenDef>
+		<beeQueenTag>RB_Straw_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_WeavingBeeList</defName>
 		<beeDroneDef>RB_Bee_Weaving_Drone</beeDroneDef>
 		<beeDroneTag>RB_Weaving_Drone_Tag</beeDroneTag>
 		<beeQueenDef>RB_Bee_Weaving_Queen</beeQueenDef>
 		<beeQueenTag>RB_Weaving_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-		<RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_TannerBeeList</defName>
 		<beeDroneDef>RB_Bee_Tanner_Drone</beeDroneDef>
 		<beeDroneTag>RB_Tanner_Drone_Tag</beeDroneTag>
 		<beeQueenDef>RB_Bee_Tanner_Queen</beeQueenDef>
 		<beeQueenTag>RB_Tanner_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-		<RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_WoolyBeeList</defName>
 		<beeDroneDef>RB_Bee_Wooly_Drone</beeDroneDef>
 		<beeDroneTag>RB_Wooly_Drone_Tag</beeDroneTag>
@@ -288,7 +302,13 @@
 		<beeQueenDef>RB_Bee_Hyper_Queen</beeQueenDef>
 		<beeQueenTag>RB_Hyper_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
+	<RimBees.BeeListDef>
+		<defName>RB_NitroBeeList</defName>
+		<beeDroneDef>RB_Bee_Nitro_Drone</beeDroneDef>
+		<beeDroneTag>RB_Nitro_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Nitro_Queen</beeQueenDef>
+		<beeQueenTag>RB_Nitro_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
 
 
 </Defs>

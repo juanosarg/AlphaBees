@@ -94,12 +94,16 @@
 	<RB_Bittersweet_Drone_Tag>Bittersweet Drone</RB_Bittersweet_Drone_Tag>
 	<RB_Lactic_Drone_Tag>Lactic Drone</RB_Lactic_Drone_Tag>
 	<RB_Egglaying_Drone_Tag>Egglaying Drone</RB_Egglaying_Drone_Tag>
+	<RB_Insectoid_Drone_Tag>Insectoid Drone</RB_Insectoid_Drone_Tag>
+
 
 	<RB_Electronic_Drone_Tag>Electronic Drone</RB_Electronic_Drone_Tag>
 	<RB_Oily_Drone_Tag>Oily Drone</RB_Oily_Drone_Tag>
 	<RB_Plastic_Drone_Tag>Plastic Drone</RB_Plastic_Drone_Tag>
 
 	<RB_Pet_Drone_Tag>Pet Drone</RB_Pet_Drone_Tag>
+	<RB_Straw_Drone_Tag>Straw Drone</RB_Straw_Drone_Tag>
+
 	
 	<RB_Weaving_Drone_Tag>Weaving Drone</RB_Weaving_Drone_Tag>
 	<RB_Tanner_Drone_Tag>Tanner Drone</RB_Tanner_Drone_Tag>
@@ -113,6 +117,8 @@
 	<RB_Chef_Drone_Tag>Chef Drone</RB_Chef_Drone_Tag>
 	<RB_Synthetic_Drone_Tag>Synthetic Drone</RB_Synthetic_Drone_Tag>
 	<RB_Hyper_Drone_Tag>Hyper Drone</RB_Hyper_Drone_Tag>
+	<RB_Nitro_Drone_Tag>Nitro Drone</RB_Nitro_Drone_Tag>
+
 
 
 
@@ -148,12 +154,15 @@
 	<RB_Bittersweet_Queen_Tag>Bittersweet Queen</RB_Bittersweet_Queen_Tag>
 	<RB_Lactic_Queen_Tag>Lactic Queen</RB_Lactic_Queen_Tag>
 	<RB_Egglaying_Queen_Tag>Egglaying Queen</RB_Egglaying_Queen_Tag>
+	<RB_Insectoid_Queen_Tag>Insectoid Queen</RB_Insectoid_Queen_Tag>
+
 
 	<RB_Electronic_Queen_Tag>Electronic Queen</RB_Electronic_Queen_Tag>
 	<RB_Oily_Queen_Tag>Oily Queen</RB_Oily_Queen_Tag>
 	<RB_Plastic_Queen_Tag>Plastic Queen</RB_Plastic_Queen_Tag>
 
 	<RB_Pet_Queen_Tag>Pet Queen</RB_Pet_Queen_Tag>
+	<RB_Straw_Queen_Tag>Straw Queen</RB_Straw_Queen_Tag>
 	
 	<RB_Weaving_Queen_Tag>Weaving Queen</RB_Weaving_Queen_Tag>
 	<RB_Tanner_Queen_Tag>Tanner Queen</RB_Tanner_Queen_Tag>
@@ -167,5 +176,7 @@
 	<RB_Chef_Queen_Tag>Chef Queen</RB_Chef_Queen_Tag>
 	<RB_Synthetic_Queen_Tag>Synthetic Queen</RB_Synthetic_Queen_Tag>
 	<RB_Hyper_Queen_Tag>Hyper Queen</RB_Hyper_Queen_Tag>
+	<RB_Nitro_Queen_Tag>Nitro Queen</RB_Nitro_Queen_Tag>
+
 
 </LanguageData>

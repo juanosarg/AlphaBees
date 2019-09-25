@@ -997,6 +997,43 @@
 			<Crafting>3</Crafting>
 		</skillRequirements>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeInsectoidComb</defName>
+		<label>extract from insectoid comb</label>
+		<description>Centrifuges an insectoid comb to extract honey, wax and insect jelly</description>
+		<jobString>Extracting honey, wax and insect jelly</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Insectoid_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Insectoid_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 
 	<RecipeDef>
 		<defName>RB_CentrifugeElectronicComb</defName>
@@ -1144,7 +1181,45 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-		<RecipeDef>
+
+	<RecipeDef>
+		<defName>RB_CentrifugeStrawComb</defName>
+		<label>extract from straw comb</label>
+		<description>Centrifuges a straw comb to extract honey, wax and hay</description>
+		<jobString>Extracting honey, wax and hay</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Straw_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Straw_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>RB_CentrifugeWeavingComb</defName>
 		<label>extract from weaving comb</label>
 		<description>Centrifuges a weaving comb to extract honey, wax and cloth</description>
@@ -1180,7 +1255,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-		<RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeTannerComb</defName>
 		<label>extract from tanner comb</label>
 		<description>Centrifuges a tanner comb to extract honey, wax and leather</description>
@@ -1216,7 +1291,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 	</RecipeDef>
-		<RecipeDef>
+	<RecipeDef>
 		<defName>RB_CentrifugeWoolyComb</defName>
 		<label>extract from wooly comb</label>
 		<description>Centrifuges a wooly comb to extract honey, wax and wool</description>
@@ -1532,6 +1607,42 @@
 
 			<thingDefs>
 				<li>RB_Hyper_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugeNitroComb</defName>
+		<label>extract from nitro comb</label>
+		<description>Centrifuges a nitro comb to extract honey, wax and explosive shells</description>
+		<jobString>Extracting honey, wax and explosive shells</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Nitro_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Nitro_Honeycomb</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>

@@ -977,6 +977,42 @@
 		</graphicData> 		
 	</ThingDef>	
 	
+					<!--=============== Insectoid ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_InsectoidBeeBase" Abstract="True" >
+		<description>Insectoid bees are part insect... Wait... But all bees are... Nevermind, these bees produce insect jelly just like the insectoids that insist on being a nuisance to your colony.\n\nBee Traits:\n\nProduction time: 36 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: -10ºC\nMaximum temperature: 35ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Insectoid</species>
+				<comb>RB_Insectoid_Honeycomb</comb>
+				<combtimedays>1.5</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-10</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_InsectoidBeeBase">
+		<defName>RB_Bee_Insectoid_Drone</defName>
+		<label>insectoid drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Insectoid_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_InsectoidBeeBase">
+		<defName>RB_Bee_Insectoid_Queen</defName>
+		<label>insectoid queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Insectoid_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
 	<!--========== Tier 3: Tech Branch - From Technological Bees ==========-->	
 
 	<!--=============== Electronic ====================-->
@@ -1196,6 +1232,45 @@
 			<texPath>Things/Item/Bees/RB_Bee_Wooly_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>	
+	
+<!--========== Tier 4: Hay Branch - From Agricultural and Woodland Bees ==========-->		
+	
+	<!--=============== Straw ====================-->
+	
+	<ThingDef ParentName="RB_BeeBase" Name="RB_StrawBeeBase" Abstract="True" >
+		<description>Straw bees slowly collect loose dry grass lying around and weave it into their honeycombs. These strands can then be extracted from the comb and turned into useable Hay.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 35ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Straw</species>
+				<comb>RB_Straw_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_StrawBeeBase">
+		<defName>RB_Bee_Straw_Drone</defName>
+		<label>straw drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Straw_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_StrawBeeBase">
+		<defName>RB_Bee_Straw_Queen</defName>
+		<label>straw queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Straw_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>		
+	
 	
 <!--========== Tier 4: Animals Branch - From Nutritious and Adaptive Bees ==========-->		
 	
@@ -1530,7 +1605,43 @@
 			<texPath>Things/Item/Bees/RB_Bee_Hyper_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>	
-
 	
+	<!--========== Tier 5: Ordnance Branch - From Oily and Synthetic Bees ==========-->	
+
+	<!--=============== Nitro ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_NitroBeeBase" Abstract="True" >
+		<description>These bees synthesize a very unstable compound that can be extracted to create explosive mortar shells. They work very slow, though, and they'll need a stockpile with a little bit of Chemfuel nearby to start refining its compounds.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: Chemfuel\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Nitro</species>
+				<comb>RB_Nitro_Honeycomb</comb>
+				<combtimedays>5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Chemfuel</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>40</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_NitroBeeBase">
+		<defName>RB_Bee_Nitro_Drone</defName>
+		<label>nitro drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Nitro_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_NitroBeeBase">
+		<defName>RB_Bee_Nitro_Queen</defName>
+		<label>nitro queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Nitro_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
 	
 </Defs>
