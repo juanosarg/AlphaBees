@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AlphaBiomes\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -62,6 +66,7 @@
     <Compile Include="CompClasses\CompUseEffect_ShowBeeResearch.cs" />
     <Compile Include="Dialog_BeeResearch.cs" />
     <Compile Include="GraphicsCache.cs" />
+    <Compile Include="HarmonyPatchers.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedBeehouse.cs" />

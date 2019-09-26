@@ -8,7 +8,7 @@
     <labelShort>Beekeeping</labelShort>
     <pawnLabel>Beekeeper</pawnLabel>
     <gerundLabel>beekeeping</gerundLabel>
-    <description>Handle tasks related to working with beehouses (other bee workbenches are Crafting).</description>
+    <description>Handle tasks related to working with beehouses and bee related workbenches.</description>
     <verb>Beekeep</verb>
     <naturalPriority>320</naturalPriority>
     <alwaysStartActive>true</alwaysStartActive>

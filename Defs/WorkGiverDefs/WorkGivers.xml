@@ -108,7 +108,7 @@
 		<defName>RB_DoBillsHoneyCentrifuge</defName>
 		<label>works at honey centrifuge</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>RB_BeekeepingWork</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>RB_Honey_Centrifuge</li>
@@ -125,7 +125,7 @@
 		<defName>RB_DoBillsBeeResearchTable</defName>
 		<label>works at bee research table</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>RB_BeekeepingWork</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>RB_BeeResearchTable</li>
@@ -142,7 +142,7 @@
 		<defName>RB_DoBillsAdvancedHoneyCentrifuge</defName>
 		<label>works at advanced honey centrifuge</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>RB_BeekeepingWork</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>RB_Advanced_Honey_Centrifuge</li>
@@ -160,7 +160,7 @@
 		
 		<label>works at beekeeping workbench</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>RB_BeekeepingWork</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>RB_Beekeeping_Workbench_Building</li>
