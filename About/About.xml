@@ -8,16 +8,20 @@
 
 - Beekeeping: find wild bees in all biomes, build beehouses to put them to work! A single beehouse won't do much, so prepare to build a few. Are you in an extreme biome? There are low-efficiency climatized beehouses available for you until you can get bees that modify allowed temperatures!
 - Bee breeding: Mix two breeds of bees in a beehouse, and use a brood chamber to multiply them, and an hybridization chamber to get new species (more than 30)!
-- Honey making: Centrifuge the combs produced by the bees to get honey and wax.
-- Cooking and building: honey can be used as an ingredient in cooking, and wax can be used as a building material.
+- Honey making: Centrifuge the combs produced by the bees to get honey and wax
+- Cooking and building: honey can be used as an ingredient in cooking, and wax can be used as a building material
 - Mead brewing: turn honey into mead to make your colonists happy (and drunk)
 - Wax lighting: candles are a quaint and cheap way to light your base
 - Resource gathering: many of the bees produce combs with more things than honey and wax. Will you find the Luciferium-producing bees?
+- Research: discover new exciting bee combinations
+- Pollination: plan your growing zones around your beehives and increase your crop production
 
 &lt;size=24&gt;Issues&lt;/size&gt;
 
 This mod is more complex than other mods I have worked on previously (Genetic Rim and Alpha Animals), so expect some weird issues from time to time. Please report them with an error log if possible.
 Also, balance. Balance is always a work in progress!
+
+The 2.0 update was HUGE, it may cause some glitches with old savegames, though I have tried to minimize them. If your save is beyond salvation, remember you can download a previous version of the mod from my GitHub
 
 &lt;size=24&gt;Plans for the future&lt;/size&gt;
 
@@ -29,6 +33,7 @@ Building texture modified from Textures by Pixel Art World, http://yms.main.jp
 Fancy Food Items by KanaX: https://forums.rpgmakerweb.com/index.php?threads/fancy-food-items.44398/
 Honeyed Ice Pop by Game Developer Studio (Robert Brooks): https://opengameart.org/content/ice-pops
 Wax floor textures from the Apini Mod: https://ludeon.com/forums/index.php?topic=31076.0
+Thanks to TheSevenSins for helping on the 2.0 update
 
 &lt;size=24&gt;Compatibility&lt;/size&gt;
 
@@ -36,6 +41,7 @@ Right now, the mod shouldn't give problems. In the future, I'll add patches to m
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v2.0: Updated everything. Beekeeping work type, queueing of bee jobs, externalization of most code on XML files, "extract from any comb" recipe, added 8 new bees, new combs, new honeys, new waxes. Seriously, check the changelog on GitHub because I almost rewrote the entire mod (26/09/19)
 v1.02: Bugfixes (06/03/19)
 v1.01: Bugfixes. Added rotatable workbenches (12/11/18)
 v1.0: Release version (06/11/18)

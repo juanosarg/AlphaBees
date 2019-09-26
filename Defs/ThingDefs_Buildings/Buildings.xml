@@ -280,7 +280,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Beehouse</defName>
 		<label>beehouse</label>
-		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.</description>
+		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -329,12 +329,21 @@
 		<researchPrerequisites>
 			<li>RB_BasicBeekeeping</li>
 		</researchPrerequisites>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>false</climatizedBeehouse>
+				<beehouseRate>1</beehouseRate>
+			</li>
+			
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_ClimatizedBeehouse</defName>
 		<label>simple climatized beehouse</label>
-		<description>This beehouse has been fitted with a climate control system, so bees can operate in extremely cold or hot biomes. This beehouse is very inefficient (about 30% speed), so it should only be used as an intermediate solution to work towards breeding bees from the Biome branch. This kind of beehouse is only useful in extreme biomes.</description>
+		<description>This beehouse has been fitted with a climate control system, so bees can operate in extremely cold or hot biomes. This beehouse is very inefficient (about 40% speed), so it should only be used as an intermediate solution to work towards breeding bees from the Biome branch. This kind of beehouse is only useful in extreme biomes.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -389,13 +398,22 @@
 		<researchPrerequisites>
 			<li>RB_ClimatizedBeehouses</li>
 		</researchPrerequisites>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>2.5</beehouseRate>
+			</li>
+			
+		</comps>
 	</ThingDef>
 
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_AdvancedBeehouse</defName>
 		<label>advanced beehouse</label>
-		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 25%.</description>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 25%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -448,6 +466,12 @@
 				<basePowerConsumption>120</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>false</climatizedBeehouse>
+				<beehouseRate>0.75</beehouseRate>
+			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>RB_AdvancedBeehouses</li>
@@ -459,7 +483,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_AdvancedClimatizedBeehouse</defName>
 		<label>advanced climatized beehouse</label>
-		<description>A high tech beehouse where bees will live and generate honeycombs for you. This beehouse is climatized, so bees can operate in extremely cold or hot biomes. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity.</description>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. This beehouse is climatized, so bees can operate in extremely cold or hot biomes. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -513,6 +537,12 @@
 				<basePowerConsumption>135</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>1</beehouseRate>
+			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>RB_AdvancedClimatization</li>

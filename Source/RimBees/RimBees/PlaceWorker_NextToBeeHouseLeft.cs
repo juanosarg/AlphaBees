@@ -40,7 +40,7 @@ namespace RimBees
 
                         if (thingDef != null && thingDef.building != null)
                         {
-                            if (thingDef.building.wantsHopperAdjacent && ((thingDef.defName == "RB_Beehouse") || (thingDef.defName == "RB_AdvancedClimatizedBeehouse") || (thingDef.defName == "RB_ClimatizedBeehouse") || (thingDef.defName == "RB_AdvancedBeehouse")))
+                            if (thingDef.building.wantsHopperAdjacent && thing.TryGetComp<CompBeeHouse>().GetIsBeehouse)
                             {
                                 return true;
                             }

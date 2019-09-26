@@ -40,7 +40,7 @@ namespace RimBees
         [HarmonyPrefix]
         public static bool RegrowIfBeehouseNearby(ref Plant __instance) {
 
-            if (__instance.def.plant.HarvestDestroys&& !__instance.def.plant.IsTree)
+            if (__instance.def.plant.HarvestDestroys&& __instance.def.plant.Sowable && !__instance.def.plant.IsTree)
 
             {
                 int num = GenRadial.NumCellsInRadius(6);
@@ -49,9 +49,11 @@ namespace RimBees
                     IntVec3 current = __instance.Position + GenRadial.RadialPattern[i];
                     if (current.InBounds(__instance.Map))
                     {
-                        if((Building_Beehouse)current.GetEdifice(__instance.Map) != null) {
+                        Building getbeehouse = current.GetEdifice(__instance.Map);
+                        if ((getbeehouse != null)&&((getbeehouse.def.defName== "RB_Beehouse") ||(getbeehouse.def.defName == "RB_AdvancedClimatizedBeehouse") ||
+                            (getbeehouse.def.defName == "RB_ClimatizedBeehouse") || (getbeehouse.def.defName == "RB_AdvancedBeehouse"))) {
 
-                            Building_Beehouse thebeehouse = (Building_Beehouse)current.GetEdifice(__instance.Map);
+                            Building_Beehouse thebeehouse = (Building_Beehouse)getbeehouse;
 
                             if (thebeehouse.BeehouseIsRunning)
                             {
@@ -59,21 +61,24 @@ namespace RimBees
                                 if (random.NextDouble() > 0.75)
                                 {
                                     Thing thing = ThingMaker.MakeThing(ThingDef.Named(__instance.def.defName), null);
-                                    GenSpawn.Spawn(thing, __instance.Position, __instance.Map);
+                                    Plant plant = (Plant)thing;
+                                    GenSpawn.Spawn(plant, __instance.Position, __instance.Map);
+                                    plant.Growth = 0.25f;
                                     __instance.Map.mapDrawer.MapMeshDirty(__instance.Position, MapMeshFlag.Things);
-                                    __instance.Destroy(DestroyMode.Vanish);
+                                    
                                 }
-                                else __instance.Destroy(DestroyMode.Vanish);
+                                
                             }
+                            
 
                         }
                         
                        
                     }
-                }
-                return false;
-            }
-            else return true;
+                     
+                } return true;
+                
+            } else return true;
 
 
 

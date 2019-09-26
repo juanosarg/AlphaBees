@@ -37,7 +37,7 @@ namespace RimBees
                 
                 IntVec3 c = this.Position+ GenAdj.CardinalDirections[3];
                 Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if (edifice != null && ((edifice.def == DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true)) || (edifice.def == DefDatabase<ThingDef>.GetNamed("RB_AdvancedClimatizedBeehouse", true)) || (edifice.def == DefDatabase<ThingDef>.GetNamed("RB_ClimatizedBeehouse", true)) || (edifice.def == DefDatabase<ThingDef>.GetNamed("RB_AdvancedBeehouse", true))))
+                if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
                 {
                     result = edifice;
                     return result;
@@ -68,7 +68,7 @@ namespace RimBees
         public override void TickRare()
         {
             base.TickRare();
-            if (GetAdjacentBeehouse().BeehouseIsRunning && !broodChamberFull)
+            if (GetAdjacentBeehouse() != null && GetAdjacentBeehouse().BeehouseIsRunning && !broodChamberFull)
             {
                 tickCounter++;
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))

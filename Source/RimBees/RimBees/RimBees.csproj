@@ -60,6 +60,8 @@
     <Compile Include="Building_TreeHive.cs" />
     <Compile Include="CompClasses\CompBeeResearch.cs" />
     <Compile Include="CompClasses\CompBeeResearchImages.cs" />
+    <Compile Include="CompClasses\CompBeeHouse.cs" />
+    <Compile Include="CompClasses\CompProperties_BeeHouse.cs" />
     <Compile Include="CompClasses\CompProperties_BeeResearchImages.cs" />
     <Compile Include="CompClasses\CompProperties_RandomResearch.cs" />
     <Compile Include="CompClasses\CompRandomResearch.cs" />

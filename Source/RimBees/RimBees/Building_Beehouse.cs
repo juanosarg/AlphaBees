@@ -195,7 +195,7 @@ namespace RimBees
 
             string strToAddSpaceIfElectricityUsed = "";
 
-            if ((this.def.defName == "RB_AdvancedBeehouse")|| this.def.defName == "RB_AdvancedClimatizedBeehouse")
+            if (this.TryGetComp<CompBeeHouse>().GetIsElectricBeehouse)
             {
                 strToAddSpaceIfElectricityUsed = "\n";
             }
@@ -424,7 +424,7 @@ namespace RimBees
         public bool CheckPower()
         {
 
-            if ((this.def.defName != "RB_AdvancedBeehouse")|| this.def.defName != "RB_AdvancedClimatizedBeehouse")
+            if (!this.TryGetComp<CompBeeHouse>().GetIsElectricBeehouse)
             {
                 flagPower = true;
                 return true;
@@ -507,7 +507,7 @@ namespace RimBees
 
         public bool CheckTemperatureLevels()
         {
-            if ((this.def.defName == "RB_ClimatizedBeehouse")|| (this.def.defName == "RB_AdvancedClimatizedBeehouse"))
+            if (this.TryGetComp<CompBeeHouse>().GetIsClimatizedBeehouse)
             {
                 flagTemperature = true;
                 return true;
@@ -592,15 +592,8 @@ namespace RimBees
         {
             if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
-                float extraRate = 1;
-                if (this.def.defName == "RB_AdvancedBeehouse")
-                {
-                    extraRate = (float)0.75;
-                }
-                if (this.def.defName == "RB_ClimatizedBeehouse")
-                {
-                    extraRate = (float)2.5;
-                }
+                float extraRate = this.TryGetComp<CompBeeHouse>().GetBeehouseRate;
+               
                 float bee1ticks = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
                 float bee2ticks = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
                 float beeticksaverage = extraRate*((bee1ticks + bee2ticks) / 2);
