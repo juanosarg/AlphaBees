@@ -21,23 +21,17 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>RB_BaseHoney</li>
-						<li>RB_BlueHoney</li>
-						<li>RB_AdaptiveHoney</li>
-						<li>RB_BlackHoney</li>
-					</thingDefs>
+				    <categories>
+					  <li>RB_Honeys</li>
+					</categories>
 				</filter>
 				<count>1.25</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>RB_BaseHoney</li>
-						<li>RB_BlueHoney</li>
-						<li>RB_AdaptiveHoney</li>
-						<li>RB_BlackHoney</li>
-			</thingDefs>
+			<categories>
+				<li>RB_Honeys</li>
+			</categories>
 		</fixedIngredientFilter>
 		<products>
 			<RB_Must>5</RB_Must>

@@ -155,6 +155,7 @@
     </statBases>
     <tickerType>Rare</tickerType>
     <comps>
+      <li Class="CompProperties_Ingredients" />
       <li Class="CompProperties_Rottable">
         <daysToRotStart>5</daysToRotStart>
         <rotDestroys>true</rotDestroys>
@@ -211,6 +212,7 @@
     <equipmentType>Primary</equipmentType>
     <techLevel>Neolithic</techLevel>
     <comps>
+      <li Class="CompProperties_Ingredients" />
       <li Class="CompProperties_Drug">
         <chemical>Alcohol</chemical>
         <addictiveness>0.011</addictiveness>

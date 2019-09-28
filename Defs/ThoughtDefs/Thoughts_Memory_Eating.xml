@@ -16,9 +16,29 @@
       </li>
     </stages>
   </ThoughtDef>
-  
-   
 
- 
+  <ThoughtDef>
+    <defName>RB_AtePsychotropicHoneyIngredient</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate psychotropic honey</label>
+        <description>The honey that was made with had something in it... it feels wonderful.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RB_AteTastyHoneyIngredient</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate delicious honey</label>
+        <description>The honey that was made with tasted incredible.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>

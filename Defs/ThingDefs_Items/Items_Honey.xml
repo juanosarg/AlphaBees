@@ -78,6 +78,9 @@
 			<color>(184,59,56)</color>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<ingestible>
+			<specialThoughtAsIngredient>RB_AteTastyHoneyIngredient</specialThoughtAsIngredient>
+		</ingestible>
 		<statBases>
 			<MarketValue>1.9</MarketValue>
 			<Nutrition>0.1</Nutrition>
@@ -123,6 +126,7 @@
 		</statBases>
 		<ingestible>
 			<tasteThought>RB_AtePsychotropicHoney</tasteThought>
+			<specialThoughtAsIngredient>RB_AtePsychotropicHoneyIngredient</specialThoughtAsIngredient>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
