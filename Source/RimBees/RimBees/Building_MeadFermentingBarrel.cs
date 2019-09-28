@@ -8,9 +8,11 @@ using Verse;
 namespace RimBees
 {
     [StaticConstructorOnStartup]
-    public class Building_MeadFermentingBarrel : Building
+    public class Building_MeadFermentingBarrel : Building, IThingHolder
     {
         private int wortCount;
+
+        private ThingOwner ingredients;
 
         private float progressInt;
 
@@ -121,13 +123,19 @@ namespace RimBees
             }
         }
 
+        public Building_MeadFermentingBarrel()
+        {
+            this.ingredients = new ThingOwner<Thing>(this, false);
+        }
+        
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look<int>(ref this.wortCount, "wortCount", 0, false);
             Scribe_Values.Look<float>(ref this.progressInt, "progress", 0f, false);
+            Scribe_Deep.Look<ThingOwner>(ref this.ingredients, "ingredients", this);
         }
-
+        
         public override void TickRare()
         {
             base.TickRare();
@@ -135,23 +143,6 @@ namespace RimBees
             {
                 this.Progress = Mathf.Min(this.Progress + 250f * this.ProgressPerTickAtCurrentTemp, 1f);
             }
-        }
-
-        public void AddWort(int count)
-        {
-            base.GetComp<CompTemperatureRuinable>().Reset();
-            if (this.Fermented)
-            {
-                Log.Warning("Tried to add mead must to a barrel full of mead. Colonists should take the mead first.", false);
-                return;
-            }
-            int num = Mathf.Min(count, 25 - this.wortCount);
-            if (num <= 0)
-            {
-                return;
-            }
-            this.Progress = GenMath.WeightedAverage(0f, (float)num, this.Progress, (float)this.wortCount);
-            this.wortCount += num;
         }
 
         protected override void ReceiveCompSignal(string signal)
@@ -166,6 +157,10 @@ namespace RimBees
         {
             this.wortCount = 0;
             this.Progress = 0f;
+            if (!ingredients.NullOrEmpty())
+            {
+                this.ingredients.ClearAndDestroyContents();
+            }
         }
 
         public void AddWort(Thing wort)
@@ -173,8 +168,19 @@ namespace RimBees
             int num = Mathf.Min(wort.stackCount, 25 - this.wortCount);
             if (num > 0)
             {
-                this.AddWort(num);
-                wort.SplitOff(num).Destroy(DestroyMode.Vanish);
+                if (ingredients == null)
+                {
+                    ingredients = new ThingOwner<Thing>(this, false);
+                }
+                num = ingredients.TryAddOrTransfer(wort, 25 - this.wortCount);
+                GetComp<CompTemperatureRuinable>().Reset();
+                if (Fermented)
+                {
+                    Log.Warning("Tried to add mead must to a barrel full of mead. Colonists should take the mead first.", false);
+                    return;
+                }
+                Progress = GenMath.WeightedAverage(0f, (float)num, this.Progress, (float)this.wortCount);
+                wortCount += num;
             }
         }
 
@@ -232,10 +238,21 @@ namespace RimBees
                 Log.Warning("Tried to get mead but it's not yet fermented.", false);
                 return null;
             }
-            Thing thing = ThingMaker.MakeThing(ThingDef.Named("RB_Mead"), null);
-            thing.stackCount = this.wortCount;
+
+            var mead = ThingMaker.MakeThing(ThingDef.Named("RB_Mead"), null);
+            var meadIngredients = mead.TryGetComp<CompIngredients>();
+            if (!ingredients.NullOrEmpty())
+            {
+                foreach (var meadMust in ingredients)
+                {
+                    var mustIngredientDefs = meadMust.TryGetComp<CompIngredients>();
+                    mustIngredientDefs?.ingredients.ForEach(meadIngredients.RegisterIngredient);
+                }
+            }
+
+            mead.stackCount = this.wortCount;
             this.Reset();
-            return thing;
+            return mead;
         }
 
         public override void Draw()
@@ -277,6 +294,16 @@ namespace RimBees
                     }
                 };
             }
+        }
+
+        public void GetChildHolders(List<IThingHolder> outChildren)
+        {
+            ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, GetDirectlyHeldThings());
+        }
+
+        public ThingOwner GetDirectlyHeldThings()
+        {
+            return ingredients;
         }
     }
 }
