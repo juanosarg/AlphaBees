@@ -4,7 +4,8 @@ using Verse;
 using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
+using System;
 using System.Diagnostics;
 
 
@@ -177,7 +178,17 @@ namespace RimBees
                 RB_Gizmo_Empty_Queens.icon = ContentFinder<Texture2D>.Get("UI/RB_ExtractQueens_FromBeehouse", true);
                 yield return RB_Gizmo_Empty_Queens;
             }
-
+            if (DesignatorUtility.FindAllowedDesignator<Designator_ZoneAdd_Growing>() != null)
+            {
+                yield return new Command_Action
+                {
+                    action = new Action(this.MakeMatchingGrowZone),
+                    hotKey = KeyBindingDefOf.Misc2,
+                    defaultDesc = "RB_CommandBeehouseMakeGrowingZoneDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/Designators/ZoneCreate_Growing", true),
+                    defaultLabel = "CommandSunLampMakeGrowingZoneLabel".Translate()
+                };
+            }
         }
 
         public override string GetInspectString()
@@ -610,6 +621,22 @@ namespace RimBees
             EjectContents();
             EjectContentsQueens();
             base.Destroy(mode);
+        }
+
+        private void MakeMatchingGrowZone()
+        {
+            Designator designator = DesignatorUtility.FindAllowedDesignator<Designator_ZoneAdd_Growing>();
+            designator.DesignateMultiCell(from tempCell in GrowableCells
+                                          where designator.CanDesignateCell(tempCell).Accepted
+                                          select tempCell);
+        }
+
+        public IEnumerable<IntVec3> GrowableCells
+        {
+            get
+            {
+                return GenRadial.RadialCellsAround(this.Position, 6, true);
+            }
         }
 
     }

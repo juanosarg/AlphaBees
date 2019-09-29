@@ -40,6 +40,8 @@
 	<GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
 	<GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
 	<GU_BroodChamberProgress>Progress:</GU_BroodChamberProgress>
+	<RB_CommandBeehouseMakeGrowingZoneDesc>Create a growing zone around this beehouse exactly matching the shape of the bee's influence over crop harvests.</RB_CommandBeehouseMakeGrowingZoneDesc>
+
 
 	<GU_PlaceNextToBeeHouseLeft>The hybridization chamber needs to be placed adjacent to a beehouse</GU_PlaceNextToBeeHouseLeft>
 	<GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
