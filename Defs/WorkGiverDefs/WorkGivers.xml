@@ -212,6 +212,19 @@
     </requiredCapacities>
   </WorkGiverDef>
   
+    <WorkGiverDef>
+    <defName>RB_TakeThingsOutOfAdvancedClimatizedBeehouse</defName>
+    <label>taking things out of advanced climatized beehouse</label>
+    <giverClass>RimBees.WorkGiver_TakeThingsOutOfAdvancedClimatizedBeehouse</giverClass>
+    <workType>RB_BeekeepingWork</workType>
+    <verb>take things out of advanced climatized beehouse</verb>
+    <gerund>taking things out of advanced climatized beehouse</gerund>
+    <priorityInType>14</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
   <WorkGiverDef>
     <defName>RB_TakeThingsOutOfBroodChamber</defName>
     <label>taking bees out of brood chamber</label>
