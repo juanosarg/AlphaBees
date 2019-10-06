@@ -280,7 +280,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Beehouse</defName>
 		<label>beehouse</label>
-		<description>A simple wooden beehouse where bees will live and generate honeycombs for you.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<description>A simple beehouse where bees will live and generate honeycombs for you.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 
 		<graphicData>
@@ -298,6 +298,8 @@
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>
+			<li>Metallic</li>
+
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
@@ -362,6 +364,8 @@
 
 		<stuffCategories>
 			<li>Woody</li>
+			<li>Metallic</li>
+
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>

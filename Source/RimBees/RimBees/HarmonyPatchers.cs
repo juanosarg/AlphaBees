@@ -65,7 +65,7 @@ namespace RimBees
                                     GenSpawn.Spawn(plant, __instance.Position, __instance.Map);
                                     plant.Growth = 0.25f;
                                     __instance.Map.mapDrawer.MapMeshDirty(__instance.Position, MapMeshFlag.Things);
-                                    
+                                    return true;
                                 }
                                 
                             }
