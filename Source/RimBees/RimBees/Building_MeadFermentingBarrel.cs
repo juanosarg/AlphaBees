@@ -166,13 +166,20 @@ namespace RimBees
         public void AddWort(Thing wort)
         {
             int num = Mathf.Min(wort.stackCount, 25 - this.wortCount);
+           /* Log.Message(wort.stackCount.ToString());
+            Log.Message(this.wortCount.ToString());
+            Log.Message(num.ToString());*/
             if (num > 0)
             {
                 if (ingredients == null)
                 {
                     ingredients = new ThingOwner<Thing>(this, false);
                 }
-                num = ingredients.TryAddOrTransfer(wort, 25 - this.wortCount);
+                //int num2 = ingredients.TryAddOrTransfer(wort, num,true);
+                wort.holdingOwner.TryTransferToContainer(wort, ingredients, num, true);
+
+               // Log.Message(num.ToString());
+
                 GetComp<CompTemperatureRuinable>().Reset();
                 if (Fermented)
                 {
@@ -180,7 +187,9 @@ namespace RimBees
                     return;
                 }
                 Progress = GenMath.WeightedAverage(0f, (float)num, this.Progress, (float)this.wortCount);
-                wortCount += num;
+                this.wortCount += num;
+               // Log.Message(this.wortCount.ToString());
+
             }
         }
 

@@ -41,6 +41,7 @@ Right now, the mod shouldn't give problems. In the future, I'll add patches to m
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v2.031: Fixed bug with mead fermenting barrels (4/11/19)
 v2.03: Fixed bug with pollination were multiple plants were appearing. Increased temp range of wild beehives. Added metallic stuffing to beehouses and climatized beehouses (06/10/19)
 v2.02: Fixed bug were advanced climatized beehouses were not working properly (30/09/19)
 v2.01: Added properties to honeys so they transfer their special stats to meads and other food. Fixed adding chambers to beehouse blueprints. Added an option to automatically add a growing zone around beehouses (29/09/19)
