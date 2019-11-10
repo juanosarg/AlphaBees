@@ -45,8 +45,9 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/BiomeDef[defName = "AB_MycoticJungle"]/wildPlants</xpath>
 				<value>
-					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
-					<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
+					<RB_GiantAgariluxTemperate>0.02</RB_GiantAgariluxTemperate>
+					<RB_GiantAgariluxMild>0.02</RB_GiantAgariluxMild>
+
 				</value>
 			</li>
 			

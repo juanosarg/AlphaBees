@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<ThingDef Name="RB_CavePlantBase" ParentName="RB_TreeHiveBase" Abstract="True">
+		<plant>
+			<neverBlightable>true</neverBlightable>
 
+
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
 
 
 	<!--============================ Trees ============================-->
@@ -39,6 +47,160 @@
       </visualSizeRange>
     </plant>
   </ThingDef>
+  
+  	<ThingDef ParentName="RB_CavePlantBase">
+		<defName>RB_GiantAgariluxTemperate</defName>
+		<label>giant agarilux with hive</label>
+		<description>A colossal purple mushroom. Its size and glowing protrusions make this fungus beautiful to look at. Its stalk has been hardened, giving it a firmness similar to a weak wood. A huge temperate beehive seems to be attached to this mushroom's cap.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RB_Plant_Hive_TempMushroom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.4, 0.6, 0.26)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<blockLight>true</blockLight>
+
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.95</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestYield>1</harvestYield>
+			
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RB_WildHive_Temperate</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>
+				<min>3.5</min>
+				<max>6</max>
+			</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			
+			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+		</plant>
+		<comps>			
+			<li Class="RimBees.CompProperties_TreeHive">
+				<species>RB_RuinedStalk</species>
+			</li>   
+		</comps>
+	</ThingDef>
+	
+	  	<ThingDef ParentName="RB_CavePlantBase">
+		<defName>RB_GiantAgariluxMild</defName>
+		<label>giant agarilux with hive</label>
+		<description>A colossal purple mushroom. Its size and glowing protrusions make this fungus beautiful to look at. Its stalk has been hardened, giving it a firmness similar to a weak wood. A huge mild beehive seems to be attached to this mushroom's cap.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RB_Plant_Hive_MildMushroom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.4, 0.6, 0.26)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<blockLight>true</blockLight>
+
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.95</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			
+			<dieIfLeafless>false</dieIfLeafless>
+			<harvestYield>1</harvestYield>
+			
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RB_WildHive_Mild</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>
+				<min>3.5</min>
+				<max>6</max>
+			</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			
+			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+		</plant>
+		<comps>			
+			<li Class="RimBees.CompProperties_TreeHive">
+				<species>RB_RuinedStalk</species>
+			</li>   
+		</comps>
+
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>RB_RuinedStalk</defName>
+		<label>ruined stalk</label>
+		<description>Removing the beehive proved to be too destructive for the frail mushroom, leaving a dead stump in its place.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RB_RuinedStalk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.4, 0.6, 0.26)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<blockLight>true</blockLight>
+
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.95</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+			<growDays>0.0001</growDays>
+			<dieIfLeafless>false</dieIfLeafless>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>
+				<min>3.5</min>
+				<max>6</max>
+			</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>			
+			<purpose>Food</purpose>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+		</plant>
+
+	</ThingDef>
+  
+  
   
   <ThingDef ParentName="RB_TreeHiveBase">
     <defName>RB_Plant_Hive_Temperate</defName>
