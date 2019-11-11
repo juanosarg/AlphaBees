@@ -89,10 +89,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			
 			<purpose>Food</purpose>
-			<sowTags>
-				<li>Ground</li>
-
-			</sowTags>
+			
 		</plant>
 		<comps>			
 			<li Class="RimBees.CompProperties_TreeHive">
@@ -142,10 +139,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			
 			<purpose>Food</purpose>
-			<sowTags>
-				<li>Ground</li>
-
-			</sowTags>
+			
 		</plant>
 		<comps>			
 			<li Class="RimBees.CompProperties_TreeHive">
@@ -192,10 +186,7 @@
 			</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>			
 			<purpose>Food</purpose>
-			<sowTags>
-				<li>Ground</li>
-
-			</sowTags>
+			
 		</plant>
 
 	</ThingDef>
