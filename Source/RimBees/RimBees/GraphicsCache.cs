@@ -24,7 +24,17 @@ namespace RimBees
         public static readonly Texture2D BeeResearchSynthTech = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthTech", true);
         public static readonly Texture2D BeeResearchSynthOily = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthOily", true);
 
-
+        // Genetic Tier research graphics
+        public static readonly Texture2D BeeResearchOrgWood = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgWood", true);
+        public static readonly Texture2D BeeResearchOrgWool = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgWool", true);
+        public static readonly Texture2D BeeResearchOrgEgg = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgEgg", true);
+        public static readonly Texture2D BeeResearchOrgOily = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgOily", true);
+        public static readonly Texture2D BeeResearchOrgPsy = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgPsy", true);
+        public static readonly Texture2D BeeResearchOrgPet = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgPet", true);
+        public static readonly Texture2D BeeResearchOrgElec = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgElec", true);
+        public static readonly Texture2D BeeResearchOrgInsect = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgInsect", true);
+        public static readonly Texture2D BeeResearchOrgAgri = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgAgri", true);
+        public static readonly Texture2D BeeResearchOrgDesert = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgDesert", true);
 
 
 
