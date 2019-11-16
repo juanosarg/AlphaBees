@@ -181,6 +181,15 @@
 	<RB_Synthetic_Queen_Tag>Synthetic Queen</RB_Synthetic_Queen_Tag>
 	<RB_Hyper_Queen_Tag>Hyper Queen</RB_Hyper_Queen_Tag>
 	<RB_Nitro_Queen_Tag>Nitro Queen</RB_Nitro_Queen_Tag>
+	
+	<!-- Options -->
+	
+	<RB_IgnoreNight>Bees ignore night-time</RB_IgnoreNight>
+	<RB_IgnoreRain>Bees ignore presence of weather (such as rain)</RB_IgnoreRain>
+	<RB_IgnoreTemperature>Bees ignore temperature in the map</RB_IgnoreTemperature>
+	<RB_IgnorePlants>Bees ignore the need for plants or other nearby materials</RB_IgnorePlants>
+	<RB_GreenhouseBees>Greenhouse bees. Bees consider indoor temperature instead of map average</RB_GreenhouseBees>
+       
 
 
 </LanguageData>

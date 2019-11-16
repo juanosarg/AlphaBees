@@ -25,7 +25,7 @@ namespace RimBees
         public float growOptimalGlow = 0.3f;
 
         public int ticksToDays = 240;
-        public int ticksToResetJobs = 20;
+        public int ticksToResetJobs = 120;
 
 
         public ThingOwner innerContainerDrones = null;
@@ -466,7 +466,7 @@ namespace RimBees
         {
             bool bee1nocturnal = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
             bool bee2nocturnal = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetNocturnal;
-            if (bee1nocturnal || bee2nocturnal)
+            if (bee1nocturnal || bee2nocturnal || RimBees_Settings.RB_IgnoreNight)
             {
                 flagLight = true;
                 return true;
@@ -493,7 +493,7 @@ namespace RimBees
         {
             bool bee1pluviophile = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
             bool bee2pluviophile = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetPluviophile;
-            if (bee1pluviophile || bee2pluviophile)
+            if (bee1pluviophile || bee2pluviophile || RimBees_Settings.RB_IgnoreRain)
             {
                 flagRain = true;
                 return true;
@@ -518,7 +518,7 @@ namespace RimBees
 
         public bool CheckTemperatureLevels()
         {
-            if (this.TryGetComp<CompBeeHouse>().GetIsClimatizedBeehouse)
+            if (this.TryGetComp<CompBeeHouse>().GetIsClimatizedBeehouse || RimBees_Settings.RB_IgnoreTemperature)
             {
                 flagTemperature = true;
                 return true;
@@ -531,8 +531,17 @@ namespace RimBees
 
             avgTempMin = (bee1tempMin + bee2tempMin) / 2;
             avgTempMax = (bee1tempMax + bee2tempMax) / 2;
+            float currentTempInMap = 0f;
+            if (RimBees_Settings.RB_GreenhouseBees) {
 
-            float currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
+                currentTempInMap = this.Position.GetTemperature(this.Map);
+
+            }
+            else {
+
+                currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
+
+            }
 
             if ((currentTempInMap > avgTempMin) && (currentTempInMap < avgTempMax))
             {
@@ -553,7 +562,7 @@ namespace RimBees
             string bee1plantNeeded = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
             string bee2plantNeeded = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
 
-            if ((bee1plantNeeded=="no") && (bee2plantNeeded == "no"))
+            if (((bee1plantNeeded=="no") && (bee2plantNeeded == "no"))|| RimBees_Settings.RB_IgnorePlants)
             {
                 flagPlants = true;
                 return true;

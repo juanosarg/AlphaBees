@@ -69,6 +69,8 @@
     <Compile Include="Dialog_BeeResearch.cs" />
     <Compile Include="GraphicsCache.cs" />
     <Compile Include="HarmonyPatchers.cs" />
+    <Compile Include="ModOptions\RimBees_Settings.cs" />
+    <Compile Include="ModOptions\RimBees_SettingsController.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInClimatizedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedBeehouse.cs" />
