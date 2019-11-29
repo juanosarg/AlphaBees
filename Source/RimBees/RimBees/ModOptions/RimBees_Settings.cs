@@ -15,7 +15,8 @@ namespace RimBees
         public static bool RB_IgnoreTemperature = false;
         public static bool RB_IgnorePlants = false;
         public static bool RB_GreenhouseBees = false;
-       
+        public static bool RB_DisableMessages = false;
+
 
 
 
@@ -30,7 +31,9 @@ namespace RimBees
             Scribe_Values.Look(ref RB_IgnoreTemperature, "RB_IgnoreTemperature", false, true);
             Scribe_Values.Look(ref RB_IgnorePlants, "RB_IgnorePlants", false, true);
             Scribe_Values.Look(ref RB_GreenhouseBees, "RB_GreenhouseBees", false, true);
-           
+            Scribe_Values.Look(ref RB_DisableMessages, "RB_DisableMessages", false, true);
+
+
 
 
         }
@@ -51,7 +54,8 @@ namespace RimBees
 
             ls.CheckboxLabeled("RB_GreenhouseBees".Translate(), ref RB_GreenhouseBees, null);
 
-           
+            ls.CheckboxLabeled("RB_DisableMessages".Translate(), ref RB_DisableMessages, null);
+
 
             ls.End();
 

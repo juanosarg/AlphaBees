@@ -54,7 +54,9 @@ namespace RimBees
             {
                 initAction = delegate
                 {
+
                     Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
+                    buildingbeehouse.BeehouseIsFull = false;
                     Thing newComb = ThingMaker.MakeThing(DecideRandomComb());
                     GenSpawn.Spawn(newComb, buildingbeehouse.Position - GenAdj.CardinalDirections[0], buildingbeehouse.Map);
                     
@@ -65,7 +67,6 @@ namespace RimBees
                         this.job.SetTarget(TargetIndex.C, c);
                         this.job.SetTarget(TargetIndex.B, newComb);
                         this.job.count = newComb.stackCount;
-                        buildingbeehouse.BeehouseIsFull = false;
                         buildingbeehouse.tickCounter = 0;
                     }
                     else

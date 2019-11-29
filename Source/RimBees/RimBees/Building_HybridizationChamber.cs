@@ -86,18 +86,22 @@ namespace RimBees
                     //Log.Message(hybridizedBee);
                     if (hybridizedBee != "")
                     {
-                        switch (numOfCombinationsFromXML)
+                        if (!RimBees_Settings.RB_DisableMessages)
                         {
-                            case 1:
-                                Messages.Message("RB_Hybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
-                                break;
+                            switch (numOfCombinationsFromXML)
+                            {
+                                case 1:
+                                    Messages.Message("RB_Hybrid".Translate(hybridizedBee), this, MessageTypeDefOf.NegativeEvent);
+                                    break;
 
-                            default:
-                                Messages.Message("RB_HybridNumberAlert".Translate(numOfCombinationsFromXML-1), this, MessageTypeDefOf.NegativeEvent);
-                                break;
+                                default:
+                                    Messages.Message("RB_HybridNumberAlert".Translate(numOfCombinationsFromXML - 1, hybridizedBee), this, MessageTypeDefOf.NegativeEvent);
+                                    break;
 
+                            }
                         }
                         
+
                         SignalHybridizationChamberFull();
                         RandomizeDays();
 

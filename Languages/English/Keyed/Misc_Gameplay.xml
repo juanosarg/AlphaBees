@@ -51,8 +51,9 @@
 	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
 	
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
-	<RB_Hybrid>A new mutant bee has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>
-	<RB_HybridNumberAlert>A new mutant bee has been created in a hybridization chamber! This combination produces other {0} possible mutations.</RB_HybridNumberAlert>
+	<RB_Hybrid>A new mutant bee, {0}, has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>
+	<RB_HybridNumberAlert>A new mutant bee, {1}, has been created in a hybridization chamber! This combination produces other {0} possible mutations.</RB_HybridNumberAlert>
+
 
 	<RB_DestroyResearch>Destroy Research</RB_DestroyResearch>
 	<RB_DestroyResearchLabel>Destroy Research. Warning, this will destroy this research. Use this if you have already looked at the combination and don't need to have it around anymore.</RB_DestroyResearchLabel>
@@ -189,6 +190,8 @@
 	<RB_IgnoreTemperature>Bees ignore temperature in the map</RB_IgnoreTemperature>
 	<RB_IgnorePlants>Bees ignore the need for plants or other nearby materials</RB_IgnorePlants>
 	<RB_GreenhouseBees>Greenhouse bees. Bees consider indoor temperature instead of map average</RB_GreenhouseBees>
+	<RB_DisableMessages>Disable Hybridization success messages</RB_DisableMessages>
+
        
 
 

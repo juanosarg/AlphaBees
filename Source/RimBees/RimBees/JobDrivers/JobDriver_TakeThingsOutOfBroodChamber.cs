@@ -76,6 +76,7 @@ namespace RimBees
                 initAction = delegate
                 {
                     Building_BroodChamber buildingBroodChamber = (Building_BroodChamber)this.job.GetTarget(TargetIndex.A).Thing;
+                    buildingBroodChamber.broodChamberFull = false;
                     Thing newBee = ThingMaker.MakeThing(DecideRandomBee());
                     GenSpawn.Spawn(newBee, buildingBroodChamber.Position - GenAdj.CardinalDirections[0], buildingBroodChamber.Map);
                     StoragePriority currentPriority = StoreUtility.CurrentStoragePriorityOf(newBee);
@@ -85,7 +86,6 @@ namespace RimBees
                         this.job.SetTarget(TargetIndex.C, c);
                         this.job.SetTarget(TargetIndex.B, newBee);
                         this.job.count = newBee.stackCount;
-                        buildingBroodChamber.broodChamberFull = false;
                         buildingBroodChamber.tickCounter = 0;
                     }
                     else
