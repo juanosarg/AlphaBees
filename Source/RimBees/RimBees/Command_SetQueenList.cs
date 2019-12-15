@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse.AI;
 using Verse;
+using System.Linq;
 
 
 namespace RimBees
@@ -41,8 +42,10 @@ namespace RimBees
             }
 
             if (list.Count > 0) {
+                list = list.OrderBy(item => item.Label).ToList();
 
-            } else {
+            }
+            else {
                 list.Add(new FloatMenuOption("RB_NoQueens".Translate(), delegate
                 {
                    
