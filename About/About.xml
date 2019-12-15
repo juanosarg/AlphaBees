@@ -41,6 +41,7 @@ Right now, the mod shouldn't give problems. In the future, I'll add patches to m
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v2.07: Beehouses' bee lists are now ordered alphabetically (15/12/19)
 v2.06: Added LWM's Deep Storage, the Bee Rack (30/11/19)
 v2.05: Added option to remove hybridization messages. Added bee result info to hybridization messages (29/11/19)
 v2.04: Added mod options, including greenhouse bees, ignoring rain, night-time, etc. Adjusted bee insertion timeout to be three times previous (16/11/19)
