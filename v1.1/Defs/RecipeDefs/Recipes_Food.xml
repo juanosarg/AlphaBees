@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>RB_PreserveMeat</defName>
+		<label>preserve meat with honey</label>
+		<description>Use honey to preserve small roasted pieces of meat, avoiding meat spoilage.</description>
+		<jobString>Cooking preserved meat.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Honeys</li>
+						
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			
+						<li>RB_Honeys</li>
+						
+					</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+				<li>AllowNonSmeltableWeapons</li>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+			<disallowedThingDefs>
+				<li>RB_HoneyPreservedMeat</li>
+				
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_HoneyPreservedMeat>10</RB_HoneyPreservedMeat>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RB_PreserveVegetables</defName>
+		<label>preserve vegetables with honey</label>
+		<description>Use honey to preserve small roasted pieces of vegetables, avoiding food spoilage.</description>
+		<jobString>Cooking preserved vegetables.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Honeys</li>
+						
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			
+						<li>RB_Honeys</li>
+						
+					</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+				<li>AllowNonSmeltableWeapons</li>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+			<disallowedThingDefs>
+				<li>RB_HoneyPreservedVegetables</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_HoneyPreservedVegetables>10</RB_HoneyPreservedVegetables>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+
+
+</Defs>

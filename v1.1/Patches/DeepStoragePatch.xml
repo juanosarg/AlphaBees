@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>LWM's Deep Storage</li>
+				</mods> 
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef Name="LWM_RB_BeeRack" ParentName="LWM_DeepStorage">
+							<defName>LWM_RB_BeeRack</defName>
+							<label>Bee Storage</label>
+							<description>A Collection of entomology jars, containers, tubes and vials suitable for collecting and examining specimens. Allows you to store bees in a controlled way. Bear in mind that storing many bees means it is harder to retrieve them later.</description>
+							<pathCost>100</pathCost>
+							<graphicData>
+								<texPath>Things/Building/RB_BeeRack</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+								<drawSize>(3,2)</drawSize>
+								<shadowData>
+									<!-- TODO: -->
+									<volume>(1.7,0.4,.7)</volume>
+									<offset>(.1,0,0)</offset>
+								</shadowData>
+							</graphicData>
+							<stuffCategories>
+								<li>Metallic</li>
+								<li>Woody</li>
+							</stuffCategories>
+							<costStuffCount>60</costStuffCount>
+							<statBases>
+								<Beauty>1</Beauty>
+								<MaxHitPoints>25</MaxHitPoints>
+								<Mass>8</Mass>
+								<WorkToBuild>500</WorkToBuild>
+								<Flammability>1.0</Flammability>
+							</statBases>
+							<building>
+								<fixedStorageSettings>
+									<filter>
+										<categories>
+											<li>RB_BeesAndQueens</li>
+
+										</categories>
+
+									</filter>
+								</fixedStorageSettings>
+							</building>
+							<comps>
+								<li Class="LWM.DeepStorage.Properties">
+									<maxNumberStacks>7</maxNumberStacks>
+									<!--<timeStoringTakes>350</timeStoringTakes>-->
+									<minTimeStoringTakes>250</minTimeStoringTakes>
+									<additionalTimeEachStack>25</additionalTimeEachStack>
+									<additionalTimeEachDef>25</additionalTimeEachDef>
+									<overlayType>SumOfAllItems</overlayType>
+									<!--TODO: SumOfItemsPerCell?-->
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</match>
+			</li>
+
+
+
+		</operations>
+	</Operation>
+
+
+</Patch>
+

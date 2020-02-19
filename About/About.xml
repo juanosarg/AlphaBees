@@ -1,7 +1,11 @@
 <ModMetaData>
 	<name>RimBees</name>
 	<author>Sarg</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+   </supportedVersions>
+	<packageId>sarg.rimbees</packageId>
 	<description>Breed bees to generate all kinds of resources!
 
 &lt;size=24&gt;Features&lt;/size&gt;
@@ -41,6 +45,7 @@ Right now, the mod shouldn't give problems. In the future, I'll add patches to m
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v3.0: Updated for RimWorld 1.1 (19/02/20)
 v2.07: Beehouses' bee lists are now ordered alphabetically (15/12/19)
 v2.06: Added LWM's Deep Storage, the Bee Rack (30/11/19)
 v2.05: Added option to remove hybridization messages. Added bee result info to hybridization messages (29/11/19)

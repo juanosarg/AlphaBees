@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TKKN_Desert"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Desert>0.01</RB_Plant_Hive_Desert>
+						<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName = "TKKN_Oasis"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Desert>0.01</RB_Plant_Hive_Desert>
+						<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName = "TKKN_Savanna"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Desert>0.01</RB_Plant_Hive_Desert>
+						<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TKKN_RedwoodForest"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+						<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd"> 
+					<xpath>/Defs/BiomeDef[defName = "TKKN_Grasslands"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
+						<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Nature's Pretty Sweet</li>
+				</mods> 
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "TKKN_VolcanicFlow"]/wildPlants</xpath>
+					<value>
+						<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+						<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
+					</value>
+				</match>
+			</li>
+
+
+
+
+		</operations>
+	</Operation>
+
+
+</Patch>
+
