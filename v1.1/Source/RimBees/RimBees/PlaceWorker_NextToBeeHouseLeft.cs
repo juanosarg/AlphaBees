@@ -43,7 +43,7 @@ namespace RimBees
 
                             if (thingDef.building.wantsHopperAdjacent)
                             {
-                                CompBeeHouse comp = thing.TryGetComp<CompBeeHouse>();
+                                CompBeeHouse comp = ParticularThing.TryGetComp<CompBeeHouse>();
                                 if (comp != null)
                                 {
                                     if (comp.GetIsBeehouse)
