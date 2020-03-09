@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Elves</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
 
 
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>Lord of the Rims - Elves</li>
-				</mods> 
-				<match Class="PatchOperationAdd">
+				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/BiomeDef[defName = "LotRE_MallornForest"]/wildPlants</xpath>
 					<value>
 						<RB_Plant_Hive_Temperate>0.01</RB_Plant_Hive_Temperate>
 						<RB_Plant_Hive_Mild>0.01</RB_Plant_Hive_Mild>
 					</value>
-				</match>
-			</li>
+				</li>
 
 
-		</operations>
+			</operations>
+		</match>
 	</Operation>
 
 
