@@ -119,7 +119,7 @@
     <description>Roasted meat that has been preserved with honey.</description>
     <graphicData>
       <texPath>Things/Item/RB_PreservedMeat</texPath>
-	        <graphicClass>Graphic_Single</graphicClass>
+	        <graphicClass>Graphic_StackCount</graphicClass>
 
     </graphicData>
     <thingCategories>
