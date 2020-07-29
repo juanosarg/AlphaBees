@@ -62,7 +62,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Amalgam_Honeycomb</defName>
 		<label>amalgam honeycomb</label>
-		<description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get blue honey and white beeswax.</description>
+		<description>This is a honeycomb produced by amalgam bees. Amalgam bees are improved hybrids, and all specialized bees branch from them. They work a bit faster than basic bees. Honeycombs can be procesed in a Honey Extractor to get blue honey and blue beeswax.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
@@ -584,7 +584,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Chef_Honeycomb</defName>
 		<label>chef honeycomb</label>
-		<description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
+		<description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
@@ -599,7 +599,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Medicinal_Honeycomb</defName>
 		<label>medicinal honeycomb</label>
-		<description>This is a honeycomb produced by Medicinal bees. Medicinal bees secrete a saline solution that can be used as a low grade medicinal salve. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and herbal medicine.</description>
+		<description>This is a honeycomb produced by Medicinal bees. Medicinal bees secrete a saline solution that can be used as a low grade medicinal salve. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and herbal medicine.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Medicinal_Honeycomb</texPath>
@@ -614,7 +614,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Surgeon_Honeycomb</defName>
 		<label>surgeon honeycomb</label>
-		<description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and ultratech medicine.</description>
+		<description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and glitterworld medicine.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>

@@ -2,6 +2,8 @@
 using Verse;
 using Verse.AI;
 using RimWorld;
+using System.Collections.Generic;
+
 
 namespace RimBees
 {
@@ -9,12 +11,13 @@ namespace RimBees
     {
         private static string NoDronesFound;
 
-        public override ThingRequest PotentialWorkThingRequest
+
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            get
-            {
-                return ThingRequest.ForDef(ThingDef.Named("RB_Beehouse"));
-            }
+
+            return pawn.Map.GetComponent<Beehouses_MapComponent>().beehouses_InMap;
+
+
         }
 
         public override PathEndMode PathEndMode

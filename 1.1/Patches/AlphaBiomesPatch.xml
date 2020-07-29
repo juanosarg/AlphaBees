@@ -75,6 +75,21 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "AB_TarPits"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Desert>0.01</RB_Plant_Hive_Desert>
+					<RB_Plant_Hive_Arid>0.01</RB_Plant_Hive_Arid>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "AB_PyroclasticConflagration"]/wildPlants</xpath>
+				<value>
+					<RB_Plant_Hive_Arctic>0.01</RB_Plant_Hive_Arctic>
+					<RB_Plant_Hive_Icy>0.01</RB_Plant_Hive_Icy>
+				</value>
+			</li>
 			
 			
 		</operations>

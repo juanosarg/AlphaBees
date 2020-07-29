@@ -27,82 +27,7 @@
     </requiredCapacities>
   </WorkGiverDef>
   
- <WorkGiverDef>
-    <defName>RB_InsertDroneInAdvancedBeehouse</defName>
-    <label>inserting drone in advanced beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertDroneInAdvancedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert drone in advanced beehouse</verb>
-    <gerund>inserting drone in advanced beehouse</gerund>
-    <priorityInType>22</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-   <WorkGiverDef>
-    <defName>RB_InsertQueenInAdvancedBeehouse</defName>
-    <label>inserting queen in advanced beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertQueenInAdvancedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert queen in advanced beehouse</verb>
-    <gerund>inserting queen in advanced beehouse</gerund>
-    <priorityInType>23</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
- <WorkGiverDef>
-    <defName>RB_InsertDroneInClimatizedBeehouse</defName>
-    <label>inserting drone in climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertDroneInClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert drone in climatized beehouse</verb>
-    <gerund>inserting drone in climatized beehouse</gerund>
-    <priorityInType>24</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-   <WorkGiverDef>
-    <defName>RB_InsertQueenInClimatizedBeehouse</defName>
-    <label>inserting queen in climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertQueenInClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert queen in climatized beehouse</verb>
-    <gerund>inserting queen in climatized beehouse</gerund>
-    <priorityInType>25</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-   <WorkGiverDef>
-    <defName>RB_InsertDroneInAdvancedClimatizedBeehouse</defName>
-    <label>inserting drone in advanced climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertDroneInAdvancedClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert drone in advanced climatized beehouse</verb>
-    <gerund>inserting drone in advanced climatized beehouse</gerund>
-    <priorityInType>26</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-   <WorkGiverDef>
-    <defName>RB_InsertQueenInAdvancedClimatizedBeehouse</defName>
-    <label>inserting queen in advanced climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_InsertQueenInAdvancedClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>insert queen in advanced climatized beehouse</verb>
-    <gerund>inserting queen in advanced climatized beehouse</gerund>
-    <priorityInType>27</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
+ 
 
 	<WorkGiverDef>
 		<defName>RB_DoBillsHoneyCentrifuge</defName>
@@ -186,44 +111,7 @@
     </requiredCapacities>
   </WorkGiverDef>
   
-  <WorkGiverDef>
-    <defName>RB_TakeThingsOutOfAdvancedBeehouse</defName>
-    <label>taking things out of advanced beehouse</label>
-    <giverClass>RimBees.WorkGiver_TakeThingsOutOfAdvancedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>take things out of advanced beehouse</verb>
-    <gerund>taking things out of advanced beehouse</gerund>
-    <priorityInType>11</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-  <WorkGiverDef>
-    <defName>RB_TakeThingsOutOfClimatizedBeehouse</defName>
-    <label>taking things out of climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_TakeThingsOutOfClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>take things out of climatized beehouse</verb>
-    <gerund>taking things out of climatized beehouse</gerund>
-    <priorityInType>12</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
-  
-    <WorkGiverDef>
-    <defName>RB_TakeThingsOutOfAdvancedClimatizedBeehouse</defName>
-    <label>taking things out of advanced climatized beehouse</label>
-    <giverClass>RimBees.WorkGiver_TakeThingsOutOfAdvancedClimatizedBeehouse</giverClass>
-    <workType>RB_BeekeepingWork</workType>
-    <verb>take things out of advanced climatized beehouse</verb>
-    <gerund>taking things out of advanced climatized beehouse</gerund>
-    <priorityInType>14</priorityInType>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-  </WorkGiverDef>
+ 
   
   <WorkGiverDef>
     <defName>RB_TakeThingsOutOfBroodChamber</defName>

@@ -40,7 +40,8 @@
 		<label>honey</label>
 		<description>Honey is a sweet, viscous food substance produced by bees. Bees produce honey from the sugary secretions of plants. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
-			<texPath>Things/Item/Product/RB_HoneyJarBasic</texPath>
+			<color>(255,199,2)</color>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -73,7 +74,7 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_TastyHoney</defName>
 		<label>tasty honey</label>
-		<description>This honey has been extracted from honeycombs of the Nutritious family (Nutritious, Agricultural, Bittersweet, Egglaying and Lactic), and has a high nutritional value. However, it will decay very fast. Honey can be consumed raw or cooked with other ingredients.</description>  
+		<description>This honey has been extracted from honeycombs of the Nutritious family (Nutritious, Agricultural, Bittersweet, Egglaying, Lactic and Insectoid), and has a high nutritional value. However, it will decay very fast. Honey can be consumed raw or cooked with other ingredients.</description>  
 		<graphicData>
 			<color>(184,59,56)</color>
 			<shaderType>CutoutComplex</shaderType>

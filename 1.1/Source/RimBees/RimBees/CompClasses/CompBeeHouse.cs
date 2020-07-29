@@ -46,7 +46,33 @@ namespace RimBees
             }
         }
 
-       
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            Beehouses_MapComponent mapComp = this.parent.Map.GetComponent<Beehouses_MapComponent>();
+            if (mapComp != null)
+            {
+                mapComp.AddBeehouseToMap(this.parent);
+            }
+        }
+
+        public override void PostDeSpawn(Map map)
+        {
+            Beehouses_MapComponent mapComp = map.GetComponent<Beehouses_MapComponent>();
+            if (mapComp != null)
+            {
+                mapComp.RemoveBeehouseFromMap(this.parent);
+            }
+        }
+
+        public override void PostDestroy(DestroyMode mode, Map previousMap)
+        {
+
+            Beehouses_MapComponent mapComp = previousMap.GetComponent<Beehouses_MapComponent>();
+            if (mapComp != null)
+            {
+                mapComp.RemoveBeehouseFromMap(this.parent);
+            }
+        }
 
 
     }

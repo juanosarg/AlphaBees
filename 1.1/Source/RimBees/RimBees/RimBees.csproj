@@ -33,8 +33,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lib.Harmony.2.0.0.3\lib\net472\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -297,14 +298,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeeCombinationDef.cs" />
-    <Compile Include="BeeListDef.cs" />
-    <Compile Include="BeeListSetupUtility.cs" />
-    <Compile Include="Building_Beehouse.cs" />
-    <Compile Include="Building_HybridizationChamber.cs" />
-    <Compile Include="Building_BroodChamber.cs" />
-    <Compile Include="Building_MeadFermentingBarrel.cs" />
-    <Compile Include="Building_TreeHive.cs" />
+    <Compile Include="Defs\BeeCombinationDef.cs" />
+    <Compile Include="Defs\BeeListDef.cs" />
+    <Compile Include="Commands and Lists\BeeListSetupUtility.cs" />
+    <Compile Include="Buildings\Building_Beehouse.cs" />
+    <Compile Include="Buildings\Building_HybridizationChamber.cs" />
+    <Compile Include="Buildings\Building_BroodChamber.cs" />
+    <Compile Include="Buildings\Building_MeadFermentingBarrel.cs" />
+    <Compile Include="Buildings\Building_TreeHive.cs" />
     <Compile Include="CompClasses\CompBeeResearch.cs" />
     <Compile Include="CompClasses\CompBeeResearchImages.cs" />
     <Compile Include="CompClasses\CompBeeHouse.cs" />
@@ -313,17 +314,12 @@
     <Compile Include="CompClasses\CompProperties_RandomResearch.cs" />
     <Compile Include="CompClasses\CompRandomResearch.cs" />
     <Compile Include="CompClasses\CompUseEffect_ShowBeeResearch.cs" />
-    <Compile Include="Dialog_BeeResearch.cs" />
-    <Compile Include="GraphicsCache.cs" />
-    <Compile Include="HarmonyPatchers.cs" />
+    <Compile Include="Bee research\Dialog_BeeResearch.cs" />
+    <Compile Include="Bee research\GraphicsCache.cs" />
+    <Compile Include="Harmony\HarmonyPatchers.cs" />
+    <Compile Include="MapComponent\Beehouses_MapComponent.cs" />
     <Compile Include="ModOptions\RimBees_Settings.cs" />
     <Compile Include="ModOptions\RimBees_SettingsController.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertDroneInClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertDroneInAdvancedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertQueenInAdvancedClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertQueenInClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_InsertQueenInAdvancedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertQueenInBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInBeehouse.cs" />
     <Compile Include="CompClasses\CompProperties_TempRuinableAndDestroy.cs" />
@@ -337,18 +333,15 @@
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfHybridizationChamber.cs" />
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfBroodChamber.cs" />
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfBeehouse.cs" />
-    <Compile Include="PlaceWorker_NextToBeeHouseLeft.cs" />
-    <Compile Include="PlaceWorker_NextToBeeHouse.cs" />
+    <Compile Include="Placeworkers\PlaceWorker_NextToBeeHouseLeft.cs" />
+    <Compile Include="Placeworkers\PlaceWorker_NextToBeeHouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_FillMeadFermentingBarrel.cs" />
     <Compile Include="WorkGivers\WorkGiver_TakeMeadOutOfFermentingBarrel.cs" />
-    <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfAdvancedClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfClimatizedBeehouse.cs" />
-    <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfAdvancedBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfHybridizationChamber.cs" />
     <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfBroodChamber.cs" />
     <Compile Include="WorkGivers\WorkGiver_TakeThingsOutOfBeehouse.cs" />
-    <Compile Include="Command_SetQueenList.cs" />
-    <Compile Include="Command_SetBeeList.cs" />
+    <Compile Include="Commands and Lists\Command_SetQueenList.cs" />
+    <Compile Include="Commands and Lists\Command_SetBeeList.cs" />
     <Compile Include="JobDrivers\JobDriver_InsertQueenBees.cs" />
     <Compile Include="JobDrivers\JobDriver_InsertBees.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
 
-
-
  <ThingDef ParentName="BuildingBase">
     <defName>RB_WaxCandle</defName>
     <label>candle</label>
@@ -16,26 +14,31 @@
     <graphicData>
       <texPath>Things/Building/RB_Candle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawRotated>false</drawRotated>
+        <drawRotated>true</drawRotated>
+	  <drawSize>(2,2)</drawSize>
       <shaderType>CutoutComplex</shaderType>	  
       <damageData>
         <rect>(0.35,0.35,0.3,0.3)</rect>
       </damageData>
     </graphicData>
+	<uiIconPath>Things/Building/RB_Candle_Icon</uiIconPath>
     <stuffCategories>
       <li>RB_Waxy</li>
     </stuffCategories>
     		
     <costStuffCount>25</costStuffCount>	
     <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
     <passability>Standable</passability>
 	<pathCost>8</pathCost>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
     <fillPercent>0.15</fillPercent>
     <statBases>
-      <MaxHitPoints>110</MaxHitPoints>
+      <MaxHitPoints>20</MaxHitPoints>
       <WorkToBuild>2500</WorkToBuild>
       <Flammability>0</Flammability>
 	  <Beauty>10</Beauty>
@@ -69,7 +72,7 @@
       </li>
       <li Class="CompProperties_FireOverlay">
         <fireSize>0.3</fireSize>
-        <offset>(0.0,0,0.3)</offset>
+        <offset>(0.0,0,0.8)</offset>
       </li>
      
     </comps>

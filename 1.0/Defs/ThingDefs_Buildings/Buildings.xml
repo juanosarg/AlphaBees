@@ -206,7 +206,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_Advanced_Honey_Centrifuge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5.5,3.5)</drawSize>
+			<drawSize>(5.5,5.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 
 			<shadowData>
@@ -220,6 +220,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+			
 		<costList>
 
 			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>

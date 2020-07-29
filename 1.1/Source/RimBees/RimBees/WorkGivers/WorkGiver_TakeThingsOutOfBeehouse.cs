@@ -2,17 +2,19 @@
 using Verse;
 using Verse.AI;
 using RimWorld;
+using System.Collections.Generic;
+
 
 namespace RimBees
 {
     public class WorkGiver_TakeThingsOutOfBeehouse : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            get
-            {
-                return ThingRequest.ForDef(DefDatabase<ThingDef>.GetNamed("RB_Beehouse", true));
-            }
+
+            return pawn.Map.GetComponent<Beehouses_MapComponent>().beehouses_InMap;
+
+
         }
 
         public override PathEndMode PathEndMode
