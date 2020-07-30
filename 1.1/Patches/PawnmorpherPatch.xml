@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Pawnmorpher</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!--========== Pawnmorpher Branch ==========-->
+
+						<!--=============== Mutagenic ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_MutagenicBeeBase" Abstract="True" >
+							<description>Mutagenic bees are in constant flux, with random animal parts mutating and merging through their whole body. As long as a vial of mutagenic Mechanite Slurry is nearby, these bees will collect it and store it in their honeycombs, slowly producing more of it.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Mechanite Slurry\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Mutagenic</species>
+									<comb>RB_Mutagenic_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>MechaniteSlurry</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_MutagenicBeeBase">
+							<defName>RB_Bee_Mutagenic_Drone</defName>
+							<label>mutagenic drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Mutagenic_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_MutagenicBeeBase">
+							<defName>RB_Bee_Mutagenic_Queen</defName>
+							<label>mutagenic queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Mutagenic_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Mutanite ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_MutaniteBeeBase" Abstract="True" >
+							<description>Mutanite bees are infused with the sickening green glow of dangerous activated mechanites. If a chunk of mutanite is placed nearby, the bees will gradually though very slowly replicate more of it on their honeycombs.\n\nBee Traits:\n\nProduction time: 240 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Mutanite\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Mutanite</species>
+									<comb>RB_Mutanite_Honeycomb</comb>
+									<combtimedays>10</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>Mutanite</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>50</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_MutaniteBeeBase">
+							<defName>RB_Bee_Mutanite_Drone</defName>
+							<label>mutanite drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Mutanite_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_MutaniteBeeBase">
+							<defName>RB_Bee_Mutanite_Queen</defName>
+							<label>mutanite queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Mutanite_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Morph ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_MorphBeeBase" Abstract="True" >
+							<description>Morph bees are expert weavers, intricately lacing cloth with mutagenic nanites. As long as a piece of Morphsilk is nearby, they will replicate the pattern and slowly weave it into their combs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Morphsilk\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Morph</species>
+									<comb>RB_Morph_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>Morphsilk</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_MorphBeeBase">
+							<defName>RB_Bee_Morph_Drone</defName>
+							<label>morph drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Morph_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_MorphBeeBase">
+							<defName>RB_Bee_Morph_Queen</defName>
+							<label>morph queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Morph_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Mutagenic_Honeycomb</defName>
+							<label>mutagenic honeycomb</label>
+							<description>This is a honeycomb produced by mutagenic bees. They are in constant flux, with random animal parts mutating and merging through their whole body. As long as a vial of mutagenic Mechanite Slurry is nearby, these bees will collect it and store it in their honeycombs, slowly producing more of it. Honeycombs can be procesed in a Honey Extractor to get Psychotropic honey, brittlewax and Mechanite Slurry.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Mutagenic_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+								<RB_Brittlewax>5</RB_Brittlewax>
+								<MechaniteSlurry>1</MechaniteSlurry>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Mutanite_Honeycomb</defName>
+							<label>mutanite honeycomb</label>
+							<description>This is a honeycomb produced by mutanite bees, which are infused with the sickening green glow of dangerous activated mechanites. If a chunk of mutanite is placed nearby, the bees will gradually though very slowly replicate more of it on their honeycombs. Honeycombs can be procesed in a Honey Extractor to get Psychotropic honey, heavywax and mutanite chunks.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Mutanite_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_PsychotropicHoney>15</RB_PsychotropicHoney>
+								<RB_HeavyWax>15</RB_HeavyWax>
+								<Mutanite>1</Mutanite>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Morph_Honeycomb</defName>
+							<label>morph honeycomb</label>
+							<description>This is a honeycomb produced by morph bees, which are expert weavers, intricately lacing cloth with mutagenic nanites. As long as a piece of Morphsilk is nearby, they will replicate the pattern and slowly weave it into their combs. Honeycombs can be procesed in a Honey Extractor to get Psychotropic honey, brittlewax and Morphsilk.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Mutanite_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+								<RB_Brittlewax>7</RB_Brittlewax>
+								<Morphsilk>2</Morphsilk>
+							</butcherProducts>
+						</ThingDef>
+
+						<RimBees.BeeListDef>
+							<defName>RB_MutagenicBeeList</defName>
+							<beeDroneDef>RB_Bee_Mutagenic_Drone</beeDroneDef>
+							<beeDroneTag>RB_Mutagenic_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Mutagenic_Queen</beeQueenDef>
+							<beeQueenTag>RB_Mutagenic_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_MutaniteBeeList</defName>
+							<beeDroneDef>RB_Bee_Mutanite_Drone</beeDroneDef>
+							<beeDroneTag>RB_Mutanite_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Mutanite_Queen</beeQueenDef>
+							<beeQueenTag>RB_Mutanite_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_MorphBeeList</defName>
+							<beeDroneDef>RB_Bee_Morph_Drone</beeDroneDef>
+							<beeDroneTag>RB_Morph_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Morph_Queen</beeQueenDef>
+							<beeQueenTag>RB_Morph_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+						<!-- Tier 3 Combinations -->	
+
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_Pawnmorpher_1</defName>
+							<bee1>Radioactive</bee1>
+							<bee2>Adaptive</bee2>
+							<result>
+								<li>Mutagenic</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_Pawnmorpher_2</defName>
+							<bee1>Mutagenic</bee1>
+							<bee2>Precious</bee2>
+							<result>
+								<li>Mutanite</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_Pawnmorpher_3</defName>
+							<bee1>Mutagenic</bee1>
+							<bee2>Weaving</bee2>
+							<result>
+								<li>Morph</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutagenicComb</defName>
+							<label>extract from mutagenic comb</label>
+							<description>Centrifuges a mutagenic comb to extract psychotropic honey, brittlewax and mechanite slurry</description>
+							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutagenic_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutagenic_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutaniteComb</defName>
+							<label>extract from mutanite comb</label>
+							<description>Centrifuges a mutanite comb to extract psychotropic honey, heavywax and mutanite chunks</description>
+							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutanite_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutanite_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMorphComb</defName>
+							<label>extract from morph comb</label>
+							<description>Centrifuges a morph comb to extract psychotropic honey, brittlewax and Morphsilk</description>
+							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Morph_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Morph_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>5</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutagenicCombBulk</defName>
+							<label>bulk extract from mutagenic comb</label>
+							<description>Centrifuges a mutagenic comb to bulk extract psychotropic honey, brittlewax and mechanite slurry</description>
+							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutagenic_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutagenic_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+								<RB_Brittlewax>50</RB_Brittlewax>
+								<MechaniteSlurry>10</MechaniteSlurry>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutaniteCombBulk</defName>
+							<label>bulk extract from mutanite comb</label>
+							<description>Centrifuges a mutanite comb to bulk extract psychotropic honey, heavywax and mutanite chunks</description>
+							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutanite_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutanite_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>150</RB_PsychotropicHoney>
+								<RB_HeavyWax>150</RB_HeavyWax>
+								<Mutanite>10</Mutanite>
+							</products>
+							<skillRequirements>
+								<Crafting>18</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMorphCombBulk</defName>
+							<label>bulk extract from morph comb</label>
+							<description>Centrifuges a morph comb to bulk extract psychotropic honey, brittlewax and Morphsilk</description>
+							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Morph_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Morph_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+								<RB_Brittlewax>70</RB_Brittlewax>
+								<Morphsilk>20</Morphsilk>
+							</products>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CreatePawnmorpherTierResearch</defName>
+							<label>create pawnmorpher tier bee research</label>
+							<description>Research bee combinations to create pawnmorpher tier bees. This research is random and you may get duplicate results.</description>
+							<jobString>Researching bees</jobString>
+							<allowMixingIngredients>true</allowMixingIngredients>
+
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_BeeResearchTable</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_BeeswaxCategory</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_Honeys</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MechaniteSlurry</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<categories>
+									<li>RB_BeeswaxCategory</li>
+									<li>RB_Honeys</li>
+								</categories>
+								<thingDefs>
+									<li>MechaniteSlurry</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_RandomPawnmorpherResearch>1</RB_RandomPawnmorpherResearch>
+
+							</products>
+							<skillRequirements>
+								<Intellectual>3</Intellectual>
+							</skillRequirements>
+							<workSkill>Crafting</workSkill>
+
+						</RecipeDef>
+
+						<!-- Pawnmorpher Tier research -->
+						<ThingDef Name="RB_ResearchPapersBasePawnmorpher" ParentName="RB_ResearchPapersBase" Abstract="True">
+							<label>bee research papers (pawnmorpher)</label>
+
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>RB_RandomPawnmorpherResearch</defName>
+							<label>bee research (unfinished)</label>
+							<description>This research is in progress.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+							</graphicData>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MaxHitPoints>5</MaxHitPoints>
+								<Flammability>2.0</Flammability>
+								<DeteriorationRate>6</DeteriorationRate>
+								<Mass>10</Mass>
+								<MarketValue>50</MarketValue>
+							</statBases>
+							<tickerType>Normal</tickerType>
+							<thingCategories>
+								<li>RB_BeeResearch</li>
+							</thingCategories>
+							<stackLimit>1</stackLimit>
+							<comps>
+								<li Class="RimBees.CompProperties_RandomResearch">
+									<labelString>bee research papers (pawnmorpher)</labelString>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingCategoryDef>
+							<defName>RB_BeeResearchTierPawnmorpher</defName>
+							<label>bee research, pawnmorpher tier</label>
+							<parent>RB_BeeResearch</parent>
+							<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
+						</ThingCategoryDef>
+						
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersRadiAdapt</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
+									<textForTheImage>Radioactive + Adaptive = Mutagenic</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+						
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersMutaPrec</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
+									<textForTheImage>Mutagenic + Precious = Mutanite</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+
+
+
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersMutaWeave</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
+									<textForTheImage>Mutagenic + Weaving = Morph</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+
+					</value>
+				</li>
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

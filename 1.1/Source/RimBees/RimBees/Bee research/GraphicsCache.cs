@@ -15,6 +15,10 @@ namespace RimBees
         public static readonly Texture2D BeeResearchAgriSwamp = ContentFinder<Texture2D>.Get("Research/BeeResearchAgriSwamp", true);
         public static readonly Texture2D BeeResearchPlasAlloy = ContentFinder<Texture2D>.Get("Research/BeeResearchPlasAlloy", true);
         public static readonly Texture2D BeeResearchAgriWood = ContentFinder<Texture2D>.Get("Research/BeeResearchAgriWood", true);
+        // Magical Menagerie research graphics (considered tier 4 since MM doesn't have materials)
+        public static readonly Texture2D BeeResearchPsyAur = ContentFinder<Texture2D>.Get("Research/BeeResearchPsyAur", true);
+        public static readonly Texture2D BeeResearchPsyLightMagical = ContentFinder<Texture2D>.Get("Research/BeeResearchPsyLightMagical", true);
+
 
 
         // Tier 5 research graphics
@@ -36,7 +40,10 @@ namespace RimBees
         public static readonly Texture2D BeeResearchOrgAgri = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgAgri", true);
         public static readonly Texture2D BeeResearchOrgDesert = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgDesert", true);
 
-
+        // Pawnmorpher Tier research graphics
+        public static readonly Texture2D BeeResearchRadiAdapt = ContentFinder<Texture2D>.Get("Research/BeeResearchRadiAdapt", true);
+        public static readonly Texture2D BeeResearchMutaPrec = ContentFinder<Texture2D>.Get("Research/BeeResearchMutaPrec", true);
+        public static readonly Texture2D BeeResearchMutaWeave = ContentFinder<Texture2D>.Get("Research/BeeResearchMutaWeave", true);
 
 
 

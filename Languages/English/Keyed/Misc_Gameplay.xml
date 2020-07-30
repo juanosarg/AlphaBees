@@ -124,7 +124,11 @@
 	<RB_Hyper_Drone_Tag>Hyper Drone</RB_Hyper_Drone_Tag>
 	<RB_Nitro_Drone_Tag>Nitro Drone</RB_Nitro_Drone_Tag>
 
+	<RB_LightMagical_Drone_Tag>Light Magical Drone</RB_LightMagical_Drone_Tag>
+	<RB_HeavyMagical_Drone_Tag>Heavy Magical Drone</RB_HeavyMagical_Drone_Tag>
 
+	<RB_Fisher_Drone_Tag>Fisher Drone</RB_Fisher_Drone_Tag>
+	<RB_Spicy_Drone_Tag>Spicy Drone</RB_Spicy_Drone_Tag>
 
 
 
@@ -182,6 +186,12 @@
 	<RB_Synthetic_Queen_Tag>Synthetic Queen</RB_Synthetic_Queen_Tag>
 	<RB_Hyper_Queen_Tag>Hyper Queen</RB_Hyper_Queen_Tag>
 	<RB_Nitro_Queen_Tag>Nitro Queen</RB_Nitro_Queen_Tag>
+	
+	<RB_LightMagical_Queen_Tag>Light Magical Queen</RB_LightMagical_Queen_Tag>
+	<RB_HeavyMagical_Queen_Tag>Heavy Magical Queen</RB_HeavyMagical_Queen_Tag>
+	
+	<RB_Fisher_Queen_Tag>Fisher Queen</RB_Fisher_Queen_Tag>
+	<RB_Spicy_Queen_Tag>Spicy Queen</RB_Spicy_Queen_Tag>
 	
 	<!-- Options -->
 	
