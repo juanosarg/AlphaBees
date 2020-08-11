@@ -4,6 +4,7 @@
 	<supportedVersions>
       <li>1.0</li>
       <li>1.1</li>
+	  <li>1.2</li>
    </supportedVersions>
    <modDependencies>
 		<li>
@@ -48,6 +49,7 @@ Right now, the mod shouldn't give problems. In the future, I'll add patches to m
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v4.1: Updated for RimWorld 1.2 (11/08/20)
 v4.0: Complete retexture of the mod from the gound up (30/07/20)
 v3.0: Updated for RimWorld 1.1 (09/03/20)
 v2.07: Beehouses' bee lists are now ordered alphabetically (15/12/19)
