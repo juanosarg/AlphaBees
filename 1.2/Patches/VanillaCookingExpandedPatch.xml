@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!--========== Spice Branch ==========-->
+
+						<!--=============== Spicy ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_SpicyBeeBase" Abstract="True" >
+							<description>Spicy bees are only happy if they are pollinating spicy plants. They gather the pollen and create capsaicin-infused honeycombs that can be extracted to get varied spices.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Spicy</species>
+									<comb>RB_Spicy_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_SpicyBeeBase">
+							<defName>RB_Bee_Spicy_Drone</defName>
+							<label>spicy drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Spicy_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_SpicyBeeBase">
+							<defName>RB_Bee_Spicy_Queen</defName>
+							<label>spicy queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Spicy_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Spicy_Honeycomb</defName>
+							<label>spicy honeycomb</label>
+							<description>This is a honeycomb produced by spicy bees, which are only happy if they are pollinating spicy plants. They gather the pollen and create capsaicin-infused honeycombs that can be extracted to get varied spices. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and spices.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Spicy_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>7</RB_BaseHoney>
+								<RB_Beeswax>5</RB_Beeswax>
+								<VCE_RawSpices>3</VCE_RawSpices>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+						<RimBees.BeeListDef>
+							<defName>RB_SpicyBeeList</defName>
+							<beeDroneDef>RB_Bee_Spicy_Drone</beeDroneDef>
+							<beeDroneTag>RB_Spicy_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Spicy_Queen</beeQueenDef>
+							<beeQueenTag>RB_Spicy_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+						
+						<RecipeDef>
+							<defName>RB_CentrifugeSpicyComb</defName>
+							<label>extract from spicy comb</label>
+							<description>Centrifuges a spicy comb to extract honey, wax and spices</description>
+							<jobString>Extracting honey, wax and spices</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Spicy_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Spicy_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSpicyCombBulk</defName>
+							<label>bulk extract from spicy comb</label>
+							<description>Centrifuges a spicy comb to bulk extract honey, wax and spices</description>
+							<jobString>Extracting honey, wax and spices</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Spicy_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Spicy_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>70</RB_BaseHoney>
+								<RB_Beeswax>50</RB_Beeswax>
+								<VCE_RawSpices>30</VCE_RawSpices>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_3"]/result</xpath>
+					<value>
+						<li>Spicy</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

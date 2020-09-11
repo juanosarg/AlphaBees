@@ -129,6 +129,25 @@
 
 	<RB_Fisher_Drone_Tag>Fisher Drone</RB_Fisher_Drone_Tag>
 	<RB_Spicy_Drone_Tag>Spicy Drone</RB_Spicy_Drone_Tag>
+	
+	<RB_Mutagenic_Drone_Tag>Mutagenic Drone</RB_Mutagenic_Drone_Tag>
+	<RB_Mutanite_Drone_Tag>Mutanite Drone</RB_Mutanite_Drone_Tag>
+	<RB_Morph_Drone_Tag>Morph Drone</RB_Morph_Drone_Tag>
+	
+	<RB_Black_Drone_Tag>Black Drone</RB_Black_Drone_Tag>
+	<RB_Cactus_Drone_Tag>Cactus Drone</RB_Cactus_Drone_Tag>
+	<RB_Devil_Drone_Tag>Devil Drone</RB_Devil_Drone_Tag>
+	<RB_Feral_Drone_Tag>Feral Drone</RB_Feral_Drone_Tag>
+	<RB_Forsaken_Drone_Tag>Forsaken Drone</RB_Forsaken_Drone_Tag>
+	<RB_Frosty_Drone_Tag>Frosty Drone</RB_Frosty_Drone_Tag>
+	<RB_Fungal_Drone_Tag>Fungal Drone</RB_Fungal_Drone_Tag>
+	<RB_Legendary_Drone_Tag>Legendary Drone</RB_Legendary_Drone_Tag>
+	<RB_Ocular_Drone_Tag>Ocular Drone</RB_Ocular_Drone_Tag>
+	<RB_Slimy_Drone_Tag>Slimy Drone</RB_Slimy_Drone_Tag>
+	<RB_Slurry_Drone_Tag>Slurry Drone</RB_Slurry_Drone_Tag>
+	<RB_Sky_Drone_Tag>Sky Drone</RB_Sky_Drone_Tag>
+
+
 
 
 
@@ -192,6 +211,23 @@
 	
 	<RB_Fisher_Queen_Tag>Fisher Queen</RB_Fisher_Queen_Tag>
 	<RB_Spicy_Queen_Tag>Spicy Queen</RB_Spicy_Queen_Tag>
+	
+	<RB_Mutagenic_Queen_Tag>Mutagenic Queen</RB_Mutagenic_Queen_Tag>
+	<RB_Mutanite_Queen_Tag>Mutanite Queen</RB_Mutanite_Queen_Tag>
+	<RB_Morph_Queen_Tag>Morph Queen</RB_Morph_Queen_Tag>
+	
+	<RB_Black_Queen_Tag>Black Queen</RB_Black_Queen_Tag>
+	<RB_Cactus_Queen_Tag>Cactus Queen</RB_Cactus_Queen_Tag>
+	<RB_Devil_Queen_Tag>Devil Queen</RB_Devil_Queen_Tag>
+	<RB_Feral_Queen_Tag>Feral Queen</RB_Feral_Queen_Tag>
+	<RB_Forsaken_Queen_Tag>Forsaken Queen</RB_Forsaken_Queen_Tag>
+	<RB_Frosty_Queen_Tag>Frosty Queen</RB_Frosty_Queen_Tag>
+	<RB_Fungal_Queen_Tag>Fungal Queen</RB_Fungal_Queen_Tag>
+	<RB_Legendary_Queen_Tag>Legendary Queen</RB_Legendary_Queen_Tag>
+	<RB_Ocular_Queen_Tag>Ocular Queen</RB_Ocular_Queen_Tag>
+	<RB_Slimy_Queen_Tag>Slimy Queen</RB_Slimy_Queen_Tag>
+	<RB_Slurry_Queen_Tag>Slurry Queen</RB_Slurry_Queen_Tag>
+	<RB_Sky_Queen_Tag>Sky Queen</RB_Sky_Queen_Tag>
 	
 	<!-- Options -->
 	

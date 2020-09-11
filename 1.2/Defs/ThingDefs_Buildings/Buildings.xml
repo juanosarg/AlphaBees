@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Beekeeping_Workbench_Building</defName>
+		<label>beekeeping workbench</label>
+		<description>A simple wooden workbench with specialized tools to manipulate wild beehives and create several special recipes using honey.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Beekeeping_Workbench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shadowData>
+				<volume>(2.9, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>    
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_BeeResearchTable</defName>
+		<label>bee research table</label>
+		<description>Use your bee resources to investigate exciting new combinations of bees. Bee research is mostly random, and you may get insights that you were already aware of.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_BeeResearchTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,3.5)</drawSize>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>    
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+
+		<designationHotKey>Misc2</designationHotKey>
+
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Honey_Centrifuge</defName>
+		<label>honey centrifuge</label>
+		<description>This sleek metal workstation is used to centrifuge honeycombs to extract honey and wax. Can work without electricity at 30% of normal speed (useful for tribal people).</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Honey_Centrifuge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
+			<shadowData>
+				<volume>(2.9, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
+
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Advanced_Honey_Centrifuge</defName>
+		<label>advanced honey centrifuge</label>
+		<description>The Advanced Honey Centrifuge semi-automates the process of centrifugating combs to get resources, allowing your colonists to extract them in bulk. The disadvantage it has is that it can't handle a "centrifuge from any comb" receipt, so you'll have to strategically decide which combs to extract in bulk and extract the rest one by one.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_Advanced_Honey_Centrifuge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.5,5.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
+			<shadowData>
+				<volume>(4.8, 0.3, 0.5)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+
+			<RB_ComponentBioInterface>10</RB_ComponentBioInterface>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+
+		</stuffCategories>
+		<costStuffCount>350</costStuffCount>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>5500</WorkToBuild>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<size>(5,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>450</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RB_AdvancedCentrifugation</li>
+			<li>Electricity</li>
+
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Beehouse</defName>
+		<label>beehouse</label>
+		<description>A simple beehouse where bees will live and generate honeycombs for you.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_Beehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<building>
+			
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>false</climatizedBeehouse>
+				<beehouseRate>1</beehouseRate>
+			</li>
+			
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_ClimatizedBeehouse</defName>
+		<label>simple climatized beehouse</label>
+		<description>This beehouse has been fitted with a climate control system, so bees can operate in extremely cold or hot biomes. This beehouse is very inefficient (about 40% speed), so it should only be used as an intermediate solution to work towards breeding bees from the Biome branch. This kind of beehouse is only useful in extreme biomes.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_ClimatizedBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+
+			<Steel>50</Steel>
+		</costList>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<building>
+			
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>RB_ClimatizedBeehouses</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>2.5</beehouseRate>
+			</li>
+			
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_AdvancedBeehouse</defName>
+		<label>advanced beehouse</label>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 25%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_AdvancedBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<Steel>50</Steel>
+			<RB_ComponentBioInterface>4</RB_ComponentBioInterface>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+
+		<building>
+			
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>120</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>false</climatizedBeehouse>
+				<beehouseRate>0.75</beehouseRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RB_AdvancedBeehouses</li>
+
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_AdvancedClimatizedBeehouse</defName>
+		<label>advanced climatized beehouse</label>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. This beehouse is climatized, so bees can operate in extremely cold or hot biomes. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_AdvancedClimatizedBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<Steel>75</Steel>
+			<RB_ComponentBioInterface>4</RB_ComponentBioInterface>
+			<ComponentIndustrial>4</ComponentIndustrial>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+
+		<building>
+			
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>135</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>1</beehouseRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RB_AdvancedClimatization</li>
+
+		</researchPrerequisites>
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_BroodChamber</defName>
+		<label>brood chamber</label>
+		<description>The brood chamber is the nursery area of the beehouse, where new bees develop and mature. The brood chamber will occasionally produce drones and queens of one of the bee species present in the adjacent beehouse. It produces around 5 times more Drones than Queens.</description>
+		<thingClass>RimBees.Building_BroodChamber</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_Beehouse_BroodChamber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<stuffCategories>     
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+
+			<RB_Beeswax>5</RB_Beeswax>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.75</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+
+		<placeWorkers>
+			<li>RimBees.PlaceWorker_NextToBeeHouse</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RB_BeeBreeding</li>
+		</researchPrerequisites>
+	</ThingDef>	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_HybridizationChamber</defName>
+		<label>hybridization chamber</label>
+		<description>The hybridization chamber induces artificial mutations between different species of bees, producing new hybrids with exciting new characteristics. The hybridization chamber will occasionally produce queens of a new species (to get drones of that new species you will need a brood chamber).</description>
+		<thingClass>RimBees.Building_HybridizationChamber</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_Beehouse_HybridizationChamber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+
+		<stuffCategories>     
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+
+			<Steel>25</Steel>
+			<RB_Beeswax>5</RB_Beeswax>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+
+		<placeWorkers>
+			<li>RimBees.PlaceWorker_NextToBeeHouseLeft</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RB_BeeHybridizing</li>
+		</researchPrerequisites>
+	</ThingDef>	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_MeadFermentingBarrel</defName>
+		<label>mead fermenting barrel</label>
+		<description>A barrel for fermenting mead must into mead.</description>
+		<thingClass>RimBees.Building_MeadFermentingBarrel</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_FermentationBarrelMead</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+			<drawSize>(3,3)</drawSize>
+
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+				<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>10</Steel>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-1</minSafeTemperature>
+				<maxSafeTemperature>32</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<designationCategory>RB_Bees</designationCategory>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>Brewing</li>
+			<li>RB_MeadBrewing</li>
+
+		</researchPrerequisites>
+	</ThingDef>
+
+
+</Defs>
