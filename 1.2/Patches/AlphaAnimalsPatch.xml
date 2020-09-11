@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!--========== Alpha Animals Branch ==========-->
+
+						<!--=============== Black ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_BlackBeeBase" Abstract="True" >
+							<description>Black bees are tiny genetically engineered insectoids created to destroy mechanoids. Unfortunately they are so small that they can't do much, but they store small amounts of black chitin and black hive insect jelly on their honeycombs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Black</species>
+									<comb>RB_Black_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>-5</tempMin>
+									<tempMax>35</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_BlackBeeBase">
+							<defName>RB_Bee_Black_Drone</defName>
+							<label>black drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Black_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_BlackBeeBase">
+							<defName>RB_Bee_Black_Queen</defName>
+							<label>black queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Black_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Cactus ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_CactusBeeBase" Abstract="True" >
+							<description>Cactus bees are part animal, part plant. Their honeycombs are semi-edible, producing a weird cactus meat that counts as a vegetable, and medicinal cactipine quills.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Cactus</species>
+									<comb>RB_Cactus_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>true</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>40</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_CactusBeeBase">
+							<defName>RB_Bee_Cactus_Drone</defName>
+							<label>cactus drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Cactus_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_CactusBeeBase">
+							<defName>RB_Bee_Cactus_Queen</defName>
+							<label>cactus queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Cactus_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Devil ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_DevilBeeBase" Abstract="True" >
+							<description>Devil bees have a piercing gaze that seems to look into your soul. They are expert devilstrand producers, cultivating the strange fungus inside their beehouses. They will need a small amount of devilstrand planted nearby to gather spores.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Devilstrand\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Devil</species>
+									<comb>RB_Devil_Honeycomb</comb>
+									<combtimedays>3</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>Plant_Devilstrand</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_DevilBeeBase">
+							<defName>RB_Bee_Devil_Drone</defName>
+							<label>devil drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Devil_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_DevilBeeBase">
+							<defName>RB_Bee_Devil_Queen</defName>
+							<label>devil queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Devil_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Feral ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_FeralBeeBase" Abstract="True" >
+							<description>Feral bees share some of the best -and worst- characteristics of the Cinderlisk spiders. Their tiny mandibles are always burning-hot, and they can slowly gather cotton fibers from nearby plants and convert them into Cindersilk.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Cotton plant\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Feral</species>
+									<comb>RB_Feral_Honeycomb</comb>
+									<combtimedays>3</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>Plant_Cotton</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>50</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_FeralBeeBase">
+							<defName>RB_Bee_Feral_Drone</defName>
+							<label>feral drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Feral_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_FeralBeeBase">
+							<defName>RB_Bee_Feral_Queen</defName>
+							<label>feral queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Feral_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Forsaken ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_ForsakenBeeBase" Abstract="True" >
+							<description>Forsaken bees originate from a RimWorld orbiting a very faint star -the native planet of an elusive alien spacies know as Forsakens- so they have adapted to environments with low sunlight. They produce small amounts of Night Leather.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: -10ºC\nMaximum temperature: 20ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Forsaken</species>
+									<comb>RB_Forsaken_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>true</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>-10</tempMin>
+									<tempMax>20</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_ForsakenBeeBase">
+							<defName>RB_Bee_Forsaken_Drone</defName>
+							<label>forsaken drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Forsaken_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_ForsakenBeeBase">
+							<defName>RB_Bee_Forsaken_Queen</defName>
+							<label>forsaken queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Forsaken_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<!--=============== Frosty ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_FrostyBeeBase" Abstract="True" >
+							<description>Frosty bees are creatures adapted to extreme low temperatures, feeding on half inorganic vegetation present in the unnatural propane lakes. Frosty bees regularly produce Blue Milk.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: -100ºC\nMaximum temperature: 0ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Frosty</species>
+									<comb>RB_Frosty_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>-100</tempMin>
+									<tempMax>0</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_FrostyBeeBase">
+							<defName>RB_Bee_Frosty_Drone</defName>
+							<label>frosty drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Frosty_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_FrostyBeeBase">
+							<defName>RB_Bee_Frosty_Queen</defName>
+							<label>frosty queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Frosty_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Fungal ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_FungalBeeBase" Abstract="True" >
+							<description>Fungal bees are sentient mycoid creatures adapted to life in jungle infested planets on the Rim. Their whole body is covered in apparently decomposing plant matter. They grow Raw Agarilux mushrooms inside their honeycombs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: none\nMinimum Temperature: 10ºC\nMaximum temperature: 45ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Fungal</species>
+									<comb>RB_Fungal_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>true</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>10</tempMin>
+									<tempMax>45</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_FungalBeeBase">
+							<defName>RB_Bee_Fungal_Drone</defName>
+							<label>fungal drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Fungal_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_FungalBeeBase">
+							<defName>RB_Bee_Fungal_Queen</defName>
+							<label>fungal queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Fungal_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Legendary ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_LegendaryBeeBase" Abstract="True" >
+							<description>Throughout every world,
+      Flow the tale of old,
+      A creature with untold might
+      And an immeasurable height.
+      But wait, these are bees...
+      Was this supposed to be a haiku?
+	  Or something?
+	  Oh shit.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: -10ºC\nMaximum temperature: 45ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Legendary</species>
+									<comb>RB_Legendary_Honeycomb</comb>
+									<combtimedays>5</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>-10</tempMin>
+									<tempMax>45</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_LegendaryBeeBase">
+							<defName>RB_Bee_Legendary_Drone</defName>
+							<label>legendary drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Legendary_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_LegendaryBeeBase">
+							<defName>RB_Bee_Legendary_Queen</defName>
+							<label>legendary queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Legendary_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Ocular ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_OcularBeeBase" Abstract="True" >
+							<description>Ocular bees are unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Ocular</species>
+									<comb>RB_Ocular_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_OcularBeeBase">
+							<defName>RB_Bee_Ocular_Drone</defName>
+							<label>ocular drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Ocular_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_OcularBeeBase">
+							<defName>RB_Bee_Ocular_Queen</defName>
+							<label>ocular queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Ocular_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Slimy ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_SlimyBeeBase" Abstract="True" >
+							<description>Slimy bees are amorphous, ambulatory masses of gelatinous fluid in the approximate shape of a bee. In reality they are part of a greater gelatinous superorganism, with only one objective: grow and expand.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Slimy</species>
+									<comb>RB_Slimy_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>true</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_SlimyBeeBase">
+							<defName>RB_Bee_Slimy_Drone</defName>
+							<label>slimy drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Slimy_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_SlimyBeeBase">
+							<defName>RB_Bee_Slimy_Queen</defName>
+							<label>slimy queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Slimy_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Slurry ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_SlurryBeeBase" Abstract="True" >
+							<description>Slurry bees are tiny mechanoid bees that consume practically anything in the vicinity and transform it into obscene amounts of a refined paste meal that is unbelievably disgusting for sapient beings, and sometimes an industrial component.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Slurry</species>
+									<comb>RB_Slurry_Honeycomb</comb>
+									<combtimedays>3</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_SlurryBeeBase">
+							<defName>RB_Bee_Slurry_Drone</defName>
+							<label>slurry drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Slurry_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_SlurryBeeBase">
+							<defName>RB_Bee_Slurry_Queen</defName>
+							<label>slurry queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Slurry_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!--=============== Sky ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_SkyBeeBase" Abstract="True" >
+							<description>Sky bees are serpentine bees adept at converting Steel into a stronger version of it, Sky Steel.\n\nBee Traits:\n\nProduction time: 36 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Steel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Sky</species>
+									<comb>RB_Sky_Honeycomb</comb>
+									<combtimedays>1.5</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>Steel</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_SkyBeeBase">
+							<defName>RB_Bee_Sky_Drone</defName>
+							<label>sky drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Sky_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_SkyBeeBase">
+							<defName>RB_Bee_Sky_Queen</defName>
+							<label>sky queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Sky_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Black_Honeycomb</defName>
+							<label>black honeycomb</label>
+							<description>This is a honeycomb produced by black bees. They are tiny genetically engineered insectoids created to destroy mechanoids. Unfortunately they are so small that they can't do much, but they store small amounts of black chitin and black hive insect jelly on their honeycombs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax, black chitin and black hive insect jelly.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Black_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>5</RB_BaseHoney>
+								<RB_Beeswax>5</RB_Beeswax>
+								<Leather_BlackChitin>5</Leather_BlackChitin>
+								<AA_BlackInsectJelly>5</AA_BlackInsectJelly>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Cactus_Honeycomb</defName>
+							<label>cactus honeycomb</label>
+							<description>This is a honeycomb produced by cactus bees, which are part animal, part plant. Their honeycombs are semi-edible, producing a weird cactus meat that counts as a vegetable, and medicinal cactipine quills. Honeycombs can be procesed in a Honey Extractor to get tasty honey, brittle beeswax, cactus meat and medicinal cactipine quills.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Cactus_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_TastyHoney>5</RB_TastyHoney>
+								<RB_Brittlewax>5</RB_Brittlewax>
+								<AA_CactusMeat>10</AA_CactusMeat>
+								<AA_CactipineQuill>1</AA_CactipineQuill>
+
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Devil_Honeycomb</defName>
+							<label>devil honeycomb</label>
+							<description>This is a honeycomb produced by devil bees, which have a piercing gaze that seems to look into your soul. They are expert devilstrand producers, cultivating the strange fungus inside their beehouses. They will need a small amount of devilstrand planted nearby to gather spores. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and devilstrand.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Devil_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>15</RB_BaseHoney>
+								<RB_Beeswax>15</RB_Beeswax>
+								<DevilstrandCloth>15</DevilstrandCloth>
+							</butcherProducts>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Feral_Honeycomb</defName>
+							<label>feral honeycomb</label>
+							<description>This is a honeycomb produced by feral bees. They share some of the best -and worst- characteristics of the Cinderlisk spiders. Their tiny mandibles are always burning-hot, and they can slowly gather cotton fibers from nearby plants and convert them into Cindersilk. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and Cindersilk.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Feral_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>15</RB_BaseHoney>
+								<RB_Beeswax>15</RB_Beeswax>
+								<AA_CinderSilk>15</AA_CinderSilk>
+
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Forsaken_Honeycomb</defName>
+							<label>forsaken honeycomb</label>
+							<description>This is a honeycomb produced by Forsaken bees. They originate from a RimWorld orbiting a very faint star -the native planet of an elusive alien spacies know as Forsakens- so they have adapted to environments with low sunlight. They produce small amounts of Night Leather. Honeycombs can be procesed in a Honey Extractor to get black honey, black beeswax and night leather.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Forsaken_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BlackBeeswax>10</RB_BlackBeeswax>
+								<RB_BlackHoney>5</RB_BlackHoney>
+								<Leather_Night>5</Leather_Night>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Frosty_Honeycomb</defName>
+							<label>frosty honeycomb</label>
+							<description>This is a honeycomb produced by Frosty bees, creatures adapted to extreme low temperatures, feeding on half inorganic vegetation present in the unnatural propane lakes. Frosty bees regularly produce Blue Milk. Honeycombs can be procesed in a Honey Extractor to get tasty honey, beeswax and blue milk.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Frosty_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_Beeswax>5</RB_Beeswax>
+								<RB_TastyHoney>2</RB_TastyHoney>
+								<AA_BlueMilk>10</AA_BlueMilk>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Fungal_Honeycomb</defName>
+							<label>fungal honeycomb</label>
+							<description>This is a honeycomb produced by Fungal bees, sentient mycoid creatures adapted to life in jungle infested planets on the Rim. Their whole body is covered in apparently decomposing plant matter. They grow Raw Agarilux mushrooms inside their honeycombs. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and raw agarilux mushrooms.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Fungal_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_Beeswax>5</RB_Beeswax>
+								<RB_AdaptiveHoney>6</RB_AdaptiveHoney>
+								<AA_AgariluxRawFungus>30</AA_AgariluxRawFungus>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Legendary_Honeycomb</defName>
+							<label>legendary honeycomb</label>
+							<description>This is a honeycomb produced by Legendary bees. Honeycombs can be procesed in a Honey Extractor to get tasty honey, heavy beeswax and Gallatross leather.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Legendary_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_TastyHoney>20</RB_TastyHoney>
+								<RB_HeavyWax>30</RB_HeavyWax>
+								<Leather_Gallatross>25</Leather_Gallatross>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Ocular_Honeycomb</defName>
+							<label>ocular honeycomb</label>
+							<description>This is a honeycomb produced by Ocular bees, unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, red beeswax and red wood logs.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Ocular_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_RedBeeswax>10</RB_RedBeeswax>
+								<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+								<GU_RedWood>10</GU_RedWood>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Slimy_Honeycomb</defName>
+							<label>slimy honeycomb</label>
+							<description>This is a honeycomb produced by Slimy bees, amorphous, ambulatory masses of gelatinous fluid in the approximate shape of a bee. In reality they are part of a greater gelatinous superorganism, with only one objective: grow and expand. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, brittle beeswax and obscene amounts of raw red slime.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Slimy_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_Brittlewax>5</RB_Brittlewax>
+								<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+								<AB_RawRedSlime>125</AB_RawRedSlime>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Slurry_Honeycomb</defName>
+							<label>slurry honeycomb</label>
+							<description>This is a honeycomb produced by Slurry bees. They are tiny mechanoid bees that consume practically anything in the vicinity and transform it into obscene amounts of a refined paste meal that is unbelievably disgusting for sapient beings, and sometimes an industrial component. Honeycombs can be procesed in a Honey Extractor to get a lot of disgusting nutrient paste meals and industrial components.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Slurry_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>								
+								<AA_DisgustingMealNutrientPaste>20</AA_DisgustingMealNutrientPaste>
+								<ComponentIndustrial>1</ComponentIndustrial>
+							</butcherProducts>
+						</ThingDef>
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Sky_Honeycomb</defName>
+							<label>sky honeycomb</label>
+							<description>This is a honeycomb produced by Sky bees, serpentine bees adept at converting Steel into a stronger version of it, Sky Steel. Honeycombs can be procesed in a Honey Extractor to get honey, steelwax and sky steel.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Sky_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>5</RB_BaseHoney>
+								<RB_Steelwax>12</RB_Steelwax>
+								<AA_SkySteel>8</AA_SkySteel>
+							</butcherProducts>
+						</ThingDef>
+
+
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_BlackBeeList</defName>
+							<beeDroneDef>RB_Bee_Black_Drone</beeDroneDef>
+							<beeDroneTag>RB_Black_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Black_Queen</beeQueenDef>
+							<beeQueenTag>RB_Black_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_CactusBeeList</defName>
+							<beeDroneDef>RB_Bee_Cactus_Drone</beeDroneDef>
+							<beeDroneTag>RB_Cactus_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Cactus_Queen</beeQueenDef>
+							<beeQueenTag>RB_Cactus_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_DevilBeeList</defName>
+							<beeDroneDef>RB_Bee_Devil_Drone</beeDroneDef>
+							<beeDroneTag>RB_Devil_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Devil_Queen</beeQueenDef>
+							<beeQueenTag>RB_Devil_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_FeralBeeList</defName>
+							<beeDroneDef>RB_Bee_Feral_Drone</beeDroneDef>
+							<beeDroneTag>RB_Feral_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Feral_Queen</beeQueenDef>
+							<beeQueenTag>RB_Feral_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_ForsakenBeeList</defName>
+							<beeDroneDef>RB_Bee_Forsaken_Drone</beeDroneDef>
+							<beeDroneTag>RB_Forsaken_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Forsaken_Queen</beeQueenDef>
+							<beeQueenTag>RB_Forsaken_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_FrostyBeeList</defName>
+							<beeDroneDef>RB_Bee_Frosty_Drone</beeDroneDef>
+							<beeDroneTag>RB_Frosty_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Frosty_Queen</beeQueenDef>
+							<beeQueenTag>RB_Frosty_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_FungalBeeList</defName>
+							<beeDroneDef>RB_Bee_Fungal_Drone</beeDroneDef>
+							<beeDroneTag>RB_Fungal_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Fungal_Queen</beeQueenDef>
+							<beeQueenTag>RB_Fungal_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_LegendaryBeeList</defName>
+							<beeDroneDef>RB_Bee_Legendary_Drone</beeDroneDef>
+							<beeDroneTag>RB_Legendary_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Legendary_Queen</beeQueenDef>
+							<beeQueenTag>RB_Legendary_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_OcularBeeList</defName>
+							<beeDroneDef>RB_Bee_Ocular_Drone</beeDroneDef>
+							<beeDroneTag>RB_Ocular_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Ocular_Queen</beeQueenDef>
+							<beeQueenTag>RB_Ocular_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_SlimyBeeList</defName>
+							<beeDroneDef>RB_Bee_Slimy_Drone</beeDroneDef>
+							<beeDroneTag>RB_Slimy_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Slimy_Queen</beeQueenDef>
+							<beeQueenTag>RB_Slimy_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_SlurryBeeList</defName>
+							<beeDroneDef>RB_Bee_Slurry_Drone</beeDroneDef>
+							<beeDroneTag>RB_Slurry_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Slurry_Queen</beeQueenDef>
+							<beeQueenTag>RB_Slurry_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+						<RimBees.BeeListDef>
+							<defName>RB_SkyBeeList</defName>
+							<beeDroneDef>RB_Bee_Sky_Drone</beeDroneDef>
+							<beeDroneTag>RB_Sky_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Sky_Queen</beeQueenDef>
+							<beeQueenTag>RB_Sky_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+						<!-- Tier 3 Combinations -->	
+
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_1</defName>
+							<bee1>Nocturnal</bee1>
+							<bee2>Insectoid</bee2>
+							<result>
+								<li>Black</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_2</defName>
+							<bee1>Swamp</bee1>
+							<bee2>Desert</bee2>
+							<result>
+								<li>Cactus</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutagenicComb</defName>
+							<label>extract from mutagenic comb</label>
+							<description>Centrifuges a mutagenic comb to extract psychotropic honey, brittlewax and mechanite slurry</description>
+							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutagenic_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutagenic_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutaniteComb</defName>
+							<label>extract from mutanite comb</label>
+							<description>Centrifuges a mutanite comb to extract psychotropic honey, heavywax and mutanite chunks</description>
+							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutanite_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutanite_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMorphComb</defName>
+							<label>extract from morph comb</label>
+							<description>Centrifuges a morph comb to extract psychotropic honey, brittlewax and Morphsilk</description>
+							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Morph_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Morph_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>5</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutagenicCombBulk</defName>
+							<label>bulk extract from mutagenic comb</label>
+							<description>Centrifuges a mutagenic comb to bulk extract psychotropic honey, brittlewax and mechanite slurry</description>
+							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutagenic_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutagenic_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+								<RB_Brittlewax>50</RB_Brittlewax>
+								<MechaniteSlurry>10</MechaniteSlurry>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMutaniteCombBulk</defName>
+							<label>bulk extract from mutanite comb</label>
+							<description>Centrifuges a mutanite comb to bulk extract psychotropic honey, heavywax and mutanite chunks</description>
+							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Mutanite_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Mutanite_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>150</RB_PsychotropicHoney>
+								<RB_HeavyWax>150</RB_HeavyWax>
+								<Mutanite>10</Mutanite>
+							</products>
+							<skillRequirements>
+								<Crafting>18</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeMorphCombBulk</defName>
+							<label>bulk extract from morph comb</label>
+							<description>Centrifuges a morph comb to bulk extract psychotropic honey, brittlewax and Morphsilk</description>
+							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Morph_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Morph_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+								<RB_Brittlewax>70</RB_Brittlewax>
+								<Morphsilk>20</Morphsilk>
+							</products>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CreatePawnmorpherTierResearch</defName>
+							<label>create pawnmorpher tier bee research</label>
+							<description>Research bee combinations to create pawnmorpher tier bees. This research is random and you may get duplicate results.</description>
+							<jobString>Researching bees</jobString>
+							<allowMixingIngredients>true</allowMixingIngredients>
+
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_BeeResearchTable</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_BeeswaxCategory</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_Honeys</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>MechaniteSlurry</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<categories>
+									<li>RB_BeeswaxCategory</li>
+									<li>RB_Honeys</li>
+								</categories>
+								<thingDefs>
+									<li>MechaniteSlurry</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_RandomPawnmorpherResearch>1</RB_RandomPawnmorpherResearch>
+
+							</products>
+							<skillRequirements>
+								<Intellectual>3</Intellectual>
+							</skillRequirements>
+							<workSkill>Crafting</workSkill>
+
+						</RecipeDef>
+
+						<!-- Pawnmorpher Tier research -->
+						<ThingDef Name="RB_ResearchPapersBasePawnmorpher" ParentName="RB_ResearchPapersBase" Abstract="True">
+							<label>bee research papers (pawnmorpher)</label>
+
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>RB_RandomPawnmorpherResearch</defName>
+							<label>bee research (unfinished)</label>
+							<description>This research is in progress.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+							</graphicData>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MaxHitPoints>5</MaxHitPoints>
+								<Flammability>2.0</Flammability>
+								<DeteriorationRate>6</DeteriorationRate>
+								<Mass>10</Mass>
+								<MarketValue>50</MarketValue>
+							</statBases>
+							<tickerType>Normal</tickerType>
+							<thingCategories>
+								<li>RB_BeeResearch</li>
+							</thingCategories>
+							<stackLimit>1</stackLimit>
+							<comps>
+								<li Class="RimBees.CompProperties_RandomResearch">
+									<labelString>bee research papers (pawnmorpher)</labelString>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingCategoryDef>
+							<defName>RB_BeeResearchTierPawnmorpher</defName>
+							<label>bee research, pawnmorpher tier</label>
+							<parent>RB_BeeResearch</parent>
+							<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
+						</ThingCategoryDef>
+
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersRadiAdapt</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
+									<textForTheImage>Radioactive + Adaptive = Mutagenic</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersMutaPrec</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
+									<textForTheImage>Mutagenic + Precious = Mutanite</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+
+
+
+						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+							<defName>RB_ResearchPapersMutaWeave</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
+									<textForTheImage>Mutagenic + Weaving = Morph</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierPawnmorpher</li>
+							</thingCategories>	
+						</ThingDef>	
+
+					</value>
+				</li>
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
