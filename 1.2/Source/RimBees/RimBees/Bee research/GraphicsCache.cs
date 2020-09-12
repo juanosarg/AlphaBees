@@ -45,7 +45,19 @@ namespace RimBees
         public static readonly Texture2D BeeResearchMutaPrec = ContentFinder<Texture2D>.Get("Research/BeeResearchMutaPrec", true);
         public static readonly Texture2D BeeResearchMutaWeave = ContentFinder<Texture2D>.Get("Research/BeeResearchMutaWeave", true);
 
-
+        // Alpha Animals Tier research graphics
+        public static readonly Texture2D BeeResearchAgriElec = ContentFinder<Texture2D>.Get("Research/BeeResearchAgriElec", true);
+        public static readonly Texture2D BeeResearchAlloyPrec = ContentFinder<Texture2D>.Get("Research/BeeResearchAlloyPrec", true);
+        public static readonly Texture2D BeeResearchArcticLactic = ContentFinder<Texture2D>.Get("Research/BeeResearchArcticLactic", true);
+        public static readonly Texture2D BeeResearchInsectoidDesert = ContentFinder<Texture2D>.Get("Research/BeeResearchInsectoidDesert", true);
+        public static readonly Texture2D BeeResearchNeutroWood = ContentFinder<Texture2D>.Get("Research/BeeResearchNeutroWood", true);
+        public static readonly Texture2D BeeResearchNoctInsectoid = ContentFinder<Texture2D>.Get("Research/BeeResearchNoctInsectoid", true);
+        public static readonly Texture2D BeeResearchNoctTanner = ContentFinder<Texture2D>.Get("Research/BeeResearchNoctTanner", true);
+        public static readonly Texture2D BeeResearchRadiWood = ContentFinder<Texture2D>.Get("Research/BeeResearchRadiWood", true);
+        public static readonly Texture2D BeeResearchSwampDesert = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampDesert", true);
+        public static readonly Texture2D BeeResearchSwampNutri = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampNutri", true);
+        public static readonly Texture2D BeeResearchSwampWeaving = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampWeaving", true);
+        public static readonly Texture2D BeeResearchWoolyTanner = ContentFinder<Texture2D>.Get("Research/BeeResearchWoolyTanner", true);
 
 
     }

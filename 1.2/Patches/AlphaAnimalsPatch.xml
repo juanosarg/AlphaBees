@@ -747,14 +747,93 @@
 							<result>
 								<li>Cactus</li>					
 							</result>				
+						</RimBees.BeeCombinationDef>						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_3</defName>
+							<bee1>Swamp</bee1>
+							<bee2>Weaving</bee2>
+							<result>
+								<li>Devil</li>					
+							</result>				
 						</RimBees.BeeCombinationDef>
-						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_4</defName>
+							<bee1>Insectoid</bee1>
+							<bee2>Desert</bee2>
+							<result>
+								<li>Feral</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_5</defName>
+							<bee1>Nocturnal</bee1>
+							<bee2>Tanner</bee2>
+							<result>
+								<li>Forsaken</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_6</defName>
+							<bee1>Arctic</bee1>
+							<bee2>Lactic</bee2>
+							<result>
+								<li>Frosty</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_7</defName>
+							<bee1>Swamp</bee1>
+							<bee2>Nutritious</bee2>
+							<result>
+								<li>Fungal</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_8</defName>
+							<bee1>Wooly</bee1>
+							<bee2>Tanner</bee2>
+							<result>
+								<li>Legendary</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_9</defName>
+							<bee1>Woodland</bee1>
+							<bee2>Radioactive</bee2>
+							<result>
+								<li>Ocular</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_10</defName>
+							<bee1>Woodland</bee1>
+							<bee2>Neutro</bee2>
+							<result>
+								<li>Slimy</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_11</defName>
+							<bee1>Agricultural</bee1>
+							<bee2>Electronic</bee2>
+							<result>
+								<li>Slurry</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_AlphaAnimals_12</defName>
+							<bee1>Alloy</bee1>
+							<bee2>Precious</bee2>
+							<result>
+								<li>Sky</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
 
 						<RecipeDef>
-							<defName>RB_CentrifugeMutagenicComb</defName>
-							<label>extract from mutagenic comb</label>
-							<description>Centrifuges a mutagenic comb to extract psychotropic honey, brittlewax and mechanite slurry</description>
-							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<defName>RB_CentrifugeBlackComb</defName>
+							<label>extract from black comb</label>
+							<description>Centrifuges a black comb to extract honey, beeswax, black insect chitin and black insect jelly</description>
+							<jobString>Extracting honey, beeswax, black insect chitin and black insect jelly</jobString>
 							<effectWorking>Cremate</effectWorking>
 							<soundWorking>Recipe_Cremate</soundWorking>
 							<workAmount>500</workAmount>
@@ -765,18 +844,15 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>RB_Mutagenic_Honeycomb</li>
+											<li>RB_Black_Honeycomb</li>
 										</thingDefs>
 									</filter>
 									<count>1</count>
 								</li>
-
 							</ingredients>
 							<fixedIngredientFilter>
-
 								<thingDefs>
-									<li>RB_Mutagenic_Honeycomb</li>
-
+									<li>RB_Black_Honeycomb</li>
 								</thingDefs>
 							</fixedIngredientFilter>
 							<specialProducts>
@@ -788,84 +864,10 @@
 						</RecipeDef>
 
 						<RecipeDef>
-							<defName>RB_CentrifugeMutaniteComb</defName>
-							<label>extract from mutanite comb</label>
-							<description>Centrifuges a mutanite comb to extract psychotropic honey, heavywax and mutanite chunks</description>
-							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
-							<effectWorking>Cremate</effectWorking>
-							<soundWorking>Recipe_Cremate</soundWorking>
-							<workAmount>500</workAmount>
-							<recipeUsers>
-								<li>RB_Honey_Centrifuge</li>	
-							</recipeUsers>	
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>RB_Mutanite_Honeycomb</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-
-							</ingredients>
-							<fixedIngredientFilter>
-
-								<thingDefs>
-									<li>RB_Mutanite_Honeycomb</li>
-
-								</thingDefs>
-							</fixedIngredientFilter>
-							<specialProducts>
-								<li>Butchery</li>
-							</specialProducts>
-							<skillRequirements>
-								<Crafting>8</Crafting>
-							</skillRequirements>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>RB_CentrifugeMorphComb</defName>
-							<label>extract from morph comb</label>
-							<description>Centrifuges a morph comb to extract psychotropic honey, brittlewax and Morphsilk</description>
-							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
-							<effectWorking>Cremate</effectWorking>
-							<soundWorking>Recipe_Cremate</soundWorking>
-							<workAmount>500</workAmount>
-							<recipeUsers>
-								<li>RB_Honey_Centrifuge</li>	
-							</recipeUsers>	
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>RB_Morph_Honeycomb</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-
-							</ingredients>
-							<fixedIngredientFilter>
-
-								<thingDefs>
-									<li>RB_Morph_Honeycomb</li>
-
-								</thingDefs>
-							</fixedIngredientFilter>
-							<specialProducts>
-								<li>Butchery</li>
-							</specialProducts>
-							<skillRequirements>
-								<Crafting>5</Crafting>
-							</skillRequirements>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>RB_CentrifugeMutagenicCombBulk</defName>
-							<label>bulk extract from mutagenic comb</label>
-							<description>Centrifuges a mutagenic comb to bulk extract psychotropic honey, brittlewax and mechanite slurry</description>
-							<jobString>Extracting psychotropic honey, brittlewax and mechanite slurry</jobString>
+							<defName>RB_CentrifugeBlackCombBulk</defName>
+							<label>bulk extract from black comb</label>
+							<description>Centrifuges a black comb to bulk extract honey, beeswax, black insect chitin and black insect jelly</description>
+							<jobString>Extracting honey, beeswax, black insect chitin and black insect jelly</jobString>
 							<effectWorking>Cremate</effectWorking>
 							<soundWorking>Recipe_Cremate</soundWorking>
 							<workAmount>500</workAmount>
@@ -876,24 +878,93 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>RB_Mutagenic_Honeycomb</li>
+											<li>RB_Black_Honeycomb</li>
 										</thingDefs>
 									</filter>
 									<count>10</count>
 								</li>
-
 							</ingredients>
 							<fixedIngredientFilter>
-
 								<thingDefs>
-									<li>RB_Mutagenic_Honeycomb</li>
-
+									<li>RB_Black_Honeycomb</li>
 								</thingDefs>
 							</fixedIngredientFilter>
 							<products>
-								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
+								<RB_BaseHoney>50</RB_BaseHoney>
+								<RB_Beeswax>50</RB_Beeswax>
+								<Leather_BlackChitin>50</Leather_BlackChitin>
+								<AA_BlackInsectJelly>50</AA_BlackInsectJelly>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeCactusComb</defName>
+							<label>extract from cactus comb</label>
+							<description>Centrifuges a cactus comb to extract tasty honey, brittlewax, plant meat and medicinal cactipine quills</description>
+							<jobString>Extracting tasty honey, brittlewax, plant meat and medicinal cactipine quills</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Cactus_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Cactus_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeCactusCombBulk</defName>
+							<label>bulk extract from cactus comb</label>
+							<description>Centrifuges a cactus comb to bulk extract tasty honey, brittlewax, plant meat and medicinal cactipine quills</description>
+							<jobString>Extracting tasty honey, brittlewax, plant meat and medicinal cactipine quills</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Cactus_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Cactus_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_TastyHoney>50</RB_TastyHoney>
 								<RB_Brittlewax>50</RB_Brittlewax>
-								<MechaniteSlurry>10</MechaniteSlurry>
+								<AA_CactusMeat>100</AA_CactusMeat>
+								<AA_CactipineQuill>10</AA_CactipineQuill>
 							</products>
 							<skillRequirements>
 								<Crafting>8</Crafting>
@@ -901,10 +972,44 @@
 						</RecipeDef>
 
 						<RecipeDef>
-							<defName>RB_CentrifugeMutaniteCombBulk</defName>
-							<label>bulk extract from mutanite comb</label>
-							<description>Centrifuges a mutanite comb to bulk extract psychotropic honey, heavywax and mutanite chunks</description>
-							<jobString>Extracting psychotropic honey, heavywax and mutanite chunks</jobString>
+							<defName>RB_CentrifugeDevilComb</defName>
+							<label>extract from devil comb</label>
+							<description>Centrifuges a devil comb to extract honey, beeswax and devilstrand cloth</description>
+							<jobString>Extracting honey, beeswax and devilstrand cloth</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Devil_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Devil_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeDevilCombBulk</defName>
+							<label>bulk extract from devil comb</label>
+							<description>Centrifuges a devil comb to bulk extract honey, beeswax and devilstrand cloth</description>
+							<jobString>Extracting honey, beeswax and devilstrand cloth</jobString>
 							<effectWorking>Cremate</effectWorking>
 							<soundWorking>Recipe_Cremate</soundWorking>
 							<workAmount>500</workAmount>
@@ -915,35 +1020,66 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>RB_Mutanite_Honeycomb</li>
+											<li>RB_Devil_Honeycomb</li>
 										</thingDefs>
 									</filter>
 									<count>10</count>
 								</li>
-
 							</ingredients>
 							<fixedIngredientFilter>
-
 								<thingDefs>
-									<li>RB_Mutanite_Honeycomb</li>
-
+									<li>RB_Devil_Honeycomb</li>
 								</thingDefs>
 							</fixedIngredientFilter>
 							<products>
-								<RB_PsychotropicHoney>150</RB_PsychotropicHoney>
-								<RB_HeavyWax>150</RB_HeavyWax>
-								<Mutanite>10</Mutanite>
+								<RB_BaseHoney>150</RB_BaseHoney>
+								<RB_Beeswax>150</RB_Beeswax>
+								<DevilstrandCloth>150</DevilstrandCloth>
 							</products>
 							<skillRequirements>
-								<Crafting>18</Crafting>
+								<Crafting>8</Crafting>
 							</skillRequirements>
 						</RecipeDef>
 
 						<RecipeDef>
-							<defName>RB_CentrifugeMorphCombBulk</defName>
-							<label>bulk extract from morph comb</label>
-							<description>Centrifuges a morph comb to bulk extract psychotropic honey, brittlewax and Morphsilk</description>
-							<jobString>Extracting psychotropic honey, brittlewax and Morphsilk</jobString>
+							<defName>RB_CentrifugeFeralComb</defName>
+							<label>extract from feral comb</label>
+							<description>Centrifuges a feral comb to extract honey, beeswax and cindersilk</description>
+							<jobString>Extracting honey, beeswax and cindersilk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Feral_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Feral_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFeralCombBulk</defName>
+							<label>bulk extract from feral comb</label>
+							<description>Centrifuges a feral comb to bulk extract honey, beeswax and cindersilk</description>
+							<jobString>Extracting honey, beeswax and cindersilk</jobString>
 							<effectWorking>Cremate</effectWorking>
 							<soundWorking>Recipe_Cremate</soundWorking>
 							<workAmount>500</workAmount>
@@ -954,34 +1090,591 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>RB_Morph_Honeycomb</li>
+											<li>RB_Feral_Honeycomb</li>
 										</thingDefs>
 									</filter>
 									<count>10</count>
 								</li>
-
 							</ingredients>
 							<fixedIngredientFilter>
-
 								<thingDefs>
-									<li>RB_Morph_Honeycomb</li>
-
+									<li>RB_Feral_Honeycomb</li>
 								</thingDefs>
 							</fixedIngredientFilter>
 							<products>
-								<RB_PsychotropicHoney>50</RB_PsychotropicHoney>
-								<RB_Brittlewax>70</RB_Brittlewax>
-								<Morphsilk>20</Morphsilk>
+								<RB_BaseHoney>150</RB_BaseHoney>
+								<RB_Beeswax>150</RB_Beeswax>
+								<AA_CinderSilk>150</AA_CinderSilk>
 							</products>
 							<skillRequirements>
-								<Crafting>10</Crafting>
+								<Crafting>8</Crafting>
 							</skillRequirements>
 						</RecipeDef>
 
 						<RecipeDef>
-							<defName>RB_CreatePawnmorpherTierResearch</defName>
-							<label>create pawnmorpher tier bee research</label>
-							<description>Research bee combinations to create pawnmorpher tier bees. This research is random and you may get duplicate results.</description>
+							<defName>RB_CentrifugeForsakenComb</defName>
+							<label>extract from forsaken comb</label>
+							<description>Centrifuges a forsaken comb to extract black honey, black beeswax and night leather.</description>
+							<jobString>Extracting black honey, black beeswax and night leather</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Forsaken_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Forsaken_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeForsakenCombBulk</defName>
+							<label>bulk extract from forsaken comb</label>
+							<description>Centrifuges a forsaken comb to bulk extract black honey, black beeswax and night leather.</description>
+							<jobString>Extracting black honey, black beeswax and night leather</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Forsaken_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Forsaken_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BlackBeeswax>10</RB_BlackBeeswax>
+								<RB_BlackHoney>5</RB_BlackHoney>
+								<Leather_Night>5</Leather_Night>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFrostyComb</defName>
+							<label>extract from frosty comb</label>
+							<description>Centrifuges a frosty comb to extract tasty honey, beeswax and blue milk.</description>
+							<jobString>Extracting tasty honey, beeswax and blue milk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Frosty_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Frosty_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFrostyCombBulk</defName>
+							<label>bulk extract from frosty comb</label>
+							<description>Centrifuges a frosty comb to bulk extract tasty honey, beeswax and blue milk.</description>
+							<jobString>Extracting tasty honey, beeswax and blue milk</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Frosty_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Frosty_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_Beeswax>50</RB_Beeswax>
+								<RB_TastyHoney>20</RB_TastyHoney>
+								<AA_BlueMilk>100</AA_BlueMilk>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						<RecipeDef>
+							<defName>RB_CentrifugeFungalComb</defName>
+							<label>extract from fungal comb</label>
+							<description>Centrifuges a fungal comb to extract adaptive honey, beeswax and raw agarilux fungus.</description>
+							<jobString>Extracting adaptive honey, beeswax and raw agarilux fungus</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Fungal_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Fungal_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFungalCombBulk</defName>
+							<label>bulk extract from fungal comb</label>
+							<description>Centrifuges a fungal comb to bulk extract adaptive honey, beeswax and raw agarilux fungus.</description>
+							<jobString>Extracting adaptive honey, beeswax and raw agarilux fungus</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Fungal_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Fungal_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_Beeswax>50</RB_Beeswax>
+								<RB_AdaptiveHoney>60</RB_AdaptiveHoney>
+								<AA_AgariluxRawFungus>300</AA_AgariluxRawFungus>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeLegendaryComb</defName>
+							<label>extract from legendary comb</label>
+							<description>Centrifuges a legendary comb to extract tasty honey, heavywax and Gallatross leather.</description>
+							<jobString>Extracting tasty honey, heavywax and Gallatross leather</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Legendary_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Legendary_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeLegendaryCombBulk</defName>
+							<label>bulk extract from legendary comb</label>
+							<description>Centrifuges a legendary comb to bulk extract tasty honey, heavywax and Gallatross leather.</description>
+							<jobString>Extracting tasty honey, heavywax and Gallatross leather</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Legendary_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Legendary_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_TastyHoney>200</RB_TastyHoney>
+								<RB_HeavyWax>300</RB_HeavyWax>
+								<Leather_Gallatross>250</Leather_Gallatross>
+							</products>
+							<skillRequirements>
+								<Crafting>12</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeOcularComb</defName>
+							<label>extract from ocular comb</label>
+							<description>Centrifuges a ocular comb to extract adaptive honey, red beeswax and red wood.</description>
+							<jobString>Extracting adaptive honey, red beeswax and red wood</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Ocular_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Ocular_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeOcularCombBulk</defName>
+							<label>bulk extract from ocular comb</label>
+							<description>Centrifuges a ocular comb to bulk extract adaptive honey, red beeswax and red wood.</description>
+							<jobString>Extracting adaptive honey, red beeswax and red wood</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Ocular_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Ocular_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_RedBeeswax>100</RB_RedBeeswax>
+								<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
+								<GU_RedWood>100</GU_RedWood>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSkyComb</defName>
+							<label>extract from sky comb</label>
+							<description>Centrifuges a sky comb to extract honey, steelwax and sky steel.</description>
+							<jobString>Extracting honey, steelwax and sky steel</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Sky_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Sky_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSkyCombBulk</defName>
+							<label>bulk extract from sky comb</label>
+							<description>Centrifuges a sky comb to bulk extract honey, steelwax and sky steel.</description>
+							<jobString>Extracting honey, steelwax and sky steel</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Sky_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Sky_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>50</RB_BaseHoney>
+								<RB_Steelwax>120</RB_Steelwax>
+								<AA_SkySteel>80</AA_SkySteel>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RecipeDef>
+							<defName>RB_CentrifugeSlimyComb</defName>
+							<label>extract from slimy comb</label>
+							<description>Centrifuges a slimy comb to extract adaptive honey, brittlewax and obscene amounts of raw red slime.</description>
+							<jobString>Extracting adaptive honey, brittlewax and obscene amounts of raw red slime</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Slimy_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Slimy_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSlimyCombBulk</defName>
+							<label>bulk extract from slimy comb</label>
+							<description>Centrifuges a slimy comb to bulk extract adaptive honey, brittlewax and obscene amounts of raw red slime.</description>
+							<jobString>Extracting adaptive honey, brittlewax and obscene amounts of raw red slime</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Slimy_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Slimy_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_Brittlewax>50</RB_Brittlewax>
+								<RB_AdaptiveHoney>50</RB_AdaptiveHoney>
+								<AB_RawRedSlime>1250</AB_RawRedSlime>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RecipeDef>
+							<defName>RB_CentrifugeSlurryComb</defName>
+							<label>extract from slurry comb</label>
+							<description>Centrifuges a slurry comb to extract disgusting nutrient paste meals and components.</description>
+							<jobString>Extracting disgusting nutrient paste meals and components</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Slurry_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Slurry_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSlurryCombBulk</defName>
+							<label>bulk extract from slurry comb</label>
+							<description>Centrifuges a slurry comb to bulk extract disgusting nutrient paste meals and components.</description>
+							<jobString>Extracting disgusting nutrient paste meals and components</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Slurry_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>RB_Slurry_Honeycomb</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<AA_DisgustingMealNutrientPaste>200</AA_DisgustingMealNutrientPaste>
+								<ComponentIndustrial>10</ComponentIndustrial>
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>RB_CreateAlphaTierResearch</defName>
+							<label>create alpha tier bee research</label>
+							<description>Research bee combinations to create alpha tier bees. This research is random and you may get duplicate results.</description>
 							<jobString>Researching bees</jobString>
 							<allowMixingIngredients>true</allowMixingIngredients>
 
@@ -1009,7 +1702,7 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>MechaniteSlurry</li>
+											<li>Gold</li>
 										</thingDefs>
 									</filter>
 									<count>1</count>
@@ -1023,12 +1716,12 @@
 									<li>RB_Honeys</li>
 								</categories>
 								<thingDefs>
-									<li>MechaniteSlurry</li>
+									<li>Gold</li>
 
 								</thingDefs>
 							</fixedIngredientFilter>
 							<products>
-								<RB_RandomPawnmorpherResearch>1</RB_RandomPawnmorpherResearch>
+								<RB_RandomAlphaResearch>1</RB_RandomAlphaResearch>
 
 							</products>
 							<skillRequirements>
@@ -1039,13 +1732,13 @@
 						</RecipeDef>
 
 						<!-- Pawnmorpher Tier research -->
-						<ThingDef Name="RB_ResearchPapersBasePawnmorpher" ParentName="RB_ResearchPapersBase" Abstract="True">
-							<label>bee research papers (pawnmorpher)</label>
+						<ThingDef Name="RB_ResearchPapersBaseAlpha" ParentName="RB_ResearchPapersBase" Abstract="True">
+							<label>bee research papers (alpha)</label>
 
 						</ThingDef>
 
 						<ThingDef ParentName="ResourceBase">
-							<defName>RB_RandomPawnmorpherResearch</defName>
+							<defName>RB_RandomAlphaResearch</defName>
 							<label>bee research (unfinished)</label>
 							<description>This research is in progress.</description>
 							<graphicData>
@@ -1067,59 +1760,168 @@
 							<stackLimit>1</stackLimit>
 							<comps>
 								<li Class="RimBees.CompProperties_RandomResearch">
-									<labelString>bee research papers (pawnmorpher)</labelString>
+									<labelString>bee research papers (alpha)</labelString>
 								</li>
 							</comps>
 						</ThingDef>
 
 						<ThingCategoryDef>
-							<defName>RB_BeeResearchTierPawnmorpher</defName>
-							<label>bee research, pawnmorpher tier</label>
+							<defName>RB_BeeResearchTierAlpha</defName>
+							<label>bee research, alpha tier</label>
 							<parent>RB_BeeResearch</parent>
 							<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
 
 						</ThingCategoryDef>
 
-						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-							<defName>RB_ResearchPapersRadiAdapt</defName>		
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersAgriElec</defName>		
 							<comps>
 								<li Class="RimBees.CompProperties_BeeResearchImages">
-									<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
-									<textForTheImage>Radioactive + Adaptive = Mutagenic</textForTheImage>
+									<imageNameInGraphicsCache>BeeResearchAgriElec</imageNameInGraphicsCache>
+									<textForTheImage>Agricultural + Electronic = Slurry</textForTheImage>
 								</li>
 							</comps>
 							<thingCategories>
-								<li>RB_BeeResearchTierPawnmorpher</li>
+								<li>RB_BeeResearchTierAlpha</li>
 							</thingCategories>	
 						</ThingDef>	
-
-						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-							<defName>RB_ResearchPapersMutaPrec</defName>		
+						
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersAlloyPrec</defName>		
 							<comps>
 								<li Class="RimBees.CompProperties_BeeResearchImages">
-									<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
-									<textForTheImage>Mutagenic + Precious = Mutanite</textForTheImage>
+									<imageNameInGraphicsCache>BeeResearchAlloyPrec</imageNameInGraphicsCache>
+									<textForTheImage>Alloy + Precious = Sky</textForTheImage>
 								</li>
 							</comps>
 							<thingCategories>
-								<li>RB_BeeResearchTierPawnmorpher</li>
+								<li>RB_BeeResearchTierAlpha</li>
 							</thingCategories>	
 						</ThingDef>	
-
-
-
-						<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-							<defName>RB_ResearchPapersMutaWeave</defName>		
+						
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersArcticLactic</defName>		
 							<comps>
 								<li Class="RimBees.CompProperties_BeeResearchImages">
-									<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
-									<textForTheImage>Mutagenic + Weaving = Morph</textForTheImage>
+									<imageNameInGraphicsCache>BeeResearchArcticLactic</imageNameInGraphicsCache>
+									<textForTheImage>Arctic + Lactic = Frosty</textForTheImage>
 								</li>
 							</comps>
 							<thingCategories>
-								<li>RB_BeeResearchTierPawnmorpher</li>
+								<li>RB_BeeResearchTierAlpha</li>
 							</thingCategories>	
 						</ThingDef>	
+						
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersInsectoidDesert</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchInsectoidDesert</imageNameInGraphicsCache>
+									<textForTheImage>Insectoid + Desert = Feral</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersNeutroWood</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchNeutroWood</imageNameInGraphicsCache>
+									<textForTheImage>Neutro + Woodland = Slimy</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersNoctInsectoid</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchNoctInsectoid</imageNameInGraphicsCache>
+									<textForTheImage>Nocturnal + Insectoid = Black</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersNoctTanner</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchNoctTanner</imageNameInGraphicsCache>
+									<textForTheImage>Nocturnal + Tanner = Forsaken</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersRadiWood</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchRadiWood</imageNameInGraphicsCache>
+									<textForTheImage>Radioactive + Woodland = Ocular</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersSwampDesert</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchSwampDesert</imageNameInGraphicsCache>
+									<textForTheImage>Swamp + Desert = Cactus</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersSwampNutri</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchSwampNutri</imageNameInGraphicsCache>
+									<textForTheImage>Swamp + Nutritious = Fungal</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersSwampWeaving</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchSwampWeaving</imageNameInGraphicsCache>
+									<textForTheImage>Swamp + Weaving = Devil</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseAlpha" >
+							<defName>RB_ResearchPapersWoolyTanner</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchWoolyTanner</imageNameInGraphicsCache>
+									<textForTheImage>Wooly + Tanner = Legendary</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierAlpha</li>
+							</thingCategories>	
+						</ThingDef>	
+
+						
 
 					</value>
 				</li>
