@@ -101,6 +101,9 @@ namespace RimBees
         [HarmonyPrefix]
         public static bool RegrowIfBeehouseNearby(ref Plant __instance) {
 
+            if (__instance.Blighted)
+                return true;
+
             if (__instance.def.plant.HarvestDestroys&& __instance.def.plant.Sowable && !__instance.def.plant.IsTree)
 
             {
