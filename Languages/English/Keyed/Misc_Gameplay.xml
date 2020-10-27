@@ -3,6 +3,9 @@
 
 	<!-- Misc -->
 
+	<RB_LetterLabelBeeCargoPodCrash>Bee Cargo Pod</RB_LetterLabelBeeCargoPodCrash>
+	<RB_BeeCargoPodCrash>You have detected a cluster of bee cargo pods crashing nearby. Who was stockpiling all this bee related material in orbit?\n\nWho knows, but perhaps you'll find something useful in the wreckage.</RB_BeeCargoPodCrash>
+
 	<RB_DestroyedByTemp> has been destroyed by temperature</RB_DestroyedByTemp>
 	
 	<RB_ExtractBees>Extract Bees</RB_ExtractBees>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>RB_Achievements</defName>
+							<label>RimBees</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef Name="RB_AchievementParent" Abstract="true">					
+							<bgtexPath>Achievements/RB_AchievementBackground</bgtexPath>
+							<tab>RB_Achievements</tab>
+						</AchievementsExpanded.AchievementDef>
+
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_HumbleBeeginnings</defName>
+							<label>Humble Beeginnings</label>
+							<description>Harvest your first wild beehive</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_WildHive_Temperate</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_HumbleBeeginnings</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementBeehouse</defName>
+							<label>Bee Apartment</label>
+							<description>Build your first Beehouse</description>							
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>RB_Beehouse</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementBeehouse</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementFiveBeehouse</defName>
+							<label>Bee Real State</label>
+							<description>Build five basic Beehouses</description>							
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>RB_Beehouse</def>
+								<count>5</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementFiveBeehouse</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+
+						<AchievementsExpanded.Reward_MapIncident>
+							<defName>RB_BeeCargoPodsReward</defName>
+							<label>Spawn Bee Cargo Pods</label>
+
+							<cost>50</cost>
+							<incident>RB_ResourcePodCrash</incident>
+						</AchievementsExpanded.Reward_MapIncident>
+
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
