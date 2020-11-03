@@ -37,7 +37,7 @@
 							<texPath>Achievements/RB_HumbleBeeginnings</texPath>
 							<points>5</points>
 						</AchievementsExpanded.AchievementDef>
-						
+
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementBeehouse</defName>
 							<label>Bee Apartment</label>
@@ -49,7 +49,7 @@
 							<texPath>Achievements/RB_AchievementBeehouse</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
-						
+
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementFiveBeehouse</defName>
 							<label>Bee Real State</label>
@@ -59,6 +59,287 @@
 								<count>5</count>
 							</tracker>
 							<texPath>Achievements/RB_AchievementFiveBeehouse</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>RB_AchievementBeeMansion</defName>
+							<label>Bee Mansion</label>
+							<description>Research Advanced Climatization</description>
+
+							<tracker Class="AchievementsExpanded.ResearchTracker">
+								<project>RB_AdvancedClimatization</project>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementBeeMansion</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementFirstHybrid</defName>
+							<label>Mix and Match</label>
+							<description>Create your first hybrid bee</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Hybrid_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementFirstHybrid</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementBiomeBranch</defName>
+							<label>Biome Branch</label>
+							<description>Get an Adaptive Queen to start with the Biome Branch</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Adaptive_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementBiomeBranch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementMinerBranch</defName>
+							<label>Miner Branch</label>
+							<description>Get an Alloy Queen to start with the Miner Branch</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Alloy_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementMinerBranch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementDrugsBranch</defName>
+							<label>Drugs Branch</label>
+							<description>Get a Neutro Queen to start with the Drugs Branch</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Neutro_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementDrugsBranch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementNutritionBranch</defName>
+							<label>Nutrition Branch</label>
+							<description>Get a Nutritious Queen to start with the Nutrition Branch</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Nutritious_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementNutritionBranch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementTechBranch</defName>
+							<label>Tech Branch</label>
+							<description>Get a Technological Queen to start with the Tech Branch</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Technological_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementTechBranch</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_Achievement_Chef_Queen</defName>
+							<label>Mamma Rimia!</label>
+							<description>Get a tier 5 Chef queen</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Chef_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_Achievement_Chef_Queen</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_Achievement_Hyper_Queen</defName>
+							<label>ADHD</label>
+							<description>Get a tier 5 Hyper queen</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Hyper_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_Achievement_Hyper_Queen</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_Achievement_Lucifer_Queen</defName>
+							<label>Hope you Guess my Name</label>
+							<description>Get a tier 5 Lucifer queen</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Lucifer_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_Achievement_Lucifer_Queen</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_Achievement_Nitro_Queen</defName>
+							<label>TNT</label>
+							<description>Get a tier 5 Nitro queen</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Nitro_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_Achievement_Nitro_Queen</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_Achievement_Surgeon_Queen</defName>
+							<label>It's not Lupus</label>
+							<description>Get a tier 5 Surgeon queen</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Bee_Surgeon_Queen</def>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_Achievement_Surgeon_Queen</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementBioOrganic</defName>
+							<label>Bio, Organic, Ecologic</label>
+							<description>Process 10 Technological combs to get bio-components</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>RB_ComponentBioInterface</def>
+
+								<count>10</count>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementBioOrganic</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementHoneyMeals</defName>
+							<label>Honey Gourmand</label>
+							<description>Craft 10 Lavish honey meals</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>RB_LavishHoney</def>
+
+								<count>10</count>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementHoneyMeals</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementHoneyTreat</defName>
+							<label>Honey Treat</label>
+							<description>Have a pawn consume a honeyed ice pop</description>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>RB_AteHoneyedIcePop</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementHoneyTreat</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementTwoBlackCandles</defName>
+							<label>Two Black Candles</label>
+							<description>Build two candles with black beeswax</description>							
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>RB_WaxCandle</def>
+								<madeFrom>RB_BlackBeeswax</madeFrom>
+								<count>2</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementTwoBlackCandles</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementNotSturdiestTrap</defName>
+							<label>Not the Sturdiest Trap</label>
+							<description>Build a spike trap out of Brittle beeswax</description>							
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>TrapSpike</def>
+								<madeFrom>RB_Brittlewax</madeFrom>
+								<count>1</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementNotSturdiestTrap</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementWaxBaron</defName>
+							<label>Wax Baron</label>
+							<description>Earn 2000 silver selling beeswax to settlements</description>
+
+							<tracker Class="AchievementsExpanded.TraderTracker">
+								<def>RB_Beeswax</def>
+								<worth>2000</worth>
+								<singleTransaction>false</singleTransaction>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementWaxBaron</texPath>
+							<points>40</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementHoneyFactory</defName>
+							<label>Honey Factory</label>
+							<description>Stockpile a total of 500 regular honey</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_BaseHoney</def>
+								<count>500</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementHoneyFactory</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementRimMeadery</defName>
+							<label>Better than Black-Briar</label>
+							<description>Turn honey into 100 Mead bottles</description>							
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>RB_Mead</def>
+								<count>100</count>
+							</tracker>
+							<texPath>Achievements/RB_AchievementRimMeadery</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementBestBefore</defName>
+							<label>Best Before</label>
+							<description>Preserve 250 pieces of meat using honey</description>
+
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>RB_LavishHoney</def>
+
+								<count>250</count>
+							</tracker>
+
+							<texPath>Achievements/RB_HoneyPreservedMeat</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
+							<defName>RB_AchievementPursuingTenure</defName>
+							<label>Pursuing Tenure</label>
+							<description>Use research papers to discover a new bee combination</description>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>RB_RecentlyResearched</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/RB_AchievementPursuingTenure</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
 

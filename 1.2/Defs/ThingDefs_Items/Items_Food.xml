@@ -110,6 +110,13 @@
       <joyKind>Gluttonous</joyKind>
       <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
       <ingestSound>Meal_Eat</ingestSound>
+	  <outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>RB_AteHoneyedIcePop</hediffDef>
+					<severity>1</severity>
+					
+				</li>
+			</outcomeDoers>
     </ingestible>
   </ThingDef>
   
