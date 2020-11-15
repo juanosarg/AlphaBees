@@ -30,3 +30,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\1.2\Source\R
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\1.2\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\1.2\Source\RimBees\RimBees\obj\Debug\RimBees.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimBees\1.2\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimBees\1.2\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CopyComplete

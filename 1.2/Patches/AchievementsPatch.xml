@@ -331,7 +331,7 @@
 							<tracker Class="AchievementsExpanded.ItemCraftTracker">
 								<def>RB_HoneyPreservedMeat</def>
 
-								<count>25</count>
+								<count>250</count>
 							</tracker>
 
 							<texPath>Achievements/RB_AchievementBestBefore</texPath>
