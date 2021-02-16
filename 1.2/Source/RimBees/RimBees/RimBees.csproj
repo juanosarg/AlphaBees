@@ -326,6 +326,7 @@
     <Compile Include="MapComponent\Beehouses_MapComponent.cs" />
     <Compile Include="ModOptions\RimBees_Settings.cs" />
     <Compile Include="ModOptions\RimBees_SettingsController.cs" />
+    <Compile Include="Placeworkers\PlaceWorker_ShowPollinationRadius.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertQueenInBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInBeehouse.cs" />
     <Compile Include="CompClasses\CompProperties_TempRuinableAndDestroy.cs" />

@@ -63,6 +63,7 @@
 		<designationHotKey>Misc2</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>RB_BasicBeekeeping</li>
@@ -340,6 +341,7 @@
 			</li>
 			
 		</comps>
+		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -411,6 +413,7 @@
 			</li>
 			
 		</comps>
+		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
 	</ThingDef>
 
 
@@ -481,7 +484,7 @@
 			<li>RB_AdvancedBeehouses</li>
 
 		</researchPrerequisites>
-
+		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -552,7 +555,7 @@
 			<li>RB_AdvancedClimatization</li>
 
 		</researchPrerequisites>
-
+		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
