@@ -149,7 +149,9 @@
 	<RB_Slimy_Drone_Tag>Slimy Drone</RB_Slimy_Drone_Tag>
 	<RB_Slurry_Drone_Tag>Slurry Drone</RB_Slurry_Drone_Tag>
 	<RB_Sky_Drone_Tag>Sky Drone</RB_Sky_Drone_Tag>
-
+	
+	<RB_Eezo_Drone_Tag>Eezo Drone</RB_Eezo_Drone_Tag>
+	<RB_Prefab_Drone_Tag>Prefab Drone</RB_Prefab_Drone_Tag>
 
 
 
@@ -231,6 +233,9 @@
 	<RB_Slimy_Queen_Tag>Slimy Queen</RB_Slimy_Queen_Tag>
 	<RB_Slurry_Queen_Tag>Slurry Queen</RB_Slurry_Queen_Tag>
 	<RB_Sky_Queen_Tag>Sky Queen</RB_Sky_Queen_Tag>
+	
+	<RB_Eezo_Queen_Tag>Eezo Queen</RB_Eezo_Queen_Tag>
+	<RB_Prefab_Queen_Tag>Prefab Queen</RB_Prefab_Queen_Tag>
 	
 	<!-- Options -->
 	

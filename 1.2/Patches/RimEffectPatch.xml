@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim-Effect: Core</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<ThingDef ParentName="BuildingBase">
+							<defName>RB_PrefabBeehouse</defName>
+							<label>prefab beehouse</label>
+							<description>A simple beehouse where bees will live and generate honeycombs for you, designed to be quickly and easily assembled in the process of setting up a new colony.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+							<thingClass>RimBees.Building_Beehouse</thingClass>
+
+							<graphicData>
+								<texPath>Things/Building/RB_PrefabBeehouse</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(3.5,3.5)</drawSize>
+								<shaderType>CutoutComplex</shaderType>
+
+								<damageData>
+									<cornerTL>Damage/Corner</cornerTL>
+									<cornerTR>Damage/Corner</cornerTR>
+									<cornerBL>Damage/Corner</cornerBL>
+									<cornerBR>Damage/Corner</cornerBR>
+								</damageData>
+							</graphicData>
+							<stuffCategories>
+
+								<li>Metallic</li>
+
+							</stuffCategories>
+							<costStuffCount>50</costStuffCount>
+							<costList>
+								<RE_PrefabComponent>2</RE_PrefabComponent>
+							</costList>
+							<altitudeLayer>Building</altitudeLayer>
+							<rotatable>false</rotatable>
+							<neverMultiSelect>true</neverMultiSelect>
+							<uiIconScale>0.5</uiIconScale>
+							<fillPercent>0.5</fillPercent>
+							<useHitPoints>True</useHitPoints>
+							<statBases>
+								<WorkToBuild>100</WorkToBuild>
+								<MaxHitPoints>80</MaxHitPoints>
+								<Flammability>0.8</Flammability>
+							</statBases>
+
+							<building>
+
+								<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+							</building>
+							<tickerType>Rare</tickerType>
+
+							<size>(1,1)</size>
+							<designationCategory>RB_Bees</designationCategory>
+							<passability>PassThroughOnly</passability>
+							<pathCost>70</pathCost>
+							<hasInteractionCell>True</hasInteractionCell>
+							<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+							<surfaceType>Item</surfaceType>
+							<researchPrerequisites>
+								<li>RB_BasicBeekeeping</li>
+							</researchPrerequisites>
+							<comps>
+								<li Class="RimBees.CompProperties_BeeHouse">
+									<isBeehouse>true</isBeehouse>
+									<electricBeehouse>false</electricBeehouse>
+									<climatizedBeehouse>false</climatizedBeehouse>
+									<beehouseRate>1</beehouseRate>
+								</li>
+
+							</comps>
+							<placeWorkers>
+								<li>RimBees.PlaceWorker_ShowPollinationRadius</li>
+							</placeWorkers>
+						</ThingDef>
+
+
+
+
+
+
+
+
+
+
+						<!--========== Mass Effect Branch ==========-->
+
+						<!--=============== Prefab ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_PrefabBeeBase" Abstract="True" >
+							<description>Prefab bees are experts at producing things FAST. They have one of the fastest honeycomb production times.\n\nBee Traits:\n\nProduction time: 10 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Prefab</species>
+									<comb>RB_Prefab_Honeycomb</comb>
+									<combtimedays>0.41</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_PrefabBeeBase">
+							<defName>RB_Bee_Prefab_Drone</defName>
+							<label>prefab drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Prefab_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_PrefabBeeBase">
+							<defName>RB_Bee_Prefab_Queen</defName>
+							<label>prefab queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Prefab_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Prefab_Honeycomb</defName>
+							<label>prefab honeycomb</label>
+							<description>This is a honeycomb produced by prefab bees. Prefab bees are experts at producing things FAST. They have one of the fastest honeycomb production times. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and prefab components.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Prefab_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>2</RB_BaseHoney>
+								<RB_Beeswax>3</RB_Beeswax>
+								<RE_PrefabComponent>1</RE_PrefabComponent>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_PrefabBeeList</defName>
+							<beeDroneDef>RB_Bee_Prefab_Drone</beeDroneDef>
+							<beeDroneTag>RB_Prefab_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Prefab_Queen</beeQueenDef>
+							<beeQueenTag>RB_Prefab_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugePrefabComb</defName>
+							<label>extract from prefab comb</label>
+							<description>Centrifuges a prefab comb to extract honey, wax and prefab components</description>
+							<jobString>Extracting honey, wax and prefab components</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>100</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Prefab_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Prefab_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugePrefabCombBulk</defName>
+							<label>bulk extract from prefab comb</label>
+							<description>Centrifuges a prefab comb to bulk extract honey, wax and prefab components</description>
+							<jobString>Extracting honey, wax and prefab components</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>100</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Prefab_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Prefab_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>20</RB_BaseHoney>
+								<RB_Beeswax>30</RB_Beeswax>
+								<RE_PrefabComponent>10</RE_PrefabComponent>
+
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier4_MassEffect_1</defName>
+							<bee1>Electronic</bee1>
+							<bee2>Plastic</bee2>
+							<result>
+								<li>Prefab</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+						
+						<!--=============== Eezo ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_EezoBeeBase" Abstract="True" >
+							<description>By running a current through eezo bees, they are able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect". The bees call it "You psychotic ass!".\n\nBee Traits:\n\nProduction time: 5 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Eezo</species>
+									<comb>RB_Eezo_Honeycomb</comb>
+									<combtimedays>5</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>40</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_EezoBeeBase">
+							<defName>RB_Bee_Eezo_Drone</defName>
+							<label>eezo drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Eezo_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_EezoBeeBase">
+							<defName>RB_Bee_Eezo_Queen</defName>
+							<label>eezo queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Eezo_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Eezo_Honeycomb</defName>
+							<label>eezo honeycomb</label>
+							<description>This is a honeycomb produced by eezo bees. By running a current through eezo bees, they are able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect". The bees call it "You psychotic ass!". Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and element zero.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/ParentName</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>25</RB_BaseHoney>
+								<RB_Beeswax>20</RB_Beeswax>
+								<RE_ElementZero>8</RE_ElementZero>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_EezoBeeList</defName>
+							<beeDroneDef>RB_Bee_Eezo_Drone</beeDroneDef>
+							<beeDroneTag>RB_Eezo_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Eezo_Queen</beeQueenDef>
+							<beeQueenTag>RB_Eezo_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeEezoComb</defName>
+							<label>extract from eezo comb</label>
+							<description>Centrifuges an eezo comb to extract honey, wax and element zero</description>
+							<jobString>Extracting honey, wax and element zero</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Eezo_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Eezo_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeEezoCombBulk</defName>
+							<label>bulk extract from eezo comb</label>
+							<description>Centrifuges an eezo comb to bulk extract honey, wax and element zero</description>
+							<jobString>Extracting honey, wax and element zero</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Eezo_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Eezo_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>250</RB_BaseHoney>
+								<RB_Beeswax>200</RB_Beeswax>
+								<RE_ElementZero>80</RE_ElementZero>
+							</products>
+							<skillRequirements>
+								<Crafting>16</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier5_MassEffect_2</defName>
+							<bee1>Prefab</bee1>
+							<bee2>Synthetic</bee2>
+							<result>
+								<li>Eezo</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+						<RecipeDef>
+							<defName>RB_CreateAlphaTierResearch</defName>
+							<label>create alpha tier bee research</label>
+							<description>Research bee combinations to create alpha tier bees. This research is random and you may get duplicate results.</description>
+							<jobString>Researching bees</jobString>
+							<allowMixingIngredients>true</allowMixingIngredients>
+
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_BeeResearchTable</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_BeeswaxCategory</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_Honeys</li>
+										</categories>
+									</filter>
+									<count>40</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Gold</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<categories>
+									<li>RB_BeeswaxCategory</li>
+									<li>RB_Honeys</li>
+								</categories>
+								<thingDefs>
+									<li>Gold</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_RandomAlphaResearch>1</RB_RandomAlphaResearch>
+
+							</products>
+							<skillRequirements>
+								<Intellectual>3</Intellectual>
+							</skillRequirements>
+							<workSkill>Crafting</workSkill>
+
+						</RecipeDef>
+
+						<!-- Mass Effect Tier research -->
+						<ThingDef Name="RB_ResearchPapersBaseRimEffect" ParentName="RB_ResearchPapersBase" Abstract="True">
+							<label>bee research papers (Rim-Effect)</label>
+
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>RB_RandomRimEffectResearch</defName>
+							<label>bee research (unfinished)</label>
+							<description>This research is in progress.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+							</graphicData>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MaxHitPoints>5</MaxHitPoints>
+								<Flammability>2.0</Flammability>
+								<DeteriorationRate>6</DeteriorationRate>
+								<Mass>10</Mass>
+								<MarketValue>50</MarketValue>
+							</statBases>
+							<tickerType>Normal</tickerType>
+							<thingCategories>
+								<li>RB_BeeResearch</li>
+							</thingCategories>
+							<stackLimit>1</stackLimit>
+							<comps>
+								<li Class="RimBees.CompProperties_RandomResearch">
+									<labelString>bee research papers (Rim-Effect)</labelString>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingCategoryDef>
+							<defName>RB_BeeResearchTierRimEffect</defName>
+							<label>bee research, Rim-Effect tier</label>
+							<parent>RB_BeeResearch</parent>
+							<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
+						</ThingCategoryDef>
+
+						<ThingDef ParentName="RB_ResearchPapersBaseRimEffect" >
+							<defName>RB_ResearchPapersElectronicPlastic</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchElectronicPlastic</imageNameInGraphicsCache>
+									<textForTheImage>Electronic + Plastic = Prefab</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierRimEffect</li>
+							</thingCategories>	
+						</ThingDef>	
+						
+						<ThingDef ParentName="RB_ResearchPapersBaseRimEffect" >
+							<defName>RB_ResearchPapersPrefabSynthetic</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchPrefabSynthetic</imageNameInGraphicsCache>
+									<textForTheImage>Prefab + Synthetic = Eezo</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierRimEffect</li>
+							</thingCategories>	
+						</ThingDef>	
+						
+
+
+
+					</value>
+				</li>
+
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

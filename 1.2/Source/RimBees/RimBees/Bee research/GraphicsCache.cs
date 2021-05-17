@@ -59,6 +59,11 @@ namespace RimBees
         public static readonly Texture2D BeeResearchSwampWeaving = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampWeaving", true);
         public static readonly Texture2D BeeResearchWoolyTanner = ContentFinder<Texture2D>.Get("Research/BeeResearchWoolyTanner", true);
 
+        // Rim-Effect Tier research graphics
+        public static readonly Texture2D BeeResearchElectronicPlastic = ContentFinder<Texture2D>.Get("Research/BeeResearchElectronicPlastic", true);
+        public static readonly Texture2D BeeResearchPrefabSynthetic = ContentFinder<Texture2D>.Get("Research/BeeResearchPrefabSynthetic", true);
+       
+
 
     }
 }

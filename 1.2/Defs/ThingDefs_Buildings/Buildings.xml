@@ -557,6 +557,77 @@
 		</researchPrerequisites>
 		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
 	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_SpacerBeehouse</defName>
+		<label>spacer beehouse</label>
+		<description>A spacer tech beehouse where bees will live and generate honeycombs for you. This beehouse is climatized, so bees can operate in extremely cold or hot biomes. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes quite a lot of electricity, but speeds up honeycomb production by 50%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+
+		<graphicData>
+			<texPath>Things/Building/RB_SpacerBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<Steel>100</Steel>
+			<RB_ComponentBioInterface>6</RB_ComponentBioInterface>
+			<ComponentSpacer>1</ComponentSpacer>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+		</statBases>
+
+		<building>
+			
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+
+		</building>
+		<tickerType>Rare</tickerType>
+
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>1.5</beehouseRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>RB_SpacerBeekeeping</li>
+
+		</researchPrerequisites>
+		<placeWorkers><li>RimBees.PlaceWorker_ShowPollinationRadius</li></placeWorkers>
+	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_BroodChamber</defName>
