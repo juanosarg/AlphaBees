@@ -56,7 +56,7 @@
 						<ThingDef ParentName="RB_CombBase">
 							<defName>RB_Skeletal_Honeycomb</defName>
 							<label>skeletal honeycomb</label>
-							<description>This is a honeycomb produced by skeletal bees. "Accccccstually bees are insects and they don't have bones and". Shut up. Just shut up. Honeycombs can be procesed in a Honey Extractor to get honey, steelwax and bones.</description>
+							<description>This is a honeycomb produced by skeletal bees. "Accccccstually bees are insects and they don't have bones and". Shut up. Just shut up. Honeycombs can be processed in a Honey Extractor to get honey, steelwax and bones.</description>
 							<graphicData>
 								<graphicClass>Graphic_Single</graphicClass>
 								<texPath>Things/Item/Combs/RB_Skeletal_Honeycomb</texPath>

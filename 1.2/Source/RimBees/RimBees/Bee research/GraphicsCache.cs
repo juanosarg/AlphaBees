@@ -60,6 +60,8 @@ namespace RimBees
         public static readonly Texture2D BeeResearchSwampNutri = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampNutri", true);
         public static readonly Texture2D BeeResearchSwampWeaving = ContentFinder<Texture2D>.Get("Research/BeeResearchSwampWeaving", true);
         public static readonly Texture2D BeeResearchWoolyTanner = ContentFinder<Texture2D>.Get("Research/BeeResearchWoolyTanner", true);
+        public static readonly Texture2D BeeResearchWoodlandOily = ContentFinder<Texture2D>.Get("Research/BeeResearchWoodlandOily", true);
+
 
         // Rim-Effect Tier research graphics
         public static readonly Texture2D BeeResearchElectronicPlastic = ContentFinder<Texture2D>.Get("Research/BeeResearchElectronicPlastic", true);
@@ -73,7 +75,8 @@ namespace RimBees
         // More Archotech Garbage Tier research graphics
         public static readonly Texture2D BeeResearchFabricatedHyper = ContentFinder<Texture2D>.Get("Research/BeeResearchFabricatedHyper", true);
 
-
+        // RimWorld of Magic Tier research graphics
+        public static readonly Texture2D BeeResearchPsychicAlloy = ContentFinder<Texture2D>.Get("Research/BeeResearchPsychicAlloy", true);
 
     }
 }

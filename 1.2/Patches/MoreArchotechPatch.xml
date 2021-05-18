@@ -116,7 +116,7 @@
 						<ThingDef ParentName="RB_CombBase">
 							<defName>RB_Archo_Honeycomb</defName>
 							<label>archo honeycomb</label>
-							<description>This is a honeycomb produced by archo bees. Archo bees are the pinnacle of bee evolution. Fast, efficient, sexy. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and archotech fragments.</description>
+							<description>This is a honeycomb produced by archo bees. Archo bees are the pinnacle of bee evolution. Fast, efficient, sexy. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and archotech fragments.</description>
 							<graphicData>
 								<graphicClass>Graphic_Single</graphicClass>
 								<texPath>Things/Item/Combs/RB_Archo_Honeycomb</texPath>

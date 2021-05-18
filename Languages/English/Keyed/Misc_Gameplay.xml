@@ -139,6 +139,7 @@
 	<RB_Mutanite_Drone_Tag>Mutanite Drone</RB_Mutanite_Drone_Tag>
 	<RB_Morph_Drone_Tag>Morph Drone</RB_Morph_Drone_Tag>
 	
+	<RB_Aero_Drone_Tag>Aero Drone</RB_Aero_Drone_Tag>
 	<RB_Black_Drone_Tag>Black Drone</RB_Black_Drone_Tag>
 	<RB_Cactus_Drone_Tag>Cactus Drone</RB_Cactus_Drone_Tag>
 	<RB_Devil_Drone_Tag>Devil Drone</RB_Devil_Drone_Tag>
@@ -167,6 +168,9 @@
 	
 	<RB_Archo_Drone_Tag>Archo Drone</RB_Archo_Drone_Tag>
 
+	<RB_Automatic_Drone_Tag>Automatic Drone</RB_Automatic_Drone_Tag>
+	
+	<RB_Wizard_Drone_Tag>Wizard Drone</RB_Wizard_Drone_Tag>
 
 
 
@@ -239,6 +243,7 @@
 	<RB_Mutanite_Queen_Tag>Mutanite Queen</RB_Mutanite_Queen_Tag>
 	<RB_Morph_Queen_Tag>Morph Queen</RB_Morph_Queen_Tag>
 	
+	<RB_Aero_Queen_Tag>Aero Queen</RB_Aero_Queen_Tag>
 	<RB_Black_Queen_Tag>Black Queen</RB_Black_Queen_Tag>
 	<RB_Cactus_Queen_Tag>Cactus Queen</RB_Cactus_Queen_Tag>
 	<RB_Devil_Queen_Tag>Devil Queen</RB_Devil_Queen_Tag>
@@ -266,6 +271,12 @@
 	<RB_Skeletal_Queen_Tag>Skeletal Queen</RB_Skeletal_Queen_Tag>
 	
 	<RB_Archo_Queen_Tag>Archo Queen</RB_Archo_Queen_Tag>
+	
+	<RB_Automatic_Queen_Tag>Automatic Queen</RB_Automatic_Queen_Tag>
+	
+	<RB_Wizard_Queen_Tag>Wizard Queen</RB_Wizard_Queen_Tag>
+
+
 
 
 	

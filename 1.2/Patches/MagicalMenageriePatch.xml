@@ -96,7 +96,7 @@
 						<ThingDef ParentName="RB_CombBase">
 							<defName>RB_LightMagical_Honeycomb</defName>
 							<label>light magical honeycomb</label>
-							<description>This is a honeycomb produced by light Magical bees, which are novice magic practicioners. They may know a couple cantrips, and a bunch of nonsensical incantations, but their greatest skill is transforming nearby Plainleather into Light Magical Leather, which is then tightly woven into their combs. Honeycombs can be procesed in a Honey Extractor to get Psychotropic honey, beeswax and light magical leather.</description>
+							<description>This is a honeycomb produced by light Magical bees, which are novice magic practicioners. They may know a couple cantrips, and a bunch of nonsensical incantations, but their greatest skill is transforming nearby Plainleather into Light Magical Leather, which is then tightly woven into their combs. Honeycombs can be processed in a Honey Extractor to get Psychotropic honey, beeswax and light magical leather.</description>
 							<graphicData>
 								<graphicClass>Graphic_Single</graphicClass>
 								<texPath>Things/Item/Combs/RB_LightMagical_Honeycomb</texPath>
@@ -110,7 +110,7 @@
 						<ThingDef ParentName="RB_CombBase">
 							<defName>RB_HeavyMagical_Honeycomb</defName>
 							<label>heavy magical honeycomb</label>
-							<description>This is a honeycomb produced by heavy Magical bees, which are masters of the arcane arts, subtly plotting intricate spells in their beehives. Their greatest skill is transforming nearby Plainleather into Heavy Magical Leather, which is then tightly woven into their combs. Honeycombs can be procesed in a Honey Extractor to get Psychotropic honey, beeswax and heavy magical leather.</description>
+							<description>This is a honeycomb produced by heavy Magical bees, which are masters of the arcane arts, subtly plotting intricate spells in their beehives. Their greatest skill is transforming nearby Plainleather into Heavy Magical Leather, which is then tightly woven into their combs. Honeycombs can be processed in a Honey Extractor to get Psychotropic honey, beeswax and heavy magical leather.</description>
 							<graphicData>
 								<graphicClass>Graphic_Single</graphicClass>
 								<texPath>Things/Item/Combs/RB_HeavyMagical_Honeycomb</texPath>
