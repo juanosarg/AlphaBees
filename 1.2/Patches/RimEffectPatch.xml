@@ -411,9 +411,9 @@
 						</RimBees.BeeCombinationDef>
 						
 						<RecipeDef>
-							<defName>RB_CreateAlphaTierResearch</defName>
-							<label>create alpha tier bee research</label>
-							<description>Research bee combinations to create alpha tier bees. This research is random and you may get duplicate results.</description>
+							<defName>RB_CreateRimEffectTierResearch</defName>
+							<label>create Rim-Effect tier bee research</label>
+							<description>Research bee combinations to create Rim-Effect tier bees. This research is random and you may get duplicate results.</description>
 							<jobString>Researching bees</jobString>
 							<allowMixingIngredients>true</allowMixingIngredients>
 
@@ -428,7 +428,7 @@
 											<li>RB_BeeswaxCategory</li>
 										</categories>
 									</filter>
-									<count>40</count>
+									<count>10</count>
 								</li>
 								<li>
 									<filter>
@@ -436,15 +436,15 @@
 											<li>RB_Honeys</li>
 										</categories>
 									</filter>
-									<count>40</count>
+									<count>10</count>
 								</li>
 								<li>
 									<filter>
 										<thingDefs>
-											<li>Gold</li>
+											<li>RE_PrefabComponent</li>
 										</thingDefs>
 									</filter>
-									<count>1</count>
+									<count>10</count>
 								</li>
 
 							</ingredients>
@@ -455,12 +455,12 @@
 									<li>RB_Honeys</li>
 								</categories>
 								<thingDefs>
-									<li>Gold</li>
+									<li>RE_PrefabComponent</li>
 
 								</thingDefs>
 							</fixedIngredientFilter>
 							<products>
-								<RB_RandomAlphaResearch>1</RB_RandomAlphaResearch>
+								<RB_RandomRimEffectResearch>1</RB_RandomRimEffectResearch>
 
 							</products>
 							<skillRequirements>

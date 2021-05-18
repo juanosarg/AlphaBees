@@ -152,6 +152,10 @@
 	
 	<RB_Eezo_Drone_Tag>Eezo Drone</RB_Eezo_Drone_Tag>
 	<RB_Prefab_Drone_Tag>Prefab Drone</RB_Prefab_Drone_Tag>
+	
+	<RB_Casino_Drone_Tag>Casino Drone</RB_Casino_Drone_Tag>
+	<RB_Ominous_Drone_Tag>Ominous Drone</RB_Ominous_Drone_Tag>
+	<RB_Fortunate_Drone_Tag>Fortunate Drone</RB_Fortunate_Drone_Tag>
 
 
 
@@ -236,6 +240,10 @@
 	
 	<RB_Eezo_Queen_Tag>Eezo Queen</RB_Eezo_Queen_Tag>
 	<RB_Prefab_Queen_Tag>Prefab Queen</RB_Prefab_Queen_Tag>
+	
+	<RB_Casino_Queen_Tag>Casino Queen</RB_Casino_Queen_Tag>
+	<RB_Ominous_Queen_Tag>Ominous Queen</RB_Ominous_Queen_Tag>
+	<RB_Fortunate_Queen_Tag>Fortunate Queen</RB_Fortunate_Queen_Tag>
 	
 	<!-- Options -->
 	

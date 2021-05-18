@@ -17,7 +17,614 @@
 
 						<!--========== Destiny Branch ==========-->
 
+						<!--=============== Casino ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_CasinoBeeBase" Abstract="True" >
+							<description>Casino bees are avid gamblers, always ready to roll the dice.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Casino</species>
+									<comb>RB_Casino_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_CasinoBeeBase">
+							<defName>RB_Bee_Casino_Drone</defName>
+							<label>casino drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Casino_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_CasinoBeeBase">
+							<defName>RB_Bee_Casino_Queen</defName>
+							<label>casino queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Casino_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Casino_Honeycomb</defName>
+							<label>casino honeycomb</label>
+							<description>This is a honeycomb produced by casino bees. Casino bees are avid gamblers, always ready to roll the dice. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and a single normal dice.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Casino_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>5</RB_BaseHoney>
+								<RB_Beeswax>5</RB_Beeswax>
+								<DiceOfDestiny_Dice>1</DiceOfDestiny_Dice>
+							</butcherProducts>
+						</ThingDef>
+
 						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_PrefabBeeList</defName>
+							<beeDroneDef>RB_Bee_Casino_Drone</beeDroneDef>
+							<beeDroneTag>RB_Casino_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Casino_Queen</beeQueenDef>
+							<beeQueenTag>RB_Casino_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeCasinoComb</defName>
+							<label>extract from casino comb</label>
+							<description>Centrifuges a casino comb to extract honey, wax and a single normal dice</description>
+							<jobString>Extracting honey, wax and a single normal dice</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Casino_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Casino_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeCasinoCombBulk</defName>
+							<label>bulk extract from casino comb</label>
+							<description>Centrifuges a casino comb to bulk extract honey, wax and normal dice</description>
+							<jobString>Extracting honey, wax and normal dice</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Casino_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Casino_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>50</RB_BaseHoney>
+								<RB_Beeswax>50</RB_Beeswax>
+								<DiceOfDestiny_Dice>10</DiceOfDestiny_Dice>
+
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_DiceOfDestiny_1</defName>
+							<bee1>Adaptive</bee1>
+							<bee2>Aurum</bee2>
+							<result>
+								<li>Casino</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+						<!--=============== Ominous ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_OminousBeeBase" Abstract="True" >
+							<description>An entire breed of bees characterized by their obscene bad luck, ominous bees always see the worst in any situation. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Bad Omen.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Ominous</species>
+									<comb>RB_Ominous_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_OminousBeeBase">
+							<defName>RB_Bee_Ominous_Drone</defName>
+							<label>ominous drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Ominous_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_OminousBeeBase">
+							<defName>RB_Bee_Ominous_Queen</defName>
+							<label>ominous queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Ominous_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Ominous_Honeycomb</defName>
+							<label>ominous honeycomb</label>
+							<description>This is a honeycomb produced by ominous bees. An entire breed of bees characterized by their obscene bad luck, ominous bees always see the worst in any situation. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Bad Omen. Honeycombs can be procesed in a Honey Extractor to get black honey, beeswax and a single dice of bad omen.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Ominous_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BlackHoney>5</RB_BlackHoney>
+								<RB_Beeswax>5</RB_Beeswax>
+								<DiceOfDestiny_DiceOfBadOmen>1</DiceOfDestiny_DiceOfBadOmen>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_PrefabBeeList</defName>
+							<beeDroneDef>RB_Bee_Ominous_Drone</beeDroneDef>
+							<beeDroneTag>RB_Ominous_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Ominous_Queen</beeQueenDef>
+							<beeQueenTag>RB_Ominous_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeOminousComb</defName>
+							<label>extract from ominous comb</label>
+							<description>Centrifuges a ominous comb to extract black honey, wax and a single dice of bad omen</description>
+							<jobString>Extracting black honey, wax and a single dice of bad omen</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Ominous_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Ominous_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>5</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeOminousCombBulk</defName>
+							<label>bulk extract from ominous comb</label>
+							<description>Centrifuges a ominous comb to bulk extract black honey, wax and dice of bad omen</description>
+							<jobString>Extracting black honey, wax and dice of bad omen</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Ominous_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Ominous_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BlackHoney>50</RB_BlackHoney>
+								<RB_Beeswax>50</RB_Beeswax>
+								<DiceOfDestiny_DiceOfBadOmen>10</DiceOfDestiny_DiceOfBadOmen>
+
+							</products>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_DiceOfDestiny_2</defName>
+							<bee1>Casino</bee1>
+							<bee2>Oily</bee2>
+							<result>
+								<li>Ominous</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+						<!--=============== Fortunate ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_FortunateBeeBase" Abstract="True" >
+							<description>An entire breed of bees characterized by their incredible good luck, fortunate bees are irredeemable optimists. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Fortune.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Fortunate</species>
+									<comb>RB_Fortunate_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>30</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_FortunateBeeBase">
+							<defName>RB_Bee_Fortunate_Drone</defName>
+							<label>fortunate drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Fortunate_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_FortunateBeeBase">
+							<defName>RB_Bee_Fortunate_Queen</defName>
+							<label>fortunate queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Fortunate_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Fortunate_Honeycomb</defName>
+							<label>fortunate honeycomb</label>
+							<description>This is a honeycomb produced by fortunate bees. An entire breed of bees characterized by their incredible good luck, fortunate bees are irredeemable optimists. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Fortune. Honeycombs can be procesed in a Honey Extractor to get white honey, beeswax and a single dice of fortune.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Fortunate_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_WhiteHoney>5</RB_WhiteHoney>
+								<RB_Beeswax>5</RB_Beeswax>
+								<DiceOfDestiny_DiceOfFortune>1</DiceOfDestiny_DiceOfFortune>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_PrefabBeeList</defName>
+							<beeDroneDef>RB_Bee_Fortunate_Drone</beeDroneDef>
+							<beeDroneTag>RB_Fortunate_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Fortunate_Queen</beeQueenDef>
+							<beeQueenTag>RB_Fortunate_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFortunateComb</defName>
+							<label>extract from fortunate comb</label>
+							<description>Centrifuges a fortunate comb to extract white honey, wax and a single dice of fortune</description>
+							<jobString>Extracting white honey, wax and a single dice of fortune</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Fortunate_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Fortunate_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>5</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeFortunateCombBulk</defName>
+							<label>bulk extract from fortunate comb</label>
+							<description>Centrifuges a fortunate comb to bulk extract white honey, wax and dice of fortune</description>
+							<jobString>Extracting white honey, wax and dice of fortune</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Fortunate_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Fortunate_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_WhiteHoney>50</RB_WhiteHoney>
+								<RB_Beeswax>50</RB_Beeswax>
+								<DiceOfDestiny_DiceOfFortune>10</DiceOfDestiny_DiceOfFortune>
+
+							</products>
+							<skillRequirements>
+								<Crafting>10</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+						
+						<RimBees.BeeCombinationDef>
+							<defName>RB_CombinationTier3_DiceOfDestiny_3</defName>
+							<bee1>Casino</bee1>
+							<bee2>Precious</bee2>
+							<result>
+								<li>Fortunate</li>					
+							</result>				
+						</RimBees.BeeCombinationDef>
+						
+						
+						<RecipeDef>
+							<defName>RB_CreateDiceOfDestinyTierResearch</defName>
+							<label>create Dice of Destiny tier bee research</label>
+							<description>Research bee combinations to create Dice of Destiny tier bees. This research is random and you may get duplicate results.</description>
+							<jobString>Researching bees</jobString>
+							<allowMixingIngredients>true</allowMixingIngredients>
+
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_BeeResearchTable</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_BeeswaxCategory</li>
+										</categories>
+									</filter>
+									<count>5</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>RB_Honeys</li>
+										</categories>
+									</filter>
+									<count>5</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>DiceOfDestiny_Dice</li>
+										</thingDefs>
+									</filter>
+									<count>2</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<categories>
+									<li>RB_BeeswaxCategory</li>
+									<li>RB_Honeys</li>
+								</categories>
+								<thingDefs>
+									<li>DiceOfDestiny_Dice</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_RandomDiceOfDestinyResearch>1</RB_RandomDiceOfDestinyResearch>
+
+							</products>
+							<skillRequirements>
+								<Intellectual>3</Intellectual>
+							</skillRequirements>
+							<workSkill>Crafting</workSkill>
+
+						</RecipeDef>
+
+						<!-- Mass Effect Tier research -->
+						<ThingDef Name="RB_ResearchPapersBaseDiceOfDestiny" ParentName="RB_ResearchPapersBase" Abstract="True">
+							<label>bee research papers (Dice of Destiny)</label>
+
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>RB_RandomDiceOfDestinyResearch</defName>
+							<label>bee research (unfinished)</label>
+							<description>This research is in progress.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+							</graphicData>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MaxHitPoints>5</MaxHitPoints>
+								<Flammability>2.0</Flammability>
+								<DeteriorationRate>6</DeteriorationRate>
+								<Mass>10</Mass>
+								<MarketValue>50</MarketValue>
+							</statBases>
+							<tickerType>Normal</tickerType>
+							<thingCategories>
+								<li>RB_BeeResearch</li>
+							</thingCategories>
+							<stackLimit>1</stackLimit>
+							<comps>
+								<li Class="RimBees.CompProperties_RandomResearch">
+									<labelString>bee research papers (Dice of Destiny)</labelString>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingCategoryDef>
+							<defName>RB_BeeResearchTierDiceOfDestiny</defName>
+							<label>bee research, Dice of Destiny tier</label>
+							<parent>RB_BeeResearch</parent>
+							<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
+						</ThingCategoryDef>
+
+						<ThingDef ParentName="RB_ResearchPapersBaseDiceOfDestiny" >
+							<defName>RB_ResearchPapersAdaptiveAurum</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchAdaptiveAurum</imageNameInGraphicsCache>
+									<textForTheImage>Adaptive + Aurum = Casino</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierDiceOfDestiny</li>
+							</thingCategories>	
+						</ThingDef>	
+						
+						<ThingDef ParentName="RB_ResearchPapersBaseDiceOfDestiny" >
+							<defName>RB_ResearchPapersCasinoOily</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchCasinoOily</imageNameInGraphicsCache>
+									<textForTheImage>Casino + Oily = Ominous</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierDiceOfDestiny</li>
+							</thingCategories>	
+						</ThingDef>	
+						<ThingDef ParentName="RB_ResearchPapersBaseDiceOfDestiny" >
+							<defName>RB_ResearchPapersBeeResearchCasinoPrecious</defName>		
+							<comps>
+								<li Class="RimBees.CompProperties_BeeResearchImages">
+									<imageNameInGraphicsCache>BeeResearchCasinoPrecious</imageNameInGraphicsCache>
+									<textForTheImage>Casino + Precious = Fortunate</textForTheImage>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>RB_BeeResearchTierDiceOfDestiny</li>
+							</thingCategories>	
+						</ThingDef>	
 
 
 
