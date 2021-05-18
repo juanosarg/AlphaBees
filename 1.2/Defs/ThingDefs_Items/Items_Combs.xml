@@ -670,6 +670,21 @@
 			<Shell_HighExplosive>1</Shell_HighExplosive>
 		</butcherProducts>
 	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Fabricated_Honeycomb</defName>
+		<label>fabricated honeycomb</label>
+		<description>This is a honeycomb produced by Nitro bees. Fabricated bees synthesize technology and refine it into a more advanced form. They'll need a stockpile with Components nearby and they'll slowly incorporate them into their honeycombs as Advanced Components. Honeycombs can be procesed in a Honey Extractor to get white honey, heavy beeswax and advanced components.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Fabricated_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_HeavyWax>15</RB_HeavyWax>
+			<RB_WhiteHoney>15</RB_WhiteHoney>
+			<ComponentSpacer>1</ComponentSpacer>
+		</butcherProducts>
+	</ThingDef>
 
 
 

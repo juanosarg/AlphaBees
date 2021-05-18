@@ -1771,4 +1771,42 @@
 			<Crafting>18</Crafting>
 		</skillRequirements>
 	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugeFabricatedCombBulk</defName>
+		<label>bulk extract from fabricated comb</label>
+		<description>Centrifuges a fabricated comb to bulk extract white honey, heavy beeswax and advanced components</description>
+		<jobString>Extracting white honey, heavy beeswax and advanced components</jobString> 
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Fabricated_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Fabricated_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_HeavyWax>150</RB_HeavyWax>
+			<RB_WhiteHoney>150</RB_WhiteHoney>
+			<ComponentSpacer>10</ComponentSpacer>
+		</products>
+		<skillRequirements>
+			<Crafting>18</Crafting>
+		</skillRequirements>
+	</RecipeDef>
 </Defs>

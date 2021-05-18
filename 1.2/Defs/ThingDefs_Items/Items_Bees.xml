@@ -1644,4 +1644,42 @@
 		</graphicData> 		
 	</ThingDef>	
 	
+	<!--========== Tier 5: Advanced Branch - From Electronic and Synthetic Bees ==========-->	
+
+	<!--=============== Fabricated ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_FabricatedBeeBase" Abstract="True" >
+		<description>Fabricated bees synthesize technology and refine it into a more advanced form. They'll need a stockpile with Components nearby and they'll slowly incorporate them into their honeycombs as Advanced Components.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: Components\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description> 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Fabricated</species>
+				<comb>RB_Fabricated_Honeycomb</comb>
+				<combtimedays>5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>ComponentIndustrial</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>40</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_FabricatedBeeBase">
+		<defName>RB_Bee_Fabricated_Drone</defName>
+		<label>fabricated drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Fabricated_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_FabricatedBeeBase">
+		<defName>RB_Bee_Fabricated_Queen</defName>
+		<label>fabricated queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Fabricated_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>	
+	
 </Defs>

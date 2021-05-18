@@ -263,6 +263,19 @@
 			<li>RB_BeeResearchTier5</li>
 		</thingCategories>	
 	</ThingDef>	
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersElectronicSynthetic</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchElectronicSynthetic</imageNameInGraphicsCache>
+				<textForTheImage>Synthetic + Electronic = Fabricated</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>	
 
 
 

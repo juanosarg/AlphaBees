@@ -309,6 +309,13 @@
 		<beeQueenDef>RB_Bee_Nitro_Queen</beeQueenDef>
 		<beeQueenTag>RB_Nitro_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_FabricatedBeeList</defName>
+		<beeDroneDef>RB_Bee_Fabricated_Drone</beeDroneDef>
+		<beeDroneTag>RB_Fabricated_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Fabricated_Queen</beeQueenDef>
+		<beeQueenTag>RB_Fabricated_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
 
 
 </Defs>

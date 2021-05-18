@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Bones</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<!--========== Bone Branch ==========-->
+
+						<!--=============== Skeletal ====================-->
+
+						<ThingDef ParentName="RB_BeeBase" Name="RB_SkeletalBeeBase" Abstract="True" >
+							<description>"Accccccstually bees are insects and they don't have bones and". Shut up. Just shut up.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 35ºC</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>   
+							<tradeability>Buyable,Sellable</tradeability>
+							<comps>			
+								<li Class="RimBees.CompProperties_Bees">
+									<species>Skeletal</species>
+									<comb>RB_Skeletal_Honeycomb</comb>
+									<combtimedays>1</combtimedays>
+									<nocturnal>false</nocturnal>
+									<pluviophile>false</pluviophile>
+									<weirdplantneeded>no</weirdplantneeded>
+									<tempMin>0</tempMin>
+									<tempMax>35</tempMax>
+								</li>   
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="RB_SkeletalBeeBase">
+							<defName>RB_Bee_Skeletal_Drone</defName>
+							<label>skeletal drone</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Skeletal_Drone</texPath>
+							</graphicData> 		
+						</ThingDef>
+						<ThingDef ParentName="RB_SkeletalBeeBase">
+							<defName>RB_Bee_Skeletal_Queen</defName>
+							<label>skeletal queen</label>
+							<graphicData>
+								<texPath>Things/Item/Bees/RB_Bee_Skeletal_Queen</texPath>
+							</graphicData> 		
+						</ThingDef>
+
+
+						<!-- Combs -->
+
+						<ThingDef ParentName="RB_CombBase">
+							<defName>RB_Skeletal_Honeycomb</defName>
+							<label>skeletal honeycomb</label>
+							<description>This is a honeycomb produced by skeletal bees. "Accccccstually bees are insects and they don't have bones and". Shut up. Just shut up. Honeycombs can be procesed in a Honey Extractor to get honey, steelwax and bones.</description>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Item/Combs/RB_Skeletal_Honeycomb</texPath>
+							</graphicData>	
+							<butcherProducts>
+								<RB_BaseHoney>5</RB_BaseHoney>
+								<RB_Steelwax>5</RB_Steelwax>
+								<BoneItem>25</BoneItem>
+							</butcherProducts>
+						</ThingDef>
+
+						
+
+
+						<RimBees.BeeListDef>
+							<defName>RB_SkeletalBeeList</defName>
+							<beeDroneDef>RB_Bee_Skeletal_Drone</beeDroneDef>
+							<beeDroneTag>RB_Skeletal_Drone_Tag</beeDroneTag>
+							<beeQueenDef>RB_Bee_Skeletal_Queen</beeQueenDef>
+							<beeQueenTag>RB_Skeletal_Queen_Tag</beeQueenTag>
+						</RimBees.BeeListDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSkeletalComb</defName>
+							<label>extract from skeletal comb</label>
+							<description>Centrifuges a skeletal comb to extract honey, steelwax and bones</description>
+							<jobString>Extracting honey, steelwax and bones</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Skeletal_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Skeletal_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<specialProducts>
+								<li>Butchery</li>
+							</specialProducts>
+							<skillRequirements>
+								<Crafting>3</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>RB_CentrifugeSkeletalCombBulk</defName>
+							<label>bulk extract from skeletal comb</label>
+							<description>Centrifuges a skeletal comb to bulk extract honey, steelwax and bones</description>
+							<jobString>Extracting honey, steelwax and bones</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+								<li>RB_Advanced_Honey_Centrifuge</li>	
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RB_Skeletal_Honeycomb</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>RB_Skeletal_Honeycomb</li>
+
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<RB_BaseHoney>50</RB_BaseHoney>
+								<RB_Steelwax>50</RB_Steelwax>
+								<BoneItem>250</BoneItem>
+
+							</products>
+							<skillRequirements>
+								<Crafting>8</Crafting>
+							</skillRequirements>
+						</RecipeDef>
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_2"]/result</xpath>
+					<value>
+						<li>Skeletal</li>
+					
+					</value>
+				</li>
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>

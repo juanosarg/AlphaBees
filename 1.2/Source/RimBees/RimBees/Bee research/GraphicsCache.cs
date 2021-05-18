@@ -27,6 +27,8 @@ namespace RimBees
         public static readonly Texture2D BeeResearchMedTech = ContentFinder<Texture2D>.Get("Research/BeeResearchMedTech", true);
         public static readonly Texture2D BeeResearchSynthTech = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthTech", true);
         public static readonly Texture2D BeeResearchSynthOily = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthOily", true);
+        public static readonly Texture2D BeeResearchElectronicSynthetic = ContentFinder<Texture2D>.Get("Research/BeeResearchElectronicSynthetic", true);
+
 
         // Genetic Tier research graphics
         public static readonly Texture2D BeeResearchOrgWood = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgWood", true);
@@ -62,7 +64,15 @@ namespace RimBees
         // Rim-Effect Tier research graphics
         public static readonly Texture2D BeeResearchElectronicPlastic = ContentFinder<Texture2D>.Get("Research/BeeResearchElectronicPlastic", true);
         public static readonly Texture2D BeeResearchPrefabSynthetic = ContentFinder<Texture2D>.Get("Research/BeeResearchPrefabSynthetic", true);
-       
+
+        // Dice of Destiny Tier research graphics
+        public static readonly Texture2D BeeResearchAdaptiveAurum = ContentFinder<Texture2D>.Get("Research/BeeResearchAdaptiveAurum", true);
+        public static readonly Texture2D BeeResearchCasinoOily = ContentFinder<Texture2D>.Get("Research/BeeResearchCasinoOily", true);
+        public static readonly Texture2D BeeResearchCasinoPrecious = ContentFinder<Texture2D>.Get("Research/BeeResearchCasinoPrecious", true);
+
+        // More Archotech Garbage Tier research graphics
+        public static readonly Texture2D BeeResearchFabricatedHyper = ContentFinder<Texture2D>.Get("Research/BeeResearchFabricatedHyper", true);
+
 
 
     }

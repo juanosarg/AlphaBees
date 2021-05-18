@@ -126,6 +126,8 @@
 	<RB_Synthetic_Drone_Tag>Synthetic Drone</RB_Synthetic_Drone_Tag>
 	<RB_Hyper_Drone_Tag>Hyper Drone</RB_Hyper_Drone_Tag>
 	<RB_Nitro_Drone_Tag>Nitro Drone</RB_Nitro_Drone_Tag>
+	<RB_Fabricated_Drone_Tag>Fabricated Drone</RB_Fabricated_Drone_Tag>
+
 
 	<RB_LightMagical_Drone_Tag>Light Magical Drone</RB_LightMagical_Drone_Tag>
 	<RB_HeavyMagical_Drone_Tag>Heavy Magical Drone</RB_HeavyMagical_Drone_Tag>
@@ -156,6 +158,16 @@
 	<RB_Casino_Drone_Tag>Casino Drone</RB_Casino_Drone_Tag>
 	<RB_Ominous_Drone_Tag>Ominous Drone</RB_Ominous_Drone_Tag>
 	<RB_Fortunate_Drone_Tag>Fortunate Drone</RB_Fortunate_Drone_Tag>
+	
+	<RB_Diamond_Drone_Tag>Diamond Drone</RB_Diamond_Drone_Tag>
+	<RB_Ruby_Drone_Tag>Ruby Drone</RB_Ruby_Drone_Tag>
+	<RB_Sapphire_Drone_Tag>Sapphire Drone</RB_Sapphire_Drone_Tag>
+	
+	<RB_Skeletal_Drone_Tag>Skeletal Drone</RB_Skeletal_Drone_Tag>
+	
+	<RB_Archo_Drone_Tag>Archo Drone</RB_Archo_Drone_Tag>
+
+
 
 
 
@@ -214,6 +226,8 @@
 	<RB_Synthetic_Queen_Tag>Synthetic Queen</RB_Synthetic_Queen_Tag>
 	<RB_Hyper_Queen_Tag>Hyper Queen</RB_Hyper_Queen_Tag>
 	<RB_Nitro_Queen_Tag>Nitro Queen</RB_Nitro_Queen_Tag>
+	<RB_Fabricated_Queen_Tag>Fabricated Queen</RB_Fabricated_Queen_Tag>
+
 	
 	<RB_LightMagical_Queen_Tag>Light Magical Queen</RB_LightMagical_Queen_Tag>
 	<RB_HeavyMagical_Queen_Tag>Heavy Magical Queen</RB_HeavyMagical_Queen_Tag>
@@ -244,6 +258,16 @@
 	<RB_Casino_Queen_Tag>Casino Queen</RB_Casino_Queen_Tag>
 	<RB_Ominous_Queen_Tag>Ominous Queen</RB_Ominous_Queen_Tag>
 	<RB_Fortunate_Queen_Tag>Fortunate Queen</RB_Fortunate_Queen_Tag>
+	
+	<RB_Diamond_Queen_Tag>Diamond Queen</RB_Diamond_Queen_Tag>
+	<RB_Ruby_Queen_Tag>Ruby Queen</RB_Ruby_Queen_Tag>
+	<RB_Sapphire_Queen_Tag>Sapphire Queen</RB_Sapphire_Queen_Tag>
+	
+	<RB_Skeletal_Queen_Tag>Skeletal Queen</RB_Skeletal_Queen_Tag>
+	
+	<RB_Archo_Queen_Tag>Archo Queen</RB_Archo_Queen_Tag>
+
+
 	
 	<!-- Options -->
 	

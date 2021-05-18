@@ -219,4 +219,13 @@
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_6</defName>
+		<bee1>Electronic</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Fabricated</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
 </Defs>
