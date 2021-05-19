@@ -27,7 +27,7 @@
 						<ThingDef ParentName="BuildingBase">
 							<defName>RB_IndustrialApiary</defName>
 							<label>industrial apiary (RimBees)</label>
-							<description>A robot-handled artificial apiary that will allow beekeepers to extract honey from bees much faster than usual at the cost of space and electricity. This apiary is climatized, so bees can operate in extremely cold or hot biomes. It speeds up honeycomb production by 50%, but its main advantage is that due to its size it can fit two hibridization / brood chambers.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+							<description>A robot-handled artificial apiary that will allow beekeepers to extract honey from bees much faster than usual at the cost of space and electricity. This apiary is climatized, so bees can operate in extremely cold or hot biomes. It speeds up honeycomb production by 100%, but its main advantage is that due to its size it can fit two hibridization / brood chambers.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 							<thingClass>RimBees.Building_Beehouse</thingClass>
 							<graphicData>
 								<texPath>Things/Buildings/IndustrialApiary/IndustrialApiary</texPath>
@@ -87,7 +87,7 @@
 									<isBeehouse>true</isBeehouse>
 									<electricBeehouse>true</electricBeehouse>
 									<climatizedBeehouse>true</climatizedBeehouse>
-									<beehouseRate>1.5</beehouseRate>
+									<beehouseRate>0.5</beehouseRate>
 								</li>
 							</comps>
 							<researchPrerequisites>
