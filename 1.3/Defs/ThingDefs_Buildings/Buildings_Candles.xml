@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>RB_WaxCandle</defName>
+    <label>candle</label>
+	<thingClass>Building</thingClass>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<clearBuildingArea>false</clearBuildingArea>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <description>A simple candle.</description>
+    <graphicData>
+      <texPath>Things/Building/RB_Candle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+        <drawRotated>true</drawRotated>
+	  <drawSize>(2,2)</drawSize>
+      <shaderType>CutoutComplex</shaderType>	  
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/RB_Candle_Icon</uiIconPath>
+    <stuffCategories>
+      <li>RB_Waxy</li>
+    </stuffCategories>
+    		
+    <costStuffCount>25</costStuffCount>	
+    <rotatable>false</rotatable>
+    <building>
+      <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <passability>Standable</passability>
+	<pathCost>8</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Beauty>10</Beauty>
+      <Mass>4.0</Mass>	  
+    </statBases>
+    <selectable>true</selectable>
+   
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.5</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>RB_Beeswax</li>
+          </thingDefs>
+        </fuelFilter>
+        <destroyOnNoFuel>false</destroyOnNoFuel>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>10</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.3</fireSize>
+        <offset>(0.0,0,0.8)</offset>
+      </li>
+     
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+		<designationCategory>RB_Bees</designationCategory>
+		<researchPrerequisites>
+      <li>RB_BeeswaxLighting</li>
+    </researchPrerequisites>
+   
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_IndustrialApiary</defName>
+		<label>industrial apiary (RimBees)</label>
+		<description>A robot-handled artificial apiary that will allow beekeepers to extract honey from bees much faster than usual at the cost of space and electricity. This apiary is climatized, so bees can operate in extremely cold or hot biomes. It speeds up honeycomb production by 100%, but its main advantage is that due to its size it can fit two hibridization / brood chambers.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/IndustrialApiary/IndustrialApiary</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>50</Plasteel>
+			<VFE_ComponentMechanoid>2</VFE_ComponentMechanoid>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.6</uiIconScale>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>20</Mass>
+		</statBases>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<blueprintGraphicData>
+				<texPath>Things/Buildings/IndustrialApiary/IndustrialApiary_Blueprint</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+			</blueprintGraphicData>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<tickerType>Rare</tickerType>
+		<size>(3,3)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>true</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>0.5</beehouseRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>VFE_IndustrialBeekeeping</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>RimBees.PlaceWorker_ShowPollinationRadius</li>
+			<li>VFEMech.PlaceWorker_OnFactoryFloorAndPath</li>
+		</placeWorkers>
+		<modExtensions>
+			<li Class="VanillaFurnitureExpanded.ShowBlueprintExtension">
+				<showBlueprintInGhostMode>true</showBlueprintInGhostMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

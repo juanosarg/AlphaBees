@@ -64,6 +64,11 @@
 
 	<!-- Mead -->
 
+	<RB_InsertMeadDesc>Mead Must to Insert</RB_InsertMeadDesc>
+	<RB_StartMeadInsertion>Bring Mead Must</RB_StartMeadInsertion>
+	<RB_StartMeadInsertionDesc>Bring mead must to the barrel to start processing</RB_StartMeadInsertionDesc>
+	<RB_CancelBringingMead>Cancel Bringing Mead Must</RB_CancelBringingMead>
+	<RB_CancelBringingMeadDesc>Cancel bringing mead must to the barrel.</RB_CancelBringingMeadDesc>
 	<RB_NoMeadMust>No mead must</RB_NoMeadMust>
 	<RB_ContainsMeadMust>Contains {0} / {1} mead must.</RB_ContainsMeadMust>
 	<RB_ContainsMead>Contains {0} / {1} mead.</RB_ContainsMead>

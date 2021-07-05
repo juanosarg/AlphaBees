@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_ExtracTemperateHive</defName>
+		<label>extract from temperate hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild temperate beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Temperate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Temperate</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Temperate_Drone>1</RB_Bee_Temperate_Drone>
+			<RB_Bee_Temperate_Queen>1</RB_Bee_Temperate_Queen>
+			<RB_Temperate_Honeycomb>2</RB_Temperate_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		    <workSkill>Crafting</workSkill>
+
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_ExtracMildHive</defName>
+		<label>extract from mild hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild mild beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Mild</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Mild</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Mild_Drone>1</RB_Bee_Mild_Drone>
+			<RB_Bee_Mild_Queen>1</RB_Bee_Mild_Queen>
+			<RB_Mild_Honeycomb>2</RB_Mild_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		    <workSkill>Crafting</workSkill>
+
+	</RecipeDef>
+	
+<!--	<RecipeDef>
+		<defName>RB_ExtracArcticHive</defName>
+		<label>extract from arctic hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild arctic beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Arctic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Arctic</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Arctic_Drone>1</RB_Bee_Arctic_Drone>
+			<RB_Bee_Arctic_Queen>1</RB_Bee_Arctic_Queen>
+			<RB_Arctic_Honeycomb>2</RB_Arctic_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_ExtracIcyHive</defName>
+		<label>extract from icy hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild icy beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Icy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Icy</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Icy_Drone>1</RB_Bee_Icy_Drone>
+			<RB_Bee_Icy_Queen>1</RB_Bee_Icy_Queen>
+			<RB_Icy_Honeycomb>2</RB_Icy_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>RB_ExtracJungleHive</defName>
+		<label>extract from jungle hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild jungle beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Jungle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Jungle</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Jungle_Drone>1</RB_Bee_Jungle_Drone>
+			<RB_Bee_Jungle_Queen>1</RB_Bee_Jungle_Queen>
+			<RB_Jungle_Honeycomb>2</RB_Jungle_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>	
+
+	<RecipeDef>
+		<defName>RB_ExtracSwampHive</defName>
+		<label>extract from swamp hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild swamp beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Swamp</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Swamp</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Swamp_Drone>1</RB_Bee_Swamp_Drone>
+			<RB_Bee_Swamp_Queen>1</RB_Bee_Swamp_Queen>
+			<RB_Swamp_Honeycomb>2</RB_Swamp_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_ExtracDesertHive</defName>
+		<label>extract from desert hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild desert beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Desert</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Desert</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Desert_Drone>1</RB_Bee_Desert_Drone>
+			<RB_Bee_Desert_Queen>1</RB_Bee_Desert_Queen>
+			<RB_Desert_Honeycomb>2</RB_Desert_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RB_ExtracAridHive</defName>
+		<label>extract from arid hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild arid beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Arid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_WildHive_Arid</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Arid_Drone>1</RB_Bee_Arid_Drone>
+			<RB_Bee_Arid_Queen>1</RB_Bee_Arid_Queen>
+			<RB_Arid_Honeycomb>2</RB_Arid_Honeycomb>
+
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>	-->
+	
+</Defs>

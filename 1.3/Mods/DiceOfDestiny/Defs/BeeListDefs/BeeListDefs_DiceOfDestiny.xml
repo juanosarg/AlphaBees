@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<RimBees.BeeListDef>
+		<defName>RB_CasinoBeeList</defName>
+		<beeDroneDef>RB_Bee_Casino_Drone</beeDroneDef>
+		<beeDroneTag>RB_Casino_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Casino_Queen</beeQueenDef>
+		<beeQueenTag>RB_Casino_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+	<RimBees.BeeListDef>
+		<defName>RB_OminousBeeList</defName>
+		<beeDroneDef>RB_Bee_Ominous_Drone</beeDroneDef>
+		<beeDroneTag>RB_Ominous_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Ominous_Queen</beeQueenDef>
+		<beeQueenTag>RB_Ominous_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+
+	<RimBees.BeeListDef>
+		<defName>RB_FortunateBeeList</defName>
+		<beeDroneDef>RB_Bee_Fortunate_Drone</beeDroneDef>
+		<beeDroneTag>RB_Fortunate_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Fortunate_Queen</beeQueenDef>
+		<beeQueenTag>RB_Fortunate_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+
+</Defs>

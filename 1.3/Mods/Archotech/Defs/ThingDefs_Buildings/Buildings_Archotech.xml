@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_ArchotechBeehouse</defName>
+		<label>archotech beehouse</label>
+		<description>An archotech beehouse where bees will live and generate honeycombs for you. This beehouse is climatized, so bees can operate in extremely cold or hot biomes. This beehouse consumes no electricity. Speeds up honeycomb production by 150%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+		<graphicData>
+			<texPath>Things/Building/RB_ArchotechBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<RB_ComponentBioInterface>2</RB_ComponentBioInterface>
+			<ArchotechScrap>20</ArchotechScrap>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>7500</WorkToBuild>
+			<MaxHitPoints>7500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+		</building>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps>
+
+
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>true</climatizedBeehouse>
+				<beehouseRate>0.35</beehouseRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ArchoTechTierOne</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>RimBees.PlaceWorker_ShowPollinationRadius</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

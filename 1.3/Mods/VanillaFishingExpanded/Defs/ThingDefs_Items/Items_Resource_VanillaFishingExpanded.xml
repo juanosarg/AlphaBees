@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>RB_NondescriptFish</defName>
+		<label>nondescript fish</label>
+		<description>Raw... something. Is this cod? It looks like cod... Or maybe haddock? It's... it's fish. Probably.</description>
+		<graphicData>
+			<texPath>Things/Item/RB_NondescriptFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.15</Mass>
+			<Nutrition>0.05</Nutrition>
+			<MarketValue>4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<tools>
+			<li>
+				<label>nondescript fish</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>-180</equippedAngleOffset>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>
