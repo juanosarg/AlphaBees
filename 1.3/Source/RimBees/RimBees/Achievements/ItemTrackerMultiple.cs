@@ -8,7 +8,7 @@ using RimWorld;
 
 namespace AchievementsExpanded
 {
-    public class ItemTrackerMultiple:ItemTracker 
+    /*public class ItemTrackerMultiple:ItemTracker 
     {
        
 
@@ -41,5 +41,5 @@ namespace AchievementsExpanded
         }
 
         Dictionary<ThingDef, int> thingList = new Dictionary<ThingDef, int>();
-    }
+    }*/
 }
