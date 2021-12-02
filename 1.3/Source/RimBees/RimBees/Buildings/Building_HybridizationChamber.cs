@@ -3,7 +3,7 @@
 using Verse;
 using UnityEngine;
 using RimWorld;
-
+using System.Collections.Generic;
 using System;
 
 
@@ -135,14 +135,39 @@ namespace RimBees
                if((beeDrone==element.bee1&&beeQueen==element.bee2)|| (beeDrone == element.bee2 && beeQueen == element.bee1))
                 {
                         numOfCombinationsFromXML = element.result.Count;
-                        return element.result.RandomElement();
+                        string result = element.result.RandomElement();
+                        GameComponent_KnownBees.Instance.LogAttempt(beeQueen, beeDrone, result);
+                        return result;
+                        
                 }
 
             }
-            
 
 
-            return "";
+
+
+            string resultNull = "";
+            GameComponent_KnownBees.Instance.LogAttempt(beeQueen, beeDrone,  null );
+            return resultNull;
          }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
+            if (Prefs.DevMode)
+            {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "Finish operation";
+                command_Action.action = delegate
+                {
+                    tickCounter = ticksToDays * daysTotal;
+                };
+                yield return command_Action;
+            }
+        }
+
     }
 }

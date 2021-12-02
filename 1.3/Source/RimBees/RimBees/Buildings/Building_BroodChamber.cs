@@ -85,6 +85,24 @@ namespace RimBees
             broodChamberFull = true;
         }
 
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
+            if (Prefs.DevMode)
+            {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "Finish operation";
+                command_Action.action = delegate
+                {
+                    tickCounter = ticksToDays * daysTotal;
+                };
+                yield return command_Action;
+            }
+        }
+
 
     }
 }

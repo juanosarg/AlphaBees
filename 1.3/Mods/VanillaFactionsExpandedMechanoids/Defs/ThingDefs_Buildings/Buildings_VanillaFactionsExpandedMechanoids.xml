@@ -18,6 +18,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<costList>
 			<Steel>100</Steel>
 			<Plasteel>50</Plasteel>
@@ -36,6 +37,7 @@
 			<Mass>20</Mass>
 		</statBases>
 		<building>
+			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>

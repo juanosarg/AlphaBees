@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>RB_HoneyPreservedVegetables</defName>
+  <thing>RB_HoneyPreservedVegetables</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_BlackBeeswaxFloor</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>RB_BlackBeeswaxFloor</terrain>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_HoneyedIcePop</defName>
+  <thing>RB_HoneyedIcePop</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_HoneyPreservedMeat</defName>
+  <thing>RB_HoneyPreservedMeat</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEA_AncientFuelTank_West</defName>
+  <thing>VFEA_AncientFuelTank</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_SteelwaxFloor</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>RB_SteelwaxFloor</terrain>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_WaxCandle_RB_Steelwax</defName>
+  <thing>RB_WaxCandle</thing>
+  <stuff>RB_Steelwax</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Beekeeping_Workbench_Building_WoodLog_South</defName>
+  <thing>RB_Beekeeping_Workbench_Building</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_WhiteBeeswaxFloor</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>RB_WhiteBeeswaxFloor</terrain>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_WaxCandle_RB_WhiteBeeswax</defName>
+  <thing>RB_WaxCandle</thing>
+  <stuff>RB_WhiteBeeswax</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_MeadFermentingBarrel_North</defName>
+  <thing>RB_MeadFermentingBarrel</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_LavishHoney</defName>
+  <thing>RB_LavishHoney</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Bee_Mild_Queen</defName>
+  <thing>RB_Bee_Mild_Queen</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_ComponentBioInterface</defName>
+  <thing>RB_ComponentBioInterface</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_BeeResearchTable_WoodLog_West</defName>
+  <thing>RB_BeeResearchTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Beehouse_RB_Steelwax</defName>
+  <thing>RB_Beehouse</thing>
+  <stuff>RB_Steelwax</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_RedBeeswaxTileFloor</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>RB_RedBeeswaxTileFloor</terrain>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEA_SuperNaniteContainment_East</defName>
+  <thing>VFEA_SuperNaniteContainment</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Hybrid_Honeycomb</defName>
+  <thing>RB_Hybrid_Honeycomb</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_BroodChamber_WoodLog</defName>
+  <thing>RB_BroodChamber</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Bee_Temperate_Drone</defName>
+  <thing>RB_Bee_Temperate_Drone</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_BaseHoney</defName>
+  <thing>RB_BaseHoney</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Honey_Centrifuge_Steel_North</defName>
+  <thing>RB_Honey_Centrifuge</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_BeeResearchTable_WoodLog_North</defName>
+  <thing>RB_BeeResearchTable</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>RB_Advanced_Honey_Centrifuge_Steel_North</defName>
+  <thing>RB_Advanced_Honey_Centrifuge</thing>
+  <stuff>Steel</stuff>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>VFEA_AncientSupplyCrate_North</defName>
+  <thing>VFEA_AncientSupplyCrate</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+
+
+
+</Defs>

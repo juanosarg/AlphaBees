@@ -18,7 +18,7 @@
 			<shadowData>
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(1.8,1.8)</drawSize>
 
 		</graphicData>
 		
@@ -83,6 +83,7 @@
 			<li>RB_MeadBrewing</li>
 
 		</researchPrerequisites>
+		<placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
 	</ThingDef>
 
 

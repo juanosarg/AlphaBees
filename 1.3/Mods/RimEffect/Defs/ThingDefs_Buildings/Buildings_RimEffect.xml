@@ -20,6 +20,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<stuffCategories>
 
 			<li>Metallic</li>
@@ -42,7 +43,7 @@
 		</statBases>
 
 		<building>
-
+			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 
 		</building>

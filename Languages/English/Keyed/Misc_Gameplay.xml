@@ -293,6 +293,31 @@
 	<RB_IgnorePlants>Bees ignore the need for plants or other nearby materials</RB_IgnorePlants>
 	<RB_GreenhouseBees>Greenhouse bees. Bees consider indoor temperature instead of map average</RB_GreenhouseBees>
 	<RB_DisableMessages>Disable Hybridization success messages</RB_DisableMessages>
+	
+	<!-- Ben's Patches -->
+	
+	<BenLubarsRimBeesPatches_Alert_BeeDanger_title>Bees exposed to the elements</BenLubarsRimBeesPatches_Alert_BeeDanger_title>
+	<BenLubarsRimBeesPatches_Alert_BeeDanger_desc>Bees are taking environmental damage. Click the alert to jump to the bees.</BenLubarsRimBeesPatches_Alert_BeeDanger_desc>
+
+	<BenLubarsRimBeesPatches_showMissingBees_title>Show icon for missing bees</BenLubarsRimBeesPatches_showMissingBees_title>
+	<BenLubarsRimBeesPatches_showMissingBees_desc>Show an icon on beehouses that are missing a queen or a drone and do not have one selected for insertion.</BenLubarsRimBeesPatches_showMissingBees_desc>
+	<BenLubarsRimBeesPatches_showProgress_title>Show beehouse progress</BenLubarsRimBeesPatches_showProgress_title>
+	<BenLubarsRimBeesPatches_showProgress_desc>Adds a progress bar to beehouses, brood chambers, and hybridization chambers.</BenLubarsRimBeesPatches_showProgress_desc>
+	<BenLubarsRimBeesPatches_beeDangerAlert_title>Bee danger alert</BenLubarsRimBeesPatches_beeDangerAlert_title>
+	<BenLubarsRimBeesPatches_beeDangerAlert_desc>Show an alert when bees are taking environmental damage such as from temperature or from being left on the ground outdoors.</BenLubarsRimBeesPatches_beeDangerAlert_desc>
+	<BenLubarsRimBeesPatches_knownBees_title>Show view research button</BenLubarsRimBeesPatches_knownBees_title>
+	<BenLubarsRimBeesPatches_knownBees_desc>Adds a "view research" button to the bee research table.</BenLubarsRimBeesPatches_knownBees_desc>
+
+	<BenLubarsRimBeesPatches_ResearchButton_title>View Research</BenLubarsRimBeesPatches_ResearchButton_title>
+	<BenLubarsRimBeesPatches_ResearchButton_desc>Show known bee hybridization combinations.</BenLubarsRimBeesPatches_ResearchButton_desc>
+
+	<BenLubarsRimBeesPatches_KnownBees_SelectBoth>Select a second species to see hybrids.</BenLubarsRimBeesPatches_KnownBees_SelectBoth>
+	<BenLubarsRimBeesPatches_KnownBees_UnknownResult>Unknown. Use a hybridization chamber to research this combination.</BenLubarsRimBeesPatches_KnownBees_UnknownResult>
+	<BenLubarsRimBeesPatches_KnownBees_NoResult>This combination does not produce any results.</BenLubarsRimBeesPatches_KnownBees_NoResult>
+	<BenLubarsRimBeesPatches_KnownBees_Additional>Additional undiscovered results: {NUM}</BenLubarsRimBeesPatches_KnownBees_Additional>
+	<BenLubarsRimBeesPatches_KnownBees_Discovered>Discovered {CUR} of {MAX} ({PERCENT})</BenLubarsRimBeesPatches_KnownBees_Discovered>
+	<BenLubarsRimBeesPatches_KnownBees_SelectFirst>Select first bee</BenLubarsRimBeesPatches_KnownBees_SelectFirst>
+	<BenLubarsRimBeesPatches_KnownBees_SelectSecond>Select second bee</BenLubarsRimBeesPatches_KnownBees_SelectSecond>
 
        
 

@@ -2,7 +2,7 @@
 <Defs>
 
  <ThingDef ParentName="ResourceBase" Name="RB_WildHiveBase" Abstract="True">
-   
+   <storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Bees</storedConceptLearnOpportunity>
     <description>This beehive needs to be carefully manipulated to extract the bees without harming them. A beekeeping workbench is needed for this delicate process.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>

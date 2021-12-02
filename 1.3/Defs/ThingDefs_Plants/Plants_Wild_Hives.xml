@@ -32,8 +32,18 @@
 		</ingestible>
     <plant>
 	  <growDays>0.0001</growDays>
-	        <fertilityMin>0</fertilityMin>
-
+	   <!-- remove when replacing floors -->
+			<fertilityMin>0.7</fertilityMin>
+			<!-- remove when building roof -->
+			<interferesWithRoof>true</interferesWithRoof>
+			<!-- it's a tree, so you can't plant next to it -->
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<!-- ...and it burns to a burnt tree -->
+			<burnedThingDef>BurnedTree</burnedThingDef>
+			<!-- [picture of flappy arm tube man] -->
+			<topWindExposure>0.25</topWindExposure>
+			<!-- count as tree for ideoligions -->
+			<treeCategory>Full</treeCategory>
       <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
       <harvestAfterGrowth>-1</harvestAfterGrowth>
 	  <harvestTag>Standard</harvestTag>

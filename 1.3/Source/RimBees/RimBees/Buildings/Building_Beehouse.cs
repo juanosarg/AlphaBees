@@ -574,11 +574,12 @@ namespace RimBees
                 if (bee1plantNeeded == "no") {
                     whichPlantNeeds = ThingDef.Named(bee2plantNeeded).label;
 
-                } else if (bee2plantNeeded == "no")
+                } else
                 {
                     whichPlantNeeds = ThingDef.Named(bee1plantNeeded).label;
 
                 }
+                
 
                 CellRect rect = GenAdj.OccupiedRect(this.Position, this.Rotation, IntVec2.One);
                 rect = rect.ExpandedBy(6);

@@ -25,9 +25,14 @@ namespace RimBees
 
         public override void FinalizeInit()
         {
-
             base.FinalizeInit();
 
+        }
+
+        public override void MapGenerated()
+        {
+            
+            base.MapGenerated();
         }
 
         public void AddBeehouseToMap(Thing thing)

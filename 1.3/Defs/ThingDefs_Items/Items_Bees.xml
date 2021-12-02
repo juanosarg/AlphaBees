@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase" Name="RB_BeeBase" Abstract="True" >
-
+		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Bees</storedConceptLearnOpportunity>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -24,6 +24,7 @@
 				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
+			<li><compClass>RimBees.CompDangerBee</compClass></li>
 		</comps>
 	</ThingDef>
 	

@@ -7,9 +7,7 @@
 		<workAmount>500</workAmount>    
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>		
-		<recipeUsers>
-			<li>RB_Honey_Centrifuge</li>
-		</recipeUsers>
+		
 	</RecipeDef>
 
 	<RecipeDef ParentName="RB_CentrifugeAnyCombBase">

@@ -2,6 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase"  Abstract="True" Name="RB_CombBase">   
+		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Combs</storedConceptLearnOpportunity>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<Flammability>1.0</Flammability>

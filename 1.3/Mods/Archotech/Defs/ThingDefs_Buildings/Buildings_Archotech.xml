@@ -17,6 +17,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<constructEffect>ConstructWood</constructEffect>
 		<costList>
 			<Plasteel>100</Plasteel>
@@ -35,6 +36,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<building>
+			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 		</building>
 		<tickerType>Rare</tickerType>

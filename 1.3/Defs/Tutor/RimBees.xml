@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_Bees</defName>
+		<label>RimBees: Bees</label>
+		<helpText>Bees can be obtained by extracting from wild hives at a beekeeping workbench, from traders, or from chambers that attach to beehouses. Bees that are not protected by beehouses can be damaged by temperature or direct sunlight.\n\nThe two most basic species are Mild and Temperate, but more can be created.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_Beekeeping_Workbench_Building</li>
+			<li>ITab-Bills-Closed</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_Combs</defName>
+		<label>RimBees: Honeycombs</label>
+		<helpText>Extracting from a honeycomb at a centrifuge usually results in wax and honey, with more exotic combs also returning other items. The items a honeycomb extracts to are listed in its info card.\n\nIf the drone and queen in a beehouse are different species, the queen's honeycomb type is created about 3 times as often as the drone's.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_Honey_Centrifuge</li>
+			<li>Designator-Build-RB_Advanced_Honey_Centrifuge</li>
+			<li>ITab-Bills-Closed</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_BeeHouse</defName>
+		<label>RimBees: Beehouses</label>
+		<helpText>Beehouses can be placed indoors or outdoors, and require a queen and a drone to operate. Bees in a beehouse will generate honeycombs over time, which will be automatically taken out by beekeepers.\n\nWhile a beehouse is active, plants harvested within 6 cells have a chance of immediately partially regrowing.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_Beehouse</li>
+			<li>Designator-Build-RB_ClimatizedBeehouse</li>
+			<li>Designator-Build-RB_AdvancedBeehouse</li>
+			<li>Designator-Build-RB_AdvancedClimatizedBeehouse</li>
+			<li>Designator-Build-RB_SpacerBeehouse</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_BroodChamber</defName>
+		<label>RimBees: Brood Chamber</label>
+		<helpText>The brood chamber creates bees of the same species as the bees in the attached beehouse. Drones are created about five times as often as queens.\n\nThe brood chamber only works while the beehouse is active.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_BroodChamber</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_Hybridization</defName>
+		<label>RimBees: Hybridization</label>
+		<helpText>A hybridization chamber will randomly create new queen bees based on the species of the bees in the attached beehouse. Swapping the queen and the drone produces the same results.\n\nThe hybridization chamber only works while the beehouse is active. To start, try mixing Mild and Temperate bees to create a Hybrid bee.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_HybridizationChamber</li>
+		</highlightTags>
+	</ConceptDef>
+	
+	<ConceptDef ParentName="NotedOpportunisticBase">
+		<defName>BenLubarsRimBeesPatches_Research</defName>
+		<label>RimBees: Research Table</label>
+		<helpText>The bee research table can be used to discover tier 4 and 5 bee hybrids, as well as hybrid bee species related to mods.\n\nIt can also be used to view a record of bee hybridization attempts.</helpText>
+		<highlightTags>
+			<li>MainTab-Architect-Closed</li>
+			<li>DesignationCategoryButton-RB_Bees-Closed</li>
+			<li>Designator-Build-RB_BeeResearchTable</li>
+			<li>ITab-Bills-Closed</li>
+			<li>Command-KnownBees</li>
+		</highlightTags>
+	</ConceptDef>
+</Defs>
