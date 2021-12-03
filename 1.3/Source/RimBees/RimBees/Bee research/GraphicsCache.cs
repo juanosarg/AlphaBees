@@ -28,7 +28,9 @@ namespace RimBees
         public static readonly Texture2D BeeResearchSynthTech = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthTech", true);
         public static readonly Texture2D BeeResearchSynthOily = ContentFinder<Texture2D>.Get("Research/BeeResearchSynthOily", true);
         public static readonly Texture2D BeeResearchElectronicSynthetic = ContentFinder<Texture2D>.Get("Research/BeeResearchElectronicSynthetic", true);
-
+        // Vanilla Factions Expanded - Ancients research graphics (considered tier 5)
+        public static readonly Texture2D BeeResearchRadioMedicinal = ContentFinder<Texture2D>.Get("Research/BeeResearchRadioMedicinal", true);
+       
 
         // Genetic Tier research graphics
         public static readonly Texture2D BeeResearchOrgWood = ContentFinder<Texture2D>.Get("Research/BeeResearchOrgWood", true);

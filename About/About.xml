@@ -62,26 +62,10 @@ Genetic Rim (via a RimBees - Genetic Rim patch)
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v4.6: A TON of awesome QoL changes by Ben Lubar. New Vanilla Factions Expanded - Ancients bee, plus a Bee Vault! (03/12/21)
 v4.5: RimWorld 1.3 update. (05/07/21)
 v4.4: Added 14 new bee species and 4 new beehouses (19/05/21) 
-v4.301: Added 25 new achievements for Vanilla Achievements Expanded (15/11/20) 
-v4.2: Added 19 new bee species that only appear with other mods: Alpha Animals, Pawnmorpher, Magical Menagerie, Vanilla Cooking Expanded and Vanilla Fishing Expanded (15/09/20)
-v4.1: Updated for RimWorld 1.2 (11/08/20)
-v4.0: Complete retexture of the mod from the gound up (30/07/20)
-v3.0: Updated for RimWorld 1.1 (09/03/20)
-v2.07: Beehouses' bee lists are now ordered alphabetically (15/12/19)
-v2.06: Added LWM's Deep Storage, the Bee Rack (30/11/19)
-v2.05: Added option to remove hybridization messages. Added bee result info to hybridization messages (29/11/19)
-v2.04: Added mod options, including greenhouse bees, ignoring rain, night-time, etc. Adjusted bee insertion timeout to be three times previous (16/11/19)
-v2.032: Added mushroom tree hives for the Mycotic Forest in Alpha Biomes (10/11/19)
-v2.031: Fixed bug with mead fermenting barrels (4/11/19)
-v2.03: Fixed bug with pollination were multiple plants were appearing. Increased temp range of wild beehives. Added metallic stuffing to beehouses and climatized beehouses (06/10/19)
-v2.02: Fixed bug were advanced climatized beehouses were not working properly (30/09/19)
-v2.01: Added properties to honeys so they transfer their special stats to meads and other food. Fixed adding chambers to beehouse blueprints. Added an option to automatically add a growing zone around beehouses (29/09/19)
-v2.0: Updated everything. Beekeeping work type, queueing of bee jobs, externalization of most code on XML files, "extract from any comb" recipe, added 8 new bees, new combs, new honeys, new waxes. Seriously, check the changelog on GitHub because I almost rewrote the entire mod (26/09/19)
-v1.02: Bugfixes (06/03/19)
-v1.01: Bugfixes. Added rotatable workbenches (12/11/18)
-v1.0: Release version (06/11/18)
+Full changelog on GitHub
 
 
 	</description>
