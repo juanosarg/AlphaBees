@@ -10,7 +10,7 @@ using System.Diagnostics;
 
 namespace RimBees
 {
-    class Building_BroodChamber : Building
+    public class Building_BroodChamber : Building
     {
 
         public int tickCounter = 0;

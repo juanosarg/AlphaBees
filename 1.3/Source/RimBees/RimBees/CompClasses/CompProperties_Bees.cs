@@ -2,7 +2,7 @@
 
 namespace RimBees
 {
-    class CompProperties_Bees : CompProperties
+    public class CompProperties_Bees : CompProperties
     {
 
         public string species = "temperate";

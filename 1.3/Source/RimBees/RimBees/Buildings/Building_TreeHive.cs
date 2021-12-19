@@ -5,7 +5,7 @@ using Verse;
 
 namespace RimBees
 {
-    class Building_TreeHive : Plant
+    public class Building_TreeHive : Plant
     {
 
 

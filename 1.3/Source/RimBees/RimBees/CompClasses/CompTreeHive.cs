@@ -2,7 +2,7 @@
 
 namespace RimBees
 {
-    class CompTreeHive : ThingComp
+    public class CompTreeHive : ThingComp
     {
 
 

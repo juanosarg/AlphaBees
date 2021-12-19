@@ -2,7 +2,7 @@
 
 namespace RimBees
 {
-    class CompProperties_BeeHouse : CompProperties
+    public class CompProperties_BeeHouse : CompProperties
     {
         public bool isBeehouse = true;
         public bool electricBeehouse = false;

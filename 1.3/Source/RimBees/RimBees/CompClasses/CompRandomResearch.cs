@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace RimBees
 {
-    class CompRandomResearch : ThingComp
+    public class CompRandomResearch : ThingComp
     {
         List<ThingDef> researchResults = new List<ThingDef>();
         private Random rand = new Random();

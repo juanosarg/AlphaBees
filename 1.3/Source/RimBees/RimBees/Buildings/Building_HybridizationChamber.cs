@@ -9,7 +9,7 @@ using System;
 
 namespace RimBees
 {
-    class Building_HybridizationChamber : Building
+    public class Building_HybridizationChamber : Building
     {
 
         public int tickCounter = 0;
