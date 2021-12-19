@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Casino</defName>
+		<label>casino</label>
+		<drone>RB_Bee_Casino_Drone</drone>
+		<queen>RB_Bee_Casino_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Ominous</defName>
+		<label>ominous</label>
+		<drone>RB_Bee_Ominous_Drone</drone>
+		<queen>RB_Bee_Ominous_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Fortunate</defName>
+		<label>fortunate</label>
+		<drone>RB_Bee_Fortunate_Drone</drone>
+		<queen>RB_Bee_Fortunate_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+
+</Defs>

@@ -14,7 +14,7 @@ namespace RimBees
             }
         }
 
-        public string GetSpecies
+        public BeeSpeciesDef GetSpecies
         {
             get
             {

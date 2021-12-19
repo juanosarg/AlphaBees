@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Prefab</defName>
+		<label>prefab</label>
+		<drone>RB_Bee_Prefab_Drone</drone>
+		<queen>RB_Bee_Prefab_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Eezo</defName>
+		<label>eezo</label>
+		<drone>RB_Bee_Eezo_Drone</drone>
+		<queen>RB_Bee_Eezo_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+</Defs>

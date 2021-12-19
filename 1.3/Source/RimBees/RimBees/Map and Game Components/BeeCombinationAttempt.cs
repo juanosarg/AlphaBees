@@ -5,15 +5,15 @@ namespace RimBees
 {
     public class BeeCombinationAttempt : IExposable, IEquatable<BeeCombinationAttempt>
     {
-        public string first;
-        public string second;
-        public string result;
+        public BeeSpeciesDef first;
+        public BeeSpeciesDef second;
+        public BeeSpeciesDef result;
 
         public void ExposeData()
         {
-            Scribe_Values.Look(ref first, "first");
-            Scribe_Values.Look(ref second, "second");
-            Scribe_Values.Look(ref result, "result");
+            Scribe_Defs.Look(ref first, "first");
+            Scribe_Defs.Look(ref second, "second");
+            Scribe_Defs.Look(ref result, "result");
         }
 
         public override bool Equals(object obj)

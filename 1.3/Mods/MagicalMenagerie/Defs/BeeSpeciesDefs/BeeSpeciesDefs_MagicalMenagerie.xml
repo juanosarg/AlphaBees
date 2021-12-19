@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeSpeciesDef>
+		<defName>LightMagical</defName>
+		<label>light magical</label>
+		<drone>RB_Bee_LightMagical_Drone</drone>
+		<queen>RB_Bee_LightMagical_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+	<RimBees.BeeSpeciesDef>
+		<defName>HeavyMagical</defName>
+		<label>heavy magical</label>
+		<drone>RB_Bee_HeavyMagical_Drone</drone>
+		<queen>RB_Bee_HeavyMagical_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+
+</Defs>

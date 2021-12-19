@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
+using RimWorld;
 using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace RimBees
 {
@@ -11,12 +10,7 @@ namespace RimBees
     {
         private const TargetIndex BarrelInd = TargetIndex.A;
 
-
-        private Random rand = new Random();
-
         private const int Duration = 200;
-
-     
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
@@ -30,38 +24,39 @@ namespace RimBees
             Thing beeDrone = buildingbeehouse.innerContainerDrones.FirstOrFallback();
             Thing beeQueen = buildingbeehouse.innerContainerQueens.FirstOrFallback();
             ThingDef resultingBee;
-           
-            int randomNumber = rand.Next(1, 14);
+
+            int randomNumber = Rand.Range(1, 14);
 
             if (randomNumber >= 1 && randomNumber <= 5)
             {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(beeDrone.def.defName, true);
-            } else if (randomNumber == 6)
-            {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(getQueenFromDrone(beeDrone), true);
-            } else if (randomNumber == 7)
-            {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(beeQueen.def.defName, true);
+                resultingBee = beeDrone.def;
             }
-            else {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(getDroneFromQueen(beeQueen), true);
-
+            else if (randomNumber == 6)
+            {
+                resultingBee = getQueenFromDrone(beeDrone);
+            }
+            else if (randomNumber == 7)
+            {
+                resultingBee = beeQueen.def;
+            }
+            else
+            {
+                resultingBee = getDroneFromQueen(beeQueen);
             }
 
-            return resultingBee; 
+            return resultingBee;
         }
 
-        public string getDroneFromQueen(Thing beeQueen)
+        public ThingDef getDroneFromQueen(Thing beeQueen)
         {
-            string beeSpecies = beeQueen.TryGetComp<CompBees>().GetSpecies;
-            return "RB_Bee_" + beeSpecies + "_Drone";
+            var beeSpecies = beeQueen.TryGetComp<CompBees>().GetSpecies;
+            return beeSpecies.drone;
         }
 
-        public string getQueenFromDrone(Thing beeDrone)
+        public ThingDef getQueenFromDrone(Thing beeDrone)
         {
-            string beeSpecies = beeDrone.TryGetComp<CompBees>().GetSpecies;
-            return "RB_Bee_"+ beeSpecies +"_Queen";
-            
+            var beeSpecies = beeDrone.TryGetComp<CompBees>().GetSpecies;
+            return beeSpecies.queen;
         }
 
         [DebuggerHidden]
@@ -107,7 +102,6 @@ namespace RimBees
             Toil carryToCell = Toils_Haul.CarryHauledThingToCell(TargetIndex.C);
             yield return carryToCell;
             yield return Toils_Haul.PlaceHauledThingInCell(TargetIndex.C, carryToCell, true);
-
         }
     }
 }

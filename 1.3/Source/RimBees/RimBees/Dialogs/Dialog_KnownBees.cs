@@ -217,7 +217,7 @@ namespace RimBees
             Widgets.EndScrollView();
         }
 
-        private bool SpeciesVisible(string species, bool checkParents = true)
+        private bool SpeciesVisible(BeeSpeciesDef species, bool checkParents = true)
         {
             if (checkParents && parent1 != -1 && parent2 != -1)
             {

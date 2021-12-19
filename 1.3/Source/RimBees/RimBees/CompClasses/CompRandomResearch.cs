@@ -1,19 +1,12 @@
-﻿
-using Verse;
-using System;
-using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-
-
+using Verse;
 
 namespace RimBees
 {
     public class CompRandomResearch : ThingComp
     {
         List<ThingDef> researchResults = new List<ThingDef>();
-        private Random rand = new Random();
-
 
         public CompProperties_RandomResearch Props
         {
@@ -23,8 +16,6 @@ namespace RimBees
             }
         }
 
-
-
         public override void CompTick()
         {
 
@@ -32,11 +23,8 @@ namespace RimBees
             if (!(this.parent.ParentHolder is Pawn_CarryTracker) && this.parent.Map.IsPlayerHome)
             {
                 this.Hatch();
-
             }
-
         }
-
 
         public void Hatch()
         {
@@ -50,14 +38,7 @@ namespace RimBees
             Log.Message(randomFromResearchList.defName);
             GenSpawn.Spawn(ThingDef.Named(randomFromResearchList.defName), this.parent.Position, this.parent.Map);
             this.parent.Destroy(DestroyMode.Vanish);
-
-
-
-
         }
-
-
-
     }
 }
 

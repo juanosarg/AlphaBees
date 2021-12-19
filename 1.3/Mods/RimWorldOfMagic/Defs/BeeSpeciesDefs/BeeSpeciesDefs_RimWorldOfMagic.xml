@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeSpeciesDef>
+		<defName>Wizard</defName>
+		<label>wizard</label>
+		<drone>RB_Bee_Wizard_Drone</drone>
+		<queen>RB_Bee_Wizard_Queen</queen>
+	</RimBees.BeeSpeciesDef>
+
+
+</Defs>

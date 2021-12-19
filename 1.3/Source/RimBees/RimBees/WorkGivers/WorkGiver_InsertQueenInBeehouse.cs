@@ -69,12 +69,12 @@ namespace RimBees
             return new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingQueenBees", true), t, t2);
         }
 
-        private Thing FindQueen(Pawn pawn, string theQueenIAmGoingToInsert, Building_Beehouse building_beehouse)
+        private Thing FindQueen(Pawn pawn, ThingDef theQueenIAmGoingToInsert, Building_Beehouse building_beehouse)
         {
             Predicate<Thing> predicate = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, 1, null, false);
             IntVec3 position = pawn.Position;
             Map map = pawn.Map;
-            ThingRequest thingReq = ThingRequest.ForDef(ThingDef.Named(theQueenIAmGoingToInsert));
+            ThingRequest thingReq = ThingRequest.ForDef(theQueenIAmGoingToInsert);
             PathEndMode peMode = PathEndMode.ClosestTouch;
             TraverseParms traverseParams = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false);
             Predicate<Thing> validator = predicate;

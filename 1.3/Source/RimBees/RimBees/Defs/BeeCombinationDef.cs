@@ -1,18 +1,12 @@
-﻿using RimWorld;
-using System;
+﻿using System.Collections.Generic;
 using Verse;
-using System.Collections.Generic;
-
 
 namespace RimBees
 {
     public class BeeCombinationDef : Def
     {
-   
-        public string bee1;
-        public string bee2;
-        public List<string> result;
-
+        public BeeSpeciesDef bee1;
+        public BeeSpeciesDef bee2;
+        public List<BeeSpeciesDef> result;
     }
 }
-

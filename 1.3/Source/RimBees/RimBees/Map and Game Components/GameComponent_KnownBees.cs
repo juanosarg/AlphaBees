@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using RimBees;
 using Verse;
 
 namespace RimBees
@@ -10,18 +9,18 @@ namespace RimBees
     {
         public static GameComponent_KnownBees Instance => Current.Game.GetComponent<GameComponent_KnownBees>();
 
-        public readonly Dictionary<string, int> BeeSpeciesInv = new Dictionary<string, int>();
+        public readonly Dictionary<BeeSpeciesDef, int> BeeSpeciesInv = new Dictionary<BeeSpeciesDef, int>();
         public readonly List<BeeSpeciesData> BeeSpecies = new List<BeeSpeciesData>();
 
         public struct BeeSpeciesData
         {
-            public string Species;
-            public string QueenName;
-            public string DroneName;
-            public ThingDef QueenDef;
-            public ThingDef DroneDef;
-            public string Parent1;
-            public string Parent2;
+            public BeeSpeciesDef Species;
+            public ThingDef QueenDef => Species.queen;
+            public ThingDef DroneDef => Species.drone;
+            public string QueenName => QueenDef.LabelCap;
+            public string DroneName => DroneDef.LabelCap;
+            public BeeSpeciesDef Parent1;
+            public BeeSpeciesDef Parent2;
             public int Depth;
         }
 
@@ -36,26 +35,13 @@ namespace RimBees
             BeeSpecies.Clear();
             BeeSpeciesInv.Clear();
 
-            foreach (var list in DefDatabase<BeeListDef>.AllDefsListForReading)
+            foreach (var species in DefDatabase<BeeSpeciesDef>.AllDefsListForReading)
             {
-                if (!list.beeQueenDef.StartsWith("RB_Bee_") || !list.beeQueenDef.EndsWith("_Queen"))
-                {
-                    Log.Error($"Unexpected RimBees queen bee def name {list.beeQueenDef}");
-
-                    continue;
-                }
-
-                var species = list.beeQueenDef.Substring("RB_Bee_".Length, list.beeQueenDef.Length - "RB_Bee__Queen".Length);
-
                 BeeSpeciesInv[species] = BeeSpecies.Count;
 
                 BeeSpecies.Add(new BeeSpeciesData
                 {
                     Species = species,
-                    QueenName = list.beeQueenTag.Translate(),
-                    DroneName = list.beeDroneTag.Translate(),
-                    QueenDef = DefDatabase<ThingDef>.GetNamed(list.beeQueenDef),
-                    DroneDef = DefDatabase<ThingDef>.GetNamed(list.beeDroneDef),
                 });
             }
 
@@ -67,7 +53,7 @@ namespace RimBees
                     var species = BeeSpecies[index];
                     if (species.Parent1 != null)
                     {
-                        if (result == "Amalgam")
+                        if (result == BeeSpeciesDefOf.Amalgam)
                         {
                             continue;
                         }
@@ -161,30 +147,31 @@ namespace RimBees
 
         private void BackfillSpecies(Thing thing)
         {
-            var name = thing.TryGetComp<CompBees>().GetSpecies;
-           
-            BeeSpeciesData species = new BeeSpeciesData();
-            try { species = BeeSpecies[BeeSpeciesInv[name]];
-               
-            } catch (Exception e) { }
-            
-            if (species.Parent1 == null)
+            var species = thing.TryGetComp<CompBees>().GetSpecies;
+
+            if (!BeeSpeciesInv.TryGetValue(species, out var index))
             {
                 return;
             }
 
-            if (name == "Amalgam")
+            var data = BeeSpecies[index];
+            if (data.Parent1 == null)
             {
-                LogAttempt("Temperate", "Hybrid", "Amalgam");
-                LogAttempt("Mild", "Hybrid", "Amalgam");
+                return;
+            }
+
+            if (species == BeeSpeciesDefOf.Amalgam)
+            {
+                LogAttempt(BeeSpeciesDefOf.Temperate, BeeSpeciesDefOf.Hybrid, BeeSpeciesDefOf.Amalgam);
+                LogAttempt(BeeSpeciesDefOf.Mild, BeeSpeciesDefOf.Hybrid, BeeSpeciesDefOf.Amalgam);
             }
             else
             {
-                LogAttempt(species.Parent1, species.Parent2, name);
+                LogAttempt(data.Parent1, data.Parent2, species);
             }
         }
 
-        public void LogAttempt(string first, string second, string result)
+        public void LogAttempt(BeeSpeciesDef first, BeeSpeciesDef second, BeeSpeciesDef result)
         {
             attempts.Add(new BeeCombinationAttempt
             {
@@ -196,7 +183,7 @@ namespace RimBees
 
         public int TotalDiscovered => BeeSpecies.Count(s => s.Parent1 == null) + attempts.Select(a => a.result).Where(r => r != null).Distinct().Count();
 
-        public bool Discovered(string species)
+        public bool Discovered(BeeSpeciesDef species)
         {
             var index = BeeSpeciesInv[species];
             if (BeeSpecies[index].Parent1 == null)
@@ -215,7 +202,7 @@ namespace RimBees
             return false;
         }
 
-        public int Undiscovered(string first, string second)
+        public int Undiscovered(BeeSpeciesDef first, BeeSpeciesDef second)
         {
             foreach (var combo in DefDatabase<BeeCombinationDef>.AllDefsListForReading)
             {
@@ -238,7 +225,7 @@ namespace RimBees
             return 0;
         }
 
-        public bool Attempted(string first, string second)
+        public bool Attempted(BeeSpeciesDef first, BeeSpeciesDef second)
         {
             foreach (var attempt in attempts)
             {

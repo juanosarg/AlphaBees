@@ -8,9 +8,9 @@ namespace RimBees
 {
     public static class BeeListSetupUtility
     {
-        public static Command_SetBeeList SetBeeListCommand(Building beehouse,Map map)
+        public static Command_SetBeeList SetBeeListCommand(Building_Beehouse beehouse,Map map)
         {
-            return new Command_SetBeeList()
+            return new Command_SetBeeList
             {
                 defaultDesc = "RB_InsertBeesDesc".Translate(),
                 defaultLabel = "RB_InsertBees".Translate(),
@@ -22,9 +22,9 @@ namespace RimBees
             };
         }
 
-        public static Command_SetQueenList SetQueenListCommand(Building beehouse, Map map)
+        public static Command_SetQueenList SetQueenListCommand(Building_Beehouse beehouse, Map map)
         {
-            return new Command_SetQueenList()
+            return new Command_SetQueenList
             {
                 defaultDesc = "RB_InsertQueensDesc".Translate(),
                 defaultLabel = "RB_InsertQueens".Translate(),

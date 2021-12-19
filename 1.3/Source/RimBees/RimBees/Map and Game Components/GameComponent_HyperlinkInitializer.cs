@@ -3,7 +3,7 @@ using Verse;
 
 namespace RimBees
 {
-    class GameComponent_HyperlinkInitializer: GameComponent
+    public class GameComponent_HyperlinkInitializer : GameComponent
     {
         public GameComponent_HyperlinkInitializer(Game game)
         {
@@ -12,12 +12,10 @@ namespace RimBees
         public override void FinalizeInit()
         {
             var processedCombs = new HashSet<ThingDef>();
-            foreach (var list in DefDatabase<BeeListDef>.AllDefsListForReading)
+            foreach (var species in DefDatabase<BeeSpeciesDef>.AllDefsListForReading)
             {
-                var queenDef = DefDatabase<ThingDef>.GetNamed(list.beeQueenDef);
-                var droneDef = DefDatabase<ThingDef>.GetNamed(list.beeDroneDef);
-                AddBeeHyperlinks(queenDef, droneDef, processedCombs);
-                AddBeeHyperlinks(droneDef, queenDef, processedCombs);
+                AddBeeHyperlinks(species.queen, species.drone, processedCombs);
+                AddBeeHyperlinks(species.drone, species.queen, processedCombs);
             }
         }
 

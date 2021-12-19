@@ -1,22 +1,16 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using UnityEngine;
-using Verse.AI;
-using Verse;
+﻿using System.Collections.Generic;
 using System.Linq;
-
+using UnityEngine;
+using Verse;
 
 namespace RimBees
 {
     [StaticConstructorOnStartup]
     public class Command_SetQueenList : Command
     {
-
         public Map map;
-        public Building beehouse;
-        public Thing queen;
-
-
+        public Building_Beehouse beehouse;
+        public ThingDef queen;
 
         public Command_SetQueenList()
         {
@@ -28,46 +22,35 @@ namespace RimBees
             base.ProcessInput(ev);
             List<FloatMenuOption> list = new List<FloatMenuOption>();
 
-            foreach (BeeListDef element in DefDatabase<BeeListDef>.AllDefs)
+            foreach (BeeSpeciesDef element in DefDatabase<BeeSpeciesDef>.AllDefs)
             {
-                if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeQueenDef, true)).Count > 0)
+                if (map.listerThings.ThingsOfDef(element.queen).Count > 0)
                 {
-                    list.Add(new FloatMenuOption(element.beeQueenTag.Translate(), delegate
+                    list.Add(new FloatMenuOption(element.queen.LabelCap, delegate
                     {
-                        queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeQueenDef, true)).RandomElement();
+                        queen = element.queen;
                         this.TryInsertQueen();
                     }, MenuOptionPriority.Default, null, null, 29f, null, null));
                 }
 
             }
 
-            if (list.Count > 0) {
+            if (list.Count > 0)
+            {
                 list = list.OrderBy(item => item.Label).ToList();
+            }
+            else
+            {
+                list.Add(new FloatMenuOption("RB_NoQueens".Translate(), null, MenuOptionPriority.Default, null, null, 29f, null, null));
+            }
 
-            }
-            else {
-                list.Add(new FloatMenuOption("RB_NoQueens".Translate(), delegate
-                {
-                   
-                }, MenuOptionPriority.Default, null, null, 29f, null, null));
-            }
             Find.WindowStack.Add(new FloatMenu(list));
         }
 
         private void TryInsertQueen()
         {
-            Building_Beehouse buildingbeehouse = (Building_Beehouse)this.beehouse;
-            buildingbeehouse.BeehouseIsExpectingQueens = true;
-            buildingbeehouse.theQueenIAmGoingToInsert = queen.def.defName;
-
-        
+            beehouse.BeehouseIsExpectingQueens = true;
+            beehouse.theQueenIAmGoingToInsert = queen;
         }
-
-     
-
-
     }
-
-
 }
-

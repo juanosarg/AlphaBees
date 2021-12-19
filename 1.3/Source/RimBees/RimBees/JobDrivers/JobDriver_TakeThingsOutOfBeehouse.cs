@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
+using RimWorld;
 using Verse;
 using Verse.AI;
-using RimWorld;
-
 
 namespace RimBees
 {
     public class JobDriver_TakeThingsOutOfBeehouse : JobDriver
     {
-        private const TargetIndex BarrelInd = TargetIndex.A;
-
-
-        private Random rand = new Random();
-
-        private const int Duration = 200;
-
-     
-
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return this.pawn.Reserve(this.job.GetTarget(TargetIndex.A).Thing, this.job, 1, -1, null);
@@ -28,22 +16,19 @@ namespace RimBees
         {
             Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
             ThingDef resultingComb;
-           
-            int randomNumber = rand.Next(1, 3);
 
-            if (randomNumber == 1)
+            if (Rand.Chance(1f / 3f))
             {
                 resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
             }
-            else {
+            else
+            {
                 resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
-
             }
 
             return resultingComb; 
         }
 
-        [DebuggerHidden]
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
