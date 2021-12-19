@@ -26,6 +26,9 @@
 		<li>vanillaexpanded.achievements</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>me.lubar.RimBeesPatches</li> <!-- changes are integrated into RimBees -->
+	</incompatibleWith>
 	<description>Breed bees to generate all kinds of resources! 
 
 &lt;size=24&gt;Features&lt;/size&gt;
