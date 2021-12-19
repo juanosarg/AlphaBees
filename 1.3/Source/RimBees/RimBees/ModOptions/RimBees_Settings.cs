@@ -1,15 +1,10 @@
-﻿using RimWorld;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
-
 
 namespace RimBees
 {
     public class RimBees_Settings : ModSettings
-
     {
-
-
         public static bool RB_IgnoreNight = false;
         public static bool RB_IgnoreRain = false;
         public static bool RB_IgnoreTemperature = false;
@@ -20,10 +15,6 @@ namespace RimBees
         public static bool RB_Ben_ShowProgress = true;
         public static bool RB_Ben_KnownBees = true;
         public static bool RB_Ben_BeeDangerAlert = true;
-
-
-
-
 
         public override void ExposeData()
         {
@@ -39,10 +30,8 @@ namespace RimBees
             Scribe_Values.Look(ref RB_Ben_ShowProgress, "RB_Ben_ShowProgress", true, true);
             Scribe_Values.Look(ref RB_Ben_KnownBees, "RB_Ben_KnownBees", true, true);
             Scribe_Values.Look(ref RB_Ben_BeeDangerAlert, "RB_Ben_BeeDangerAlert", true, true);
-
-
-
         }
+
         public static void DoWindowContents(Rect inRect)
         {
             Listing_Standard ls = new Listing_Standard();
@@ -51,35 +40,16 @@ namespace RimBees
             ls.ColumnWidth = inRect.width / 1f;
 
             ls.CheckboxLabeled("RB_IgnoreNight".Translate(), ref RB_IgnoreNight, null);
-
             ls.CheckboxLabeled("RB_IgnoreRain".Translate(), ref RB_IgnoreRain, null);
-
             ls.CheckboxLabeled("RB_IgnoreTemperature".Translate(), ref RB_IgnoreTemperature, null);
-
             ls.CheckboxLabeled("RB_IgnorePlants".Translate(), ref RB_IgnorePlants, null);
-
             ls.CheckboxLabeled("RB_GreenhouseBees".Translate(), ref RB_GreenhouseBees, null);
-
             ls.CheckboxLabeled("RB_DisableMessages".Translate(), ref RB_DisableMessages, null);
-
             ls.CheckboxLabeled("BenLubarsRimBeesPatches_showMissingBees_title".Translate(), ref RB_Ben_ShowMissingBees, "BenLubarsRimBeesPatches_showMissingBees_desc".Translate());
-
             ls.CheckboxLabeled("BenLubarsRimBeesPatches_showProgress_title".Translate(), ref RB_Ben_ShowProgress, "BenLubarsRimBeesPatches_showProgress_desc".Translate());
-
             ls.CheckboxLabeled("BenLubarsRimBeesPatches_knownBees_title".Translate(), ref RB_Ben_KnownBees, "BenLubarsRimBeesPatches_knownBees_desc".Translate());
-
             ls.CheckboxLabeled("BenLubarsRimBeesPatches_beeDangerAlert_title".Translate(), ref RB_Ben_BeeDangerAlert, "BenLubarsRimBeesPatches_beeDangerAlert_desc".Translate());
-
-
             ls.End();
-
         }
-
-
-
-
     }
-
-   
-
 }

@@ -132,6 +132,7 @@
     <thingCategories>
       <li>RB_HoneyFoodProducts</li>
     </thingCategories>
+    <stackLimit>75</stackLimit>
     <statBases>
       <MarketValue>5</MarketValue>
       <Nutrition>0.05</Nutrition>
@@ -166,6 +167,7 @@
     <thingCategories>
       <li>RB_HoneyFoodProducts</li>
     </thingCategories>
+    <stackLimit>75</stackLimit>
     <statBases>
       <MarketValue>5</MarketValue>
       <Nutrition>0.05</Nutrition>

@@ -1,19 +1,16 @@
-﻿using System;
-using HarmonyLib;
-using Verse;
+﻿using Verse;
 
 namespace RimBees
 {
     [StaticConstructorOnStartup]
     public class CompHybridizationChamber: ThingComp
     {
-      
         public override void PostDraw()
         {
             if (RimBees_Settings.RB_Ben_ShowProgress)
             {
                 Building_HybridizationChamber hybridizationchamber = this.parent as Building_HybridizationChamber;
-                var progress = hybridizationchamber.tickCounter / (hybridizationchamber.ticksToDays * 3f);
+                var progress = hybridizationchamber.tickCounter / (Building_HybridizationChamber.ticksToDays * 3f);
                 if (hybridizationchamber.hybridizationChamberFull)
                 {
                     progress = 1f;
@@ -31,7 +28,5 @@ namespace RimBees
                 });
             }
         }
-
-
     }
 }

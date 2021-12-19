@@ -1,12 +1,10 @@
-﻿using RimWorld;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 
 namespace RimBees
 {
     public class CompBeeResearchImages : ThingComp
     {
-
         private CompProperties_BeeResearchImages Props
         {
             get

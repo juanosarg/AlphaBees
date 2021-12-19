@@ -627,7 +627,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<placeWorkers>
-			<li>RimBees.PlaceWorker_NextToBeeHouse</li>
+			<li>RimBees.PlaceWorker_NextToBeeHouseRight</li>
 		</placeWorkers>
 		<researchPrerequisites>
 			<li>RB_BeeBreeding</li>

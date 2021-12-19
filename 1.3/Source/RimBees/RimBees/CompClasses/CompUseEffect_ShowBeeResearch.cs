@@ -1,12 +1,10 @@
-﻿using UnityEngine;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
 
 namespace RimBees
 {
     public class CompUseEffect_ShowBeeResearch : CompUseEffect
     {
-       
         public Dialog_BeeResearch beeresearch;
 
         public override void DoEffect(Pawn user)
@@ -31,11 +29,13 @@ namespace RimBees
                 failReason = null;
                 return false;
             }
+
             if (p.skills.GetSkill(SkillDefOf.Intellectual).TotallyDisabled)
             {
                 failReason = "SkillDisabled".Translate();
                 return false;
             }
+
             return base.CanBeUsedBy(p, out failReason);
         }
     }

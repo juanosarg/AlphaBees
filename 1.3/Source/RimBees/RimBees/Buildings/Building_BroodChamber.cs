@@ -1,24 +1,15 @@
-﻿
-
+﻿using System.Collections.Generic;
+using System.Text;
 using Verse;
-using System.Collections.Generic;
-using UnityEngine;
-
-using System.Diagnostics;
-
-
 
 namespace RimBees
 {
     public class Building_BroodChamber : Building
     {
-
         public int tickCounter = 0;
         public int ticksToDays = 240;
         public int daysTotal = 3;
         public bool broodChamberFull = false;
-
-      
 
         public override void ExposeData()
         {
@@ -28,60 +19,58 @@ namespace RimBees
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
         }
 
-       
-
         public Building_Beehouse GetAdjacentBeehouse()
         {
-            Building_Beehouse result;
-           
-                
-                IntVec3 c = this.Position+ GenAdj.CardinalDirections[3];
-                Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
-                {
-                    result = edifice;
-                    return result;
-                }
-            
-            result = null;
-            return result;
+            var c = this.Position + IntVec3.West;
+            var edifice = c.GetEdifice(base.Map) as Building_Beehouse;
+            if (edifice?.TryGetComp<CompBeeHouse>()?.GetIsBeehouse == true)
+            {
+                return edifice;
+            }
+
+            return null;
         }
 
         public override string GetInspectString()
         {
-            string text = base.GetInspectString();
+            var text = new StringBuilder(base.GetInspectString());
+            text.AppendLineIfNotEmpty();
 
-            if (GetAdjacentBeehouse() != null)
+            var beehouse = GetAdjacentBeehouse();
+            if (beehouse == null)
             {
-                string strPercentProgress = ((float)tickCounter / ((ticksToDays) * daysTotal)).ToStringPercent();
-
-                if (GetAdjacentBeehouse().BeehouseIsRunning) {
-
-                    return text + "GU_AdjacentBeehouseRunning".Translate() + "\n" + "GU_BroodChamberProgress".Translate()+" "+ strPercentProgress;
-
-                } else return text + "GU_AdjacentBeehouseInactive".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + strPercentProgress +" (stopped)";
-
+                text.Append("GU_NoAdjacentBeehouse".Translate());
+                return text.ToString();
             }
-            else return text+"GU_NoAdjacentBeehouse".Translate();
+
+            text.Append(beehouse.BeehouseIsRunning ? "GU_AdjacentBeehouseRunning".Translate() : "GU_AdjacentBeehouseInactive".Translate());
+            text.Append("GU_BroodChamberProgress".Translate()).Append(" ");
+            text.Append(((float)tickCounter / (ticksToDays * daysTotal)).ToStringPercent());
+
+            if (!beehouse.BeehouseIsRunning)
+            {
+                text.Append(" ").Append("GU_BroodChamberStopped".Translate());
+            }
+
+            return text.ToString();
         }
 
         public override void TickRare()
         {
             base.TickRare();
-            if (GetAdjacentBeehouse() != null && GetAdjacentBeehouse().BeehouseIsRunning && !broodChamberFull)
+
+            if (GetAdjacentBeehouse()?.BeehouseIsRunning == true && !broodChamberFull)
             {
                 tickCounter++;
-                if (tickCounter > ((ticksToDays * daysTotal) - 1))
+                if (tickCounter > (ticksToDays * daysTotal) - 1)
                 {
                     SignalBroodChamberFull();
                 }
             }
-
         }
 
         public void SignalBroodChamberFull()
         {
-
             broodChamberFull = true;
         }
 
@@ -91,18 +80,19 @@ namespace RimBees
             {
                 yield return gizmo;
             }
+
             if (Prefs.DevMode)
             {
-                Command_Action command_Action = new Command_Action();
-                command_Action.defaultLabel = "Finish operation";
-                command_Action.action = delegate
+                yield return new Command_Action
                 {
-                    tickCounter = ticksToDays * daysTotal;
+                    defaultLabel = "Finish operation",
+                    action = delegate
+                    {
+                        tickCounter = ticksToDays * daysTotal;
+                        this.TickRare();
+                    }
                 };
-                yield return command_Action;
             }
         }
-
-
     }
 }

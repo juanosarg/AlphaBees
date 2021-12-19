@@ -53,7 +53,7 @@ namespace RimBees
                     var species = BeeSpecies[index];
                     if (species.Parent1 != null)
                     {
-                        if (result == BeeSpeciesDefOf.Amalgam)
+                        if (result == RimBeesDefOf.Amalgam)
                         {
                             continue;
                         }
@@ -160,10 +160,10 @@ namespace RimBees
                 return;
             }
 
-            if (species == BeeSpeciesDefOf.Amalgam)
+            if (species == RimBeesDefOf.Amalgam)
             {
-                LogAttempt(BeeSpeciesDefOf.Temperate, BeeSpeciesDefOf.Hybrid, BeeSpeciesDefOf.Amalgam);
-                LogAttempt(BeeSpeciesDefOf.Mild, BeeSpeciesDefOf.Hybrid, BeeSpeciesDefOf.Amalgam);
+                LogAttempt(RimBeesDefOf.Temperate, RimBeesDefOf.Hybrid, RimBeesDefOf.Amalgam);
+                LogAttempt(RimBeesDefOf.Mild, RimBeesDefOf.Hybrid, RimBeesDefOf.Amalgam);
             }
             else
             {

@@ -2,16 +2,16 @@
 
 namespace RimBees
 {
-    public class PlaceWorker_NextToBeeHouseLeft : PlaceWorker_NextToBeeHouse
+    public class PlaceWorker_NextToBeeHouseRight : PlaceWorker_NextToBeeHouse
     {
         protected override TaggedString GetFailureMessage()
         {
-            return "GU_PlaceNextToBeeHouseLeft".Translate();
+            return "GU_PlaceNextToBeeHouse".Translate();
         }
 
         protected override IntVec3 GetOffsetFromBeehouse(Rot4 rot)
         {
-            return rot.Opposite.RighthandCell;
+            return rot.RighthandCell;
         }
     }
 }

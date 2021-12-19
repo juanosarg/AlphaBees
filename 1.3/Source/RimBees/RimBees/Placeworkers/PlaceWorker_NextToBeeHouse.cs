@@ -1,66 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
 
 namespace RimBees
 {
-    public class PlaceWorker_NextToBeeHouse : PlaceWorker
+    public abstract class PlaceWorker_NextToBeeHouse : PlaceWorker
     {
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
         {
-            for (int i = 0; i < 4; i++)
+            var c = loc - GetOffsetFromBeehouse(rot);
+            if (!c.InBounds(map))
             {
-                //IntVec3 c = loc;
-                IntVec3 c = loc + GenAdj.CardinalDirections[i];
-                 if (i == 0)
-                 {
-                     c = loc;
-                 }
-                 else if (i == 1)
-                 {
-                    c = loc;
+                return GetFailureMessage();
+            }
 
-                 }
-                 else if (i == 2)
-                 {
-                     c = loc;
-                 }
-                 else if (i == 3)
-                 {
-                    c = loc + GenAdj.CardinalDirections[3]; 
-                }
-                if (c.InBounds(map))
+            var edifice = c.GetEdifice(map);
+            if (edifice is Building_Beehouse beehouse)
+            {
+                if (beehouse.Rotation == rot)
                 {
-                    List<Thing> thingList = c.GetThingList(map);
-                    for (int j = 0; j < thingList.Count; j++)
-                    {
-                        Thing ParticularThing = thingList[j];
-                        ThingDef thingDef = GenConstruct.BuiltDefOf(ParticularThing.def) as ThingDef;
-                        
-                        if (thingDef != null && thingDef.building != null)
-                        {
-                            
-                            if (thingDef.building.wantsHopperAdjacent)
-                            {
-                                CompBeeHouse comp = ParticularThing.TryGetComp<CompBeeHouse>();
-                                if (comp != null)
-                                {
-                                    if (comp.GetIsBeehouse)
-                                    {
-                                        return true;
-                                    }
+                    return true;
+                }
 
-                                }
-                                else return "RB_BeehouseNotYetBuilt".Translate();
+                return GetFailureMessage();
+            }
 
+            if (edifice == null)
+            {
+                return GetFailureMessage();
+            }
 
-                            }
-                        }
-                    }
+            if (GenConstruct.BuiltDefOf(edifice.def) is ThingDef thingDef)
+            {
+                if (thingDef.GetCompProperties<CompProperties_BeeHouse>() != null && edifice.Rotation == rot)
+                {
+                    return "RB_BeehouseNotYetBuilt".Translate();
                 }
             }
-            return "GU_PlaceNextToBeeHouse".Translate();
+
+            return GetFailureMessage();
         }
+
+        protected abstract IntVec3 GetOffsetFromBeehouse(Rot4 rot);
+        protected abstract TaggedString GetFailureMessage();
     }
 }

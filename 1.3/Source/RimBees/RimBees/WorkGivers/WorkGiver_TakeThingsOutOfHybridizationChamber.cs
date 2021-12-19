@@ -1,7 +1,6 @@
-﻿using System;
+﻿using RimWorld;
 using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace RimBees
 {
@@ -11,7 +10,7 @@ namespace RimBees
         {
             get
             {
-                return ThingRequest.ForDef(DefDatabase<ThingDef>.GetNamed("RB_HybridizationChamber", true));
+                return ThingRequest.ForDef(RimBeesDefOf.RB_HybridizationChamber);
             }
         }
 
@@ -25,35 +24,18 @@ namespace RimBees
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            Building_HybridizationChamber building_hybridizationchamber = t as Building_HybridizationChamber;
-            bool result;
-            if (building_hybridizationchamber == null || !building_hybridizationchamber.hybridizationChamberFull)
+            var chamber = t as Building_HybridizationChamber;
+            if (chamber?.hybridizationChamberFull != true)
             {
-                result = false;
+                return false;
             }
-            else if (t.IsBurning())
-            {
-                result = false;
-            }
-            else
-            {
-                if (!t.IsForbidden(pawn))
-                {
-                    LocalTargetInfo target = t;
-                    if (pawn.CanReserve(target, 1, -1, null, forced))
-                    {
-                        result = true;
-                        return result;
-                    }
-                }
-                result = false;
-            }
-            return result;
+
+            return !t.IsBurning() && !t.IsForbidden(pawn) && pawn.CanReserve(t, ignoreOtherReservations: forced);
         }
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return new Job(DefDatabase<JobDef>.GetNamed("RB_TakeThingsOutOfHybridizationChamberJob", true), t);
+            return new Job(RimBeesDefOf.RB_TakeThingsOutOfHybridizationChamberJob, t);
         }
     }
 }

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
 
 namespace RimBees
 {
@@ -9,11 +7,16 @@ namespace RimBees
     {
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            Map map = (Map)parms.target;
-            List<Thing> things = DefDatabase<ThingSetMakerDef>.GetNamed("RB_BeeResourcePod").root.Generate();
-            IntVec3 intVec = DropCellFinder.RandomDropSpot(map);
-            DropPodUtility.DropThingsNear(intVec, map, things, 110, false, true, true, true);
-            base.SendStandardLetter("RB_LetterLabelBeeCargoPodCrash".Translate(), "RB_BeeCargoPodCrash".Translate(), LetterDefOf.PositiveEvent, parms, new TargetInfo(intVec, map, false), Array.Empty<NamedArgument>());
+            var map = (Map)parms.target;
+            var contents = RimBeesDefOf.RB_BeeResourcePod.root.Generate(new ThingSetMakerParams
+            {
+                totalMarketValueRange = new FloatRange(150f, 600f),
+            });
+            var position = DropCellFinder.RandomDropSpot(map);
+
+            DropPodUtility.DropThingsNear(position, map, contents, 110, false, true, true, true);
+            this.SendStandardLetter("RB_LetterLabelBeeCargoPodCrash".Translate(), "RB_BeeCargoPodCrash".Translate(), LetterDefOf.PositiveEvent, parms, new TargetInfo(position, map, false));
+
             return true;
         }
     }

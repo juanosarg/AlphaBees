@@ -23,9 +23,10 @@
 	<RB_BeehouseContainsDrone>Drone</RB_BeehouseContainsDrone>
 	<RB_BeehouseContainsQueen>Queen</RB_BeehouseContainsQueen>
 	<RB_BeehouseNonePresent>None present</RB_BeehouseNonePresent>
-	<RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress>
+	<RB_BeehouseCombProgress>Comb progress</RB_BeehouseCombProgress> <!-- legacy -->
+	<RB_BeehouseCombProgress2>Comb progress: {PERCENT} (approx. {DAYS} days)</RB_BeehouseCombProgress2>
 	<RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
-	<RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
+	<RB_BeehouseCombNoProgressNight>Stopped due to being nighttime</RB_BeehouseCombNoProgressNight>
 	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
 	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature> <!-- legacy -->
 	<RB_BeehouseCombNoProgressTemperatureRange>Stopped due to temperature (needs {MIN}-{MAX}ºC)</RB_BeehouseCombNoProgressTemperatureRange>
@@ -45,6 +46,7 @@
 	<GU_AdjacentBeehouseInactive>Adjacent beehouse is inactive right now</GU_AdjacentBeehouseInactive>
 	<GU_AdjacentBeehouseRunning>The brood chamber is attached to a beehouse, and will occasionally produce drones and queens of one of the bee species present on it</GU_AdjacentBeehouseRunning>
 	<GU_BroodChamberProgress>Progress:</GU_BroodChamberProgress>
+	<GU_BroodChamberStopped>(stopped)</GU_BroodChamberStopped>
 	<RB_CommandBeehouseMakeGrowingZoneDesc>Create a growing zone around this beehouse exactly matching the shape of the bee's influence over crop harvests.</RB_CommandBeehouseMakeGrowingZoneDesc>
 
 
@@ -52,8 +54,9 @@
 	<GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
 
 	<GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
-	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
-	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
+	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning> <!-- legacy -->
+	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped> <!-- legacy -->
+	<GU_HybridMutationsProgress>Mutations are random, happening between 1 to 3 days (currently {DAYS} days)</GU_HybridMutationsProgress>
 	
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 	<RB_Hybrid>A new mutant bee, {0}, has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>

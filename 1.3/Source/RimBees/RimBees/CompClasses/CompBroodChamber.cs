@@ -1,14 +1,10 @@
-﻿using System;
-using HarmonyLib;
-using Verse;
+﻿using Verse;
 
 namespace RimBees
 {
     [StaticConstructorOnStartup]
     public class CompBroodChamber : ThingComp
     {
-      
-
         public override void PostDraw()
         {
             if (RimBees_Settings.RB_Ben_ShowProgress)

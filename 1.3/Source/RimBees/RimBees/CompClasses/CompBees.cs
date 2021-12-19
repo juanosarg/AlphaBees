@@ -4,8 +4,6 @@ namespace RimBees
 {
     public class CompBees : ThingComp
     {
-
-
         public CompProperties_Bees Props
         {
             get
@@ -77,8 +75,5 @@ namespace RimBees
                 return this.Props.tempMax;
             }
         }
-
-
     }
 }
-

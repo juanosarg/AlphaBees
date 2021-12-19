@@ -1,18 +1,15 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
-
 
 namespace RimBees
 {
     public class Building_Beehouse : Building, IThingHolder
     {
-
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
         public bool BeehouseIsRunning = false;
@@ -45,8 +42,6 @@ namespace RimBees
 
         protected bool contentsKnown = false;
         protected bool contentsKnownQueens = false;
-
-        public Map map;
 
         public Building_Beehouse()
         {
@@ -91,73 +86,69 @@ namespace RimBees
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
-            map = this.Map;
             foreach (Gizmo g in base.GetGizmos())
             {
                 yield return g;
             }
+
             if (this.BeehouseIsExpectingBees)
             {
-                Command_Action RB_Gizmo_Drones_Waiting = new Command_Action();
-                RB_Gizmo_Drones_Waiting.action = delegate
+                yield return new Command_Action
                 {
-
-
+                    action = delegate { },
+                    disabled = true,
+                    defaultLabel = "RB_InsertBees".Translate(),
+                    defaultDesc = "RB_InsertBeesDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/RB_Drones_Waiting", true)
                 };
-                RB_Gizmo_Drones_Waiting.defaultLabel = "RB_InsertBees".Translate();
-                RB_Gizmo_Drones_Waiting.defaultDesc = "RB_InsertBeesDesc".Translate();
-                RB_Gizmo_Drones_Waiting.icon = ContentFinder<Texture2D>.Get("UI/RB_Drones_Waiting", true);
-                yield return RB_Gizmo_Drones_Waiting;
             }
             else if (innerContainerDrones.NullOrEmpty())
             {
-                yield return BeeListSetupUtility.SetBeeListCommand(this, map);
+                yield return BeeListSetupUtility.SetBeeListCommand(this);
             }
             else
             {
-                Command_Action RB_Gizmo_Empty_Drones = new Command_Action();
-                RB_Gizmo_Empty_Drones.action = delegate
+                yield return new Command_Action
                 {
-                    this.EjectContents();
-
+                    action = delegate
+                    {
+                        this.EjectContents();
+                    },
+                    defaultLabel = "RB_ExtractBees".Translate(),
+                    defaultDesc = "RB_ExtractBeesDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/RB_ExtractDrones_FromBeehouse", true)
                 };
-                RB_Gizmo_Empty_Drones.defaultLabel = "RB_ExtractBees".Translate();
-                RB_Gizmo_Empty_Drones.defaultDesc = "RB_ExtractBeesDesc".Translate();
-                RB_Gizmo_Empty_Drones.icon = ContentFinder<Texture2D>.Get("UI/RB_ExtractDrones_FromBeehouse", true);
-                yield return RB_Gizmo_Empty_Drones;
             }
 
             if (this.BeehouseIsExpectingQueens)
             {
-                Command_Action RB_Gizmo_Queens_Waiting = new Command_Action();
-                RB_Gizmo_Queens_Waiting.action = delegate
+                yield return new Command_Action
                 {
-
-
+                    action = delegate { },
+                    disabled = true,
+                    defaultLabel = "RB_InsertQueens".Translate(),
+                    defaultDesc = "RB_InsertQueensDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/RB_Queens_Waiting", true)
                 };
-                RB_Gizmo_Queens_Waiting.defaultLabel = "RB_InsertQueens".Translate();
-                RB_Gizmo_Queens_Waiting.defaultDesc = "RB_InsertQueensDesc".Translate();
-                RB_Gizmo_Queens_Waiting.icon = ContentFinder<Texture2D>.Get("UI/RB_Queens_Waiting", true);
-                yield return RB_Gizmo_Queens_Waiting;
             }
-            else
-            if (innerContainerQueens.NullOrEmpty())
+            else if (innerContainerQueens.NullOrEmpty())
             {
-                yield return BeeListSetupUtility.SetQueenListCommand(this, map);
+                yield return BeeListSetupUtility.SetQueenListCommand(this);
             }
             else
             {
-                Command_Action RB_Gizmo_Empty_Queens = new Command_Action();
-                RB_Gizmo_Empty_Queens.action = delegate
+                yield return new Command_Action
                 {
-                    this.EjectContentsQueens();
-
+                    action = delegate
+                    {
+                        this.EjectContentsQueens();
+                    },
+                    defaultLabel = "RB_ExtractQueens".Translate(),
+                    defaultDesc = "RB_ExtractQueensDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/RB_ExtractQueens_FromBeehouse", true)
                 };
-                RB_Gizmo_Empty_Queens.defaultLabel = "RB_ExtractQueens".Translate();
-                RB_Gizmo_Empty_Queens.defaultDesc = "RB_ExtractQueensDesc".Translate();
-                RB_Gizmo_Empty_Queens.icon = ContentFinder<Texture2D>.Get("UI/RB_ExtractQueens_FromBeehouse", true);
-                yield return RB_Gizmo_Empty_Queens;
             }
+
             if (DesignatorUtility.FindAllowedDesignator<Designator_ZoneAdd_Growing>() != null)
             {
                 yield return new Command_Action
@@ -173,76 +164,70 @@ namespace RimBees
 
         public override string GetInspectString()
         {
-            string text = base.GetInspectString();
-            string strContentDrones;
-            string strContentQueens;
-            string strPercentProgress;
-            string strDaysProgress;
-            string strStoppedBecause = "";
+            var text = new StringBuilder(base.GetInspectString());
+            text.AppendLineIfNotEmpty();
 
-            string strToAddSpaceIfElectricityUsed = "";
+            text.Append("RB_BeehouseContainsDrone".Translate()).Append(": ");
 
-            if (this.TryGetComp<CompBeeHouse>().GetIsElectricBeehouse)
+            var drone = innerContainerDrones.FirstOrFallback();
+            if (drone == null)
             {
-                strToAddSpaceIfElectricityUsed = "\n";
+                text.Append("RB_BeehouseNonePresent".Translate());
+            }
+            else
+            {
+                text.Append(drone.def.LabelCap);
             }
 
-            if (!innerContainerDrones.NullOrEmpty())
-            {
-                //str = innerContainerDrones.RandomElement().def.label;
-                strContentDrones = innerContainerDrones.FirstOrFallback().def.label;
+            text.Append("      ").Append("RB_BeehouseContainsQueen".Translate()).Append(": ");
 
+            var queen = innerContainerQueens.FirstOrFallback();
+            if (drone == null)
+            {
+                text.Append("RB_BeehouseNonePresent".Translate());
             }
-            else { strContentDrones = "RB_BeehouseNonePresent".Translate(); }
-
-            if (!innerContainerQueens.NullOrEmpty())
+            else
             {
-                strContentQueens = innerContainerQueens.FirstOrFallback().def.label;
+                text.Append(queen.def.LabelCap);
             }
-            else { strContentQueens = "RB_BeehouseNonePresent".Translate(); }
 
-            if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
+            text.AppendLine();
+
+            if (drone == null || queen == null)
             {
-                //str3 = (((float)tickCounter/240)*100).ToString();
-                strPercentProgress = ((float)tickCounter / ((ticksToDays) * CalculateTheTicksAverage())).ToStringPercent();
-                strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
+                text.Append("RB_BeehouseCombNoProgress".Translate());
+            }
+            else
+            {
+                var avgTicks = CalculateTheTicksAverage();
+                text.Append("RB_BeehouseCombProgress2".Translate((tickCounter / (ticksToDays * avgTicks)).ToStringPercent().Named("PERCENT"), avgTicks.ToString("N1").Named("DAYS")));
+
                 if (flagInitializeConditions)
                 {
                     if (!flagPower)
                     {
-                        strStoppedBecause = "\n" + "RB_BeehouseNoPower".Translate();
+                        text.AppendLine().Append("RB_BeehouseNoPower".Translate());
                     }
-                    else
-                    if (!flagLight)
+                    else if (!flagLight)
                     {
-                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
+                        text.AppendLine().Append("RB_BeehouseCombNoProgressNight".Translate());
                     }
-                    else
-                    if (!flagRain)
+                    else if (!flagRain)
                     {
-                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
+                        text.AppendLine().Append("RB_BeehouseCombNoProgressRain".Translate());
                     }
-                    else
-                    if (!flagTemperature)
+                    else if (!flagTemperature)
                     {
-                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressTemperatureRange".Translate(avgTempMin.Named("MIN"), avgTempMax.Named("MAX"));
+                        text.AppendLine().Append("RB_BeehouseCombNoProgressTemperatureRange".Translate(avgTempMin.Named("MIN"), avgTempMax.Named("MAX")));
                     }
-                    else
-                    if (!flagPlants)
+                    else if (!flagPlants)
                     {
-                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressPlants".Translate(whichPlantNeeds.Named("PLANT"));
+                        text.AppendLine().Append("RB_BeehouseCombNoProgressPlants".Translate(whichPlantNeeds.Named("PLANT")));
                     }
                 }
             }
-            else
-            {
-                strPercentProgress = "RB_BeehouseCombNoProgress".Translate();
-                strDaysProgress = "";
-            }
 
-            return text + strToAddSpaceIfElectricityUsed + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
-                + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
-                "RB_BeehouseCombProgress".Translate() + ": " + strPercentProgress + strDaysProgress + strStoppedBecause;
+            return text.ToString();
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
@@ -510,10 +495,9 @@ namespace RimBees
 
         private void MakeMatchingGrowZone()
         {
-            Designator designator = DesignatorUtility.FindAllowedDesignator<Designator_ZoneAdd_Growing>();
-            designator.DesignateMultiCell(from tempCell in GrowableCells
-                                          where designator.CanDesignateCell(tempCell).Accepted
-                                          select tempCell);
+            var designator = DesignatorUtility.FindAllowedDesignator<Designator_ZoneAdd_Growing>();
+            var actuallyGrowableCells = GrowableCells.Where(c => designator.CanDesignateCell(c));
+            designator.DesignateMultiCell(actuallyGrowableCells);
         }
 
         public IEnumerable<IntVec3> GrowableCells

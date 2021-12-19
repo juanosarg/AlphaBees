@@ -1,5 +1,4 @@
-﻿
-using Verse;
+﻿using Verse;
 
 namespace RimBees
 {
@@ -7,9 +6,8 @@ namespace RimBees
     {
         public string labelString;
 
-        public CompProperties_RandomResearch()
+        public CompProperties_RandomResearch() : base(typeof(CompRandomResearch))
         {
-            this.compClass = typeof(CompRandomResearch);
         }
     }
 }

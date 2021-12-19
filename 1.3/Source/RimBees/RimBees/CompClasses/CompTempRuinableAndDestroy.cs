@@ -59,6 +59,7 @@ namespace RimBees
                 {
                     this.ruinedPercent -= (ambientTemperature - this.Props.minSafeTemperature) * this.Props.progressPerDegreePerTick * (float)ticks;
                 }
+
                 if (this.ruinedPercent >= 1f)
                 {
                     this.ruinedPercent = 1f;

@@ -1,13 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
-
-  <ThingSetMakerDef>
-    <defName>RB_BeeResourcePod</defName>
-    <root Class="RimBees.ThingSetMaker_BeeResourcePod" />
-  </ThingSetMakerDef>
-
-  
-  
+	<ThingSetMakerDef>
+		<defName>RB_BeeResourcePod</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>RB_NondescriptMeat</li>
+						<li>RB_NonDescriptVegetables</li>
+						<li>RB_BeeMilk</li>
+						<li>RB_BeeEggs</li>
+						<li>RB_ComponentBioInterface</li>
+						<li>RB_Must</li>
+						<li>RB_Mead</li>
+					</thingDefs>
+					<categories>
+						<li>RB_Beekeeping</li>
+						<li>RB_BeesAndQueens</li>
+						<li>RB_BeeswaxCategory</li>
+						<li>RB_Combs</li>
+						<li>RB_HoneyFoodProducts</li>
+						<li>RB_Honeys</li>
+					</categories>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
 </Defs>

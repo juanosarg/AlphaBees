@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using Verse;
 
@@ -7,8 +8,8 @@ namespace RimBees
     public class Building_HybridizationChamber : Building
     {
         public int tickCounter = 0;
-        public int ticksToDays = 240;
-        public int daysTotal = 3;
+        public const int ticksToDays = 240;
+        public int daysTotal = 0;
         public int numOfCombinationsFromXML = 1;
         public BeeSpeciesDef hybridizedBee;
         public bool hybridizationChamberFull = false;
@@ -16,7 +17,11 @@ namespace RimBees
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            RandomizeDays();
+
+            if (daysTotal == 0)
+            {
+                RandomizeDays();
+            }
         }
 
         public void RandomizeDays()
@@ -29,79 +34,94 @@ namespace RimBees
             base.ExposeData();
 
             Scribe_Values.Look(ref this.hybridizationChamberFull, "hybridizationChamberFull");
+            Scribe_Values.Look(ref this.daysTotal, "daysTotal");
             Scribe_Values.Look(ref this.tickCounter, "tickCounter");
+            Scribe_Values.Look(ref this.numOfCombinationsFromXML, "numOfCombinationsFromXML");
             Scribe_Defs.Look(ref this.hybridizedBee, "hybridizedBee");
-
         }
-
 
         public Building_Beehouse GetAdjacentBeehouse()
         {
-            Building_Beehouse result;
-
-            IntVec3 c = this.Position + GenAdj.CardinalDirections[1];
-            var edifice = c.GetEdifice(base.Map) as Building_Beehouse;
-            if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
+            var c = this.Position + IntVec3.East;
+            var edifice = c.GetEdifice(this.Map) as Building_Beehouse;
+            if (edifice?.TryGetComp<CompBeeHouse>()?.GetIsBeehouse == true)
             {
-                result = edifice;
-                return result;
+                return edifice;
             }
 
-            result = null;
-            return result;
+            return null;
         }
 
         public override string GetInspectString()
         {
+            var text = new StringBuilder(base.GetInspectString());
+            text.AppendLineIfNotEmpty();
 
-            if (GetAdjacentBeehouse() != null)
+            var beehouse = GetAdjacentBeehouse();
+            if (beehouse == null)
             {
-                if (GetAdjacentBeehouse().BeehouseIsRunning)
-                {
-                    return "GU_AdjacentBeehouseRunningHybridization".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsRunning".Translate();
-                }
-                else return "GU_AdjacentBeehouseInactive".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsStopped".Translate();
-
+                text.Append("GU_NoAdjacentBeehouseHybridization".Translate());
+                return text.ToString();
             }
-            else return "GU_NoAdjacentBeehouseHybridization".Translate();
+
+            if (hybridizationChamberFull)
+            {
+                text.Append(GetHybridizedBeeMessage());
+            }
+            else
+            {
+                text.Append(beehouse.BeehouseIsRunning ? "GU_AdjacentBeehouseRunningHybridization".Translate() : "GU_AdjacentBeehouseInactive".Translate());
+                text.AppendLine();
+                text.Append("GU_HybridMutationsProgress".Translate(((float)tickCounter / ticksToDays).ToString("N1").Named("DAYS")));
+            }
+
+            return text.ToString();
         }
 
         public override void TickRare()
         {
             base.TickRare();
-            if (GetAdjacentBeehouse() != null && GetAdjacentBeehouse().BeehouseIsRunning && !hybridizationChamberFull)
+            if (GetAdjacentBeehouse()?.BeehouseIsRunning == true && !hybridizationChamberFull)
             {
                 tickCounter++;
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))
                 {
+                    var messageType = MessageTypeDefOf.TaskCompletion;
+
                     hybridizedBee = HybridizationChecker();
                     if (hybridizedBee != null)
                     {
-                        if (!RimBees_Settings.RB_DisableMessages)
-                        {
-                            switch (numOfCombinationsFromXML)
-                            {
-                                case 1:
-                                    Messages.Message("RB_Hybrid".Translate(hybridizedBee.LabelCap), this, MessageTypeDefOf.TaskCompletion);
-                                    break;
-
-                                default:
-                                    Messages.Message("RB_HybridNumberAlert".Translate(numOfCombinationsFromXML - 1, hybridizedBee.LabelCap), this, MessageTypeDefOf.TaskCompletion);
-                                    break;
-                            }
-                        }
-
                         SignalHybridizationChamberFull();
-                        RandomizeDays();
                     }
                     else
                     {
-                        Messages.Message("RB_NoHybrid".Translate(), this, MessageTypeDefOf.NegativeEvent);
                         tickCounter = 0;
-                        RandomizeDays();
+                        messageType = MessageTypeDefOf.NegativeEvent;
+                    }
+
+                    RandomizeDays();
+
+                    if (!RimBees_Settings.RB_DisableMessages)
+                    {
+                        Messages.Message(GetHybridizedBeeMessage(), this, messageType);
                     }
                 }
             }
+        }
+
+        public string GetHybridizedBeeMessage()
+        {
+            if (hybridizedBee == null)
+            {
+                return "RB_NoHybrid".Translate();
+            }
+
+            if (numOfCombinationsFromXML == 1)
+            {
+                return "RB_Hybrid".Translate(hybridizedBee.LabelCap);
+            }
+
+            return "RB_HybridNumberAlert".Translate(numOfCombinationsFromXML - 1, hybridizedBee.LabelCap);
         }
 
         public void SignalHybridizationChamberFull()
@@ -111,25 +131,23 @@ namespace RimBees
 
         public BeeSpeciesDef HybridizationChecker()
         {
-            BeeSpeciesDef beeDrone = null;
-            BeeSpeciesDef beeQueen = null;
-            if ((this.GetAdjacentBeehouse().innerContainerDrones.TotalStackCount > 0) && (this.GetAdjacentBeehouse().innerContainerQueens.TotalStackCount > 0))
+            var beehouse = GetAdjacentBeehouse();
+            var drone = beehouse?.innerContainerDrones.FirstOrFallback()?.TryGetComp<CompBees>()?.GetSpecies;
+            var queen = beehouse?.innerContainerQueens.FirstOrFallback()?.TryGetComp<CompBees>()?.GetSpecies;
+
+            foreach (var combo in DefDatabase<BeeCombinationDef>.AllDefs)
             {
-                beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
-                beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
-            }
-            foreach (BeeCombinationDef element in DefDatabase<BeeCombinationDef>.AllDefs)
-            {
-                if ((beeDrone == element.bee1 && beeQueen == element.bee2) || (beeDrone == element.bee2 && beeQueen == element.bee1))
+                if ((drone == combo.bee1 && queen == combo.bee2) || (drone == combo.bee2 && queen == combo.bee1))
                 {
-                    numOfCombinationsFromXML = element.result.Count;
-                    var result = element.result.RandomElement();
-                    GameComponent_KnownBees.Instance.LogAttempt(beeQueen, beeDrone, result);
+                    numOfCombinationsFromXML = combo.result.Count;
+                    var result = combo.result.RandomElement();
+                    GameComponent_KnownBees.Instance.LogAttempt(queen, drone, result);
                     return result;
                 }
             }
 
-            GameComponent_KnownBees.Instance.LogAttempt(beeQueen, beeDrone, null);
+            numOfCombinationsFromXML = 0;
+            GameComponent_KnownBees.Instance.LogAttempt(queen, drone, null);
             return null;
         }
 
@@ -139,17 +157,19 @@ namespace RimBees
             {
                 yield return gizmo;
             }
+
             if (Prefs.DevMode)
             {
-                Command_Action command_Action = new Command_Action();
-                command_Action.defaultLabel = "Finish operation";
-                command_Action.action = delegate
+                yield return new Command_Action
                 {
-                    tickCounter = ticksToDays * daysTotal;
+                    defaultLabel = "Finish operation",
+                    action = delegate
+                    {
+                        tickCounter = ticksToDays * daysTotal;
+                        this.TickRare();
+                    }
                 };
-                yield return command_Action;
             }
         }
-
     }
 }

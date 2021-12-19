@@ -1,7 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
-using RimWorld;
 
 namespace RimBees
 {
@@ -9,7 +7,6 @@ namespace RimBees
     {
         public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
         {
-            
             GenDraw.DrawRadiusRing(center, 6);
         }
     }

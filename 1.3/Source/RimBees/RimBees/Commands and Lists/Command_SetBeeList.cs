@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -8,9 +7,7 @@ namespace RimBees
     [StaticConstructorOnStartup]
     public class Command_SetBeeList : Command
     {
-        public Map map;
         public Building_Beehouse beehouse;
-        public ThingDef drone;
 
         public Command_SetBeeList()
         {
@@ -19,33 +16,33 @@ namespace RimBees
         public override void ProcessInput(Event ev)
         {
             base.ProcessInput(ev);
-            List<FloatMenuOption> list = new List<FloatMenuOption>();
 
-            foreach (BeeSpeciesDef element in DefDatabase<BeeSpeciesDef>.AllDefs)
+            var options = new List<FloatMenuOption>();
+
+            foreach (var species in DefDatabase<BeeSpeciesDef>.AllDefs)
             {
-                if (map.listerThings.ThingsOfDef(element.drone).Count > 0)
+                if (beehouse.Map.listerThings.ThingsOfDef(species.drone).Count > 0)
                 {
-                    list.Add(new FloatMenuOption(element.drone.LabelCap, delegate
+                    options.Add(new FloatMenuOption(species.drone.LabelCap, delegate
                     {
-                        drone = element.drone;
-                        this.TryInsertDrone();
-                    }, MenuOptionPriority.Default, null, null, 29f, null, null));
+                        this.TryInsertDrone(species.drone);
+                    }, extraPartWidth: 29f));
                 }
             }
 
-            if (list.Count > 0)
+            if (options.Count > 0)
             {
-                list = list.OrderBy(item => item.Label).ToList();
+                options.SortBy(item => item.Label);
             }
             else
             {
-                list.Add(new FloatMenuOption("RB_NoBees".Translate(), null, MenuOptionPriority.Default, null, null, 29f, null, null));
+                options.Add(new FloatMenuOption("RB_NoBees".Translate(), null, extraPartWidth: 29f));
             }
 
-            Find.WindowStack.Add(new FloatMenu(list));
+            Find.WindowStack.Add(new FloatMenu(options));
         }
 
-        private void TryInsertDrone()
+        private void TryInsertDrone(ThingDef drone)
         {
             beehouse.BeehouseIsExpectingBees = true;
             beehouse.theDroneIAmGoingToInsert = drone;

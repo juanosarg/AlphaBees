@@ -15,6 +15,11 @@ namespace RimBees
                 yield return error;
             }
 
+            if (label == null)
+            {
+                yield return "missing label";
+            }
+
             var droneComp = drone?.GetCompProperties<CompProperties_Bees>();
             if (drone == null)
             {
@@ -45,4 +50,3 @@ namespace RimBees
         }
     }
 }
-

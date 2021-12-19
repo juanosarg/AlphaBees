@@ -1,15 +1,12 @@
-﻿using Verse;
-using System;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
-
+using Verse;
 
 namespace RimBees
 {
     [StaticConstructorOnStartup]
     class CompBeeHouse : ThingComp
     {
-
         private static readonly Material DroneMat = MaterialPool.MatFrom("Things/Item/Bees/RB_Bee_Temperate_Drone", ShaderDatabase.MetaOverlay);
         private static readonly Material OutOfFuelMat = MaterialPool.MatFrom("UI/Overlays/OutOfFuel", ShaderDatabase.MetaOverlay);
 
@@ -188,8 +185,5 @@ namespace RimBees
             drawPos.y += 3f / 74f;
             Graphics.DrawMesh(mesh, Matrix4x4.TRS(drawPos, Quaternion.identity, Vector3.one), fadedMat2, 0);
         }
-
-
     }
 }
-
