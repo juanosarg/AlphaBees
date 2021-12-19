@@ -161,7 +161,7 @@ namespace RimBees
 
         private void BackfillSpecies(Thing thing)
         {
-            var name = BenLubarsRimBeesPatches.GetBeeSpecies(thing);
+            var name = thing.TryGetComp<CompBees>().GetSpecies;
            
             BeeSpeciesData species = new BeeSpeciesData();
             try { species = BeeSpecies[BeeSpeciesInv[name]];

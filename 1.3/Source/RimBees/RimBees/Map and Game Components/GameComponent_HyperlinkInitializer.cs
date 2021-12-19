@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace RimBees
 {
     class GameComponent_HyperlinkInitializer: GameComponent
     {
-
-        internal static readonly Type CompProperties_Bees = Type.GetType("RimBees.CompProperties_Bees,RimBees");
-
         public GameComponent_HyperlinkInitializer(Game game)
         {
         }
@@ -36,36 +30,31 @@ namespace RimBees
 
             def.descriptionHyperlinks.Add(other);
 
-            foreach (var comp in def.comps)
+            var comp = def.GetCompProperties<CompProperties_Bees>();
+            if (comp != null)
             {
-                if (CompProperties_Bees.IsInstanceOfType(comp))
+                var combDef = DefDatabase<ThingDef>.GetNamed(comp.comb);
+                def.descriptionHyperlinks.Add(combDef);
+
+                var weirdPlantName = comp.weirdplantneeded;
+                if (weirdPlantName != "no")
                 {
-                    var combDef = DefDatabase<ThingDef>.GetNamed(BenLubarsRimBeesPatches.comb(comp));
-                    def.descriptionHyperlinks.Add(combDef);
+                    def.descriptionHyperlinks.Add(DefDatabase<ThingDef>.GetNamed(weirdPlantName));
+                }
 
-                    var weirdPlantName = BenLubarsRimBeesPatches.weirdplantneeded(comp);
-                    if (weirdPlantName != "no")
+                if (processedCombs.Add(combDef))
+                {
+                    if (combDef.descriptionHyperlinks == null)
                     {
-                        def.descriptionHyperlinks.Add(DefDatabase<ThingDef>.GetNamed(weirdPlantName));
+                        combDef.descriptionHyperlinks = new List<DefHyperlink>();
                     }
 
-                    if (processedCombs.Add(combDef))
+                    foreach (var product in combDef.butcherProducts)
                     {
-                        if (combDef.descriptionHyperlinks == null)
-                        {
-                            combDef.descriptionHyperlinks = new List<DefHyperlink>();
-                        }
-
-                        foreach (var product in combDef.butcherProducts)
-                        {
-                            combDef.descriptionHyperlinks.Add(product.thingDef);
-                        }
+                        combDef.descriptionHyperlinks.Add(product.thingDef);
                     }
-
-                    break;
                 }
             }
         }
-
     }
 }
