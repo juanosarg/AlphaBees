@@ -13,8 +13,8 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -70,8 +70,8 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>

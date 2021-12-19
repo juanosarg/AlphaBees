@@ -16,8 +16,8 @@
 		<workAmount>1000</workAmount>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<recipeUsers>
-			<li>Brewery</li>	
-	    </recipeUsers>	
+			<li>Brewery</li>
+	    </recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

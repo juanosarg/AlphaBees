@@ -8,9 +8,9 @@
 		<description>Archo bees are the pinnacle of bee evolution. Fast, efficient, sexy.\n\nBee Traits:\n\nProduction time: 18 hours\nNocturnal: Yes\nPluviophile: Yes\nUnusual plants needed: None\nMinimum Temperature: -10ºC\nMaximum temperature: 40ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Archo</species>
 				<comb>RB_Archo_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-10</tempMin>
 				<tempMax>40</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>archo drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Archo_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_ArchoBeeBase">
 		<defName>RB_Bee_Archo_Queen</defName>
 		<label>archo queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Archo_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 </Defs>

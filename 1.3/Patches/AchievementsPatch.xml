@@ -11,7 +11,7 @@
 			<operations>
 
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
 
@@ -20,7 +20,7 @@
 							<label>RimBees</label>
 						</AchievementsExpanded.AchievementTabDef>
 
-						<AchievementsExpanded.AchievementDef Name="RB_AchievementParent" Abstract="true">					
+						<AchievementsExpanded.AchievementDef Name="RB_AchievementParent" Abstract="true">
 							<bgtexPath>Achievements/RB_AchievementBackground</bgtexPath>
 							<tab>RB_Achievements</tab>
 						</AchievementsExpanded.AchievementDef>
@@ -29,7 +29,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_HumbleBeeginnings</defName>
 							<label>Humble Beeginnings</label>
-							<description>Harvest your first wild beehive</description>							
+							<description>Harvest your first wild beehive</description>
 							<tracker Class="AchievementsExpanded.ItemTrackerMultiple">
 								<thingList>
 									<li>
@@ -40,7 +40,7 @@
 										<key>RB_WildHive_Mild</key>
 										<value>1</value>
 									</li>
-								</thingList>								
+								</thingList>
 							</tracker>
 							<texPath>Achievements/RB_HumbleBeeginnings</texPath>
 							<points>5</points>
@@ -49,7 +49,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementBeehouse</defName>
 							<label>Bee Apartment</label>
-							<description>Build your first Beehouse</description>							
+							<description>Build your first Beehouse</description>
 							<tracker Class="AchievementsExpanded.BuildingTracker">
 								<def>RB_Beehouse</def>
 								<count>1</count>
@@ -61,7 +61,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementFiveBeehouse</defName>
 							<label>Bee Real State</label>
-							<description>Build five basic Beehouses</description>							
+							<description>Build five basic Beehouses</description>
 							<tracker Class="AchievementsExpanded.BuildingTracker">
 								<def>RB_Beehouse</def>
 								<count>5</count>
@@ -86,7 +86,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementFirstHybrid</defName>
 							<label>Mix and Match</label>
-							<description>Create your first hybrid bee</description>							
+							<description>Create your first hybrid bee</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Hybrid_Queen</def>
 								<count>1</count>
@@ -98,7 +98,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementBiomeBranch</defName>
 							<label>Biome Branch</label>
-							<description>Get an Adaptive Queen to start with the Biome Branch</description>							
+							<description>Get an Adaptive Queen to start with the Biome Branch</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Adaptive_Queen</def>
 								<count>1</count>
@@ -110,7 +110,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementMinerBranch</defName>
 							<label>Miner Branch</label>
-							<description>Get an Alloy Queen to start with the Miner Branch</description>							
+							<description>Get an Alloy Queen to start with the Miner Branch</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Alloy_Queen</def>
 								<count>1</count>
@@ -122,7 +122,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementDrugsBranch</defName>
 							<label>Drugs Branch</label>
-							<description>Get a Neutro Queen to start with the Drugs Branch</description>							
+							<description>Get a Neutro Queen to start with the Drugs Branch</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Neutro_Queen</def>
 								<count>1</count>
@@ -134,7 +134,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementNutritionBranch</defName>
 							<label>Nutrition Branch</label>
-							<description>Get a Nutritious Queen to start with the Nutrition Branch</description>							
+							<description>Get a Nutritious Queen to start with the Nutrition Branch</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Nutritious_Queen</def>
 								<count>1</count>
@@ -146,7 +146,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementTechBranch</defName>
 							<label>Tech Branch</label>
-							<description>Get a Technological Queen to start with the Tech Branch</description>							
+							<description>Get a Technological Queen to start with the Tech Branch</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Technological_Queen</def>
 								<count>1</count>
@@ -158,7 +158,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_Achievement_Chef_Queen</defName>
 							<label>Mamma Rimia!</label>
-							<description>Get a tier 5 Chef queen</description>							
+							<description>Get a tier 5 Chef queen</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Chef_Queen</def>
 								<count>1</count>
@@ -170,7 +170,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_Achievement_Hyper_Queen</defName>
 							<label>ADHD</label>
-							<description>Get a tier 5 Hyper queen</description>							
+							<description>Get a tier 5 Hyper queen</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Hyper_Queen</def>
 								<count>1</count>
@@ -182,7 +182,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_Achievement_Lucifer_Queen</defName>
 							<label>Hope you Guess my Name</label>
-							<description>Get a tier 5 Lucifer queen</description>							
+							<description>Get a tier 5 Lucifer queen</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Lucifer_Queen</def>
 								<count>1</count>
@@ -194,7 +194,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_Achievement_Nitro_Queen</defName>
 							<label>TNT</label>
-							<description>Get a tier 5 Nitro queen</description>							
+							<description>Get a tier 5 Nitro queen</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Nitro_Queen</def>
 								<count>1</count>
@@ -206,7 +206,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_Achievement_Surgeon_Queen</defName>
 							<label>It's not Lupus</label>
-							<description>Get a tier 5 Surgeon queen</description>							
+							<description>Get a tier 5 Surgeon queen</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Bee_Surgeon_Queen</def>
 								<count>1</count>
@@ -261,7 +261,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementTwoBlackCandles</defName>
 							<label>Two Black Candles</label>
-							<description>Build two candles with black beeswax</description>							
+							<description>Build two candles with black beeswax</description>
 							<tracker Class="AchievementsExpanded.BuildingTracker">
 								<def>RB_WaxCandle</def>
 								<madeFrom>RB_BlackBeeswax</madeFrom>
@@ -274,7 +274,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementNotSturdiestTrap</defName>
 							<label>Not the Sturdiest Trap</label>
-							<description>Build a spike trap out of Brittle beeswax</description>							
+							<description>Build a spike trap out of Brittle beeswax</description>
 							<tracker Class="AchievementsExpanded.BuildingTracker">
 								<def>TrapSpike</def>
 								<madeFrom>RB_Brittlewax</madeFrom>
@@ -302,7 +302,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementHoneyFactory</defName>
 							<label>Honey Factory</label>
-							<description>Stockpile a total of 500 regular honey</description>							
+							<description>Stockpile a total of 500 regular honey</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_BaseHoney</def>
 								<count>500</count>
@@ -314,7 +314,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="RB_AchievementParent">
 							<defName>RB_AchievementRimMeadery</defName>
 							<label>Better than Black-Briar</label>
-							<description>Turn honey into 100 Mead bottles</description>							
+							<description>Turn honey into 100 Mead bottles</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>RB_Mead</def>
 								<count>100</count>

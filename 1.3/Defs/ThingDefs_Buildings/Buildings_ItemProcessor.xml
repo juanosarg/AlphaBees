@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs> 
+<Defs>
 
 
 
@@ -60,9 +60,9 @@
 				<bringIngredientsDesc>RB_StartMeadInsertionDesc</bringIngredientsDesc>
 				<bringIngredientsIcon>UI/RB_InsertMead</bringIngredientsIcon >
 
-				<cancelIngredientsText>RB_CancelBringingMead</cancelIngredientsText> 
+				<cancelIngredientsText>RB_CancelBringingMead</cancelIngredientsText>
 				<cancelIngredientsDesc>RB_CancelBringingMeadDesc</cancelIngredientsDesc>
-				<cancelIngredientsIcon>UI/RB_CancelMead</cancelIngredientsIcon> 
+				<cancelIngredientsIcon>UI/RB_CancelMead</cancelIngredientsIcon>
 
 				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
 				<minTemp>7</minTemp>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs> 
+<Defs>
 
  <ThingDef ParentName="BuildingBase">
     <defName>RB_WaxCandle</defName>
@@ -16,7 +16,7 @@
       <graphicClass>Graphic_Single</graphicClass>
         <drawRotated>true</drawRotated>
 	  <drawSize>(2,2)</drawSize>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
       <damageData>
         <rect>(0.35,0.35,0.3,0.3)</rect>
       </damageData>
@@ -26,7 +26,7 @@
       <li>RB_Waxy</li>
     </stuffCategories>
     		
-    <costStuffCount>25</costStuffCount>	
+    <costStuffCount>25</costStuffCount>
     <rotatable>false</rotatable>
     <building>
       <isEdifice>false</isEdifice>
@@ -42,7 +42,7 @@
       <WorkToBuild>2500</WorkToBuild>
       <Flammability>0</Flammability>
 	  <Beauty>10</Beauty>
-      <Mass>4.0</Mass>	  
+      <Mass>4.0</Mass>
     </statBases>
     <selectable>true</selectable>
    

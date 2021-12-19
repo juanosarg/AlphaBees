@@ -73,7 +73,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersNutTech</defName>		
+		<defName>RB_ResearchPapersNutTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchNutTech</imageNameInGraphicsCache>
@@ -82,11 +82,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersNutAdapt</defName>		
+		<defName>RB_ResearchPapersNutAdapt</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchNutAdapt</imageNameInGraphicsCache>
@@ -95,11 +95,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersAdaptTech</defName>		
+		<defName>RB_ResearchPapersAdaptTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchAdaptTech</imageNameInGraphicsCache>
@@ -108,11 +108,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersStoPsy</defName>		
+		<defName>RB_ResearchPapersStoPsy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchStoPsy</imageNameInGraphicsCache>
@@ -121,11 +121,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersAgriSwamp</defName>		
+		<defName>RB_ResearchPapersAgriSwamp</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchAgriSwamp</imageNameInGraphicsCache>
@@ -134,11 +134,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersPlasAlloy</defName>		
+		<defName>RB_ResearchPapersPlasAlloy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchPlasAlloy</imageNameInGraphicsCache>
@@ -147,11 +147,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersAgriWood</defName>		
+		<defName>RB_ResearchPapersAgriWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchAgriWood</imageNameInGraphicsCache>
@@ -160,8 +160,8 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<!-- Tier 5 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier5" ParentName="RB_ResearchPapersBase" Abstract="True">
@@ -200,7 +200,7 @@
 
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersAgriCul</defName>		
+		<defName>RB_ResearchPapersAgriCul</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchAgriCul</imageNameInGraphicsCache>
@@ -209,11 +209,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersLuxHigh</defName>		
+		<defName>RB_ResearchPapersLuxHigh</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchLuxHigh</imageNameInGraphicsCache>
@@ -222,11 +222,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersMedTech</defName>		
+		<defName>RB_ResearchPapersMedTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchMedTech</imageNameInGraphicsCache>
@@ -235,11 +235,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersSynthTech</defName>		
+		<defName>RB_ResearchPapersSynthTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchSynthTech</imageNameInGraphicsCache>
@@ -248,11 +248,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersSynthOily</defName>		
+		<defName>RB_ResearchPapersSynthOily</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchSynthOily</imageNameInGraphicsCache>
@@ -261,11 +261,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersElectronicSynthetic</defName>		
+		<defName>RB_ResearchPapersElectronicSynthetic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchElectronicSynthetic</imageNameInGraphicsCache>
@@ -274,8 +274,8 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 
 

@@ -43,7 +43,7 @@
 	</ThingCategoryDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseRimEffect" >
-		<defName>RB_ResearchPapersElectronicPlastic</defName>		
+		<defName>RB_ResearchPapersElectronicPlastic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchElectronicPlastic</imageNameInGraphicsCache>
@@ -52,11 +52,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierRimEffect</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseRimEffect" >
-		<defName>RB_ResearchPapersPrefabSynthetic</defName>		
+		<defName>RB_ResearchPapersPrefabSynthetic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchPrefabSynthetic</imageNameInGraphicsCache>
@@ -65,8 +65,8 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierRimEffect</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 
 </Defs>

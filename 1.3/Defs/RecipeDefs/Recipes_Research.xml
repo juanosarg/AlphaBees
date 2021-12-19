@@ -11,8 +11,8 @@
 
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_BeeResearchTable</li>	
-		</recipeUsers>	
+			<li>RB_BeeResearchTable</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -59,8 +59,8 @@
 
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_BeeResearchTable</li>	
-		</recipeUsers>	
+			<li>RB_BeeResearchTable</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

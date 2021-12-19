@@ -13,7 +13,7 @@
 
 				
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_3"]/result</xpath>
 					<value>
 						<li>Spicy</li>

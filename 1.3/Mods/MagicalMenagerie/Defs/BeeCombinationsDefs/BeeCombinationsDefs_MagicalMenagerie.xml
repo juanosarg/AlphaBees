@@ -5,8 +5,8 @@
 		<bee1>Psychic</bee1>
 		<bee2>Aurum</bee2>
 		<result>
-			<li>LightMagical</li>					
-		</result>				
+			<li>LightMagical</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 
 	<RimBees.BeeCombinationDef>
@@ -14,7 +14,7 @@
 		<bee1>LightMagical</bee1>
 		<bee2>Psychic</bee2>
 		<result>
-			<li>HeavyMagical</li>					
-		</result>				
+			<li>HeavyMagical</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 </Defs>

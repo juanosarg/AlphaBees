@@ -8,9 +8,9 @@
 		<description>"Accccccstually bees are insects and they don't have bones and". Shut up. Just shut up.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 35ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Skeletal</species>
 				<comb>RB_Skeletal_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>35</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>skeletal drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Skeletal_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_SkeletalBeeBase">
 		<defName>RB_Bee_Skeletal_Queen</defName>
 		<label>skeletal queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Skeletal_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 </Defs>

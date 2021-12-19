@@ -8,7 +8,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Archo_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_Beeswax>10</RB_Beeswax>

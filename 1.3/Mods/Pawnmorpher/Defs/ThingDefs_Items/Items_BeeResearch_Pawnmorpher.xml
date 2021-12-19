@@ -43,7 +43,7 @@
 	</ThingCategoryDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-		<defName>RB_ResearchPapersRadiAdapt</defName>		
+		<defName>RB_ResearchPapersRadiAdapt</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
@@ -52,11 +52,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-		<defName>RB_ResearchPapersMutaPrec</defName>		
+		<defName>RB_ResearchPapersMutaPrec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
@@ -65,13 +65,13 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 
 
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
-		<defName>RB_ResearchPapersMutaWeave</defName>		
+		<defName>RB_ResearchPapersMutaWeave</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
@@ -80,8 +80,8 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 
 </Defs>

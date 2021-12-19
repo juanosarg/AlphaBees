@@ -70,13 +70,13 @@
 		<label>brittle beeswax</label>
 		<description>Brittle beeswax is extracted from combs of the Neutro family (Neutro, Tipsy, Luxurious, Psychic and Stoned) and is much less resistant than regular beeswax, but it is very, very light, and things can be built with it in a very short amount of time.</description>
 		<graphicData>
-			<texPath>Things/Item/Product/RB_Brittlewax</texPath>			
+			<texPath>Things/Item/Product/RB_Brittlewax</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>5</MarketValue>
 			<Mass>0.01</Mass>
 			<MaxHitPoints>60</MaxHitPoints>
-			<DeteriorationRate>3.0</DeteriorationRate>			
+			<DeteriorationRate>3.0</DeteriorationRate>
 		</statBases>
 		<stuffProps>
 			<color>(112,215,222)</color>
@@ -103,13 +103,13 @@
 		<statBases>
 			<Flammability>0</Flammability>
 		</statBases>
-		<stuffProps>			
-			<color>(226,120,114)</color>			
+		<stuffProps>
+			<color>(226,120,114)</color>
 			<statFactors>
 				<MaxHitPoints>1</MaxHitPoints>
 				<Flammability>0</Flammability>
 				<WorkToMake>1</WorkToMake>
-				<WorkToBuild>1</WorkToBuild>				
+				<WorkToBuild>1</WorkToBuild>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -126,14 +126,14 @@
 			<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
 			<BluntDamageMultiplier>1.6</BluntDamageMultiplier>
 		</statBases>
-		<stuffProps>			
-			<color>(151,93,0)</color>			
+		<stuffProps>
+			<color>(151,93,0)</color>
 			<statFactors>
 				<MaxHitPoints>1</MaxHitPoints>
 				<Beauty>0.5</Beauty>
 				<WorkToMake>1.8</WorkToMake>
 				<WorkToBuild>1.8</WorkToBuild>
-				<DoorOpenSpeed>0.7</DoorOpenSpeed>			
+				<DoorOpenSpeed>0.7</DoorOpenSpeed>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -148,8 +148,8 @@
 		<statBases>
 			<Flammability>0.6</Flammability>
 			<MaxHitPoints>120</MaxHitPoints>
-		</statBases>		
-		<stuffProps>			
+		</statBases>
+		<stuffProps>
 			<color>(240,240,240)</color>
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
@@ -169,8 +169,8 @@
 		<statBases>
 			<Flammability>2</Flammability>
 			<MaxHitPoints>140</MaxHitPoints>
-		</statBases>		
-		<stuffProps>			
+		</statBases>
+		<stuffProps>
 			<color>(49,51,192)</color>
 			<statFactors>
 				<MaxHitPoints>1.2</MaxHitPoints>
@@ -196,8 +196,8 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1</BluntDamageMultiplier>
-		</statBases>		
-		<stuffProps>			
+		</statBases>
+		<stuffProps>
 			<color>(170,170,170)</color>
 			<statFactors>
 				<MaxHitPoints>1</MaxHitPoints>
@@ -216,10 +216,10 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<DeteriorationRate>3.0</DeteriorationRate>			
+			<DeteriorationRate>3.0</DeteriorationRate>
 		</statBases>
-		<stuffProps>			
-			<color>(39,40,58)</color>			
+		<stuffProps>
+			<color>(39,40,58)</color>
 			<statOffsets>
 				<Beauty>5</Beauty>
 			</statOffsets>

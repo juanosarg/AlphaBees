@@ -43,7 +43,7 @@
 	</ThingCategoryDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseArchotech" >
-		<defName>RB_ResearchPapersFabricatedHyper</defName>		
+		<defName>RB_ResearchPapersFabricatedHyper</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchFabricatedHyper</imageNameInGraphicsCache>
@@ -52,8 +52,8 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierArchotech</li>
-		</thingCategories>	
-	</ThingDef>	
+		</thingCategories>
+	</ThingDef>
 
 
 </Defs>

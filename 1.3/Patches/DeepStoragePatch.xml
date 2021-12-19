@@ -11,7 +11,7 @@
 
 	
 
-			<li Class="PatchOperationAdd"> 
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs</xpath>
 				<value>
 					<ThingDef Name="LWM_RB_BeeRack" ParentName="LWM_DeepStorage">

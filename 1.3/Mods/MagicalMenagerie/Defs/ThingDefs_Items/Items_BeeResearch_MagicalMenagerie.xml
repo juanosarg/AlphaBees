@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersPsyAur</defName>		
+		<defName>RB_ResearchPapersPsyAur</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchPsyAur</imageNameInGraphicsCache>
@@ -11,11 +11,11 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersPsyLightMagical</defName>		
+		<defName>RB_ResearchPapersPsyLightMagical</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchPsyLightMagical</imageNameInGraphicsCache>
@@ -24,7 +24,7 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 

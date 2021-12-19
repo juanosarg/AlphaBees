@@ -11,8 +11,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<recipeUsers>
-				<li>BiofuelRefinery</li>	  
-		</recipeUsers>	
+				<li>BiofuelRefinery</li>
+		</recipeUsers>
 		 <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredients>

@@ -7,8 +7,8 @@
 		<bee1>Adaptive</bee1>
 		<bee2>Aurum</bee2>
 		<result>
-			<li>Casino</li>					
-		</result>				
+			<li>Casino</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 
 
@@ -18,8 +18,8 @@
 		<bee1>Casino</bee1>
 		<bee2>Oily</bee2>
 		<result>
-			<li>Ominous</li>					
-		</result>				
+			<li>Ominous</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 
 
@@ -30,7 +30,7 @@
 		<bee1>Casino</bee1>
 		<bee2>Precious</bee2>
 		<result>
-			<li>Fortunate</li>					
-		</result>				
+			<li>Fortunate</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 </Defs>

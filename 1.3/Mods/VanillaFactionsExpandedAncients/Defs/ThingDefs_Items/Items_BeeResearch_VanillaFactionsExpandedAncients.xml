@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
-		<defName>RB_ResearchPapersRadioMedicinal</defName>		
+		<defName>RB_ResearchPapersRadioMedicinal</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
 				<imageNameInGraphicsCache>BeeResearchRadioMedicinal</imageNameInGraphicsCache>
@@ -11,7 +11,7 @@
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier5</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
 
 	

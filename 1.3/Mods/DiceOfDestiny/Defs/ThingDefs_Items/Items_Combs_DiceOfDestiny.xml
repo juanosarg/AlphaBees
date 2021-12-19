@@ -10,7 +10,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Casino_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<RB_Beeswax>5</RB_Beeswax>
@@ -25,7 +25,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Ominous_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BlackHoney>5</RB_BlackHoney>
 			<RB_Beeswax>5</RB_Beeswax>
@@ -40,7 +40,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Fortunate_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_WhiteHoney>5</RB_WhiteHoney>
 			<RB_Beeswax>5</RB_Beeswax>

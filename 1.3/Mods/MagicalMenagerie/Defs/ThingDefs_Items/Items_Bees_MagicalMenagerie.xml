@@ -8,9 +8,9 @@
 		<description>Light Magical bees are novice magic practicioners. They may know a couple cantrips, and a bunch of nonsensical incantations, but their greatest skill is transforming nearby Plainleather into Light Magical Leather, which is then tightly woven into their combs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Plainleather\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>LightMagical</species>
 				<comb>RB_LightMagical_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>Leather_Plain</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>light magical drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_LightMagical_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_LightMagicalBeeBase">
 		<defName>RB_Bee_LightMagical_Queen</defName>
 		<label>light magical queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_LightMagical_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Heavy Magical ====================-->
@@ -45,9 +45,9 @@
 		<description>Heavy Magical bees are masters of the arcane arts, subtly plotting intricate spells in their beehives. Their greatest skill is transforming nearby Plainleather into Heavy Magical Leather, which is then tightly woven into their combs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Plainleather\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>HeavyMagical</species>
 				<comb>RB_HeavyMagical_Honeycomb</comb>
@@ -57,7 +57,7 @@
 				<weirdplantneeded>Leather_Plain</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -66,14 +66,14 @@
 		<label>heavy magical drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_HeavyMagical_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_HeavyMagicalBeeBase">
 		<defName>RB_Bee_HeavyMagical_Queen</defName>
 		<label>heavy magical queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_HeavyMagical_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 </Defs>

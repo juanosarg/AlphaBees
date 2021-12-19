@@ -6,7 +6,7 @@
 		<bee1>Psychic</bee1>
 		<bee2>Alloy</bee2>
 		<result>
-			<li>Wizard</li>					
-		</result>				
+			<li>Wizard</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 </Defs>

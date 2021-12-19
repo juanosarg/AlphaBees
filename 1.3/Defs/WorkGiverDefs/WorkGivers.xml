@@ -124,7 +124,7 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-  </WorkGiverDef> 
+  </WorkGiverDef>
     
   <WorkGiverDef>
     <defName>RB_TakeThingsOutOfHybridizationChamber</defName>

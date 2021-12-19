@@ -29,7 +29,7 @@
 		<beeQueenDef>RB_Bee_Amalgam_Queen</beeQueenDef>
 		<beeQueenTag>RB_Amalgam_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-	<RimBees.BeeListDef>      
+	<RimBees.BeeListDef>
 		<defName>RB_AlloyBeeList</defName>
 		<beeDroneDef>RB_Bee_Alloy_Drone</beeDroneDef>
 		<beeDroneTag>RB_Alloy_Drone_Tag</beeDroneTag>

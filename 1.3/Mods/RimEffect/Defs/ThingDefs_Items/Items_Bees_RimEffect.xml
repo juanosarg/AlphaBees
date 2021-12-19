@@ -8,9 +8,9 @@
 		<description>Prefab bees are experts at producing things FAST. They have one of the fastest honeycomb production times.\n\nBee Traits:\n\nProduction time: 10 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Prefab</species>
 				<comb>RB_Prefab_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>prefab drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Prefab_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_PrefabBeeBase">
 		<defName>RB_Bee_Prefab_Queen</defName>
 		<label>prefab queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Prefab_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Eezo ====================-->
@@ -45,9 +45,9 @@
 		<description>By running a current through eezo bees, they are able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect". The bees call it "You psychotic ass!".\n\nBee Traits:\n\nProduction time: 5 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Eezo</species>
 				<comb>RB_Eezo_Honeycomb</comb>
@@ -57,7 +57,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>40</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -66,14 +66,14 @@
 		<label>eezo drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Eezo_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_EezoBeeBase">
 		<defName>RB_Bee_Eezo_Queen</defName>
 		<label>eezo queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Eezo_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 </Defs>

@@ -11,8 +11,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -53,8 +53,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -95,8 +95,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -135,8 +135,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -164,7 +164,7 @@
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
-	</RecipeDef>	
+	</RecipeDef>
 	
 	<RecipeDef>
 		<defName>RB_ExtracJungleHive</defName>
@@ -175,8 +175,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -204,7 +204,7 @@
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
-	</RecipeDef>	
+	</RecipeDef>
 
 	<RecipeDef>
 		<defName>RB_ExtracSwampHive</defName>
@@ -215,8 +215,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -255,8 +255,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -295,8 +295,8 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

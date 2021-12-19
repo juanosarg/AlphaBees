@@ -14,8 +14,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -55,8 +55,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -96,8 +96,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -151,8 +151,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -206,8 +206,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>
@@ -262,8 +262,8 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
 		<ingredients>
 
 			<li>

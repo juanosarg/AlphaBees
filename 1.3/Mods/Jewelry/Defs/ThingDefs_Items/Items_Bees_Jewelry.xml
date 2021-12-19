@@ -8,9 +8,9 @@
 		<description>Diamond bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Diamond.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Diamond</species>
 				<comb>RB_Diamond_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>Jade</weirdplantneeded>
 				<tempMin>-5</tempMin>
 				<tempMax>35</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>diamond drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Diamond_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_DiamondBeeBase">
 		<defName>RB_Bee_Diamond_Queen</defName>
 		<label>diamond queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Diamond_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Ruby ====================-->
@@ -45,9 +45,9 @@
 		<description>Ruby bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Ruby.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Ruby</species>
 				<comb>RB_Ruby_Honeycomb</comb>
@@ -57,7 +57,7 @@
 				<weirdplantneeded>Jade</weirdplantneeded>
 				<tempMin>-5</tempMin>
 				<tempMax>35</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -66,14 +66,14 @@
 		<label>ruby drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Ruby_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_RubyBeeBase">
 		<defName>RB_Bee_Ruby_Queen</defName>
 		<label>ruby queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Ruby_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Sapphire ====================-->
@@ -82,9 +82,9 @@
 		<description>Sapphire bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Sapphire.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Sapphire</species>
 				<comb>RB_Sapphire_Honeycomb</comb>
@@ -94,7 +94,7 @@
 				<weirdplantneeded>Jade</weirdplantneeded>
 				<tempMin>-5</tempMin>
 				<tempMax>35</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -103,13 +103,13 @@
 		<label>sapphire drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Sapphire_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_SapphireBeeBase">
 		<defName>RB_Bee_Sapphire_Queen</defName>
 		<label>sapphire queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Sapphire_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 </Defs>

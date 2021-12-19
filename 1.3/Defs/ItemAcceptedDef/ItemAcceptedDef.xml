@@ -6,9 +6,9 @@
 		<defName>RB_MeadBarrelFirstItem</defName>
 		<building>RB_MeadFermentingBarrel</building>
 		<slot>1</slot>
-		<items>			
-			<li>RB_Must</li>						
-		</items>							
+		<items>
+			<li>RB_Must</li>
+		</items>
 	</ItemProcessor.ItemAcceptedDef>
 	
 	

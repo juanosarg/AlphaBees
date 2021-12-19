@@ -8,9 +8,9 @@
 		<description>Casino bees are avid gamblers, always ready to roll the dice.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Casino</species>
 				<comb>RB_Casino_Honeycomb</comb>
@@ -20,7 +20,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -29,14 +29,14 @@
 		<label>casino drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Casino_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_CasinoBeeBase">
 		<defName>RB_Bee_Casino_Queen</defName>
 		<label>casino queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Casino_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Ominous ====================-->
@@ -45,9 +45,9 @@
 		<description>An entire breed of bees characterized by their obscene bad luck, ominous bees always see the worst in any situation. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Bad Omen.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Ominous</species>
 				<comb>RB_Ominous_Honeycomb</comb>
@@ -57,7 +57,7 @@
 				<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -66,14 +66,14 @@
 		<label>ominous drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Ominous_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_OminousBeeBase">
 		<defName>RB_Bee_Ominous_Queen</defName>
 		<label>ominous queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Ominous_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 	<!--=============== Fortunate ====================-->
@@ -82,9 +82,9 @@
 		<description>An entire breed of bees characterized by their incredible good luck, fortunate bees are irredeemable optimists. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Fortune.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>   
+		</graphicData>
 		<tradeability>Buyable,Sellable</tradeability>
-		<comps>			
+		<comps>
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Fortunate</species>
 				<comb>RB_Fortunate_Honeycomb</comb>
@@ -94,7 +94,7 @@
 				<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-			</li>   
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -103,14 +103,14 @@
 		<label>fortunate drone</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Fortunate_Drone</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="RB_FortunateBeeBase">
 		<defName>RB_Bee_Fortunate_Queen</defName>
 		<label>fortunate queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Fortunate_Queen</texPath>
-		</graphicData> 		
+		</graphicData>
 	</ThingDef>
 
 </Defs>
