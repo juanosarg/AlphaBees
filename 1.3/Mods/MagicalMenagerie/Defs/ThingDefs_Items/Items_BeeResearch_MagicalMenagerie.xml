@@ -5,7 +5,7 @@
 		<defName>RB_ResearchPapersPsyAur</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsyAur</imageNameInGraphicsCache>
+				<image>Research/BeeResearchPsyAur</image>
 				<textForTheImage>Psychic + Aurum = Light Magical</textForTheImage>
 			</li>
 		</comps>
@@ -18,7 +18,7 @@
 		<defName>RB_ResearchPapersPsyLightMagical</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsyLightMagical</imageNameInGraphicsCache>
+				<image>Research/BeeResearchPsyLightMagical</image>
 				<textForTheImage>Psychic + Light Magical = Heavy Magical</textForTheImage>
 			</li>
 		</comps>

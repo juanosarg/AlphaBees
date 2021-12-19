@@ -46,7 +46,7 @@
 		<defName>RB_ResearchPapersFabricatedHyper</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchFabricatedHyper</imageNameInGraphicsCache>
+				<image>Research/BeeResearchFabricatedHyper</image>
 				<textForTheImage>Fabricated + Hyper = Archo</textForTheImage>
 			</li>
 		</comps>

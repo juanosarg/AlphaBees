@@ -41,7 +41,7 @@
 		<defName>RB_ResearchPapersAgriElec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAgriElec</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAgriElec</image>
 				<textForTheImage>Agricultural + Electronic = Slurry</textForTheImage>
 			</li>
 		</comps>
@@ -53,7 +53,7 @@
 		<defName>RB_ResearchPapersAlloyPrec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAlloyPrec</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAlloyPrec</image>
 				<textForTheImage>Alloy + Precious = Sky</textForTheImage>
 			</li>
 		</comps>
@@ -65,7 +65,7 @@
 		<defName>RB_ResearchPapersArcticLactic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchArcticLactic</imageNameInGraphicsCache>
+				<image>Research/BeeResearchArcticLactic</image>
 				<textForTheImage>Arctic + Lactic = Frosty</textForTheImage>
 			</li>
 		</comps>
@@ -77,7 +77,7 @@
 		<defName>RB_ResearchPapersInsectoidDesert</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchInsectoidDesert</imageNameInGraphicsCache>
+				<image>Research/BeeResearchInsectoidDesert</image>
 				<textForTheImage>Insectoid + Desert = Feral</textForTheImage>
 			</li>
 		</comps>
@@ -89,7 +89,7 @@
 		<defName>RB_ResearchPapersNeutroWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNeutroWood</imageNameInGraphicsCache>
+				<image>Research/BeeResearchNeutroWood</image>
 				<textForTheImage>Neutro + Woodland = Slimy</textForTheImage>
 			</li>
 		</comps>
@@ -101,7 +101,7 @@
 		<defName>RB_ResearchPapersNoctInsectoid</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNoctInsectoid</imageNameInGraphicsCache>
+				<image>Research/BeeResearchNoctInsectoid</image>
 				<textForTheImage>Nocturnal + Insectoid = Black</textForTheImage>
 			</li>
 		</comps>
@@ -113,7 +113,7 @@
 		<defName>RB_ResearchPapersNoctTanner</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNoctTanner</imageNameInGraphicsCache>
+				<image>Research/BeeResearchNoctTanner</image>
 				<textForTheImage>Nocturnal + Tanner = Forsaken</textForTheImage>
 			</li>
 		</comps>
@@ -125,7 +125,7 @@
 		<defName>RB_ResearchPapersRadiWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchRadiWood</imageNameInGraphicsCache>
+				<image>Research/BeeResearchRadiWood</image>
 				<textForTheImage>Radioactive + Woodland = Ocular</textForTheImage>
 			</li>
 		</comps>
@@ -137,7 +137,7 @@
 		<defName>RB_ResearchPapersSwampDesert</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampDesert</imageNameInGraphicsCache>
+				<image>Research/BeeResearchSwampDesert</image>
 				<textForTheImage>Swamp + Desert = Cactus</textForTheImage>
 			</li>
 		</comps>
@@ -149,7 +149,7 @@
 		<defName>RB_ResearchPapersSwampNutri</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampNutri</imageNameInGraphicsCache>
+				<image>Research/BeeResearchSwampNutri</image>
 				<textForTheImage>Swamp + Nutritious = Fungal</textForTheImage>
 			</li>
 		</comps>
@@ -161,7 +161,7 @@
 		<defName>RB_ResearchPapersSwampWeaving</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampWeaving</imageNameInGraphicsCache>
+				<image>Research/BeeResearchSwampWeaving</image>
 				<textForTheImage>Swamp + Weaving = Devil</textForTheImage>
 			</li>
 		</comps>
@@ -173,7 +173,7 @@
 		<defName>RB_ResearchPapersWoolyTanner</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchWoolyTanner</imageNameInGraphicsCache>
+				<image>Research/BeeResearchWoolyTanner</image>
 				<textForTheImage>Wooly + Tanner = Legendary</textForTheImage>
 			</li>
 		</comps>
@@ -185,7 +185,7 @@
 		<defName>RB_ResearchPapersWoodlandOily</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchWoodlandOily</imageNameInGraphicsCache>
+				<image>Research/BeeResearchWoodlandOily</image>
 				<textForTheImage>Woodland + Oily = Aero</textForTheImage>
 			</li>
 		</comps>

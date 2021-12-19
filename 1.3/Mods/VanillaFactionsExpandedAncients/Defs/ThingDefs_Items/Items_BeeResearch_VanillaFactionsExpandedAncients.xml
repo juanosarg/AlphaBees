@@ -5,7 +5,7 @@
 		<defName>RB_ResearchPapersRadioMedicinal</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchRadioMedicinal</imageNameInGraphicsCache>
+				<image>Research/BeeResearchRadioMedicinal</image>
 				<textForTheImage>Radioactive + Medicinal = Superhero</textForTheImage>
 			</li>
 		</comps>

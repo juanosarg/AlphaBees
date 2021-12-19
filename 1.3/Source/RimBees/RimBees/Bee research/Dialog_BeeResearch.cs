@@ -13,10 +13,10 @@ namespace RimBees
         public string theText;
 
 
-        public Dialog_BeeResearch(string BeePicture, string BeeText)
+        public Dialog_BeeResearch(Texture2D BeePicture, string BeeText)
         {
            
-            theImage = (Texture2D)typeof(GraphicsCache).GetField(BeePicture).GetValue(theImage);
+            theImage = BeePicture;
             theText = BeeText;
 
         }

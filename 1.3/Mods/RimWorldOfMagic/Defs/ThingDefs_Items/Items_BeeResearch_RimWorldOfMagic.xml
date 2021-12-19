@@ -46,7 +46,7 @@
 		<defName>RB_ResearchPapersPsychicAlloy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsychicAlloy</imageNameInGraphicsCache>
+				<image>Research/BeeResearchPsychicAlloy</image>
 				<textForTheImage>Psychic + Alloy = Wizard</textForTheImage>
 			</li>
 		</comps>

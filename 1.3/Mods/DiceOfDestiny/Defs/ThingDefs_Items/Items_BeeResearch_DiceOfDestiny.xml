@@ -46,7 +46,7 @@
 		<defName>RB_ResearchPapersAdaptiveAurum</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAdaptiveAurum</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAdaptiveAurum</image>
 				<textForTheImage>Adaptive + Aurum = Casino</textForTheImage>
 			</li>
 		</comps>
@@ -59,7 +59,7 @@
 		<defName>RB_ResearchPapersCasinoOily</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchCasinoOily</imageNameInGraphicsCache>
+				<image>Research/BeeResearchCasinoOily</image>
 				<textForTheImage>Casino + Oily = Ominous</textForTheImage>
 			</li>
 		</comps>
@@ -71,7 +71,7 @@
 		<defName>RB_ResearchPapersBeeResearchCasinoPrecious</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchCasinoPrecious</imageNameInGraphicsCache>
+				<image>Research/BeeResearchCasinoPrecious</image>
 				<textForTheImage>Casino + Precious = Fortunate</textForTheImage>
 			</li>
 		</comps>

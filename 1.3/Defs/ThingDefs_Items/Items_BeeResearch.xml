@@ -76,7 +76,7 @@
 		<defName>RB_ResearchPapersNutTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNutTech</imageNameInGraphicsCache>
+				<image>Research/BeeResearchNutTech</image>
 				<textForTheImage>Nutritious + Technological = Culinary</textForTheImage>
 			</li>
 		</comps>
@@ -89,7 +89,7 @@
 		<defName>RB_ResearchPapersNutAdapt</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNutAdapt</imageNameInGraphicsCache>
+				<image>Research/BeeResearchNutAdapt</image>
 				<textForTheImage>Nutritious + Adaptable = Pet</textForTheImage>
 			</li>
 		</comps>
@@ -102,7 +102,7 @@
 		<defName>RB_ResearchPapersAdaptTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAdaptTech</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAdaptTech</image>
 				<textForTheImage>Adaptable + Technological = Textile Branch</textForTheImage>
 			</li>
 		</comps>
@@ -115,7 +115,7 @@
 		<defName>RB_ResearchPapersStoPsy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchStoPsy</imageNameInGraphicsCache>
+				<image>Research/BeeResearchStoPsy</image>
 				<textForTheImage>Stoner + Psychic = High</textForTheImage>
 			</li>
 		</comps>
@@ -128,7 +128,7 @@
 		<defName>RB_ResearchPapersAgriSwamp</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAgriSwamp</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAgriSwamp</image>
 				<textForTheImage>Agricultural + Swamp = Medicinal</textForTheImage>
 			</li>
 		</comps>
@@ -141,7 +141,7 @@
 		<defName>RB_ResearchPapersPlasAlloy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPlasAlloy</imageNameInGraphicsCache>
+				<image>Research/BeeResearchPlasAlloy</image>
 				<textForTheImage>Plastic + Alloy = Synthetic</textForTheImage>
 			</li>
 		</comps>
@@ -154,7 +154,7 @@
 		<defName>RB_ResearchPapersAgriWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAgriWood</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAgriWood</image>
 				<textForTheImage>Agricultural + Woodland = Straw</textForTheImage>
 			</li>
 		</comps>
@@ -203,7 +203,7 @@
 		<defName>RB_ResearchPapersAgriCul</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAgriCul</imageNameInGraphicsCache>
+				<image>Research/BeeResearchAgriCul</image>
 				<textForTheImage>Agricultural + Culinary = Chef</textForTheImage>
 			</li>
 		</comps>
@@ -216,7 +216,7 @@
 		<defName>RB_ResearchPapersLuxHigh</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchLuxHigh</imageNameInGraphicsCache>
+				<image>Research/BeeResearchLuxHigh</image>
 				<textForTheImage>Luxurious + High = Lucifer</textForTheImage>
 			</li>
 		</comps>
@@ -229,7 +229,7 @@
 		<defName>RB_ResearchPapersMedTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchMedTech</imageNameInGraphicsCache>
+				<image>Research/BeeResearchMedTech</image>
 				<textForTheImage>Medicinal + Technological = Surgeon</textForTheImage>
 			</li>
 		</comps>
@@ -242,7 +242,7 @@
 		<defName>RB_ResearchPapersSynthTech</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSynthTech</imageNameInGraphicsCache>
+				<image>Research/BeeResearchSynthTech</image>
 				<textForTheImage>Synthetic + Technological = Hyper</textForTheImage>
 			</li>
 		</comps>
@@ -255,7 +255,7 @@
 		<defName>RB_ResearchPapersSynthOily</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSynthOily</imageNameInGraphicsCache>
+				<image>Research/BeeResearchSynthOily</image>
 				<textForTheImage>Synthetic + Oily = Nitro</textForTheImage>
 			</li>
 		</comps>
@@ -268,7 +268,7 @@
 		<defName>RB_ResearchPapersElectronicSynthetic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchElectronicSynthetic</imageNameInGraphicsCache>
+				<image>Research/BeeResearchElectronicSynthetic</image>
 				<textForTheImage>Synthetic + Electronic = Fabricated</textForTheImage>
 			</li>
 		</comps>

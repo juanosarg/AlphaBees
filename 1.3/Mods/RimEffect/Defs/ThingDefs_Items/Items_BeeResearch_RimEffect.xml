@@ -46,7 +46,7 @@
 		<defName>RB_ResearchPapersElectronicPlastic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchElectronicPlastic</imageNameInGraphicsCache>
+				<image>Research/BeeResearchElectronicPlastic</image>
 				<textForTheImage>Electronic + Plastic = Prefab</textForTheImage>
 			</li>
 		</comps>
@@ -59,7 +59,7 @@
 		<defName>RB_ResearchPapersPrefabSynthetic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPrefabSynthetic</imageNameInGraphicsCache>
+				<image>Research/BeeResearchPrefabSynthetic</image>
 				<textForTheImage>Prefab + Synthetic = Eezo</textForTheImage>
 			</li>
 		</comps>

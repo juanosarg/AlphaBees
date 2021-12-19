@@ -12,15 +12,15 @@ namespace RimBees
         public override void DoEffect(Pawn user)
         {
             base.DoEffect(user);
-            string nameOfTheImage = this.parent.TryGetComp<CompBeeResearchImages>().GetImage;
-            string textOfTheImage = this.parent.TryGetComp<CompBeeResearchImages>().GetText;
+            var image = this.parent.TryGetComp<CompBeeResearchImages>().GetTexture;
+            var label = this.parent.TryGetComp<CompBeeResearchImages>().GetText;
 
             if (user.Faction == Faction.OfPlayer)
             {
                 user.health.AddHediff(HediffDef.Named("RB_RecentlyResearched"));
             }
 
-            beeresearch = new Dialog_BeeResearch(nameOfTheImage, textOfTheImage);
+            beeresearch = new Dialog_BeeResearch(image, label);
             Find.WindowStack.Add(beeresearch);
         }
 

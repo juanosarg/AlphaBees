@@ -1,17 +1,32 @@
-﻿using RimWorld;
-
+﻿using UnityEngine;
 using Verse;
 
 namespace RimBees
 {
     public class CompProperties_BeeResearchImages : CompProperties
     {
-        public string imageNameInGraphicsCache;
+        [NoTranslate]
+        public string image;
+        [MustTranslate]
         public string textForTheImage;
 
-        public CompProperties_BeeResearchImages()
+        [Unsaved(false)]
+        private Texture2D texture;
+        public Texture2D Texture
         {
-            this.compClass = typeof(CompBeeResearchImages);
+            get
+            {
+                if (texture == null)
+                {
+                    texture = ContentFinder<Texture2D>.Get(image);
+                }
+
+                return texture;
+            }
+        }
+
+        public CompProperties_BeeResearchImages() : base(typeof(CompBeeResearchImages))
+        {
         }
     }
 }

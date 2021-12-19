@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-
+using UnityEngine;
 using Verse;
 
 namespace RimBees
@@ -15,11 +15,11 @@ namespace RimBees
             }
         }
 
-        public string GetImage
+        public Texture2D GetTexture
         {
             get
             {
-                return this.Props.imageNameInGraphicsCache;
+                return this.Props.Texture;
             }
         }
 

@@ -46,7 +46,7 @@
 		<defName>RB_ResearchPapersRadiAdapt</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
+				<image>Research/BeeResearchRadiAdapt</image>
 				<textForTheImage>Radioactive + Adaptive = Mutagenic</textForTheImage>
 			</li>
 		</comps>
@@ -59,7 +59,7 @@
 		<defName>RB_ResearchPapersMutaPrec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
+				<image>Research/BeeResearchMutaPrec</image>
 				<textForTheImage>Mutagenic + Precious = Mutanite</textForTheImage>
 			</li>
 		</comps>
@@ -74,7 +74,7 @@
 		<defName>RB_ResearchPapersMutaWeave</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
+				<image>Research/BeeResearchMutaWeave</image>
 				<textForTheImage>Mutagenic + Weaving = Morph</textForTheImage>
 			</li>
 		</comps>
