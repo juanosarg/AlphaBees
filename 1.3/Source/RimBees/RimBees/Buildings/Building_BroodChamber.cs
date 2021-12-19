@@ -21,7 +21,7 @@ namespace RimBees
 
         public Building_Beehouse GetAdjacentBeehouse()
         {
-            var c = this.Position + IntVec3.West;
+            var c = this.Position - this.Rotation.RighthandCell;
             var edifice = c.GetEdifice(base.Map) as Building_Beehouse;
             if (edifice?.TryGetComp<CompBeeHouse>()?.GetIsBeehouse == true)
             {

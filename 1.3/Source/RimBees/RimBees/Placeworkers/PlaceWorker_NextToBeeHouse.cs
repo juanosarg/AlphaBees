@@ -14,9 +14,16 @@ namespace RimBees
             }
 
             var edifice = c.GetEdifice(map);
-            if (edifice is Building_Beehouse beehouse)
+            if (edifice == null)
             {
-                if (beehouse.Rotation == rot)
+                return GetFailureMessage();
+            }
+
+            var rotationCorrect = edifice.Rotation == rot;
+
+            if (edifice is Building_Beehouse)
+            {
+                if (rotationCorrect)
                 {
                     return true;
                 }
@@ -24,14 +31,9 @@ namespace RimBees
                 return GetFailureMessage();
             }
 
-            if (edifice == null)
-            {
-                return GetFailureMessage();
-            }
-
             if (GenConstruct.BuiltDefOf(edifice.def) is ThingDef thingDef)
             {
-                if (thingDef.GetCompProperties<CompProperties_BeeHouse>() != null && edifice.Rotation == rot)
+                if (thingDef.GetCompProperties<CompProperties_BeeHouse>() != null && rotationCorrect)
                 {
                     return "RB_BeehouseNotYetBuilt".Translate();
                 }
