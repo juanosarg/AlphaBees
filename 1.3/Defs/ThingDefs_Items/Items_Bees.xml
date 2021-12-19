@@ -45,7 +45,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -82,7 +81,6 @@
 				<combtimedays>0.95</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -118,7 +116,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -154,7 +151,6 @@
 				<combtimedays>0.75</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -228,7 +224,6 @@
 				<combtimedays>.5</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-5</tempMin>
 				<tempMax>40</tempMax>
 			</li>
@@ -300,7 +295,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -336,7 +330,6 @@
 				<combtimedays>2</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -374,7 +367,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-100</tempMin>
 				<tempMax>0</tempMax>
 			</li>
@@ -410,7 +402,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>true</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -446,7 +437,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>30</tempMin>
 				<tempMax>100</tempMax>
 			</li>
@@ -482,7 +472,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>true</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>10</tempMin>
 				<tempMax>55</tempMax>
 			</li>
@@ -518,7 +507,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>true</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-10</tempMin>
 				<tempMax>25</tempMax>
 			</li>
@@ -738,7 +726,6 @@
 				<combtimedays>3</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -884,7 +871,6 @@
 				<combtimedays>1.33</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -920,7 +906,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -956,7 +941,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -992,7 +976,6 @@
 				<combtimedays>1.5</combtimedays>
 				<nocturnal>true</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-10</tempMin>
 				<tempMax>35</tempMax>
 			</li>
@@ -1030,7 +1013,6 @@
 				<combtimedays>3</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-10</tempMin>
 				<tempMax>45</tempMax>
 			</li>
@@ -1140,7 +1122,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1176,7 +1157,6 @@
 				<combtimedays>1.25</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-10</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1212,7 +1192,6 @@
 				<combtimedays>1.66</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>-20</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1250,7 +1229,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>35</tempMax>
 			</li>
@@ -1289,7 +1267,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>35</tempMax>
 			</li>
@@ -1327,7 +1304,6 @@
 				<combtimedays>3</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>40</tempMax>
 			</li>
@@ -1363,7 +1339,6 @@
 				<combtimedays>10</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>40</tempMax>
 			</li>
@@ -1401,7 +1376,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1437,7 +1411,6 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1475,7 +1448,6 @@
 				<combtimedays>2</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -1511,7 +1483,6 @@
 				<combtimedays>5.2</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>

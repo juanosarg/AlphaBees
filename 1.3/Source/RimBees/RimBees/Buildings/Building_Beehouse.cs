@@ -1,32 +1,28 @@
 ﻿
 
-using Verse;
-using RimWorld;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Linq;
 using System;
-using System.Diagnostics;
+using System.Collections.Generic;
+using System.Linq;
+using RimWorld;
+using UnityEngine;
+using Verse;
 
 
 namespace RimBees
 {
     public class Building_Beehouse : Building, IThingHolder
     {
-       
+
         public int tickCounter = 0;
         public bool BeehouseIsFull = false;
         public bool BeehouseIsRunning = false;
         public bool BeehouseIsExpectingBees = false;
         public bool BeehouseIsExpectingQueens = false;
 
-
-
         public float growOptimalGlow = 0.3f;
 
         public int ticksToDays = 240;
         public int ticksToResetJobs = 120;
-
 
         public ThingOwner innerContainerDrones = null;
         public ThingOwner innerContainerQueens = null;
@@ -47,7 +43,6 @@ namespace RimBees
         public ThingDef theDroneIAmGoingToInsert;
         public ThingDef theQueenIAmGoingToInsert;
 
-
         protected bool contentsKnown = false;
         protected bool contentsKnownQueens = false;
 
@@ -57,37 +52,30 @@ namespace RimBees
         {
             this.innerContainerDrones = new ThingOwner<Thing>(this, false, LookMode.Deep);
             this.innerContainerQueens = new ThingOwner<Thing>(this, false, LookMode.Deep);
-
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Deep.Look<ThingOwner>(ref this.innerContainerDrones, "innerContainerDrones", new object[]
-            {
-                this
-            });
-            Scribe_Deep.Look<ThingOwner>(ref this.innerContainerQueens, "innerContainerQueens", new object[]
-            {
-                this
-            });
-           
-            Scribe_Values.Look<bool>(ref this.contentsKnown, "contentsKnown", false, false);
-            Scribe_Values.Look<bool>(ref this.contentsKnownQueens, "contentsKnownQueens", false, false);
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsFull, "BeehouseIsFull", false, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsRunning, "BeehouseIsRunning", false, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingBees, "BeehouseIsExpectingBees", false, false);
-            Scribe_Values.Look<bool>(ref this.BeehouseIsExpectingQueens, "BeehouseIsExpectingQueens", false, false);
-            Scribe_Values.Look<string>(ref this.whichPlantNeeds, "whichPlantNeeds", "", false);
-            Scribe_Values.Look<bool>(ref this.flagLight, "flagLight", false, false);
-            Scribe_Values.Look<bool>(ref this.flagTemperature, "flagTemperature", false, false);
-            Scribe_Values.Look<bool>(ref this.flagRain, "flagRain", false, false);
-            Scribe_Values.Look<bool>(ref this.flagPlants, "flagPlants", false, false);
-            Scribe_Values.Look<bool>(ref this.flagPower, "flagPower", false, false);
-            Scribe_Values.Look<bool>(ref this.flagInitializeConditions, "flagInitializeConditions", false, false);
-            Scribe_Values.Look<int>(ref this.avgTempMin, "avgTempMin", 0, false);
-            Scribe_Values.Look<int>(ref this.avgTempMax, "avgTempMax", 0, false);
+            Scribe_Deep.Look(ref this.innerContainerDrones, "innerContainerDrones", new[] { this });
+            Scribe_Deep.Look(ref this.innerContainerQueens, "innerContainerQueens", new[] { this });
+
+            Scribe_Values.Look(ref this.contentsKnown, "contentsKnown");
+            Scribe_Values.Look(ref this.contentsKnownQueens, "contentsKnownQueens");
+            Scribe_Values.Look(ref this.tickCounter, "tickCounter");
+            Scribe_Values.Look(ref this.BeehouseIsFull, "BeehouseIsFull");
+            Scribe_Values.Look(ref this.BeehouseIsRunning, "BeehouseIsRunning");
+            Scribe_Values.Look(ref this.BeehouseIsExpectingBees, "BeehouseIsExpectingBees");
+            Scribe_Values.Look(ref this.BeehouseIsExpectingQueens, "BeehouseIsExpectingQueens");
+            Scribe_Values.Look(ref this.whichPlantNeeds, "whichPlantNeeds");
+            Scribe_Values.Look(ref this.flagLight, "flagLight");
+            Scribe_Values.Look(ref this.flagTemperature, "flagTemperature");
+            Scribe_Values.Look(ref this.flagRain, "flagRain");
+            Scribe_Values.Look(ref this.flagPlants, "flagPlants");
+            Scribe_Values.Look(ref this.flagPower, "flagPower");
+            Scribe_Values.Look(ref this.flagInitializeConditions, "flagInitializeConditions");
+            Scribe_Values.Look(ref this.avgTempMin, "avgTempMin");
+            Scribe_Values.Look(ref this.avgTempMax, "avgTempMax");
             Scribe_Defs.Look(ref this.theDroneIAmGoingToInsert, "theDroneIAmGoingToInsert");
             Scribe_Defs.Look(ref this.theQueenIAmGoingToInsert, "theQueenIAmGoingToInsert");
         }
@@ -101,8 +89,6 @@ namespace RimBees
             }
         }
 
-
-        [DebuggerHidden]
         public override IEnumerable<Gizmo> GetGizmos()
         {
             map = this.Map;
@@ -110,11 +96,12 @@ namespace RimBees
             {
                 yield return g;
             }
-            if (this.BeehouseIsExpectingBees) {
+            if (this.BeehouseIsExpectingBees)
+            {
                 Command_Action RB_Gizmo_Drones_Waiting = new Command_Action();
                 RB_Gizmo_Drones_Waiting.action = delegate
                 {
-                   
+
 
                 };
                 RB_Gizmo_Drones_Waiting.defaultLabel = "RB_InsertBees".Translate();
@@ -125,13 +112,14 @@ namespace RimBees
             else if (innerContainerDrones.NullOrEmpty())
             {
                 yield return BeeListSetupUtility.SetBeeListCommand(this, map);
-            } else
+            }
+            else
             {
                 Command_Action RB_Gizmo_Empty_Drones = new Command_Action();
                 RB_Gizmo_Empty_Drones.action = delegate
                 {
                     this.EjectContents();
-                    
+
                 };
                 RB_Gizmo_Empty_Drones.defaultLabel = "RB_ExtractBees".Translate();
                 RB_Gizmo_Empty_Drones.defaultDesc = "RB_ExtractBeesDesc".Translate();
@@ -151,7 +139,8 @@ namespace RimBees
                 RB_Gizmo_Queens_Waiting.defaultDesc = "RB_InsertQueensDesc".Translate();
                 RB_Gizmo_Queens_Waiting.icon = ContentFinder<Texture2D>.Get("UI/RB_Queens_Waiting", true);
                 yield return RB_Gizmo_Queens_Waiting;
-            } else
+            }
+            else
             if (innerContainerQueens.NullOrEmpty())
             {
                 yield return BeeListSetupUtility.SetQueenListCommand(this, map);
@@ -162,7 +151,7 @@ namespace RimBees
                 RB_Gizmo_Empty_Queens.action = delegate
                 {
                     this.EjectContentsQueens();
-                    
+
                 };
                 RB_Gizmo_Empty_Queens.defaultLabel = "RB_ExtractQueens".Translate();
                 RB_Gizmo_Empty_Queens.defaultDesc = "RB_ExtractQueensDesc".Translate();
@@ -185,15 +174,11 @@ namespace RimBees
         public override string GetInspectString()
         {
             string text = base.GetInspectString();
-            string strContentDrones = "";
-            string strContentQueens = "";
-            string strPercentProgress = "";
-            string strDaysProgress = "";
-            string strStoppedBecauseNight = " ";
-            string strStoppedBecauseRain = " ";
-            string strStoppedBecauseTemperature = " ";
-            string strStoppedBecauseNoPLants = " ";
-            string strStoppedBecauseNoPower = " ";
+            string strContentDrones;
+            string strContentQueens;
+            string strPercentProgress;
+            string strDaysProgress;
+            string strStoppedBecause = "";
 
             string strToAddSpaceIfElectricityUsed = "";
 
@@ -216,78 +201,76 @@ namespace RimBees
             }
             else { strContentQueens = "RB_BeehouseNonePresent".Translate(); }
 
-            if (!innerContainerDrones.NullOrEmpty()&& !innerContainerQueens.NullOrEmpty())
+            if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
                 //str3 = (((float)tickCounter/240)*100).ToString();
-                strPercentProgress = ((float)tickCounter / ((ticksToDays)* CalculateTheTicksAverage())).ToStringPercent();
+                strPercentProgress = ((float)tickCounter / ((ticksToDays) * CalculateTheTicksAverage())).ToStringPercent();
                 strDaysProgress = " (aprox " + CalculateTheTicksAverage().ToString("N1") + " days)";
-                if (flagInitializeConditions) {
+                if (flagInitializeConditions)
+                {
                     if (!flagPower)
                     {
-                        strStoppedBecauseNoPower = "\n" + "RB_BeehouseNoPower".Translate();
+                        strStoppedBecause = "\n" + "RB_BeehouseNoPower".Translate();
                     }
                     else
                     if (!flagLight)
                     {
-                        strStoppedBecauseNight = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
-                    } else
+                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressNight".Translate();
+                    }
+                    else
                     if (!flagRain)
                     {
-                        strStoppedBecauseRain = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
+                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressRain".Translate();
                     }
                     else
                     if (!flagTemperature)
                     {
-                        strStoppedBecauseTemperature = "\n" + "RB_BeehouseCombNoProgressTemperature".Translate()+avgTempMin+"-"+avgTempMax+"ºC)";
+                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressTemperatureRange".Translate(avgTempMin.Named("MIN"), avgTempMax.Named("MAX"));
                     }
                     else
                     if (!flagPlants)
                     {
-                        strStoppedBecauseNoPLants = "\n" + "RB_BeehouseCombNoProgressPlants1".Translate() + whichPlantNeeds + "RB_BeehouseCombNoProgressPlants2".Translate();
+                        strStoppedBecause = "\n" + "RB_BeehouseCombNoProgressPlants".Translate(whichPlantNeeds.Named("PLANT"));
                     }
                 }
-                
-
             }
-            else {
+            else
+            {
                 strPercentProgress = "RB_BeehouseCombNoProgress".Translate();
                 strDaysProgress = "";
-
             }
-      
 
             return text + strToAddSpaceIfElectricityUsed + "RB_BeehouseContainsDrone".Translate() + ": " + strContentDrones.CapitalizeFirst()
                 + "      " + "RB_BeehouseContainsQueen".Translate() + ": " + strContentQueens.CapitalizeFirst() + "\n" +
-                "RB_BeehouseCombProgress".Translate() + ": "+ strPercentProgress + strDaysProgress + strStoppedBecauseNight
-                 + strStoppedBecauseRain  + strStoppedBecauseTemperature  + strStoppedBecauseNoPLants;
+                "RB_BeehouseCombProgress".Translate() + ": " + strPercentProgress + strDaysProgress + strStoppedBecause;
         }
 
         public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
         {
             bool result;
-           
-                bool flag;
-                if (thing.holdingOwner != null)
+
+            bool flag;
+            if (thing.holdingOwner != null)
+            {
+                thing.holdingOwner.TryTransferToContainer(thing, this.innerContainerDrones, thing.stackCount, true);
+                flag = true;
+            }
+            else
+            {
+                flag = this.innerContainerDrones.TryAdd(thing, true);
+            }
+            if (flag)
+            {
+                if (thing.Faction != null && thing.Faction.IsPlayer)
                 {
-                    thing.holdingOwner.TryTransferToContainer(thing, this.innerContainerDrones, thing.stackCount, true);
-                    flag = true;
+                    this.contentsKnown = true;
                 }
-                else
-                {
-                    flag = this.innerContainerDrones.TryAdd(thing, true);
-                }
-                if (flag)
-                {
-                    if (thing.Faction != null && thing.Faction.IsPlayer)
-                    {
-                        this.contentsKnown = true;
-                    }
-                    result = true;
-                }
-                else
-                {
-                    result = false;
-                }
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
             this.TickRare();
             return result;
         }
@@ -353,7 +336,7 @@ namespace RimBees
 
         public override void TickRare()
         {
-            if(BeehouseIsExpectingBees)
+            if (BeehouseIsExpectingBees)
             {
                 ticksToResetJobs--;
                 if (ticksToResetJobs <= 0)
@@ -361,95 +344,50 @@ namespace RimBees
                     ticksToResetJobs = 50;
                     this.BeehouseIsExpectingBees = false;
                     this.BeehouseIsExpectingQueens = false;
-                    
                 }
             }
+
             base.TickRare();
-            if(!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
-            {
-                if (!BeehouseIsFull) {
 
-                    if (CheckPower()) {
-                        if (CheckLightLevels()) {
-                            if (CheckRainLevels()) {
-                                if (CheckTemperatureLevels()) {
-                                    if (CheckPlantsNearby())
-                                    {
-                                        BeehouseIsRunning = true;
-                                        tickCounter++;
-                                        if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
-                                        {
-                                            SignalBeehouseFull();
-                                        }
-                                    }
-                                    else
-                                    {
-                                        BeehouseIsRunning = false;
-                                    }
-                                }
-                                else
-                                {
-                                    BeehouseIsRunning = false;
-                                }
-
-                            }
-                            else
-                            {
-                                BeehouseIsRunning = false;
-                            }
-
-                        }
-                        else
-                        {
-                            BeehouseIsRunning = false;
-                        }
-
-                    }
-                    else
-                    {
-                        BeehouseIsRunning = false;
-                    }
-
-
-                }
-                flagInitializeConditions = true;
-
-
-            }
-            else
+            if (innerContainerDrones.NullOrEmpty() || innerContainerQueens.NullOrEmpty())
             {
                 BeehouseIsRunning = false;
+
+                return;
             }
 
+            flagInitializeConditions = true;
+            if (BeehouseIsFull)
+            {
+                return;
+            }
+
+            if (!CheckPower() || !CheckLightLevels() || !CheckRainLevels() || !CheckTemperatureLevels() || !CheckPlantsNearby())
+            {
+                BeehouseIsRunning = false;
+
+                return;
+            }
+
+            BeehouseIsRunning = true;
+            tickCounter++;
+            if (tickCounter > (ticksToDays * CalculateTheTicksAverage()) - 1)
+            {
+                SignalBeehouseFull();
+            }
         }
 
         public bool CheckPower()
         {
-
             if (!this.TryGetComp<CompBeeHouse>().GetIsElectricBeehouse)
             {
                 flagPower = true;
                 return true;
             }
-            else
-            {
-                CompPowerTrader power = this.GetComp<CompPowerTrader>();
-                if (!power.PowerOn) {
 
-                    flagPower = false;
-                    return false;
-                } else
-                {
-                    flagPower = true;
-                    return true;
-                }
-
-                
-             }
-                
-                
-            
-
+            CompPowerTrader power = this.GetComp<CompPowerTrader>();
+            flagPower = power.PowerOn;
+            return flagPower;
         }
 
 
@@ -461,23 +399,11 @@ namespace RimBees
             {
                 flagLight = true;
                 return true;
-            } else
-            {
-                int currentHour = GenLocalDate.HourInteger(this.Map);
-                //float num = this.Map.glowGrid.GameGlowAt(this.Position, false);
-                if (currentHour>=5&& currentHour<=22)
-                {
-                    flagLight = true;
-                    return true;
-
-                }
-                else {
-                    flagLight = false;
-                    return false;
-                }
-
             }
 
+            int currentHour = GenLocalDate.HourInteger(this.Map);
+            flagLight = currentHour >= 5 && currentHour <= 22;
+            return flagLight;
         }
 
         public bool CheckRainLevels()
@@ -489,24 +415,9 @@ namespace RimBees
                 flagRain = true;
                 return true;
             }
-            else
-            {
-                bool isWeatherRain = this.Map.weatherManager.curWeather.rainRate > 0;
-                    
-                    //(this.Map.weatherManager.curWeather.defName != "Clear")&& (this.Map.weatherManager.curWeather.defName != "Fog")&& (this.Map.weatherManager.curWeather.defName != "DryThunderstorm");
-                if (isWeatherRain)
-                {
-                    flagRain = false;
-                    return false;
 
-                }
-                else
-                {
-                    flagRain = true;
-                    return true;
-                }
-
-            }
+            flagRain = this.Map.weatherManager.curWeather.rainRate <= 0;
+            return flagRain;
         }
 
         public bool CheckTemperatureLevels()
@@ -516,6 +427,7 @@ namespace RimBees
                 flagTemperature = true;
                 return true;
             }
+
             int bee1tempMin = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
             int bee2tempMin = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetTempMin;
 
@@ -524,78 +436,50 @@ namespace RimBees
 
             avgTempMin = (bee1tempMin + bee2tempMin) / 2;
             avgTempMax = (bee1tempMax + bee2tempMax) / 2;
-            float currentTempInMap = 0f;
-            if (RimBees_Settings.RB_GreenhouseBees) {
 
-                currentTempInMap = this.Position.GetTemperature(this.Map);
-
-            }
-            else {
-
-                currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
-
-            }
-
-            if ((currentTempInMap > avgTempMin) && (currentTempInMap < avgTempMax))
+            float currentTempInMap;
+            if (RimBees_Settings.RB_GreenhouseBees)
             {
-                flagTemperature = true;
-                return true;
-
+                currentTempInMap = this.Position.GetTemperature(this.Map);
             }
-            else {
-                flagTemperature = false;
-                return false;
+            else
+            {
+                currentTempInMap = this.Map.mapTemperature.OutdoorTemp;
             }
 
+            flagTemperature = currentTempInMap >= avgTempMin && currentTempInMap <= avgTempMax;
+            return flagTemperature;
         }
 
         public bool CheckPlantsNearby()
         {
+            var bee1plantNeeded = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
+            var bee2plantNeeded = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
 
-            string bee1plantNeeded = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
-            string bee2plantNeeded = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetWeirdPlant;
-
-            if (((bee1plantNeeded=="no") && (bee2plantNeeded == "no"))|| RimBees_Settings.RB_IgnorePlants)
+            if ((bee1plantNeeded == null && bee2plantNeeded == null) || RimBees_Settings.RB_IgnorePlants)
             {
                 flagPlants = true;
                 return true;
-
-            }else 
-            {
-                if (bee1plantNeeded == "no") {
-                    whichPlantNeeds = ThingDef.Named(bee2plantNeeded).label;
-
-                } else
-                {
-                    whichPlantNeeds = ThingDef.Named(bee1plantNeeded).label;
-
-                }
-                
-
-                CellRect rect = GenAdj.OccupiedRect(this.Position, this.Rotation, IntVec2.One);
-                rect = rect.ExpandedBy(6);
-
-                foreach (IntVec3 current in rect.Cells)
-                {
-                    List<Thing> plantList = current.GetThingList(this.Map);
-                    for (int i = 0; i < plantList.Count; i++)
-                    {
-                        if ((plantList[i].def.defName == bee1plantNeeded)||(plantList[i].def.defName == bee2plantNeeded))
-                        {
-                            flagPlants = true;
-                            return true;
-                        }
-                    }
-
-                }
-                flagPlants = false;
-                return false;
-
-
             }
 
-        }
+            whichPlantNeeds = (bee1plantNeeded ?? bee2plantNeeded).label;
 
+            foreach (var c in GrowableCells)
+            {
+                var plantList = c.GetThingList(this.Map);
+                for (int i = 0; i < plantList.Count; i++)
+                {
+                    if (plantList[i].def == bee1plantNeeded || plantList[i].def == bee2plantNeeded)
+                    {
+                        flagPlants = true;
+                        return true;
+                    }
+                }
+            }
+
+            flagPlants = false;
+            return false;
+        }
 
         public void SignalBeehouseFull()
         {
@@ -607,20 +491,18 @@ namespace RimBees
             if (!innerContainerDrones.NullOrEmpty() && !innerContainerQueens.NullOrEmpty())
             {
                 float extraRate = this.TryGetComp<CompBeeHouse>().GetBeehouseRate;
-               
+
                 float bee1ticks = innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
                 float bee2ticks = innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetCombtimedays;
-                float beeticksaverage = extraRate*((bee1ticks + bee2ticks) / 2);
+                float beeticksaverage = extraRate * ((bee1ticks + bee2ticks) / 2);
                 return beeticksaverage;
-
             }
-            else return 0;
-               
+
+            return 0;
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
-
             EjectContents();
             EjectContentsQueens();
             base.Destroy(mode);
@@ -641,8 +523,5 @@ namespace RimBees
                 return GenRadial.RadialCellsAround(this.Position, 6, true);
             }
         }
-
-       
-
     }
 }

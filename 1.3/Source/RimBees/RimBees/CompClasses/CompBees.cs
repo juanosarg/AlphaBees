@@ -22,7 +22,7 @@ namespace RimBees
             }
         }
 
-        public string GetComb
+        public ThingDef GetComb
         {
             get
             {
@@ -54,7 +54,7 @@ namespace RimBees
             }
         }
 
-        public string GetWeirdPlant
+        public ThingDef GetWeirdPlant
         {
             get
             {

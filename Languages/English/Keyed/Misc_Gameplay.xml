@@ -27,9 +27,11 @@
 	<RB_BeehouseCombNoProgress>Stopped due to missing bees</RB_BeehouseCombNoProgress>
 	<RB_BeehouseCombNoProgressNight>Stopped due to being nightime</RB_BeehouseCombNoProgressNight>
 	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
-	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature>
-	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> 
-	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2>
+	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature> <!-- legacy -->
+	<RB_BeehouseCombNoProgressTemperatureRange>Stopped due to temperature (needs {MIN}-{MAX}ºC)</RB_BeehouseCombNoProgressTemperatureRange>
+	<RB_BeehouseCombNoProgressPlants>Stopped due to absence of {PLANT} in 6 tiles radius</RB_BeehouseCombNoProgressPlants>
+	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> <!-- legacy -->
+	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2> <!-- legacy -->
 	<RB_BeehouseNoPower>Stopped due to no power</RB_BeehouseNoPower>
 
 	<RB_NoDronesFound>No drones of that type found in the map</RB_NoDronesFound>
@@ -55,7 +57,7 @@
 	
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 	<RB_Hybrid>A new mutant bee, {0}, has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>
-	<RB_HybridNumberAlert>A new mutant bee, {1}, has been created in a hybridization chamber! This combination produces other {0} possible mutations.</RB_HybridNumberAlert>
+	<RB_HybridNumberAlert>A new mutant bee, {1}, has been created in a hybridization chamber! This combination produces {0} other possible mutations.</RB_HybridNumberAlert>
 
 
 	<RB_DestroyResearch>Destroy Research</RB_DestroyResearch>
@@ -74,7 +76,7 @@
 	<RB_ContainsMead>Contains {0} / {1} mead.</RB_ContainsMead>
 
 
-	<!-- Bee Tags -->
+	<!-- Bee Tags (legacy) -->
 
 	<RB_Temperate_Drone_Tag>Temperate Drone</RB_Temperate_Drone_Tag>
 	<RB_Mild_Drone_Tag>Mild Drone</RB_Mild_Drone_Tag>
@@ -318,8 +320,4 @@
 	<BenLubarsRimBeesPatches_KnownBees_Discovered>Discovered {CUR} of {MAX} ({PERCENT})</BenLubarsRimBeesPatches_KnownBees_Discovered>
 	<BenLubarsRimBeesPatches_KnownBees_SelectFirst>Select first bee</BenLubarsRimBeesPatches_KnownBees_SelectFirst>
 	<BenLubarsRimBeesPatches_KnownBees_SelectSecond>Select second bee</BenLubarsRimBeesPatches_KnownBees_SelectSecond>
-
-       
-
-
 </LanguageData>

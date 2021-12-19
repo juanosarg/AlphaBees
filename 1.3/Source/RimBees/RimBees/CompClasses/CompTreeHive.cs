@@ -4,8 +4,6 @@ namespace RimBees
 {
     public class CompTreeHive : ThingComp
     {
-
-
         public CompProperties_TreeHive Props
         {
             get
@@ -14,16 +12,13 @@ namespace RimBees
             }
         }
 
-        public string GetSpecies
+        public ThingDef GetSpecies
         {
             get
             {
                 return this.Props.species;
             }
         }
-
-     
-
     }
 }
 

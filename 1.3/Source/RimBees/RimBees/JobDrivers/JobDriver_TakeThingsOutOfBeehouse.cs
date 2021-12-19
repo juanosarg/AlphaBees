@@ -19,11 +19,11 @@ namespace RimBees
 
             if (Rand.Chance(1f / 3f))
             {
-                resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
+                resultingComb = buildingbeehouse.innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetComb;
             }
             else
             {
-                resultingComb = DefDatabase<ThingDef>.GetNamed(buildingbeehouse.innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetComb, true);
+                resultingComb = buildingbeehouse.innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetComb;
             }
 
             return resultingComb; 

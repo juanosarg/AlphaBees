@@ -8,11 +8,6 @@ namespace RimBees
         public bool electricBeehouse = false;
         public bool climatizedBeehouse = false;
         public float beehouseRate = 1f;
-       
-
-
-
-
 
         public CompProperties_BeeHouse()
         {

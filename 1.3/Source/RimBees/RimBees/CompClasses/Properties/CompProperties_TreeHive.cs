@@ -4,13 +4,10 @@ namespace RimBees
 {
     public class CompProperties_TreeHive : CompProperties
     {
+        public ThingDef species;
 
-        public string species = "Plant_TreeOak";
-  
-
-        public CompProperties_TreeHive()
+        public CompProperties_TreeHive() : base(typeof(CompTreeHive))
         {
-            this.compClass = typeof(CompTreeHive);
         }
     }
 }

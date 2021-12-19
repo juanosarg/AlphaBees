@@ -17,7 +17,6 @@
 				<combtimedays>0.41</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>
@@ -54,7 +53,6 @@
 				<combtimedays>5</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>40</tempMax>
 			</li>

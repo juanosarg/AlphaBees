@@ -31,25 +31,23 @@ namespace RimBees
             var comp = def.GetCompProperties<CompProperties_Bees>();
             if (comp != null)
             {
-                var combDef = DefDatabase<ThingDef>.GetNamed(comp.comb);
-                def.descriptionHyperlinks.Add(combDef);
+                def.descriptionHyperlinks.Add(comp.comb);
 
-                var weirdPlantName = comp.weirdplantneeded;
-                if (weirdPlantName != "no")
+                if (comp.weirdplantneeded != null)
                 {
-                    def.descriptionHyperlinks.Add(DefDatabase<ThingDef>.GetNamed(weirdPlantName));
+                    def.descriptionHyperlinks.Add(comp.weirdplantneeded);
                 }
 
-                if (processedCombs.Add(combDef))
+                if (processedCombs.Add(comp.comb))
                 {
-                    if (combDef.descriptionHyperlinks == null)
+                    if (comp.comb.descriptionHyperlinks == null)
                     {
-                        combDef.descriptionHyperlinks = new List<DefHyperlink>();
+                        comp.comb.descriptionHyperlinks = new List<DefHyperlink>();
                     }
 
-                    foreach (var product in combDef.butcherProducts)
+                    foreach (var product in comp.comb.butcherProducts)
                     {
-                        combDef.descriptionHyperlinks.Add(product.thingDef);
+                        comp.comb.descriptionHyperlinks.Add(product.thingDef);
                     }
                 }
             }

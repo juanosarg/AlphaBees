@@ -140,7 +140,7 @@ namespace RimBees
                     // only one "weird plant" is needed even if both bees require different plants, so if we got here, both are missing.
                     var queenPlant = queenContainer.FirstOrFallback()?.TryGetComp<CompBees>()?.GetWeirdPlant;
                     var dronePlant = droneContainer.FirstOrFallback()?.TryGetComp<CompBees>()?.GetWeirdPlant;
-                    var weirdPlant = ThingDef.Named(queenPlant == null || queenPlant == "no" ? dronePlant : queenPlant);
+                    var weirdPlant = queenPlant ?? dronePlant;
                     if (weirdPlant != null)
                     {
                         var mat = MaterialPool.MatFrom(new MaterialRequest(weirdPlant.uiIcon, ShaderDatabase.MetaOverlay));

@@ -1,35 +1,24 @@
-﻿
-using RimWorld;
+﻿using RimWorld;
 using Verse;
-
 
 namespace RimBees
 {
     public class Building_TreeHive : Plant
     {
-
-
-       
-
-     
-
-
-
-        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        public override void PlantCollected(Pawn by)
         {
-            string strSpecies = this.TryGetComp<CompTreeHive>().GetSpecies;
-            IntVec3 thisPosition = this.Position;
-            Map map = base.Map;
-            base.Destroy(mode);
-            if (strSpecies!="None") {
-                Plant regularPlant = (Plant)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed(strSpecies, true));
-                GenSpawn.Spawn(regularPlant, thisPosition, map);
+            var replaceWith = this.TryGetComp<CompTreeHive>().GetSpecies;
+            var position = this.Position;
+            var map = this.Map;
+
+            base.PlantCollected(by);
+
+            if (replaceWith != null)
+            {
+                var regularPlant = (Plant)ThingMaker.MakeThing(replaceWith);
+                GenSpawn.Spawn(regularPlant, position, map);
                 regularPlant.Growth = 0.9f;
             }
-           
-
         }
-
-
     }
 }

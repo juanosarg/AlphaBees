@@ -6,11 +6,11 @@ namespace RimBees
     public class CompProperties_Bees : CompProperties
     {
         public BeeSpeciesDef species;
-        public string comb = "RB_Temperate_Honeycomb";
+        public ThingDef comb;
         public float combtimedays = 1;
         public bool nocturnal = false;
         public bool pluviophile = false;
-        public string weirdplantneeded = "no";
+        public ThingDef weirdplantneeded;
         public int tempMin = 0;
         public int tempMax = 50;
 
@@ -28,6 +28,11 @@ namespace RimBees
             if (species == null)
             {
                 yield return parentDef.defName + " missing species in CompProperties_Bees";
+            }
+
+            if (comb == null)
+            {
+                yield return parentDef.defName + " missing comb in CompProperties_Bees";
             }
         }
     }
