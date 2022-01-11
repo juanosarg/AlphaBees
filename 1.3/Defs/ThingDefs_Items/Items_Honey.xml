@@ -74,7 +74,7 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_TastyHoney</defName>
 		<label>tasty honey</label>
-		<description>This honey has been extracted from honeycombs of the Nutritious family (Nutritious, Agricultural, Bittersweet, Egglaying and Lactic), and has a high nutritional value. However, it will decay very fast. Honey can be consumed raw or cooked with other ingredients.</description>  
+		<description>This honey has been extracted from honeycombs of the Nutritious family (Nutritious, Agricultural, Bittersweet, Egglaying and Lactic), and has a high nutritional value. However, it will decay very fast. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
 			<color>(184,59,56)</color>
 			<shaderType>CutoutComplex</shaderType>
@@ -97,7 +97,7 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_WhiteHoney</defName>
 		<label>white honey</label>
-		<description>This honey has been extracted from Hybrid honeycombs, and is very pale in colour. It is less nutritious than normal honey, but it is usually produced in high amounts. Honey can be consumed raw or cooked with other ingredients.</description>  
+		<description>This honey has been extracted from Hybrid honeycombs, and is very pale in colour. It is less nutritious than normal honey, but it is usually produced in high amounts. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -116,7 +116,7 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_PsychotropicHoney</defName>
 		<label>psychotropic honey</label>
-		<description>This honey has been extracted from honeycombs of the Neutro family (Neutro, Tipsy, Luxurious, Psychic and Stoned) and bubbles constantly in a weird, mesmerizing dance. It is of little nutritional value, but produces a sense of euphoria when ingested. Honey can be consumed raw or cooked with other ingredients.</description>  
+		<description>This honey has been extracted from honeycombs of the Neutro family (Neutro, Tipsy, Luxurious, Psychic and Stoned) and bubbles constantly in a weird, mesmerizing dance. It is of little nutritional value, but produces a sense of euphoria when ingested. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
 			<color>(140,255,28)</color>
 			<shaderType>CutoutComplex</shaderType>
@@ -147,10 +147,10 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_AdaptiveHoney</defName>
 		<label>adaptive honey</label>
-		<description>This honey has been extracted from Adaptive honeycombs, and has a reddish brown colour and a pungent smell. This honey won't rot at all, so it can be stored indefinitely. Honey can be consumed raw or cooked with other ingredients.</description>		
+		<description>This honey has been extracted from Adaptive honeycombs, and has a reddish brown colour and a pungent smell. This honey won't rot at all, so it can be stored indefinitely. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
 			<color>(220,160,120)</color>
-			<shaderType>CutoutComplex</shaderType>			
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.9</MarketValue>
@@ -160,10 +160,10 @@
 	<ThingDef ParentName="RB_HoneyBase">
 		<defName>RB_BlackHoney</defName>
 		<label>black honey</label>
-		<description>This honey has been extracted from Nocturnal honeycombs, and is really dark and thick. It has certain health benefits, Improving blood filtration and pumping. Honey can be consumed raw or cooked with other ingredients.</description>
+		<description>This honey has been extracted from Nocturnal honeycombs, and is very dark and thick. It improves blood filtration and blood pumping when consumed. Honey can be consumed raw or cooked with other ingredients.</description>
 		<graphicData>
 			<color>(34,38,38)</color>
-			<shaderType>CutoutComplex</shaderType>	
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.9</MarketValue>
