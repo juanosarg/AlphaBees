@@ -128,11 +128,18 @@
 		<ingestible>
 			<tasteThought>RB_AtePsychotropicHoney</tasteThought>
 			<specialThoughtAsIngredient>RB_AtePsychotropicHoneyIngredient</specialThoughtAsIngredient>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<joyKind>Chemical</joyKind>
+			<joy>0.2</joy>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>47</listOrder>
 			</li>
 		</comps>
 	</ThingDef>
@@ -168,11 +175,16 @@
 					<severity>1</severity>
 				</li>
 			</outcomeDoers>
+			<drugCategory>Medical</drugCategory>
+			<nurseable>true</nurseable>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>75</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>48</listOrder>
 			</li>
 		</comps>
 	</ThingDef>
