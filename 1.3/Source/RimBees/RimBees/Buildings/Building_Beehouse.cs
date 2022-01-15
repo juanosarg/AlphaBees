@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace RimBees
 {
-    class Building_Beehouse : Building, IThingHolder
+    public class Building_Beehouse : Building, IThingHolder
     {
        
         public int tickCounter = 0;
