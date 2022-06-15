@@ -404,9 +404,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<RB_BlackBeeswax>10</RB_BlackBeeswax>
-			<RB_BlackHoney>5</RB_BlackHoney>
-			<Leather_Night>5</Leather_Night>
+			<RB_BlackBeeswax>100</RB_BlackBeeswax>
+			<RB_BlackHoney>50</RB_BlackHoney>
+			<Leather_Night>50</Leather_Night>
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
