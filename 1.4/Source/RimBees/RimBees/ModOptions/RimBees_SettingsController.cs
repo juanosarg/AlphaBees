@@ -12,7 +12,7 @@ namespace RimBees
         {
             GetSettings<RimBees_Settings>();
         }
-        public override string SettingsCategory() => "RimBees";
+        public override string SettingsCategory() => "Alpha Bees";
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
