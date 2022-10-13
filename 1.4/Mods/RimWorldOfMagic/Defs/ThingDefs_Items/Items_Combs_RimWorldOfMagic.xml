@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Wizard_Honeycomb</defName>
+		<label>wizard honeycomb</label>
+		<description>This is a honeycomb produced by wizard bees. Yer a bee, Harry! These bee wizard apprentices accumulate raw magicyte in their honeycombs. Honeycombs can be processed in a Honey Extractor to get psychotropic honey, beeswax and raw magicyte.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Wizard_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RawMagicyte>10</RawMagicyte>
+		</butcherProducts>
+	</ThingDef>
+
+
+</Defs>

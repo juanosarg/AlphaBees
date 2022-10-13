@@ -1,11 +1,11 @@
 <ModMetaData>
-	<name>RimBees</name>
+	<name>Alpha Bees</name>
 	<author>Sarg Bjornson, Ben Lubar</author>
 	<supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
+		
 		<li>1.2</li>
 		<li>1.3</li>
+		<li>1.4</li>
 	</supportedVersions>
 	<modDependencies>
 		<li>
@@ -18,7 +18,7 @@
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
-			<downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
 	<packageId>sarg.rimbees</packageId>
@@ -57,11 +57,12 @@ Thanks to TheSevenSins for helping on the 2.0 update
 &lt;size=24&gt;Compatibility&lt;/size&gt;
 
 Mods that add bee species:
-Alpha Animals, Pawnmorpher, Magical Menagerie, Vanilla Cooking Expanded and Vanilla Fishing Expanded
-Genetic Rim (via a RimBees - Genetic Rim patch)
+Alpha Animals, Pawnmorpher, Alpha Mythology, Vanilla Cooking Expanded and Vanilla Fishing Expanded
+Vanilla Genetics Expanded
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
 
+v5.0: Updated for 1.4
 v4.6: A TON of awesome QoL changes by Ben Lubar. New Vanilla Factions Expanded - Ancients bee, plus a Bee Vault! (03/12/21)
 v4.5: RimWorld 1.3 update. (05/07/21)
 v4.4: Added 14 new bee species and 4 new beehouses (19/05/21) 

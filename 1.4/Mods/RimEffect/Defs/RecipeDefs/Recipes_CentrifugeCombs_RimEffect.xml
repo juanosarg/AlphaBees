@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>RB_CentrifugePrefabComb</defName>
+		<label>extract from prefab comb</label>
+		<description>Centrifuges a prefab comb to extract honey, wax and prefab components</description>
+		<jobString>Extracting honey, wax and prefab components</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>100</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Prefab_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Prefab_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+
+
+	<RecipeDef>
+		<defName>RB_CentrifugePrefabCombBulk</defName>
+		<label>bulk extract from prefab comb</label>
+		<description>Centrifuges a prefab comb to bulk extract honey, wax and prefab components</description>
+		<jobString>Extracting honey, wax and prefab components</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>100</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Prefab_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Prefab_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>20</RB_BaseHoney>
+			<RB_Beeswax>30</RB_Beeswax>
+			<RE_PrefabComponent>10</RE_PrefabComponent>
+
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>RB_CentrifugeEezoComb</defName>
+		<label>extract from eezo comb</label>
+		<description>Centrifuges an eezo comb to extract honey, wax and element zero</description>
+		<jobString>Extracting honey, wax and element zero</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Eezo_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Eezo_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+
+
+	<RecipeDef>
+		<defName>RB_CentrifugeEezoCombBulk</defName>
+		<label>bulk extract from eezo comb</label>
+		<description>Centrifuges an eezo comb to bulk extract honey, wax and element zero</description>
+		<jobString>Extracting honey, wax and element zero</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Eezo_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Eezo_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>250</RB_BaseHoney>
+			<RB_Beeswax>200</RB_Beeswax>
+			<RE_ElementZero>80</RE_ElementZero>
+		</products>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

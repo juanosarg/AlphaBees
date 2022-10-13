@@ -293,6 +293,8 @@
 	<RB_IgnorePlants>Bees ignore the need for plants or other nearby materials</RB_IgnorePlants>
 	<RB_GreenhouseBees>Greenhouse bees. Bees consider indoor temperature instead of map average</RB_GreenhouseBees>
 	<RB_DisableMessages>Disable Hybridization success messages</RB_DisableMessages>
+	<RB_CarryBees>Carry combs and bees to storage</RB_CarryBees>
+	<RB_CarryBees_Description>By default, anything extracted from beehouses and chambers is carried by the pawn that extracted it to available storage. If this is deselected, they'll just drop it on the ground.</RB_CarryBees_Description>
 	
 	<!-- Ben's Patches -->
 	

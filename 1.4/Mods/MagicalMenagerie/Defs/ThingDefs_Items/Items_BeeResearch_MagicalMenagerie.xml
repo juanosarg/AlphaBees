@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
+		<defName>RB_ResearchPapersPsyAur</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchPsyAur</imageNameInGraphicsCache>
+				<textForTheImage>Psychic + Aurum = Light Magical</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
+		<defName>RB_ResearchPapersPsyLightMagical</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchPsyLightMagical</imageNameInGraphicsCache>
+				<textForTheImage>Psychic + Light Magical = Heavy Magical</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>	
+	</ThingDef>
+
+
+</Defs>
