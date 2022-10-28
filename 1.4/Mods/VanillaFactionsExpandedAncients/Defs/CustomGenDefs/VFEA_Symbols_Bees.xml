@@ -6,11 +6,7 @@
   <thing>RB_HoneyPreservedVegetables</thing>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
-  <defName>RB_BlackBeeswaxFloor</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>RB_BlackBeeswaxFloor</terrain>
-</KCSG.SymbolDef>
+
 
 <KCSG.SymbolDef>
   <defName>RB_HoneyedIcePop</defName>
@@ -28,11 +24,7 @@
   <rotation>West</rotation>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
-  <defName>RB_SteelwaxFloor</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>RB_SteelwaxFloor</terrain>
-</KCSG.SymbolDef>
+
 
 <KCSG.SymbolDef>
   <defName>RB_WaxCandle_RB_Steelwax</defName>
@@ -47,11 +39,7 @@
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
-  <defName>RB_WhiteBeeswaxFloor</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>RB_WhiteBeeswaxFloor</terrain>
-</KCSG.SymbolDef>
+
 
 <KCSG.SymbolDef>
   <defName>RB_WaxCandle_RB_WhiteBeeswax</defName>
@@ -93,11 +81,7 @@
   <stuff>RB_Steelwax</stuff>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
-  <defName>RB_RedBeeswaxTileFloor</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>RB_RedBeeswaxTileFloor</terrain>
-</KCSG.SymbolDef>
+
 
 <KCSG.SymbolDef>
   <defName>VFEA_SuperNaniteContainment_East</defName>
