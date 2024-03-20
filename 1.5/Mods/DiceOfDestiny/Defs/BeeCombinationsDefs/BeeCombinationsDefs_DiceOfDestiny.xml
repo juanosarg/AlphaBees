@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_DiceOfDestiny_1</defName>
+		<bee1>Adaptive</bee1>
+		<bee2>Aurum</bee2>
+		<result>
+			<li>Casino</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_DiceOfDestiny_2</defName>
+		<bee1>Casino</bee1>
+		<bee2>Oily</bee2>
+		<result>
+			<li>Ominous</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+
+
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_DiceOfDestiny_3</defName>
+		<bee1>Casino</bee1>
+		<bee2>Precious</bee2>
+		<result>
+			<li>Fortunate</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+</Defs>

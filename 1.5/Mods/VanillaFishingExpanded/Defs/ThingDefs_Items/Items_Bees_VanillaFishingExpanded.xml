@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Fishing Branch ==========-->
+
+	<!--=============== Fisher ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_FisherBeeBase" Abstract="True" >
+		<description>Fisher bees love nothing more than a relaxing fishing session (read: boring). Their honeycombs get saturated with tiny pieces of fish, which is as disgusting as it sounds.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Fisher</species>
+				<comb>RB_Fisher_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>true</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_FisherBeeBase">
+		<defName>RB_Bee_Fisher_Drone</defName>
+		<label>fisher drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Fisher_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_FisherBeeBase">
+		<defName>RB_Bee_Fisher_Queen</defName>
+		<label>fisher queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Fisher_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+
+</Defs>

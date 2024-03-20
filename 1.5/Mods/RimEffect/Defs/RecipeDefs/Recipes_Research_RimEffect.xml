@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_CreateRimEffectTierResearch</defName>
+		<label>create Rim-Effect tier bee research</label>
+		<description>Research bee combinations to create Rim-Effect tier bees. This research is random and you may get duplicate results.</description>
+		<jobString>Researching bees</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_BeeResearchTable</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_BeeswaxCategory</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Honeys</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RE_PrefabComponent</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<categories>
+				<li>RB_BeeswaxCategory</li>
+				<li>RB_Honeys</li>
+			</categories>
+			<thingDefs>
+				<li>RE_PrefabComponent</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_RandomRimEffectResearch>1</RB_RandomRimEffectResearch>
+
+		</products>
+		<skillRequirements>
+			<Intellectual>3</Intellectual>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+
+	</RecipeDef>
+
+
+</Defs>

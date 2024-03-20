@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_MM_1</defName>
+		<bee1>Psychic</bee1>
+		<bee2>Aurum</bee2>
+		<result>
+			<li>LightMagical</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_MM_2</defName>
+		<bee1>LightMagical</bee1>
+		<bee2>Psychic</bee2>
+		<result>
+			<li>HeavyMagical</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+</Defs>

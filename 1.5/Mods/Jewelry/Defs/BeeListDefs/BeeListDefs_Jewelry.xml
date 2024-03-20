@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeListDef>
+		<defName>RB_DiamondBeeList</defName>
+		<beeDroneDef>RB_Bee_Diamond_Drone</beeDroneDef>
+		<beeDroneTag>RB_Diamond_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Diamond_Queen</beeQueenDef>
+		<beeQueenTag>RB_Diamond_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+	<RimBees.BeeListDef>
+		<defName>RB_RubyBeeList</defName>
+		<beeDroneDef>RB_Bee_Ruby_Drone</beeDroneDef>
+		<beeDroneTag>RB_Ruby_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Ruby_Queen</beeQueenDef>
+		<beeQueenTag>RB_Ruby_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+	<RimBees.BeeListDef>
+		<defName>RB_SapphireBeeList</defName>
+		<beeDroneDef>RB_Bee_Sapphire_Drone</beeDroneDef>
+		<beeDroneTag>RB_Sapphire_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Sapphire_Queen</beeQueenDef>
+		<beeQueenTag>RB_Sapphire_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+
+</Defs>

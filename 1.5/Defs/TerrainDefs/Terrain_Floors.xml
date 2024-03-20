@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RB_WaxFloorBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Lacquered wax floor. Not very resistant.</description>
+		<texturePath>Floors/honeycomb</texturePath>
+		<statBases>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+
+		</statBases>
+		<designatorDropdown>RB_WaxFloors</designatorDropdown>
+
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_BeesWaxFloor</defName>
+		<label>beeswax floor</label>
+		<color>(226,183,114)</color>
+		<costList>
+			<RB_Beeswax>4</RB_Beeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_BrittleBeesWaxFloor</defName>
+		<label>brittle beeswax floor</label>
+		<color>(112,215,222)</color>
+		<costList>
+			<RB_Brittlewax>4</RB_Brittlewax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_RedBeeswaxFloor</defName>
+		<label>red beeswax floor</label>
+		<color>(226,120,114)</color>
+		<costList>
+			<RB_RedBeeswax>4</RB_RedBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_WhiteBeeswaxFloor</defName>
+		<label>white beeswax floor</label>
+		<color>(240,240,240)</color>
+		<costList>
+			<RB_WhiteBeeswax>4</RB_WhiteBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_BlackBeeswaxFloor</defName>
+		<label>black beeswax floor</label>
+		<color>(39,40,58)</color>
+		<costList>
+			<RB_BlackBeeswax>4</RB_BlackBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_HeavywaxFloor</defName>
+		<label>heavywax floor</label>
+		<color>(151,93,0)</color>
+		<costList>
+			<RB_HeavyWax>4</RB_HeavyWax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_BlueBeeswaxFloor</defName>
+		<label>blue beeswax floor</label>
+		<color>(49,51,192)</color>
+		<costList>
+			<RB_BlueBeeswax>4</RB_BlueBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxFloorBase">
+		<defName>RB_SteelwaxFloor</defName>
+		<label>steelwax floor</label>
+		<color>(170,170,170)</color>
+		<costList>
+			<RB_Steelwax>4</RB_Steelwax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="RB_WaxTiledFloorBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Tiled wax floor. Not very resistant. Prettier than the basic wax floor.</description>
+		<texturePath>Floors/hextile</texturePath>
+		<statBases>
+			<WorkToBuild>200</WorkToBuild>
+			<Beauty>1</Beauty>
+			<Flammability>0.5</Flammability>
+
+		</statBases>
+		<designatorDropdown>RB_WaxTiledFloors</designatorDropdown>
+
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_BeesWaxTileFloor</defName>
+		<label>beeswax tiles</label>
+		<color>(226,183,114)</color>
+		<costList>
+			<RB_Beeswax>4</RB_Beeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_BrittleBeesWaxTileFloor</defName>
+		<label>brittle beeswax tiles</label>
+		<color>(112,215,222)</color>
+		<costList>
+			<RB_Brittlewax>4</RB_Brittlewax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_RedBeeswaxTileFloor</defName>
+		<label>red beeswax tiles</label>
+		<color>(226,120,114)</color>
+		<costList>
+			<RB_RedBeeswax>4</RB_RedBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_WhiteBeeswaxTileFloor</defName>
+		<label>white beeswax tiles</label>
+		<color>(240,240,240)</color>
+		<costList>
+			<RB_WhiteBeeswax>4</RB_WhiteBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_BlackBeeswaxTileFloor</defName>
+		<label>black beeswax tiles</label>
+		<color>(39,40,58)</color>
+		<costList>
+			<RB_BlackBeeswax>4</RB_BlackBeeswax>
+		</costList>
+	</TerrainDef>
+	
+		<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_HeavywaxTileFloor</defName>
+		<label>heavywax tiles</label>
+		<color>(151,93,0)</color>
+		<costList>
+			<RB_HeavyWax>4</RB_HeavyWax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_BlueBeeswaxTileFloor</defName>
+		<label>blue beeswax tiles</label>
+		<color>(49,51,192)</color>
+		<costList>
+			<RB_BlueBeeswax>4</RB_BlueBeeswax>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="RB_WaxTiledFloorBase">
+		<defName>RB_SteelwaxTileFloor</defName>
+		<label>steelwax tiles</label>
+		<color>(170,170,170)</color>
+		<costList>
+			<RB_Steelwax>4</RB_Steelwax>
+		</costList>
+	</TerrainDef>
+
+</Defs>

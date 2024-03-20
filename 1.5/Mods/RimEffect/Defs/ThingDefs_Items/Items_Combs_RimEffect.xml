@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Prefab_Honeycomb</defName>
+		<label>prefab honeycomb</label>
+		<description>This is a honeycomb produced by prefab bees. Prefab bees are experts at producing things FAST. They have one of the fastest honeycomb production times. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and prefab components.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Prefab_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>2</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			<RE_PrefabComponent>1</RE_PrefabComponent>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Eezo_Honeycomb</defName>
+		<label>eezo honeycomb</label>
+		<description>This is a honeycomb produced by eezo bees. By running a current through eezo bees, they are able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect". The bees call it "You psychotic ass!". Honeycombs can be processed in a Honey Extractor to get honey, beeswax and element zero.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Eezo_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>25</RB_BaseHoney>
+			<RB_Beeswax>20</RB_Beeswax>
+			<RE_ElementZero>8</RE_ElementZero>
+		</butcherProducts>
+	</ThingDef>
+
+
+</Defs>

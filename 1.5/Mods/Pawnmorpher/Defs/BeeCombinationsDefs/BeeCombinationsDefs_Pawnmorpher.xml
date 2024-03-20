@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_Pawnmorpher_1</defName>
+		<bee1>Radioactive</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Mutagenic</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_Pawnmorpher_2</defName>
+		<bee1>Mutagenic</bee1>
+		<bee2>Precious</bee2>
+		<result>
+			<li>Mutanite</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier3_Pawnmorpher_3</defName>
+		<bee1>Mutagenic</bee1>
+		<bee2>Weaving</bee2>
+		<result>
+			<li>Morph</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+</Defs>

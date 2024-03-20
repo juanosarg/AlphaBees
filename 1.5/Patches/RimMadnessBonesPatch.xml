@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Bones</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_2"]/result</xpath>
+					<value>
+						<li>Skeletal</li>
+					
+					</value>
+				</li>
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
