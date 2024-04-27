@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using Verse;
 using RimWorld;
+using System.Collections.Generic;
+
 
 namespace RimBees
 {
@@ -12,16 +14,26 @@ namespace RimBees
         public override void DoEffect(Pawn user)
         {
             base.DoEffect(user);
-            string nameOfTheImage = this.parent.TryGetComp<CompBeeResearchImages>().GetImage;
-            string textOfTheImage = this.parent.TryGetComp<CompBeeResearchImages>().GetText;
-
-            if (user.Faction == Faction.OfPlayer)
+            CompBeeResearchData comp = this.parent.TryGetComp<CompBeeResearchData>();
+            if (comp != null)
             {
-                user.health.AddHediff(HediffDef.Named("RB_RecentlyResearched"));
-            }
+                ThingDef firstBee = comp.Props.firstBee;
+                ThingDef secondBee = comp.Props.secondBee;
+                List<ThingDef> resultingBees = comp.Props.resultingBees;
 
-            beeresearch = new Dialog_BeeResearch(nameOfTheImage, textOfTheImage);
-            Find.WindowStack.Add(beeresearch);
+
+                if (user.Faction == Faction.OfPlayer)
+                {
+                    user.health.AddHediff(HediffDef.Named("RB_RecentlyResearched"));
+                }
+
+                beeresearch = new Dialog_BeeResearch(firstBee, secondBee, resultingBees);
+                Find.WindowStack.Add(beeresearch);
+            } else
+            {
+                Log.Message("Bee research data item found without a CompBeeResearchData. Moan to the mod author");
+            }
+            
         }
 
         public override AcceptanceReport CanBeUsedBy(Pawn p)

@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<ThingDef Name="RB_ResearchPapersBaseRoM" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (RimWorld of Magic)</label>
-
 	</ThingDef>
-
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomRoMResearch</defName>
 		<label>bee research (unfinished)</label>
@@ -33,27 +30,25 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<ThingCategoryDef>
 		<defName>RB_BeeResearchTierRoM</defName>
 		<label>bee research, RimWorld of Magic tier</label>
 		<parent>RB_BeeResearch</parent>
 		<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
-
 	</ThingCategoryDef>
-
-	<ThingDef ParentName="RB_ResearchPapersBaseRoM" >
-		<defName>RB_ResearchPapersPsychicAlloy</defName>		
+	<ThingDef ParentName="RB_ResearchPapersBaseRoM">
+		<defName>RB_ResearchPapersPsychicAlloy</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsychicAlloy</imageNameInGraphicsCache>
-				<textForTheImage>Psychic + Alloy = Wizard</textForTheImage>
+				<firstBee>RB_Bee_Psychic_Queen</firstBee>
+				<secondBee>RB_Bee_Alloy_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Wizard_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierRoM</li>
-		</thingCategories>	
-	</ThingDef>	
-
-
+		</thingCategories>
+	</ThingDef>
 </Defs>

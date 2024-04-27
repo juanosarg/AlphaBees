@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<ThingDef Name="RB_ResearchPapersBaseAlpha" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (alpha)</label>
 	</ThingDef>
@@ -41,8 +40,11 @@
 		<defName>RB_ResearchPapersAgriElec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAgriElec</imageNameInGraphicsCache>
-				<textForTheImage>Agricultural + Electronic = Slurry</textForTheImage>
+				<firstBee>RB_Bee_Agricultural_Queen</firstBee>
+				<secondBee>RB_Bee_Electronic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Slurry_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -53,8 +55,11 @@
 		<defName>RB_ResearchPapersAlloyPrec</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchAlloyPrec</imageNameInGraphicsCache>
-				<textForTheImage>Alloy + Precious = Sky</textForTheImage>
+				<firstBee>RB_Bee_Alloy_Queen</firstBee>
+				<secondBee>RB_Bee_Precious_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Sky_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -65,8 +70,11 @@
 		<defName>RB_ResearchPapersArcticLactic</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchArcticLactic</imageNameInGraphicsCache>
-				<textForTheImage>Arctic + Lactic = Frosty</textForTheImage>
+				<firstBee>RB_Bee_Arctic_Queen</firstBee>
+				<secondBee>RB_Bee_Lactic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Frosty_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -77,8 +85,11 @@
 		<defName>RB_ResearchPapersInsectoidDesert</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchInsectoidDesert</imageNameInGraphicsCache>
-				<textForTheImage>Insectoid + Desert = Feral</textForTheImage>
+				<firstBee>RB_Bee_Insectoid_Queen</firstBee>
+				<secondBee>RB_Bee_Desert_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Feral_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -89,8 +100,11 @@
 		<defName>RB_ResearchPapersNeutroWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNeutroWood</imageNameInGraphicsCache>
-				<textForTheImage>Neutro + Woodland = Slimy</textForTheImage>
+				<firstBee>RB_Bee_Neutro_Queen</firstBee>
+				<secondBee>RB_Bee_Woodland_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Slimy_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -101,8 +115,11 @@
 		<defName>RB_ResearchPapersNoctInsectoid</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNoctInsectoid</imageNameInGraphicsCache>
-				<textForTheImage>Nocturnal + Insectoid = Black</textForTheImage>
+				<firstBee>RB_Bee_Nocturnal_Queen</firstBee>
+				<secondBee>RB_Bee_Insectoid_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Black_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -113,8 +130,11 @@
 		<defName>RB_ResearchPapersNoctTanner</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchNoctTanner</imageNameInGraphicsCache>
-				<textForTheImage>Nocturnal + Tanner = Forsaken</textForTheImage>
+				<firstBee>RB_Bee_Nocturnal_Queen</firstBee>
+				<secondBee>RB_Bee_Tanner_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Forsaken_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -125,8 +145,11 @@
 		<defName>RB_ResearchPapersRadiWood</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchRadiWood</imageNameInGraphicsCache>
-				<textForTheImage>Radioactive + Woodland = Ocular</textForTheImage>
+				<firstBee>RB_Bee_Radioactive_Queen</firstBee>
+				<secondBee>RB_Bee_Woodland_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Ocular_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -137,8 +160,11 @@
 		<defName>RB_ResearchPapersSwampDesert</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampDesert</imageNameInGraphicsCache>
-				<textForTheImage>Swamp + Desert = Cactus</textForTheImage>
+				<firstBee>RB_Bee_Swamp_Queen</firstBee>
+				<secondBee>RB_Bee_Desert_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Cactus_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -149,8 +175,11 @@
 		<defName>RB_ResearchPapersSwampNutri</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampNutri</imageNameInGraphicsCache>
-				<textForTheImage>Swamp + Nutritious = Fungal</textForTheImage>
+				<firstBee>RB_Bee_Swamp_Queen</firstBee>
+				<secondBee>RB_Bee_Nutritious_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Fungal_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -161,8 +190,11 @@
 		<defName>RB_ResearchPapersSwampWeaving</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchSwampWeaving</imageNameInGraphicsCache>
-				<textForTheImage>Swamp + Weaving = Devil</textForTheImage>
+				<firstBee>RB_Bee_Swamp_Queen</firstBee>
+				<secondBee>RB_Bee_Weaving_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Devil_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -173,8 +205,11 @@
 		<defName>RB_ResearchPapersWoolyTanner</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchWoolyTanner</imageNameInGraphicsCache>
-				<textForTheImage>Wooly + Tanner = Legendary</textForTheImage>
+				<firstBee>RB_Bee_Wooly_Queen</firstBee>
+				<secondBee>RB_Bee_Tanner_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Legendary_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
@@ -185,14 +220,15 @@
 		<defName>RB_ResearchPapersWoodlandOily</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchWoodlandOily</imageNameInGraphicsCache>
-				<textForTheImage>Woodland + Oily = Aero</textForTheImage>
+				<firstBee>RB_Bee_Woodland_Queen</firstBee>
+				<secondBee>RB_Bee_Oily_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Aero_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierAlpha</li>
 		</thingCategories>
 	</ThingDef>
-
-
 </Defs>

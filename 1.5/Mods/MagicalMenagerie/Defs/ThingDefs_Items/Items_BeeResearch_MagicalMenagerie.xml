@@ -1,31 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersPsyAur</defName>		
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersPsyAur</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsyAur</imageNameInGraphicsCache>
-				<textForTheImage>Psychic + Aurum = Light Magical</textForTheImage>
+				<firstBee>RB_Bee_Psychic_Queen</firstBee>
+				<secondBee>RB_Bee_Aurum_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_LightMagical_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
-
-	<ThingDef ParentName="RB_ResearchPapersBaseTier4" >
-		<defName>RB_ResearchPapersPsyLightMagical</defName>		
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersPsyLightMagical</defName>
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
-				<imageNameInGraphicsCache>BeeResearchPsyLightMagical</imageNameInGraphicsCache>
-				<textForTheImage>Psychic + Light Magical = Heavy Magical</textForTheImage>
+				<firstBee>RB_Bee_Psychic_Queen</firstBee>
+				<secondBee>RB_Bee_LightMagical_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_HeavyMagical_Queen</li>
+				</resultingBees>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTier4</li>
-		</thingCategories>	
+		</thingCategories>
 	</ThingDef>
-
-
 </Defs>

@@ -308,10 +308,10 @@
     <Compile Include="Buildings\Building_BroodChamber.cs" />
     <Compile Include="Buildings\Building_TreeHive.cs" />
     <Compile Include="CompClasses\CompBeeResearch.cs" />
-    <Compile Include="CompClasses\CompBeeResearchImages.cs" />
+    <Compile Include="CompClasses\CompBeeResearchData.cs" />
     <Compile Include="CompClasses\CompBeeHouse.cs" />
     <Compile Include="CompClasses\Properties\CompProperties_BeeHouse.cs" />
-    <Compile Include="CompClasses\Properties\CompProperties_BeeResearchImages.cs" />
+    <Compile Include="CompClasses\Properties\CompProperties_BeeResearchData.cs" />
     <Compile Include="CompClasses\Properties\CompProperties_RandomResearch.cs" />
     <Compile Include="CompClasses\CompRandomResearch.cs" />
     <Compile Include="CompClasses\CompUseEffect_ShowBeeResearch.cs" />
@@ -330,6 +330,7 @@
     <Compile Include="ModOptions\RimBees_SettingsController.cs" />
     <Compile Include="Placeworkers\PlaceWorker_ShowPollinationRadius.cs" />
     <Compile Include="Utility\BenLubarsRimBeesPatches.cs" />
+    <Compile Include="Utility\Utils.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertQueenInBeehouse.cs" />
     <Compile Include="WorkGivers\WorkGiver_InsertDroneInBeehouse.cs" />
     <Compile Include="CompClasses\Properties\CompProperties_TempRuinableAndDestroy.cs" />

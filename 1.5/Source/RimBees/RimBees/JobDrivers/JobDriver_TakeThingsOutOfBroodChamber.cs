@@ -38,31 +38,20 @@ namespace RimBees
                 resultingBee = DefDatabase<ThingDef>.GetNamed(beeDrone.def.defName, true);
             } else if (randomNumber == 6)
             {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(getQueenFromDrone(beeDrone), true);
+                resultingBee = DefDatabase<ThingDef>.GetNamed(Utils.getQueenFromDrone(beeDrone), true);
             } else if (randomNumber == 7)
             {
                 resultingBee = DefDatabase<ThingDef>.GetNamed(beeQueen.def.defName, true);
             }
             else {
-                resultingBee = DefDatabase<ThingDef>.GetNamed(getDroneFromQueen(beeQueen), true);
+                resultingBee = DefDatabase<ThingDef>.GetNamed(Utils.getDroneFromQueen(beeQueen), true);
 
             }
 
             return resultingBee; 
         }
 
-        public string getDroneFromQueen(Thing beeQueen)
-        {
-            string beeSpecies = beeQueen.TryGetComp<CompBees>().GetSpecies;
-            return "RB_Bee_" + beeSpecies + "_Drone";
-        }
-
-        public string getQueenFromDrone(Thing beeDrone)
-        {
-            string beeSpecies = beeDrone.TryGetComp<CompBees>().GetSpecies;
-            return "RB_Bee_"+ beeSpecies +"_Queen";
-            
-        }
+        
 
         [DebuggerHidden]
         protected override IEnumerable<Toil> MakeNewToils()
