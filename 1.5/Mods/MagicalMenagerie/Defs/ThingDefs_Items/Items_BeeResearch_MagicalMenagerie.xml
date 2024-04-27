@@ -3,7 +3,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersPsyAur</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Psychic_Queen</firstBee>
 				<secondBee>RB_Bee_Aurum_Queen</secondBee>
 				<resultingBees>
@@ -18,7 +18,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersPsyLightMagical</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Psychic_Queen</firstBee>
 				<secondBee>RB_Bee_LightMagical_Queen</secondBee>
 				<resultingBees>

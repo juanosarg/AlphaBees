@@ -39,7 +39,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
 		<defName>RB_ResearchPapersRadiAdapt</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Radioactive_Queen</firstBee>
 				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
 				<resultingBees>
@@ -54,7 +54,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
 		<defName>RB_ResearchPapersMutaPrec</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Mutagenic_Queen</firstBee>
 				<secondBee>RB_Bee_Precious_Queen</secondBee>
 				<resultingBees>
@@ -69,7 +69,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
 		<defName>RB_ResearchPapersMutaWeave</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Mutagenic_Queen</firstBee>
 				<secondBee>RB_Bee_Weaving_Queen</secondBee>
 				<resultingBees>

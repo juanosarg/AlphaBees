@@ -39,7 +39,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBaseRimEffect">
 		<defName>RB_ResearchPapersElectronicPlastic</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Electronic_Queen</firstBee>
 				<secondBee>RB_Bee_Plastic_Queen</secondBee>
 				<resultingBees>
@@ -54,7 +54,7 @@
 	<ThingDef ParentName="RB_ResearchPapersBaseRimEffect">
 		<defName>RB_ResearchPapersPrefabSynthetic</defName>
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchImages">
+			<li Class="RimBees.CompProperties_BeeResearchData">
 				<firstBee>RB_Bee_Prefab_Queen</firstBee>
 				<secondBee>RB_Bee_Synthetic_Queen</secondBee>
 				<resultingBees>
