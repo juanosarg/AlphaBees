@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef Name="RB_ResearchPapersBaseArchotech" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (More Archotech Garbage)</label>
+
 	</ThingDef>
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomArchotechResearch</defName>
 		<label>bee research (unfinished)</label>
@@ -30,25 +33,27 @@
 			</li>
 		</comps>
 	</ThingDef>
+
 	<ThingCategoryDef>
 		<defName>RB_BeeResearchTierArchotech</defName>
 		<label>bee research, More Archotech Garbage tier</label>
 		<parent>RB_BeeResearch</parent>
 		<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
 	</ThingCategoryDef>
-	<ThingDef ParentName="RB_ResearchPapersBaseArchotech">
-		<defName>RB_ResearchPapersFabricatedHyper</defName>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseArchotech" >
+		<defName>RB_ResearchPapersFabricatedHyper</defName>		
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchData">
-				<firstBee>RB_Bee_Fabricated_Queen</firstBee>
-				<secondBee>RB_Bee_Hyper_Queen</secondBee>
-				<resultingBees>
-					<li>RB_Bee_Archo_Queen</li>
-				</resultingBees>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchFabricatedHyper</imageNameInGraphicsCache>
+				<textForTheImage>Fabricated + Hyper = Archo</textForTheImage>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierArchotech</li>
-		</thingCategories>
-	</ThingDef>
+		</thingCategories>	
+	</ThingDef>	
+
+
 </Defs>

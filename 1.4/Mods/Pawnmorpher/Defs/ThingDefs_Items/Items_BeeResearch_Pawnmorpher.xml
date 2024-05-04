@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef Name="RB_ResearchPapersBasePawnmorpher" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (pawnmorpher)</label>
+
 	</ThingDef>
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomPawnmorpherResearch</defName>
 		<label>bee research (unfinished)</label>
@@ -30,55 +33,55 @@
 			</li>
 		</comps>
 	</ThingDef>
+
 	<ThingCategoryDef>
 		<defName>RB_BeeResearchTierPawnmorpher</defName>
 		<label>bee research, pawnmorpher tier</label>
 		<parent>RB_BeeResearch</parent>
 		<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+
 	</ThingCategoryDef>
-	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
-		<defName>RB_ResearchPapersRadiAdapt</defName>
+
+	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+		<defName>RB_ResearchPapersRadiAdapt</defName>		
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchData">
-				<firstBee>RB_Bee_Radioactive_Queen</firstBee>
-				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
-				<resultingBees>
-					<li>RB_Bee_Mutagenic_Queen</li>
-				</resultingBees>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchRadiAdapt</imageNameInGraphicsCache>
+				<textForTheImage>Radioactive + Adaptive = Mutagenic</textForTheImage>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>
-	</ThingDef>
-	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
-		<defName>RB_ResearchPapersMutaPrec</defName>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+		<defName>RB_ResearchPapersMutaPrec</defName>		
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchData">
-				<firstBee>RB_Bee_Mutagenic_Queen</firstBee>
-				<secondBee>RB_Bee_Precious_Queen</secondBee>
-				<resultingBees>
-					<li>RB_Bee_Mutanite_Queen</li>
-				</resultingBees>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchMutaPrec</imageNameInGraphicsCache>
+				<textForTheImage>Mutagenic + Precious = Mutanite</textForTheImage>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>
-	</ThingDef>
-	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher">
-		<defName>RB_ResearchPapersMutaWeave</defName>
+		</thingCategories>	
+	</ThingDef>	
+
+
+
+	<ThingDef ParentName="RB_ResearchPapersBasePawnmorpher" >
+		<defName>RB_ResearchPapersMutaWeave</defName>		
 		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchData">
-				<firstBee>RB_Bee_Mutagenic_Queen</firstBee>
-				<secondBee>RB_Bee_Weaving_Queen</secondBee>
-				<resultingBees>
-					<li>RB_Bee_Morph_Queen</li>
-				</resultingBees>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchMutaWeave</imageNameInGraphicsCache>
+				<textForTheImage>Mutagenic + Weaving = Morph</textForTheImage>
 			</li>
 		</comps>
 		<thingCategories>
 			<li>RB_BeeResearchTierPawnmorpher</li>
-		</thingCategories>
-	</ThingDef>
+		</thingCategories>	
+	</ThingDef>	
+
+
 </Defs>
