@@ -7,7 +7,7 @@ using RimWorld.Planet;
 using System.Linq;
 using System;
 
-// So, let's comment this code, since it uses Harmony and has moderate complexity
+
 
 namespace RimBees
 {

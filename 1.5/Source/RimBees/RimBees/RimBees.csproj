@@ -294,7 +294,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Achievements\ItemTrackerMultiple.cs" />
     <Compile Include="Alerts\Alert_BeeDanger.cs" />
     <Compile Include="CompClasses\CompBeeResearchTable.cs" />
     <Compile Include="CompClasses\CompDangerBee.cs" />
