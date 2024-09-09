@@ -31,7 +31,7 @@ namespace RimBees
             {
                 if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeDroneDef, true)).Count > 0)
                 {
-                    list.Add(new FloatMenuOption(element.beeDroneTag.Translate(), delegate
+                    list.Add(new FloatMenuOption("RB_Drone_Tag".Translate(element.nameString), delegate
                     {
                         drone = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeDroneDef, true)).RandomElement();
                         this.TryInsertDrone();

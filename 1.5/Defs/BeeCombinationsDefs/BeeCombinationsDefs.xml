@@ -101,7 +101,8 @@
 		<result>
 			<li>Electronic</li>
 			<li>Oily</li>
-			<li>Plastic</li>		
+			<li>Plastic</li>	
+			<li>Quarry</li>				
 		</result>				
 	</RimBees.BeeCombinationDef>	
 
@@ -149,7 +150,8 @@
 		<bee1>Nutritious</bee1>
 		<bee2>Adaptive</bee2>
 		<result>
-			<li>Pet</li>					
+			<li>Pet</li>
+			<li>Rainbow</li>			
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
@@ -170,6 +172,14 @@
 		<bee2>Woodland</bee2>
 		<result>
 			<li>Straw</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Quarry_Tech</defName>
+		<bee1>Technological</bee1>
+		<bee2>Quarry</bee2>
+		<result>
+			<li>Mason</li>							
 		</result>				
 	</RimBees.BeeCombinationDef>	
 	

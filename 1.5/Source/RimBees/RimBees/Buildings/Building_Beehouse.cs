@@ -582,7 +582,7 @@ namespace RimBees
                 
 
                 CellRect rect = GenAdj.OccupiedRect(this.Position, this.Rotation, IntVec2.One);
-                rect = rect.ExpandedBy(6);
+                rect = rect.ExpandedBy(RimBees_Settings.beeEffectRadius);
 
                 foreach (IntVec3 current in rect.Cells)
                 {
@@ -647,7 +647,7 @@ namespace RimBees
         {
             get
             {
-                return GenRadial.RadialCellsAround(this.Position, 6, true);
+                return GenRadial.RadialCellsAround(this.Position, RimBees_Settings.beeEffectRadius, true);
             }
         }
 

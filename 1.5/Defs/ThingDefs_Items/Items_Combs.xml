@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef ParentName="ResourceBase"  Abstract="True" Name="RB_CombBase">   
+	<ThingDef ParentName="ResourceBase" Abstract="True" Name="RB_CombBase">
 		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Combs</storedConceptLearnOpportunity>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
@@ -15,9 +14,8 @@
 		<thingCategories>
 			<li>RB_Combs</li>
 		</thingCategories>
-		<stackLimit>75</stackLimit>	
+		<stackLimit>75</stackLimit>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Temperate_Honeycomb</defName>
 		<label>temperate honeycomb</label>
@@ -25,13 +23,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Temperate_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Mild_Honeycomb</defName>
 		<label>mild honeycomb</label>
@@ -39,13 +36,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Mild_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Hybrid_Honeycomb</defName>
 		<label>hybrid honeycomb</label>
@@ -53,13 +49,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Hybrid_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_WhiteHoney>14</RB_WhiteHoney>
 			<RB_WhiteBeeswax>5</RB_WhiteBeeswax>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Amalgam_Honeycomb</defName>
 		<label>amalgam honeycomb</label>
@@ -67,13 +62,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Amalgam_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BlueHoney>7</RB_BlueHoney>
 			<RB_BlueBeeswax>5</RB_BlueBeeswax>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Alloy_Honeycomb</defName>
 		<label>alloy honeycomb</label>
@@ -81,14 +75,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Alloy_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<RB_Steelwax>10</RB_Steelwax>
 			<Steel>5</Steel>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Adaptive_Honeycomb</defName>
 		<label>adaptive honeycomb</label>
@@ -96,13 +89,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Adaptive_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_AdaptiveHoney>7</RB_AdaptiveHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Neutro_Honeycomb</defName>
 		<label>neutro honeycomb</label>
@@ -110,14 +102,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Neutro_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<Neutroamine>5</Neutroamine>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Nutritious_Honeycomb</defName>
 		<label>nutritious honeycomb</label>
@@ -125,14 +116,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Nutritious_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_TastyHoney>7</RB_TastyHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_NondescriptMeat>25</RB_NondescriptMeat>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Technological_Honeycomb</defName>
 		<label>technological honeycomb</label>
@@ -140,13 +130,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Technological_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>20</RB_HeavyWax>
 			<RB_ComponentBioInterface>2</RB_ComponentBioInterface>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Arctic_Honeycomb</defName>
 		<label>arctic honeycomb</label>
@@ -154,14 +143,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Arctic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>10</RB_Beeswax>
 			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
 			<RB_HoneyedIcePop>15</RB_HoneyedIcePop>
 		</butcherProducts>
 	</ThingDef>
-	
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Woodland_Honeycomb</defName>
 		<label>woodland honeycomb</label>
@@ -169,14 +157,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Woodland_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>10</RB_Beeswax>
 			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
 			<WoodLog>10</WoodLog>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Desert_Honeycomb</defName>
 		<label>desert honeycomb</label>
@@ -184,14 +171,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Desert_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_RedBeeswax>10</RB_RedBeeswax>
 			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
 			<RawAgave>25</RawAgave>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Swamp_Honeycomb</defName>
 		<label>swamp honeycomb</label>
@@ -199,14 +185,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Swamp_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
 			<RawFungus>25</RawFungus>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Nocturnal_Honeycomb</defName>
 		<label>nocturnal honeycomb</label>
@@ -214,14 +199,12 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Nocturnal_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BlackBeeswax>10</RB_BlackBeeswax>
 			<RB_BlackHoney>5</RB_BlackHoney>
 		</butcherProducts>
 	</ThingDef>
-
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Argent_Honeycomb</defName>
 		<label>argent honeycomb</label>
@@ -229,14 +212,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Argent_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Steelwax>10</RB_Steelwax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<Silver>25</Silver>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Aurum_Honeycomb</defName>
 		<label>aurum honeycomb</label>
@@ -244,14 +226,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Aurum_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Steelwax>5</RB_Steelwax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<Gold>10</Gold>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Precious_Honeycomb</defName>
 		<label>precious honeycomb</label>
@@ -259,14 +240,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Precious_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Steelwax>5</RB_Steelwax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<Jade>10</Jade>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Radioactive_Honeycomb</defName>
 		<label>radioactive honeycomb</label>
@@ -274,14 +254,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Radioactive_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Steelwax>5</RB_Steelwax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<Uranium>10</Uranium>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Tipsy_Honeycomb</defName>
 		<label>tipsy honeycomb</label>
@@ -289,14 +268,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Tipsy_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
 			<Wort>5</Wort>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Luxurious_Honeycomb</defName>
 		<label>luxurious honeycomb</label>
@@ -304,14 +282,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Luxurious_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<RB_PsychotropicHoney>10</RB_PsychotropicHoney>
 			<Ambrosia>5</Ambrosia>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Psychic_Honeycomb</defName>
 		<label>psychic honeycomb</label>
@@ -319,14 +296,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Psychic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
 			<PsychoidLeaves>25</PsychoidLeaves>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Stoner_Honeycomb</defName>
 		<label>stoner honeycomb</label>
@@ -334,14 +310,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Stoner_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
 			<SmokeleafLeaves>25</SmokeleafLeaves>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Agricultural_Honeycomb</defName>
 		<label>agricultural honeycomb</label>
@@ -349,14 +324,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Agricultural_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_TastyHoney>1</RB_TastyHoney>
 			<RB_NonDescriptVegetables>35</RB_NonDescriptVegetables>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Bittersweet_Honeycomb</defName>
 		<label>bittersweet honeycomb</label>
@@ -364,14 +338,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Bittersweet_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_TastyHoney>1</RB_TastyHoney>
 			<Chocolate>10</Chocolate>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Lactic_Honeycomb</defName>
 		<label>lactic honeycomb</label>
@@ -379,14 +352,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Lactic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_TastyHoney>2</RB_TastyHoney>
 			<RB_BeeMilk>10</RB_BeeMilk>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Egglaying_Honeycomb</defName>
 		<label>egglaying honeycomb</label>
@@ -394,14 +366,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Egglaying_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_Beeswax>5</RB_Beeswax>
 			<RB_TastyHoney>2</RB_TastyHoney>
 			<RB_BeeEggs>5</RB_BeeEggs>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Insectoid_Honeycomb</defName>
 		<label>insectoid honeycomb</label>
@@ -409,14 +380,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Insectoid_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>5</RB_HeavyWax>
 			<RB_TastyHoney>3</RB_TastyHoney>
 			<InsectJelly>10</InsectJelly>
 		</butcherProducts>
-	</ThingDef>	
-	
+	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Electronic_Honeycomb</defName>
 		<label>electronic honeycomb</label>
@@ -424,14 +394,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Electronic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>5</RB_HeavyWax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Oily_Honeycomb</defName>
 		<label>oily honeycomb</label>
@@ -439,14 +408,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Oily_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>10</RB_HeavyWax>
 			<RB_BaseHoney>5</RB_BaseHoney>
 			<Chemfuel>12</Chemfuel>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Plastic_Honeycomb</defName>
 		<label>plastic honeycomb</label>
@@ -454,14 +422,41 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Plastic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_HeavyWax>15</RB_HeavyWax>
 			<Plasteel>5</Plasteel>
 		</butcherProducts>
 	</ThingDef>
-	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Quarry_Honeycomb</defName>
+		<label>quarry honeycomb</label>
+		<description>This is a honeycomb produced by quarry bees, which can extract small amounts of stone from the landscape and turn them into granite chunks. Honeycombs can be procesed in a Honey Extractor to get honey, heavy beeswax and granite chunks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Quarry_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_HeavyWax>15</RB_HeavyWax>
+			<ChunkGranite>1</ChunkGranite>
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mason_Honeycomb</defName>
+		<label>mason honeycomb</label>
+		<description>This is a honeycomb produced by mason bees, which are adept at taking stone from the landscape and sculpting it into granite blocks. Honeycombs can be procesed in a Honey Extractor to get honey, heavy beeswax and granite blocks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mason_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_HeavyWax>15</RB_HeavyWax>
+			<BlocksGranite>25</BlocksGranite>
+		</butcherProducts>
+	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Pet_Honeycomb</defName>
 		<label>pet honeycomb</label>
@@ -469,74 +464,83 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Pet_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<Kibble>25</Kibble>
 		</butcherProducts>
 	</ThingDef>
-	
-		<ThingDef ParentName="RB_CombBase">
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Rainbow_Honeycomb</defName>
+		<label>rainbow honeycomb</label>
+		<description>This is a honeycomb produced by rainbow bees, who love decoration and gaudy colours. They can collect multicoloured honey and saturate their combs with dye. Honeycombs can be procesed in a Honey Extractor to get tasty honey, beeswax and dye.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Rainbow_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<Dye>5</Dye>
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Straw_Honeycomb</defName>
 		<label>straw honeycomb</label>
 		<description>This is a honeycomb produced by straw bees. Straw bees slowly collect loose dry grass lying around and weave it into their honeycombs. These strands can then be extracted from the comb and turned into useable Hay. Honeycombs can be procesed in a Honey Extractor to get tasty honey, brittle beeswax and hay.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Straw_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_Brittlewax>7</RB_Brittlewax>
 			<Hay>25</Hay>
 		</butcherProducts>
 	</ThingDef>
-	
-		<ThingDef ParentName="RB_CombBase">
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Weaving_Honeycomb</defName>
 		<label>weaving honeycomb</label>
 		<description>This is a honeycomb produced by Weaving bees. Weaving bees are all about knitting, crocheting and felting. It's all they care to do in their spare time. Honeycombs can be procesed in a Honey Extractor to get honey, brittle beeswax and cloth.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Weaving_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_Brittlewax>5</RB_Brittlewax>
 			<Cloth>25</Cloth>
 		</butcherProducts>
 	</ThingDef>
-	
-		<ThingDef ParentName="RB_CombBase">
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Tanner_Honeycomb</defName>
 		<label>tanner honeycomb</label>
 		<description>This is a honeycomb produced by Tanner bees. Tanner bees are capable of creating a pseudo-artificial leather without needing to kill any animals. Vegans will be super pleased! Well, except for the whole enslaving entire colonies of bees, that is... Honeycombs can be procesed in a Honey Extractor to get honey, heavy beeswax and leather.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Tanner_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_HeavyWax>5</RB_HeavyWax>
 			<Leather_Plain>25</Leather_Plain>
 		</butcherProducts>
 	</ThingDef>
-	
-		<ThingDef ParentName="RB_CombBase">
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Wooly_Honeycomb</defName>
 		<label>wooly honeycomb</label>
 		<description>This is a honeycomb produced by Wooly bees. Wooly bees are miniature insects covered in a dense fur. Which is not the source of any nightmares at all, no sir! Honeycombs can be procesed in a Honey Extractor to get tasty honey, beeswax and wool.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Wooly_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_TastyHoney>10</RB_TastyHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<WoolMuffalo>10</WoolMuffalo>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_High_Honeycomb</defName>
 		<label>high honeycomb</label>
@@ -544,14 +548,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_High_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_PsychotropicHoney>10</RB_PsychotropicHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<Yayo>5</Yayo>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Lucifer_Honeycomb</defName>
 		<label>lucifer honeycomb</label>
@@ -559,14 +562,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Lucifer_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_PsychotropicHoney>5</RB_PsychotropicHoney>
 			<RB_RedBeeswax>5</RB_RedBeeswax>
 			<Luciferium>1</Luciferium>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Culinary_Honeycomb</defName>
 		<label>culinary honeycomb</label>
@@ -574,14 +576,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Culinary_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>30</RB_BaseHoney>
 			<RB_Beeswax>5</RB_Beeswax>
 			<MealNutrientPaste>1</MealNutrientPaste>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Chef_Honeycomb</defName>
 		<label>chef honeycomb</label>
@@ -589,14 +590,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>35</RB_BaseHoney>
 			<RB_Beeswax>15</RB_Beeswax>
 			<RB_FineHoney>1</RB_FineHoney>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Medicinal_Honeycomb</defName>
 		<label>medicinal honeycomb</label>
@@ -604,14 +604,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Medicinal_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_Beeswax>10</RB_Beeswax>
 			<MedicineHerbal>1</MedicineHerbal>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Surgeon_Honeycomb</defName>
 		<label>surgeon honeycomb</label>
@@ -619,14 +618,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>
 			<RB_Beeswax>15</RB_Beeswax>
 			<MedicineUltratech>1</MedicineUltratech>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Synthetic_Honeycomb</defName>
 		<label>synthetic honeycomb</label>
@@ -634,14 +632,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Synthetic_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>1</RB_BaseHoney>
 			<RB_Beeswax>25</RB_Beeswax>
 			<Synthread>5</Synthread>
 		</butcherProducts>
 	</ThingDef>
-
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Hyper_Honeycomb</defName>
 		<label>hyper honeycomb</label>
@@ -649,14 +646,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Hyper_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>1</RB_BaseHoney>
 			<RB_Beeswax>30</RB_Beeswax>
 			<Hyperweave>5</Hyperweave>
 		</butcherProducts>
 	</ThingDef>
-	
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Nitro_Honeycomb</defName>
 		<label>nitro honeycomb</label>
@@ -664,14 +660,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Nitro_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>10</RB_HeavyWax>
 			<RB_WhiteHoney>7</RB_WhiteHoney>
 			<Shell_HighExplosive>1</Shell_HighExplosive>
 		</butcherProducts>
 	</ThingDef>
-	
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Fabricated_Honeycomb</defName>
 		<label>fabricated honeycomb</label>
@@ -679,15 +674,11 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Fabricated_Honeycomb</texPath>
-		</graphicData>	
+		</graphicData>
 		<butcherProducts>
 			<RB_HeavyWax>15</RB_HeavyWax>
 			<RB_WhiteHoney>15</RB_WhiteHoney>
 			<ComponentSpacer>1</ComponentSpacer>
 		</butcherProducts>
 	</ThingDef>
-
-
-
-
 </Defs>

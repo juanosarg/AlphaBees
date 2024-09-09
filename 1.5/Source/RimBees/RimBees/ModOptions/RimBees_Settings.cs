@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using UnityEngine;
 using Verse;
 
@@ -22,7 +23,11 @@ namespace RimBees
         public static bool RB_Ben_BeeDangerAlert = true;
         public static bool RB_CarryBees = true;
 
+        public static float beeProductionMultiplier = beeProductionMultiplierBase;
+        public const float beeProductionMultiplierBase = 1f;
 
+        public static int beeEffectRadius = beeEffectRadiusBase;
+        public const int beeEffectRadiusBase = 6;
 
 
 
@@ -41,7 +46,8 @@ namespace RimBees
             Scribe_Values.Look(ref RB_Ben_KnownBees, "RB_Ben_KnownBees", true, true);
             Scribe_Values.Look(ref RB_Ben_BeeDangerAlert, "RB_Ben_BeeDangerAlert", true, true);
             Scribe_Values.Look(ref RB_CarryBees, "RB_CarryBees", true, true);
-
+            Scribe_Values.Look(ref beeProductionMultiplier, "beeProductionMultiplier", beeProductionMultiplierBase, true);
+            Scribe_Values.Look(ref beeEffectRadius, "beeEffectRadius", beeEffectRadiusBase, true);
 
 
 
@@ -75,7 +81,20 @@ namespace RimBees
 
             ls.CheckboxLabeled("RB_CarryBees".Translate(), ref RB_CarryBees, "RB_CarryBees_Description".Translate());
 
+            var beeProductionLabel = ls.LabelPlusButton("RB_BeeProductionMultiplier".Translate() + ": " + beeProductionMultiplier, "RB_BeeProductionMultiplierTooltip".Translate());
+            beeProductionMultiplier = (float)Math.Round(ls.Slider(beeProductionMultiplier, 1, 10), 1);
 
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, beeProductionLabel.position.y + 35, 250f, 29f)))
+            {
+                beeProductionMultiplier = beeProductionMultiplierBase;
+            }
+            var beeEffectRadiusLabel = ls.LabelPlusButton("RB_BeehouseEffectRadius".Translate() + ": " + beeEffectRadius, "RB_BeehouseEffectRadiusTooltip".Translate());
+            beeEffectRadius = (int)Math.Round(ls.Slider(beeEffectRadius, 1, 12), 0);
+
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, beeEffectRadiusLabel.position.y + 35, 250f, 29f)))
+            {
+                beeEffectRadius = beeEffectRadiusBase;
+            }
 
             ls.End();
 

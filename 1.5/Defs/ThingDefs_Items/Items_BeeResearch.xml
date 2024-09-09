@@ -36,6 +36,9 @@
 	<!-- Tier 4 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier4" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier4)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomTier4Research</defName>
@@ -75,9 +78,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersNutAdapt</defName>
@@ -87,12 +88,11 @@
 				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
 				<resultingBees>
 					<li>RB_Bee_Pet_Queen</li>
+					<li>RB_Bee_Rainbow_Queen</li>
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersAdaptTech</defName>
@@ -107,9 +107,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersStoPsy</defName>
@@ -122,9 +120,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersAgriSwamp</defName>
@@ -137,9 +133,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersPlasAlloy</defName>
@@ -152,9 +146,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
 		<defName>RB_ResearchPapersAgriWood</defName>
@@ -167,13 +159,27 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier4</li>
-		</thingCategories>
+		
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersQuarryTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Technological_Queen</firstBee>
+				<secondBee>RB_Bee_Quarry_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Mason_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
 	</ThingDef>
 	<!-- Tier 5 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier5" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier5)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomTier5Research</defName>
@@ -213,9 +219,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersLuxHigh</defName>
@@ -228,9 +232,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersMedTech</defName>
@@ -243,9 +245,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersSynthTech</defName>
@@ -258,9 +258,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersSynthOily</defName>
@@ -273,9 +271,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersElectronicSynthetic</defName>
@@ -288,9 +284,7 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>	
 
 

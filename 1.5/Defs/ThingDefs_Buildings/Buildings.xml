@@ -110,7 +110,11 @@
 		<researchPrerequisites>
 			<li>RB_BasicBeekeeping</li>
 		</researchPrerequisites>
-		<comps><li><compClass>RimBees.CompBeeResearchTable</compClass></li></comps>
+		<comps>
+			<li>
+				<compClass>RimBees.CompBeeResearchTable</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_Honey_Centrifuge</defName>
@@ -133,7 +137,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<recipes><li>RB_CentrifugeAnyComb</li></recipes>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -599,6 +602,7 @@
 		</graphicData>
 		<stuffCategories>
 			<li>Woody</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
@@ -632,7 +636,20 @@
 		<researchPrerequisites>
 			<li>RB_BeeBreeding</li>
 		</researchPrerequisites>
-		<comps><li><compClass>RimBees.CompBroodChamber</compClass></li></comps>
+		<comps>
+			<li>
+				<compClass>RimBees.CompBroodChamber</compClass>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<startAsRandom>false</startAsRandom>
+				<randomGraphics>
+					<li>Things/Building/RB_Beehouse_BroodChamber</li>
+					<li>Things/Building/RB_Beehouse_BroodChamber_Variant1</li>
+					<li>Things/Building/RB_Beehouse_BroodChamber_Variant2</li>
+					<li>Things/Building/RB_Beehouse_BroodChamber_Variant3</li>
+				</randomGraphics>
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_HybridizationChamber</defName>
@@ -655,6 +672,7 @@
 		<uiIconScale>0.75</uiIconScale>
 		<stuffCategories>
 			<li>Woody</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
@@ -688,6 +706,19 @@
 		<researchPrerequisites>
 			<li>RB_BeeHybridizing</li>
 		</researchPrerequisites>
-		<comps><li><compClass>RimBees.CompHybridizationChamber</compClass></li></comps>
+		<comps>
+			<li>
+				<compClass>RimBees.CompHybridizationChamber</compClass>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<startAsRandom>false</startAsRandom>
+				<randomGraphics>
+					<li>Things/Building/RB_Beehouse_HybridizationChamber</li>
+					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant1</li>
+					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant2</li>
+					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant3</li>
+				</randomGraphics>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

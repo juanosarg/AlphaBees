@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<RimBees.BeeListDef>
 		<defName>RB_SpicyBeeList</defName>
 		<beeDroneDef>RB_Bee_Spicy_Drone</beeDroneDef>
-		<beeDroneTag>RB_Spicy_Drone_Tag</beeDroneTag>
+		<nameString>Spicy</nameString>
 		<beeQueenDef>RB_Bee_Spicy_Queen</beeQueenDef>
-		<beeQueenTag>RB_Spicy_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
-
-
 </Defs>

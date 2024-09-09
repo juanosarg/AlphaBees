@@ -18,7 +18,7 @@ namespace RimBees
                 hotKey = KeyBindingDefOf.Misc1,
                 map = map,
                 beehouse = beehouse
-                //settable = settable
+              
             };
         }
 
@@ -32,7 +32,7 @@ namespace RimBees
                 hotKey = KeyBindingDefOf.Misc1,
                 map = map,
                 beehouse = beehouse
-                //settable = settable
+         
             };
         }
     }

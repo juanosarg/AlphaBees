@@ -32,7 +32,7 @@ namespace RimBees
             {
                 if (map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeQueenDef, true)).Count > 0)
                 {
-                    list.Add(new FloatMenuOption(element.beeQueenTag.Translate(), delegate
+                    list.Add(new FloatMenuOption("RB_Queen_Tag".Translate(element.nameString), delegate
                     {
                         queen = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamed(element.beeQueenDef, true)).RandomElement();
                         this.TryInsertQueen();

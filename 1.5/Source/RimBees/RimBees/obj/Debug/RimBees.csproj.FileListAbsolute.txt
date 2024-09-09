@@ -49,3 +49,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Assemb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.AssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.dll
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Source\RimBees\RimBees\obj\Debug\RimBees.dll
+E:\Steam\steamapps\common\RimWorld\Mods\AlphaBees\1.5\Assemblies\RimBees.dll

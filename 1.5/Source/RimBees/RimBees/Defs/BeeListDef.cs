@@ -8,11 +8,11 @@ namespace RimBees
 {
     public class BeeListDef : Def
     {
-   
-        public string beeDroneDef;
-        public string beeDroneTag;
+
+        public string nameString;
+        public string beeDroneDef;     
         public string beeQueenDef;
-        public string beeQueenTag;
+   
 
     }
 }

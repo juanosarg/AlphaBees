@@ -1,50 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
 	<RecipeDef>
-    <defName>AA_Make_Kibble_Bees</defName>
-    <label>make kibble from bees</label>
-    <description>Make animal kibble by processing bee biomass. Turns any combination of 50 queens and drones into kibble. useful to get rid of any excess bees you are producing. You monster.</description>
-    <jobString>Making kibble.</jobString>
-    <workAmount>1000</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
+		<defName>AA_Make_Kibble_Bees</defName>
+		<label>make kibble from bees</label>
+		<description>Make animal kibble by processing bee biomass. Turns any combination of 25 queens and drones into kibble. useful to get rid of any excess bees you are producing. You monster.</description>
+		<jobString>Making kibble.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>RB_Beekeeping_Workbench_Building</li>	
-		</recipeUsers>	
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>RB_BeesAndQueens</li>
-           
-          </categories>
-        </filter>
-        <count>50</count>
-      </li>
-     
-    </ingredients>
-    <products>
-      <Kibble>50</Kibble>
-    </products>
-    <fixedIngredientFilter>
-      <categories>
-        <li>RB_BeesAndQueens</li>
-      </categories>
-      
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <categories>
-        <li>RB_BeesAndQueens</li>
-      </categories>
-     
-    </defaultIngredientFilter>
-    <workSkill>Cooking</workSkill>
-  </RecipeDef>
-
-
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_BeesAndQueens</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Kibble>50</Kibble>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RB_BeesAndQueens</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>RB_BeesAndQueens</li>
+			</categories>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
 </Defs>

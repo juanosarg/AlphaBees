@@ -14,10 +14,6 @@ namespace RimBees
         public int tempMin = 0;
         public int tempMax = 50;
 
-
-
-
-
         public CompProperties_Bees()
         {
             this.compClass = typeof(CompBees);

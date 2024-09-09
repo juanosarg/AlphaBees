@@ -13,7 +13,7 @@ namespace RimBees
         protected override string FloatMenuOptionLabel(Pawn pawn)
         {
            
-                return string.Format(base.Props.useLabel);
+            return string.Format(base.Props.useLabel);
             
         }
 

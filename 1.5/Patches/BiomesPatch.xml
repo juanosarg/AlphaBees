@@ -47,15 +47,15 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
 		<value>
-			<RB_Plant_Hive_Desert>1</RB_Plant_Hive_Desert>
-			<RB_Plant_Hive_Arid>1</RB_Plant_Hive_Arid>
+			<RB_Plant_Hive_Desert>0.5</RB_Plant_Hive_Desert>
+			<RB_Plant_Hive_Arid>0.5</RB_Plant_Hive_Arid>
 		</value>
 	</Operation>	
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
 		<value>
-			<RB_Plant_Hive_Desert>500</RB_Plant_Hive_Desert>
-			<RB_Plant_Hive_Arid>500</RB_Plant_Hive_Arid>
+			<RB_Plant_Hive_Desert>0.5</RB_Plant_Hive_Desert>
+			<RB_Plant_Hive_Arid>0.5</RB_Plant_Hive_Arid>
 		</value>
 	</Operation>
 	

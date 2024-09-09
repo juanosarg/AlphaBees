@@ -40,7 +40,7 @@
 		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>RB_BeeBreeding</li>
-			<li>Electricity</li>
+			
 
 		</prerequisites>
 
@@ -89,6 +89,7 @@
 		<baseCost>500</baseCost>
 		<prerequisites>
 			<li>RB_BasicBeekeeping</li>
+			
 		</prerequisites>
 
 		<researchViewX>2</researchViewX>
@@ -104,7 +105,7 @@
 		<baseCost>1500</baseCost>
 		<prerequisites>
 			<li>RB_BasicBeekeeping</li>
-
+			<li>Electricity</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -124,6 +125,7 @@
 		<prerequisites>
 			<li>RB_AdvancedBeehouses</li>
 			<li>RB_ClimatizedBeehouses</li>
+			
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -143,7 +145,7 @@
 		<prerequisites>
 			<li>RB_AdvancedClimatization</li>
 			<li>AdvancedFabrication</li>
-
+			
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
@@ -162,7 +164,7 @@
 		<baseCost>1500</baseCost>
 		<prerequisites>
 			<li>RB_AdvancedBeehouses</li>
-
+			
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>

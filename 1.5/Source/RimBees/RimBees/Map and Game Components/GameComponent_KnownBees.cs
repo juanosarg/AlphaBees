@@ -52,8 +52,8 @@ namespace RimBees
                 BeeSpecies.Add(new BeeSpeciesData
                 {
                     Species = species,
-                    QueenName = list.beeQueenTag.Translate(),
-                    DroneName = list.beeDroneTag.Translate(),
+                    QueenName = "RB_Queen_Tag".Translate(list.nameString),
+                    DroneName = "RB_Drone_Tag".Translate(list.nameString),
                     QueenDef = DefDatabase<ThingDef>.GetNamed(list.beeQueenDef),
                     DroneDef = DefDatabase<ThingDef>.GetNamed(list.beeDroneDef),
                 });

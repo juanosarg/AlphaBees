@@ -48,48 +48,7 @@
     </graphicData>
 </ThingDef>
   
- <!-- <ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Arctic</defName>
-    <label>wild beehive, arctic</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Arctic</texPath>
-    </graphicData>
-</ThingDef>
-<ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Icy</defName>
-    <label>wild beehive, icy</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Icy</texPath>
-    </graphicData>
-</ThingDef>
-<ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Jungle</defName>
-    <label>wild beehive, jungle</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Jungle</texPath>
-    </graphicData>
-</ThingDef>
-<ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Swamp</defName>
-    <label>wild beehive, swamp</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Swamp</texPath>
-    </graphicData>
-</ThingDef>
-<ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Desert</defName>
-    <label>wild beehive, desert</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Desert</texPath>
-    </graphicData>
-</ThingDef>
-<ThingDef ParentName="RB_WildHiveBase">
-    <defName>RB_WildHive_Arid</defName>
-    <label>wild beehive, arid</label>
-    <graphicData>
-	  <texPath>Things/Item/Hives/RB_WildHive_Arid</texPath>
-    </graphicData>
-</ThingDef>-->
+ 
   
   
 </Defs>
