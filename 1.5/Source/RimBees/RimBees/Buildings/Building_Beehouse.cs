@@ -409,6 +409,7 @@ namespace RimBees
                                     if (CheckPlantsNearby(bee1, bee2))
                                     {
                                         BeehouseIsRunning = true;
+                                        DoAdditionalBeeEffectsIfAny(bee1,bee2);
                                         tickCounter++;
                                         if (tickCounter > ((ticksToDays * CalculateTheTicksAverage()) - 1))
                                         {
@@ -599,6 +600,29 @@ namespace RimBees
                 return false;
 
             }
+
+        }
+
+        public void DoAdditionalBeeEffectsIfAny(CompBees bee1, CompBees bee2)
+        { 
+            if(bee1.HasAdditionalEffects)
+            {
+                foreach (var item in bee1.Props.additionalBeeEffects)
+                {
+                    item.AdditionalEffectTick(this);
+                }
+            }
+
+            if ((bee2.GetSpecies != bee1.GetSpecies) && bee2.HasAdditionalEffects)
+            {
+                foreach (var item in bee2.Props.additionalBeeEffects)
+                {
+                    item.AdditionalEffectTick(this);
+                }
+            }
+
+
+
 
         }
 

@@ -294,6 +294,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HeatPusher.cs" />
     <Compile Include="Alerts\Alert_BeeDanger.cs" />
     <Compile Include="CompClasses\CompBeeResearchTable.cs" />
     <Compile Include="CompClasses\CompDangerBee.cs" />

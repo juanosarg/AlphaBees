@@ -1,4 +1,5 @@
 ﻿using Verse;
+using System.Collections.Generic;
 
 namespace RimBees
 {
@@ -13,6 +14,7 @@ namespace RimBees
         public string weirdplantneeded = "no";
         public int tempMin = 0;
         public int tempMax = 50;
+        public List<AdditionalBeeEffects> additionalBeeEffects;
 
         public CompProperties_Bees()
         {

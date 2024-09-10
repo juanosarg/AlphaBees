@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!--
+<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HeatPusher">
+						<heatPushMaxTemperature>30</heatPushMaxTemperature>
+						<heatPushMinTemperature>0</heatPushMinTemperature>
+						<heatPerSecond>50</heatPerSecond>
+					</li>
+				</additionalBeeEffects>
+				-->
+
+
 	<ThingDef ParentName="ResourceBase" Name="RB_BeeBase" Abstract="True">
 		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Bees</storedConceptLearnOpportunity>
 		<statBases>
@@ -44,6 +56,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
+				
 			</li>
 		</comps>
 	</ThingDef>

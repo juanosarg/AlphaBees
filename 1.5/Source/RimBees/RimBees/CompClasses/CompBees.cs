@@ -78,6 +78,14 @@ namespace RimBees
             }
         }
 
+        public bool HasAdditionalEffects
+        {
+            get
+            {
+                return !Props.additionalBeeEffects.NullOrEmpty();
+            }
+        }
+
 
     }
 }
