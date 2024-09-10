@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5" >
+		<defName>RB_ResearchPapersRadioMedicinal</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchRadioMedicinal</imageNameInGraphicsCache>
+				<textForTheImage>Radioactive + Medicinal = Superhero</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>	
+	</ThingDef>
+
+	
+
+
+</Defs>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--=============== Superhero ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_SuperheroBeeBase" Abstract="True">
+		<description>When bees need to fight a supervillain, they don't call a bee that dresses as a bat and fights petty crime at night, because that would be absurd: they call the superhero bees, who fly around at supersonic speeds dressed in teeny tiny capes and blue pyjamas. They create honeycombs stuffed with Super-nanites, though they produce them exceedingly slowly.\n\nBee Traits:\n\nProduction time: 30 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Super-nanites\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Superhero</species>
+				<comb>RB_Superhero_Honeycomb</comb>
+				<combtimedays>30</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>VFEA_SuperNanites</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_SuperheroBeeBase">
+		<defName>RB_Bee_Superhero_Drone</defName>
+		<label>superhero drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Superhero_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_SuperheroBeeBase">
+		<defName>RB_Bee_Superhero_Queen</defName>
+		<label>superhero queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Superhero_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

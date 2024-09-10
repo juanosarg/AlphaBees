@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	
+	<ItemProcessor.CombinationDef>
+		<defName>RB_MustToMead</defName>
+		<building>RB_MeadFermentingBarrel</building>
+		<items>
+			<li>RB_Must</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>RB_Mead</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>6</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+	
+	
+</Defs>

@@ -1,5 +1,36 @@
 <loadFolders>
-	
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+		<li IfModActive="sarg.alphaanimals">1.4/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.alphaanimals_copy">1.4/Mods/AlphaAnimals</li>
+		<li IfModActive="Torann.ARimworldOfMagic">1.4/Mods/RimWorldOfMagic</li>
+		<li IfModActive="Torann.ARimworldOfMagic_copy">1.4/Mods/RimWorldOfMagic</li>
+		<li IfModActive="tikubonn.DiceOfDestiny">1.4/Mods/DiceOfDestiny</li>
+		<li IfModActive="tikubonn.DiceOfDestiny_copy">1.4/Mods/DiceOfDestiny</li>
+		<li IfModActive="kikohi.jewelry">1.4/Mods/Jewelry</li>
+		<li IfModActive="kikohi.jewelry_copy">1.4/Mods/Jewelry</li>
+		<li IfModActive="sarg.magicalmenagerie">1.4/Mods/MagicalMenagerie</li>
+		<li IfModActive="sarg.magicalmenagerie_copy">1.4/Mods/MagicalMenagerie</li>
+		<li IfModActive="MrKociak.MoreArchotechStuffandThingsReupload">1.4/Mods/Archotech</li>
+		<li IfModActive="MrKociak.MoreArchotechStuffandThingsReupload_copy">1.4/Mods/Archotech</li>
+		<li IfModActive="tachyonite.pawnmorpherpublic">1.4/Mods/Pawnmorpher</li>
+		<li IfModActive="tachyonite.pawnmorpherpublic_copy">1.4/Mods/Pawnmorpher</li>
+		<li IfModActive="tachyonite.pawnmorpher">1.4/Mods/Pawnmorpher</li>
+		<li IfModActive="tachyonite.pawnmorpher_copy">1.4/Mods/Pawnmorpher</li>
+		<li IfModActive="RimEffect.Core">1.4/Mods/RimEffect</li>
+		<li IfModActive="RimEffect.Core_copy">1.4/Mods/RimEffect</li>
+		<li IfModActive="sihv.rombones">1.4/Mods/Bones</li>
+		<li IfModActive="sihv.rombones_copy">1.4/Mods/Bones</li>
+		<li IfModActive="VanillaExpanded.VCookE">1.4/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCookE_copy">1.4/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="OskarPotocki.VFE.Mechanoid">1.4/Mods/VanillaFactionsExpandedMechanoids</li>
+		<li IfModActive="OskarPotocki.VFE.Mechanoid_copy">1.4/Mods/VanillaFactionsExpandedMechanoids</li>
+		<li IfModActive="VanillaExpanded.VCEF">1.4/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF_copy">1.4/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VFEA">1.4/Mods/VanillaFactionsExpandedAncients</li>
+		<li IfModActive="VanillaExpanded.VFEA_copy">1.4/Mods/VanillaFactionsExpandedAncients</li>
+	</v1.4>
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>

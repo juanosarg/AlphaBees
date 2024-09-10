@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Jewelry Branch ==========-->
+
+	<!--=============== Diamond ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_DiamondBeeBase" Abstract="True" >
+		<description>Diamond bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Diamond.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Diamond</species>
+				<comb>RB_Diamond_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Jade</weirdplantneeded>
+				<tempMin>-5</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_DiamondBeeBase">
+		<defName>RB_Bee_Diamond_Drone</defName>
+		<label>diamond drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Diamond_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_DiamondBeeBase">
+		<defName>RB_Bee_Diamond_Queen</defName>
+		<label>diamond queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Diamond_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+	<!--=============== Ruby ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_RubyBeeBase" Abstract="True" >
+		<description>Ruby bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Ruby.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Ruby</species>
+				<comb>RB_Ruby_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Jade</weirdplantneeded>
+				<tempMin>-5</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_RubyBeeBase">
+		<defName>RB_Bee_Ruby_Drone</defName>
+		<label>ruby drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Ruby_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_RubyBeeBase">
+		<defName>RB_Bee_Ruby_Queen</defName>
+		<label>ruby queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Ruby_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+	<!--=============== Sapphire ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_SapphireBeeBase" Abstract="True" >
+		<description>Sapphire bees are gemstone-looking insects that extract small amounts of Jade from their environment and transmute it slowly into Sapphire.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Jade\nMinimum Temperature: -5ºC\nMaximum temperature: 35ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Sapphire</species>
+				<comb>RB_Sapphire_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Jade</weirdplantneeded>
+				<tempMin>-5</tempMin>
+				<tempMax>35</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_SapphireBeeBase">
+		<defName>RB_Bee_Sapphire_Drone</defName>
+		<label>sapphire drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Sapphire_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_SapphireBeeBase">
+		<defName>RB_Bee_Sapphire_Queen</defName>
+		<label>sapphire queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Sapphire_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+</Defs>

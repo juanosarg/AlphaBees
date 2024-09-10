@@ -2,7 +2,7 @@
 	<name>Alpha Bees</name>
 	<author>Sarg Bjornson, Ben Lubar</author>
 	<supportedVersions>
-	
+		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaBeesLogo</modIconPath>

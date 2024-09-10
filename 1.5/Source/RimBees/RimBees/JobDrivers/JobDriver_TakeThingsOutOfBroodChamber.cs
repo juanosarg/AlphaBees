@@ -26,7 +26,7 @@ namespace RimBees
         public ThingDef DecideRandomBee()
         {
             Building_BroodChamber buildingbroodchamber = (Building_BroodChamber)this.job.GetTarget(TargetIndex.A).Thing;
-            Building_Beehouse buildingbeehouse = buildingbroodchamber.GetAdjacentBeehouse();
+            Building_Beehouse buildingbeehouse = buildingbroodchamber.GetAdjacentBeehouse;
             Thing beeDrone = buildingbeehouse.innerContainerDrones.FirstOrFallback();
             Thing beeQueen = buildingbeehouse.innerContainerQueens.FirstOrFallback();
             ThingDef resultingBee;

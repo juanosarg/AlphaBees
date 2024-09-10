@@ -341,7 +341,7 @@
     <Compile Include="CompClasses\CompTreeHive.cs" />
     <Compile Include="CompClasses\CompBees.cs" />
     <Compile Include="CompClasses\Properties\CompProperties_TreeHive.cs" />
-    <Compile Include="CompClasses\CompProperties_Bees.cs" />
+    <Compile Include="CompClasses\Properties\CompProperties_Bees.cs" />
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfHybridizationChamber.cs" />
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfBroodChamber.cs" />
     <Compile Include="JobDrivers\JobDriver_TakeThingsOutOfBeehouse.cs" />

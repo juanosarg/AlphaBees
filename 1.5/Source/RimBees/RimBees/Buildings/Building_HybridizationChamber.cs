@@ -21,6 +21,7 @@ namespace RimBees
         private System.Random rand = new System.Random();
         private System.Random beeRandomizer = new System.Random();
 
+        public Building_Beehouse cachedBeehouse = null;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -43,30 +44,32 @@ namespace RimBees
 
         }
 
-
-        public Building_Beehouse GetAdjacentBeehouse()
+        public Building_Beehouse GetAdjacentBeehouse
         {
-            Building_Beehouse result;
-           
-                
-                IntVec3 c = this.Position+ GenAdj.CardinalDirections[1];
-                Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
+            get
+            {
+                if (cachedBeehouse is null)
                 {
-                result = edifice;
-                    return result;
+                    IntVec3 c = this.Position + GenAdj.CardinalDirections[1];
+                    Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
+                    if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
+                    {
+                        cachedBeehouse = edifice;
+
+                    }
                 }
-            
-            result = null;
-            return result;
+                return cachedBeehouse;
+            }
         }
+
+     
 
         public override string GetInspectString()
         {
 
-            if (GetAdjacentBeehouse() != null)
+            if (GetAdjacentBeehouse != null)
             {
-                if (GetAdjacentBeehouse().BeehouseIsRunning) {
+                if (GetAdjacentBeehouse.BeehouseIsRunning) {
                     return "GU_AdjacentBeehouseRunningHybridization".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsRunning".Translate();
                 } else return "GU_AdjacentBeehouseInactive".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsStopped".Translate();
 
@@ -77,13 +80,13 @@ namespace RimBees
         public override void TickRare()
         {
             base.TickRare();
-            if (GetAdjacentBeehouse()!=null&&GetAdjacentBeehouse().BeehouseIsRunning && !hybridizationChamberFull)
+            if (GetAdjacentBeehouse!=null&&GetAdjacentBeehouse.BeehouseIsRunning && !hybridizationChamberFull)
             {
                 tickCounter++;
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))
                 {
                     hybridizedBee = HybridizationChecker();
-                    //Log.Message(hybridizedBee);
+
                     if (hybridizedBee != "")
                     {
                         if (!RimBees_Settings.RB_DisableMessages)
@@ -126,9 +129,9 @@ namespace RimBees
         {
             string beeDrone = "";
             string beeQueen = "";
-            if ((this.GetAdjacentBeehouse().innerContainerDrones.TotalStackCount>0)&& (this.GetAdjacentBeehouse().innerContainerQueens.TotalStackCount > 0)){
-                beeDrone = this.GetAdjacentBeehouse().innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
-                beeQueen = this.GetAdjacentBeehouse().innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+            if ((this.GetAdjacentBeehouse.innerContainerDrones.TotalStackCount>0)&& (this.GetAdjacentBeehouse.innerContainerQueens.TotalStackCount > 0)){
+                beeDrone = this.GetAdjacentBeehouse.innerContainerDrones.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
+                beeQueen = this.GetAdjacentBeehouse.innerContainerQueens.FirstOrFallback().TryGetComp<CompBees>().GetSpecies;
             }
             foreach (BeeCombinationDef element in DefDatabase<BeeCombinationDef>.AllDefs)
             {
@@ -142,9 +145,6 @@ namespace RimBees
                 }
 
             }
-
-
-
 
             string resultNull = "";
             GameComponent_KnownBees.Instance.LogAttempt(beeQueen, beeDrone,  null );

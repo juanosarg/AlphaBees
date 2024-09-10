@@ -18,7 +18,7 @@ namespace RimBees
         public int daysTotal = 3;
         public bool broodChamberFull = false;
 
-      
+        public Building_Beehouse cachedBeehouse = null;
 
         public override void ExposeData()
         {
@@ -28,34 +28,33 @@ namespace RimBees
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
         }
 
-       
-
-        public Building_Beehouse GetAdjacentBeehouse()
+        public Building_Beehouse GetAdjacentBeehouse
         {
-            Building_Beehouse result;
-           
-                
-                IntVec3 c = this.Position+ GenAdj.CardinalDirections[3];
-                Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
-                if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
-                {
-                    result = edifice;
-                    return result;
+            get
+            {
+                if(cachedBeehouse is null)
+                {                  
+                    IntVec3 c = this.Position + GenAdj.CardinalDirections[3];
+                    Building_Beehouse edifice = (Building_Beehouse)c.GetEdifice(base.Map);
+                    if ((edifice != null) && (edifice.TryGetComp<CompBeeHouse>().GetIsBeehouse))
+                    {
+                        cachedBeehouse = edifice;
+                      
+                    }
                 }
-            
-            result = null;
-            return result;
+                return cachedBeehouse;
+            }                   
         }
 
         public override string GetInspectString()
         {
             string text = base.GetInspectString();
 
-            if (GetAdjacentBeehouse() != null)
+            if (GetAdjacentBeehouse != null)
             {
                 string strPercentProgress = ((float)tickCounter / ((ticksToDays) * daysTotal)).ToStringPercent();
 
-                if (GetAdjacentBeehouse().BeehouseIsRunning) {
+                if (GetAdjacentBeehouse.BeehouseIsRunning) {
 
                     return text + "GU_AdjacentBeehouseRunning".Translate() + "\n" + "GU_BroodChamberProgress".Translate()+" "+ strPercentProgress;
 
@@ -68,7 +67,7 @@ namespace RimBees
         public override void TickRare()
         {
             base.TickRare();
-            if (GetAdjacentBeehouse() != null && GetAdjacentBeehouse().BeehouseIsRunning && !broodChamberFull)
+            if (GetAdjacentBeehouse != null && GetAdjacentBeehouse.BeehouseIsRunning && !broodChamberFull)
             {
                 tickCounter++;
                 if (tickCounter > ((ticksToDays * daysTotal) - 1))

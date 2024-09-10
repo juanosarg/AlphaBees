@@ -7,7 +7,7 @@ using UnityEngine;
 namespace RimBees
 {
     [StaticConstructorOnStartup]
-    class CompBeeHouse : ThingComp
+    public class CompBeeHouse : ThingComp
     {
 
         private static readonly Material DroneMat = MaterialPool.MatFrom("Things/Item/Bees/RB_Bee_Temperate_Drone", ShaderDatabase.MetaOverlay);

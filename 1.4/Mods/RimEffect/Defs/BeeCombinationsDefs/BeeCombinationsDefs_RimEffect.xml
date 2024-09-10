@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_MassEffect_1</defName>
+		<bee1>Electronic</bee1>
+		<bee2>Plastic</bee2>
+		<result>
+			<li>Prefab</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier5_MassEffect_2</defName>
+		<bee1>Prefab</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Eezo</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+</Defs>

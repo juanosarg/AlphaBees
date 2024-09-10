@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Superhero_Honeycomb</defName>
+		<label>superhero honeycomb</label>
+		<description>This is a honeycomb produced by superhero bees. When bees need to fight a supervillain, they don't call a bee that dresses as a bat and fights petty crime at night, because that would be absurd: they call the superhero bees, who fly around at supersonic speeds dressed in teeny tiny capes and blue pyjamas. Honeycombs can be processed in a Honey Extractor to get steelwax and super-nanites.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Superhero_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_Steelwax>5</RB_Steelwax>
+			<VFEA_SuperNanites>1</VFEA_SuperNanites>
+		</butcherProducts>
+	</ThingDef>
+
+
+</Defs>

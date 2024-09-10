@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Fisher_Honeycomb</defName>
+		<label>fisher honeycomb</label>
+		<description>This is a honeycomb produced by fisher bees. They love nothing more than a relaxing fishing session (read: boring). Their honeycombs get saturated with tiny pieces of fish, which is as disgusting as it sounds. Honeycombs can be procesed in a Honey Extractor to get Tasty honey, beeswax and nondescript fish.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Fisher_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>3</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_NondescriptFish>20</RB_NondescriptFish>
+		</butcherProducts>
+	</ThingDef>
+
+
+</Defs>
