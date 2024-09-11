@@ -44,7 +44,7 @@
 		<li IfModActive="zal.morearchotechgarbage">1.5/Mods/Archotech</li>
 		<li IfModActive="tachyonite.pawnmorpherpublic">1.5/Mods/Pawnmorpher</li>
 		<li IfModActive="tachyonite.pawnmorpher">1.5/Mods/Pawnmorpher</li>
-		<li IfModActive="RimEffect.Core">1.5/Mods/RimEffect</li>
+	
 		<li IfModActive="sihv.rombones">1.5/Mods/Bones</li>
 		<li IfModActive="VanillaExpanded.VCookE">1.5/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="OskarPotocki.VFE.Mechanoid">1.5/Mods/VanillaFactionsExpandedMechanoids</li>
