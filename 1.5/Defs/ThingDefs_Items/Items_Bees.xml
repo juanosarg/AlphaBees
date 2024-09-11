@@ -1642,4 +1642,39 @@
 			<texPath>Things/Item/Bees/RB_Bee_Fabricated_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--========== Tier 6 ==========-->
+
+	<!--=============== Glittering ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GlitteringBeeBase" Abstract="True">
+		<description>Glittering bees secrete a healing solution infused with nanites, saturating their combs with an immensely powerful medicine.\n\nBee Traits:\n\nProduction time: 150 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Glittering</species>
+				<comb>RB_Glittering_Honeycomb</comb>
+				<combtimedays>6.25</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_GlitteringBeeBase">
+		<defName>RB_Bee_Glittering_Drone</defName>
+		<label>Glittering drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Glittering_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_GlitteringBeeBase">
+		<defName>RB_Bee_Glittering_Queen</defName>
+		<label>Glittering queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Glittering_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 </Defs>

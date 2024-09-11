@@ -247,6 +247,12 @@
 		<beeQueenDef>RB_Bee_Surgeon_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
 	<RimBees.BeeListDef>
+		<defName>RB_GlitteringBeeList</defName>
+		<nameString>Glittering</nameString>
+		<beeDroneDef>RB_Bee_Glittering_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Glittering_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_SyntheticBeeList</defName>
 		<nameString>Synthetic</nameString>
 		<beeDroneDef>RB_Bee_Synthetic_Drone</beeDroneDef>

@@ -286,6 +286,55 @@
 		</comps>
 		
 	</ThingDef>	
+	
+	<!-- Tier 6 research -->
+	<ThingDef Name="RB_ResearchPapersBaseTier6" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (tier6)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier6</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomTier6Research</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (tier6)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier6">
+		<defName>RB_ResearchPapersHyperSurgeon</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Hyper_Queen</firstBee>
+				<secondBee>RB_Bee_Surgeon_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Glittering_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>	
 
 
 

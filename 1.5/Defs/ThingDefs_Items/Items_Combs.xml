@@ -614,10 +614,24 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Surgeon_Honeycomb</defName>
 		<label>surgeon honeycomb</label>
-		<description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and glitterworld medicine.</description>
+		<description>This is a honeycomb produced by Surgeon bees. Surgeon bees secrete a more powerful version of the saline solution produced by medicinal bees, but they also had to study more years at University. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and medicine.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Surgeon_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>15</RB_Beeswax>
+			<MedicineIndustrial>1</MedicineIndustrial>
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Glittering_Honeycomb</defName>
+		<label>Glittering honeycomb</label>
+		<description>This is a honeycomb produced by Glittering bees. They secrete a healing solution infused with nanites, saturating their combs with an immensely powerful medicine. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and glitterworld medicine.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Glittering_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
 			<RB_BaseHoney>10</RB_BaseHoney>

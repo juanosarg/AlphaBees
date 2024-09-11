@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Bioferrous_Honeycomb</defName>
+		<label>Bioferrous honeycomb</label>
+		<description>This is a honeycomb produced by Bioferrous bees. They infuse background amounts of minerals in the ground with strange fibrous mechanites, producing small amounts of bioferrite. Honeycombs can be processed in a Honey Extractor to get black honey, beeswax and bioferrite.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Bioferrous_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackHoney>10</RB_BlackHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<Bioferrite>10</Bioferrite>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Shard_Honeycomb</defName>
+		<label>Shard honeycomb</label>
+		<description>This is a honeycomb produced by Shard bees. They just want to see the world burn. Honeycombs can be processed in a Honey Extractor to get black honey, black beeswax and shards.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Shard_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackHoney>50</RB_BlackHoney>
+			<RB_BlackBeeswax>50</RB_BlackBeeswax>
+			<Shard>1</Shard>
+		</butcherProducts>
+	</ThingDef>
+	
+
+</Defs>

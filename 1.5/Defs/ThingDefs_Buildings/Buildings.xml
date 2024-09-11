@@ -313,6 +313,15 @@
 				<climatizedBeehouse>false</climatizedBeehouse>
 				<beehouseRate>1</beehouseRate>
 			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<startAsRandom>false</startAsRandom>
+				<randomGraphics>
+					<li>Things/Building/RB_Beehouse</li>
+					<li>Things/Building/RB_Beehouse_Variant1</li>
+					<li>Things/Building/RB_PrefabBeehouse</li>
+					
+				</randomGraphics>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>RimBees.PlaceWorker_ShowPollinationRadius</li>

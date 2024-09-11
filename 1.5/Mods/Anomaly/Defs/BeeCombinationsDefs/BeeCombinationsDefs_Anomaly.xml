@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Alloy_Synthetic</defName>
+		<bee1>Alloy</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Bioferrous</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Bioferrous_Nitro</defName>
+		<bee1>Bioferrous</bee1>
+		<bee2>Nitro</bee2>
+		<result>
+			<li>Shard</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	
+	
+</Defs>

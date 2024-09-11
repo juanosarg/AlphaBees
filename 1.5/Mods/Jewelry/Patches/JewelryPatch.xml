@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_2"]/result</xpath>
+		<value>
+			<li>Diamond</li>
+			<li>Ruby</li>
+			<li>Sapphire</li>
+		</value>
+	</Operation>
+</Patch>
+

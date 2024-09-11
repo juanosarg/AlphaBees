@@ -238,4 +238,13 @@
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Hyper_Surgeon</defName>
+		<bee1>Hyper</bee1>
+		<bee2>Surgeon</bee2>
+		<result>
+			<li>Glittering</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
 </Defs>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersNutPsychic</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Nutritious_Queen</firstBee>
+				<secondBee>RB_Bee_Psychic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Vampire_Queen</li>
+					
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersAlloySwamp</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Alloy_Queen</firstBee>
+				<secondBee>RB_Bee_Swamp_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Trash_Queen</li>
+				
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersSyntheticMedicinal</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Synthetic_Queen</firstBee>
+				<secondBee>RB_Bee_Medicinal_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Genepack_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier6">
+		<defName>RB_ResearchPapersHyperGenepack</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Hyper_Queen</firstBee>
+				<secondBee>RB_Bee_Genepack_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Archite_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>	
+	
+
+
+
+</Defs>

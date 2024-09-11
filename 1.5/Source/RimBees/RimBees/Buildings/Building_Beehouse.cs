@@ -217,6 +217,16 @@ namespace RimBees
                     defaultLabel = "CommandSunLampMakeGrowingZoneLabel".Translate()
                 };
             }
+            if (Prefs.DevMode)
+            {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "Finish operation";
+                command_Action.action = delegate
+                {
+                    tickCounter = (int)(ticksToDays * CalculateTheTicksAverage());
+                };
+                yield return command_Action;
+            }
         }
 
         public override string GetInspectString()
@@ -673,6 +683,8 @@ namespace RimBees
         }
 
        
+
+
 
     }
 }

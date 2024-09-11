@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Nanny ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_NannyBeeBase" Abstract="True" >
+		<description>Nanny bees just want to make children feel loved and safe.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Nanny</species>
+				<comb>RB_Nanny_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_NannyBeeBase">
+		<defName>RB_Bee_Nanny_Drone</defName>
+		<label>Nanny drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Nanny_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_NannyBeeBase">
+		<defName>RB_Bee_Nanny_Queen</defName>
+		<label>Nanny queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Nanny_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+<!--=============== Vampire ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_VampireBeeBase" Abstract="True" >
+		<description>Vampire bees are creatures of the night, and feed on the blood of unwary victims. Yes, they are vampires. Sanguo... what? Never heard of them.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants needed: Hemogen packs\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Vampire</species>
+				<comb>RB_Vampire_Honeycomb</comb>
+				<combtimedays>2</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>HemogenPack</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_VampireBeeBase">
+		<defName>RB_Bee_Vampire_Drone</defName>
+		<label>Vampire drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Vampire_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_VampireBeeBase">
+		<defName>RB_Bee_Vampire_Queen</defName>
+		<label>Vampire queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Vampire_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	<!--=============== Trash ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_TrashBeeBase" Abstract="True" >
+		<description>Trash bees are the worst. They gather stuff from their environment and just turn it into trash... So, like humans.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Trash</species>
+				<comb>RB_Trash_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_TrashBeeBase">
+		<defName>RB_Bee_Trash_Drone</defName>
+		<label>Trash drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Trash_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_TrashBeeBase">
+		<defName>RB_Bee_Trash_Queen</defName>
+		<label>Trash queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Trash_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	<!--=============== Genepack ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GenepackBeeBase" Abstract="True" >
+		<description>Genepack bees are expert geneticists. They will analyze surrounding animals and plants and extract genetic markers to store on their combs.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Genepack</species>
+				<comb>RB_Genepack_Honeycomb</comb>
+				<combtimedays>5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_GenepackBeeBase">
+		<defName>RB_Bee_Genepack_Drone</defName>
+		<label>Genepack drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Genepack_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_GenepackBeeBase">
+		<defName>RB_Bee_Genepack_Queen</defName>
+		<label>Genepack queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Genepack_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	<!--=============== Archite ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ArchiteBeeBase" Abstract="True" >
+		<description>Archite bees are beyond the comprehension of most societies except the more advanced glitterworlds.\n\nBee Traits:\n\nProduction time: 2 quadrums\nNocturnal: Yes\nPluviophile: Yes\nUnusual plants needed: Archite Capsule\nMinimum Temperature: -30ºC\nMaximum temperature: 60ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Archite</species>
+				<comb>RB_Archite_Honeycomb</comb>
+				<combtimedays>30</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>true</pluviophile>
+				<weirdplantneeded>ArchiteCapsule</weirdplantneeded>
+				<tempMin>-30</tempMin>
+				<tempMax>60</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ArchiteBeeBase">
+		<defName>RB_Bee_Archite_Drone</defName>
+		<label>Archite drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Archite_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_ArchiteBeeBase">
+		<defName>RB_Bee_Archite_Queen</defName>
+		<label>Archite queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Archite_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+
+</Defs>
