@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
+
 using System.Text;
 using RimWorld;
-using UnityEngine.SocialPlatforms;
+
 using Verse;
 
 
@@ -55,7 +55,7 @@ namespace RimBees
         public override void AdditionalEffectTick(Building_Beehouse building)
         {
 
-            if (tickCounter > rareTickFrequency)
+            if (tickCounter > rareTickFrequency-1)
             {
                 if (building.Map != null)
                 {
@@ -83,7 +83,7 @@ namespace RimBees
         private void DoDamage(Building_Beehouse building,Pawn target)
         {
            
-            DamageInfo dinfo = new DamageInfo(damage, amount, armorPenetration, -1f, building);
+            DamageInfo dinfo = new DamageInfo(damage, amount*RimBees_Settings.workerBeeEffectMultiplier, armorPenetration, -1f, building);
 
             target.TakeDamage(dinfo);
 

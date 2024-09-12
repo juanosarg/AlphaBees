@@ -295,7 +295,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Firefoam.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Repair.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Damage.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_ChargeBatteries.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_DoResearch.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CleanArea.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HediffAoE.cs" />

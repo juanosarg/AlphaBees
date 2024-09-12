@@ -331,7 +331,7 @@
 		<beeDroneDef>RB_Bee_Noxious_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Noxious_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
-	<!--<RimBees.BeeListDef>
+	<RimBees.BeeListDef>
 		<defName>RB_TetraBeeList</defName>
 		<nameString>Tetra</nameString>
 		<beeDroneDef>RB_Bee_Tetra_Drone</beeDroneDef>
@@ -360,5 +360,5 @@
 		<nameString>Foamy</nameString>
 		<beeDroneDef>RB_Bee_Foamy_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Foamy_Queen</beeQueenDef>
-	</RimBees.BeeListDef>-->
+	</RimBees.BeeListDef>
 </Defs>

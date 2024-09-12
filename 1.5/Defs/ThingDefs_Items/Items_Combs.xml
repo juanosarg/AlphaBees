@@ -221,6 +221,76 @@
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Tetra_Honeycomb</defName>
+		<label>Tetra honeycomb</label>
+		<description>This is a honeycomb produced by Tetra bees, pseudo-artificial bees enhanced with the power cores of a Tetra slug. They are capable of slowly recharging nearby batteries. It is probably not a good idea to use a beehouse that consumes power for these, as the effect would cancel out... These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Tetra_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Skilful_Honeycomb</defName>
+		<label>Skilful honeycomb</label>
+		<description>This is a honeycomb produced by Skilful bees. Natural born tinkerers, they are capable of repairing structures and keeping them in working order. They will slowly repair buildings inside their beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get honey and steelwax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Prefab_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Steelwax>3</RB_Steelwax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Blazing_Honeycomb</defName>
+		<label>Blazing honeycomb</label>
+		<description>This is a honeycomb produced by Blazing bees. While blazing bees don't have the astounding temperature range of desert bees, their bodies irradiate enormous amounts of heat. They will increase the temperature around their beehouse until it reaches 30 degrees, as long as it is indoors. These honeycombs can be procesed in a Honey Extractor to get honey and red beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Blazing_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_RedBeeswax>3</RB_RedBeeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Frigid_Honeycomb</defName>
+		<label>Frigid honeycomb</label>
+		<description>This is a honeycomb produced by Frigid bees. While Frigid bees don't have the astounding temperature range of arctic bees, their bodies absorb enormous amounts of heat from the air. They will reduce the temperature around their beehouse until it reaches -10 degrees, as long as it is indoors. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Frigid_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Foamy_Honeycomb</defName>
+		<label>Foamy honeycomb</label>
+		<description>This is a honeycomb produced by Foamy bees. Foamy bees despise fire. They gather certain chemicals from their environment and transform them into a potent mixture that is capable of extinguishing nearby fires. These honeycombs can be procesed in a Honey Extractor to get honey and red beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Foamy_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_RedBeeswax>3</RB_RedBeeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Arctic_Honeycomb</defName>
 		<label>arctic honeycomb</label>
 		<description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and ice pops.</description>

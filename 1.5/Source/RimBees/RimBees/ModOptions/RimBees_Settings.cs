@@ -29,7 +29,8 @@ namespace RimBees
         public static int beeEffectRadius = beeEffectRadiusBase;
         public const int beeEffectRadiusBase = 6;
 
-
+        public static float workerBeeEffectMultiplier = workerBeeEffectMultiplierBase;
+        public const float workerBeeEffectMultiplierBase = 1;
 
         public override void ExposeData()
         {
@@ -48,7 +49,7 @@ namespace RimBees
             Scribe_Values.Look(ref RB_CarryBees, "RB_CarryBees", true, true);
             Scribe_Values.Look(ref beeProductionMultiplier, "beeProductionMultiplier", beeProductionMultiplierBase, true);
             Scribe_Values.Look(ref beeEffectRadius, "beeEffectRadius", beeEffectRadiusBase, true);
-
+            Scribe_Values.Look(ref workerBeeEffectMultiplier, "workerBeeEffectMultiplier", workerBeeEffectMultiplierBase, true);
 
 
         }
@@ -94,6 +95,14 @@ namespace RimBees
             if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, beeEffectRadiusLabel.position.y + 35, 250f, 29f)))
             {
                 beeEffectRadius = beeEffectRadiusBase;
+            }
+
+            var workerBeeEffectMultiplierLabel = ls.LabelPlusButton("RB_WorkerBeeEffectMultiplier".Translate() + ": " + workerBeeEffectMultiplier, "RB_WorkerBeeEffectMultiplierTooltip".Translate());
+            workerBeeEffectMultiplier = (float)Math.Round(ls.Slider(workerBeeEffectMultiplier, 0.1f, 5), 1);
+
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, workerBeeEffectMultiplierLabel.position.y + 35, 250f, 29f)))
+            {
+                workerBeeEffectMultiplier = workerBeeEffectMultiplierBase;
             }
 
             ls.End();

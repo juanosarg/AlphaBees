@@ -303,6 +303,7 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<researchPrerequisites>
 			<li>RB_BasicBeekeeping</li>
 		</researchPrerequisites>
@@ -359,6 +360,7 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<statBases>
 			<WorkToBuild>1200</WorkToBuild>
 			<MaxHitPoints>130</MaxHitPoints>
@@ -424,6 +426,7 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
@@ -486,6 +489,7 @@
 		<uiIconScale>0.5</uiIconScale>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<statBases>
 			<WorkToBuild>1800</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -542,6 +546,7 @@
 			</damageData>
 		</graphicData>
 		<constructEffect>ConstructWood</constructEffect>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<costList>
 			<Steel>100</Steel>
 			<RB_ComponentBioInterface>6</RB_ComponentBioInterface>

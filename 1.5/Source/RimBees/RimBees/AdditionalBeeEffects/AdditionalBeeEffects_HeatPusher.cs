@@ -43,7 +43,7 @@ namespace RimBees
 
             if (ShouldPushHeatNow(building))
             {
-                GenTemperature.PushHeat(building.PositionHeld, building.MapHeld,heatPerSecond * 4.16666651f);
+                GenTemperature.PushHeat(building.PositionHeld, building.MapHeld,heatPerSecond * 4.16666651f * RimBees_Settings.workerBeeEffectMultiplier);
 
             }
         }

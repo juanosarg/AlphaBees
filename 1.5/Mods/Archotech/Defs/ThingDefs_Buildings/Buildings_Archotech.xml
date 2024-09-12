@@ -19,6 +19,7 @@
 		</graphicData>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<constructEffect>ConstructWood</constructEffect>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<costList>
 			<Plasteel>100</Plasteel>
 			<RB_ComponentBioInterface>2</RB_ComponentBioInterface>

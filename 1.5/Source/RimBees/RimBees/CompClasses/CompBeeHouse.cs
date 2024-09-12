@@ -107,12 +107,7 @@ namespace RimBees
             }
         }
 
-        public override void PostDrawExtraSelectionOverlays()
-        {
-
-            GenDraw.DrawRadiusRing(this.parent.Position, 6f);
-
-        }
+      
 
         public override void PostDraw()
         {

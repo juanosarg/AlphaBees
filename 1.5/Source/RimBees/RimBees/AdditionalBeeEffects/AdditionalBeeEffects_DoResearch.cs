@@ -38,7 +38,7 @@ namespace RimBees
                         Dictionary<ResearchProjectDef, float> dictionary = fieldInfo.GetValue(Find.ResearchManager) as Dictionary<ResearchProjectDef, float>;
                         if (dictionary.ContainsKey(proj))
                         {
-                            dictionary[proj] += pointsPerHour;
+                            dictionary[proj] += pointsPerHour*RimBees_Settings.workerBeeEffectMultiplier;
                         }
                         if (proj.IsFinished)
                         {

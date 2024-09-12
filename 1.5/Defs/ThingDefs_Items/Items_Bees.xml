@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--
-<additionalBeeEffects>
-					<li Class="RimBees.AdditionalBeeEffects_HeatPusher">
-						<heatPushMaxTemperature>30</heatPushMaxTemperature>
-						<heatPushMinTemperature>0</heatPushMinTemperature>
-						<heatPerSecond>50</heatPerSecond>
-					</li>
-				</additionalBeeEffects>
-				-->
+
 	<ThingDef ParentName="ResourceBase" Name="RB_BeeBase" Abstract="True">
 		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Bees</storedConceptLearnOpportunity>
 		<statBases>
@@ -1126,6 +1118,7 @@
 					<li Class="RimBees.AdditionalBeeEffects_Damage">
 						<damage>Stab</damage>
 						<amount>5</amount>
+						<rareTickFrequency>0</rareTickFrequency>
 						
 					</li>
 				</additionalBeeEffects>
@@ -1463,7 +1456,7 @@
 	<!--========== Tier 4: Worker bees - From Commando, Research and Janitor combinations ==========-->
 	<!--=============== Stunning ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_StunningBeeBase" Abstract="True">
-		<description>Stunning bees absolutely hate mechanoids. They will attack any mechanoids inside their beehouse's area of effect, causing an electric pulse that will stun them in the same manner as EMP grenades.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30</description>
+		<description>Stunning bees absolutely hate mechanoids. They will attack any mechanoids inside their beehouse's area of effect, causing an electric pulse that will stun them in the same manner as EMP grenades.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -1504,7 +1497,7 @@
 	</ThingDef>
 	<!--=============== Noxious ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_NoxiousBeeBase" Abstract="True">
-		<description>Noxious bees are venomous creatures that... What? Yeah, yeah, I know... all bees are venomous... Ok, these are extra venomous. Venomous deluxe. They will attack any hostiles inside their beehouse's area of effect, causing toxic buildup.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30</description>
+		<description>Noxious bees are venomous creatures that... What? Yeah, yeah, I know... all bees are venomous... Ok, these are extra venomous. Venomous deluxe. They will attack any hostiles inside their beehouse's area of effect, causing toxic buildup.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -1540,6 +1533,204 @@
 		<label>Noxious queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Noxious_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Tetra ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_TetraBeeBase" Abstract="True">
+		<description>Tetra bees are pseudo-artificial bees enhanced with the power cores of a Tetra slug. They are capable of slowly recharging nearby batteries. It is probably not a good idea to use a beehouse that consumes power for these, as the effect would cancel out...\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Tetra</species>
+				<comb>RB_Tetra_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_ChargeBatteries">
+						<charge>40</charge>
+						
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_TetraBeeBase">
+		<defName>RB_Bee_Tetra_Drone</defName>
+		<label>Tetra drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Tetra_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_TetraBeeBase">
+		<defName>RB_Bee_Tetra_Queen</defName>
+		<label>Tetra queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Tetra_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Skilful ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_SkilfulBeeBase" Abstract="True">
+		<description>Skilful bees are natural born tinkerers. They are capable of repairing structures and keeping them in working order. They will slowly repair buildings inside their beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Skilful</species>
+				<comb>RB_Skilful_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Repair">
+						<amount>5</amount>
+						
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_SkilfulBeeBase">
+		<defName>RB_Bee_Skilful_Drone</defName>
+		<label>Skilful drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Prefab_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_SkilfulBeeBase">
+		<defName>RB_Bee_Skilful_Queen</defName>
+		<label>Skilful queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Prefab_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Blazing ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_BlazingBeeBase" Abstract="True">
+		<description>While blazing bees don't have the astounding temperature range of desert bees, their bodies irradiate enormous amounts of heat. They will increase the temperature around their beehouse until it reaches 30 degrees, as long as it is indoors.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 20ºC\nMaximum temperature: 50 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Blazing</species>
+				<comb>RB_Blazing_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>20</tempMin>
+				<tempMax>50</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HeatPusher">
+						<heatPushMaxTemperature>30</heatPushMaxTemperature>
+						<heatPushMinTemperature>-10</heatPushMinTemperature>
+						<heatPerSecond>20</heatPerSecond>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_BlazingBeeBase">
+		<defName>RB_Bee_Blazing_Drone</defName>
+		<label>Blazing drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Blazing_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_BlazingBeeBase">
+		<defName>RB_Bee_Blazing_Queen</defName>
+		<label>Blazing queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Blazing_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Frigid ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_FrigidBeeBase" Abstract="True">
+		<description>While Frigid bees don't have the astounding temperature range of arctic bees, their bodies absorb enormous amounts of heat from the air. They will reduce the temperature around their beehouse until it reaches -10 degrees, as long as it is indoors.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: -30ºC\nMaximum temperature: 10 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Frigid</species>
+				<comb>RB_Frigid_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-30</tempMin>
+				<tempMax>10</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HeatPusher">
+						<heatPushMaxTemperature>30</heatPushMaxTemperature>
+						<heatPushMinTemperature>-10</heatPushMinTemperature>
+						<heatPerSecond>-20</heatPerSecond>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_FrigidBeeBase">
+		<defName>RB_Bee_Frigid_Drone</defName>
+		<label>Frigid drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Frigid_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_FrigidBeeBase">
+		<defName>RB_Bee_Frigid_Queen</defName>
+		<label>Frigid queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Frigid_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Foamy ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_FoamyBeeBase" Abstract="True">
+		<description>Foamy bees despise fire. They gather certain chemicals from their environment and transform them into a potent mixture that is capable of extinguishing nearby fires.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Foamy</species>
+				<comb>RB_Foamy_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Firefoam">
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_FoamyBeeBase">
+		<defName>RB_Bee_Foamy_Drone</defName>
+		<label>Foamy drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Foamy_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_FoamyBeeBase">
+		<defName>RB_Bee_Foamy_Queen</defName>
+		<label>Foamy queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Foamy_Queen</texPath>
 		</graphicData>
 	</ThingDef>
 	<!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->
