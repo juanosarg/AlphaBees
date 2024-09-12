@@ -40,6 +40,7 @@
 			<li>Nutritious</li>
 			<li>Neutro</li>
 			<li>Technological</li>
+			<li>Worker</li>
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
@@ -103,6 +104,18 @@
 			<li>Oily</li>
 			<li>Plastic</li>	
 			<li>Quarry</li>				
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier2_Worker</defName>
+		<bee1>Amalgam</bee1>
+		<bee2>Worker</bee2>
+		<result>
+			<li>Commando</li>
+			<li>Research</li>
+			<li>Janitor</li>	
+				
 		</result>				
 	</RimBees.BeeCombinationDef>	
 
@@ -180,6 +193,55 @@
 		<bee2>Quarry</bee2>
 		<result>
 			<li>Mason</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Tipsy_Commando</defName>
+		<bee1>Tipsy</bee1>
+		<bee2>Commando</bee2>
+		<result>
+			<li>Stunning</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Insectoid_Commando</defName>
+		<bee1>Insectoid</bee1>
+		<bee2>Commando</bee2>
+		<result>
+			<li>Noxious</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Research_Oily</defName>
+		<bee1>Research</bee1>
+		<bee2>Oily</bee2>
+		<result>
+			<li>Tetra</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Worker_Janitor</defName>
+		<bee1>Worker</bee1>
+		<bee2>Janitor</bee2>
+		<result>
+			<li>Skilful</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Adaptive_Janitor</defName>
+		<bee1>Adaptive</bee1>
+		<bee2>Janitor</bee2>
+		<result>
+			<li>Blazing</li>	
+			<li>Frigid</li>				
+		</result>				
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Technological_Janitor</defName>
+		<bee1>Technological</bee1>
+		<bee2>Janitor</bee2>
+		<result>
+			<li>Foamy</li>							
 		</result>				
 	</RimBees.BeeCombinationDef>	
 	

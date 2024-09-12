@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<!--
+	<!--
 <additionalBeeEffects>
 					<li Class="RimBees.AdditionalBeeEffects_HeatPusher">
 						<heatPushMaxTemperature>30</heatPushMaxTemperature>
@@ -10,8 +9,6 @@
 					</li>
 				</additionalBeeEffects>
 				-->
-
-
 	<ThingDef ParentName="ResourceBase" Name="RB_BeeBase" Abstract="True">
 		<storedConceptLearnOpportunity>BenLubarsRimBeesPatches_Bees</storedConceptLearnOpportunity>
 		<statBases>
@@ -56,7 +53,6 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
-				
 			</li>
 		</comps>
 	</ThingDef>
@@ -338,6 +334,44 @@
 		<label>technological queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Technological_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Worker ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WorkerBeeBase" Abstract="True">
+		<description>Worker bees are bees skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Worker</species>
+				<comb>RB_Worker_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HediffAoE">
+						<hediffDef>RB_EfficiencyBoost</hediffDef>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_WorkerBeeBase">
+		<defName>RB_Bee_Worker_Drone</defName>
+		<label>Worker drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Worker_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_WorkerBeeBase">
+		<defName>RB_Bee_Worker_Queen</defName>
+		<label>Worker queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Worker_Queen</texPath>
 		</graphicData>
 	</ThingDef>
 	<!--========== Tier 3: Biome Branch - From Adaptive Bees ==========-->
@@ -1071,6 +1105,126 @@
 			<texPath>Things/Item/Bees/RB_Bee_Quarry_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--========== Tier 3: Worker Branch - From Worker Bees ==========-->
+	<!--=============== Commando ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_CommandoBeeBase" Abstract="True">
+		<description>Commando bees would NEVER play bee RimWorld without the bee version of Combat Evolved (Combat Evolbeed?). They will viciously attack any hostiles approaching the beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Commando</species>
+				<comb>RB_Commando_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Damage">
+						<damage>Stab</damage>
+						<amount>5</amount>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_CommandoBeeBase">
+		<defName>RB_Bee_Commando_Drone</defName>
+		<label>Commando drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Commando_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_CommandoBeeBase">
+		<defName>RB_Bee_Commando_Queen</defName>
+		<label>Commando queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Commando_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<!--=============== Research ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ResearchBeeBase" Abstract="True">
+		<description>Research bees are adept at investigation and experimentation. On their own, they won't be capable of much (1 point of research per hour), but if you get a considerable number of them they will blow through the colony's research projects in no time.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Research</species>
+				<comb>RB_Research_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_DoResearch">
+						<pointsPerHour>1</pointsPerHour>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchBeeBase">
+		<defName>RB_Bee_Research_Drone</defName>
+		<label>Research drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Research_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchBeeBase">
+		<defName>RB_Bee_Research_Queen</defName>
+		<label>Research queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Research_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Janitor ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_JanitorBeeBase" Abstract="True">
+		<description>There is nothing Janitor bees despise more than uncleanliness. They will slowly get rid of all filth inside their beehouse's area of effect, as long as it is within the colony's home area.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Janitor</species>
+				<comb>RB_Janitor_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_CleanArea">
+						<rareTickFrequency>7</rareTickFrequency>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_JanitorBeeBase">
+		<defName>RB_Bee_Janitor_Drone</defName>
+		<label>Janitor drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Janitor_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_JanitorBeeBase">
+		<defName>RB_Bee_Janitor_Queen</defName>
+		<label>Janitor queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Janitor_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 4: Textile Branch - From Technological and Adaptive Bees ==========-->
 	<!--=============== Weaving ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WeavingBeeBase" Abstract="True">
@@ -1304,6 +1458,88 @@
 		<label>Rainbow queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Rainbow_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--========== Tier 4: Worker bees - From Commando, Research and Janitor combinations ==========-->
+	<!--=============== Stunning ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_StunningBeeBase" Abstract="True">
+		<description>Stunning bees absolutely hate mechanoids. They will attack any mechanoids inside their beehouse's area of effect, causing an electric pulse that will stun them in the same manner as EMP grenades.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Stunning</species>
+				<comb>RB_Stunning_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Damage">
+						<damage>EMP</damage>
+						<amount>30</amount>
+						<singleTarget>true</singleTarget>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_StunningBeeBase">
+		<defName>RB_Bee_Stunning_Drone</defName>
+		<label>Stunning drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Eezo_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_StunningBeeBase">
+		<defName>RB_Bee_Stunning_Queen</defName>
+		<label>Stunning queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Eezo_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Noxious ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_NoxiousBeeBase" Abstract="True">
+		<description>Noxious bees are venomous creatures that... What? Yeah, yeah, I know... all bees are venomous... Ok, these are extra venomous. Venomous deluxe. They will attack any hostiles inside their beehouse's area of effect, causing toxic buildup.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Noxious</species>
+				<comb>RB_Noxious_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Damage">
+						<damage>ScratchToxic</damage>
+						<amount>8</amount>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_NoxiousBeeBase">
+		<defName>RB_Bee_Noxious_Drone</defName>
+		<label>Noxious drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Noxious_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_NoxiousBeeBase">
+		<defName>RB_Bee_Noxious_Queen</defName>
+		<label>Noxious queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Noxious_Queen</texPath>
 		</graphicData>
 	</ThingDef>
 	<!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->
@@ -1643,7 +1879,6 @@
 		</graphicData>
 	</ThingDef>
 	<!--========== Tier 6 ==========-->
-
 	<!--=============== Glittering ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_GlitteringBeeBase" Abstract="True">
 		<description>Glittering bees secrete a healing solution infused with nanites, saturating their combs with an immensely powerful medicine.\n\nBee Traits:\n\nProduction time: 150 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>

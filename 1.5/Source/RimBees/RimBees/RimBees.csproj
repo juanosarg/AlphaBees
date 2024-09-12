@@ -295,6 +295,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Damage.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_DoResearch.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CleanArea.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HediffAoE.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HeatPusher.cs" />
     <Compile Include="Alerts\Alert_BeeDanger.cs" />
     <Compile Include="CompClasses\CompBeeResearchTable.cs" />
@@ -302,6 +306,7 @@
     <Compile Include="CompClasses\CompHybridizationChamber.cs" />
     <Compile Include="CompClasses\CompBroodChamber.cs" />
     <Compile Include="DefModExtensions\OutputMultiplierRecipe.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\BeeCombinationDef.cs" />
     <Compile Include="Defs\BeeListDef.cs" />
     <Compile Include="Commands and Lists\BeeListSetupUtility.cs" />
