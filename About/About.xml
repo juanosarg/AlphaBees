@@ -22,8 +22,14 @@
 	</modDependencies>
 	<packageId>sarg.rimbees</packageId>
 	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
 		<li>vanillaexpanded.achievements</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>VanillaExpanded.VCEF</li>
 	</loadAfter>
 	<description>Breed bees to generate all kinds of resources! 
 

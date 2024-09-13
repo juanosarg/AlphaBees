@@ -2131,7 +2131,7 @@
 				<tempMax>15</tempMax>
 				<additionalBeeEffects>
 					<li Class="RimBees.AdditionalBeeEffects_Damage">
-						<damage>Frostburn</damage>
+						<damage>Frostbite</damage>
 						<amount>20</amount>
 						
 					</li>

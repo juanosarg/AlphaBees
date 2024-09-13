@@ -266,7 +266,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_Beehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>2.9</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -294,6 +294,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<paintable>true</paintable>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -329,6 +330,69 @@
 		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
+		<defName>RB_BunkerBeehouse</defName>
+		<label>bunker beehouse</label>
+		<description>A beehouse built with concrete. Very resistant to damage and fire, but terrible for bee production. This kind of beehouse will only make sense for bees that don't produce much in terms of honey and wax, but create different effects around the beehouse, such as Worker or Commando bees.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<thingClass>RimBees.Building_Beehouse</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/RB_BunkerBeehouse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.9</drawSize>
+		
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>Stony</li>
+		
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>550</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<paintable>true</paintable>
+		</building>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>RB_Bees</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>RB_BasicBeekeeping</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeHouse">
+				<isBeehouse>true</isBeehouse>
+				<electricBeehouse>false</electricBeehouse>
+				<climatizedBeehouse>false</climatizedBeehouse>
+				<beehouseRate>10</beehouseRate>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>RimBees.PlaceWorker_ShowPollinationRadius</li>
+		</placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
 		<defName>RB_ClimatizedBeehouse</defName>
 		<label>simple climatized beehouse</label>
 		<description>This beehouse has been fitted with a climate control system, so bees can operate in extremely cold or hot biomes. This beehouse is very inefficient (about 40% speed), so it should only be used as an intermediate solution to work towards breeding bees from the Biome branch. This kind of beehouse is only useful in extreme biomes.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
@@ -337,7 +401,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_ClimatizedBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>2.9</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -369,6 +433,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<paintable>true</paintable>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -402,7 +467,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_AdvancedBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>2.9</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -469,7 +534,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_AdvancedClimatizedBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>2.9</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -537,7 +602,7 @@
 		<graphicData>
 			<texPath>Things/Building/RB_SpacerBeehouse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>2.9</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -603,7 +668,7 @@
 		<thingClass>RimBees.Building_BroodChamber</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/RB_Beehouse_BroodChamber</texPath>
+			<texPath>Things/Building/RB_Beehouse_BroodChamber_Variant1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -635,6 +700,7 @@
 		</statBases>
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BroodChamber</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -657,8 +723,8 @@
 			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<startAsRandom>false</startAsRandom>
 				<randomGraphics>
-					<li>Things/Building/RB_Beehouse_BroodChamber</li>
 					<li>Things/Building/RB_Beehouse_BroodChamber_Variant1</li>
+					<li>Things/Building/RB_Beehouse_BroodChamber</li>
 					<li>Things/Building/RB_Beehouse_BroodChamber_Variant2</li>
 					<li>Things/Building/RB_Beehouse_BroodChamber_Variant3</li>
 				</randomGraphics>
@@ -672,7 +738,7 @@
 		<thingClass>RimBees.Building_HybridizationChamber</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/RB_Beehouse_HybridizationChamber</texPath>
+			<texPath>Things/Building/RB_Beehouse_HybridizationChamber_Variant1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -698,6 +764,7 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_Hybridization</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
 		</building>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -727,8 +794,8 @@
 			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<startAsRandom>false</startAsRandom>
 				<randomGraphics>
-					<li>Things/Building/RB_Beehouse_HybridizationChamber</li>
 					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant1</li>
+					<li>Things/Building/RB_Beehouse_HybridizationChamber</li>
 					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant2</li>
 					<li>Things/Building/RB_Beehouse_HybridizationChamber_Variant3</li>
 				</randomGraphics>
