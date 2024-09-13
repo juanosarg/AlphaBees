@@ -1790,7 +1790,7 @@
 				<tempMax>30</tempMax>
 				<additionalBeeEffects>
 					<li Class="RimBees.AdditionalBeeEffects_Sow">
-						<rareTickFrequency>10</rareTickFrequency>
+						<rareTickFrequency>5</rareTickFrequency>
 					</li>
 				</additionalBeeEffects>
 			</li>
