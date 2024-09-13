@@ -296,6 +296,8 @@
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Firefoam.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Sow.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Harvest.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Repair.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Damage.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_ChargeBatteries.cs" />

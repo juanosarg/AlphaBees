@@ -815,6 +815,7 @@
 				<weirdplantneeded>Plant_Corn</weirdplantneeded>
 				<tempMin>5</tempMin>
 				<tempMax>25</tempMax>
+				
 			</li>
 		</comps>
 	</ThingDef>
@@ -1731,6 +1732,82 @@
 		<label>Foamy queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Foamy_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Harvester ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_HarvesterBeeBase" Abstract="True">
+		<description>Harvester bees don't like being compared to the grim reaper. Their scythe is destined to be used on wheat souls, not human ones! They will slowly harvest nearby crops (in their beehouse's area of effect) as long as they are considered harvestable. Bear in mind this is done at an average skill, so it will be less efficient than the colonists doing it!\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Harvester</species>
+				<comb>RB_Harvester_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Harvest">
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_HarvesterBeeBase">
+		<defName>RB_Bee_Harvester_Drone</defName>
+		<label>Harvester drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Harvester_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_HarvesterBeeBase">
+		<defName>RB_Bee_Harvester_Queen</defName>
+		<label>Harvester queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Harvester_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+		<!--=============== Cultivator ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_CultivatorBeeBase" Abstract="True">
+		<description>Cultivator bees are gardening experts. They will slowly sow crops in nearby grow zones (in their beehouse's area of effect). Bear in mind this is done at an average skill, so it will be less efficient than the colonists doing it! Any plant above plant skill 8 will be too hard for them to handle.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Cultivator</species>
+				<comb>RB_Cultivator_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Sow">
+						<rareTickFrequency>10</rareTickFrequency>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_CultivatorBeeBase">
+		<defName>RB_Bee_Cultivator_Drone</defName>
+		<label>Cultivator drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Cultivator_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_CultivatorBeeBase">
+		<defName>RB_Bee_Cultivator_Queen</defName>
+		<label>Cultivator queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Cultivator_Queen</texPath>
 		</graphicData>
 	</ThingDef>
 	<!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->

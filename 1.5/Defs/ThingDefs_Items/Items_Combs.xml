@@ -291,6 +291,34 @@
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Harvester_Honeycomb</defName>
+		<label>Harvester honeycomb</label>
+		<description>This is a honeycomb produced by Harvester bees. Harvester bees don't like being compared to the grim reaper. Their scythe is destined to be used on wheat souls, not human ones! They will slowly harvest nearby crops (in their beehouse's area of effect) as long as they are considered harvestable. Bear in mind this is done at an average skill, so it will be less efficient than the colonists doing it! These honeycombs can be procesed in a Honey Extractor to get tasty honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Harvester_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_TastyHoney>1</RB_TastyHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Cultivator_Honeycomb</defName>
+		<label>Cultivator honeycomb</label>
+		<description>This is a honeycomb produced by Cultivator bees. Cultivator bees are gardening experts. They will slowly sow crops in nearby grow zones (in their beehouse's area of effect). Bear in mind this is done at an average skill, so it will be less efficient than the colonists doing it! Any plant above plant skill 8 will be too hard for them to handle. These honeycombs can be procesed in a Honey Extractor to get tasty honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Cultivator_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_TastyHoney>1</RB_TastyHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Arctic_Honeycomb</defName>
 		<label>arctic honeycomb</label>
 		<description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and ice pops.</description>

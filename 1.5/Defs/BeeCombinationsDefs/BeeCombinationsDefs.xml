@@ -244,6 +244,15 @@
 			<li>Foamy</li>							
 		</result>				
 	</RimBees.BeeCombinationDef>	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Agricultural_Janitor</defName>
+		<bee1>Agricultural</bee1>
+		<bee2>Janitor</bee2>
+		<result>
+			<li>Harvester</li>	
+			<li>Cultivator</li>				
+		</result>				
+	</RimBees.BeeCombinationDef>
 	
 	<!-- Tier 4 Combinations -->	
 	<RimBees.BeeCombinationDef>
