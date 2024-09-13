@@ -253,6 +253,14 @@
 			<li>Cultivator</li>				
 		</result>				
 	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Commando_Janitor</defName>
+		<bee1>Commando</bee1>
+		<bee2>Janitor</bee2>
+		<result>
+			<li>Warden</li>							
+		</result>				
+	</RimBees.BeeCombinationDef>	
 	
 	<!-- Tier 4 Combinations -->	
 	<RimBees.BeeCombinationDef>

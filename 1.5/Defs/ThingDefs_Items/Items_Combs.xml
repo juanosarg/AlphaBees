@@ -319,6 +319,20 @@
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Warden_Honeycomb</defName>
+		<label>Warden honeycomb</label>
+		<description>This is a honeycomb produced by Warden bees. Warden bees won't let your prisoners escape. Well, maybe not so much, but at least they are sure to try and teach them a lesson. Any colony prisoner inside their beehouse's area of effect will periodically have their resistance lowered, and be stung for good measure. ACAB (All Cops Are Bees). These honeycombs can be procesed in a Honey Extractor to get tasty honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Warden_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_TastyHoney>1</RB_TastyHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Arctic_Honeycomb</defName>
 		<label>arctic honeycomb</label>
 		<description>This is a honeycomb produced by arctic bees. Arctic bees have adapted to the colder climates on the Rim, and their honeycombs store honey and frost in equal amounts. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and ice pops.</description>

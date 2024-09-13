@@ -1810,6 +1810,46 @@
 			<texPath>Things/Item/Bees/RB_Bee_Cultivator_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+		<!--=============== Warden ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WardenBeeBase" Abstract="True">
+		<description>Warden bees won't let your prisoners escape. Well, maybe not so much, but at least they are sure to try and teach them a lesson. Any colony prisoner inside their beehouse's area of effect will periodically have their resistance lowered, and be stung for good measure. ACAB (All Cops Are Bees).\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Warden</species>
+				<comb>RB_Warden_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_LowerPrisonerResistance">
+						<rareTickFrequency>240</rareTickFrequency>
+						<damage>ScratchToxic</damage>
+						<amount>2</amount>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_WardenBeeBase">
+		<defName>RB_Bee_Warden_Drone</defName>
+		<label>Warden drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Warden_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_WardenBeeBase">
+		<defName>RB_Bee_Warden_Queen</defName>
+		<label>Warden queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Warden_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->
 	<!--=============== High ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_HighBeeBase" Abstract="True">

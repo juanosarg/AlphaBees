@@ -385,4 +385,10 @@
 		<beeDroneDef>RB_Bee_Cultivator_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Cultivator_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
+		<RimBees.BeeListDef>
+		<defName>RB_WardenBeeList</defName>
+		<nameString>Warden</nameString>
+		<beeDroneDef>RB_Bee_Warden_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Warden_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
 </Defs>
