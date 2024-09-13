@@ -301,6 +301,24 @@
 	</RimBees.BeeCombinationDef>
 	
 	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Desert_Blazing</defName>
+		<bee1>Desert</bee1>
+		<bee2>Blazing</bee2>
+		<result>
+			<li>Inferno</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Arctic_Frigid</defName>
+		<bee1>Arctic</bee1>
+		<bee2>Frigid</bee2>
+		<result>
+			<li>Glacial</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Hyper_Surgeon</defName>
 		<bee1>Hyper</bee1>
 		<bee2>Surgeon</bee2>

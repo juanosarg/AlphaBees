@@ -835,6 +835,36 @@
 			<Shell_HighExplosive>1</Shell_HighExplosive>
 		</butcherProducts>
 	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Inferno_Honeycomb</defName>
+		<label>Inferno honeycomb</label>
+		<description>This is a honeycomb produced by Inferno bees. Inferno bees generate heat well beyond other elemental bees, but instead of releasing that heat to the environment, they contain it inside their bodies until it can be directed towards enemies. Inferno bees will attack hostiles in their beehouse's area of effect, causing burns and sometimes setting them on fire. These honeycombs can be procesed in a Honey Extractor to get honey and red beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Inferno_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_RedBeeswax>3</RB_RedBeeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Glacial_Honeycomb</defName>
+		<label>Glacial honeycomb</label>
+		<description>This is a honeycomb produced by Glacial bees. Glacial bees absorb heat well beyond other elemental bees, but instead of extracting that heat from the environment, they will suck it up from enemies. Glacial bees will attack hostiles in their beehouse's area of effect, causing frostburns that ignore armor. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Glacial_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Fabricated_Honeycomb</defName>
 		<label>fabricated honeycomb</label>

@@ -19,6 +19,8 @@ namespace RimBees
         public bool onlyHostile = true;
         public int rareTickFrequency = 2;
         public bool singleTarget = false;
+        public bool setOnFire = false;
+        public float chanceSetOnFire = 0.5f;
 
         private int tickCounter = 0;
 
@@ -64,6 +66,13 @@ namespace RimBees
                         if (IsPawnAffected(building, pawn))
                         {                      
                             DoDamage(building, pawn);
+                            if (setOnFire)
+                            {
+                                if (Rand.Chance(chanceSetOnFire))
+                                {
+                                    pawn.TryAttachFire(1f, null);
+                                }
+                            }
                             if (singleTarget)
                             {
                                 break;

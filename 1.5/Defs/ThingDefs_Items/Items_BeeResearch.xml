@@ -368,6 +368,32 @@
 		</comps>
 		
 	</ThingDef>	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersDesertBlazing</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Desert_Queen</firstBee>
+				<secondBee>RB_Bee_Blazing_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Inferno_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersArcticFrigid</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Arctic_Queen</firstBee>
+				<secondBee>RB_Bee_Frigid_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Glacial_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>	
 	
 	<!-- Tier 6 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier6" ParentName="RB_ResearchPapersBase" Abstract="True">

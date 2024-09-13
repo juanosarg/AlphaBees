@@ -2069,6 +2069,90 @@
 			<texPath>Things/Item/Bees/RB_Bee_Fabricated_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	
+	<!--========== Tier 5: Elemental branch - From heat generation bees ==========-->
+	<!--=============== Inferno ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_InfernoBeeBase" Abstract="True">
+		<description>Inferno bees generate heat well beyond other elemental bees, but instead of releasing that heat to the environment, they contain it inside their bodies until it can be directed towards enemies. Inferno bees will attack hostiles in their beehouse's area of effect, causing burns and sometimes setting them on fire.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Inferno</species>
+				<comb>RB_Inferno_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>40</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Damage">
+						<damage>Flame</damage>
+						<amount>20</amount>
+						<setOnFire>true</setOnFire>
+						<chanceSetOnFire>0.25</chanceSetOnFire>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_InfernoBeeBase">
+		<defName>RB_Bee_Inferno_Drone</defName>
+		<label>Inferno drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Inferno_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_InfernoBeeBase">
+		<defName>RB_Bee_Inferno_Queen</defName>
+		<label>Inferno queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Inferno_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Glacial ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GlacialBeeBase" Abstract="True">
+		<description>Glacial bees absorb heat well beyond other elemental bees, but instead of extracting that heat from the environment, they will suck it up from enemies. Glacial bees will attack hostiles in their beehouse's area of effect, causing frostburns that ignore armor.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: None\nMinimum Temperature: -15ºC\nMaximum temperature: 15ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Glacial</species>
+				<comb>RB_Glacial_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>-15</tempMin>
+				<tempMax>15</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Damage">
+						<damage>Frostburn</damage>
+						<amount>20</amount>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_GlacialBeeBase">
+		<defName>RB_Bee_Glacial_Drone</defName>
+		<label>Glacial drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Glacial_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_GlacialBeeBase">
+		<defName>RB_Bee_Glacial_Queen</defName>
+		<label>Glacial queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Glacial_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 6 ==========-->
 	<!--=============== Glittering ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_GlitteringBeeBase" Abstract="True">

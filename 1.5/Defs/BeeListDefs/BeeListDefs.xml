@@ -361,4 +361,16 @@
 		<beeDroneDef>RB_Bee_Foamy_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Foamy_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_InfernoBeeList</defName>
+		<nameString>Inferno</nameString>
+		<beeDroneDef>RB_Bee_Inferno_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Inferno_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_GlacialBeeList</defName>
+		<nameString>Glacial</nameString>
+		<beeDroneDef>RB_Bee_Glacial_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Glacial_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
 </Defs>
