@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Cultivator_Warden</defName>
+		<bee1>Cultivator</bee1>
+		<bee2>Warden</bee2>
+		<result>
+			<li>Wololo</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	
+</Defs>

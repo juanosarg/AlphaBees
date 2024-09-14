@@ -335,14 +335,7 @@
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier_Cultivator_Warden</defName>
-		<bee1>Cultivator</bee1>
-		<bee2>Warden</bee2>
-		<result>
-			<li>Wololo</li>					
-		</result>				
-	</RimBees.BeeCombinationDef>
+	
 
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Pet_Warden</defName>
