@@ -5,7 +5,7 @@
 	<!--=============== Spicy ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_SpicyBeeBase" Abstract="True" >
-		<description>Spicy bees are only happy if they are pollinating spicy plants. They gather the pollen and create capsaicin-infused honeycombs that can be extracted to get varied spices.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Spicy bees are only happy if they are pollinating spicy plants. They gather the pollen and create capsaicin-infused honeycombs that can be extracted to get varied spices and condiments.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   

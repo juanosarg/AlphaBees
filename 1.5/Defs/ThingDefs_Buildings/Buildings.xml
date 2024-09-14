@@ -332,7 +332,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_BunkerBeehouse</defName>
 		<label>bunker beehouse</label>
-		<description>A beehouse built with concrete. Very resistant to damage and fire, but terrible for bee production. This kind of beehouse will only make sense for bees that don't produce much in terms of honey and wax, but create different effects around the beehouse, such as Worker or Commando bees.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<description>A beehouse built with concrete. Very resistant to damage and fire, but terrible for bee production (an abysmal 10% speed). This kind of beehouse will only make sense for bees that don't produce much in terms of honey and wax, but create different effects around the beehouse, such as Worker or Commando bees.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -377,6 +377,7 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<researchPrerequisites>
 			<li>RB_BasicBeekeeping</li>
 		</researchPrerequisites>
@@ -461,7 +462,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RB_AdvancedBeehouse</defName>
 		<label>advanced beehouse</label>
-		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 50%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
+		<description>A high tech beehouse where bees will live and generate honeycombs for you. Its construction requires crossbreeding of Technological bees first to obtain the materials neccesary to build it, namely Bio Interface Components. This beehouse consumes a little bit of electricity, but speeds up honeycomb production by 33%.\n\nA working beehouse will have a beneficial effect on any plant crops in a 6 tile radius (displayed when selected) around it: harvested plants have a 25% chance to generate a partially grown pollinated offshoot of the same plant. Bear in mind that bees should be active at the moment the harvesting takes place.</description>
 		<thingClass>RimBees.Building_Beehouse</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>

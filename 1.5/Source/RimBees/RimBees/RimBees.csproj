@@ -295,6 +295,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_DryTerrain.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_LowerPrisonerCertainty.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_LowerPrisonerResistance.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Firefoam.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Sow.cs" />
@@ -311,6 +313,8 @@
     <Compile Include="CompClasses\CompDangerBee.cs" />
     <Compile Include="CompClasses\CompHybridizationChamber.cs" />
     <Compile Include="CompClasses\CompBroodChamber.cs" />
+    <Compile Include="CompClasses\CompRandomItemSpawner.cs" />
+    <Compile Include="CompClasses\Properties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="DefModExtensions\OutputMultiplierRecipe.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\BeeCombinationDef.cs" />

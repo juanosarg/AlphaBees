@@ -67,7 +67,28 @@
 		<isBad>false</isBad>
 	</HediffDef>
 
-	
+	<HediffDef>
+		<defName>RB_Draftability</defName>
+		<label>shepherded by bees</label>
+		<description>Shepherd bees are influencing the behavior of this animal and making it controllable.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+		</comps>
+		
+		<isBad>false</isBad>
+	</HediffDef>
 
 
 

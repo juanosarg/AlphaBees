@@ -30,9 +30,9 @@ namespace RimBees
             {
                 if (building.Map != null)
                 {
-                    CellRect rect = GenAdj.OccupiedRect(building.Position, building.Rotation, IntVec2.One);
-                    rect = rect.ExpandedBy(RimBees_Settings.beeEffectRadius);
-                    foreach (IntVec3 current in rect.Cells)
+                    IEnumerable<IntVec3> cells = GenRadial.RadialCellsAround(building.Position, RimBees_Settings.beeEffectRadius, useCenter: true);
+
+                    foreach (IntVec3 current in cells)
                     {
                         List<Thing> plantList = current.GetThingList(building.Map);
                         for (int i = 0; i < plantList.Count; i++)

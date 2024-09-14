@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Anima ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_AnimaBeeBase" Abstract="True" >
+		<description>Anima bees are attuned to anima trees, and can act as powerful conduits for the tree's psychic energies. They'll provide a psychic stat bonus to colonists in the beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Anima</species>
+				<comb>RB_Anima_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>true</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HediffAoE">
+						<hediffDef>RB_PsychicBoost</hediffDef>
+					</li>
+				</additionalBeeEffects>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_AnimaBeeBase">
+		<defName>RB_Bee_Anima_Drone</defName>
+		<label>Anima drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Anima_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_AnimaBeeBase">
+		<defName>RB_Bee_Anima_Queen</defName>
+		<label>Anima queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Anima_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+
+
+</Defs>

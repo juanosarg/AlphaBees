@@ -394,6 +394,30 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersCultivatorWarden</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Cultivator_Queen</firstBee>
+				<secondBee>RB_Bee_Warden_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Wololo_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersPetWarden</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Pet_Queen</firstBee>
+				<secondBee>RB_Bee_Warden_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Shepherd_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- Tier 6 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier6" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier6)</label>

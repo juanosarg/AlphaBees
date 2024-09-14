@@ -1067,7 +1067,7 @@
 	</ThingDef>
 	<!--=============== Quarry ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_QuarryBeeBase" Abstract="True">
-		<description>Quarry bees can extract small amounts of stone from the landscape and turn them into granite chunks.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Quarry bees can extract small amounts of stone from the landscape and turn them into stone chunks.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -1219,6 +1219,44 @@
 			<texPath>Things/Item/Bees/RB_Bee_Janitor_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--=============== Desiccated ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_DesiccatedBeeBase" Abstract="True">
+		<description>Desiccated bees are accomplished landscapers. They only understand one type of terrain, though: dry. They will slowly act as a moisture pump on the terrain tiles inside their beehouse's area of effect. Contrary to normal moisture pumps, they will convert terrain at random, not radially.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Desiccated</species>
+				<comb>RB_Desiccated_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_DryTerrain">
+						<rareTickFrequency>1</rareTickFrequency>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_DesiccatedBeeBase">
+		<defName>RB_Bee_Desiccated_Drone</defName>
+		<label>Desiccated drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Desiccated_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_DesiccatedBeeBase">
+		<defName>RB_Bee_Desiccated_Queen</defName>
+		<label>Desiccated queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Desiccated_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 4: Textile Branch - From Technological and Adaptive Bees ==========-->
 	<!--=============== Weaving ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WeavingBeeBase" Abstract="True">
@@ -1356,7 +1394,7 @@
 	<!--========== Tier 4: Blocks Branch - From Quarry and Technological Bees ==========-->
 	<!--=============== Mason ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_MasonBeeBase" Abstract="True">
-		<description>Mason bees are adept at taking stone from the landscape and sculpting it into granite blocks.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Mason bees are adept at taking stone from the landscape and sculpting it into stone blocks.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -1810,7 +1848,7 @@
 			<texPath>Things/Item/Bees/RB_Bee_Cultivator_Queen</texPath>
 		</graphicData>
 	</ThingDef>
-		<!--=============== Warden ====================-->
+	<!--=============== Warden ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WardenBeeBase" Abstract="True">
 		<description>Warden bees won't let your prisoners escape. Well, maybe not so much, but at least they are sure to try and teach them a lesson. Any colony prisoner inside their beehouse's area of effect will periodically have their resistance lowered, and be stung for good measure. ACAB (All Cops Are Bees).\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
 		<graphicData>
@@ -2270,6 +2308,90 @@
 			<texPath>Things/Item/Bees/RB_Bee_Glacial_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--========== Tier 5: Warden branch - From warden bees ==========-->
+	<!--=============== Wololo ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_WololoBeeBase" Abstract="True">
+		<description>Wololo bees are known for their strange ability to influence the minds of nearby prisoners. When these bees swarm, they emit a hypnotic hum—similar to a weird  "Wololo" sound—that slowly converts others to the hive’s side. Any colony prisoner inside their beehouse's area of effect will periodically have their certainty in their ideo lowered, as long as it is different from the colony's main ideo, and be stung for good measure.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Wololo</species>
+				<comb>RB_Wololo_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_LowerPrisonerCertainty">
+						<rareTickFrequency>240</rareTickFrequency>
+						<damage>ScratchToxic</damage>
+						<amount>2</amount>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_WololoBeeBase">
+		<defName>RB_Bee_Wololo_Drone</defName>
+		<label>Wololo drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Wololo_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_WololoBeeBase">
+		<defName>RB_Bee_Wololo_Queen</defName>
+		<label>Wololo queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Wololo_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Shepherd ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ShepherdBeeBase" Abstract="True" >
+		<description>Shepherd bees possess a remarkable ability to influence the behavior of colony animals. When they buzz near livestock or pets, the bees emit a calming yet commanding hum that makes the animals unusually cooperative. They'll provide draftability to any colony animals in the beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Shepherd</species>
+				<comb>RB_Shepherd_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HediffAoE">
+						<hediffDef>RB_Draftability</hediffDef>
+						<affectAnimals>true</affectAnimals>
+					</li>
+				</additionalBeeEffects>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ShepherdBeeBase">
+		<defName>RB_Bee_Shepherd_Drone</defName>
+		<label>Shepherd drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Shepherd_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_ShepherdBeeBase">
+		<defName>RB_Bee_Shepherd_Queen</defName>
+		<label>Shepherd queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Shepherd_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
 	<!--========== Tier 6 ==========-->
 	<!--=============== Glittering ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_GlitteringBeeBase" Abstract="True">

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Research_Psychic</defName>
+		<bee1>Research</bee1>
+		<bee2>Psychic</bee2>
+		<result>
+			<li>Anima</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	
+	
+</Defs>

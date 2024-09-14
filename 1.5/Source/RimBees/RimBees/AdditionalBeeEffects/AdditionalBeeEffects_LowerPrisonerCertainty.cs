@@ -9,7 +9,7 @@ using Verse;
 
 namespace RimBees
 {
-    public class AdditionalBeeEffects_LowerPrisonerResistance : AdditionalBeeEffects
+    public class AdditionalBeeEffects_LowerPrisonerCertainty : AdditionalBeeEffects
     {
 
         public int rareTickFrequency = 20;
@@ -17,13 +17,13 @@ namespace RimBees
         public DamageDef damage;
         public float amount;
         public float armorPenetration = 0f;
-        public float resistanceLoweredBy = 1;
+        public float certaintyLoweredBy = 1;
        
 
         private int tickCounter = 0;
 
 
-        public AdditionalBeeEffects_LowerPrisonerResistance()
+        public AdditionalBeeEffects_LowerPrisonerCertainty()
         {
 
         }
@@ -41,12 +41,17 @@ namespace RimBees
                 return false;
             }
 
-            if (!target.guest.Recruitable)
+            if (target.DevelopmentalStage.Baby())
             {
                 return false;
             }
 
-            if (target.guest.Resistance<=0)
+            if (target.ideo?.Certainty <= 0)
+            {
+                return false;
+            }
+
+            if (target.ideo?.Ideo == Current.Game.World?.factionManager?.OfPlayer?.ideos?.PrimaryIdeo)
             {
                 return false;
             }
@@ -69,12 +74,8 @@ namespace RimBees
                     {                    
                         if (IsPawnAffected(building, pawn))
                         {
-                            pawn.guest.resistance = Mathf.Max(0f, pawn.guest.resistance - (resistanceLoweredBy*RimBees_Settings.workerBeeEffectMultiplier));
-                            if (pawn.guest.Resistance <= 0)
-                            {
-                                pawn.guest.resistance = 0;
-                            }
-
+                            pawn.ideo.Debug_ReduceCertainty(certaintyLoweredBy * RimBees_Settings.workerBeeEffectMultiplier);
+                           
                             DebugActionsUtility.DustPuffFrom(pawn);
                             DamageInfo dinfo = new DamageInfo(damage, amount * RimBees_Settings.workerBeeEffectMultiplier, armorPenetration, -1f, building);
                             pawn.TakeDamage(dinfo);

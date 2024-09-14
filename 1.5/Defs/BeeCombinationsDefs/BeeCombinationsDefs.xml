@@ -115,7 +115,7 @@
 			<li>Commando</li>
 			<li>Research</li>
 			<li>Janitor</li>	
-				
+			<li>Desiccated</li>
 		</result>				
 	</RimBees.BeeCombinationDef>	
 
@@ -334,6 +334,26 @@
 			<li>Glacial</li>					
 		</result>				
 	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Cultivator_Warden</defName>
+		<bee1>Cultivator</bee1>
+		<bee2>Warden</bee2>
+		<result>
+			<li>Wololo</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Pet_Warden</defName>
+		<bee1>Pet</bee1>
+		<bee2>Warden</bee2>
+		<result>
+			<li>Shepherd</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<!-- Tier 5 Combinations -->	
 	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Hyper_Surgeon</defName>

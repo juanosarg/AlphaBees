@@ -27,4 +27,40 @@
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
 	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomCondiments</defName>
+		<label>random condiment</label>
+		<description>Spawn random condiment.</description>
+		<stackLimit>3</stackLimit>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Spices</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>.01</Mass>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomItemSpawner">
+				<amount>3</amount>
+				<categories><li>VCE_Condiments</li></categories>
+				<itemsBlacklistedFromCategories><li>VCE_DigestibleResurrectorNanites</li></itemsBlacklistedFromCategories>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

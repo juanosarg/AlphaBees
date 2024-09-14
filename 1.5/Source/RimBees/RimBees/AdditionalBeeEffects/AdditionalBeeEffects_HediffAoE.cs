@@ -11,7 +11,8 @@ namespace RimBees
     {
 
         public HediffDef hediffDef;
-       
+        public bool affectAnimals = false;
+
 
 
         public AdditionalBeeEffects_HediffAoE()
@@ -19,17 +20,19 @@ namespace RimBees
 
         }
 
-        private bool IsPawnAffected(Building_Beehouse building,Pawn target)
+        private bool IsPawnAffected(Building_Beehouse building, Pawn target)
         {
-          
+
             if (target.Dead || target.health == null)
             {
                 return false;
             }
-           
+
+            
+
             return target.PositionHeld.DistanceTo(building.PositionHeld) <= RimBees_Settings.beeEffectRadius;
-            
-            
+
+
         }
 
 
@@ -38,19 +41,28 @@ namespace RimBees
 
             if (building.Map != null)
             {
-                foreach(Pawn pawn in building.Map.mapPawns.FreeColonists)
+                List<Pawn> pawns;
+                if (affectAnimals)
                 {
-                    if (IsPawnAffected(building, pawn))
-                    {
-                        GiveOrUpdateHediff(building,pawn);
-                    }
-
+                    pawns = building.Map.mapPawns.SpawnedColonyAnimals;                 
                 }
-
+                else
+                {
+                    pawns = building.Map.mapPawns.FreeColonists;
+                }
+                if (pawns.Any()) {
+                    foreach (Pawn pawn in pawns)
+                    {
+                        if (IsPawnAffected(building, pawn))
+                        {
+                            GiveOrUpdateHediff(building, pawn);
+                        }
+                    }
+                }            
             }
         }
 
-        private void GiveOrUpdateHediff(Building_Beehouse building,Pawn target)
+        private void GiveOrUpdateHediff(Building_Beehouse building, Pawn target)
         {
             Hediff hediff = target.health.hediffSet.GetFirstHediffOfDef(hediffDef);
             if (hediff == null)
@@ -73,7 +85,7 @@ namespace RimBees
             {
                 hediffComp_Disappears.ticksToDisappear = 500;
             }
-            
+
         }
 
 

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+	<HediffDef>
+		<defName>RB_PsychicBoost</defName>
+		<label>psychic boost</label>
+		<description>Anima bees are helping this person with increased psychic abilities.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+					<PsychicEntropyRecoveryRate>1.25</PsychicEntropyRecoveryRate>
+					<MeditationFocusGain>1.2</MeditationFocusGain>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	
+
+
+
+</Defs>
