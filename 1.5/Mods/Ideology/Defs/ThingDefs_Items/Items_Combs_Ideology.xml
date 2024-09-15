@@ -4,13 +4,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Wololo_Honeycomb</defName>
 		<label>Wololo honeycomb</label>
-		<description>This is a honeycomb produced by Wololo bees. Wololo bees are known for their strange ability to influence the minds of nearby prisoners. When these bees swarm, they emit a hypnotic hum—similar to a weird  "Wololo" sound—that slowly converts others to the hive’s side. Any colony prisoner inside their beehouse's area of effect will periodically have their certainty in their ideo lowered, as long as it is different from the colony's main ideo, and be stung for good measure. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Wololo bees. Wololo bees are known for their strange ability to influence the minds of nearby prisoners. When these bees swarm, they emit a hypnotic hum—similar to a weird  "Wololo" sound—that slowly converts others to the hive’s side. Any colony prisoner inside their beehouse's area of effect will periodically have their certainty in their ideo lowered, as long as it is different from the colony's main ideo, and be stung for good measure. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Wololo_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>

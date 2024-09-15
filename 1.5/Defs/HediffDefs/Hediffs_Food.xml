@@ -1,42 +1,66 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-  <HediffDef>
-    <defName>RB_BlackHoneyHediff</defName>
-    <label>Ate Black Honey</label>
-	<description>This colonist ate black honey, which improves blood flow and creates a feeling of euphoria.</description>
-    <initialSeverity>1</initialSeverity>
-    <hediffClass>HediffWithComps</hediffClass>
-	    <isBad>false</isBad>
-
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.0</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-        <li>
-          <minSeverity>0</minSeverity>
-          <label>Well Fed: Black Honey</label>
-          <painFactor>0.9</painFactor>
-            <capMods>
-              <li>
-                <capacity>BloodPumping</capacity>
-                <offset>0.1</offset>
-              </li>
-			  <li>
-                <capacity>BloodFiltration</capacity>
-                <offset>0.1</offset>
-              </li>
-            </capMods>
-        </li>
-      </stages>
-  </HediffDef>
-
-
-
-
+	<HediffDef>
+		<defName>RB_AteBlackHoney</defName>
+		<label>Ate black honey</label>
+		<description>This colonist ate black honey, which improves blood flow and creates a feeling of euphoria.</description>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<makesSickThought>false</makesSickThought>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>RB_AteBlackHoney</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				
+				<label>Well Fed: black honey</label>
+				<painFactor>0.9</painFactor>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>RB_AtePerformanceEnhancingHoney</defName>
+		<label>Ate performance enhancing honey</label>
+		<description>This colonist ate performance enhancing honey, which increases global work speed.</description>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<makesSickThought>false</makesSickThought>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>RB_AtePerformanceEnhancingHoney</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				
+				<label>Well Fed: performance enhancing honey</label>
+				<statFactors>
+					<WorkSpeedGlobal>1.05</WorkSpeedGlobal>
+				</statFactors>
+				
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

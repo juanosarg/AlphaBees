@@ -140,13 +140,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Worker_Honeycomb</defName>
 		<label>Worker honeycomb</label>
-		<description>This is a honeycomb produced by Worker bees, skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Worker bees, skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Worker_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
@@ -154,13 +154,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Commando_Honeycomb</defName>
 		<label>Commando honeycomb</label>
-		<description>This is a honeycomb produced by Commando bees. Commando bees would NEVER play bee RimWorld without the bee version of Combat Evolved (Combat Evolbeed?). They will viciously attack any hostiles approaching the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get honey and steelwax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Commando bees. Commando bees would NEVER play bee RimWorld without the bee version of Combat Evolved (Combat Evolbeed?). They will viciously attack any hostiles approaching the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and steelwax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Commando_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Steelwax>3</RB_Steelwax>
 			
 		</butcherProducts>
@@ -168,13 +168,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Research_Honeycomb</defName>
 		<label>Research honeycomb</label>
-		<description>This is a honeycomb produced by Research bees, adept at investigation and experimentation. On their own, they won't be capable of much (1 point of research per hour), but if you get a considerable number of them they will blow through the colony's research projects in no time. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Research bees, adept at investigation and experimentation. On their own, they won't be capable of much (1 point of research per hour), but if you get a considerable number of them they will blow through the colony's research projects in no time. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Research_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
@@ -182,13 +182,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Janitor_Honeycomb</defName>
 		<label>Janitor honeycomb</label>
-		<description>This is a honeycomb produced by Janitor bees. There is nothing Janitor bees despise more than uncleanliness. They will slowly get rid of all filth inside their beehouse's area of effect, as long as it is within the colony's home area. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Janitor bees. There is nothing Janitor bees despise more than uncleanliness. They will slowly get rid of all filth inside their beehouse's area of effect, as long as it is within the colony's home area. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Janitor_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
@@ -238,13 +238,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Tetra_Honeycomb</defName>
 		<label>Tetra honeycomb</label>
-		<description>This is a honeycomb produced by Tetra bees, pseudo-artificial bees enhanced with the power cores of a Tetra slug. They are capable of slowly recharging nearby batteries. It is probably not a good idea to use a beehouse that consumes power for these, as the effect would cancel out... These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Tetra bees, pseudo-artificial bees enhanced with the power cores of a Tetra slug. They are capable of slowly recharging nearby batteries. It is probably not a good idea to use a beehouse that consumes power for these, as the effect would cancel out... These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Tetra_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
@@ -252,13 +252,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Skilful_Honeycomb</defName>
 		<label>Skilful honeycomb</label>
-		<description>This is a honeycomb produced by Skilful bees. Natural born tinkerers, they are capable of repairing structures and keeping them in working order. They will slowly repair buildings inside their beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get honey and steelwax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Skilful bees. Natural born tinkerers, they are capable of repairing structures and keeping them in working order. They will slowly repair buildings inside their beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and steelwax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Prefab_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Steelwax>3</RB_Steelwax>
 			
 		</butcherProducts>
@@ -336,13 +336,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Warden_Honeycomb</defName>
 		<label>Warden honeycomb</label>
-		<description>This is a honeycomb produced by Warden bees. Warden bees won't let your prisoners escape. Well, maybe not so much, but at least they are sure to try and teach them a lesson. Any colony prisoner inside their beehouse's area of effect will periodically have their resistance lowered, and be stung for good measure. ACAB (All Cops Are Bees). These honeycombs can be procesed in a Honey Extractor to get tasty honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Warden bees. Warden bees won't let your prisoners escape. Well, maybe not so much, but at least they are sure to try and teach them a lesson. Any colony prisoner inside their beehouse's area of effect will periodically have their resistance lowered, and be stung for good measure. ACAB (All Cops Are Bees). These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Warden_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_TastyHoney>1</RB_TastyHoney>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
@@ -925,13 +925,13 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Shepherd_Honeycomb</defName>
 		<label>Shepherd honeycomb</label>
-		<description>This is a honeycomb produced by Shepherd bees. Shepherd bees possess a remarkable ability to influence the behavior of colony animals. When they buzz near livestock or pets, the bees emit a calming yet commanding hum that makes the animals unusually cooperative. They'll provide draftability to any colony animals in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Shepherd bees. Shepherd bees possess a remarkable ability to influence the behavior of colony animals. When they buzz near livestock or pets, the bees emit a calming yet commanding hum that makes the animals unusually cooperative. They'll provide draftability to any colony animals in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Shepherd_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
-			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>
