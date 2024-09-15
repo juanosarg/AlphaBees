@@ -9,7 +9,7 @@ namespace RimBees
     public class RimBees_Settings : ModSettings
 
     {
-
+        private static Vector2 scrollPosition = Vector2.zero;
 
         public static bool RB_IgnoreNight = false;
         public static bool RB_IgnoreRain = false;
@@ -32,6 +32,9 @@ namespace RimBees
         public static float workerBeeEffectMultiplier = workerBeeEffectMultiplierBase;
         public const float workerBeeEffectMultiplierBase = 1;
 
+        public static float damageBeeEffectMultiplier = damageBeeEffectMultiplierBase;
+        public const float damageBeeEffectMultiplierBase = 1;
+
         public override void ExposeData()
         {
             base.ExposeData();
@@ -50,15 +53,18 @@ namespace RimBees
             Scribe_Values.Look(ref beeProductionMultiplier, "beeProductionMultiplier", beeProductionMultiplierBase, true);
             Scribe_Values.Look(ref beeEffectRadius, "beeEffectRadius", beeEffectRadiusBase, true);
             Scribe_Values.Look(ref workerBeeEffectMultiplier, "workerBeeEffectMultiplier", workerBeeEffectMultiplierBase, true);
+            Scribe_Values.Look(ref damageBeeEffectMultiplier, "damageBeeEffectMultiplier", damageBeeEffectMultiplierBase, true);
 
 
         }
         public static void DoWindowContents(Rect inRect)
         {
             Listing_Standard ls = new Listing_Standard();
+          
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 250);
+            Widgets.BeginScrollView(inRect, ref scrollPosition, rect2, true);
 
-            ls.Begin(inRect);
-            ls.ColumnWidth = inRect.width / 1f;
+            ls.Begin(rect2);       
 
             ls.CheckboxLabeled("RB_IgnoreNight".Translate(), ref RB_IgnoreNight, null);
 
@@ -81,6 +87,8 @@ namespace RimBees
             ls.CheckboxLabeled("BenLubarsRimBeesPatches_beeDangerAlert_title".Translate(), ref RB_Ben_BeeDangerAlert, "BenLubarsRimBeesPatches_beeDangerAlert_desc".Translate());
 
             ls.CheckboxLabeled("RB_CarryBees".Translate(), ref RB_CarryBees, "RB_CarryBees_Description".Translate());
+
+            ls.GapLine();
 
             var beeProductionLabel = ls.LabelPlusButton("RB_BeeProductionMultiplier".Translate() + ": " + beeProductionMultiplier, "RB_BeeProductionMultiplierTooltip".Translate());
             beeProductionMultiplier = (float)Math.Round(ls.Slider(beeProductionMultiplier, 1, 10), 1);
@@ -105,7 +113,17 @@ namespace RimBees
                 workerBeeEffectMultiplier = workerBeeEffectMultiplierBase;
             }
 
+            var damageBeeEffectMultiplierLabel = ls.LabelPlusButton("RB_DamageBeeEffectMultiplier".Translate() + ": " + damageBeeEffectMultiplier, "RB_DamageBeeEffectMultiplierTooltip".Translate());
+            damageBeeEffectMultiplier = (float)Math.Round(ls.Slider(damageBeeEffectMultiplier, 0.1f, 10), 1);
+
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, damageBeeEffectMultiplierLabel.position.y + 35, 250f, 29f)))
+            {
+                damageBeeEffectMultiplier = damageBeeEffectMultiplierBase;
+            }
+
             ls.End();
+            Widgets.EndScrollView();
+            
 
         }
 

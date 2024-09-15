@@ -76,7 +76,7 @@ namespace RimBees
                             }
 
                             DebugActionsUtility.DustPuffFrom(pawn);
-                            DamageInfo dinfo = new DamageInfo(damage, amount * RimBees_Settings.workerBeeEffectMultiplier, armorPenetration, -1f, building);
+                            DamageInfo dinfo = new DamageInfo(damage, amount * RimBees_Settings.damageBeeEffectMultiplier, armorPenetration, -1f, building);
                             pawn.TakeDamage(dinfo);
                             break;
                         }

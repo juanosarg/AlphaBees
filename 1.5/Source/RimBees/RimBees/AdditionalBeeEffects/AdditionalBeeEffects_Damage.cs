@@ -92,7 +92,7 @@ namespace RimBees
         private void DoDamage(Building_Beehouse building,Pawn target)
         {
            
-            DamageInfo dinfo = new DamageInfo(damage, amount*RimBees_Settings.workerBeeEffectMultiplier, armorPenetration, -1f, building);
+            DamageInfo dinfo = new DamageInfo(damage, amount*RimBees_Settings.damageBeeEffectMultiplier, armorPenetration, -1f, building);
 
             target.TakeDamage(dinfo);
 

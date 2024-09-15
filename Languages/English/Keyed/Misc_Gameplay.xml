@@ -93,8 +93,10 @@
 	<RB_BeeProductionMultiplierTooltip>Do you want your bee combs to produce an insane number of items? With this multiplier you can make it an insane as you desire. Spaceships powered by bees? Sure, why not? Set to 1 by default. Can't be lower than 1 or it'd make some combs produce less than 1 item.</RB_BeeProductionMultiplierTooltip>
 	<RB_BeehouseEffectRadius>Beehouse effect radius</RB_BeehouseEffectRadius>
 	<RB_BeehouseEffectRadiusTooltip>The radius on which a beehouse will produce its effects. This affects both the pollination effect on harvested plants, the size of the growing zone created around it, and the radius on which bees will look for their needed flower / product. 6 tiles by default. Higher values are laggier.</RB_BeehouseEffectRadiusTooltip>
-	<RB_WorkerBeeEffectMultiplier>Worker bee effect multiplier</RB_WorkerBeeEffectMultiplier>
-	<RB_WorkerBeeEffectMultiplierTooltip>Effects from worker bees will be multiplied by this factor. This will have no effect on some of the effects, such as cleaning, or firefoam, but it will scale damage, repair amount, battery charging, research and heat pushing. High or low numbers might be super wacky. 1 by default.</RB_WorkerBeeEffectMultiplierTooltip>
+	<RB_WorkerBeeEffectMultiplier>"Helpful" Worker bee effect multiplier</RB_WorkerBeeEffectMultiplier>
+	<RB_WorkerBeeEffectMultiplierTooltip>"Helpful" Effects from worker bees will be multiplied by this factor. This will have no effect on some of the effects, such as cleaning, or firefoam, but it will scale repair amount, battery charging, research and heat pushing. High or low numbers might be super wacky. 1 by default.</RB_WorkerBeeEffectMultiplierTooltip>
+	<RB_DamageBeeEffectMultiplier>Damaging bee effect multiplier</RB_DamageBeeEffectMultiplier>
+	<RB_DamageBeeEffectMultiplierTooltip>Damage Effects from bees will be multiplied by this factor. For example, Stab damage from Commando bees, or toxic damage from Noxious bees. 1 by default.</RB_DamageBeeEffectMultiplierTooltip>
 	<RB_Reset>Reset</RB_Reset>
 	
 	<!-- Ben's Patches -->
