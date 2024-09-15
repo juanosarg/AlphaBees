@@ -42,7 +42,7 @@ namespace RimBees
                             Random random = new Random();
                             if (random.NextDouble() > 0.75)
                             {
-                                Thing thing = ThingMaker.MakeThing(ThingDef.Named(__instance.def.defName), null);
+                                Thing thing = ThingMaker.MakeThing(__instance.def, null);
                                 Plant plant = (Plant)thing;
                                 GenSpawn.Spawn(plant, __instance.Position, __instance.Map);
                                 plant.Growth = 0.25f;

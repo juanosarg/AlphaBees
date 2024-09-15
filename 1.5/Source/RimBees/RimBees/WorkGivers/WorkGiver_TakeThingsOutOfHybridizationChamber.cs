@@ -11,7 +11,7 @@ namespace RimBees
         {
             get
             {
-                return ThingRequest.ForDef(DefDatabase<ThingDef>.GetNamed("RB_HybridizationChamber", true));
+                return ThingRequest.ForDef(InternalDefOf.RB_HybridizationChamber);
             }
         }
 
@@ -53,7 +53,7 @@ namespace RimBees
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return new Job(DefDatabase<JobDef>.GetNamed("RB_TakeThingsOutOfHybridizationChamberJob", true), t);
+            return new Job(InternalDefOf.RB_TakeThingsOutOfHybridizationChamberJob, t);
         }
     }
 }

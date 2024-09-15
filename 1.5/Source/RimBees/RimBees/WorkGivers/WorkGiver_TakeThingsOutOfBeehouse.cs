@@ -55,7 +55,7 @@ namespace RimBees
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return new Job(DefDatabase<JobDef>.GetNamed("RB_TakeThingsOutOfBeehouseJob", true), t);
+            return new Job(InternalDefOf.RB_TakeThingsOutOfBeehouseJob, t);
         }
     }
 }

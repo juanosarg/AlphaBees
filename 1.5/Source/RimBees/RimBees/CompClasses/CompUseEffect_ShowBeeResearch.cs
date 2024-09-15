@@ -24,7 +24,7 @@ namespace RimBees
 
                 if (user.Faction == Faction.OfPlayer)
                 {
-                    user.health.AddHediff(HediffDef.Named("RB_RecentlyResearched"));
+                    user.health.AddHediff(InternalDefOf.RB_RecentlyResearched);
                 }
 
                 beeresearch = new Dialog_BeeResearch(firstBee, secondBee, resultingBees);

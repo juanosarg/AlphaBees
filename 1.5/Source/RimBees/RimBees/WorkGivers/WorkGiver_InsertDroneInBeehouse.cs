@@ -67,7 +67,7 @@ namespace RimBees
         {
             Building_Beehouse building_beehouse = (Building_Beehouse)t;
             Thing t2 = this.FindDrone(pawn, building_beehouse.theDroneIAmGoingToInsert, building_beehouse);
-            return new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingBees", true), t, t2);
+            return new Job(InternalDefOf.RB_InsertingBees, t, t2);
         }
 
         private Thing FindDrone(Pawn pawn, string theDroneIAmGoingToInsert, Building_Beehouse building_beehouse)

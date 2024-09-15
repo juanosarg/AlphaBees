@@ -66,7 +66,7 @@ namespace RimBees
         {
             Building_Beehouse building_beehouse = (Building_Beehouse)t;
             Thing t2 = this.FindQueen(pawn, building_beehouse.theQueenIAmGoingToInsert, building_beehouse);
-            return new Job(DefDatabase<JobDef>.GetNamed("RB_InsertingQueenBees", true), t, t2);
+            return new Job(InternalDefOf.RB_InsertingQueenBees, t, t2);
         }
 
         private Thing FindQueen(Pawn pawn, string theQueenIAmGoingToInsert, Building_Beehouse building_beehouse)
