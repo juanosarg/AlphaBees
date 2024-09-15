@@ -1,5 +1,6 @@
 ﻿using System;
 using HarmonyLib;
+using UnityEngine.XR;
 using Verse;
 
 namespace RimBees
@@ -14,7 +15,7 @@ namespace RimBees
             if (RimBees_Settings.RB_Ben_ShowProgress)
             {
                 Building_BroodChamber broodchamber = this.parent as Building_BroodChamber;
-                var progress = broodchamber.tickCounter / ((float)broodchamber.ticksToDays * broodchamber.daysTotal);
+                var progress = broodchamber.tickCounter / ((float)broodchamber.ticksToDays * RimBees_Settings.broodChamberMultiplier);
                 GenDraw.DrawFillableBar(new GenDraw.FillableBarRequest
                 {
                     center = parent.DrawPos + CompBeeHouse.ProgressBarOffset,

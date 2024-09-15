@@ -14,7 +14,7 @@ namespace RimBees
 
         public int tickCounter = 0;
         public int ticksToDays = 240;//240;
-        public int daysTotal = 3;
+        public float daysTotal = 3;
         public int numOfCombinationsFromXML = 1;
         public string hybridizedBee = "";
         public bool hybridizationChamberFull = false;
@@ -26,12 +26,12 @@ namespace RimBees
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            daysTotal =  rand.Next(1, 4);
+            daysTotal = rand.Next(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
         }
 
         public void RandomizeDays()
         {
-            daysTotal = rand.Next(1, 4);
+            daysTotal = rand.Next(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
         }
 
         public override void ExposeData()
@@ -70,8 +70,8 @@ namespace RimBees
             if (GetAdjacentBeehouse != null)
             {
                 if (GetAdjacentBeehouse.BeehouseIsRunning) {
-                    return "GU_AdjacentBeehouseRunningHybridization".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsRunning".Translate();
-                } else return "GU_AdjacentBeehouseInactive".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsStopped".Translate();
+                    return "GU_AdjacentBeehouseRunningHybridization".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsRunning".Translate(RimBees_Settings.hybridizationChamberMultiplier.ToString(), (RimBees_Settings.hybridizationChamberMultiplier*3).ToString());
+                } else return "GU_AdjacentBeehouseInactive".Translate() + "\n" + "GU_BroodChamberProgress".Translate() + " " + "GU_HybridMutationsStopped".Translate(RimBees_Settings.hybridizationChamberMultiplier.ToString(), (RimBees_Settings.hybridizationChamberMultiplier * 3).ToString());
 
             }
             else return "GU_NoAdjacentBeehouseHybridization".Translate();
@@ -163,7 +163,7 @@ namespace RimBees
                 command_Action.defaultLabel = "Finish operation";
                 command_Action.action = delegate
                 {
-                    tickCounter = ticksToDays * daysTotal;
+                    tickCounter = (int)(ticksToDays * daysTotal);
                 };
                 yield return command_Action;
             }

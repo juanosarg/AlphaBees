@@ -50,8 +50,8 @@
 	<GU_NoAdjacentBeehouseHybridization>Warning: this hybridization chamber has no adjacent beehouse</GU_NoAdjacentBeehouseHybridization>
 
 	<GU_AdjacentBeehouseRunningHybridization>Hybridization chamber attached to a beehouse. It will occasionally produce mutant queens if possible. To create drones, insert the queen in the beehouse and attach a Brood Chamber</GU_AdjacentBeehouseRunningHybridization>
-	<GU_HybridMutationsRunning>Mutations are random, happening between 1 to 3 days (currently running)</GU_HybridMutationsRunning>
-	<GU_HybridMutationsStopped>Mutations are random, happening between 1 to 3 days (currently stopped)</GU_HybridMutationsStopped>
+	<GU_HybridMutationsRunning>Mutations are random, happening between {0} to {1} days (currently running)</GU_HybridMutationsRunning>
+	<GU_HybridMutationsStopped>Mutations are random, happening between {0} to {1} days (currently stopped)</GU_HybridMutationsStopped>
 	
 	<RB_NoHybrid>This combination of bees produces no mutations. You should consider changing them or removing the hybridization chamber!</RB_NoHybrid>
 	<RB_Hybrid>A new mutant bee, {0}, has been created in a hybridization chamber! This combination produces no other different mutations.</RB_Hybrid>
@@ -97,6 +97,10 @@
 	<RB_WorkerBeeEffectMultiplierTooltip>"Helpful" Effects from worker bees will be multiplied by this factor. This will have no effect on some of the effects, such as cleaning, or firefoam, but it will scale repair amount, battery charging, research and heat pushing. High or low numbers might be super wacky. 1 by default.</RB_WorkerBeeEffectMultiplierTooltip>
 	<RB_DamageBeeEffectMultiplier>Damaging bee effect multiplier</RB_DamageBeeEffectMultiplier>
 	<RB_DamageBeeEffectMultiplierTooltip>Damage Effects from bees will be multiplied by this factor. For example, Stab damage from Commando bees, or toxic damage from Noxious bees. 1 by default.</RB_DamageBeeEffectMultiplierTooltip>
+	<RB_BroodChamberMultiplier>Brood chamber days</RB_BroodChamberMultiplier>
+	<RB_BroodChamberMultiplierTooltip>The speed at which brood chambers work. 3 days by default.</RB_BroodChamberMultiplierTooltip>
+	<RB_HybridizationChamberMultiplier>Hybridization chamber multiplier (lower means faster)</RB_HybridizationChamberMultiplier>
+	<RB_HybridizationChamberMultiplierTooltip>A multiplier for the speed at which hybridization chambers work. 1 to 3 days (random) by default. Lower values means faster. Higher values mean slower chambers.</RB_HybridizationChamberMultiplierTooltip>
 	<RB_Reset>Reset</RB_Reset>
 	
 	<!-- Ben's Patches -->

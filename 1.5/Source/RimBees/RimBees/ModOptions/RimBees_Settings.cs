@@ -35,6 +35,12 @@ namespace RimBees
         public static float damageBeeEffectMultiplier = damageBeeEffectMultiplierBase;
         public const float damageBeeEffectMultiplierBase = 1;
 
+        public static float broodChamberMultiplier = broodChamberMultiplierBase;
+        public const float broodChamberMultiplierBase = 3;
+
+        public static float hybridizationChamberMultiplier = hybridizationChamberMultiplierBase;
+        public const float hybridizationChamberMultiplierBase = 1;
+
         public override void ExposeData()
         {
             base.ExposeData();
@@ -54,6 +60,8 @@ namespace RimBees
             Scribe_Values.Look(ref beeEffectRadius, "beeEffectRadius", beeEffectRadiusBase, true);
             Scribe_Values.Look(ref workerBeeEffectMultiplier, "workerBeeEffectMultiplier", workerBeeEffectMultiplierBase, true);
             Scribe_Values.Look(ref damageBeeEffectMultiplier, "damageBeeEffectMultiplier", damageBeeEffectMultiplierBase, true);
+            Scribe_Values.Look(ref broodChamberMultiplier, "broodChamberMultiplier", broodChamberMultiplierBase, true);
+            Scribe_Values.Look(ref hybridizationChamberMultiplier, "hybridizationChamberMultiplier", hybridizationChamberMultiplierBase, true);
 
 
         }
@@ -61,7 +69,7 @@ namespace RimBees
         {
             Listing_Standard ls = new Listing_Standard();
           
-            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 250);
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 350);
             Widgets.BeginScrollView(inRect, ref scrollPosition, rect2, true);
 
             ls.Begin(rect2);       
@@ -97,6 +105,7 @@ namespace RimBees
             {
                 beeProductionMultiplier = beeProductionMultiplierBase;
             }
+            ls.GapLine();
             var beeEffectRadiusLabel = ls.LabelPlusButton("RB_BeehouseEffectRadius".Translate() + ": " + beeEffectRadius, "RB_BeehouseEffectRadiusTooltip".Translate());
             beeEffectRadius = (int)Math.Round(ls.Slider(beeEffectRadius, 1, 12), 0);
 
@@ -104,7 +113,7 @@ namespace RimBees
             {
                 beeEffectRadius = beeEffectRadiusBase;
             }
-
+            ls.GapLine();
             var workerBeeEffectMultiplierLabel = ls.LabelPlusButton("RB_WorkerBeeEffectMultiplier".Translate() + ": " + workerBeeEffectMultiplier, "RB_WorkerBeeEffectMultiplierTooltip".Translate());
             workerBeeEffectMultiplier = (float)Math.Round(ls.Slider(workerBeeEffectMultiplier, 0.1f, 5), 1);
 
@@ -112,13 +121,29 @@ namespace RimBees
             {
                 workerBeeEffectMultiplier = workerBeeEffectMultiplierBase;
             }
-
+            ls.GapLine();
             var damageBeeEffectMultiplierLabel = ls.LabelPlusButton("RB_DamageBeeEffectMultiplier".Translate() + ": " + damageBeeEffectMultiplier, "RB_DamageBeeEffectMultiplierTooltip".Translate());
             damageBeeEffectMultiplier = (float)Math.Round(ls.Slider(damageBeeEffectMultiplier, 0.1f, 10), 1);
 
             if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, damageBeeEffectMultiplierLabel.position.y + 35, 250f, 29f)))
             {
                 damageBeeEffectMultiplier = damageBeeEffectMultiplierBase;
+            }
+            ls.GapLine();
+            var broodChamberMultiplierLabel = ls.LabelPlusButton("RB_BroodChamberMultiplier".Translate() + ": " + broodChamberMultiplier, "RB_BroodChamberMultiplierTooltip".Translate());
+            broodChamberMultiplier = (float)Math.Round(ls.Slider(broodChamberMultiplier, 0.5f, 10), 1);
+
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, broodChamberMultiplierLabel.position.y + 35, 250f, 29f)))
+            {
+                broodChamberMultiplier = broodChamberMultiplierBase;
+            }
+            ls.GapLine();
+            var hybridizationChamberMultiplierLabel = ls.LabelPlusButton("RB_HybridizationChamberMultiplier".Translate() + ": " + hybridizationChamberMultiplier, "RB_HybridizationChamberMultiplierTooltip".Translate());
+            hybridizationChamberMultiplier = (float)Math.Round(ls.Slider(hybridizationChamberMultiplier, 0.5f, 10), 1);
+
+            if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, hybridizationChamberMultiplierLabel.position.y + 35, 250f, 29f)))
+            {
+                hybridizationChamberMultiplier = hybridizationChamberMultiplierBase;
             }
 
             ls.End();

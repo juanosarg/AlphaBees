@@ -15,7 +15,6 @@ namespace RimBees
 
         public int tickCounter = 0;
         public int ticksToDays = 240;
-        public int daysTotal = 3;
         public bool broodChamberFull = false;
 
         public Building_Beehouse cachedBeehouse = null;
@@ -52,7 +51,7 @@ namespace RimBees
 
             if (GetAdjacentBeehouse != null)
             {
-                string strPercentProgress = ((float)tickCounter / ((ticksToDays) * daysTotal)).ToStringPercent();
+                string strPercentProgress = ((float)tickCounter / ((ticksToDays) * RimBees_Settings.broodChamberMultiplier)).ToStringPercent();
 
                 if (GetAdjacentBeehouse.BeehouseIsRunning) {
 
@@ -70,7 +69,7 @@ namespace RimBees
             if (GetAdjacentBeehouse != null && GetAdjacentBeehouse.BeehouseIsRunning && !broodChamberFull)
             {
                 tickCounter++;
-                if (tickCounter > ((ticksToDays * daysTotal) - 1))
+                if (tickCounter > ((ticksToDays * RimBees_Settings.broodChamberMultiplier) - 1))
                 {
                     SignalBroodChamberFull();
                 }
@@ -96,7 +95,7 @@ namespace RimBees
                 command_Action.defaultLabel = "Finish operation";
                 command_Action.action = delegate
                 {
-                    tickCounter = ticksToDays * daysTotal;
+                    tickCounter = (int)(ticksToDays * RimBees_Settings.broodChamberMultiplier);
                 };
                 yield return command_Action;
             }
