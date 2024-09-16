@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier_Synthetic_Medicinal"]/result</xpath>
+		<value>
+			<li>Alphapack</li>
+			<li>Mixedpack</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="RB_ResearchPapersSyntheticMedicinal"]/comps/li/resultingBees</xpath>
+		<value>
+			<li>RB_Bee_Alphapack_Queen</li>
+			<li>RB_Bee_Mixedpack_Queen</li>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier_Hyper_Genepack"]/result</xpath>
+		<value>
+			<li>Genetweaking</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="RB_ResearchPapersHyperGenepack"]/comps/li/resultingBees</xpath>
+		<value>
+			<li>RB_Bee_Genetweaking_Queen</li>
+		
+		</value>
+	</Operation>
+</Patch>
+

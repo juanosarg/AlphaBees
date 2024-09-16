@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_VanillaFactionsExpandedInsectoids_1</defName>
+		<bee1>Insectoid</bee1>
+		<bee2>Luxurious</bee2>
+		<result>
+			<li>Royal</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+
+</Defs>

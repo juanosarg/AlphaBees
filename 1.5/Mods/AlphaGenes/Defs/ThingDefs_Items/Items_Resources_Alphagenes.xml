@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomGeneArtifact</defName>
+		<label>random gene artifact</label>
+		<description>Spawn random gene artifact.</description>
+		<stackLimit>1</stackLimit>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Item/AG_Endogenefier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>.01</Mass>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomItemSpawner">
+				<amount>1</amount>
+				<categories><li>AG_GeneTools</li></categories>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

@@ -36,6 +36,7 @@
 			<Flammability>0.5</Flammability>
 			<Mass>20</Mass>
 		</statBases>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<buildingTags>

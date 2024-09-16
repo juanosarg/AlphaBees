@@ -39,19 +39,20 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
 		<li IfModActive="sarg.alphaanimals">1.5/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
 		<li IfModActive="Torann.ARimworldOfMagic">1.5/Mods/RimWorldOfMagic</li>
 		<li IfModActive="tikubonn.DiceOfDestiny">1.5/Mods/DiceOfDestiny</li>
 		<li IfModActive="kikohi.jewelry">1.5/Mods/Jewelry</li>
 		<li IfModActive="sarg.magicalmenagerie">1.5/Mods/MagicalMenagerie</li>
 		<li IfModActive="zal.morearchotechgarbage">1.5/Mods/Archotech</li>
 		<li IfModActive="tachyonite.pawnmorpherpublic">1.5/Mods/Pawnmorpher</li>
-		<li IfModActive="tachyonite.pawnmorpher">1.5/Mods/Pawnmorpher</li>
-	
+		<li IfModActive="tachyonite.pawnmorpher">1.5/Mods/Pawnmorpher</li>	
 		<li IfModActive="sihv.rombones">1.5/Mods/Bones</li>
 		<li IfModActive="VanillaExpanded.VCookE">1.5/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="OskarPotocki.VFE.Mechanoid">1.5/Mods/VanillaFactionsExpandedMechanoids</li>
 		<li IfModActive="VanillaExpanded.VCEF">1.5/Mods/VanillaFishingExpanded</li>
 		<li IfModActive="VanillaExpanded.VFEA">1.5/Mods/VanillaFactionsExpandedAncients</li>
+		<li IfModActive="OskarPotocki.VFE.Insectoid2">1.5/Mods/VanillaFactionsExpandedInsectoids</li>
 	</v1.5>
 </loadFolders>
 

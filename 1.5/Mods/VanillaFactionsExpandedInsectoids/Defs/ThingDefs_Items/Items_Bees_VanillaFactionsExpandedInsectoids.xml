@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Royal ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_RoyalBeeBase" Abstract="True">
+		<description>A prestigious and rare species, the Royal Bee produces a valuable substance known as Royal Insect Jelly, prized for its rich nutrients and health-enhancing properties.\n\nBee Traits:\n\nProduction time: 36 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Royal</species>
+				<comb>RB_Royal_Honeycomb</comb>
+				<combtimedays>1.5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_RoyalBeeBase">
+		<defName>RB_Bee_Royal_Drone</defName>
+		<label>Royal drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Royal_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_RoyalBeeBase">
+		<defName>RB_Bee_Royal_Queen</defName>
+		<label>Royal queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Royal_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>
