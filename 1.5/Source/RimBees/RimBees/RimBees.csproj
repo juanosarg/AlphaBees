@@ -295,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Flick.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_TameAnimal.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CutTrees.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_DryTerrain.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_LowerPrisonerCertainty.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_LowerPrisonerResistance.cs" />

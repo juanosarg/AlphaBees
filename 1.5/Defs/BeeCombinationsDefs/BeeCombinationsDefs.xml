@@ -334,8 +334,6 @@
 			<li>Glacial</li>					
 		</result>				
 	</RimBees.BeeCombinationDef>
-	
-	
 
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Pet_Warden</defName>
@@ -343,6 +341,15 @@
 		<bee2>Warden</bee2>
 		<result>
 			<li>Shepherd</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Harvester_Warden</defName>
+		<bee1>Harvester</bee1>
+		<bee2>Warden</bee2>
+		<result>
+			<li>Handler</li>					
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
@@ -354,6 +361,15 @@
 		<bee2>Surgeon</bee2>
 		<result>
 			<li>Glittering</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Chef_High</defName>
+		<bee1>Chef</bee1>
+		<bee2>High</bee2>
+		<result>
+			<li>Epicurean</li>					
 		</result>				
 	</RimBees.BeeCombinationDef>
 	

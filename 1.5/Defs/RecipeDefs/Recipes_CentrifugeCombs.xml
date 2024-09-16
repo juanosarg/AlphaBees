@@ -4,7 +4,8 @@
 		<jobString>Extracting from any available combs.</jobString>
 		<workAmount>500</workAmount>
 		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
+		<soundWorking>RB_SqueezeHoney</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	</RecipeDef>
 	<RecipeDef ParentName="RB_CentrifugeAnyCombBase">
 		<defName>RB_CentrifugeAnyComb</defName>

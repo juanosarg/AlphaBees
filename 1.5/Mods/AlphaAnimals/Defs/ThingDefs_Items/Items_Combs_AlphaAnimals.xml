@@ -133,7 +133,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Ocular_Honeycomb</defName>
 		<label>ocular honeycomb</label>
-		<description>This is a honeycomb produced by Ocular bees, unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, red beeswax and red wood logs.</description>
+		<description>This is a honeycomb produced by Ocular bees, unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs. Besides producing honeycombs that provide red wood logs, these bees will also cut down trees that are designated by the player inside their beehouse's radius of effect. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, red beeswax and red wood logs.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Ocular_Honeycomb</texPath>

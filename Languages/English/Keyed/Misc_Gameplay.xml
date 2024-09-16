@@ -60,7 +60,9 @@
 
 	<RB_DestroyResearch>Destroy Research</RB_DestroyResearch>
 	<RB_DestroyResearchLabel>Destroy Research. Warning, this will destroy this research. Use this if you have already looked at the combination and don't need to have it around anymore.</RB_DestroyResearchLabel>
-
+	
+	
+	<RB_HandlerBees_TameSuccess>Your handler bees have successfully tamed a {0}.</RB_HandlerBees_TameSuccess>
 
 	<!-- Mead -->
 

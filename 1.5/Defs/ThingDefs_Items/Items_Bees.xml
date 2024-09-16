@@ -330,7 +330,7 @@
 	</ThingDef>
 	<!--=============== Worker ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WorkerBeeBase" Abstract="True">
-		<description>Worker bees are bees skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Worker bees are bees skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect. They will also do Flick orders in this area.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -347,6 +347,9 @@
 				<additionalBeeEffects>
 					<li Class="RimBees.AdditionalBeeEffects_HediffAoE">
 						<hediffDef>RB_EfficiencyBoost</hediffDef>
+					</li>
+					<li Class="RimBees.AdditionalBeeEffects_Flick">
+						<rareTickFrequency>3</rareTickFrequency>
 					</li>
 				</additionalBeeEffects>
 			</li>
@@ -402,7 +405,7 @@
 	</ThingDef>
 	<!--=============== Woodland ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WoodlandBeeBase" Abstract="True">
-		<description>Woodland bees feel happily at home surrounded by lots of trees.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Woodland bees feel happily at home surrounded by lots of trees. Besides producing honeycombs that provide wood logs, these bees will also cut down trees that are designated by the player inside their beehouse's radius of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: Yes\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -416,6 +419,11 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_CutTrees">
+						
+					</li>
+				</additionalBeeEffects>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1958,7 +1966,7 @@
 	<!--========== Tier 4 and 5: Meals Branch - From Nutritious and Technological Bees ==========-->
 	<!--=============== Culinary ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_CulinaryBeeBase" Abstract="True">
-		<description>Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a very simple meal. Not appetizing, but edible.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a simple honey meal.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -1991,7 +1999,7 @@
 	</ThingDef>
 	<!--=============== Chef (from Agricultural ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_ChefBeeBase" Abstract="True">
-		<description>Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a fine honey meal.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -2353,6 +2361,48 @@
 		</graphicData> 		
 	</ThingDef>
 	
+	<!--=============== Handler ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_HandlerBeeBase" Abstract="True" >
+		<description>Handler Bees are skilled at pacifying and taming wild animals. Their gentle, pheromone-laden buzz calms even the most aggressive creatures. Once a day, they'll try to tame a wild animal in the map that has been designated by the player (using the "Tame" designator). This tame attempt will be done at skill level 10, requires no food and doesn't risk angering the animal. Contrary to other bees, Handler bees act map wide, outside their beehouse's area of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Handler</species>
+				<comb>RB_Handler_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_TameAnimal">
+						<rareTickFrequency>240</rareTickFrequency>
+					</li>
+				</additionalBeeEffects>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_HandlerBeeBase">
+		<defName>RB_Bee_Handler_Drone</defName>
+		<label>Handler drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Handler_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_HandlerBeeBase">
+		<defName>RB_Bee_Handler_Queen</defName>
+		<label>Handler queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Handler_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
 	<!--========== Tier 6 ==========-->
 	<!--=============== Glittering ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_GlitteringBeeBase" Abstract="True">
@@ -2385,6 +2435,39 @@
 		<label>Glittering queen</label>
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Glittering_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Epicurean ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_EpicureanBeeBase" Abstract="True">
+		<description>Epicurean bees are master chefs. They can accumulate the best culinary ingredients on their combs, and those can be easily turned into a lavish honey meal.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Epicurean</species>
+				<comb>RB_Epicurean_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_EpicureanBeeBase">
+		<defName>RB_Bee_Epicurean_Drone</defName>
+		<label>Epicurean drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Epicurean_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_EpicureanBeeBase">
+		<defName>RB_Bee_Epicurean_Queen</defName>
+		<label>Epicurean queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Epicurean_Queen</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

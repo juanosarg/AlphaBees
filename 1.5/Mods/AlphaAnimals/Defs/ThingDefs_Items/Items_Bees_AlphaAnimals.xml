@@ -317,7 +317,7 @@
 	</ThingDef>
 	<!--=============== Ocular ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_OcularBeeBase" Abstract="True">
-		<description>Ocular bees are unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Ocular bees are unnerving trans-dimensional beings that slowly convert and twist nearby vegetation into completely alien flora. They slowly accumulate Red Wood in their honeycombs. Besides producing honeycombs that provide red wood logs, these bees will also cut down trees that are designated by the player inside their beehouse's radius of effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -332,6 +332,11 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_CutTrees">
+						
+					</li>
+				</additionalBeeEffects>
 			</li>
 		</comps>
 	</ThingDef>

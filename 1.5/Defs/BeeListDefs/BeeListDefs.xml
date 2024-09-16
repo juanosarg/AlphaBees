@@ -395,12 +395,23 @@
 		<nameString>Desiccated</nameString>
 		<beeDroneDef>RB_Bee_Desiccated_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Desiccated_Queen</beeQueenDef>
-	</RimBees.BeeListDef>
-	
+	</RimBees.BeeListDef>	
 	<RimBees.BeeListDef>
 		<defName>RB_ShepherdBeeList</defName>
 		<nameString>Shepherd</nameString>
 		<beeDroneDef>RB_Bee_Shepherd_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Shepherd_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_EpicureanBeeList</defName>
+		<nameString>Epicurean</nameString>
+		<beeDroneDef>RB_Bee_Epicurean_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Epicurean_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_HandlerBeeList</defName>
+		<nameString>Handler</nameString>
+		<beeDroneDef>RB_Bee_Handler_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Handler_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
 </Defs>

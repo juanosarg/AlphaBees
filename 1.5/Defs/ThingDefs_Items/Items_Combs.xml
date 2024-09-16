@@ -140,7 +140,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Worker_Honeycomb</defName>
 		<label>Worker honeycomb</label>
-		<description>This is a honeycomb produced by Worker bees, skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<description>This is a honeycomb produced by Worker bees, skilled at doing manual work. They don't produce a lot of honey or wax, and no additional comb products, but both them and the bees that are produced by hybridizing them with Amalgam bees can provide extra beehouse effects. In the case of Worker bees, they'll provide a work speed bonus to colonists in the beehouse's area of effect. They will also do Flick orders in this area. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Worker_Honeycomb</texPath>
@@ -364,7 +364,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Woodland_Honeycomb</defName>
 		<label>woodland honeycomb</label>
-		<description>This is a honeycomb produced by woodland bees. Woodland bees feel happily at home surrounded by lots of trees. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and wood logs.</description>
+		<description>This is a honeycomb produced by woodland bees. Woodland bees feel happily at home surrounded by lots of trees. Besides producing honeycombs that provide wood logs, these bees will also cut down trees that are designated by the player inside their beehouse's radius of effect. Honeycombs can be procesed in a Honey Extractor to get adaptive honey, beeswax and wood logs.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Woodland_Honeycomb</texPath>
@@ -783,7 +783,7 @@
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Culinary_Honeycomb</defName>
 		<label>culinary honeycomb</label>
-		<description>This is a honeycomb produced by Culinary bees. Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a very simple meal. Not appetizing, but edible. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and nutrient paste.</description>
+		<description>This is a honeycomb produced by Culinary bees. Culinary bees like to cook. They are not very good at it, but the poor critters try to do their best. Their combs have a nutrient paste that can be processed into a simple honey meal. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and nutrient paste.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Culinary_Honeycomb</texPath>
@@ -791,13 +791,13 @@
 		<butcherProducts>
 			<RB_BaseHoney>30</RB_BaseHoney>
 			<RB_Beeswax>5</RB_Beeswax>
-			<MealNutrientPaste>1</MealNutrientPaste>
+			<RB_SimpleHoney>1</RB_SimpleHoney>
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Chef_Honeycomb</defName>
 		<label>chef honeycomb</label>
-		<description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a meal of decent quality. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
+		<description>This is a honeycomb produced by Chef bees. Chef bees REALLY do like to cook! And they are surprisingly good at it, too! They accumulate different ingredients on their combs, and those can be easily turned into a fine honey meal. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and fine meals.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Chef_Honeycomb</texPath>
@@ -806,6 +806,20 @@
 			<RB_BaseHoney>35</RB_BaseHoney>
 			<RB_Beeswax>15</RB_Beeswax>
 			<RB_FineHoney>1</RB_FineHoney>
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Epicurean_Honeycomb</defName>
+		<label>Epicurean honeycomb</label>
+		<description>This is a honeycomb produced by Epicurean bees. Epicurean bees are master chefs. They can accumulate the best culinary ingredients on their combs, and those can be easily turned into a lavish honey meal. Honeycombs can be procesed in a Honey Extractor to get tasty honey, beeswax and fine meals.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Epicurean_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_TastyHoney>15</RB_TastyHoney>
+			<RB_Beeswax>18</RB_Beeswax>
+			<RB_LavishHoney>1</RB_LavishHoney>
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
@@ -932,6 +946,20 @@
 		</graphicData>
 		<butcherProducts>
 			<RB_PerformanceEnhancingHoney>3</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Handler_Honeycomb</defName>
+		<label>Handler honeycomb</label>
+		<description>This is a honeycomb produced by Handler bees. Handler Bees are skilled at pacifying and taming wild animals. Their gentle, pheromone-laden buzz calms even the most aggressive creatures. Once a day, they'll try to tame a wild animal in the map that has been designated by the player (using the "Tame" designator). This tame attempt will be done at skill level 10, requires no food and doesn't risk angering the animal. Contrary to other bees, Handler bees act map wide, outside their beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Handler_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>2</RB_PerformanceEnhancingHoney>
 			<RB_Beeswax>3</RB_Beeswax>
 			
 		</butcherProducts>

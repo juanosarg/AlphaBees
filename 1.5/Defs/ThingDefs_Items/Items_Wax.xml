@@ -13,6 +13,7 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+		<smeltable>true</smeltable>
 		<statBases>
 			<MarketValue>5</MarketValue>
 			<Mass>0.1</Mass>

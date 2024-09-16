@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+
+
+  <SoundDef>
+    <defName>RB_SqueezeHoney</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+ 
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RB_SqueezeHoney</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>2.3</volumeRange>      
+        <pitchRange>1</pitchRange>
+        <distRange>10~38</distRange>
+      </li>    
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RB_SqueezeHoney</clipPath>
+          </li>
+        </grains>
+        <volumeRange>15</volumeRange>
+        <pitchRange>1</pitchRange>
+        <distRange>10~38</distRange>
+        <sustainLoop>False</sustainLoop>
+        <sustainIntervalRange>0</sustainIntervalRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+ 
+
+</Defs>
