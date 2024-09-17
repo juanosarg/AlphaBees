@@ -14,8 +14,14 @@ namespace RimBees
             if(recipeDef.GetModExtension<OutputMultiplierRecipe>() != null)
             {
                 float multiplier = recipeDef.GetModExtension<OutputMultiplierRecipe>().multiplier;
+                int resultingStack = (int)(__result.stackCount * multiplier * RimBees_Settings.beeProductionMultiplier);
+                if(resultingStack == 0)
+                {
+                    resultingStack = 1;
+                }
 
-                __result.stackCount = (int)(__result.stackCount*multiplier*RimBees_Settings.beeProductionMultiplier);
+
+                __result.stackCount = resultingStack;
 
             }
         }

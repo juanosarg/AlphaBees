@@ -92,7 +92,7 @@
 	<RB_CarryBees>Carry combs and bees to storage</RB_CarryBees>
 	<RB_CarryBees_Description>By default, anything extracted from beehouses and chambers is carried by the pawn that extracted it to available storage. If this is deselected, they'll just drop it on the ground.</RB_CarryBees_Description>
 	<RB_BeeProductionMultiplier>Bee production multiplier</RB_BeeProductionMultiplier>
-	<RB_BeeProductionMultiplierTooltip>Do you want your bee combs to produce an insane number of items? With this multiplier you can make it an insane as you desire. Spaceships powered by bees? Sure, why not? Set to 1 by default. Can't be lower than 1 or it'd make some combs produce less than 1 item.</RB_BeeProductionMultiplierTooltip>
+	<RB_BeeProductionMultiplierTooltip>Do you want your bee combs to produce an insane number of items? With this multiplier you can make it an insane as you desire. Spaceships powered by bees? Sure, why not? Set to 1 by default.</RB_BeeProductionMultiplierTooltip>
 	<RB_BeehouseEffectRadius>Beehouse effect radius</RB_BeehouseEffectRadius>
 	<RB_BeehouseEffectRadiusTooltip>The radius on which a beehouse will produce its effects. This affects both the pollination effect on harvested plants, the size of the growing zone created around it, and the radius on which bees will look for their needed flower / product. 6 tiles by default. Higher values are laggier.</RB_BeehouseEffectRadiusTooltip>
 	<RB_WorkerBeeEffectMultiplier>"Helpful" Worker bee effect multiplier</RB_WorkerBeeEffectMultiplier>

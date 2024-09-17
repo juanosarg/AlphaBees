@@ -99,7 +99,7 @@ namespace RimBees
             ls.GapLine();
 
             var beeProductionLabel = ls.LabelPlusButton("RB_BeeProductionMultiplier".Translate() + ": " + beeProductionMultiplier, "RB_BeeProductionMultiplierTooltip".Translate());
-            beeProductionMultiplier = (float)Math.Round(ls.Slider(beeProductionMultiplier, 1, 10), 1);
+            beeProductionMultiplier = (float)Math.Round(ls.Slider(beeProductionMultiplier, 0.1f, 10), 1);
 
             if (ls.Settings_Button("RB_Reset".Translate(), new Rect(0f, beeProductionLabel.position.y + 35, 250f, 29f)))
             {
