@@ -23,14 +23,10 @@ namespace RimBees
         [HarmonyPrefix]
         public static void RegrowIfBeehouseNearby(ref Plant __instance)
         {
-
-
-
             if (__instance.def.plant.HarvestDestroys && __instance.def.plant.Sowable && !__instance.def.plant.IsTree)
-
             {
                 HashSet<Thing> beehouses = __instance.Map.GetComponent<Beehouses_MapComponent>().beehouses_InMap;
-
+                bool doOnce = false;
                 foreach (var beehouse in beehouses)
                 {
                     if (beehouse.PositionHeld.DistanceTo(__instance.PositionHeld) <= RimBees_Settings.beeEffectRadius)
@@ -47,24 +43,17 @@ namespace RimBees
                                 GenSpawn.Spawn(plant, __instance.Position, __instance.Map);
                                 plant.Growth = 0.25f;
                                 __instance.Map.mapDrawer.MapMeshDirty(__instance.Position, MapMeshFlagDefOf.Things);
-                                
+                                doOnce = true;
                             }
-                           
                         }
                     }
+                    if (doOnce)
+                    {
+                        break;
+                    }
                 }
-
-
-
             }
-
-
-
-
         }
-
-
-
     }
 }
 
