@@ -35,8 +35,7 @@ namespace RimBees
 
                         if (thebeehouse.BeehouseIsRunning)
                         {
-                            Random random = new Random();
-                            if (random.NextDouble() > 0.75)
+                            if (Rand.Value > 0.75)
                             {
                                 Thing thing = ThingMaker.MakeThing(__instance.def, null);
                                 Plant plant = (Plant)thing;

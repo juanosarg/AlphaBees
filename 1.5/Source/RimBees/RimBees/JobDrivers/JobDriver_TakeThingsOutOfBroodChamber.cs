@@ -12,8 +12,6 @@ namespace RimBees
         private const TargetIndex BarrelInd = TargetIndex.A;
 
 
-        private Random rand = new Random();
-
         private const int Duration = 200;
 
      
@@ -31,9 +29,9 @@ namespace RimBees
             Thing beeQueen = buildingbeehouse.innerContainerQueens.FirstOrFallback();
             ThingDef resultingBee;
            
-            int randomNumber = rand.Next(1, 14);
+            int randomNumber = Rand.Range(1, 14);
 
-            if (randomNumber >= 1 && randomNumber <= 5)
+            if (randomNumber <= 5)
             {
                 resultingBee = DefDatabase<ThingDef>.GetNamed(beeDrone.def.defName, true);
             } else if (randomNumber == 6)

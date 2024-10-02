@@ -18,20 +18,18 @@ namespace RimBees
         public int numOfCombinationsFromXML = 1;
         public string hybridizedBee = "";
         public bool hybridizationChamberFull = false;
-        private System.Random rand = new System.Random();
-        private System.Random beeRandomizer = new System.Random();
 
         public Building_Beehouse cachedBeehouse = null;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            daysTotal = rand.Next(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
+            daysTotal = Rand.Range(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
         }
 
         public void RandomizeDays()
         {
-            daysTotal = rand.Next(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
+            daysTotal = Rand.Range(1, 4) * RimBees_Settings.hybridizationChamberMultiplier;
         }
 
         public override void ExposeData()

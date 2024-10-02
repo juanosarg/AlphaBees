@@ -13,8 +13,6 @@ namespace RimBees
         private const TargetIndex BarrelInd = TargetIndex.A;
 
 
-        private Random rand = new Random();
-
         private const int Duration = 200;
 
      
@@ -29,7 +27,7 @@ namespace RimBees
             Building_Beehouse buildingbeehouse = (Building_Beehouse)this.job.GetTarget(TargetIndex.A).Thing;
             ThingDef resultingComb;
            
-            int randomNumber = rand.Next(1, 3);
+            int randomNumber = Rand.Range(1, 3);
 
             if (randomNumber == 1)
             {
