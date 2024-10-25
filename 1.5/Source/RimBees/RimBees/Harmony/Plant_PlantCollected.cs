@@ -23,7 +23,7 @@ namespace RimBees
         [HarmonyPrefix]
         public static void RegrowIfBeehouseNearby(ref Plant __instance)
         {
-            if (__instance.def.plant.HarvestDestroys && __instance.def.plant.Sowable && !__instance.def.plant.IsTree)
+            if (__instance.def.plant.HarvestDestroys && __instance.def.plant.Sowable && !__instance.def.plant.IsTree && !__instance.Blighted)
             {
                 HashSet<Thing> beehouses = __instance.Map.GetComponent<Beehouses_MapComponent>().beehouses_InMap;
                 bool doOnce = false;
