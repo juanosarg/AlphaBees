@@ -17,6 +17,8 @@ namespace RimBees
         public static JobDef RB_TakeThingsOutOfBroodChamberJob;
         public static JobDef RB_TakeThingsOutOfHybridizationChamberJob;
 
+        public static StatDef AB_CombYieldFactor;
+
         public static ThingDef RB_BroodChamber;
         public static ThingDef RB_HybridizationChamber;
 
