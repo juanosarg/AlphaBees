@@ -11,8 +11,6 @@
 				</resultingBees>
 			</li>
 		</comps>
-		<thingCategories>
-			<li>RB_BeeResearchTier5</li>
-		</thingCategories>
+		
 	</ThingDef>
 </Defs>
