@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="RB_CentrifugeAnyCombBase" Abstract="True">
+		<jobString>Extracting from any available combs.</jobString>
+		<workAmount>500</workAmount>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>RB_SqueezeHoney</soundWorking>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	</RecipeDef>
+	<RecipeDef ParentName="RB_CentrifugeAnyCombBase">
+		<defName>RB_CentrifugeAnyComb</defName>
+		<label>extract from any comb</label>
+		<description>Centrifuges any available comb to extract honey, wax and other products.</description>
+		<recipeUsers>
+			<li>RB_Honey_Centrifuge</li>
+			<li>RB_Advanced_Honey_Centrifuge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Combs</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RB_Combs</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<modExtensions>
+			<li Class="RimBees.OutputMultiplierRecipe">
+				<multiplier>1</multiplier>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	<RecipeDef ParentName="RB_CentrifugeAnyCombBase">
+		<defName>RB_CentrifugeAnyCombBulk</defName>
+		<label>bulk extract from any comb</label>
+		<description>Centrifuges any available combs to bulk extract honey, wax and other products.</description>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<workAmount>2500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Combs</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RB_Combs</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<modExtensions>
+			<li Class="RimBees.OutputMultiplierRecipe">
+				<multiplier>10</multiplier>
+			</li>
+		</modExtensions>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Alphapack_Honeycomb</defName>
+		<label>Alphapack honeycomb</label>
+		<description>This is a honeycomb produced by Alphapack bees. Expert geneticists, they will analyze surrounding animals and plants and extract genetic markers to store on their combs. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and random Alphapacks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Alphapack_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>10</RB_Beeswax>
+			<AG_Alphapack>1</AG_Alphapack>
+		</butcherProducts>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mixedpack_Honeycomb</defName>
+		<label>Mixedpack honeycomb</label>
+		<description>This is a honeycomb produced by Mixedpack bees. Expert geneticists, they will analyze surrounding animals and plants and extract genetic markers to store on their combs. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and random Mixedpacks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mixedpack_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>10</RB_Beeswax>
+			<AG_Mixedpack>1</AG_Mixedpack>
+		</butcherProducts>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Genetweaking_Honeycomb</defName>
+		<label>Genetweaking honeycomb</label>
+		<description>This is a honeycomb produced by Genetweaking bees. The Genetweaking Bee is a bio-engineered marvel that produces strange gene-tweaking artifacts. Colonists can use these artifacts to modify their genetic makeup. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and random Gene tweaking artifacts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Genetweaking_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>10</RB_Beeswax>
+			<RB_RandomGeneArtifact>1</RB_RandomGeneArtifact>
+		</butcherProducts>
+	</ThingDef>
+
+</Defs>

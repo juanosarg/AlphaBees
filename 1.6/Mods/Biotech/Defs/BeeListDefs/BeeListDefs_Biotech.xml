@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_NannyBeeList</defName>
+		<beeDroneDef>RB_Bee_Nanny_Drone</beeDroneDef>
+		<nameString>Nanny</nameString>
+		<beeQueenDef>RB_Bee_Nanny_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_GenepackBeeList</defName>
+		<beeDroneDef>RB_Bee_Genepack_Drone</beeDroneDef>
+		<nameString>Genepack</nameString>
+		<beeQueenDef>RB_Bee_Genepack_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_VampireBeeList</defName>
+		<beeDroneDef>RB_Bee_Vampire_Drone</beeDroneDef>
+		<nameString>Vampire</nameString>
+		<beeQueenDef>RB_Bee_Vampire_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_TrashBeeList</defName>
+		<beeDroneDef>RB_Bee_Trash_Drone</beeDroneDef>
+		<nameString>Trash</nameString>
+		<beeQueenDef>RB_Bee_Trash_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_ArchiteBeeList</defName>
+		<beeDroneDef>RB_Bee_Archite_Drone</beeDroneDef>
+		<nameString>Archite</nameString>
+		<beeQueenDef>RB_Bee_Archite_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	
+</Defs>

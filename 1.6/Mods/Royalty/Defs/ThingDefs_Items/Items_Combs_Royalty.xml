@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Anima_Honeycomb</defName>
+		<label>Anima honeycomb</label>
+		<description>This is a honeycomb produced by Anima bees. Anima bees are attuned to anima trees, and can act as powerful conduits for the tree's psychic energies. They'll provide a psychic stat bonus to colonists in the beehouse's area of effect. These honeycombs can be procesed in a Honey Extractor to get psychotropic honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Anima_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_PsychotropicHoney>2</RB_PsychotropicHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	
+	
+</Defs>

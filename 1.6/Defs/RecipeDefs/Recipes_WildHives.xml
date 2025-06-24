@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>RB_ExtracTemperateHive</defName>
+		<label>extract from temperate hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild temperate beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Temperate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RB_WildHive_Temperate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Temperate_Drone>1</RB_Bee_Temperate_Drone>
+			<RB_Bee_Temperate_Queen>1</RB_Bee_Temperate_Queen>
+			<RB_Temperate_Honeycomb>2</RB_Temperate_Honeycomb>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_ExtracMildHive</defName>
+		<label>extract from mild hive</label>
+		<description>Gently extract bees, queen bees and combs from a wild mild beehive</description>
+		<jobString>Extracting bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Beekeeping_Workbench_Building</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_WildHive_Mild</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RB_WildHive_Mild</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Mild_Drone>1</RB_Bee_Mild_Drone>
+			<RB_Bee_Mild_Queen>1</RB_Bee_Mild_Queen>
+			<RB_Mild_Honeycomb>2</RB_Mild_Honeycomb>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+</Defs>

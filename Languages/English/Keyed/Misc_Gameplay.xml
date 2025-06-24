@@ -74,6 +74,7 @@
 	<RB_NoMeadMust>No mead must</RB_NoMeadMust>
 	<RB_ContainsMeadMust>Contains {0} / {1} mead must.</RB_ContainsMeadMust>
 	<RB_ContainsMead>Contains {0} / {1} mead.</RB_ContainsMead>
+	<AB_MeadFermentingBarrelNotWorking>This mead fermenting barrel is not working at the moment</AB_MeadFermentingBarrelNotWorking>
 
 
 	<!-- Bee Tags -->

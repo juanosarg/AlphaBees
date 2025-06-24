@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersInsectoidLuxurious</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Insectoid_Queen</firstBee>
+				<secondBee>RB_Bee_Luxurious_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Royal_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

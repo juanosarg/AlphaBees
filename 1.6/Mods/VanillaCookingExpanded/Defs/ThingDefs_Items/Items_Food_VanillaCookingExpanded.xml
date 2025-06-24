@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealCooked">
+		<defName>RB_GourmetHoney</defName>
+		<label>gourmet honey meal</label>
+		<description>A culinary work of art, this dish includes a delicious T-bone steak with honeyed mustard sauce, lime, ginger and honey kombucha and some honey flavoured pastries.</description>
+		<thingClass>VEF.Cooking.GourmetMeal</thingClass>
+		<graphicData>
+			<texPath>Things/Item/RB_GourmetHoney</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<WorkToMake>1500</WorkToMake>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>RB_HoneyFoodProducts</li>
+		</thingCategories>
+		<ingestible>
+			<joy>0.04</joy>
+			<joyKind>Gluttonous</joyKind>
+			<preferability>MealLavish</preferability>
+			<optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>
+			<tasteThought>VCE_AteGourmetMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomCondiments</defName>
+		<label>random condiment</label>
+		<description>Spawn random condiment.</description>
+		<stackLimit>3</stackLimit>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Items/Condiments/VCE_Spices</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>.01</Mass>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomItemSpawner">
+				<amount>3</amount>
+				<categories><li>VCE_Condiments</li></categories>
+				<itemsBlacklistedFromCategories><li>VCE_DigestibleResurrectorNanites</li></itemsBlacklistedFromCategories>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Shard ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ShardBeeBase" Abstract="True" >
+		<description>Shard bees just want to see the world burn.\n\nBee Traits:\n\nProduction time: 1 quadrum\nNocturnal: Yes\nPluviophile: No\nUnusual plants needed: Shard\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Shard</species>
+				<comb>RB_Shard_Honeycomb</comb>
+				<combtimedays>15</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Shard</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ShardBeeBase">
+		<defName>RB_Bee_Shard_Drone</defName>
+		<label>Shard drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Shard_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_ShardBeeBase">
+		<defName>RB_Bee_Shard_Queen</defName>
+		<label>Shard queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Shard_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+<!--=============== Bioferrous ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_BioferrousBeeBase" Abstract="True" >
+		<description>Bioferrous bees infuse background amounts of minerals in the ground with strange fibrous mechanites, producing small amounts of bioferrite.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Bioferrite\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Bioferrous</species>
+				<comb>RB_Bioferrous_Honeycomb</comb>
+				<combtimedays>2</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>Bioferrite</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_BioferrousBeeBase">
+		<defName>RB_Bee_Bioferrous_Drone</defName>
+		<label>Bioferrous drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Bioferrous_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_BioferrousBeeBase">
+		<defName>RB_Bee_Bioferrous_Queen</defName>
+		<label>Bioferrous queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Bioferrous_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	
+
+
+</Defs>

@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="RB_ResearchPapersBase" ParentName="ResourceBase" Abstract="True">
+		<description>A researcher has scribbled some bee combinations in this parchment. To see what is written in the paper, select a colonist and right click the paper, like any other artifact in the vanilla game. You can safely dispose of the item after you have learned the combination.</description>
+		<graphicData>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>2</Flammability>
+			<MaxHitPoints>5</MaxHitPoints>
+			<DeteriorationRate>6.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>RimBees.CompBeeResearch</compClass>
+				<useJob>RB_UseBeeResearch</useJob>
+				<useLabel>Read bee research to learn new bee combinations.</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>RimBees.CompUseEffect_ShowBeeResearch</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Tier 4 research -->
+	<ThingDef Name="RB_ResearchPapersBaseTier4" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (tier4)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier4</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomTier4Research</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (tier4)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersNutTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Nutritious_Queen</firstBee>
+				<secondBee>RB_Bee_Technological_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Culinary_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersNutAdapt</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Nutritious_Queen</firstBee>
+				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Pet_Queen</li>
+					<li>RB_Bee_Rainbow_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersAdaptTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Adaptive_Queen</firstBee>
+				<secondBee>RB_Bee_Technological_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Weaving_Queen</li>
+					<li>RB_Bee_Tanner_Queen</li>
+					<li>RB_Bee_Wooly_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersStoPsy</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Stoner_Queen</firstBee>
+				<secondBee>RB_Bee_Psychic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_High_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersAgriSwamp</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Agricultural_Queen</firstBee>
+				<secondBee>RB_Bee_Swamp_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Medicinal_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersPlasAlloy</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Plastic_Queen</firstBee>
+				<secondBee>RB_Bee_Alloy_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Synthetic_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersAgriWood</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Agricultural_Queen</firstBee>
+				<secondBee>RB_Bee_Woodland_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Straw_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersQuarryTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Technological_Queen</firstBee>
+				<secondBee>RB_Bee_Quarry_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Mason_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersTipsyCommando</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Tipsy_Queen</firstBee>
+				<secondBee>RB_Bee_Commando_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Stunning_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersInsectoidCommando</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Insectoid_Queen</firstBee>
+				<secondBee>RB_Bee_Commando_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Noxious_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersResearchOily</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Research_Queen</firstBee>
+				<secondBee>RB_Bee_Oily_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Tetra_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorWorker</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Worker_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Skilful_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorAdaptive</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Blazing_Queen</li>
+					<li>RB_Bee_Frigid_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorTechnological</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Technological_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Foamy_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorAgricultural</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Agricultural_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Harvester_Queen</li>
+					<li>RB_Bee_Cultivator_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorCommando</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Commando_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Warden_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Tier 5 research -->
+	<ThingDef Name="RB_ResearchPapersBaseTier5" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (tier5)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier5</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomTier5Research</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (tier5)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersAgriCul</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Agricultural_Queen</firstBee>
+				<secondBee>RB_Bee_Culinary_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Chef_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersLuxHigh</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Luxurious_Queen</firstBee>
+				<secondBee>RB_Bee_High_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Lucifer_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersMedTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Medicinal_Queen</firstBee>
+				<secondBee>RB_Bee_Technological_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Surgeon_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersSynthTech</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Synthetic_Queen</firstBee>
+				<secondBee>RB_Bee_Technological_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Hyper_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersSynthOily</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Synthetic_Queen</firstBee>
+				<secondBee>RB_Bee_Oily_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Nitro_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersElectronicSynthetic</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Synthetic_Queen</firstBee>
+				<secondBee>RB_Bee_Electronic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Fabricated_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersDesertBlazing</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Desert_Queen</firstBee>
+				<secondBee>RB_Bee_Blazing_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Inferno_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersArcticFrigid</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Arctic_Queen</firstBee>
+				<secondBee>RB_Bee_Frigid_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Glacial_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersPetWarden</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Pet_Queen</firstBee>
+				<secondBee>RB_Bee_Warden_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Shepherd_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersHarvesterWarden</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Harvester_Queen</firstBee>
+				<secondBee>RB_Bee_Warden_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Handler_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Tier 6 research -->
+	<ThingDef Name="RB_ResearchPapersBaseTier6" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (tier6)</label>
+		<thingCategories>
+			<li>RB_BeeResearchTier6</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomTier6Research</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (tier6)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier6">
+		<defName>RB_ResearchPapersHyperSurgeon</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Hyper_Queen</firstBee>
+				<secondBee>RB_Bee_Surgeon_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Glittering_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier6">
+		<defName>RB_ResearchPapersChefHigh</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Chef_Queen</firstBee>
+				<secondBee>RB_Bee_High_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Epicurean_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

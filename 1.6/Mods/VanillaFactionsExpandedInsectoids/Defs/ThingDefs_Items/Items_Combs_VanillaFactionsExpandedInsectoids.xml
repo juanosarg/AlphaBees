@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Royal_Honeycomb</defName>
+		<label>Royal honeycomb</label>
+		<description>This is a honeycomb produced by Royal bees. A prestigious and rare species, the Royal Bee produces a valuable substance known as Royal Insect Jelly, prized for its rich nutrients and health-enhancing properties. Honeycombs can be procesed in a Honey Extractor to get tasty honey, heavy beeswax and royal insect jelly.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Royal_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_HeavyWax>5</RB_HeavyWax>
+			<RB_TastyHoney>3</RB_TastyHoney>
+			<VFEI2_RoyalInsectJelly>10</VFEI2_RoyalInsectJelly>
+		</butcherProducts>
+	</ThingDef>
+
+
+</Defs>

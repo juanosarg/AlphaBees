@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Nutritious_Psychic</defName>
+		<bee1>Nutritious</bee1>
+		<bee2>Psychic</bee2>
+		<result>
+			<li>Vampire</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Alloy_Swamp</defName>
+		<bee1>Alloy</bee1>
+		<bee2>Swamp</bee2>
+		<result>
+			<li>Trash</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Synthetic_Medicinal</defName>
+		<bee1>Synthetic</bee1>
+		<bee2>Medicinal</bee2>
+		<result>
+			<li>Genepack</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Hyper_Genepack</defName>
+		<bee1>Hyper</bee1>
+		<bee2>Genepack</bee2>
+		<result>
+			<li>Archite</li>					
+		</result>				
+	</RimBees.BeeCombinationDef>
+	
+</Defs>

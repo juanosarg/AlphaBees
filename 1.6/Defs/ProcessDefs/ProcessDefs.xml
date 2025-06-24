@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PipeSystem.ProcessDef>
+		<defName>RB_MeadMustToMead</defName>
+		<label>Ferment mead must into mead</label>
+		<description>Turns 25 mead must into 25 mead.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<labelOverride>Ferment 25 mead must into 25 mead</labelOverride>
+		<priorityInBillList>0</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>RB_Must</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>360000</ticks>
+		<results>
+			<li>
+				<thing>RB_Mead</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<temperatureRuinable>true</temperatureRuinable>
+		<minSafeTemperature>7</minSafeTemperature>
+		<maxSafeTemperature>32</maxSafeTemperature>
+		<transfersIngredientList>true</transfersIngredientList>
+	</PipeSystem.ProcessDef>
+	
+</Defs>

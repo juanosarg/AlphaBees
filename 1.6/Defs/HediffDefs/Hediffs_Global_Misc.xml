@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>RB_RecentlyResearched</defName>
+		<description>This pawn has recently done some bee research.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>recently researched</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-12</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>RB_AteHoneyedIcePop</defName>
+		<description>This pawn has recently eaten a honeyed ice pop.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>recently eaten honey pop</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-12</severityPerDayNotImmune>
+			</li>
+		</comps>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>RB_EfficiencyBoost</defName>
+		<label>work speed boost</label>
+		<description>Worker bees are helping this person with random manual tasks, making work easier.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RB_Draftability</defName>
+		<label>shepherded by bees</label>
+		<description>Shepherd bees are influencing the behavior of this animal and making it controllable.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+		</comps>
+		
+		<isBad>false</isBad>
+	</HediffDef>
+
+
+
+</Defs>

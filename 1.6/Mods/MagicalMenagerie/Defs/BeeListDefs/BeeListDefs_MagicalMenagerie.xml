@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_LightMagicalBeeList</defName>
+		<beeDroneDef>RB_Bee_LightMagical_Drone</beeDroneDef>
+		<nameString>Light Magical</nameString>
+		<beeQueenDef>RB_Bee_LightMagical_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_HeavyMagicalBeeList</defName>
+		<beeDroneDef>RB_Bee_HeavyMagical_Drone</beeDroneDef>
+		<nameString>Heavy Magical</nameString>
+		<beeQueenDef>RB_Bee_HeavyMagical_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+</Defs>

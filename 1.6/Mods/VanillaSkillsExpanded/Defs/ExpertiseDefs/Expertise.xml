@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <VSE.Expertise.ExpertiseDef>
+    <defName>AB_Combsmithing</defName>
+    <label>Combsmithing</label>
+    <description>An expertise in harvesting bee combs to get more products out of them.</description>
+    <skill>Animals</skill>
+    <statOffsets>
+      <AB_CombYieldFactor>0.05</AB_CombYieldFactor>
+    </statOffsets>
+  </VSE.Expertise.ExpertiseDef>
+  
+ 
+</Defs>

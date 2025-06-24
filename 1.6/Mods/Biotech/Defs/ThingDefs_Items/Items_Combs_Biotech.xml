@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Nanny_Honeycomb</defName>
+		<label>nanny honeycomb</label>
+		<description>This is a honeycomb produced by Nanny bees, who just want to make children feel loved and safe. Honeycombs can be processed in a Honey Extractor to get tasty honey, beeswax and baby food.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Nanny_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<BabyFood>20</BabyFood>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Vampire_Honeycomb</defName>
+		<label>Vampire honeycomb</label>
+		<description>This is a honeycomb produced by Vampire bees, who are creatures of the night, and feed on the blood of unwary victims. Yes, they are vampires. Sanguo... what? Never heard of them. Honeycombs can be processed in a Honey Extractor to get tasty honey, black beeswax and hemogen packs.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Vampire_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_TastyHoney>10</RB_TastyHoney>
+			<RB_BlackBeeswax>5</RB_BlackBeeswax>
+			<HemogenPack>1</HemogenPack>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Trash_Honeycomb</defName>
+		<label>Trash honeycomb</label>
+		<description>This is a honeycomb produced by Trash bees. Trash bees are the worst. They gather stuff from their environment and just turn it into trash... So, like humans. Honeycombs can be processed in a Honey Extractor to get adaptive honey, beeswax and wastepacks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Trash_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_Beeswax>5</RB_Beeswax>
+			<RB_AdaptiveHoney>5</RB_AdaptiveHoney>
+			<Wastepack>1</Wastepack>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Genepack_Honeycomb</defName>
+		<label>Genepack honeycomb</label>
+		<description>This is a honeycomb produced by Genepack bees. Expert geneticists, they will analyze surrounding animals and plants and extract genetic markers to store on their combs. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and random genepacks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Genepack_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>10</RB_BaseHoney>
+			<RB_Beeswax>10</RB_Beeswax>
+			<Genepack>1</Genepack>
+		</butcherProducts>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Archite_Honeycomb</defName>
+		<label>Archite honeycomb</label>
+		<description>This is a honeycomb produced by Archite bees. They are beyond the comprehension of most societies except the more advanced glitterworlds. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and archite capsules.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Archite_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>150</RB_BaseHoney>
+			<RB_Beeswax>150</RB_Beeswax>
+			<ArchiteCapsule>1</ArchiteCapsule>
+		</butcherProducts>
+	</ThingDef>
+</Defs>

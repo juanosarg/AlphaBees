@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Alphapack ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_AlphapackBeeBase" Abstract="True">
+		<description>Alphapack bees are expert geneticists. They will analyze surrounding animals and plants and extract genetic markers to store on their combs.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Alphapack</species>
+				<comb>RB_Alphapack_Honeycomb</comb>
+				<combtimedays>5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_AlphapackBeeBase">
+		<defName>RB_Bee_Alphapack_Drone</defName>
+		<label>Alphapack drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Alphapack_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_AlphapackBeeBase">
+		<defName>RB_Bee_Alphapack_Queen</defName>
+		<label>Alphapack queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Alphapack_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Mixedpack ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_MixedpackBeeBase" Abstract="True">
+		<description>Mixedpack bees are expert geneticists. They will analyze surrounding animals and plants and extract genetic markers to store on their combs.\n\nBee Traits:\n\nProduction time: 120 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Mixedpack</species>
+				<comb>RB_Mixedpack_Honeycomb</comb>
+				<combtimedays>5</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_MixedpackBeeBase">
+		<defName>RB_Bee_Mixedpack_Drone</defName>
+		<label>Mixedpack drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mixedpack_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_MixedpackBeeBase">
+		<defName>RB_Bee_Mixedpack_Queen</defName>
+		<label>Mixedpack queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mixedpack_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Genetweaking ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GenetweakingBeeBase" Abstract="True">
+		<description>The Genetweaking Bee is a bio-engineered marvel that produces strange gene-tweaking artifacts. Colonists can use these artifacts to modify their genetic makeup.\n\nBee Traits:\n\nProduction time: 240 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Genetweaking</species>
+				<comb>RB_Genetweaking_Honeycomb</comb>
+				<combtimedays>10</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_GenetweakingBeeBase">
+		<defName>RB_Bee_Genetweaking_Drone</defName>
+		<label>Genetweaking drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Genetweaking_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_GenetweakingBeeBase">
+		<defName>RB_Bee_Genetweaking_Queen</defName>
+		<label>Genetweaking queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Genetweaking_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

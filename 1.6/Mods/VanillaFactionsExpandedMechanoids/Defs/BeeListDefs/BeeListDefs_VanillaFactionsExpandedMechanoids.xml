@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_AutomaticBeeList</defName>
+		<beeDroneDef>RB_Bee_Automatic_Drone</beeDroneDef>
+		<nameString>Automatic</nameString>
+		<beeQueenDef>RB_Bee_Automatic_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+</Defs>

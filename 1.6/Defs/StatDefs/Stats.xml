@@ -1,0 +1,15 @@
+<Defs>
+	<StatDef>
+		<defName>AB_CombYieldFactor</defName>
+		<label>bee comb yield</label>
+		<description>The amount of items harvested from a bee comb is multiplied by this factor.</description>
+		<category>PawnWork</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<hideAtValue>1</hideAtValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<displayPriorityInCategory>10000</displayPriorityInCategory>
+		<showDevelopmentalStageFilter>Adult</showDevelopmentalStageFilter>
+	</StatDef>
+	
+</Defs>

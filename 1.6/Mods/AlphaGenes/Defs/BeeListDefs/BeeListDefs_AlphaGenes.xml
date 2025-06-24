@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_AlphapackBeeList</defName>
+		<beeDroneDef>RB_Bee_Alphapack_Drone</beeDroneDef>
+		<nameString>Alphapack</nameString>
+		<beeQueenDef>RB_Bee_Alphapack_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_MixedpackBeeList</defName>
+		<beeDroneDef>RB_Bee_Mixedpack_Drone</beeDroneDef>
+		<nameString>Mixedpack</nameString>
+		<beeQueenDef>RB_Bee_Mixedpack_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_GenetweakingBeeList</defName>
+		<beeDroneDef>RB_Bee_Genetweaking_Drone</beeDroneDef>
+		<nameString>Genetweaking</nameString>
+		<beeQueenDef>RB_Bee_Genetweaking_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+</Defs>

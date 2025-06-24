@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_BioferrousBeeList</defName>
+		<beeDroneDef>RB_Bee_Bioferrous_Drone</beeDroneDef>
+		<nameString>Bioferrous</nameString>
+		<beeQueenDef>RB_Bee_Bioferrous_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_ShardBeeList</defName>
+		<beeDroneDef>RB_Bee_Shard_Drone</beeDroneDef>
+		<nameString>Shard</nameString>
+		<beeQueenDef>RB_Bee_Shard_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	
+	
+</Defs>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersAlloySynthetic</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Alloy_Queen</firstBee>
+				<secondBee>RB_Bee_Synthetic_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Bioferrous_Queen</li>
+					
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ResearchPapersBaseTier6">
+		<defName>RB_ResearchPapersBioferrousNitro</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Bioferrous_Queen</firstBee>
+				<secondBee>RB_Bee_Nitro_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Shard_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		
+	</ThingDef>	
+	
+
+
+
+</Defs>

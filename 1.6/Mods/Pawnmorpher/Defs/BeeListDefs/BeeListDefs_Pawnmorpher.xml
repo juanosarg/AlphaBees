@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_MutagenicBeeList</defName>
+		<beeDroneDef>RB_Bee_Mutagenic_Drone</beeDroneDef>
+		<nameString>Mutagenic</nameString>
+		<beeQueenDef>RB_Bee_Mutagenic_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_MutaniteBeeList</defName>
+		<beeDroneDef>RB_Bee_Mutanite_Drone</beeDroneDef>
+		<nameString>Mutanite</nameString>
+		<beeQueenDef>RB_Bee_Mutanite_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_MorphBeeList</defName>
+		<beeDroneDef>RB_Bee_Morph_Drone</beeDroneDef>
+		<nameString>Morph</nameString>
+		<beeQueenDef>RB_Bee_Morph_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+</Defs>
