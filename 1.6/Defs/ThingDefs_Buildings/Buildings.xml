@@ -295,6 +295,7 @@
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 			<paintable>true</paintable>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -368,6 +369,7 @@
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 			<paintable>true</paintable>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -435,6 +437,7 @@
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
 			<paintable>true</paintable>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -496,6 +499,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -564,6 +568,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -632,6 +637,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -702,6 +708,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BroodChamber</spawnedConceptLearnOpportunity>
 			<paintable>true</paintable>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>
@@ -766,6 +773,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_Hybridization</spawnedConceptLearnOpportunity>
 			<paintable>true</paintable>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>

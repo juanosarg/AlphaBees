@@ -48,7 +48,7 @@ namespace RimBees
 
         private void DoTicks(int ticks)
         {
-            if (!this.Ruined)
+            if (!this.Ruined && ShouldTakeRotDamage())
             {
                 float ambientTemperature = this.parent.AmbientTemperature;
                 if (ambientTemperature > this.Props.maxSafeTemperature)
@@ -90,6 +90,16 @@ namespace RimBees
         {
             CompTempRuinableAndDestroy comp = ((ThingWithComps)piece).GetComp<CompTempRuinableAndDestroy>();
             comp.ruinedPercent = this.ruinedPercent;
+        }
+
+        private bool ShouldTakeRotDamage()
+        {
+            Thing thing = parent.ParentHolder as Thing;
+            if (thing != null && thing.def.category == ThingCategory.Building && thing.def.building.preventDeteriorationInside)
+            {
+                return false;
+            }
+            return true;
         }
 
         public override string CompInspectStringExtra()

@@ -39,6 +39,7 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BenLubarsRimBeesPatches_BeeHouse</spawnedConceptLearnOpportunity>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(1,1)</size>

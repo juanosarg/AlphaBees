@@ -47,6 +47,7 @@
 				<graphicClass>Graphic_Multi</graphicClass>
 			</blueprintGraphicData>
 			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
 		</building>
 		<tickerType>Rare</tickerType>
 		<size>(3,3)</size>
