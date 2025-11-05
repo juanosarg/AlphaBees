@@ -30,5 +30,11 @@
 		<nameString>Archite</nameString>
 		<beeQueenDef>RB_Bee_Archite_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_HazmatBeeList</defName>
+		<beeDroneDef>RB_Bee_Hazmat_Drone</beeDroneDef>
+		<nameString>Hazmat</nameString>
+		<beeQueenDef>RB_Bee_Hazmat_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
 	
 </Defs>

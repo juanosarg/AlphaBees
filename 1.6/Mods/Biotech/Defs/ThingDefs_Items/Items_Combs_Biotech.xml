@@ -76,4 +76,18 @@
 			<ArchiteCapsule>1</ArchiteCapsule>
 		</butcherProducts>
 	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Hazmat_Honeycomb</defName>
+		<label>Hazmat honeycomb</label>
+		<description>This is a honeycomb produced by Hazmat bees. Hazmat bees only care about the environment, and saving the whales. Sadly, there are no whales in the Rim. We probably ate them all. Hazmat bees will clean pollution inside their beehouse's area of effect, at a rate about half of a Pollux tree's effect. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Hazmat_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
 </Defs>

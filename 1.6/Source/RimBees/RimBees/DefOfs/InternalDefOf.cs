@@ -22,6 +22,9 @@ namespace RimBees
         public static ThingDef RB_BroodChamber;
         public static ThingDef RB_HybridizationChamber;
 
+        [MayRequireBiotech]
+        public static EffecterDef PollutionExtractedPoluxTree;
+
         static InternalDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));

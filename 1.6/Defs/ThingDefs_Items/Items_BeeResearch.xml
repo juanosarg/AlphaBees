@@ -394,7 +394,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersPetWarden</defName>
 		<comps>
@@ -407,7 +406,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
 		<defName>RB_ResearchPapersHarvesterWarden</defName>
 		<comps>

@@ -295,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CleanPollution.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Flick.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_TameAnimal.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CutTrees.cs" />

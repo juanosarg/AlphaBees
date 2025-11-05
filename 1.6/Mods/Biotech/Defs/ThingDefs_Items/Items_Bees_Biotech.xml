@@ -185,6 +185,46 @@
 			<texPath>Things/Item/Bees/RB_Bee_Archite_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>
+	
+	<!--=============== Hazmat ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_HazmatBeeBase" Abstract="True">
+		<description>Hazmat bees only care about the environment, and saving the whales. Sadly, there are no whales in the Rim. We probably ate them all. Hazmat bees will clean pollution inside their beehouse's area of effect, at a rate about half of a Pollux tree's effect.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Hazmat</species>
+				<comb>RB_Hazmat_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_CleanPollution">
+						<rareTickFrequency>240</rareTickFrequency>
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_HazmatBeeBase">
+		<defName>RB_Bee_Hazmat_Drone</defName>
+		<label>Hazmat drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Hazmat_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_HazmatBeeBase">
+		<defName>RB_Bee_Hazmat_Queen</defName>
+		<label>Hazmat queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Hazmat_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 
 
 </Defs>
