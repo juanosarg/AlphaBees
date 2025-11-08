@@ -21,6 +21,7 @@ namespace RimBees
 
         public static ThingDef RB_BroodChamber;
         public static ThingDef RB_HybridizationChamber;
+        public static ThingDef RB_Bee_LightSource;
 
         [MayRequireBiotech]
         public static EffecterDef PollutionExtractedPoluxTree;

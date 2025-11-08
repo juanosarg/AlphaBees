@@ -295,6 +295,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Tending.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_SlaughterCorpses.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_RotCorpses.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Mine.cs" />
+    <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Light.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_CleanPollution.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_Flick.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_TameAnimal.cs" />
@@ -313,6 +318,7 @@
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HediffAoE.cs" />
     <Compile Include="AdditionalBeeEffects\AdditionalBeeEffects_HeatPusher.cs" />
     <Compile Include="Alerts\Alert_BeeDanger.cs" />
+    <Compile Include="Buildings\Building_BeeLightSource.cs" />
     <Compile Include="CompClasses\CompBeeResearchTable.cs" />
     <Compile Include="CompClasses\CompDangerBee.cs" />
     <Compile Include="CompClasses\CompHybridizationChamber.cs" />

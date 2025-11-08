@@ -2453,6 +2453,7 @@
 				<weirdplantneeded>no</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
+				
 			</li>
 		</comps>
 	</ThingDef>
