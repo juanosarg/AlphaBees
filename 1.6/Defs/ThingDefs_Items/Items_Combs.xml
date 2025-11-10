@@ -421,6 +421,9 @@
 		<defName>RB_Pretty_Honeycomb</defName>
 		<label>Pretty honeycomb</label>
 		<description>This is a honeycomb produced by Pretty bees. Pretty bees are so unbelievably attractive just being around them makes life more meaningful. They will increase the beauty of the room their beehouse is situated at. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<statBases>
+			<Beauty>20</Beauty>
+		</statBases>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Pretty_Honeycomb</texPath>

@@ -1944,11 +1944,11 @@
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Mortuary</species>
 				<comb>RB_Mortuary_Honeycomb</comb>
-				<combtimedays>1</combtimedays>
-				<nocturnal>false</nocturnal>
+				<combtimedays>2</combtimedays>
+				<nocturnal>true</nocturnal>
 				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
-				<tempMin>0</tempMin>
+				<tempMin>-5</tempMin>
 				<tempMax>30</tempMax>
 				<additionalBeeEffects>
 					<li Class="RimBees.AdditionalBeeEffects_RotCorpses">
