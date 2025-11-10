@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersSpacerAdapt</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Spacer_Queen</firstBee>
+				<secondBee>RB_Bee_Adaptive_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Astro_Queen</li>
+					<li>RB_Bee_Obsidian_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersAstroObsidian</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Astro_Queen</firstBee>
+				<secondBee>RB_Bee_Obsidian_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Grav_Queen</li>
+					
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -15,6 +15,7 @@ namespace RimBees
         public static bool RB_IgnoreRain = false;
         public static bool RB_IgnoreTemperature = false;
         public static bool RB_IgnorePlants = false;
+        public static bool RB_IgnoreVacuum = false;
         public static bool RB_GreenhouseBees = false;
         public static bool RB_DisableMessages = false;
         public static bool RB_Ben_ShowMissingBees = true; 
@@ -49,6 +50,7 @@ namespace RimBees
             Scribe_Values.Look(ref RB_IgnoreRain, "RB_IgnoreRain", false, true);
             Scribe_Values.Look(ref RB_IgnoreTemperature, "RB_IgnoreTemperature", false, true);
             Scribe_Values.Look(ref RB_IgnorePlants, "RB_IgnorePlants", false, true);
+            Scribe_Values.Look(ref RB_IgnoreVacuum, "RB_IgnoreVacuum", false, true);
             Scribe_Values.Look(ref RB_GreenhouseBees, "RB_GreenhouseBees", false, true);
             Scribe_Values.Look(ref RB_DisableMessages, "RB_DisableMessages", false, true);
             Scribe_Values.Look(ref RB_Ben_ShowMissingBees, "RB_Ben_ShowMissingBees", true, true);
@@ -81,6 +83,12 @@ namespace RimBees
             ls.CheckboxLabeled("RB_IgnoreTemperature".Translate(), ref RB_IgnoreTemperature, null);
 
             ls.CheckboxLabeled("RB_IgnorePlants".Translate(), ref RB_IgnorePlants, null);
+
+            if (ModsConfig.OdysseyActive)
+            {
+                ls.CheckboxLabeled("RB_IgnoreVacuum".Translate(), ref RB_IgnoreVacuum, null);
+
+            }
 
             ls.CheckboxLabeled("RB_GreenhouseBees".Translate(), ref RB_GreenhouseBees, null);
 

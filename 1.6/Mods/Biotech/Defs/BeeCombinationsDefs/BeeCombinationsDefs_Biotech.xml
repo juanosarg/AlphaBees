@@ -37,12 +37,5 @@
 		</result>				
 	</RimBees.BeeCombinationDef>
 	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier_Janitor_Desiccated</defName>
-		<bee1>Janitor</bee1>
-		<bee2>Desiccated</bee2>
-		<result>
-			<li>Hazmat</li>					
-		</result>				
-	</RimBees.BeeCombinationDef>
+	
 </Defs>

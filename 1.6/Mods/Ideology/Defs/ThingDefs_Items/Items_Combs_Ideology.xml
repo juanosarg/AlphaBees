@@ -16,5 +16,18 @@
 		</butcherProducts>
 	</ThingDef>
 	
-	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_DarkFirefly_Honeycomb</defName>
+		<label>Dark firefly honeycomb</label>
+		<description>This is a honeycomb produced by Dark firefly bees. Dark firefly bees adore darklight, and they'll try to light the area surrounding their beehouses at all times. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_DarkFirefly_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
 </Defs>

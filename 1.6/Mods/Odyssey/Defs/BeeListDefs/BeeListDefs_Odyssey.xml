@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeListDef>
+		<defName>RB_SpacerBeeList</defName>
+		<beeDroneDef>RB_Bee_Spacer_Drone</beeDroneDef>
+		<nameString>Spacer</nameString>
+		<beeQueenDef>RB_Bee_Spacer_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_AstroBeeList</defName>
+		<beeDroneDef>RB_Bee_Astro_Drone</beeDroneDef>
+		<nameString>Astro</nameString>
+		<beeQueenDef>RB_Bee_Astro_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_ObsidianBeeList</defName>
+		<beeDroneDef>RB_Bee_Obsidian_Drone</beeDroneDef>
+		<nameString>Obsidian</nameString>
+		<beeQueenDef>RB_Bee_Obsidian_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_GravBeeList</defName>
+		<beeDroneDef>RB_Bee_Grav_Drone</beeDroneDef>
+		<nameString>Grav</nameString>
+		<beeQueenDef>RB_Bee_Grav_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+</Defs>

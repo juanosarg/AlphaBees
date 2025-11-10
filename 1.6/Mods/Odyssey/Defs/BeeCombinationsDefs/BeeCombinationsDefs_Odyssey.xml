@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Odyssey_Tier4</defName>
+		<bee1>Spacer</bee1>
+		<bee2>Adaptive</bee2>
+		<result>
+			<li>Astro</li>
+			<li>Obsidian</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Odyssey_Tier5</defName>
+		<bee1>Astro</bee1>
+		<bee2>Obsidian</bee2>
+		<result>
+			<li>Grav</li>
+			
+		</result>
+	</RimBees.BeeCombinationDef>
+</Defs>

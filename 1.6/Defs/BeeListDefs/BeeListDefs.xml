@@ -414,4 +414,46 @@
 		<beeDroneDef>RB_Bee_Handler_Drone</beeDroneDef>
 		<beeQueenDef>RB_Bee_Handler_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_FireflyBeeList</defName>
+		<nameString>Firefly</nameString>
+		<beeDroneDef>RB_Bee_Firefly_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Firefly_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_MortuaryBeeList</defName>
+		<nameString>Mortuary</nameString>
+		<beeDroneDef>RB_Bee_Mortuary_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Mortuary_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_MinerBeeList</defName>
+		<nameString>Miner</nameString>
+		<beeDroneDef>RB_Bee_Miner_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Miner_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_TriageBeeList</defName>
+		<nameString>Triage</nameString>
+		<beeDroneDef>RB_Bee_Triage_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Triage_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_ButcherBeeList</defName>
+		<nameString>Butcher</nameString>
+		<beeDroneDef>RB_Bee_Butcher_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Butcher_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_PartyBeeList</defName>
+		<nameString>Party</nameString>
+		<beeDroneDef>RB_Bee_Party_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Party_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_PrettyBeeList</defName>
+		<nameString>Pretty</nameString>
+		<beeDroneDef>RB_Bee_Pretty_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_Pretty_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
 </Defs>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Spacer ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_SpacerBeeBase" Abstract="True" >
+		<description>Spacer bees can survive in orbit. They are not adapted to low temperatures, but they can withstand any kind of vacuum.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nVacuum resistant: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Spacer</species>
+				<comb>RB_Spacer_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<vacuumResistant>true</vacuumResistant>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_SpacerBeeBase">
+		<defName>RB_Bee_Spacer_Drone</defName>
+		<label>Spacer drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Spacer_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_SpacerBeeBase">
+		<defName>RB_Bee_Spacer_Queen</defName>
+		<label>Spacer queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Spacer_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+<!--=============== Astro ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_AstroBeeBase" Abstract="True" >
+		<description>Astro bees are the kind of bees you should call if you want to divert an asteroid in a collision route with your planet. They will produce vacstone chunks over time.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nVacuum resistant: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Astro</species>
+				<comb>RB_Astro_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<vacuumResistant>true</vacuumResistant>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_AstroBeeBase">
+		<defName>RB_Bee_Astro_Drone</defName>
+		<label>Astro drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Astro_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_AstroBeeBase">
+		<defName>RB_Bee_Astro_Queen</defName>
+		<label>Astro queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Astro_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	<!--=============== Obsidian ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ObsidianBeeBase" Abstract="True" >
+		<description>Obsidian bees are tough little bees that gather random stone surrounding their beehouses and compact them into super sharp obsidian pieces.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nVacuum resistant: Yes\nUnusual plants needed: none\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Obsidian</species>
+				<comb>RB_Obsidian_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<vacuumResistant>true</vacuumResistant>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_ObsidianBeeBase">
+		<defName>RB_Bee_Obsidian_Drone</defName>
+		<label>Obsidian drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Obsidian_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_ObsidianBeeBase">
+		<defName>RB_Bee_Obsidian_Queen</defName>
+		<label>Obsidian queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Obsidian_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+	
+	<!--=============== Grav ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GravBeeBase" Abstract="True" >
+		<description>Grav bees are expert space engineers, capable of asisting in the construction of advanced gravships.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nVacuum resistant: Yes\nUnusual plants needed: Gravlite Panel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Grav</species>
+				<comb>RB_Grav_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<vacuumResistant>true</vacuumResistant>
+				<weirdplantneeded>GravlitePanel</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_GravBeeBase">
+		<defName>RB_Bee_Grav_Drone</defName>
+		<label>Grav drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Grav_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_GravBeeBase">
+		<defName>RB_Bee_Grav_Queen</defName>
+		<label>Grav queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Grav_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
+
+</Defs>

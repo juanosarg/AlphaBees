@@ -208,6 +208,20 @@
 		</butcherProducts>
 	</ThingDef>
 	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Firefly_Honeycomb</defName>
+		<label>Firefly honeycomb</label>
+		<description>This is a honeycomb produced by Firefly bees. Firefly bees adore light, and they'll try to light the area surrounding their beehouses at all times. These honeycombs can be procesed in a Honey Extractor to get honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Firefly_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_BaseHoney>3</RB_BaseHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
 		<defName>RB_Stunning_Honeycomb</defName>
 		<label>Stunning honeycomb</label>
 		<description>This is a honeycomb produced by Stunning bees. Stunning bees absolutely hate mechanoids. They will attack any mechanoids inside their beehouse's area of effect, causing an electric pulse that will stun them in the same manner as EMP grenades. These honeycombs can be procesed in a Honey Extractor to get psychothropic honey and beeswax, though at very small amounts.</description>
@@ -340,6 +354,76 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Warden_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mortuary_Honeycomb</defName>
+		<label>Mortuary honeycomb</label>
+		<description>This is a honeycomb produced by Mortuary bees. Mortuary bees heavily dislike seeing corpses laying around, and will do everything in their power to get rid of them. And let me tell you, it won't be pretty, or clean. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mortuary_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Miner_Honeycomb</defName>
+		<label>Miner honeycomb</label>
+		<description>This is a honeycomb produced by Miner bees. Miner bees yearn for the mines. They will apply any mining designations in their beehouse's area of effect: slowly, but at a very decent efficiency. They will ignore veinmining, though. This isn't Minecraft. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Miner_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Butcher_Honeycomb</defName>
+		<label>Butcher honeycomb</label>
+		<description>This is a honeycomb produced by Butcher bees. Butcher bees like corpses. But not in a rotten way, no, what they like is to butcher fresh corpses into meat and leather. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Butcher_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Party_Honeycomb</defName>
+		<label>Party honeycomb</label>
+		<description>This is a honeycomb produced by Party bees. Party bees would party every day, and specially every night, if they were allowed. Simply being around one of their beehouses will make colonists happier. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Party_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Pretty_Honeycomb</defName>
+		<label>Pretty honeycomb</label>
+		<description>This is a honeycomb produced by Pretty bees. Pretty bees are so unbelievably attractive just being around them makes life more meaningful. They will increase the beauty of the room their beehouse is situated at. These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Pretty_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
 			<RB_PerformanceEnhancingHoney>1</RB_PerformanceEnhancingHoney>
@@ -957,6 +1041,21 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Combs/RB_Handler_Honeycomb</texPath>
+		</graphicData>
+		<butcherProducts>
+			<RB_PerformanceEnhancingHoney>2</RB_PerformanceEnhancingHoney>
+			<RB_Beeswax>3</RB_Beeswax>
+			
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Triage_Honeycomb</defName>
+		<label>Triage honeycomb</label>
+		<description>This is a honeycomb produced by Triage bees. Triage bees are the best battlefield medics. Instead of producing medicine, they will instead tend to the wounds of those injured around their beehouse (tend quality will be between 20% and 50%). These honeycombs can be procesed in a Honey Extractor to get performance enhancing honey and beeswax, though at very small amounts.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Triage_Honeycomb</texPath>
 		</graphicData>
 		<butcherProducts>
 			<RB_PerformanceEnhancingHoney>2</RB_PerformanceEnhancingHoney>

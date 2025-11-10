@@ -1265,6 +1265,44 @@
 			<texPath>Things/Item/Bees/RB_Bee_Desiccated_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--=============== Firefly ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_FireflyBeeBase" Abstract="True">
+		<description>Firefly bees adore light, and they'll try to light the area surrounding their beehouses at all times.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Firefly</species>
+				<comb>RB_Firefly_Honeycomb</comb>
+				<combtimedays>2</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_MaintainBuilding">
+						<maintainedBuilding>RB_Bee_LightSource</maintainedBuilding>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_FireflyBeeBase">
+		<defName>RB_Bee_Firefly_Drone</defName>
+		<label>Firefly drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Firefly_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_FireflyBeeBase">
+		<defName>RB_Bee_Firefly_Queen</defName>
+		<label>Firefly queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Firefly_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 4: Textile Branch - From Technological and Adaptive Bees ==========-->
 	<!--=============== Weaving ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_WeavingBeeBase" Abstract="True">
@@ -1896,6 +1934,196 @@
 			<texPath>Things/Item/Bees/RB_Bee_Warden_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--=============== Mortuary ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_MortuaryBeeBase" Abstract="True">
+		<description>Mortuary bees heavily dislike seeing corpses laying around, and will do everything in their power to get rid of them. And let me tell you, it won't be pretty, or clean.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Mortuary</species>
+				<comb>RB_Mortuary_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_RotCorpses">
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_MortuaryBeeBase">
+		<defName>RB_Bee_Mortuary_Drone</defName>
+		<label>Mortuary drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mortuary_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_MortuaryBeeBase">
+		<defName>RB_Bee_Mortuary_Queen</defName>
+		<label>Mortuary queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Mortuary_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Miner ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_MinerBeeBase" Abstract="True">
+		<description>Miner bees yearn for the mines. They will apply any mining designations in their beehouse's area of effect: slowly, but at a very decent efficiency. They will ignore veinmining, though. This isn't Minecraft.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Miner</species>
+				<comb>RB_Miner_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Mine">
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_MinerBeeBase">
+		<defName>RB_Bee_Miner_Drone</defName>
+		<label>Miner drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Miner_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_MinerBeeBase">
+		<defName>RB_Bee_Miner_Queen</defName>
+		<label>Miner queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Miner_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Butcher ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_ButcherBeeBase" Abstract="True">
+		<description>Butcher bees like corpses. But not in a rotten way, no, what they like is to butcher fresh corpses into meat and leather.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Butcher</species>
+				<comb>RB_Butcher_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_SlaughterCorpses">
+						
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ButcherBeeBase">
+		<defName>RB_Bee_Butcher_Drone</defName>
+		<label>Butcher drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Butcher_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_ButcherBeeBase">
+		<defName>RB_Bee_Butcher_Queen</defName>
+		<label>Butcher queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Butcher_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Party ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_PartyBeeBase" Abstract="True">
+		<description>Party bees would party every day, and specially every night, if they were allowed. Simply being around one of their beehouses will make colonists happier.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Party</species>
+				<comb>RB_Party_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_HediffAoE">
+						<hediffDef>RB_BeeHappiness</hediffDef>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_PartyBeeBase">
+		<defName>RB_Bee_Party_Drone</defName>
+		<label>Party drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Party_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_PartyBeeBase">
+		<defName>RB_Bee_Party_Queen</defName>
+		<label>Party queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Party_Queen</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--=============== Pretty ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_PrettyBeeBase" Abstract="True">
+		<description>Pretty bees are so unbelievably attractive just being around them makes life more meaningful. They will increase the beauty of the room their beehouse is situated at.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Pretty</species>
+				<comb>RB_Pretty_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_MaintainBuilding">
+						<maintainedBuilding>RB_BeautifulMarker</maintainedBuilding>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_PrettyBeeBase">
+		<defName>RB_Bee_Pretty_Drone</defName>
+		<label>Pretty drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Pretty_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_PrettyBeeBase">
+		<defName>RB_Bee_Pretty_Queen</defName>
+		<label>Pretty queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Pretty_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--========== Tier 4 and 5: Hard Drugs Branch - From Stoner and Psychic Bees ==========-->
 	<!--=============== High ====================-->
 	<ThingDef ParentName="RB_BeeBase" Name="RB_HighBeeBase" Abstract="True">
@@ -2401,6 +2629,45 @@
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Handler_Queen</texPath>
 		</graphicData> 		
+	</ThingDef>
+	<!--=============== Triage ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_TriageBeeBase" Abstract="True">
+		<description>Triage bees are the best battlefield medics. Instead of producing medicine, they will instead tend to the wounds of those injured around their beehouse (tend quality will be between 20% and 50%).\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30 ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Triage</species>
+				<comb>RB_Triage_Honeycomb</comb>
+				<combtimedays>1</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_Tending">
+						<minQuality>0.2</minQuality>
+						<maxQuality>0.5</maxQuality>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_TriageBeeBase">
+		<defName>RB_Bee_Triage_Drone</defName>
+		<label>Triage drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Triage_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_TriageBeeBase">
+		<defName>RB_Bee_Triage_Queen</defName>
+		<label>Triage queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Triage_Queen</texPath>
+		</graphicData>
 	</ThingDef>
 	
 	<!--========== Tier 6 ==========-->

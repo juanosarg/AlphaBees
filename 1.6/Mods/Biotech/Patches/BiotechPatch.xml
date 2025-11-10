@@ -8,7 +8,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier3_5"]/result</xpath>
+		<xpath>Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier3_5"]/result</xpath>
 		<value>
 			<li>Nanny</li>
 			
@@ -16,7 +16,23 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="RB_ResearchPapersNutAdapt"]/comps/li/resultingBees</xpath>
+		<xpath>Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier_Janitor_Desiccated"]/result</xpath>
+		<value>
+			<li>Hazmat</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RB_ResearchPapersJanitorDesiccated"]/comps/li/resultingBees</xpath>
+		<value>
+			<li>RB_Bee_Hazmat_Queen</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RB_ResearchPapersNutAdapt"]/comps/li/resultingBees</xpath>
 		<value>
 			<li>RB_Bee_Nanny_Queen</li>
 			

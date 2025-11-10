@@ -40,4 +40,42 @@
 			<texPath>Things/Item/Bees/RB_Bee_Wololo_Queen</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--=============== DarkFirefly ====================-->
+	<ThingDef ParentName="RB_BeeBase" Name="RB_DarkFireflyBeeBase" Abstract="True">
+		<description>Dark firefly bees adore darklight, and they'll try to light the area surrounding their beehouses at all times.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: Yes\nPluviophile: No\nUnusual plants or resource needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="RimBees.CompProperties_Bees">
+				<species>DarkFirefly</species>
+				<comb>RB_DarkFirefly_Honeycomb</comb>
+				<combtimedays>2</combtimedays>
+				<nocturnal>true</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+				<additionalBeeEffects>
+					<li Class="RimBees.AdditionalBeeEffects_MaintainBuilding">
+						<maintainedBuilding>RB_Bee_DarkLightSource</maintainedBuilding>
+					</li>
+				</additionalBeeEffects>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_DarkFireflyBeeBase">
+		<defName>RB_Bee_DarkFirefly_Drone</defName>
+		<label>Dark firefly drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_DarkFirefly_Drone</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RB_DarkFireflyBeeBase">
+		<defName>RB_Bee_DarkFirefly_Queen</defName>
+		<label>Dark firefly queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_DarkFirefly_Queen</texPath>
+		</graphicData>
+	</ThingDef>
 </Defs>

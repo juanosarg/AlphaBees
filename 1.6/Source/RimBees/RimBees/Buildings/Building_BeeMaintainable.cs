@@ -8,7 +8,7 @@ using RimWorld;
 
 namespace RimBees
 {
-    public class Building_BeeLightSource: Building
+    public class Building_BeeMaintainable: Building
     {
 
         public const int tickCounterToDelete = 10000;

@@ -264,6 +264,55 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorDesiccated</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Desiccated_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Mortuary_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorQuarry</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Quarry_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Miner_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersJanitorNutritious</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Janitor_Queen</firstBee>
+				<secondBee>RB_Bee_Nutritious_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Butcher_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
+		<defName>RB_ResearchPapersFireflyWorker</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Firefly_Queen</firstBee>
+				<secondBee>RB_Bee_Worker_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Party_Queen</li>
+					<li>RB_Bee_Pretty_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
 	<!-- Tier 5 research -->
 	<ThingDef Name="RB_ResearchPapersBaseTier5" ParentName="RB_ResearchPapersBase" Abstract="True">
 		<label>bee research papers (tier5)</label>
@@ -414,6 +463,18 @@
 				<secondBee>RB_Bee_Warden_Queen</secondBee>
 				<resultingBees>
 					<li>RB_Bee_Handler_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseTier5">
+		<defName>RB_ResearchPapersResearchMedicinal</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Research_Queen</firstBee>
+				<secondBee>RB_Bee_Medicinal_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Triage_Queen</li>
 				</resultingBees>
 			</li>
 		</comps>

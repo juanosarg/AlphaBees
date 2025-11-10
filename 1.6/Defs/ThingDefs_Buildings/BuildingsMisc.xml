@@ -4,7 +4,7 @@
 		<defName>RB_Bee_LightSource</defName>
 		<label>light source</label>
 		<description>A light source created by bees. It will go away if not maintained by Firefly bees.</description>
-		<thingClass>RimBees.Building_BeeLightSource</thingClass>
+		<thingClass>RimBees.Building_BeeMaintainable</thingClass>
 		<graphicData>
 			<texPath>UI/Invisible</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -29,6 +29,75 @@
 				<glowColor>(184,136,83,0)</glowColor>
 			</li>
 		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_Bee_DarkLightSource</defName>
+		<label>darklight source</label>
+		<description>A darklight source created by bees. It will go away if not maintained by Dark Firefly bees.</description>
+		<thingClass>RimBees.Building_BeeMaintainable</thingClass>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<clearBuildingArea>false</clearBuildingArea>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<selectable>false</selectable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<surfaceType>Item</surfaceType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor><!-- This is a specific darklight color, make sure it matches DarklightUtility.IsDarklight -->
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<ai_neverTrashThis>true</ai_neverTrashThis>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>RB_BeautifulMarker</defName>
+		<label>beauty source</label>
+		<description>A source of beauty created by bees. It will go away if not maintained by Pretty bees.</description>
+		<thingClass>RimBees.Building_BeeMaintainable</thingClass>
+		<graphicData>
+			<texPath>UI/Invisible</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<clearBuildingArea>false</clearBuildingArea>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0</fillPercent>
+		<useHitPoints>false</useHitPoints>
+		<selectable>false</selectable>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>150</Beauty>
+			<BeautyOutdoors>150</BeautyOutdoors>
+		</statBases>
+		<size>(1,1)</size>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<surfaceType>Item</surfaceType>
+		
 		<building>
 			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>

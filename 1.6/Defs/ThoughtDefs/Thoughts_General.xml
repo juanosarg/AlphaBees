@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>RB_BeeHappiness</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>RB_BeeHappiness</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		
+		<stages>
+			<li>
+				<label>bee party</label>
+				<description>Party bees are having a blast nearby. Fun!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

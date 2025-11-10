@@ -29,6 +29,7 @@
 	<RB_BeehouseCombNoProgressRain>Stopped due to inclement weather</RB_BeehouseCombNoProgressRain>
 	<RB_BeehouseCombNoProgressTemperature>Stopped due to temperature (needs </RB_BeehouseCombNoProgressTemperature>
 	<RB_BeehouseCombNoProgressPlants1>Stopped due to absence of </RB_BeehouseCombNoProgressPlants1> 
+	<RB_BeehouseCombNoProgressVacuum>Stopped due to being in a vacuum</RB_BeehouseCombNoProgressVacuum>
 	<RB_BeehouseCombNoProgressPlants2> in 6 tiles radius</RB_BeehouseCombNoProgressPlants2>
 	<RB_BeehouseNoPower>Stopped due to no power</RB_BeehouseNoPower>
 
@@ -88,6 +89,7 @@
 	<RB_IgnoreRain>Bees ignore presence of weather (such as rain)</RB_IgnoreRain>
 	<RB_IgnoreTemperature>Bees ignore temperature in the map</RB_IgnoreTemperature>
 	<RB_IgnorePlants>Bees ignore the need for plants or other nearby materials</RB_IgnorePlants>
+	<RB_IgnoreVacuum>Bees ignore vacuum conditions</RB_IgnoreVacuum>
 	<RB_GreenhouseBees>Greenhouse bees. Bees consider indoor temperature instead of map average</RB_GreenhouseBees>
 	<RB_DisableMessages>Disable Hybridization success messages</RB_DisableMessages>
 	<RB_CarryBees>Carry combs and bees to storage</RB_CarryBees>

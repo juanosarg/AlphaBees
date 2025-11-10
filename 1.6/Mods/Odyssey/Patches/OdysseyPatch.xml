@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RimBees.BeeCombinationDef[defName="RB_CombinationTier2_1"]/result</xpath>
+		<value>
+			<li>Spacer</li>
+			
+		</value>
+	</Operation>
+	
+
+</Patch>
+

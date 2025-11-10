@@ -20,6 +20,8 @@ namespace RimBees
 
         public int rareTickFrequency = 4;
         private int tickCounter = 0;
+        public float minQuality = 0;
+        public float maxQuality = 1;
 
         public AdditionalBeeEffects_Tending()
         {
@@ -52,7 +54,7 @@ namespace RimBees
                                         foreach (Hediff_Injury injury in injuries)
                                         {
                                             if (injury.TendableNow()) {
-                                                injury.Tended(0.1f, 0.3f);
+                                                injury.Tended(minQuality, maxQuality);
                                                 foundPawn = true;
                                                 break;
                                                 

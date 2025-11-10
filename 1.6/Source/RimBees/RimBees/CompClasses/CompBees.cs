@@ -78,6 +78,14 @@ namespace RimBees
             }
         }
 
+        public bool GetVacuumResistance
+        {
+            get
+            {
+                return this.Props.vacuumResistant;
+            }
+        }
+
         public bool HasAdditionalEffects
         {
             get

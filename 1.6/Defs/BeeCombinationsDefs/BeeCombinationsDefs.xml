@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<!-- Tier 0 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier0_1</defName>
@@ -8,28 +7,25 @@
 		<bee2>Mild</bee2>
 		<result>
 			<li>Hybrid</li>
-		</result>				
+		</result>
 	</RimBees.BeeCombinationDef>
-
-	<!-- Tier 1 Combinations -->	
+	<!-- Tier 1 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier1_1</defName>
 		<bee1>Temperate</bee1>
 		<bee2>Hybrid</bee2>
 		<result>
 			<li>Amalgam</li>
-		</result>				
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier1_2</defName>
 		<bee1>Mild</bee1>
 		<bee2>Hybrid</bee2>
 		<result>
 			<li>Amalgam</li>
-		</result>				
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier1_3</defName>
 		<bee1>Amalgam</bee1>
@@ -41,10 +37,9 @@
 			<li>Neutro</li>
 			<li>Technological</li>
 			<li>Worker</li>
-		</result>				
+		</result>
 	</RimBees.BeeCombinationDef>
-	
-	<!-- Tier 2 Combinations -->	
+	<!-- Tier 2 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_1</defName>
 		<bee1>Amalgam</bee1>
@@ -54,10 +49,9 @@
 			<li>Woodland</li>
 			<li>Desert</li>
 			<li>Swamp</li>
-			<li>Nocturnal</li>			
-		</result>				
+			<li>Nocturnal</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_2</defName>
 		<bee1>Amalgam</bee1>
@@ -66,10 +60,9 @@
 			<li>Argent</li>
 			<li>Aurum</li>
 			<li>Precious</li>
-			<li>Radioactive</li>			
-		</result>				
+			<li>Radioactive</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_3</defName>
 		<bee1>Amalgam</bee1>
@@ -78,10 +71,9 @@
 			<li>Tipsy</li>
 			<li>Luxurious</li>
 			<li>Psychic</li>
-			<li>Stoner</li>			
-		</result>				
-	</RimBees.BeeCombinationDef>	
-
+			<li>Stoner</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_4</defName>
 		<bee1>Amalgam</bee1>
@@ -90,11 +82,10 @@
 			<li>Agricultural</li>
 			<li>Bittersweet</li>
 			<li>Egglaying</li>
-			<li>Lactic</li>		
+			<li>Lactic</li>
 			<li>Insectoid</li>
-		</result>				
-	</RimBees.BeeCombinationDef>	
-	
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_5</defName>
 		<bee1>Amalgam</bee1>
@@ -102,11 +93,10 @@
 		<result>
 			<li>Electronic</li>
 			<li>Oily</li>
-			<li>Plastic</li>	
-			<li>Quarry</li>				
-		</result>				
-	</RimBees.BeeCombinationDef>	
-	
+			<li>Plastic</li>
+			<li>Quarry</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier2_Worker</defName>
 		<bee1>Amalgam</bee1>
@@ -114,263 +104,283 @@
 		<result>
 			<li>Commando</li>
 			<li>Research</li>
-			<li>Janitor</li>	
+			<li>Janitor</li>
 			<li>Desiccated</li>
-		</result>				
-	</RimBees.BeeCombinationDef>	
-
-	<!-- Tier 3 Combinations -->	
-
-	
+			<li>Firefly</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<!-- Tier 3 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_1</defName>
 		<bee1>Nutritious</bee1>
 		<bee2>Technological</bee2>
 		<result>
-			<li>Culinary</li>					
-		</result>				
+			<li>Culinary</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_2</defName>
 		<bee1>Stoner</bee1>
 		<bee2>Psychic</bee2>
 		<result>
-			<li>High</li>					
-		</result>				
+			<li>High</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_3</defName>
 		<bee1>Agricultural</bee1>
 		<bee2>Swamp</bee2>
 		<result>
-			<li>Medicinal</li>					
-		</result>				
+			<li>Medicinal</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_4</defName>
 		<bee1>Plastic</bee1>
 		<bee2>Alloy</bee2>
 		<result>
-			<li>Synthetic</li>					
-		</result>				
+			<li>Synthetic</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_5</defName>
 		<bee1>Nutritious</bee1>
 		<bee2>Adaptive</bee2>
 		<result>
 			<li>Pet</li>
-			<li>Rainbow</li>			
-		</result>				
+			<li>Rainbow</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_6</defName>
 		<bee1>Technological</bee1>
 		<bee2>Adaptive</bee2>
 		<result>
-			<li>Weaving</li>	
-			<li>Tanner</li>	
-			<li>Wooly</li>				
-		</result>				
-	</RimBees.BeeCombinationDef>	
-	
+			<li>Weaving</li>
+			<li>Tanner</li>
+			<li>Wooly</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier3_7</defName>
 		<bee1>Agricultural</bee1>
 		<bee2>Woodland</bee2>
 		<result>
-			<li>Straw</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Straw</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Quarry_Tech</defName>
 		<bee1>Technological</bee1>
 		<bee2>Quarry</bee2>
 		<result>
-			<li>Mason</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Mason</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<!-- Tier 4 Combinations -->
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_1</defName>
+		<bee1>Agricultural</bee1>
+		<bee2>Culinary</bee2>
+		<result>
+			<li>Chef</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_2</defName>
+		<bee1>Luxurious</bee1>
+		<bee2>High</bee2>
+		<result>
+			<li>Lucifer</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_3</defName>
+		<bee1>Medicinal</bee1>
+		<bee2>Technological</bee2>
+		<result>
+			<li>Surgeon</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_4</defName>
+		<bee1>Technological</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Hyper</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_5</defName>
+		<bee1>Oily</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Nitro</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier4_6</defName>
+		<bee1>Electronic</bee1>
+		<bee2>Synthetic</bee2>
+		<result>
+			<li>Fabricated</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Tipsy_Commando</defName>
 		<bee1>Tipsy</bee1>
 		<bee2>Commando</bee2>
 		<result>
-			<li>Stunning</li>							
-		</result>				
+			<li>Stunning</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Insectoid_Commando</defName>
 		<bee1>Insectoid</bee1>
 		<bee2>Commando</bee2>
 		<result>
-			<li>Noxious</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Noxious</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Research_Oily</defName>
 		<bee1>Research</bee1>
 		<bee2>Oily</bee2>
 		<result>
-			<li>Tetra</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Tetra</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Worker_Janitor</defName>
 		<bee1>Worker</bee1>
 		<bee2>Janitor</bee2>
 		<result>
-			<li>Skilful</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Skilful</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Adaptive_Janitor</defName>
 		<bee1>Adaptive</bee1>
 		<bee2>Janitor</bee2>
 		<result>
-			<li>Blazing</li>	
-			<li>Frigid</li>				
-		</result>				
+			<li>Blazing</li>
+			<li>Frigid</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Technological_Janitor</defName>
 		<bee1>Technological</bee1>
 		<bee2>Janitor</bee2>
 		<result>
-			<li>Foamy</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
+			<li>Foamy</li>
+		</result>
+	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Agricultural_Janitor</defName>
 		<bee1>Agricultural</bee1>
 		<bee2>Janitor</bee2>
 		<result>
-			<li>Harvester</li>	
-			<li>Cultivator</li>				
-		</result>				
+			<li>Harvester</li>
+			<li>Cultivator</li>
+		</result>
 	</RimBees.BeeCombinationDef>
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Commando_Janitor</defName>
 		<bee1>Commando</bee1>
 		<bee2>Janitor</bee2>
 		<result>
-			<li>Warden</li>							
-		</result>				
-	</RimBees.BeeCombinationDef>	
-	
-	<!-- Tier 4 Combinations -->	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_1</defName>
-		<bee1>Agricultural</bee1>
-		<bee2>Culinary</bee2>
-		<result>
-			<li>Chef</li>					
-		</result>				
+			<li>Warden</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_2</defName>
-		<bee1>Luxurious</bee1>
-		<bee2>High</bee2>
+		<defName>RB_CombinationTier_Janitor_Desiccated</defName>
+		<bee1>Janitor</bee1>
+		<bee2>Desiccated</bee2>
 		<result>
-			<li>Lucifer</li>					
-		</result>				
+			<li>Mortuary</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_3</defName>
-		<bee1>Medicinal</bee1>
-		<bee2>Technological</bee2>
+		<defName>RB_CombinationTier_Janitor_Quarry</defName>
+		<bee1>Janitor</bee1>
+		<bee2>Quarry</bee2>
 		<result>
-			<li>Surgeon</li>					
-		</result>				
+			<li>Miner</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_4</defName>
-		<bee1>Technological</bee1>
-		<bee2>Synthetic</bee2>
+		<defName>RB_CombinationTier_Janitor_Nutritious</defName>
+		<bee1>Janitor</bee1>
+		<bee2>Nutritious</bee2>
 		<result>
-			<li>Hyper</li>					
-		</result>				
+			<li>Butcher</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_5</defName>
-		<bee1>Oily</bee1>
-		<bee2>Synthetic</bee2>
+		<defName>RB_CombinationTier_Firefly_Worker</defName>
+		<bee1>Firefly</bee1>
+		<bee2>Worker</bee2>
 		<result>
-			<li>Nitro</li>					
-		</result>				
+			<li>Party</li>
+			<li>Pretty</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
-	<RimBees.BeeCombinationDef>
-		<defName>RB_CombinationTier4_6</defName>
-		<bee1>Electronic</bee1>
-		<bee2>Synthetic</bee2>
-		<result>
-			<li>Fabricated</li>					
-		</result>				
-	</RimBees.BeeCombinationDef>
-	
+	<!-- Tier 5 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Desert_Blazing</defName>
 		<bee1>Desert</bee1>
 		<bee2>Blazing</bee2>
 		<result>
-			<li>Inferno</li>					
-		</result>				
+			<li>Inferno</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Arctic_Frigid</defName>
 		<bee1>Arctic</bee1>
 		<bee2>Frigid</bee2>
 		<result>
-			<li>Glacial</li>					
-		</result>				
+			<li>Glacial</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Pet_Warden</defName>
 		<bee1>Pet</bee1>
 		<bee2>Warden</bee2>
 		<result>
-			<li>Shepherd</li>					
-		</result>				
+			<li>Shepherd</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Harvester_Warden</defName>
 		<bee1>Harvester</bee1>
 		<bee2>Warden</bee2>
 		<result>
-			<li>Handler</li>					
-		</result>				
+			<li>Handler</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
-	<!-- Tier 5 Combinations -->	
-	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTier_Research_Medicinal</defName>
+		<bee1>Research</bee1>
+		<bee2>Medicinal</bee2>
+		<result>
+			<li>Triage</li>
+		</result>
+	</RimBees.BeeCombinationDef>
+	<!-- Tier 6 Combinations -->
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Hyper_Surgeon</defName>
 		<bee1>Hyper</bee1>
 		<bee2>Surgeon</bee2>
 		<result>
-			<li>Glittering</li>					
-		</result>				
+			<li>Glittering</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTier_Chef_High</defName>
 		<bee1>Chef</bee1>
 		<bee2>High</bee2>
 		<result>
-			<li>Epicurean</li>					
-		</result>				
+			<li>Epicurean</li>
+		</result>
 	</RimBees.BeeCombinationDef>
-	
 </Defs>

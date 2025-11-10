@@ -66,6 +66,30 @@
 		</stages>
 		<isBad>false</isBad>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>RB_BeeHappiness</defName>
+		<label>bee party</label>
+		<description>Party bees are having a blast nearby, lifting the spirits of colonists.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
 
 	<HediffDef>
 		<defName>RB_Draftability</defName>

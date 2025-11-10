@@ -2,9 +2,9 @@
 <Defs>
 	
 	<RimBees.BeeListDef>
-		<defName>RB_WololoBeeList</defName>
-		<nameString>Wololo</nameString>
-		<beeDroneDef>RB_Bee_Wololo_Drone</beeDroneDef>
-		<beeQueenDef>RB_Bee_Wololo_Queen</beeQueenDef>
+		<defName>RB_DarkFireflyBeeList</defName>
+		<nameString>DarkFirefly</nameString>
+		<beeDroneDef>RB_Bee_DarkFirefly_Drone</beeDroneDef>
+		<beeQueenDef>RB_Bee_DarkFirefly_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
 </Defs>

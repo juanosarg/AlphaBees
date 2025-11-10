@@ -48,16 +48,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef ParentName="RB_ResearchPapersBaseTier4">
-		<defName>RB_ResearchPapersJanitorDesiccated</defName>
-		<comps>
-			<li Class="RimBees.CompProperties_BeeResearchData">
-				<firstBee>RB_Bee_Janitor_Queen</firstBee>
-				<secondBee>RB_Bee_Desiccated_Queen</secondBee>
-				<resultingBees>
-					<li>RB_Bee_Hazmat_Queen</li>
-				</resultingBees>
-			</li>
-		</comps>
-	</ThingDef>
+	
 </Defs>

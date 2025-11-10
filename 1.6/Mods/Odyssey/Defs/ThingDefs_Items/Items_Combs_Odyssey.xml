@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Spacer_Honeycomb</defName>
+		<label>Spacer honeycomb</label>
+		<description>This is a honeycomb produced by Spacer bees. Spacer bees can survive in orbit. They are not adapted to low temperatures, but they can withstand any kind of vacuum. Honeycombs can be processed in a Honey Extractor to get black honey and black beeswax.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Spacer_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackBeeswax>10</RB_BlackBeeswax>
+			<RB_BlackHoney>5</RB_BlackHoney>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Astro_Honeycomb</defName>
+		<label>Astro honeycomb</label>
+		<description>This is a honeycomb produced by Astro bees. Astro bees are the kind of bees you should call if you want to divert an asteroid in a collision route with your planet. They will produce vacstone chunks over time. Honeycombs can be processed in a Honey Extractor to get black honey, black beeswax and vacstone chunks.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Astro_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackBeeswax>5</RB_BlackBeeswax>
+			<RB_BlackHoney>5</RB_BlackHoney>
+			<ChunkVacstone>1</ChunkVacstone>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Obsidian_Honeycomb</defName>
+		<label>Obsidian honeycomb</label>
+		<description>This is a honeycomb produced by Obsidian bees. Obsidian bees are tough little bees that gather random stone surrounding their beehouses and compact them into super sharp obsidian pieces. Honeycombs can be processed in a Honey Extractor to get black honey, black beeswax and obsidian.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Obsidian_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackBeeswax>5</RB_BlackBeeswax>
+			<RB_BlackHoney>5</RB_BlackHoney>
+			<Obsidian>15</Obsidian>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Grav_Honeycomb</defName>
+		<label>Grav honeycomb</label>
+		<description>This is a honeycomb produced by Grav bees. Grav bees are expert space engineers, capable of asisting in the construction of advanced gravships. Honeycombs can be processed in a Honey Extractor to get black honey, black beeswax and gravlite panels.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Grav_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BlackBeeswax>5</RB_BlackBeeswax>
+			<RB_BlackHoney>5</RB_BlackHoney>
+			<GravlitePanel>1</GravlitePanel>
+		</butcherProducts>
+	</ThingDef>
+	
+	
+</Defs>

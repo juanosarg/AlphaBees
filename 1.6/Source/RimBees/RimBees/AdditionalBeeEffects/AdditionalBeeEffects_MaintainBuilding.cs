@@ -13,19 +13,18 @@ using Verse.Noise;
 
 namespace RimBees
 {
-    public class AdditionalBeeEffects_Light : AdditionalBeeEffects
+    public class AdditionalBeeEffects_MaintainBuilding : AdditionalBeeEffects
     {
-
-       
+      
         public int rareTickFrequency = 4;
         private int tickCounter = 0;
 
-        public AdditionalBeeEffects_Light()
+        public ThingDef maintainedBuilding;
+
+        public AdditionalBeeEffects_MaintainBuilding()
         {
 
         }
-
-       
 
         public override void AdditionalEffectTick(Building_Beehouse building)
         {
@@ -33,25 +32,25 @@ namespace RimBees
             {
                 if (building.Map != null)
                 {
-                    bool flagFoundLight = false;
+                    bool flagFoundBuilding = false;
                   
                     foreach (Thing thing in building.Position.GetThingList(building.Map))
                     { 
-                        if(thing.def == InternalDefOf.RB_Bee_LightSource)
+                        if(thing.def == maintainedBuilding)
                         {
-                            Building_BeeLightSource thingAsLightSource = thing as Building_BeeLightSource;
-                            thingAsLightSource.tickCounter = Building_BeeLightSource.tickCounterToDelete;
-                            flagFoundLight = true;
+                            Building_BeeMaintainable thingAsMaintainedBuilding = thing as Building_BeeMaintainable;
+                            thingAsMaintainedBuilding.tickCounter = Building_BeeMaintainable.tickCounterToDelete;
+                            flagFoundBuilding = true;
                             break;
                         }
                       
                     
                     }
-                    if (!flagFoundLight)
+                    if (!flagFoundBuilding)
                     {
-                        Thing newLight = ThingMaker.MakeThing(InternalDefOf.RB_Bee_LightSource, null);
-                        GenPlace.TryPlaceThing(newLight, building.Position, building.Map, ThingPlaceMode.Direct);
-                        newLight.SetFaction(Faction.OfPlayer);
+                        Thing thingAsMaintainedBuilding = ThingMaker.MakeThing(maintainedBuilding, null);
+                        GenPlace.TryPlaceThing(thingAsMaintainedBuilding, building.Position, building.Map, ThingPlaceMode.Direct);
+                        thingAsMaintainedBuilding.SetFaction(Faction.OfPlayer);
                     }
 
                 }
