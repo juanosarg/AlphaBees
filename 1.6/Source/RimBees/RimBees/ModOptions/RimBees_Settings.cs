@@ -71,7 +71,7 @@ namespace RimBees
         {
             Listing_Standard ls = new Listing_Standard();
           
-            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 350);
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 400);
             Widgets.BeginScrollView(inRect, ref scrollPosition, rect2, true);
 
             ls.Begin(rect2);       
