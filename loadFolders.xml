@@ -35,7 +35,7 @@
 		<li IfModActive="sarg.alphaanimals">1.6/Mods/AlphaAnimals</li>
 		<li IfModActive="sarg.alphagenes">1.6/Mods/AlphaGenes</li>
 		<li IfModActive="Torann.ARimworldOfMagic">1.6/Mods/RimWorldOfMagic</li>
-		<li IfModActive="tikubonn.DiceOfDestiny">1.6/Mods/DiceOfDestiny</li>
+		<li IfModActive="sarg.alpharandom">1.6/Mods/AlphaRandom</li>
 		<li IfModActive="kikohi.jewelry">1.6/Mods/Jewelry</li>
 		<li IfModActive="sarg.magicalmenagerie">1.6/Mods/MagicalMenagerie</li>
 		<li IfModActive="zal.morearchotechgarbage">1.6/Mods/Archotech</li>

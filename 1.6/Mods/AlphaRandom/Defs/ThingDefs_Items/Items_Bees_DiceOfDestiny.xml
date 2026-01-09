@@ -5,7 +5,7 @@
 	<!--=============== Casino ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_CasinoBeeBase" Abstract="True" >
-		<description>Casino bees are avid gamblers, always ready to roll the dice.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Casino bees are avid gamblers, always ready to roll the dice.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Inert archotech fate manipulator\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -17,7 +17,7 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>no</weirdplantneeded>
+				<weirdplantneeded>ARandom_FateManipulator</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>   
@@ -42,7 +42,7 @@
 	<!--=============== Ominous ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_OminousBeeBase" Abstract="True" >
-		<description>An entire breed of bees characterized by their obscene bad luck, ominous bees always see the worst in any situation. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Bad Omen.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>An entire breed of bees characterized by their obscene bad luck, ominous bees always see the worst in any situation. They will extract shards of nearby manipulators and produce honeycombs that extract into Dark archotech fate manipulators.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Inert archotech fate manipulator\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -54,7 +54,7 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
+				<weirdplantneeded>ARandom_FateManipulator</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>   
@@ -79,7 +79,7 @@
 	<!--=============== Fortunate ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_FortunateBeeBase" Abstract="True" >
-		<description>An entire breed of bees characterized by their incredible good luck, fortunate bees are irredeemable optimists. They will extract shards of nearby dice and produce honeycombs that extract into Dice of Fortune.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Dice of Destiny\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>An entire breed of bees characterized by their incredible good luck, fortunate bees are irredeemable optimists. They will extract shards of nearby manipulators and produce honeycombs that extract into Chaotic archotech fate manipulators.\n\nBee Traits:\n\nProduction time: 48 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Inert archotech fate manipulator\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -91,7 +91,7 @@
 				<combtimedays>1</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
-				<weirdplantneeded>DiceOfDestiny_Dice</weirdplantneeded>
+				<weirdplantneeded>ARandom_FateManipulator</weirdplantneeded>
 				<tempMin>0</tempMin>
 				<tempMax>30</tempMax>
 			</li>   

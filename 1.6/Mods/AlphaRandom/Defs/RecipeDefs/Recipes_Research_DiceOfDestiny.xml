@@ -4,8 +4,8 @@
 
 	<RecipeDef>
 		<defName>RB_CreateDiceOfDestinyTierResearch</defName>
-		<label>create Dice of Destiny tier bee research</label>
-		<description>Research bee combinations to create Dice of Destiny tier bees. This research is random and you may get duplicate results.</description>
+		<label>create Alpha Random tier bee research</label>
+		<description>Research bee combinations to create Alpha Random tier bees. This research is random and you may get duplicate results.</description>
 		<jobString>Researching bees</jobString>
 		<allowMixingIngredients>true</allowMixingIngredients>
 
@@ -33,7 +33,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DiceOfDestiny_Dice</li>
+						<li>ARandom_FateManipulator</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -47,7 +47,7 @@
 				<li>RB_Honeys</li>
 			</categories>
 			<thingDefs>
-				<li>DiceOfDestiny_Dice</li>
+				<li>ARandom_FateManipulator</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>

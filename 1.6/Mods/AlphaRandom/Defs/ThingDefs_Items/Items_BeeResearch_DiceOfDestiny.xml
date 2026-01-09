@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef Name="RB_ResearchPapersBaseDiceOfDestiny" ParentName="RB_ResearchPapersBase" Abstract="True">
-		<label>bee research papers (Dice of Destiny)</label>
+		<label>bee research papers (Alpha Random)</label>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>RB_RandomDiceOfDestinyResearch</defName>
@@ -26,13 +26,13 @@
 		<stackLimit>1</stackLimit>
 		<comps>
 			<li Class="RimBees.CompProperties_RandomResearch">
-				<labelString>bee research papers (Dice of Destiny)</labelString>
+				<labelString>bee research papers (Alpha Random)</labelString>
 			</li>
 		</comps>
 	</ThingDef>
 	<ThingCategoryDef>
 		<defName>RB_BeeResearchTierDiceOfDestiny</defName>
-		<label>bee research, Dice of Destiny tier</label>
+		<label>bee research, Alpha Random tier</label>
 		<parent>RB_BeeResearch</parent>
 		<iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
 	</ThingCategoryDef>
