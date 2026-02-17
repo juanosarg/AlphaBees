@@ -18,4 +18,10 @@
 		<nameString>Fortunate</nameString>
 		<beeQueenDef>RB_Bee_Fortunate_Queen</beeQueenDef>
 	</RimBees.BeeListDef>
+	<RimBees.BeeListDef>
+		<defName>RB_GachaBeeList</defName>
+		<beeDroneDef>RB_Bee_Gacha_Drone</beeDroneDef>
+		<nameString>Gacha</nameString>
+		<beeQueenDef>RB_Bee_Gacha_Queen</beeQueenDef>
+	</RimBees.BeeListDef>
 </Defs>

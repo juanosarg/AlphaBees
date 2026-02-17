@@ -47,6 +47,21 @@
 			<ARandom_FateManipulator_Chaotic>1</ARandom_FateManipulator_Chaotic>
 		</butcherProducts>
 	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Gacha_Honeycomb</defName>
+		<label>gacha honeycomb</label>
+		<description>This is a honeycomb produced by gacha bees. You are not very sure what gacha bees do, and any attempt to explain their mechanics just leaves you more confused. Something about banners and pity. Honeycombs can be processed in a Honey Extractor to get honey, beeswax and a random lootbox.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Gacha_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>40</RB_BaseHoney>
+			<RB_Beeswax>50</RB_Beeswax>
+			<RB_RandomLootbox>1</RB_RandomLootbox>
+		</butcherProducts>
+	</ThingDef>
 
 
 

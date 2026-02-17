@@ -112,5 +112,42 @@
 			<texPath>Things/Item/Bees/RB_Bee_Fortunate_Queen</texPath>
 		</graphicData> 		
 	</ThingDef>
+	<!--=============== Gacha ====================-->
+
+	<ThingDef ParentName="RB_BeeBase" Name="RB_GachaBeeBase" Abstract="True" >
+		<description>This bee takes a deep breath and launches into a weird tirade: "See, you get a "banner" and then you make "rolls" on them. But these are not your regular banners, oh no, these represent a "pool" of items, and most of them are common, but sometimes they are not, they are somehow super special. And then if you luck sucks there is a "pity" mechanic, which doesn't mean I am laughing at what a loser you are (although I am), it means that after losing a lot you get thrown some scraps so you feel like less of a loser. This isn’t a game, it’s a pact with probability. You begin with gems. But gems convert into crystals. Crystals convert into tickets. Tickets convert into enhanced tickets...".\n\nBee Traits:\n\nProduction time: 10 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: None\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>   
+		<tradeability>Buyable,Sellable</tradeability>
+		<comps>			
+			<li Class="RimBees.CompProperties_Bees">
+				<species>Gacha</species>
+				<comb>RB_Gacha_Honeycomb</comb>
+				<combtimedays>10</combtimedays>
+				<nocturnal>false</nocturnal>
+				<pluviophile>false</pluviophile>
+				<weirdplantneeded>no</weirdplantneeded>
+				<tempMin>0</tempMin>
+				<tempMax>30</tempMax>
+			</li>   
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_GachaBeeBase">
+		<defName>RB_Bee_Gacha_Drone</defName>
+		<label>Gacha drone</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Gacha_Drone</texPath>
+		</graphicData> 		
+	</ThingDef>
+	<ThingDef ParentName="RB_GachaBeeBase">
+		<defName>RB_Bee_Gacha_Queen</defName>
+		<label>Gacha queen</label>
+		<graphicData>
+			<texPath>Things/Item/Bees/RB_Bee_Gacha_Queen</texPath>
+		</graphicData> 		
+	</ThingDef>
+
 
 </Defs>

@@ -81,4 +81,19 @@
 			<li>RB_BeeResearchTierDiceOfDestiny</li>
 		</thingCategories>
 	</ThingDef>
+	<ThingDef ParentName="RB_ResearchPapersBaseDiceOfDestiny">
+		<defName>RB_ResearchPapersBeeResearchFortunateOminous</defName>
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchData">
+				<firstBee>RB_Bee_Fortunate_Queen</firstBee>
+				<secondBee>RB_Bee_Ominous_Queen</secondBee>
+				<resultingBees>
+					<li>RB_Bee_Gacha_Queen</li>
+				</resultingBees>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierDiceOfDestiny</li>
+		</thingCategories>
+	</ThingDef>
 </Defs>
